@@ -1,0 +1,371 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "openai/gpt-5-mini",
+    "temperature": 0.0,
+    "max-tokens": 10000
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "<scratchpad>\nChecking each provided entity against the outline:\n\n- PERSON-1 (Maya Cortes): Outline includes \"Maya Cortes\" multiple times (08:15 repeat exam, cleared for match selection, daily symptom checks, one-week review). So include.\n\n- PERSON-2 (Dr. Elias Verran): Outline repeatedly names \"Dr. Elias Verran\" (08:00 review, 08:15 exam, instructions, scheduling). So include.\n\n- ORGANIZATION-1 (Rivermark Lynx): Outline names \"Rivermark Lynx\" (instructed medical team, physiotherapist, notified coaching staff). So include.\n\n- ORGANIZATION-2 (Harborfen Diagnostic Centre): Outline names \"Harborfen Diagnostic Centre\" (images supplied by, one-week review booked there). So include.\n\n- PRODUCT-1 (ibuprofen): The outline does not explicitly mention \"ibuprofen\" or PRODUCT-1; it only refers to analgesic use to be recorded. So do NOT include.\n\nPrepare final XML with the four included entities.\n</scratchpad>\n<results>\n<entities>\n<person><id>PERSON-1</id><name>Maya Cortes</name></person>\n<person><id>PERSON-2</id><name>Dr. Elias Verran</name></person>\n<organization><id>ORGANIZATION-1</id><name>Rivermark Lynx</name></organization>\n<organization><id>ORGANIZATION-2</id><name>Harborfen Diagnostic Centre</name></organization>\n</entities>\n</results>"
+  },
+  "response": "<scratchpad>\nChecking each provided entity against the outline:\n\n- PERSON-1 (Maya Cortes): Outline includes \"Maya Cortes\" multiple times (08:15 repeat exam, cleared for match selection, daily symptom checks, one-week review). So include.\n\n- PERSON-2 (Dr. Elias Verran): Outline repeatedly names \"Dr. Elias Verran\" (08:00 review, 08:15 exam, instructions, scheduling). So include.\n\n- ORGANIZATION-1 (Rivermark Lynx): Outline names \"Rivermark Lynx\" (instructed medical team, physiotherapist, notified coaching staff). So include.\n\n- ORGANIZATION-2 (Harborfen Diagnostic Centre): Outline names \"Harborfen Diagnostic Centre\" (images supplied by, one-week review booked there). So include.\n\n- PRODUCT-1 (ibuprofen): The outline does not explicitly mention \"ibuprofen\" or PRODUCT-1; it only refers to analgesic use to be recorded. So do NOT include.\n\nPrepare final XML with the four included entities.\n</scratchpad>\n<results>\n<entities>\n<person><id>PERSON-1</id><name>Maya Cortes</name></person>\n<person><id>PERSON-2</id><name>Dr. Elias Verran</name></person>\n<organization><id>ORGANIZATION-1</id><name>Rivermark Lynx</name></organization>\n<organization><id>ORGANIZATION-2</id><name>Harborfen Diagnostic Centre</name></organization>\n</entities>\n</results>",
+  "instructions": "You are an AI assistant tasked with identifying which of the provided entities are explicitly named within the provided outline. Follow these instructions carefully:\n\n1. The date for this fictional event outline is:\n<date>{{DATE}}</date>\n\n2. Here is the outline you need to analyze:\n<outline>\n{{OUTLINE}}\n</outline>\n\n3. Here is the list of known (fictional) named entities:\n<entities>\n{{LOCATIONS_XML}}\n{{PERSONS_XML}}\n{{ORGANIZATIONS_XML}}\n{{PRODUCTS_XML}}\n{{ARTS_XML}}\n{{EVENTS_XML}}\n{{BUILDINGS_XML}}\n{{MISCELLANEOUSS_XML}}\n\n{{ADJUSTED_LOCATIONS_XML}}\n{{ADJUSTED_PERSONS_XML}}\n{{ADJUSTED_ORGANIZATIONS_XML}}\n{{ADJUSTED_PRODUCTS_XML}}\n{{ADJUSTED_ARTS_XML}}\n{{ADJUSTED_BUILDINGS_XML}}\n{{ADJUSTED_EVENTS_XML}}\n{{ADJUSTED_MISCELLANEOUSS_XML}}\n</entities>\n\n4. Your task is to go through all of the named entities in the provided list. For each named entity, check if it is explicitly referred to by name in the outline. If a named entity is explicitly mentioned by name, include it in your results.\n\n5. For each entity you identify, list them using the following format:\n<[entity_type]><id>[id of the entity]</id><name>[full name of the entity]</name></[entity_type]>\n\n6. Present your final output within a single <results> root node, structured as follows:\n\n<results>\n<entities>\n[List all identified entities here as described in step 5]\n</entities>\n</results>\n\n7. Double-check your work: For each entity that you have identified, make sure to find the sentence within the outline that explicitly refers to this identified entity by name. If you cannot find that the entity is mentioned explicitly by name in the outline, do not include it in your results.\n\n8. You can use a <scratchpad> for your thinking process. Do not include any XML tags within your scratchpad.\n\n9. Make sure that you have not missed any named entity from the outline that was also provided to you in the list of named entities.\n\nRemember, only include entities that are explicitly mentioned by name in the outline. Do not infer or assume the presence of entities that are not directly named.",
+  "text_prompt": "You are an AI assistant tasked with identifying which of the provided entities are explicitly named within the provided outline. Follow these instructions carefully:\n\n1. The date for this fictional event outline is:\n<date>2025-08-30</date>\n\n2. Here is the outline you need to analyze:\n<outline>\nAt 08:00 on 2025-08-30 Dr. Elias Verran reviewed the focused musculoskeletal ultrasound images supplied by Harborfen Diagnostic Centre.\nDr. Elias Verran recorded a small anechoic suprapatellar effusion on the images measuring approximately 7\u20139 mm in depth, noted intact patellar and quadriceps tendon continuity, and observed no focal Doppler hyperemia suggestive of active tendinopathy.\nAt 08:15 on 2025-08-30 Dr. Elias Verran performed a repeat clinical examination and documented standardized knee range-of-motion and symptom scores for Maya Cortes.\nDr. Elias Verran documented active knee extension of 0\u00b0 and flexion to 135\u00b0 bilaterally, a resting visual analogue pain score of 1/10 rising to 2/10 with single-leg squat provocation, and stable anterior drawer and Lachman tests with no joint-line tenderness.\nAt 08:35 on 2025-08-30 Dr. Elias Verran cleared Maya Cortes for match selection with an initial conservative minutes cap of 10\u201312 minutes.\nThe minutes cap was defined as total in-game time per match for the immediate fixtures, to be delivered in no more than two separate stints and with coaching instructed to minimise prolonged high-intensity defensive minutes during each appearance.\nOn 2025-08-30 Dr. Elias Verran instructed the Rivermark Lynx medical team to perform daily symptom checks for Maya Cortes before and after training and match activity.\nDr. Elias Verran asked the Rivermark Lynx physiotherapist to record a pre- and post-activity 0\u201310 pain score, a brief patellar girth measure, a 30-second single-leg balance assessment, and any analgesic use, and to upload these entries to the club medical portal within two hours of each check.\nOn 2025-08-30 Dr. Elias Verran scheduled a one-week functional review at Harborfen Diagnostic Centre to reassess load tolerance for Maya Cortes and notified Rivermark Lynx coaching staff of the plan.\nThe one-week functional review was booked for 09:00 on 2025-09-06 at Harborfen Diagnostic Centre and will include repeat targeted ultrasound, standardized isokinetic quadriceps/hamstring strength testing and a monitored five-minute on-court conditioning set to determine criteria for incremental minutes increases.\n</outline>\n\n3. Here is the list of known (fictional) named entities:\n<entities>\n\n<person><created_at>0</created_at><date_of_birth>1991-03-14</date_of_birth><description>A driven and disciplined veteran athlete known for leadership meticulous preparation and a strong commitment to mentoring younger players while pursuing personal performance goals.</description><education>Bachelor of Science in Kinesiology from Northshore University</education><entity_class>person</entity_class><eye_color>Brown</eye_color><gender>Female</gender><hair_color>Dark brown</hair_color><height>1.70 m</height><history><event>2025-08-29: Maya Cortes signed a one-year contract extension with the Rivermark Lynx, completed a club medical assessment and monitored return-to-play program, was cleared to progress into full-team contact training, and issued a statement committing to earn playing time and meet the incentives in her new contract.</event><event>2025-08-29: Maya Cortes completed a supervised full-contact training session on 2025-08-29 with no reported pain or functional limitations, met post-session functional testing benchmarks, was placed on the Rivermark Lynx available-for-selection list under a minutes-management plan limiting her to under 20 minutes initially, was named on the club's match-day availability notice to league administrators, and spoke to media saying she is ready to contribute under the minutes plan.</event><event>2025-08-29: Maya Cortes was assessed by Rivermark Lynx medical staff on 2025-08-29 who documented mild right-knee swelling (mid-patellar girth ~+1.4 cm compared with the left and a small suprapatellar fluid wave noted at ~17:10); she was withdrawn from the finalized match-day roster that day, given a single 400 mg oral dose of ibuprofen and an ice-compression protocol while awaiting a same-day focused musculoskeletal ultrasound at Harborfen Diagnostic Centre (18:00), and was scheduled for an 08:00 re-evaluation with Dr. Elias Verran the following morning to determine short-term availability and minutes-management recommendations.</event></history><id>PERSON-1</id><last_updated>2025-08-29</last_updated><marital_status>Single</marital_status><name>Maya Cortes</name><nationality>Valoria</nationality><profession>Professional basketball player and point guard</profession><type>None</type><weight>68 kg</weight></person>\n<person><created_at>2</created_at><date_of_birth>1979-11-02</date_of_birth><description>A meticulous clinician who prioritizes practical diagnostics, patient education, and conservative, function-focused treatment plans for active adults.</description><education>Doctor of Medicine (MD); Fellowship in Sports Medicine, Harborfen Medical College</education><entity_class>person</entity_class><eye_color>Gray</eye_color><gender>Male</gender><hair_color>Salt-and-pepper</hair_color><height>1.82 m</height><history><event>2025-08-29: Dr. Elias Verran was scheduled to perform an 08:00 re-evaluation on the morning following 2025-08-29 that would include a repeat clinical examination, review of the ultrasound images, standardized knee range-of-motion measurements, and a documented minutes-management recommendation for Maya Cortes.</event></history><id>PERSON-2</id><last_updated>2025-08-29</last_updated><marital_status>Married</marital_status><name>Dr. Elias Verran</name><nationality>Valorian</nationality><profession>Consultant Sports Medicine Physician</profession><type>None</type><weight>82 kg</weight></person>\n<organization><annual_revenue>2.1 million Valorian credits</annual_revenue><created_at>0</created_at><description>A mid-sized professional basketball club focused on sustainable operations and regional talent development within its domestic league.</description><entity_class>organization</entity_class><founded>2007-06-15</founded><headquarters>Harborfen</headquarters><history><event>2025-08-29: Rivermark Lynx announced and published the one-year contract extension for Maya Cortes, completed the contract paperwork at the team's training facility with the head coach and general manager present, and filed the finalized roster with league administrators ahead of the domestic transfer deadline, receiving confirmation of registration.</event><event>2025-08-29: Rivermark Lynx medical and coaching staff observed Maya Cortes' supervised full-contact training session on 2025-08-29, reported no acute pain or functional limitations in post-session assessments, placed her on the available-for-selection list contingent on a minutes-management plan (initial rotations under 20 minutes), and submitted a match-day availability notice through the league portal receiving automated confirmation.</event><event>2025-08-29: Rivermark Lynx medical staff recorded mild right-knee swelling in Maya Cortes during the 2025-08-29 pre-match assessment, withdrew her from the finalized match-day roster (formal withdrawal submitted via the league portal at 17:25 with arena officials informed shortly thereafter), administered an oral anti-inflammatory dose and ice-compression, arranged same-day diagnostic ultrasound at Harborfen Diagnostic Centre (18:00), and scheduled an overnight re-evaluation with Dr. Elias Verran for 08:00 the next morning.</event></history><id>ORGANIZATION-1</id><industry>professional sports</industry><last_updated>2025-08-29</last_updated><mission_statement>To cultivate competitive teams and community engagement through youth programs coaching development and accessible match-day experiences.</mission_statement><name>Rivermark Lynx</name><number_of_employees>72</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>1.3 million Valorian credits</annual_revenue><created_at>2</created_at><description>An outpatient imaging clinic providing focused diagnostic services and rapid-access scans for community healthcare providers.</description><entity_class>organization</entity_class><founded>2014-04-02</founded><headquarters>Harborfen</headquarters><history><event>2025-08-29: Harborfen Diagnostic Centre was booked to perform a focused musculoskeletal ultrasound of the patellofemoral region for Maya Cortes at 18:00 on 2025-08-29 (including longitudinal and transverse views plus Doppler to evaluate for effusion or tendon pathology) and was the planned site for the 08:00 re-evaluation with Dr. Elias Verran the following morning.</event></history><id>ORGANIZATION-2</id><industry>medical diagnostics</industry><last_updated>2025-08-29</last_updated><mission_statement>To deliver accurate, timely imaging services that support effective clinical decision-making in the region.</mission_statement><name>Harborfen Diagnostic Centre</name><number_of_employees>34</number_of_employees><type>company</type></organization>\n<product><created_at>2</created_at><description>An oral non-prescription anti-inflammatory formulated for short-term relief of mild to moderate musculoskeletal pain.</description><entity_class>product</entity_class><history><event>2025-08-29: A single 400 mg oral dose of ibuprofen (PRODUCT-1) was administered by the Rivermark Lynx physiotherapist to Maya Cortes on 2025-08-29 as an acute anti-inflammatory measure while awaiting imaging.</event></history><id>PRODUCT-1</id><last_updated>2025-08-29</last_updated><manufacturer>Marindale Pharmaceuticals</manufacturer><name>ibuprofen</name><price>6 Valorian credits per 20-tablet pack</price><release_date>2016-06-01</release_date><type>consumer good</type><warranty>Manufacturer quality guarantee: 12 months from release</warranty><weight>0.04 kg per pack</weight></product>\n\n\n\n\n\n\n\n\n\n\n\n\n\n</entities>\n\n4. Your task is to go through all of the named entities in the provided list. For each named entity, check if it is explicitly referred to by name in the outline. If a named entity is explicitly mentioned by name, include it in your results.\n\n5. For each entity you identify, list them using the following format:\n<[entity_type]><id>[id of the entity]</id><name>[full name of the entity]</name></[entity_type]>\n\n6. Present your final output within a single <results> root node, structured as follows:\n\n<results>\n<entities>\n[List all identified entities here as described in step 5]\n</entities>\n</results>\n\n7. Double-check your work: For each entity that you have identified, make sure to find the sentence within the outline that explicitly refers to this identified entity by name. If you cannot find that the entity is mentioned explicitly by name in the outline, do not include it in your results.\n\n8. You can use a <scratchpad> for your thinking process. Do not include any XML tags within your scratchpad.\n\n9. Make sure that you have not missed any named entity from the outline that was also provided to you in the list of named entities.\n\nRemember, only include entities that are explicitly mentioned by name in the outline. Do not infer or assume the presence of entities that are not directly named.",
+  "system-prompt": null,
+  "values": {
+    "GENRE": "Sports",
+    "EVENT_SUMMARY": "On 2025-08-30 at 08:00 Dr. Elias Verran reviewed the ultrasound and repeat clinical measures and cleared Maya Cortes for match selection under a conservative initial 10\u201312 minute cap with daily symptom checks and a one-week functional review to reassess load tolerance.",
+    "EVENT_SUMMARY_FOR_NAME": "On 2025-08-30 at 08:",
+    "INIT_SUMMARY": "A second-division women\u2019s basketball team has filled its final roster spot before the domestic transfer deadline by signing its veteran point guard to a one-year extension with a reduced salary and incentives tied to games played following last season\u2019s injury layoff.",
+    "KEYWORDS": "",
+    "CREATED_AT": 3,
+    "HISTORIES": [
+      "<event><date>2025-08-29</date><outline>{Rivermark Lynx|ORGANIZATION-1} announced the signing of a one-year contract extension with veteran point guard {Maya Cortes|PERSON-1} as their final roster move before the domestic transfer deadline. The club published the extension in an official press release on the {Rivermark Lynx|ORGANIZATION-1} website and social channels and completed the paperwork at the team's training facility with the head coach and general manager present. {Rivermark Lynx|ORGANIZATION-1} registered contract terms that reduce {Maya Cortes|PERSON-1}'s base salary and include game-play incentives tied to minutes and appearances for the one-year extension. The recorded incentive structure includes per-appearance fees, stepped bonuses for reaching specific minutes thresholds in individual games and incremental payments tied to appearing in a target proportion of regular-season fixtures. {Maya Cortes|PERSON-1} completed a club medical assessment and monitored return-to-play program overseen by {Rivermark Lynx|ORGANIZATION-1} after an injury layoff last season. The medical assessment consisted of strength and conditioning benchmarks, on-court movement and shooting tests and cardiovascular screening administered over a short monitoring period, with the club medical staff clearing {Maya Cortes|PERSON-1} to progress into full-team contact training. {Rivermark Lynx|ORGANIZATION-1} filed the finalized roster that includes {Maya Cortes|PERSON-1} with league administrators ahead of the domestic transfer deadline to secure the squad for the opening fixtures. The club submitted the roster to league administrators that afternoon and received confirmation of registration from the league, ensuring {Maya Cortes|PERSON-1} is officially eligible for selection when the team begins competition. {Maya Cortes|PERSON-1} issued a short statement through {Rivermark Lynx|ORGANIZATION-1} expressing commitment to earn playing time and to meet the incentives specified in the new contract. In the club-released statement {Maya Cortes|PERSON-1} said, \"I'm focused on earning my minutes, getting fully fit and doing whatever it takes to help {Rivermark Lynx|ORGANIZATION-1} compete this season.\"</outline></event>",
+      "<event><date>2025-08-29</date><outline>{Maya Cortes|PERSON-1} completed a supervised full-contact training session without setbacks on 2025-08-29 observed by {Rivermark Lynx|ORGANIZATION-1} medical and coaching staff. The full-contact training session lasted approximately 75 minutes at the {Rivermark Lynx|ORGANIZATION-1} training facility in Harborfen and included controlled live scrimmage periods designed to replicate match contact situations. {Rivermark Lynx|ORGANIZATION-1} medical staff reported no acute pain or functional limitations for {Maya Cortes|PERSON-1} in post-session assessments. Post-session assessments by the {Rivermark Lynx|ORGANIZATION-1} medical team recorded zero on a standard 0\u201310 pain scale, normal bilateral range-of-motion in the knee and ankle, and satisfactory single-leg hop performance during functional testing. {Rivermark Lynx|ORGANIZATION-1} head coach placed {Maya Cortes|PERSON-1} on the available-for-selection list for the season opener after consulting with {Rivermark Lynx|ORGANIZATION-1} medical staff. {Rivermark Lynx|ORGANIZATION-1} head coach noted that inclusion on the available-for-selection list is contingent on following a minutes-management plan that will initially limit {Maya Cortes|PERSON-1} to a planned rotation of under 20 minutes while monitoring match response. {Rivermark Lynx|ORGANIZATION-1} submitted a match-day availability notice to league administrators naming {Maya Cortes|PERSON-1} as eligible for selection for the season opener. {Rivermark Lynx|ORGANIZATION-1} submitted the match-day availability notice through the league's official portal and received an automated confirmation receipt from league administrators confirming the submission. {Maya Cortes|PERSON-1} told assembled media, \"I'm ready to contribute under the minutes plan the {Rivermark Lynx|ORGANIZATION-1} sets,\" after the training session. {Maya Cortes|PERSON-1} spoke to reporters outside the main court, smiling and accompanied by the {Rivermark Lynx|ORGANIZATION-1} physiotherapist, and added that {Maya Cortes|PERSON-1} plans to focus on defensive intensity and on-court leadership while adhering to {Rivermark Lynx|ORGANIZATION-1}'s minutes plan.</outline></event>",
+      "<event><date>2025-08-29</date><outline>{Rivermark Lynx|ORGANIZATION-1} medical staff recorded mild swelling in the right knee of {Maya Cortes|PERSON-1} during a pre-match physical assessment on 2025-08-29. The {Rivermark Lynx|ORGANIZATION-1} physiotherapist recorded a mid-patellar girth difference of approximately 1.4 cm when comparing the right knee to the left and noted a small suprapatellar fluid wave on bedside palpation at about 17:10 local time. {Rivermark Lynx|ORGANIZATION-1} medical staff withdrew {Maya Cortes|PERSON-1} from the finalized match-day roster following the pre-match assessment on 2025-08-29. The {Rivermark Lynx|ORGANIZATION-1} head of medical services informed the head coach and submitted the formal withdrawal through the league match-day change portal at 17:25, with arena match officials informed shortly thereafter. {Rivermark Lynx|ORGANIZATION-1} medical staff scheduled same-day diagnostic ultrasound imaging for {Maya Cortes|PERSON-1} at {Harborfen Diagnostic Centre|ORGANIZATION-2} on 2025-08-29. The {Harborfen Diagnostic Centre|ORGANIZATION-2} appointment was booked for 18:00 and the imaging request specified a focused musculoskeletal ultrasound of the patellofemoral region including longitudinal and transverse views and Doppler assessment to evaluate for effusion or tendon pathology. {Rivermark Lynx|ORGANIZATION-1} medical staff administered a single oral anti-inflammatory dose and applied an ice-compression protocol to {Maya Cortes|PERSON-1} while awaiting ultrasound results on 2025-08-29. The {Rivermark Lynx|ORGANIZATION-1} physiotherapist administered 400 mg of {ibuprofen|PRODUCT-1} orally and applied a pneumatic cold-compression cuff set to approximately 6\u00b0C in 20-minute cycles while recording pre- and post-treatment pain scores on a 0\u201310 scale. {Rivermark Lynx|ORGANIZATION-1} scheduled an overnight re-evaluation for {Maya Cortes|PERSON-1} with {Dr. Elias Verran|PERSON-2} at {Harborfen Diagnostic Centre|ORGANIZATION-2} to determine her short-term availability for selection. The re-evaluation with {Dr. Elias Verran|PERSON-2} was scheduled for 08:00 the following morning and was planned to include a repeat clinical examination, review of the ultrasound images, standardized knee range-of-motion measurements, and a documented minutes-management recommendation to be communicated to the {Rivermark Lynx|ORGANIZATION-1} coaching staff after the assessment.</outline></event>"
+    ],
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "NEXT_IDS": {
+      "person": 3,
+      "organization": 3,
+      "location": 1,
+      "product": 2,
+      "art": 1,
+      "building": 1,
+      "event": 1,
+      "miscellaneous": 1
+    },
+    "PROVIDED_DATE": "2025-08-30",
+    "PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Maya Cortes",
+        "entity_class": "person",
+        "description": "A driven and disciplined veteran athlete known for leadership meticulous preparation and a strong commitment to mentoring younger players while pursuing personal performance goals.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-08-29",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Maya Cortes signed a one-year contract extension with the Rivermark Lynx, completed a club medical assessment and monitored return-to-play program, was cleared to progress into full-team contact training, and issued a statement committing to earn playing time and meet the incentives in her new contract.",
+            "date": "2025-08-29"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Maya Cortes completed a supervised full-contact training session on 2025-08-29 with no reported pain or functional limitations, met post-session functional testing benchmarks, was placed on the Rivermark Lynx available-for-selection list under a minutes-management plan limiting her to under 20 minutes initially, was named on the club's match-day availability notice to league administrators, and spoke to media saying she is ready to contribute under the minutes plan.",
+            "date": "2025-08-29"
+          },
+          {
+            "created_at": 2,
+            "event_update": "Maya Cortes was assessed by Rivermark Lynx medical staff on 2025-08-29 who documented mild right-knee swelling (mid-patellar girth ~+1.4 cm compared with the left and a small suprapatellar fluid wave noted at ~17:10); she was withdrawn from the finalized match-day roster that day, given a single 400 mg oral dose of ibuprofen and an ice-compression protocol while awaiting a same-day focused musculoskeletal ultrasound at Harborfen Diagnostic Centre (18:00), and was scheduled for an 08:00 re-evaluation with Dr. Elias Verran the following morning to determine short-term availability and minutes-management recommendations.",
+            "date": "2025-08-29"
+          }
+        ],
+        "date_of_birth": "1991-03-14",
+        "gender": "Female",
+        "profession": "Professional basketball player and point guard",
+        "nationality": "Valoria",
+        "education": "Bachelor of Science in Kinesiology from Northshore University",
+        "height": "1.70 m",
+        "weight": "68 kg",
+        "eye_color": "Brown",
+        "hair_color": "Dark brown",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Dr. Elias Verran",
+        "entity_class": "person",
+        "description": "A meticulous clinician who prioritizes practical diagnostics, patient education, and conservative, function-focused treatment plans for active adults.",
+        "type": null,
+        "created_at": 2,
+        "last_updated": "2025-08-29",
+        "history": [
+          {
+            "created_at": 2,
+            "event_update": "Dr. Elias Verran was scheduled to perform an 08:00 re-evaluation on the morning following 2025-08-29 that would include a repeat clinical examination, review of the ultrasound images, standardized knee range-of-motion measurements, and a documented minutes-management recommendation for Maya Cortes.",
+            "date": "2025-08-29"
+          }
+        ],
+        "date_of_birth": "1979-11-02",
+        "gender": "Male",
+        "profession": "Consultant Sports Medicine Physician",
+        "nationality": "Valorian",
+        "education": "Doctor of Medicine (MD); Fellowship in Sports Medicine, Harborfen Medical College",
+        "height": "1.82 m",
+        "weight": "82 kg",
+        "eye_color": "Gray",
+        "hair_color": "Salt-and-pepper",
+        "marital_status": "Married"
+      }
+    ],
+    "ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Rivermark Lynx",
+        "entity_class": "organization",
+        "description": "A mid-sized professional basketball club focused on sustainable operations and regional talent development within its domestic league.",
+        "type": "company",
+        "created_at": 0,
+        "last_updated": "2025-08-29",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Rivermark Lynx announced and published the one-year contract extension for Maya Cortes, completed the contract paperwork at the team's training facility with the head coach and general manager present, and filed the finalized roster with league administrators ahead of the domestic transfer deadline, receiving confirmation of registration.",
+            "date": "2025-08-29"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Rivermark Lynx medical and coaching staff observed Maya Cortes' supervised full-contact training session on 2025-08-29, reported no acute pain or functional limitations in post-session assessments, placed her on the available-for-selection list contingent on a minutes-management plan (initial rotations under 20 minutes), and submitted a match-day availability notice through the league portal receiving automated confirmation.",
+            "date": "2025-08-29"
+          },
+          {
+            "created_at": 2,
+            "event_update": "Rivermark Lynx medical staff recorded mild right-knee swelling in Maya Cortes during the 2025-08-29 pre-match assessment, withdrew her from the finalized match-day roster (formal withdrawal submitted via the league portal at 17:25 with arena officials informed shortly thereafter), administered an oral anti-inflammatory dose and ice-compression, arranged same-day diagnostic ultrasound at Harborfen Diagnostic Centre (18:00), and scheduled an overnight re-evaluation with Dr. Elias Verran for 08:00 the next morning.",
+            "date": "2025-08-29"
+          }
+        ],
+        "founded": "2007-06-15",
+        "headquarters": "Harborfen",
+        "industry": "professional sports",
+        "mission_statement": "To cultivate competitive teams and community engagement through youth programs coaching development and accessible match-day experiences.",
+        "number_of_employees": "72",
+        "annual_revenue": "2.1 million Valorian credits"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Harborfen Diagnostic Centre",
+        "entity_class": "organization",
+        "description": "An outpatient imaging clinic providing focused diagnostic services and rapid-access scans for community healthcare providers.",
+        "type": "company",
+        "created_at": 2,
+        "last_updated": "2025-08-29",
+        "history": [
+          {
+            "created_at": 2,
+            "event_update": "Harborfen Diagnostic Centre was booked to perform a focused musculoskeletal ultrasound of the patellofemoral region for Maya Cortes at 18:00 on 2025-08-29 (including longitudinal and transverse views plus Doppler to evaluate for effusion or tendon pathology) and was the planned site for the 08:00 re-evaluation with Dr. Elias Verran the following morning.",
+            "date": "2025-08-29"
+          }
+        ],
+        "founded": "2014-04-02",
+        "headquarters": "Harborfen",
+        "industry": "medical diagnostics",
+        "mission_statement": "To deliver accurate, timely imaging services that support effective clinical decision-making in the region.",
+        "number_of_employees": "34",
+        "annual_revenue": "1.3 million Valorian credits"
+      }
+    ],
+    "LOCATION": [],
+    "PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "ibuprofen",
+        "entity_class": "product",
+        "description": "An oral non-prescription anti-inflammatory formulated for short-term relief of mild to moderate musculoskeletal pain.",
+        "type": "consumer good",
+        "created_at": 2,
+        "last_updated": "2025-08-29",
+        "history": [
+          {
+            "created_at": 2,
+            "event_update": "A single 400 mg oral dose of ibuprofen (PRODUCT-1) was administered by the Rivermark Lynx physiotherapist to Maya Cortes on 2025-08-29 as an acute anti-inflammatory measure while awaiting imaging.",
+            "date": "2025-08-29"
+          }
+        ],
+        "manufacturer": "Marindale Pharmaceuticals",
+        "release_date": "2016-06-01",
+        "price": "6 Valorian credits per 20-tablet pack",
+        "weight": "0.04 kg per pack",
+        "warranty": "Manufacturer quality guarantee: 12 months from release"
+      }
+    ],
+    "ART": [],
+    "BUILDING": [],
+    "EVENT": [],
+    "MISCELLANEOUS": [],
+    "PERSONS_XML": "<person><created_at>0</created_at><date_of_birth>1991-03-14</date_of_birth><description>A driven and disciplined veteran athlete known for leadership meticulous preparation and a strong commitment to mentoring younger players while pursuing personal performance goals.</description><education>Bachelor of Science in Kinesiology from Northshore University</education><entity_class>person</entity_class><eye_color>Brown</eye_color><gender>Female</gender><hair_color>Dark brown</hair_color><height>1.70 m</height><history><event>2025-08-29: Maya Cortes signed a one-year contract extension with the Rivermark Lynx, completed a club medical assessment and monitored return-to-play program, was cleared to progress into full-team contact training, and issued a statement committing to earn playing time and meet the incentives in her new contract.</event><event>2025-08-29: Maya Cortes completed a supervised full-contact training session on 2025-08-29 with no reported pain or functional limitations, met post-session functional testing benchmarks, was placed on the Rivermark Lynx available-for-selection list under a minutes-management plan limiting her to under 20 minutes initially, was named on the club's match-day availability notice to league administrators, and spoke to media saying she is ready to contribute under the minutes plan.</event><event>2025-08-29: Maya Cortes was assessed by Rivermark Lynx medical staff on 2025-08-29 who documented mild right-knee swelling (mid-patellar girth ~+1.4 cm compared with the left and a small suprapatellar fluid wave noted at ~17:10); she was withdrawn from the finalized match-day roster that day, given a single 400 mg oral dose of ibuprofen and an ice-compression protocol while awaiting a same-day focused musculoskeletal ultrasound at Harborfen Diagnostic Centre (18:00), and was scheduled for an 08:00 re-evaluation with Dr. Elias Verran the following morning to determine short-term availability and minutes-management recommendations.</event></history><id>PERSON-1</id><last_updated>2025-08-29</last_updated><marital_status>Single</marital_status><name>Maya Cortes</name><nationality>Valoria</nationality><profession>Professional basketball player and point guard</profession><type>None</type><weight>68 kg</weight></person>\n<person><created_at>2</created_at><date_of_birth>1979-11-02</date_of_birth><description>A meticulous clinician who prioritizes practical diagnostics, patient education, and conservative, function-focused treatment plans for active adults.</description><education>Doctor of Medicine (MD); Fellowship in Sports Medicine, Harborfen Medical College</education><entity_class>person</entity_class><eye_color>Gray</eye_color><gender>Male</gender><hair_color>Salt-and-pepper</hair_color><height>1.82 m</height><history><event>2025-08-29: Dr. Elias Verran was scheduled to perform an 08:00 re-evaluation on the morning following 2025-08-29 that would include a repeat clinical examination, review of the ultrasound images, standardized knee range-of-motion measurements, and a documented minutes-management recommendation for Maya Cortes.</event></history><id>PERSON-2</id><last_updated>2025-08-29</last_updated><marital_status>Married</marital_status><name>Dr. Elias Verran</name><nationality>Valorian</nationality><profession>Consultant Sports Medicine Physician</profession><type>None</type><weight>82 kg</weight></person>",
+    "ORGANIZATIONS_XML": "<organization><annual_revenue>2.1 million Valorian credits</annual_revenue><created_at>0</created_at><description>A mid-sized professional basketball club focused on sustainable operations and regional talent development within its domestic league.</description><entity_class>organization</entity_class><founded>2007-06-15</founded><headquarters>Harborfen</headquarters><history><event>2025-08-29: Rivermark Lynx announced and published the one-year contract extension for Maya Cortes, completed the contract paperwork at the team's training facility with the head coach and general manager present, and filed the finalized roster with league administrators ahead of the domestic transfer deadline, receiving confirmation of registration.</event><event>2025-08-29: Rivermark Lynx medical and coaching staff observed Maya Cortes' supervised full-contact training session on 2025-08-29, reported no acute pain or functional limitations in post-session assessments, placed her on the available-for-selection list contingent on a minutes-management plan (initial rotations under 20 minutes), and submitted a match-day availability notice through the league portal receiving automated confirmation.</event><event>2025-08-29: Rivermark Lynx medical staff recorded mild right-knee swelling in Maya Cortes during the 2025-08-29 pre-match assessment, withdrew her from the finalized match-day roster (formal withdrawal submitted via the league portal at 17:25 with arena officials informed shortly thereafter), administered an oral anti-inflammatory dose and ice-compression, arranged same-day diagnostic ultrasound at Harborfen Diagnostic Centre (18:00), and scheduled an overnight re-evaluation with Dr. Elias Verran for 08:00 the next morning.</event></history><id>ORGANIZATION-1</id><industry>professional sports</industry><last_updated>2025-08-29</last_updated><mission_statement>To cultivate competitive teams and community engagement through youth programs coaching development and accessible match-day experiences.</mission_statement><name>Rivermark Lynx</name><number_of_employees>72</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>1.3 million Valorian credits</annual_revenue><created_at>2</created_at><description>An outpatient imaging clinic providing focused diagnostic services and rapid-access scans for community healthcare providers.</description><entity_class>organization</entity_class><founded>2014-04-02</founded><headquarters>Harborfen</headquarters><history><event>2025-08-29: Harborfen Diagnostic Centre was booked to perform a focused musculoskeletal ultrasound of the patellofemoral region for Maya Cortes at 18:00 on 2025-08-29 (including longitudinal and transverse views plus Doppler to evaluate for effusion or tendon pathology) and was the planned site for the 08:00 re-evaluation with Dr. Elias Verran the following morning.</event></history><id>ORGANIZATION-2</id><industry>medical diagnostics</industry><last_updated>2025-08-29</last_updated><mission_statement>To deliver accurate, timely imaging services that support effective clinical decision-making in the region.</mission_statement><name>Harborfen Diagnostic Centre</name><number_of_employees>34</number_of_employees><type>company</type></organization>",
+    "LOCATIONS_XML": "",
+    "PRODUCTS_XML": "<product><created_at>2</created_at><description>An oral non-prescription anti-inflammatory formulated for short-term relief of mild to moderate musculoskeletal pain.</description><entity_class>product</entity_class><history><event>2025-08-29: A single 400 mg oral dose of ibuprofen (PRODUCT-1) was administered by the Rivermark Lynx physiotherapist to Maya Cortes on 2025-08-29 as an acute anti-inflammatory measure while awaiting imaging.</event></history><id>PRODUCT-1</id><last_updated>2025-08-29</last_updated><manufacturer>Marindale Pharmaceuticals</manufacturer><name>ibuprofen</name><price>6 Valorian credits per 20-tablet pack</price><release_date>2016-06-01</release_date><type>consumer good</type><warranty>Manufacturer quality guarantee: 12 months from release</warranty><weight>0.04 kg per pack</weight></product>",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "",
+    "EVENTS_XML": "",
+    "MISCELLANEOUSS_XML": "",
+    "NUM_STORYITEMS": 5,
+    "HISTORY_XML": "<event><date>2025-08-29</date><outline>{Rivermark Lynx|ORGANIZATION-1} announced the signing of a one-year contract extension with veteran point guard {Maya Cortes|PERSON-1} as their final roster move before the domestic transfer deadline. The club published the extension in an official press release on the {Rivermark Lynx|ORGANIZATION-1} website and social channels and completed the paperwork at the team's training facility with the head coach and general manager present. {Rivermark Lynx|ORGANIZATION-1} registered contract terms that reduce {Maya Cortes|PERSON-1}'s base salary and include game-play incentives tied to minutes and appearances for the one-year extension. The recorded incentive structure includes per-appearance fees, stepped bonuses for reaching specific minutes thresholds in individual games and incremental payments tied to appearing in a target proportion of regular-season fixtures. {Maya Cortes|PERSON-1} completed a club medical assessment and monitored return-to-play program overseen by {Rivermark Lynx|ORGANIZATION-1} after an injury layoff last season. The medical assessment consisted of strength and conditioning benchmarks, on-court movement and shooting tests and cardiovascular screening administered over a short monitoring period, with the club medical staff clearing {Maya Cortes|PERSON-1} to progress into full-team contact training. {Rivermark Lynx|ORGANIZATION-1} filed the finalized roster that includes {Maya Cortes|PERSON-1} with league administrators ahead of the domestic transfer deadline to secure the squad for the opening fixtures. The club submitted the roster to league administrators that afternoon and received confirmation of registration from the league, ensuring {Maya Cortes|PERSON-1} is officially eligible for selection when the team begins competition. {Maya Cortes|PERSON-1} issued a short statement through {Rivermark Lynx|ORGANIZATION-1} expressing commitment to earn playing time and to meet the incentives specified in the new contract. In the club-released statement {Maya Cortes|PERSON-1} said, \"I'm focused on earning my minutes, getting fully fit and doing whatever it takes to help {Rivermark Lynx|ORGANIZATION-1} compete this season.\"</outline></event>\n<event><date>2025-08-29</date><outline>{Maya Cortes|PERSON-1} completed a supervised full-contact training session without setbacks on 2025-08-29 observed by {Rivermark Lynx|ORGANIZATION-1} medical and coaching staff. The full-contact training session lasted approximately 75 minutes at the {Rivermark Lynx|ORGANIZATION-1} training facility in Harborfen and included controlled live scrimmage periods designed to replicate match contact situations. {Rivermark Lynx|ORGANIZATION-1} medical staff reported no acute pain or functional limitations for {Maya Cortes|PERSON-1} in post-session assessments. Post-session assessments by the {Rivermark Lynx|ORGANIZATION-1} medical team recorded zero on a standard 0\u201310 pain scale, normal bilateral range-of-motion in the knee and ankle, and satisfactory single-leg hop performance during functional testing. {Rivermark Lynx|ORGANIZATION-1} head coach placed {Maya Cortes|PERSON-1} on the available-for-selection list for the season opener after consulting with {Rivermark Lynx|ORGANIZATION-1} medical staff. {Rivermark Lynx|ORGANIZATION-1} head coach noted that inclusion on the available-for-selection list is contingent on following a minutes-management plan that will initially limit {Maya Cortes|PERSON-1} to a planned rotation of under 20 minutes while monitoring match response. {Rivermark Lynx|ORGANIZATION-1} submitted a match-day availability notice to league administrators naming {Maya Cortes|PERSON-1} as eligible for selection for the season opener. {Rivermark Lynx|ORGANIZATION-1} submitted the match-day availability notice through the league's official portal and received an automated confirmation receipt from league administrators confirming the submission. {Maya Cortes|PERSON-1} told assembled media, \"I'm ready to contribute under the minutes plan the {Rivermark Lynx|ORGANIZATION-1} sets,\" after the training session. {Maya Cortes|PERSON-1} spoke to reporters outside the main court, smiling and accompanied by the {Rivermark Lynx|ORGANIZATION-1} physiotherapist, and added that {Maya Cortes|PERSON-1} plans to focus on defensive intensity and on-court leadership while adhering to {Rivermark Lynx|ORGANIZATION-1}'s minutes plan.</outline></event>\n<event><date>2025-08-29</date><outline>{Rivermark Lynx|ORGANIZATION-1} medical staff recorded mild swelling in the right knee of {Maya Cortes|PERSON-1} during a pre-match physical assessment on 2025-08-29. The {Rivermark Lynx|ORGANIZATION-1} physiotherapist recorded a mid-patellar girth difference of approximately 1.4 cm when comparing the right knee to the left and noted a small suprapatellar fluid wave on bedside palpation at about 17:10 local time. {Rivermark Lynx|ORGANIZATION-1} medical staff withdrew {Maya Cortes|PERSON-1} from the finalized match-day roster following the pre-match assessment on 2025-08-29. The {Rivermark Lynx|ORGANIZATION-1} head of medical services informed the head coach and submitted the formal withdrawal through the league match-day change portal at 17:25, with arena match officials informed shortly thereafter. {Rivermark Lynx|ORGANIZATION-1} medical staff scheduled same-day diagnostic ultrasound imaging for {Maya Cortes|PERSON-1} at {Harborfen Diagnostic Centre|ORGANIZATION-2} on 2025-08-29. The {Harborfen Diagnostic Centre|ORGANIZATION-2} appointment was booked for 18:00 and the imaging request specified a focused musculoskeletal ultrasound of the patellofemoral region including longitudinal and transverse views and Doppler assessment to evaluate for effusion or tendon pathology. {Rivermark Lynx|ORGANIZATION-1} medical staff administered a single oral anti-inflammatory dose and applied an ice-compression protocol to {Maya Cortes|PERSON-1} while awaiting ultrasound results on 2025-08-29. The {Rivermark Lynx|ORGANIZATION-1} physiotherapist administered 400 mg of {ibuprofen|PRODUCT-1} orally and applied a pneumatic cold-compression cuff set to approximately 6\u00b0C in 20-minute cycles while recording pre- and post-treatment pain scores on a 0\u201310 scale. {Rivermark Lynx|ORGANIZATION-1} scheduled an overnight re-evaluation for {Maya Cortes|PERSON-1} with {Dr. Elias Verran|PERSON-2} at {Harborfen Diagnostic Centre|ORGANIZATION-2} to determine her short-term availability for selection. The re-evaluation with {Dr. Elias Verran|PERSON-2} was scheduled for 08:00 the following morning and was planned to include a repeat clinical examination, review of the ultrasound images, standardized knee range-of-motion measurements, and a documented minutes-management recommendation to be communicated to the {Rivermark Lynx|ORGANIZATION-1} coaching staff after the assessment.</outline></event>",
+    "STORY_ITEM": [
+      "At 08:00 on 2025-08-30 Dr. Elias Verran reviewed the focused musculoskeletal ultrasound images supplied by Harborfen Diagnostic Centre.",
+      "Dr. Elias Verran recorded a small anechoic suprapatellar effusion on the images measuring approximately 7\u20139 mm in depth, noted intact patellar and quadriceps tendon continuity, and observed no focal Doppler hyperemia suggestive of active tendinopathy.",
+      "At 08:15 on 2025-08-30 Dr. Elias Verran performed a repeat clinical examination and documented standardized knee range-of-motion and symptom scores for Maya Cortes.",
+      "Dr. Elias Verran documented active knee extension of 0\u00b0 and flexion to 135\u00b0 bilaterally, a resting visual analogue pain score of 1/10 rising to 2/10 with single-leg squat provocation, and stable anterior drawer and Lachman tests with no joint-line tenderness.",
+      "At 08:35 on 2025-08-30 Dr. Elias Verran cleared Maya Cortes for match selection with an initial conservative minutes cap of 10\u201312 minutes.",
+      "The minutes cap was defined as total in-game time per match for the immediate fixtures, to be delivered in no more than two separate stints and with coaching instructed to minimise prolonged high-intensity defensive minutes during each appearance.",
+      "On 2025-08-30 Dr. Elias Verran instructed the Rivermark Lynx medical team to perform daily symptom checks for Maya Cortes before and after training and match activity.",
+      "Dr. Elias Verran asked the Rivermark Lynx physiotherapist to record a pre- and post-activity 0\u201310 pain score, a brief patellar girth measure, a 30-second single-leg balance assessment, and any analgesic use, and to upload these entries to the club medical portal within two hours of each check.",
+      "On 2025-08-30 Dr. Elias Verran scheduled a one-week functional review at Harborfen Diagnostic Centre to reassess load tolerance for Maya Cortes and notified Rivermark Lynx coaching staff of the plan.",
+      "The one-week functional review was booked for 09:00 on 2025-09-06 at Harborfen Diagnostic Centre and will include repeat targeted ultrasound, standardized isokinetic quadriceps/hamstring strength testing and a monitored five-minute on-court conditioning set to determine criteria for incremental minutes increases."
+    ],
+    "DATE": "2025-08-30",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 1,
+    "OUTLINE": "At 08:00 on 2025-08-30 Dr. Elias Verran reviewed the focused musculoskeletal ultrasound images supplied by Harborfen Diagnostic Centre.\nDr. Elias Verran recorded a small anechoic suprapatellar effusion on the images measuring approximately 7\u20139 mm in depth, noted intact patellar and quadriceps tendon continuity, and observed no focal Doppler hyperemia suggestive of active tendinopathy.\nAt 08:15 on 2025-08-30 Dr. Elias Verran performed a repeat clinical examination and documented standardized knee range-of-motion and symptom scores for Maya Cortes.\nDr. Elias Verran documented active knee extension of 0\u00b0 and flexion to 135\u00b0 bilaterally, a resting visual analogue pain score of 1/10 rising to 2/10 with single-leg squat provocation, and stable anterior drawer and Lachman tests with no joint-line tenderness.\nAt 08:35 on 2025-08-30 Dr. Elias Verran cleared Maya Cortes for match selection with an initial conservative minutes cap of 10\u201312 minutes.\nThe minutes cap was defined as total in-game time per match for the immediate fixtures, to be delivered in no more than two separate stints and with coaching instructed to minimise prolonged high-intensity defensive minutes during each appearance.\nOn 2025-08-30 Dr. Elias Verran instructed the Rivermark Lynx medical team to perform daily symptom checks for Maya Cortes before and after training and match activity.\nDr. Elias Verran asked the Rivermark Lynx physiotherapist to record a pre- and post-activity 0\u201310 pain score, a brief patellar girth measure, a 30-second single-leg balance assessment, and any analgesic use, and to upload these entries to the club medical portal within two hours of each check.\nOn 2025-08-30 Dr. Elias Verran scheduled a one-week functional review at Harborfen Diagnostic Centre to reassess load tolerance for Maya Cortes and notified Rivermark Lynx coaching staff of the plan.\nThe one-week functional review was booked for 09:00 on 2025-09-06 at Harborfen Diagnostic Centre and will include repeat targeted ultrasound, standardized isokinetic quadriceps/hamstring strength testing and a monitored five-minute on-court conditioning set to determine criteria for incremental minutes increases.",
+    "PRE-CONSISTENCY-NUM-ITEMS": 10,
+    "STORYITEM_XML": "<storyitems>\n<storyitem>At 08:00 on 2025-08-30 Dr. Elias Verran reviewed the focused musculoskeletal ultrasound images supplied by Harborfen Diagnostic Centre.</storyitem>\n<storyitem>Dr. Elias Verran recorded a small anechoic suprapatellar effusion on the images measuring approximately 7\u20139 mm in depth, noted intact patellar and quadriceps tendon continuity, and observed no focal Doppler hyperemia suggestive of active tendinopathy.</storyitem>\n<storyitem>At 08:15 on 2025-08-30 Dr. Elias Verran performed a repeat clinical examination and documented standardized knee range-of-motion and symptom scores for Maya Cortes.</storyitem>\n<storyitem>Dr. Elias Verran documented active knee extension of 0\u00b0 and flexion to 135\u00b0 bilaterally, a resting visual analogue pain score of 1/10 rising to 2/10 with single-leg squat provocation, and stable anterior drawer and Lachman tests with no joint-line tenderness.</storyitem>\n<storyitem>At 08:35 on 2025-08-30 Dr. Elias Verran cleared Maya Cortes for match selection with an initial conservative minutes cap of 10\u201312 minutes.</storyitem>\n<storyitem>The minutes cap was defined as total in-game time per match for the immediate fixtures, to be delivered in no more than two separate stints and with coaching instructed to minimise prolonged high-intensity defensive minutes during each appearance.</storyitem>\n<storyitem>On 2025-08-30 Dr. Elias Verran instructed the Rivermark Lynx medical team to perform daily symptom checks for Maya Cortes before and after training and match activity.</storyitem>\n<storyitem>Dr. Elias Verran asked the Rivermark Lynx physiotherapist to record a pre- and post-activity 0\u201310 pain score, a brief patellar girth measure, a 30-second single-leg balance assessment, and any analgesic use, and to upload these entries to the club medical portal within two hours of each check.</storyitem>\n<storyitem>On 2025-08-30 Dr. Elias Verran scheduled a one-week functional review at Harborfen Diagnostic Centre to reassess load tolerance for Maya Cortes and notified Rivermark Lynx coaching staff of the plan.</storyitem>\n<storyitem>The one-week functional review was booked for 09:00 on 2025-09-06 at Harborfen Diagnostic Centre and will include repeat targeted ultrasound, standardized isokinetic quadriceps/hamstring strength testing and a monitored five-minute on-court conditioning set to determine criteria for incremental minutes increases.</storyitem>\n<storyitems>",
+    "NEW_PERSON_NAME": [],
+    "NEW_ORGANIZATION_NAME": [],
+    "NEW_LOCATION_NAME": [],
+    "NEW_PRODUCT_NAME": [],
+    "NEW_ART_NAME": [],
+    "NEW_BUILDING_NAME": [],
+    "NEW_EVENT_NAME": [],
+    "NEW_MISCELLANEOUS_NAME": [],
+    "CORRECTED_PERSON_NAME": [],
+    "CORRECTED_ORGANIZATION_NAME": [],
+    "CORRECTED_LOCATION_NAME": [],
+    "CORRECTED_PRODUCT_NAME": [],
+    "CORRECTED_ART_NAME": [],
+    "CORRECTED_BUILDING_NAME": [],
+    "CORRECTED_EVENT_NAME": [],
+    "CORRECTED_MISCELLANEOUS_NAME": [],
+    "CRITIQUE_ERRORS": {
+      "entity-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ]
+    },
+    "ADJUSTED_PERSONS_XML": "",
+    "ADJUSTED_ORGANIZATIONS_XML": "",
+    "ADJUSTED_LOCATIONS_XML": "",
+    "ADJUSTED_PRODUCTS_XML": "",
+    "ADJUSTED_ARTS_XML": "",
+    "ADJUSTED_BUILDINGS_XML": "",
+    "ADJUSTED_EVENTS_XML": "",
+    "ADJUSTED_MISCELLANEOUSS_XML": ""
+  }
+}

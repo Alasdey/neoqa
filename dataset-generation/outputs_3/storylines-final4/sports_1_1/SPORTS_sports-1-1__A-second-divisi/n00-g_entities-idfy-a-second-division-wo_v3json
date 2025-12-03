@@ -1,0 +1,248 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "openai/gpt-5-mini",
+    "temperature": 0.0,
+    "max-tokens": 10000
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "<results>\n<entities>\n<person><id>PERSON-1</id><name>Maya Cortes</name></person>\n<organization><id>ORGANIZATION-1</id><name>Rivermark Lynx</name></organization>\n</entities>\n</results>"
+  },
+  "response": "<results>\n<entities>\n<person><id>PERSON-1</id><name>Maya Cortes</name></person>\n<organization><id>ORGANIZATION-1</id><name>Rivermark Lynx</name></organization>\n</entities>\n</results>",
+  "instructions": "You are an AI assistant tasked with identifying which of the provided entities are explicitly named within the provided outline. Follow these instructions carefully:\n\n1. The date for this fictional event outline is:\n<date>{{DATE}}</date>\n\n2. Here is the outline you need to analyze:\n<outline>\n{{OUTLINE}}\n</outline>\n\n3. Here is the list of known (fictional) named entities:\n<entities>\n{{LOCATIONS_XML}}\n{{PERSONS_XML}}\n{{ORGANIZATIONS_XML}}\n{{PRODUCTS_XML}}\n{{ARTS_XML}}\n{{EVENTS_XML}}\n{{BUILDINGS_XML}}\n{{MISCELLANEOUSS_XML}}\n\n{{ADJUSTED_LOCATIONS_XML}}\n{{ADJUSTED_PERSONS_XML}}\n{{ADJUSTED_ORGANIZATIONS_XML}}\n{{ADJUSTED_PRODUCTS_XML}}\n{{ADJUSTED_ARTS_XML}}\n{{ADJUSTED_BUILDINGS_XML}}\n{{ADJUSTED_EVENTS_XML}}\n{{ADJUSTED_MISCELLANEOUSS_XML}}\n</entities>\n\n4. Your task is to go through all of the named entities in the provided list. For each named entity, check if it is explicitly referred to by name in the outline. If a named entity is explicitly mentioned by name, include it in your results.\n\n5. For each entity you identify, list them using the following format:\n<[entity_type]><id>[id of the entity]</id><name>[full name of the entity]</name></[entity_type]>\n\n6. Present your final output within a single <results> root node, structured as follows:\n\n<results>\n<entities>\n[List all identified entities here as described in step 5]\n</entities>\n</results>\n\n7. Double-check your work: For each entity that you have identified, make sure to find the sentence within the outline that explicitly refers to this identified entity by name. If you cannot find that the entity is mentioned explicitly by name in the outline, do not include it in your results.\n\n8. You can use a <scratchpad> for your thinking process. Do not include any XML tags within your scratchpad.\n\n9. Make sure that you have not missed any named entity from the outline that was also provided to you in the list of named entities.\n\nRemember, only include entities that are explicitly mentioned by name in the outline. Do not infer or assume the presence of entities that are not directly named.",
+  "text_prompt": "You are an AI assistant tasked with identifying which of the provided entities are explicitly named within the provided outline. Follow these instructions carefully:\n\n1. The date for this fictional event outline is:\n<date>2025-08-29</date>\n\n2. Here is the outline you need to analyze:\n<outline>\nRivermark Lynx announced the signing of a one-year contract extension with veteran point guard Maya Cortes as their final roster move before the domestic transfer deadline.\nThe club published the extension in an official press release on the Rivermark Lynx website and social channels and completed the paperwork at the team's training facility with the head coach and general manager present.\nRivermark Lynx registered contract terms that reduce Maya Cortes's base salary and include game-play incentives tied to minutes and appearances for the one-year extension.\nThe recorded incentive structure includes per-appearance fees, stepped bonuses for reaching specific minutes thresholds in individual games and incremental payments tied to appearing in a target proportion of regular-season fixtures.\nMaya Cortes completed a club medical assessment and monitored return-to-play program overseen by Rivermark Lynx after an injury layoff last season.\nThe medical assessment consisted of strength and conditioning benchmarks, on-court movement and shooting tests and cardiovascular screening administered over a short monitoring period, with the club medical staff clearing Maya Cortes to progress into full-team contact training.\nRivermark Lynx filed the finalized roster that includes Maya Cortes with league administrators ahead of the domestic transfer deadline to secure the squad for the opening fixtures.\nThe club submitted the roster to league administrators that afternoon and received confirmation of registration from the league, ensuring Maya Cortes is officially eligible for selection when the team begins competition.\nMaya Cortes issued a short statement through Rivermark Lynx expressing commitment to earn playing time and to meet the incentives specified in the new contract.\nIn the club-released statement Maya Cortes said, \"I'm focused on earning my minutes, getting fully fit and doing whatever it takes to help Rivermark Lynx compete this season.\"\n</outline>\n\n3. Here is the list of known (fictional) named entities:\n<entities>\n\n\n\n\n\n\n\n\n\n\n<person><id>PERSON-1</id><name>Maya Cortes</name><old_name>Maya Cortes</old_name></person>\n<organization><id>ORGANIZATION-1</id><name>Rivermark Lynx</name><old_name>Rivermark Lynx</old_name></organization>\n\n\n\n\n\n</entities>\n\n4. Your task is to go through all of the named entities in the provided list. For each named entity, check if it is explicitly referred to by name in the outline. If a named entity is explicitly mentioned by name, include it in your results.\n\n5. For each entity you identify, list them using the following format:\n<[entity_type]><id>[id of the entity]</id><name>[full name of the entity]</name></[entity_type]>\n\n6. Present your final output within a single <results> root node, structured as follows:\n\n<results>\n<entities>\n[List all identified entities here as described in step 5]\n</entities>\n</results>\n\n7. Double-check your work: For each entity that you have identified, make sure to find the sentence within the outline that explicitly refers to this identified entity by name. If you cannot find that the entity is mentioned explicitly by name in the outline, do not include it in your results.\n\n8. You can use a <scratchpad> for your thinking process. Do not include any XML tags within your scratchpad.\n\n9. Make sure that you have not missed any named entity from the outline that was also provided to you in the list of named entities.\n\nRemember, only include entities that are explicitly mentioned by name in the outline. Do not infer or assume the presence of entities that are not directly named.",
+  "system-prompt": null,
+  "values": {
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "GENRE": "Sports",
+    "HISTORIES": [],
+    "EVENT_SUMMARY": "A second-division women\u2019s basketball team has filled its final roster spot before the domestic transfer deadline by signing its veteran point guard to a one-year extension with a reduced salary and incentives tied to games played following last season\u2019s injury layoff.",
+    "EVENT_SUMMARY_FOR_NAME": "A second-division wo",
+    "KEYWORDS": "",
+    "CREATED_AT": 0,
+    "NEXT_IDS": {
+      "person": 2,
+      "organization": 2,
+      "location": 1,
+      "product": 1,
+      "art": 1,
+      "building": 1,
+      "event": 1,
+      "miscellaneous": 1
+    },
+    "PROVIDED_DATE": "",
+    "PERSON": [],
+    "ORGANIZATION": [],
+    "LOCATION": [],
+    "PRODUCT": [],
+    "ART": [],
+    "BUILDING": [],
+    "EVENT": [],
+    "MISCELLANEOUS": [],
+    "PERSONS_XML": "",
+    "ORGANIZATIONS_XML": "",
+    "LOCATIONS_XML": "",
+    "PRODUCTS_XML": "",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "",
+    "EVENTS_XML": "",
+    "MISCELLANEOUSS_XML": "",
+    "NUM_STORYITEMS": 5,
+    "HISTORY_XML": "",
+    "STORY_ITEM": [
+      "Rivermark Lynx announced the signing of a one-year contract extension with veteran point guard Maya Cortes as their final roster move before the domestic transfer deadline.",
+      "The club published the extension in an official press release on the Rivermark Lynx website and social channels and completed the paperwork at the team's training facility with the head coach and general manager present.",
+      "Rivermark Lynx registered contract terms that reduce Maya Cortes's base salary and include game-play incentives tied to minutes and appearances for the one-year extension.",
+      "The recorded incentive structure includes per-appearance fees, stepped bonuses for reaching specific minutes thresholds in individual games and incremental payments tied to appearing in a target proportion of regular-season fixtures.",
+      "Maya Cortes completed a club medical assessment and monitored return-to-play program overseen by Rivermark Lynx after an injury layoff last season.",
+      "The medical assessment consisted of strength and conditioning benchmarks, on-court movement and shooting tests and cardiovascular screening administered over a short monitoring period, with the club medical staff clearing Maya Cortes to progress into full-team contact training.",
+      "Rivermark Lynx filed the finalized roster that includes Maya Cortes with league administrators ahead of the domestic transfer deadline to secure the squad for the opening fixtures.",
+      "The club submitted the roster to league administrators that afternoon and received confirmation of registration from the league, ensuring Maya Cortes is officially eligible for selection when the team begins competition.",
+      "Maya Cortes issued a short statement through Rivermark Lynx expressing commitment to earn playing time and to meet the incentives specified in the new contract.",
+      "In the club-released statement Maya Cortes said, \"I'm focused on earning my minutes, getting fully fit and doing whatever it takes to help Rivermark Lynx compete this season.\""
+    ],
+    "DATE": "2025-08-29",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 1,
+    "OUTLINE": "Rivermark Lynx announced the signing of a one-year contract extension with veteran point guard Maya Cortes as their final roster move before the domestic transfer deadline.\nThe club published the extension in an official press release on the Rivermark Lynx website and social channels and completed the paperwork at the team's training facility with the head coach and general manager present.\nRivermark Lynx registered contract terms that reduce Maya Cortes's base salary and include game-play incentives tied to minutes and appearances for the one-year extension.\nThe recorded incentive structure includes per-appearance fees, stepped bonuses for reaching specific minutes thresholds in individual games and incremental payments tied to appearing in a target proportion of regular-season fixtures.\nMaya Cortes completed a club medical assessment and monitored return-to-play program overseen by Rivermark Lynx after an injury layoff last season.\nThe medical assessment consisted of strength and conditioning benchmarks, on-court movement and shooting tests and cardiovascular screening administered over a short monitoring period, with the club medical staff clearing Maya Cortes to progress into full-team contact training.\nRivermark Lynx filed the finalized roster that includes Maya Cortes with league administrators ahead of the domestic transfer deadline to secure the squad for the opening fixtures.\nThe club submitted the roster to league administrators that afternoon and received confirmation of registration from the league, ensuring Maya Cortes is officially eligible for selection when the team begins competition.\nMaya Cortes issued a short statement through Rivermark Lynx expressing commitment to earn playing time and to meet the incentives specified in the new contract.\nIn the club-released statement Maya Cortes said, \"I'm focused on earning my minutes, getting fully fit and doing whatever it takes to help Rivermark Lynx compete this season.\"",
+    "PRE-CONSISTENCY-NUM-ITEMS": 10,
+    "STORYITEM_XML": "<storyitems>\n<storyitem>Rivermark Lynx announced the signing of a one-year contract extension with veteran point guard Maya Cortes as their final roster move before the domestic transfer deadline.</storyitem>\n<storyitem>The club published the extension in an official press release on the Rivermark Lynx website and social channels and completed the paperwork at the team's training facility with the head coach and general manager present.</storyitem>\n<storyitem>Rivermark Lynx registered contract terms that reduce Maya Cortes's base salary and include game-play incentives tied to minutes and appearances for the one-year extension.</storyitem>\n<storyitem>The recorded incentive structure includes per-appearance fees, stepped bonuses for reaching specific minutes thresholds in individual games and incremental payments tied to appearing in a target proportion of regular-season fixtures.</storyitem>\n<storyitem>Maya Cortes completed a club medical assessment and monitored return-to-play program overseen by Rivermark Lynx after an injury layoff last season.</storyitem>\n<storyitem>The medical assessment consisted of strength and conditioning benchmarks, on-court movement and shooting tests and cardiovascular screening administered over a short monitoring period, with the club medical staff clearing Maya Cortes to progress into full-team contact training.</storyitem>\n<storyitem>Rivermark Lynx filed the finalized roster that includes Maya Cortes with league administrators ahead of the domestic transfer deadline to secure the squad for the opening fixtures.</storyitem>\n<storyitem>The club submitted the roster to league administrators that afternoon and received confirmation of registration from the league, ensuring Maya Cortes is officially eligible for selection when the team begins competition.</storyitem>\n<storyitem>Maya Cortes issued a short statement through Rivermark Lynx expressing commitment to earn playing time and to meet the incentives specified in the new contract.</storyitem>\n<storyitem>In the club-released statement Maya Cortes said, \"I'm focused on earning my minutes, getting fully fit and doing whatever it takes to help Rivermark Lynx compete this season.\"</storyitem>\n<storyitems>",
+    "NEW_PERSON_NAME": [
+      {
+        "name": "Maya Cortes",
+        "old_name": "Maya Cortes"
+      }
+    ],
+    "NEW_ORGANIZATION_NAME": [
+      {
+        "name": "Rivermark Lynx",
+        "old_name": "Rivermark Lynx"
+      }
+    ],
+    "NEW_LOCATION_NAME": [],
+    "NEW_PRODUCT_NAME": [],
+    "NEW_ART_NAME": [],
+    "NEW_BUILDING_NAME": [],
+    "NEW_EVENT_NAME": [],
+    "NEW_MISCELLANEOUS_NAME": [],
+    "CORRECTED_PERSON_NAME": [
+      {
+        "name": "Maya Cortes",
+        "old_name": "Maya Cortes",
+        "id": "PERSON-1"
+      }
+    ],
+    "CORRECTED_ORGANIZATION_NAME": [
+      {
+        "name": "Rivermark Lynx",
+        "old_name": "Rivermark Lynx",
+        "id": "ORGANIZATION-1"
+      }
+    ],
+    "CORRECTED_LOCATION_NAME": [],
+    "CORRECTED_PRODUCT_NAME": [],
+    "CORRECTED_ART_NAME": [],
+    "CORRECTED_BUILDING_NAME": [],
+    "CORRECTED_EVENT_NAME": [],
+    "CORRECTED_MISCELLANEOUS_NAME": [],
+    "CRITIQUE_ERRORS": {
+      "entity-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ]
+    },
+    "ADJUSTED_PERSONS_XML": "<person><id>PERSON-1</id><name>Maya Cortes</name><old_name>Maya Cortes</old_name></person>",
+    "ADJUSTED_ORGANIZATIONS_XML": "<organization><id>ORGANIZATION-1</id><name>Rivermark Lynx</name><old_name>Rivermark Lynx</old_name></organization>",
+    "ADJUSTED_LOCATIONS_XML": "",
+    "ADJUSTED_PRODUCTS_XML": "",
+    "ADJUSTED_ARTS_XML": "",
+    "ADJUSTED_BUILDINGS_XML": "",
+    "ADJUSTED_EVENTS_XML": "",
+    "ADJUSTED_MISCELLANEOUSS_XML": ""
+  }
+}

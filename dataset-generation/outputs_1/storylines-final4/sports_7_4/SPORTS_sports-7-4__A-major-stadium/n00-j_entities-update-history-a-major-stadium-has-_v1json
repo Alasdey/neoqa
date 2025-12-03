@@ -1,0 +1,1247 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "microsoft/phi-4-reasoning-plus",
+    "temperature": 0.0,
+    "max-tokens": 4096
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "```xml\n<results>\n<location>\n<entity_id>LOCATION-1</entity_id>\n<update>Mechtoria, the city where Westfield Stadium is located, has seen the introduction of new smart technology at the stadium, enhancing the spectator experience.</update>\n<name>Mechtoria</name>\n<last_updated>2023-09-15</last_updated>\n</location>\n\n<person>\n<entity_id>PERSON-1</entity_id>\n<update>Jack Thompson, Director of Operations at Westfield Stadium, highlighted the success of the new smart technology in enhancing the fan experience during the launch event.</update>\n<last_updated>2023-09-15</last_updated>\n</person>\n\n<organization>\n<entity_id>ORGANIZATION-1</entity_id>\n<update>DigTech Innovations partnered with Westfield Stadium to develop and implement the WestFieldConnect app, which has been successfully launched and received positive feedback.</update>\n<last_updated>2023-09-15</last_updated>\n</organization>\n\n<product>\n<entity_id>PRODUCT-1</entity_id>\n<update>WestFieldConnect, developed by DigTech Innovations, was launched at Westfield Stadium, offering features like food ordering and navigation, and received positive feedback from fans.</update>\n<last_updated>2023-09-15</last_updated>\n</product>\n\n<building>\n<entity_id>BUILDING-1</entity_id>\n<update>Westfield Stadium introduced a new smart technology system, WestFieldConnect, to enhance the spectator experience, with minimal disruptions during integration.</update>\n<last_updated>2023-09-15</last_updated>\n</building>\n</results>\n```"
+  },
+  "response": "```xml\n<results>\n<location>\n<entity_id>LOCATION-1</entity_id>\n<update>Mechtoria, the city where Westfield Stadium is located, has seen the introduction of new smart technology at the stadium, enhancing the spectator experience.</update>\n<name>Mechtoria</name>\n<last_updated>2023-09-15</last_updated>\n</location>\n\n<person>\n<entity_id>PERSON-1</entity_id>\n<update>Jack Thompson, Director of Operations at Westfield Stadium, highlighted the success of the new smart technology in enhancing the fan experience during the launch event.</update>\n<last_updated>2023-09-15</last_updated>\n</person>\n\n<organization>\n<entity_id>ORGANIZATION-1</entity_id>\n<update>DigTech Innovations partnered with Westfield Stadium to develop and implement the WestFieldConnect app, which has been successfully launched and received positive feedback.</update>\n<last_updated>2023-09-15</last_updated>\n</organization>\n\n<product>\n<entity_id>PRODUCT-1</entity_id>\n<update>WestFieldConnect, developed by DigTech Innovations, was launched at Westfield Stadium, offering features like food ordering and navigation, and received positive feedback from fans.</update>\n<last_updated>2023-09-15</last_updated>\n</product>\n\n<building>\n<entity_id>BUILDING-1</entity_id>\n<update>Westfield Stadium introduced a new smart technology system, WestFieldConnect, to enhance the spectator experience, with minimal disruptions during integration.</update>\n<last_updated>2023-09-15</last_updated>\n</building>\n</results>\n```",
+  "instructions": "You are an AI assistant tasked with updating a list of fictional entities based on an outline of events. Follow these instructions carefully to complete the task:\n\n1. First, read the outline of the fictional event:\n<outline>\n{{OUTLINE}}\n</outline>\n\n2. Next, review the list of fictional entities:\n<entities>\n{{USED_LOCATION_XML}}\n{{USED_PERSON_XML}}\n{{USED_ORGANIZATION_XML}}\n{{USED_PRODUCT_XML}}\n{{USED_ART_XML}}\n{{USED_EVENT_XML}}\n{{USED_BUILDING_XML}}\n{{USED_MISCELLANEOUS_XML}}\n</entities>\n\n3. For each entity in the list, follow these steps:\n   a. Identify the entity's role in the outline. Create an update sentence describing how the entity was affected by or involved in the events described in the outline.\n   b. Review all properties of the entity EXCEPT for \"id\", \"created_at\", \"history\", and \"entity_class\".\n   c. For each property:\n      - If the property does not need to be updated based on the outline, leave it as-is.\n      - If the events or the time difference since the last update (last_updated) indicate that the value has changed, update it accordingly.\n      - Ensure the new value is consistent with the outline, other entities, and plausible given the time difference.\n   d. Do not alter the \"description\" field unless the current description is no longer valid after the events in the outline.\n\n4. Output your results for each entity in the following format:\n<results>\n<[entity_type]>\n<entity_id>[Insert entity id here]</entity_id>\n<update>[Insert your update sentence here]</update>\n[List any properties that were changed, with their new values, using the format:]\n<[property_name]>[new value]</[property_name]>\n</[entity_type]>\n[Repeat for each entity]\n</results>\n\n5. Important reminders:\n   - Stick to the information provided in the outline and entities list. Do not invent new details or events.\n   - Ensure all updates and changes are consistent with the outline and with each other.\n   - Be concise in your updates, focusing only on relevant changes.\n   - If no properties need to be changed for an entity, do not include any property tags.\n   - Process each entity in the order they are presented in the list.\n   - Use the appropriate entity type tag (e.g., <location>, <person>, etc.) instead of <entity_update>.\n   - Begin your response with the first entity update immediately, without any preamble.\n\nAll actual results should be listed in <location>, <organization>, <person>, <product>, <art>, <building>, <event>, or <miscellaneous> nodes within the <results> node.\nDo not include any content outside of the <results> tags in your response.\n\nStart processing the entities now, following the instructions and format provided above.",
+  "text_prompt": "You are an AI assistant tasked with updating a list of fictional entities based on an outline of events. Follow these instructions carefully to complete the task:\n\n1. First, read the outline of the fictional event:\n<outline>\nOn September 15, 2023, the {Westfield Stadium|BUILDING-1} introduced a new smart technology system designed to enhance spectator experience during sporting events.\n{Westfield Stadium|BUILDING-1}, a prominent venue in {Mechtoria|LOCATION-1}, is known for hosting major football and athletics events, attracting thousands of fans annually.\nThe {Westfield Stadium|BUILDING-1}, located in the city of {Mechtoria|LOCATION-1}, partnered with a tech firm named {DigTech Innovations|ORGANIZATION-1} to develop a dedicated app named \"{WestFieldConnect|PRODUCT-1}\".\n{DigTech Innovations|ORGANIZATION-1}, a leading technology company in {Mechtoria|LOCATION-1}, has a history of developing innovative solutions for sports and entertainment industries.\n\"{WestFieldConnect|PRODUCT-1}\" allowed fans to order food and beverages directly to their seats, access exclusive player interviews, and navigate the venue efficiently via a detailed virtual map.\nThe app's virtual map feature includes real-time updates on seat availability and restroom locations, enhancing the overall navigation experience.\nThe technology was integrated into the {Westfield Stadium|BUILDING-1}'s existing infrastructure with minimal disruptions, as it utilized existing Wi-Fi networks and inventory management systems.\nIntegration was completed over a three-month period, involving collaboration between {Westfield Stadium|BUILDING-1}'s IT team and {DigTech Innovations|ORGANIZATION-1}'s engineers.\nDuring the launch day, fans at the stadium's first football match utilized \"{WestFieldConnect|PRODUCT-1}\" to place 357 food and drink orders, effectively reducing service times significantly.\nService times were reduced by an average of 15 minutes per order, allowing fans to enjoy more of the game without long waits.\n{Jack Thompson|PERSON-1}, Director of Operations at {Westfield Stadium|BUILDING-1}, stated, \"This technology represents a significant step forward in providing fans with a seamless and enjoyable game-day experience.\"\nThompson highlighted that the app's success was evident in the positive feedback received from fans during the first match.\nMeasures were taken to ensure that fans without smartphones could still access services through dedicated kiosks equipped with the \"{WestFieldConnect|PRODUCT-1}\" software.\nThese kiosks were strategically placed near entrances and food courts to ensure easy access for all attendees.\nThe introduction of \"{WestFieldConnect|PRODUCT-1}\" received mixed reviews from fans, with many praising the convenience while some expressed concerns over data privacy.\nPrivacy concerns were addressed by implementing robust data encryption and offering fans clear information on data usage policies.\n{DigTech Innovations|ORGANIZATION-1} announced plans to refine and expand the app's features based on initial fan feedback, with updates expected in the upcoming months.\nPlanned updates include personalized notifications for fans' favorite teams and enhanced social media integration for sharing experiences.\nThe successful deployment of the smart technology at {Westfield Stadium|BUILDING-1} is anticipated to serve as a model for other venues in the {Mechtoria|LOCATION-1} region considering similar upgrades.\nOther venues in {Mechtoria|LOCATION-1} are already expressing interest in adopting similar technology to improve their spectator services.\n</outline>\n\n2. Next, review the list of fictional entities:\n<entities>\n<location><area>150</area><country>Desmaria</country><created_at>0</created_at><description>Mechtoria is a bustling city nestled in the picturesque Qravine region, celebrated for its rich cultural heritage and cutting-edge technology sector.</description><elevation>320</elevation><entity_class>location</entity_class><history></history><id>LOCATION-1</id><last_updated>2023-09-15</last_updated><name>Mechtoria</name><population>540000</population><type>city</type></location>\n<person><created_at>0</created_at><date_of_birth>1985-06-14</date_of_birth><description>Jack Thompson is an efficient and forward-thinking executive with a passion for sports and technology, driven by a desire to enhance fan engagement.</description><education>Master of Business Administration</education><entity_class>person</entity_class><eye_color>Blue</eye_color><gender>Male</gender><hair_color>Brown</hair_color><height>1.85</height><history></history><id>PERSON-1</id><last_updated>2023-09-15</last_updated><marital_status>Married</marital_status><name>Jack Thompson</name><nationality>Novarian</nationality><political_affiliation>Non-partisan</political_affiliation><profession>Director of Operations</profession><spouse>Lena Thompson</spouse><type>None</type><weight>85</weight></person>\n<organization><annual_revenue>120 million Novarian Dollars</annual_revenue><created_at>0</created_at><description>DigTech Innovations is a pioneering tech firm based in Mechtoria that specializes in developing cutting-edge technology solutions for the sports and entertainment industries.</description><entity_class>organization</entity_class><founded>2010</founded><headquarters>Seventh Avenue Business Park</headquarters><history></history><id>ORGANIZATION-1</id><industry>Technology Development</industry><last_updated>2023-09-15</last_updated><mission_statement>To revolutionize the sports and entertainment experience through innovative technology.</mission_statement><name>DigTech Innovations</name><number_of_employees>250</number_of_employees><type>company</type></organization>\n<product><created_at>0</created_at><description>WestFieldConnect is a comprehensive digital app that offers seamless access to venue features like food ordering, navigation, and exclusive content for spectators.</description><entity_class>product</entity_class><history></history><id>PRODUCT-1</id><last_updated>2023-09-15</last_updated><manufacturer>DigTech Innovations</manufacturer><name>WestFieldConnect</name><price>Free to download; in-app purchases</price><release_date>2023-09-15</release_date><type>software</type><warranty>Support and updates for two years</warranty></product>\n\n\n<building><architect>A J Fendrick</architect><capacity>40000</capacity><created_at>0</created_at><description>Westfield Stadium is a modern multi-purpose stadium in Mechtoria, renowned for hosting major football and athletics tournaments that draw large crowds.</description><entity_class>building</entity_class><floors>4</floors><height>50</height><history></history><id>BUILDING-1</id><last_updated>2023-09-15</last_updated><material>Steel and reinforced concrete</material><name>Westfield Stadium</name><type>public</type><year_built>2015</year_built></building>\n\n</entities>\n\n3. For each entity in the list, follow these steps:\n   a. Identify the entity's role in the outline. Create an update sentence describing how the entity was affected by or involved in the events described in the outline.\n   b. Review all properties of the entity EXCEPT for \"id\", \"created_at\", \"history\", and \"entity_class\".\n   c. For each property:\n      - If the property does not need to be updated based on the outline, leave it as-is.\n      - If the events or the time difference since the last update (last_updated) indicate that the value has changed, update it accordingly.\n      - Ensure the new value is consistent with the outline, other entities, and plausible given the time difference.\n   d. Do not alter the \"description\" field unless the current description is no longer valid after the events in the outline.\n\n4. Output your results for each entity in the following format:\n<results>\n<[entity_type]>\n<entity_id>[Insert entity id here]</entity_id>\n<update>[Insert your update sentence here]</update>\n[List any properties that were changed, with their new values, using the format:]\n<[property_name]>[new value]</[property_name]>\n</[entity_type]>\n[Repeat for each entity]\n</results>\n\n5. Important reminders:\n   - Stick to the information provided in the outline and entities list. Do not invent new details or events.\n   - Ensure all updates and changes are consistent with the outline and with each other.\n   - Be concise in your updates, focusing only on relevant changes.\n   - If no properties need to be changed for an entity, do not include any property tags.\n   - Process each entity in the order they are presented in the list.\n   - Use the appropriate entity type tag (e.g., <location>, <person>, etc.) instead of <entity_update>.\n   - Begin your response with the first entity update immediately, without any preamble.\n\nAll actual results should be listed in <location>, <organization>, <person>, <product>, <art>, <building>, <event>, or <miscellaneous> nodes within the <results> node.\nDo not include any content outside of the <results> tags in your response.\n\nStart processing the entities now, following the instructions and format provided above.",
+  "system-prompt": null,
+  "values": {
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "GENRE": "Sports",
+    "HISTORIES": [],
+    "EVENT_SUMMARY": "A major stadium has introduced smart technology that allows fans to order food, access exclusive content, and navigate the venue through a dedicated smartphone app.",
+    "EVENT_SUMMARY_FOR_NAME": "A major stadium has ",
+    "KEYWORDS": "",
+    "CREATED_AT": 0,
+    "NEXT_IDS": {
+      "person": 2,
+      "organization": 2,
+      "location": 2,
+      "product": 2,
+      "art": 1,
+      "building": 2,
+      "event": 1,
+      "miscellaneous": 1
+    },
+    "PROVIDED_DATE": "",
+    "PERSON": [],
+    "ORGANIZATION": [],
+    "LOCATION": [],
+    "PRODUCT": [],
+    "ART": [],
+    "BUILDING": [],
+    "EVENT": [],
+    "MISCELLANEOUS": [],
+    "PERSONS_XML": "",
+    "ORGANIZATIONS_XML": "",
+    "LOCATIONS_XML": "",
+    "PRODUCTS_XML": "",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "",
+    "EVENTS_XML": "",
+    "MISCELLANEOUSS_XML": "",
+    "NUM_STORYITEMS": 10,
+    "HISTORY_XML": "",
+    "STORY_ITEM": [
+      "On September 15, 2023, the {Westfield Stadium|BUILDING-1} introduced a new smart technology system designed to enhance spectator experience during sporting events.",
+      "{Westfield Stadium|BUILDING-1}, a prominent venue in {Mechtoria|LOCATION-1}, is known for hosting major football and athletics events, attracting thousands of fans annually.",
+      "The {Westfield Stadium|BUILDING-1}, located in the city of {Mechtoria|LOCATION-1}, partnered with a tech firm named {DigTech Innovations|ORGANIZATION-1} to develop a dedicated app named \"{WestFieldConnect|PRODUCT-1}\".",
+      "{DigTech Innovations|ORGANIZATION-1}, a leading technology company in {Mechtoria|LOCATION-1}, has a history of developing innovative solutions for sports and entertainment industries.",
+      "\"{WestFieldConnect|PRODUCT-1}\" allowed fans to order food and beverages directly to their seats, access exclusive player interviews, and navigate the venue efficiently via a detailed virtual map.",
+      "The app's virtual map feature includes real-time updates on seat availability and restroom locations, enhancing the overall navigation experience.",
+      "The technology was integrated into the {Westfield Stadium|BUILDING-1}'s existing infrastructure with minimal disruptions, as it utilized existing Wi-Fi networks and inventory management systems.",
+      "Integration was completed over a three-month period, involving collaboration between {Westfield Stadium|BUILDING-1}'s IT team and {DigTech Innovations|ORGANIZATION-1}'s engineers.",
+      "During the launch day, fans at the stadium's first football match utilized \"{WestFieldConnect|PRODUCT-1}\" to place 357 food and drink orders, effectively reducing service times significantly.",
+      "Service times were reduced by an average of 15 minutes per order, allowing fans to enjoy more of the game without long waits.",
+      "{Jack Thompson|PERSON-1}, Director of Operations at {Westfield Stadium|BUILDING-1}, stated, \"This technology represents a significant step forward in providing fans with a seamless and enjoyable game-day experience.\"",
+      "Thompson highlighted that the app's success was evident in the positive feedback received from fans during the first match.",
+      "Measures were taken to ensure that fans without smartphones could still access services through dedicated kiosks equipped with the \"{WestFieldConnect|PRODUCT-1}\" software.",
+      "These kiosks were strategically placed near entrances and food courts to ensure easy access for all attendees.",
+      "The introduction of \"{WestFieldConnect|PRODUCT-1}\" received mixed reviews from fans, with many praising the convenience while some expressed concerns over data privacy.",
+      "Privacy concerns were addressed by implementing robust data encryption and offering fans clear information on data usage policies.",
+      "{DigTech Innovations|ORGANIZATION-1} announced plans to refine and expand the app's features based on initial fan feedback, with updates expected in the upcoming months.",
+      "Planned updates include personalized notifications for fans' favorite teams and enhanced social media integration for sharing experiences.",
+      "The successful deployment of the smart technology at {Westfield Stadium|BUILDING-1} is anticipated to serve as a model for other venues in the {Mechtoria|LOCATION-1} region considering similar upgrades.",
+      "Other venues in {Mechtoria|LOCATION-1} are already expressing interest in adopting similar technology to improve their spectator services."
+    ],
+    "DATE": "2023-09-15",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 2,
+    "OUTLINE": "On September 15, 2023, the {Westfield Stadium|BUILDING-1} introduced a new smart technology system designed to enhance spectator experience during sporting events.\n{Westfield Stadium|BUILDING-1}, a prominent venue in {Mechtoria|LOCATION-1}, is known for hosting major football and athletics events, attracting thousands of fans annually.\nThe {Westfield Stadium|BUILDING-1}, located in the city of {Mechtoria|LOCATION-1}, partnered with a tech firm named {DigTech Innovations|ORGANIZATION-1} to develop a dedicated app named \"{WestFieldConnect|PRODUCT-1}\".\n{DigTech Innovations|ORGANIZATION-1}, a leading technology company in {Mechtoria|LOCATION-1}, has a history of developing innovative solutions for sports and entertainment industries.\n\"{WestFieldConnect|PRODUCT-1}\" allowed fans to order food and beverages directly to their seats, access exclusive player interviews, and navigate the venue efficiently via a detailed virtual map.\nThe app's virtual map feature includes real-time updates on seat availability and restroom locations, enhancing the overall navigation experience.\nThe technology was integrated into the {Westfield Stadium|BUILDING-1}'s existing infrastructure with minimal disruptions, as it utilized existing Wi-Fi networks and inventory management systems.\nIntegration was completed over a three-month period, involving collaboration between {Westfield Stadium|BUILDING-1}'s IT team and {DigTech Innovations|ORGANIZATION-1}'s engineers.\nDuring the launch day, fans at the stadium's first football match utilized \"{WestFieldConnect|PRODUCT-1}\" to place 357 food and drink orders, effectively reducing service times significantly.\nService times were reduced by an average of 15 minutes per order, allowing fans to enjoy more of the game without long waits.\n{Jack Thompson|PERSON-1}, Director of Operations at {Westfield Stadium|BUILDING-1}, stated, \"This technology represents a significant step forward in providing fans with a seamless and enjoyable game-day experience.\"\nThompson highlighted that the app's success was evident in the positive feedback received from fans during the first match.\nMeasures were taken to ensure that fans without smartphones could still access services through dedicated kiosks equipped with the \"{WestFieldConnect|PRODUCT-1}\" software.\nThese kiosks were strategically placed near entrances and food courts to ensure easy access for all attendees.\nThe introduction of \"{WestFieldConnect|PRODUCT-1}\" received mixed reviews from fans, with many praising the convenience while some expressed concerns over data privacy.\nPrivacy concerns were addressed by implementing robust data encryption and offering fans clear information on data usage policies.\n{DigTech Innovations|ORGANIZATION-1} announced plans to refine and expand the app's features based on initial fan feedback, with updates expected in the upcoming months.\nPlanned updates include personalized notifications for fans' favorite teams and enhanced social media integration for sharing experiences.\nThe successful deployment of the smart technology at {Westfield Stadium|BUILDING-1} is anticipated to serve as a model for other venues in the {Mechtoria|LOCATION-1} region considering similar upgrades.\nOther venues in {Mechtoria|LOCATION-1} are already expressing interest in adopting similar technology to improve their spectator services.",
+    "PRE-CONSISTENCY-NUM-ITEMS": 20,
+    "STORYITEM_XML": "<storyitems>\n<storyitem>On September 15, 2023, the Westfield Stadium introduced a new smart technology system designed to enhance spectator experience during sporting events.</storyitem>\n<storyitem>Westfield Stadium, a prominent venue in Mechtoria, is known for hosting major football and athletics events, attracting thousands of fans annually.</storyitem>\n<storyitem>The Westfield Stadium, located in the city of Mechtoria, partnered with a tech firm named DigTech Innovations to develop a dedicated app named \"WestFieldConnect.\"</storyitem>\n<storyitem>DigTech Innovations, a leading technology company in Mechtoria, has a history of developing innovative solutions for sports and entertainment industries.</storyitem>\n<storyitem>\"WestFieldConnect\" allowed fans to order food and beverages directly to their seats, access exclusive player interviews, and navigate the venue efficiently via a detailed virtual map.</storyitem>\n<storyitem>The app's virtual map feature includes real-time updates on seat availability and restroom locations, enhancing the overall navigation experience.</storyitem>\n<storyitem>The technology was integrated into the Westfield Stadium's existing infrastructure with minimal disruptions, as it utilized existing Wi-Fi networks and inventory management systems.</storyitem>\n<storyitem>Integration was completed over a three-month period, involving collaboration between Westfield Stadium's IT team and DigTech Innovations' engineers.</storyitem>\n<storyitem>During the launch day, fans at the stadium's first football match utilized \"WestFieldConnect\" to place 357 food and drink orders, effectively reducing service times significantly.</storyitem>\n<storyitem>Service times were reduced by an average of 15 minutes per order, allowing fans to enjoy more of the game without long waits.</storyitem>\n<storyitem>Jack Thompson, Director of Operations at Westfield Stadium, stated, \"This technology represents a significant step forward in providing fans with a seamless and enjoyable game-day experience.\"</storyitem>\n<storyitem>Thompson highlighted that the app's success was evident in the positive feedback received from fans during the first match.</storyitem>\n<storyitem>Measures were taken to ensure that fans without smartphones could still access services through dedicated kiosks equipped with the \"WestFieldConnect\" software.</storyitem>\n<storyitem>These kiosks were strategically placed near entrances and food courts to ensure easy access for all attendees.</storyitem>\n<storyitem>The introduction of \"WestFieldConnect\" received mixed reviews from fans, with many praising the convenience while some expressed concerns over data privacy.</storyitem>\n<storyitem>Privacy concerns were addressed by implementing robust data encryption and offering fans clear information on data usage policies.</storyitem>\n<storyitem>DigTech Innovations announced plans to refine and expand the app's features based on initial fan feedback, with updates expected in the upcoming months.</storyitem>\n<storyitem>Planned updates include personalized notifications for fans' favorite teams and enhanced social media integration for sharing experiences.</storyitem>\n<storyitem>The successful deployment of the smart technology at Westfield Stadium is anticipated to serve as a model for other venues in the Mechtoria region considering similar upgrades.</storyitem>\n<storyitem>Other venues in Mechtoria are already expressing interest in adopting similar technology to improve their spectator services.</storyitem>\n<storyitems>",
+    "NEW_PERSON_NAME": [
+      {
+        "name": "Jack Thompson",
+        "old_name": "Jack Thompson"
+      }
+    ],
+    "NEW_ORGANIZATION_NAME": [
+      {
+        "name": "DigTech Innovations",
+        "old_name": "DigTech Innovations"
+      }
+    ],
+    "NEW_LOCATION_NAME": [
+      {
+        "name": "Mechtoria",
+        "old_name": "Mechtoria"
+      }
+    ],
+    "NEW_PRODUCT_NAME": [
+      {
+        "name": "WestFieldConnect",
+        "old_name": "WestFieldConnect"
+      }
+    ],
+    "NEW_ART_NAME": [],
+    "NEW_BUILDING_NAME": [
+      {
+        "name": "Westfield Stadium",
+        "old_name": "Westfield Stadium"
+      }
+    ],
+    "NEW_EVENT_NAME": [],
+    "NEW_MISCELLANEOUS_NAME": [],
+    "CORRECTED_PERSON_NAME": [
+      {
+        "name": "Jack Thompson",
+        "old_name": "Jack Thompson",
+        "id": "PERSON-1"
+      }
+    ],
+    "CORRECTED_ORGANIZATION_NAME": [
+      {
+        "name": "DigTech Innovations",
+        "old_name": "DigTech Innovations",
+        "id": "ORGANIZATION-1"
+      }
+    ],
+    "CORRECTED_LOCATION_NAME": [
+      {
+        "name": "Mechtoria",
+        "old_name": "Mechtoria",
+        "id": "LOCATION-1"
+      }
+    ],
+    "CORRECTED_PRODUCT_NAME": [
+      {
+        "name": "WestFieldConnect",
+        "old_name": "WestFieldConnect",
+        "id": "PRODUCT-1"
+      }
+    ],
+    "CORRECTED_ART_NAME": [],
+    "CORRECTED_BUILDING_NAME": [
+      {
+        "name": "Westfield Stadium",
+        "old_name": "Westfield Stadium",
+        "id": "BUILDING-1"
+      }
+    ],
+    "CORRECTED_EVENT_NAME": [],
+    "CORRECTED_MISCELLANEOUS_NAME": [],
+    "CRITIQUE_ERRORS": {
+      "entity-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-person-nationality": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-person-spouse": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization-headquarters": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product-manufacturer": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art-creator": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art-current_location_country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art-current_location_city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art-current_location_place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building-place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building-city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building-architect": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event-place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event-city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event-organizer": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-person-nationality": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-person-spouse": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-organization-headquarters": [
+        {
+          "errors": [
+            {
+              "key": "headquarters",
+              "obj": {
+                "id": "ORGANIZATION-1",
+                "name": "DigTech Innovations",
+                "type": "company",
+                "description": "DigTech Innovations is a pioneering tech firm based in Mechtoria that specializes in developing cutting-edge technology solutions for the sports and entertainment industries.",
+                "founded": "2010",
+                "headquarters": "7th Avenue Business Park, Mechtoria, Novaria",
+                "industry": "Technology Development",
+                "mission_statement": "To revolutionize the sports and entertainment experience through innovative technology.",
+                "number_of_employees": "250",
+                "annual_revenue": "120 million Novarian Dollars"
+              },
+              "type": "organization"
+            }
+          ],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-location-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-product-manufacturer": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-art-creator": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-art-current_location_country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-art-current_location_city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-art-current_location_place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-building-place": [
+        {
+          "errors": [
+            {
+              "key": "place",
+              "obj": {
+                "id": "BUILDING-1",
+                "name": "Westfield Stadium",
+                "type": "public",
+                "description": "Westfield Stadium is a modern multi-purpose stadium in Mechtoria, renowned for hosting major football and athletics tournaments that draw large crowds.",
+                "place": "Mechtoria, Novaria",
+                "city": "Mechtoria",
+                "country": "Novaria",
+                "architect": "A. J. Fendrick",
+                "year_built": "2015",
+                "height": "50 meters",
+                "floors": "4",
+                "material": "Steel and reinforced concrete",
+                "capacity": "40,000"
+              },
+              "type": "building"
+            }
+          ],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-building-city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-building-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-building-architect": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-event-place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-event-city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-event-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-event-organizer": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ]
+    },
+    "ADJUSTED_PERSONS_XML": "<person><id>PERSON-1</id><name>Jack Thompson</name><old_name>Jack Thompson</old_name></person>",
+    "ADJUSTED_ORGANIZATIONS_XML": "<organization><id>ORGANIZATION-1</id><name>DigTech Innovations</name><old_name>DigTech Innovations</old_name></organization>",
+    "ADJUSTED_LOCATIONS_XML": "<location><id>LOCATION-1</id><name>Mechtoria</name><old_name>Mechtoria</old_name></location>",
+    "ADJUSTED_PRODUCTS_XML": "<product><id>PRODUCT-1</id><name>WestFieldConnect</name><old_name>WestFieldConnect</old_name></product>",
+    "ADJUSTED_ARTS_XML": "",
+    "ADJUSTED_BUILDINGS_XML": "<building><id>BUILDING-1</id><name>Westfield Stadium</name><old_name>Westfield Stadium</old_name></building>",
+    "ADJUSTED_EVENTS_XML": "",
+    "ADJUSTED_MISCELLANEOUSS_XML": "",
+    "USED_PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Jack Thompson"
+      }
+    ],
+    "USED_ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "DigTech Innovations"
+      }
+    ],
+    "USED_LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Mechtoria"
+      }
+    ],
+    "USED_PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "WestFieldConnect"
+      }
+    ],
+    "USED_ART": [],
+    "USED_BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Westfield Stadium"
+      }
+    ],
+    "USED_EVENT": [],
+    "USED_MISCELLANEOUS": [],
+    "USED_PRE-EXISTING-PERSON": [],
+    "USED_NEW-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Jack Thompson",
+        "category": "person"
+      }
+    ],
+    "ALL_USED_PERSON_XML": "<person><category>person</category><id>PERSON-1</id><name>Jack Thompson</name></person>",
+    "USED-NAME-AND-ID-FOR-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Jack Thompson",
+        "category": "person"
+      }
+    ],
+    "USED_PRE-EXISTING-ORGANIZATION": [],
+    "USED_NEW-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "DigTech Innovations",
+        "category": "organization"
+      }
+    ],
+    "ALL_USED_ORGANIZATION_XML": "<organization><category>organization</category><id>ORGANIZATION-1</id><name>DigTech Innovations</name></organization>",
+    "USED-NAME-AND-ID-FOR-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "DigTech Innovations",
+        "category": "organization"
+      }
+    ],
+    "USED_PRE-EXISTING-LOCATION": [],
+    "USED_NEW-LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Mechtoria",
+        "category": "location"
+      }
+    ],
+    "ALL_USED_LOCATION_XML": "<location><category>location</category><id>LOCATION-1</id><name>Mechtoria</name></location>",
+    "USED-NAME-AND-ID-FOR-LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Mechtoria",
+        "category": "location"
+      }
+    ],
+    "USED_PRE-EXISTING-PRODUCT": [],
+    "USED_NEW-PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "WestFieldConnect",
+        "category": "product"
+      }
+    ],
+    "ALL_USED_PRODUCT_XML": "<product><category>product</category><id>PRODUCT-1</id><name>WestFieldConnect</name></product>",
+    "USED-NAME-AND-ID-FOR-PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "WestFieldConnect",
+        "category": "product"
+      }
+    ],
+    "USED_PRE-EXISTING-ART": [],
+    "USED_NEW-ART": [],
+    "ALL_USED_ART_XML": "",
+    "USED-NAME-AND-ID-FOR-ART": [],
+    "USED_PRE-EXISTING-BUILDING": [],
+    "USED_NEW-BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Westfield Stadium",
+        "category": "building"
+      }
+    ],
+    "ALL_USED_BUILDING_XML": "<building><category>building</category><id>BUILDING-1</id><name>Westfield Stadium</name></building>",
+    "USED-NAME-AND-ID-FOR-BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Westfield Stadium",
+        "category": "building"
+      }
+    ],
+    "USED_PRE-EXISTING-EVENT": [],
+    "USED_NEW-EVENT": [],
+    "ALL_USED_EVENT_XML": "",
+    "USED-NAME-AND-ID-FOR-EVENT": [],
+    "USED_PRE-EXISTING-MISCELLANEOUS": [],
+    "USED_NEW-MISCELLANEOUS": [],
+    "ALL_USED_MISCELLANEOUS_XML": "",
+    "USED-NAME-AND-ID-FOR-MISCELLANEOUS": [],
+    "USED_NEW-PERSONS_XML": "<person><category>person</category><id>PERSON-1</id><name>Jack Thompson</name></person>",
+    "USED_NEW-ORGANIZATIONS_XML": "<organization><category>organization</category><id>ORGANIZATION-1</id><name>DigTech Innovations</name></organization>",
+    "USED_NEW-LOCATIONS_XML": "<location><category>location</category><id>LOCATION-1</id><name>Mechtoria</name></location>",
+    "USED_NEW-PRODUCTS_XML": "<product><category>product</category><id>PRODUCT-1</id><name>WestFieldConnect</name></product>",
+    "USED_NEW-ARTS_XML": "",
+    "USED_NEW-BUILDINGS_XML": "<building><category>building</category><id>BUILDING-1</id><name>Westfield Stadium</name></building>",
+    "USED_NEW-EVENTS_XML": "",
+    "USED_NEW-MISCELLANEOUSS_XML": "",
+    "NEW_PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Jack Thompson",
+        "date_of_birth": "1985-06-14",
+        "gender": "Male",
+        "profession": "Director of Operations",
+        "nationality": "Novarian",
+        "education": "Master of Business Administration",
+        "description": "Jack Thompson is an efficient and forward-thinking executive with a passion for sports and technology, driven by a desire to enhance fan engagement.",
+        "height": "1.85",
+        "weight": "85",
+        "eye_color": "Blue",
+        "hair_color": "Brown",
+        "political_affiliation": "Non-partisan",
+        "marital_status": "Married",
+        "spouse": "Lena Thompson"
+      }
+    ],
+    "NEW_ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "DigTech Innovations",
+        "type": "company",
+        "description": "DigTech Innovations is a pioneering tech firm based in Mechtoria that specializes in developing cutting-edge technology solutions for the sports and entertainment industries.",
+        "founded": "2010",
+        "headquarters": "Seventh Avenue Business Park",
+        "industry": "Technology Development",
+        "mission_statement": "To revolutionize the sports and entertainment experience through innovative technology.",
+        "number_of_employees": "250",
+        "annual_revenue": "120 million Novarian Dollars"
+      }
+    ],
+    "NEW_LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Mechtoria",
+        "type": "city",
+        "description": "Mechtoria is a bustling city nestled in the picturesque Qravine region, celebrated for its rich cultural heritage and cutting-edge technology sector.",
+        "population": "540000",
+        "area": "150",
+        "founded": "1772",
+        "climate": "Moderate - all seasons present",
+        "country": "Desmaria",
+        "elevation": "320"
+      }
+    ],
+    "NEW_PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "WestFieldConnect",
+        "type": "software",
+        "description": "WestFieldConnect is a comprehensive digital app that offers seamless access to venue features like food ordering, navigation, and exclusive content for spectators.",
+        "manufacturer": "DigTech Innovations",
+        "release_date": "2023-09-15",
+        "price": "Free to download; in-app purchases",
+        "warranty": "Support and updates for two years"
+      }
+    ],
+    "NEW_ART": [],
+    "NEW_BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Westfield Stadium",
+        "type": "public",
+        "description": "Westfield Stadium is a modern multi-purpose stadium in Mechtoria, renowned for hosting major football and athletics tournaments that draw large crowds.",
+        "place": "Mechtoria in central Desmaria",
+        "city": "Mechtoria",
+        "country": "Desmaria",
+        "architect": "A J Fendrick",
+        "year_built": "2015",
+        "height": "50",
+        "floors": "4",
+        "material": "Steel and reinforced concrete",
+        "capacity": "40000"
+      }
+    ],
+    "NEW_EVENT": [],
+    "NEW_MISCELLANEOUS": [],
+    "FICTIONAL_NEW_PERSONS": [
+      {
+        "id": "PERSON-1",
+        "name": "Jack Thompson",
+        "entity_class": "person",
+        "description": "Jack Thompson is an efficient and forward-thinking executive with a passion for sports and technology, driven by a desire to enhance fan engagement.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [],
+        "date_of_birth": "1985-06-14",
+        "gender": "Male",
+        "profession": "Director of Operations",
+        "nationality": "Novarian",
+        "education": "Master of Business Administration",
+        "height": "1.85",
+        "weight": "85",
+        "eye_color": "Blue",
+        "hair_color": "Brown",
+        "political_affiliation": "Non-partisan",
+        "marital_status": "Married",
+        "spouse": "Lena Thompson"
+      }
+    ],
+    "FICTIONAL_NEW_ORGANIZATIONS": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "DigTech Innovations",
+        "entity_class": "organization",
+        "description": "DigTech Innovations is a pioneering tech firm based in Mechtoria that specializes in developing cutting-edge technology solutions for the sports and entertainment industries.",
+        "type": "company",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [],
+        "founded": "2010",
+        "headquarters": "Seventh Avenue Business Park",
+        "industry": "Technology Development",
+        "mission_statement": "To revolutionize the sports and entertainment experience through innovative technology.",
+        "number_of_employees": "250",
+        "annual_revenue": "120 million Novarian Dollars"
+      }
+    ],
+    "FICTIONAL_NEW_LOCATIONS": [
+      {
+        "id": "LOCATION-1",
+        "name": "Mechtoria",
+        "entity_class": "location",
+        "description": "Mechtoria is a bustling city nestled in the picturesque Qravine region, celebrated for its rich cultural heritage and cutting-edge technology sector.",
+        "type": "city",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [],
+        "population": "540000",
+        "area": "150",
+        "country": "Desmaria",
+        "elevation": "320"
+      }
+    ],
+    "FICTIONAL_NEW_PRODUCTS": [
+      {
+        "id": "PRODUCT-1",
+        "name": "WestFieldConnect",
+        "entity_class": "product",
+        "description": "WestFieldConnect is a comprehensive digital app that offers seamless access to venue features like food ordering, navigation, and exclusive content for spectators.",
+        "type": "software",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [],
+        "manufacturer": "DigTech Innovations",
+        "release_date": "2023-09-15",
+        "price": "Free to download; in-app purchases",
+        "warranty": "Support and updates for two years"
+      }
+    ],
+    "FICTIONAL_NEW_ARTS": [],
+    "FICTIONAL_NEW_BUILDINGS": [
+      {
+        "id": "BUILDING-1",
+        "name": "Westfield Stadium",
+        "entity_class": "building",
+        "description": "Westfield Stadium is a modern multi-purpose stadium in Mechtoria, renowned for hosting major football and athletics tournaments that draw large crowds.",
+        "type": "public",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [],
+        "architect": "A J Fendrick",
+        "year_built": "2015",
+        "height": "50",
+        "floors": "4",
+        "material": "Steel and reinforced concrete",
+        "capacity": "40000"
+      }
+    ],
+    "FICTIONAL_NEW_EVENTS": [],
+    "FICTIONAL_NEW_MISCELLANEOUSS": [],
+    "RESPONSE": "```xml\n<results>\n\n<location>\n  <id>LOCATION-1</id>\n  <name>Mechtoria</name>\n  <type>city</type>\n  <description>Mechtoria is a bustling city nestled in the picturesque Qravine region, celebrated for its rich cultural heritage and cutting-edge technology sector.</description>\n  <population>540000</population>\n  <area>150</area>\n  <founded>1772</founded>\n  <climate>Moderate - all seasons present</climate>\n  <country>Desmaria</country>\n  <elevation>320</elevation>\n</location>\n\n<person>\n  <id>PERSON-1</id>\n  <name>Jack Thompson</name>\n  <date_of_birth>1985-06-14</date_of_birth>\n  <gender>Male</gender>\n  <profession>Director of Operations</profession>\n  <nationality>Novarian</nationality>\n  <education>Master of Business Administration</education>\n  <description>Jack Thompson is an efficient and forward-thinking executive with a passion for sports and technology, driven by a desire to enhance fan engagement.</description>\n  <height>1.85</height>\n  <weight>85</weight>\n  <eye_color>Blue</eye_color>\n  <hair_color>Brown</hair_color>\n  <political_affiliation>Non-partisan</political_affiliation>\n  <marital_status>Married</marital_status>\n  <spouse>Lena Thompson</spouse>\n</person>\n\n<organization>\n  <id>ORGANIZATION-1</id>\n  <name>DigTech Innovations</name>\n  <type>company</type>\n  <description>DigTech Innovations is a pioneering tech firm based in Mechtoria that specializes in developing cutting-edge technology solutions for the sports and entertainment industries.</description>\n  <founded>2010</founded>\n  <headquarters>Seventh Avenue Business Park</headquarters>\n  <industry>Technology Development</industry>\n  <mission_statement>To revolutionize the sports and entertainment experience through innovative technology.</mission_statement>\n  <number_of_employees>250</number_of_employees>\n  <annual_revenue>120 million Novarian Dollars</annual_revenue>\n</organization>\n\n<product>\n  <id>PRODUCT-1</id>\n  <name>WestFieldConnect</name>\n  <type>software</type>\n  <description>WestFieldConnect is a comprehensive digital app that offers seamless access to venue features like food ordering, navigation, and exclusive content for spectators.</description>\n  <manufacturer>DigTech Innovations</manufacturer>\n  <release_date>2023-09-15</release_date>\n  <price>Free to download; in-app purchases</price>\n  <warranty>Support and updates for two years</warranty>\n</product>\n\n<building>\n  <id>BUILDING-1</id>\n  <name>Westfield Stadium</name>\n  <type>public</type>\n  <description>Westfield Stadium is a modern multi-purpose stadium in Mechtoria, renowned for hosting major football and athletics tournaments that draw large crowds.</description>\n  <place>Mechtoria in central Desmaria</place>\n  <city>Mechtoria</city>\n  <country>Desmaria</country>\n  <architect>A J Fendrick</architect>\n  <year_built>2015</year_built>\n  <height>50</height>\n  <floors>4</floors>\n  <material>Steel and reinforced concrete</material>\n  <capacity>40000</capacity>\n</building>\n\n</results>\n```",
+    "USED-ALL-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Jack Thompson",
+        "entity_class": "person",
+        "description": "Jack Thompson is an efficient and forward-thinking executive with a passion for sports and technology, driven by a desire to enhance fan engagement.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [],
+        "date_of_birth": "1985-06-14",
+        "gender": "Male",
+        "profession": "Director of Operations",
+        "nationality": "Novarian",
+        "education": "Master of Business Administration",
+        "height": "1.85",
+        "weight": "85",
+        "eye_color": "Blue",
+        "hair_color": "Brown",
+        "political_affiliation": "Non-partisan",
+        "marital_status": "Married",
+        "spouse": "Lena Thompson"
+      }
+    ],
+    "USED_PERSON_XML": "<person><created_at>0</created_at><date_of_birth>1985-06-14</date_of_birth><description>Jack Thompson is an efficient and forward-thinking executive with a passion for sports and technology, driven by a desire to enhance fan engagement.</description><education>Master of Business Administration</education><entity_class>person</entity_class><eye_color>Blue</eye_color><gender>Male</gender><hair_color>Brown</hair_color><height>1.85</height><history></history><id>PERSON-1</id><last_updated>2023-09-15</last_updated><marital_status>Married</marital_status><name>Jack Thompson</name><nationality>Novarian</nationality><political_affiliation>Non-partisan</political_affiliation><profession>Director of Operations</profession><spouse>Lena Thompson</spouse><type>None</type><weight>85</weight></person>",
+    "USED-ALL-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "DigTech Innovations",
+        "entity_class": "organization",
+        "description": "DigTech Innovations is a pioneering tech firm based in Mechtoria that specializes in developing cutting-edge technology solutions for the sports and entertainment industries.",
+        "type": "company",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [],
+        "founded": "2010",
+        "headquarters": "Seventh Avenue Business Park",
+        "industry": "Technology Development",
+        "mission_statement": "To revolutionize the sports and entertainment experience through innovative technology.",
+        "number_of_employees": "250",
+        "annual_revenue": "120 million Novarian Dollars"
+      }
+    ],
+    "USED_ORGANIZATION_XML": "<organization><annual_revenue>120 million Novarian Dollars</annual_revenue><created_at>0</created_at><description>DigTech Innovations is a pioneering tech firm based in Mechtoria that specializes in developing cutting-edge technology solutions for the sports and entertainment industries.</description><entity_class>organization</entity_class><founded>2010</founded><headquarters>Seventh Avenue Business Park</headquarters><history></history><id>ORGANIZATION-1</id><industry>Technology Development</industry><last_updated>2023-09-15</last_updated><mission_statement>To revolutionize the sports and entertainment experience through innovative technology.</mission_statement><name>DigTech Innovations</name><number_of_employees>250</number_of_employees><type>company</type></organization>",
+    "USED-ALL-LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Mechtoria",
+        "entity_class": "location",
+        "description": "Mechtoria is a bustling city nestled in the picturesque Qravine region, celebrated for its rich cultural heritage and cutting-edge technology sector.",
+        "type": "city",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [],
+        "population": "540000",
+        "area": "150",
+        "country": "Desmaria",
+        "elevation": "320"
+      }
+    ],
+    "USED_LOCATION_XML": "<location><area>150</area><country>Desmaria</country><created_at>0</created_at><description>Mechtoria is a bustling city nestled in the picturesque Qravine region, celebrated for its rich cultural heritage and cutting-edge technology sector.</description><elevation>320</elevation><entity_class>location</entity_class><history></history><id>LOCATION-1</id><last_updated>2023-09-15</last_updated><name>Mechtoria</name><population>540000</population><type>city</type></location>",
+    "USED-ALL-PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "WestFieldConnect",
+        "entity_class": "product",
+        "description": "WestFieldConnect is a comprehensive digital app that offers seamless access to venue features like food ordering, navigation, and exclusive content for spectators.",
+        "type": "software",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [],
+        "manufacturer": "DigTech Innovations",
+        "release_date": "2023-09-15",
+        "price": "Free to download; in-app purchases",
+        "warranty": "Support and updates for two years"
+      }
+    ],
+    "USED_PRODUCT_XML": "<product><created_at>0</created_at><description>WestFieldConnect is a comprehensive digital app that offers seamless access to venue features like food ordering, navigation, and exclusive content for spectators.</description><entity_class>product</entity_class><history></history><id>PRODUCT-1</id><last_updated>2023-09-15</last_updated><manufacturer>DigTech Innovations</manufacturer><name>WestFieldConnect</name><price>Free to download; in-app purchases</price><release_date>2023-09-15</release_date><type>software</type><warranty>Support and updates for two years</warranty></product>",
+    "USED-ALL-ART": [],
+    "USED_ART_XML": "",
+    "USED-ALL-BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Westfield Stadium",
+        "entity_class": "building",
+        "description": "Westfield Stadium is a modern multi-purpose stadium in Mechtoria, renowned for hosting major football and athletics tournaments that draw large crowds.",
+        "type": "public",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [],
+        "architect": "A J Fendrick",
+        "year_built": "2015",
+        "height": "50",
+        "floors": "4",
+        "material": "Steel and reinforced concrete",
+        "capacity": "40000"
+      }
+    ],
+    "USED_BUILDING_XML": "<building><architect>A J Fendrick</architect><capacity>40000</capacity><created_at>0</created_at><description>Westfield Stadium is a modern multi-purpose stadium in Mechtoria, renowned for hosting major football and athletics tournaments that draw large crowds.</description><entity_class>building</entity_class><floors>4</floors><height>50</height><history></history><id>BUILDING-1</id><last_updated>2023-09-15</last_updated><material>Steel and reinforced concrete</material><name>Westfield Stadium</name><type>public</type><year_built>2015</year_built></building>",
+    "USED-ALL-EVENT": [],
+    "USED_EVENT_XML": "",
+    "USED-ALL-MISCELLANEOUS": [],
+    "USED_MISCELLANEOUS_XML": "",
+    "USED_ENTITIES": [
+      {
+        "id": "PERSON-1",
+        "name": "Jack Thompson",
+        "entity_type": "person",
+        "new": true
+      },
+      {
+        "id": "ORGANIZATION-1",
+        "name": "DigTech Innovations",
+        "entity_type": "organization",
+        "new": true
+      },
+      {
+        "id": "LOCATION-1",
+        "name": "Mechtoria",
+        "entity_type": "location",
+        "new": true
+      },
+      {
+        "id": "PRODUCT-1",
+        "name": "WestFieldConnect",
+        "entity_type": "product",
+        "new": true
+      },
+      {
+        "id": "BUILDING-1",
+        "name": "Westfield Stadium",
+        "entity_type": "building",
+        "new": true
+      }
+    ]
+  }
+}

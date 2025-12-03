@@ -1,0 +1,2048 @@
+{
+  "genre": "Sports",
+  "events": [
+    {
+      "created_at": 0,
+      "summary": "Researchers have developed an augmented reality app that enhances home viewing experiences by overlaying real-time statistics and player tracking during basketball games.",
+      "outline": [
+        {
+          "sentence": "On April 15, 2025, {Celerisoft Inc.|ORGANIZATION-1} unveiled an augmented reality app called \"{HoloCourt|PRODUCT-1}\" during a press conference at the {Innovator's Hall|BUILDING-1} in the city of {Techville|LOCATION-1}.",
+          "id": "N0-S0",
+          "pos": 0
+        },
+        {
+          "sentence": "The {Innovator's Hall|BUILDING-1}, known for hosting cutting-edge technology unveilings, was filled with industry experts and media representatives eager to witness the latest innovation.",
+          "id": "N0-S1",
+          "pos": 1
+        },
+        {
+          "sentence": "The app, developed by a talented team led by {Sarah Carson|PERSON-1}, an augmented reality expert, is designed to enhance home viewers' experience during basketball games by overlaying real-time statistics and player tracking.",
+          "id": "N0-S2",
+          "pos": 2
+        },
+        {
+          "sentence": "{Sarah Carson|PERSON-1}, who holds a Ph.D. in Computer Science with a focus on augmented reality, has previously worked on several high-profile projects in the tech industry.",
+          "id": "N0-S3",
+          "pos": 3
+        },
+        {
+          "sentence": "{HoloCourt|PRODUCT-1} successfully integrates with existing televisions and smart glasses, allowing users to experience dynamic graphics and stats as interactive overlays during live basketball broadcasts.",
+          "id": "N0-S4",
+          "pos": 4
+        },
+        {
+          "sentence": "The integration process involves a simple plug-and-play setup, ensuring compatibility with a wide range of television models and popular smart glasses brands.",
+          "id": "N0-S5",
+          "pos": 5
+        },
+        {
+          "sentence": "During its public demonstration, competitor basketball enthusiast {Jonathan Mills|PERSON-2} provided feedback, noting the seamless integration of player movement tracking and statistical overlays.",
+          "id": "N0-S6",
+          "pos": 6
+        },
+        {
+          "sentence": "{Jonathan Mills|PERSON-2}, a well-known figure in the basketball community, praised the app for its accuracy in tracking player movements and the clarity of the statistical data presented.",
+          "id": "N0-S7",
+          "pos": 7
+        },
+        {
+          "sentence": "The app was praised by sports journalist {Mia Thompson|PERSON-3} for its innovative approach to enriching at-home sports viewing, particularly for casual fans who desire a deeper understanding of game dynamics.",
+          "id": "N0-S8",
+          "pos": 8
+        },
+        {
+          "sentence": "{Mia Thompson|PERSON-3} highlighted that {HoloCourt|PRODUCT-1}'s user-friendly interface makes it accessible even to those who are not tech-savvy, enhancing the overall viewing experience.",
+          "id": "N0-S9",
+          "pos": 9
+        },
+        {
+          "sentence": "{HoloCourt|PRODUCT-1} also offers customizable features, allowing users to personalize their experience by selecting which statistics and tracking data to display during a game.",
+          "id": "N0-S10",
+          "pos": 10
+        },
+        {
+          "sentence": "Users can choose from a variety of data points, such as player speed, shooting accuracy, and defensive metrics, to tailor the information to their preferences.",
+          "id": "N0-S11",
+          "pos": 11
+        },
+        {
+          "sentence": "{HoloCourt|PRODUCT-1} development received support from the {Sports Innovation Fund|ORGANIZATION-2}, which provided grants to promote technological advancements in sports entertainment.",
+          "id": "N0-S12",
+          "pos": 12
+        },
+        {
+          "sentence": "The {Sports Innovation Fund|ORGANIZATION-2}, established to foster innovation in sports technology, has previously supported projects that enhance fan engagement and athlete performance.",
+          "id": "N0-S13",
+          "pos": 13
+        },
+        {
+          "sentence": "Celebrations held at {Techville|LOCATION-1}'s {City Sports Arena|BUILDING-2} saw local basketball teams utilize {HoloCourt|PRODUCT-1} to analyze upcoming opponents, adding a layer of strategic benefit to the app.",
+          "id": "N0-S14",
+          "pos": 14
+        },
+        {
+          "sentence": "Teams like the {Techville Titans|ORGANIZATION-3} and the {Techville Tigers|ORGANIZATION-4} used {HoloCourt|PRODUCT-1} to study opponent strategies and player tendencies, gaining insights that could influence game plans.",
+          "id": "N0-S15",
+          "pos": 15
+        },
+        {
+          "sentence": "Despite initial excitement, some critics, like tech analyst {Liam Greene|PERSON-4}, warned that over-reliance on the app might distract viewers from the live action, urging balanced use during broadcasts.",
+          "id": "N0-S16",
+          "pos": 16
+        },
+        {
+          "sentence": "{Liam Greene|PERSON-4} suggested that while {HoloCourt|PRODUCT-1} offers valuable insights, viewers should be mindful not to let the digital overlays overshadow the live game experience.",
+          "id": "N0-S17",
+          "pos": 17
+        },
+        {
+          "sentence": "Following the launch, {Celerisoft Inc.|ORGANIZATION-1} announced an upcoming partnership with local sports bars in {Techville|LOCATION-1} to offer live demo experiences, aiming to broaden the app's user base.",
+          "id": "N0-S18",
+          "pos": 18
+        },
+        {
+          "sentence": "The partnership includes a series of promotional events where patrons can try {HoloCourt|PRODUCT-1} for free, with the goal of increasing its adoption among sports enthusiasts in the community.",
+          "id": "N0-S19",
+          "pos": 19
+        }
+      ],
+      "used_entities": [
+        {
+          "id": "PERSON-1",
+          "name": "Sarah Carson",
+          "entity_type": "person",
+          "new": true
+        },
+        {
+          "id": "PERSON-2",
+          "name": "Jonathan Mills",
+          "entity_type": "person",
+          "new": true
+        },
+        {
+          "id": "PERSON-3",
+          "name": "Mia Thompson",
+          "entity_type": "person",
+          "new": true
+        },
+        {
+          "id": "PERSON-4",
+          "name": "Liam Greene",
+          "entity_type": "person",
+          "new": true
+        },
+        {
+          "id": "ORGANIZATION-1",
+          "name": "Celerisoft Inc.",
+          "entity_type": "organization",
+          "new": true
+        },
+        {
+          "id": "ORGANIZATION-2",
+          "name": "Sports Innovation Fund",
+          "entity_type": "organization",
+          "new": true
+        },
+        {
+          "id": "ORGANIZATION-3",
+          "name": "Techville Titans",
+          "entity_type": "organization",
+          "new": true
+        },
+        {
+          "id": "ORGANIZATION-4",
+          "name": "Techville Tigers",
+          "entity_type": "organization",
+          "new": true
+        },
+        {
+          "id": "LOCATION-1",
+          "name": "Techville",
+          "entity_type": "location",
+          "new": true
+        },
+        {
+          "id": "PRODUCT-1",
+          "name": "HoloCourt",
+          "entity_type": "product",
+          "new": true
+        },
+        {
+          "id": "BUILDING-1",
+          "name": "Innovator's Hall",
+          "entity_type": "building",
+          "new": true
+        },
+        {
+          "id": "BUILDING-2",
+          "name": "City Sports Arena",
+          "entity_type": "building",
+          "new": true
+        }
+      ],
+      "parent": null,
+      "continuation": {
+        "summary": "The Techville Titans began trialing HoloCourt in drills without significant improvements in performance yet.",
+        "last_date": "2025-04-15",
+        "continuation_date": "2025-05-10"
+      },
+      "date": "2025-04-15"
+    },
+    {
+      "created_at": 1,
+      "summary": "The Techville Titans began trialing HoloCourt in drills without significant improvements in performance yet.",
+      "outline": [
+        {
+          "sentence": "The {Techville Titans|ORGANIZATION-3} held their first practice session utilizing {HoloCourt|PRODUCT-1} at {Techville Sports Complex|BUILDING-3} for analyzing offensive plays.",
+          "id": "N1-S0",
+          "pos": 0
+        },
+        {
+          "sentence": "The {Techville Sports Complex|BUILDING-3}, known for its state-of-the-art facilities, provided an ideal environment for integrating advanced technology like {HoloCourt|PRODUCT-1} into the team's practice routines.",
+          "id": "N1-S1",
+          "pos": 1
+        },
+        {
+          "sentence": "During the practice, head coach {Emily Rivers|PERSON-5} noted that while the data from {HoloCourt|PRODUCT-1} provided new insights, immediate improvements in performance were not evident.",
+          "id": "N1-S2",
+          "pos": 2
+        },
+        {
+          "sentence": "{Emily Rivers|PERSON-5}, who has been with the {Techville Titans|ORGANIZATION-3} for over a decade, emphasized the importance of patience as the team adapts to the new technology.",
+          "id": "N1-S3",
+          "pos": 3
+        },
+        {
+          "sentence": "Rookie forward, {Alex Johnson|PERSON-6}, expressed enthusiasm about {HoloCourt|PRODUCT-1}, highlighting its potential to give players better insights into their gameplay during post-practice reviews.",
+          "id": "N1-S4",
+          "pos": 4
+        },
+        {
+          "sentence": "{Alex Johnson|PERSON-6}, known for his agility and quick reflexes, mentioned that the real-time feedback from {HoloCourt|PRODUCT-1} could help him refine his shooting technique.",
+          "id": "N1-S5",
+          "pos": 5
+        },
+        {
+          "sentence": "Defensive coordinator {Kevin Smith|PERSON-7} remained cautious, emphasizing that real game scenarios would be the true test for {HoloCourt|PRODUCT-1}'s effectiveness in enhancing plays.",
+          "id": "N1-S6",
+          "pos": 6
+        },
+        {
+          "sentence": "{Kevin Smith|PERSON-7}, who has a reputation for his strategic defensive setups, suggested that the team should focus on integrating {HoloCourt|PRODUCT-1}'s insights with their existing defensive drills.",
+          "id": "N1-S7",
+          "pos": 7
+        },
+        {
+          "sentence": "The drill included the use of {HoloCourt|PRODUCT-1}'s real-time statistical feedback to adjust shooting approaches, although the technical setup required some time for players to acclimate.",
+          "id": "N1-S8",
+          "pos": 8
+        },
+        {
+          "sentence": "Players had to familiarize themselves with the interface, which involved learning to interpret the overlay data without disrupting their natural gameplay rhythm.",
+          "id": "N1-S9",
+          "pos": 9
+        },
+        {
+          "sentence": "Team psychologist {Dr. Emma Fields|PERSON-8} mentioned the mental adjustment required for players to balance reliance on digital tools with their intuitive gameplay strategies.",
+          "id": "N1-S10",
+          "pos": 10
+        },
+        {
+          "sentence": "{Dr. Emma Fields|PERSON-8}, who has been working with the team to enhance their mental resilience, highlighted the importance of maintaining focus amidst the influx of digital information.",
+          "id": "N1-S11",
+          "pos": 11
+        },
+        {
+          "sentence": "Meanwhile, assistant coach {Lara Thompson|PERSON-9} worked on integrating {HoloCourt|PRODUCT-1}'s analytics into the team's existing strategy by combining player-tracking data with live coaching feedback.",
+          "id": "N1-S12",
+          "pos": 12
+        },
+        {
+          "sentence": "{Lara Thompson|PERSON-9}, known for her analytical approach to coaching, was developing a hybrid strategy that leveraged both traditional coaching methods and {HoloCourt|PRODUCT-1}'s advanced analytics.",
+          "id": "N1-S13",
+          "pos": 13
+        },
+        {
+          "sentence": "The city\u2019s local sports journalist, {Sam Turner|PERSON-12}, covered the practice session, focusing on how Techville\u2019s pride local team was embracing technology to evolve.",
+          "id": "N1-S14",
+          "pos": 14
+        },
+        {
+          "sentence": "In his article, {Sam Turner|PERSON-12} highlighted the community's excitement about the {Techville Titans|ORGANIZATION-3}'s innovative approach and the potential impact on local sports culture.",
+          "id": "N1-S15",
+          "pos": 15
+        },
+        {
+          "sentence": "Interspersed in the session were discussions by players about how the overlaid statistics could be used to refine individual practice regimens.",
+          "id": "N1-S16",
+          "pos": 16
+        },
+        {
+          "sentence": "Players like point guard {Michael Lee|PERSON-10} discussed how they could use the data to tailor their training sessions, focusing on areas needing improvement.",
+          "id": "N1-S17",
+          "pos": 17
+        },
+        {
+          "sentence": "Following the practice, {Celerisoft Inc.|ORGANIZATION-1} representative, {Daniel Black|PERSON-11}, held a meeting with {Techville Titans|ORGANIZATION-3}'s management to discuss further customizations of {HoloCourt|PRODUCT-1} based on the team's feedback.",
+          "id": "N1-S18",
+          "pos": 18
+        },
+        {
+          "sentence": "{Daniel Black|PERSON-11}, who has been instrumental in the app's development, assured the team that {Celerisoft Inc.|ORGANIZATION-1} was committed to refining {HoloCourt|PRODUCT-1} to better meet the {Techville Titans|ORGANIZATION-3}'s needs.",
+          "id": "N1-S19",
+          "pos": 19
+        }
+      ],
+      "used_entities": [
+        {
+          "id": "PERSON-5",
+          "name": "Emily Rivers",
+          "entity_type": "person",
+          "new": true
+        },
+        {
+          "id": "PERSON-6",
+          "name": "Alex Johnson",
+          "entity_type": "person",
+          "new": true
+        },
+        {
+          "id": "PERSON-7",
+          "name": "Kevin Smith",
+          "entity_type": "person",
+          "new": true
+        },
+        {
+          "id": "PERSON-8",
+          "name": "Dr. Emma Fields",
+          "entity_type": "person",
+          "new": true
+        },
+        {
+          "id": "PERSON-9",
+          "name": "Lara Thompson",
+          "entity_type": "person",
+          "new": true
+        },
+        {
+          "id": "PERSON-12",
+          "name": "Sam Turner",
+          "entity_type": "person",
+          "new": true
+        },
+        {
+          "id": "PERSON-11",
+          "name": "Daniel Black",
+          "entity_type": "person",
+          "new": true
+        },
+        {
+          "id": "PERSON-10",
+          "name": "Michael Lee",
+          "entity_type": "person",
+          "new": true
+        },
+        {
+          "id": "ORGANIZATION-1",
+          "name": "Celerisoft Inc.",
+          "entity_type": "organization",
+          "new": false
+        },
+        {
+          "id": "ORGANIZATION-3",
+          "name": "Techville Titans",
+          "entity_type": "organization",
+          "new": false
+        },
+        {
+          "id": "PRODUCT-1",
+          "name": "HoloCourt",
+          "entity_type": "product",
+          "new": false
+        },
+        {
+          "id": "BUILDING-3",
+          "name": "Techville Sports Complex",
+          "entity_type": "building",
+          "new": true
+        }
+      ],
+      "parent": 0,
+      "continuation": {
+        "summary": "The Techville Titans see minimal change in their training regimen with HoloCourt, as traditional methods remain largely unchanged.",
+        "last_date": "2025-05-10",
+        "continuation_date": "2025-06-01"
+      },
+      "date": "2025-05-10"
+    },
+    {
+      "created_at": 2,
+      "summary": "The Techville Titans see minimal change in their training regimen with HoloCourt, as traditional methods remain largely unchanged.",
+      "outline": [
+        {
+          "sentence": "On June 1, 2025, the {Techville Titans|ORGANIZATION-3} held a basketball practice session at {Techville Sports Complex|BUILDING-3}, using {HoloCourt|PRODUCT-1} as part of their training routine.",
+          "id": "N2-S0",
+          "pos": 0
+        },
+        {
+          "sentence": "The {Techville Sports Complex|BUILDING-3}, known for its state-of-the-art facilities, provided an ideal environment for integrating advanced technology like {HoloCourt|PRODUCT-1} into the team's practice routines.",
+          "id": "N2-S1",
+          "pos": 1
+        },
+        {
+          "sentence": "Head Coach {Emily Rivers|PERSON-5} reviewed various traditional drills and incorporated minor elements of {HoloCourt|PRODUCT-1} data, primarily for strategic review sessions post-practice.",
+          "id": "N2-S2",
+          "pos": 2
+        },
+        {
+          "sentence": "{Emily Rivers|PERSON-5}, who has been with the {Techville Titans|ORGANIZATION-3} for over a decade, emphasized the importance of patience as the team adapts to the new technology.",
+          "id": "N2-S3",
+          "pos": 3
+        },
+        {
+          "sentence": "Rookie forward {Alex Johnson|PERSON-6} engaged with {HoloCourt|PRODUCT-1} analytics to review his shooting form and attempted to apply the suggested modifications during drills.",
+          "id": "N2-S4",
+          "pos": 4
+        },
+        {
+          "sentence": "{Alex Johnson|PERSON-6}, known for his agility and quick reflexes, mentioned that the real-time feedback from {HoloCourt|PRODUCT-1} could help him refine his shooting technique.",
+          "id": "N2-S5",
+          "pos": 5
+        },
+        {
+          "sentence": "Defensive Coordinator {Kevin Smith|PERSON-7} observed the practice with a cautious approach, focusing on maintaining the rigor of existing defensive formations.",
+          "id": "N2-S6",
+          "pos": 6
+        },
+        {
+          "sentence": "{Kevin Smith|PERSON-7}, who has a reputation for his strategic defensive setups, suggested that the team should focus on integrating {HoloCourt|PRODUCT-1}'s insights with their existing defensive drills.",
+          "id": "N2-S7",
+          "pos": 7
+        },
+        {
+          "sentence": "Assistant Coach {Lara Thompson|PERSON-9} continued refining the hybrid strategy, balancing {HoloCourt|PRODUCT-1}'s analytics with conventional coaching feedback.",
+          "id": "N2-S8",
+          "pos": 8
+        },
+        {
+          "sentence": "{Lara Thompson|PERSON-9}, known for her analytical approach to coaching, was developing a hybrid strategy that leveraged both traditional coaching methods and {HoloCourt|PRODUCT-1}'s advanced analytics.",
+          "id": "N2-S9",
+          "pos": 9
+        },
+        {
+          "sentence": "Team psychologist {Dr. Emma Fields|PERSON-8} conducted sessions to help players adapt mentally to the integration of technological tools in their training regimen.",
+          "id": "N2-S10",
+          "pos": 10
+        },
+        {
+          "sentence": "{Dr. Emma Fields|PERSON-8}, who has been working with the team to enhance their mental resilience, highlighted the importance of maintaining focus amidst the influx of digital information.",
+          "id": "N2-S11",
+          "pos": 11
+        },
+        {
+          "sentence": "Sports journalist {Sam Turner|PERSON-12} visited the practice session to document the limited changes and noted the team's emphasis on traditional techniques.",
+          "id": "N2-S12",
+          "pos": 12
+        },
+        {
+          "sentence": "In his article, {Sam Turner|PERSON-12} highlighted the community's excitement about the {Techville Titans|ORGANIZATION-3}'s innovative approach and the potential impact on local sports culture.",
+          "id": "N2-S13",
+          "pos": 13
+        },
+        {
+          "sentence": "{Daniel Black|PERSON-11} of {Celerisoft Inc.|ORGANIZATION-1} attended a feedback session with {Techville Titans|ORGANIZATION-3}'s management, discussing possible future enhancements to {HoloCourt|PRODUCT-1} based on the team's continued use.",
+          "id": "N2-S14",
+          "pos": 14
+        },
+        {
+          "sentence": "{Daniel Black|PERSON-11}, a representative from {Celerisoft Inc.|ORGANIZATION-1}, assured the team that {Celerisoft Inc.|ORGANIZATION-1} was committed to refining {HoloCourt|PRODUCT-1} to better meet the {Techville Titans|ORGANIZATION-3}'s needs.",
+          "id": "N2-S15",
+          "pos": 15
+        },
+        {
+          "sentence": "Point guard {Michael Lee|PERSON-10} expressed his view that while {HoloCourt|PRODUCT-1} offers valuable insights, it complements rather than replaces established methods.",
+          "id": "N2-S16",
+          "pos": 16
+        },
+        {
+          "sentence": "{Michael Lee|PERSON-10}, a key player known for his leadership on the court, discussed using {HoloCourt|PRODUCT-1} data to tailor his training sessions, focusing on areas needing improvement.",
+          "id": "N2-S17",
+          "pos": 17
+        },
+        {
+          "sentence": "The practice concluded with emphasis on incremental improvements, demonstrating that integration of {HoloCourt|PRODUCT-1} would be a gradual process.",
+          "id": "N2-S18",
+          "pos": 18
+        }
+      ],
+      "used_entities": [
+        {
+          "id": "PERSON-5",
+          "name": "Emily Rivers",
+          "entity_type": "person",
+          "new": false
+        },
+        {
+          "id": "PERSON-6",
+          "name": "Alex Johnson",
+          "entity_type": "person",
+          "new": false
+        },
+        {
+          "id": "PERSON-7",
+          "name": "Kevin Smith",
+          "entity_type": "person",
+          "new": false
+        },
+        {
+          "id": "PERSON-8",
+          "name": "Dr. Emma Fields",
+          "entity_type": "person",
+          "new": false
+        },
+        {
+          "id": "PERSON-9",
+          "name": "Lara Thompson",
+          "entity_type": "person",
+          "new": false
+        },
+        {
+          "id": "PERSON-12",
+          "name": "Sam Turner",
+          "entity_type": "person",
+          "new": false
+        },
+        {
+          "id": "PERSON-11",
+          "name": "Daniel Black",
+          "entity_type": "person",
+          "new": false
+        },
+        {
+          "id": "PERSON-10",
+          "name": "Michael Lee",
+          "entity_type": "person",
+          "new": false
+        },
+        {
+          "id": "ORGANIZATION-1",
+          "name": "Celerisoft Inc.",
+          "entity_type": "organization",
+          "new": false
+        },
+        {
+          "id": "ORGANIZATION-3",
+          "name": "Techville Titans",
+          "entity_type": "organization",
+          "new": false
+        },
+        {
+          "id": "PRODUCT-1",
+          "name": "HoloCourt",
+          "entity_type": "product",
+          "new": false
+        },
+        {
+          "id": "BUILDING-3",
+          "name": "Techville Sports Complex",
+          "entity_type": "building",
+          "new": false
+        }
+      ],
+      "parent": 1,
+      "continuation": {
+        "summary": "On June 30, the Techville Basketball Association rules that all teams must use HoloCourt, drastically changing game strategies across the league.",
+        "last_date": "2025-06-01",
+        "continuation_date": "2025-06-30"
+      },
+      "date": "2025-06-01"
+    }
+  ],
+  "elements": {
+    "next_ids": {
+      "person": 13,
+      "organization": 5,
+      "location": 2,
+      "product": 2,
+      "art": 1,
+      "building": 4,
+      "event": 1,
+      "miscellaneous": 1
+    },
+    "snapshots": [
+      {
+        "created_at": 0,
+        "date": "2025-04-15",
+        "entities": {
+          "person": [
+            {
+              "id": "PERSON-1",
+              "name": "Sarah Carson",
+              "entity_class": "person",
+              "description": "Sarah is celebrated for her innovative approach to augmented reality, aiming to transform everyday experiences.",
+              "type": null,
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "Sarah Carson led the development of HoloCourt, an augmented reality app that enhances basketball viewing experiences.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "date_of_birth": "1985-09-12",
+              "gender": "Female",
+              "profession": "Augmented Reality Developer",
+              "nationality": "Newlandian",
+              "education": "PhD in Computer Science",
+              "height": "5'7\"",
+              "weight": "135 pounds",
+              "eye_color": "blue",
+              "hair_color": "brown",
+              "political_affiliation": "Independent",
+              "marital_status": "Married",
+              "spouse": "Mark Carlson"
+            },
+            {
+              "id": "PERSON-2",
+              "name": "Jonathan Mills",
+              "entity_class": "person",
+              "description": "Jonathan is respected in the basketball world for his deep insights into the sport.",
+              "type": null,
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "Jonathan Mills provided positive feedback on HoloCourt's seamless integration and accuracy during its public demonstration.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "date_of_birth": "1980-04-21",
+              "gender": "Male",
+              "profession": "Basketball Analyst",
+              "nationality": "Atlantican",
+              "education": "Masters in Sports Management",
+              "height": "6'2\"",
+              "weight": "190 pounds",
+              "eye_color": "green",
+              "hair_color": "dark brown",
+              "political_affiliation": "Progressive Movement",
+              "marital_status": "Divorced"
+            },
+            {
+              "id": "PERSON-3",
+              "name": "Mia Thompson",
+              "entity_class": "person",
+              "description": "Mia's engaging sports reports have garnered a wide following for their depth and enthusiasm.",
+              "type": null,
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "Mia Thompson praised HoloCourt for its innovative approach to enriching at-home sports viewing and highlighted its user-friendly interface.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "date_of_birth": "1982-11-30",
+              "gender": "Female",
+              "profession": "Sports Journalist",
+              "nationality": "Terran",
+              "education": "Bachelors in Journalism",
+              "height": "5'5\"",
+              "weight": "130 pounds",
+              "eye_color": "hazel",
+              "hair_color": "blonde",
+              "political_affiliation": "Centrist",
+              "marital_status": "Single"
+            },
+            {
+              "id": "PERSON-4",
+              "name": "Liam Greene",
+              "entity_class": "person",
+              "description": "Liam is known for his balanced evaluations of new tech trends, focusing on user-centred design.",
+              "type": null,
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "Liam Greene cautioned against over-reliance on HoloCourt, suggesting balanced use to avoid distraction from live games.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "date_of_birth": "1979-07-15",
+              "gender": "Male",
+              "profession": "Tech Analyst",
+              "nationality": "Newlandian",
+              "education": "Masters in Information Systems",
+              "height": "6'0\"",
+              "weight": "170 pounds",
+              "eye_color": "grey",
+              "hair_color": "black",
+              "political_affiliation": "Republican",
+              "marital_status": "Married",
+              "spouse": "Hannah Greene"
+            }
+          ],
+          "organization": [
+            {
+              "id": "ORGANIZATION-1",
+              "name": "Celerisoft Inc.",
+              "entity_class": "organization",
+              "description": "Celerisoft Inc. is a leader in innovative software development, focusing on interactive and user-friendly tech solutions.",
+              "type": "company",
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "Celerisoft Inc. unveiled the augmented reality app HoloCourt and announced a partnership with local sports bars in Techville to broaden its user base.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "founded": "2005",
+              "headquarters": "Techville TechPark",
+              "industry": "Software Development",
+              "mission_statement": "To pioneer groundbreaking software innovations.",
+              "number_of_employees": "350",
+              "annual_revenue": "$42 million"
+            },
+            {
+              "id": "ORGANIZATION-2",
+              "name": "Sports Innovation Fund",
+              "entity_class": "organization",
+              "description": "The Sports Innovation Fund promotes technological advancements within sports, aiming to enrich fan engagement and athlete performance.",
+              "type": "non-profit",
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "The Sports Innovation Fund supported the development of HoloCourt, which aims to enhance fan engagement and athlete performance.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "founded": "2010",
+              "headquarters": "Newlandia Innovation Hub",
+              "industry": "Non-Profit and Innovation",
+              "mission_statement": "Supporting initiatives that marry technology with sports.",
+              "number_of_employees": "50",
+              "annual_revenue": "$10 million"
+            },
+            {
+              "id": "ORGANIZATION-3",
+              "name": "Techville Titans",
+              "entity_class": "organization",
+              "description": "Techville Titans is a popular local basketball team known for strong community presence and competitive spirit.",
+              "type": "organization",
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "The Techville Titans utilized HoloCourt to analyze opponents, adding strategic benefits to their game plans.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "founded": "1995",
+              "headquarters": "Techville Sports Complex",
+              "industry": "Sports",
+              "mission_statement": "To lead the basketball community with excellence and teamwork.",
+              "number_of_employees": "20 full-time and 15 part-time"
+            },
+            {
+              "id": "ORGANIZATION-4",
+              "name": "Techville Tigers",
+              "entity_class": "organization",
+              "description": "The Techville Tigers focus on cultivating young basketball talent, emphasizing skill and sportsmanship.",
+              "type": "organization",
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "The Techville Tigers used HoloCourt to study opponent strategies and player tendencies, gaining insights for their game plans.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "founded": "2000",
+              "headquarters": "Techville Youth Centre",
+              "industry": "Sports",
+              "mission_statement": "To foster growth and skill in young athletes.",
+              "number_of_employees": "10 full-time coaches"
+            }
+          ],
+          "location": [
+            {
+              "id": "LOCATION-1",
+              "name": "Techville",
+              "entity_class": "location",
+              "description": "Techville is a vibrant city celebrated for its innovative tech community and robust educational institutions.",
+              "type": "city",
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "Techville hosted the unveiling of the augmented reality app HoloCourt at Innovator's Hall, and local sports teams used the app for strategic analysis.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "population": "300000",
+              "area": "200square miles",
+              "elevation": "400feet",
+              "country": "Federation of Newlandia"
+            }
+          ],
+          "product": [
+            {
+              "id": "PRODUCT-1",
+              "name": "HoloCourt",
+              "entity_class": "product",
+              "description": "HoloCourt is a cutting-edge augmented reality app that transforms how basketball games are experienced at home.",
+              "type": "software",
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "HoloCourt was unveiled by Celerisoft Inc. and praised for its innovative features that enhance basketball viewing experiences.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "manufacturer": "Celerisoft Inc.",
+              "release_date": "2025-04-15",
+              "price": "$9.99 subscription-based",
+              "weight": "Not applicable",
+              "warranty": "1 year software support"
+            }
+          ],
+          "art": [],
+          "building": [
+            {
+              "id": "BUILDING-1",
+              "name": "Innovator's Hall",
+              "entity_class": "building",
+              "description": "Innovator's Hall in Techville is celebrated for hosting premier technology events and industry conferences.",
+              "type": "commercial",
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "Innovator's Hall in Techville hosted the unveiling of HoloCourt, attracting industry experts and media representatives.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "architect": "Elara Designs",
+              "year_built": "2020",
+              "height": "40 meters",
+              "floors": "8",
+              "material": "glass steel",
+              "capacity": "1200 attendees"
+            },
+            {
+              "id": "BUILDING-2",
+              "name": "City Sports Arena",
+              "entity_class": "building",
+              "description": "City Sports Arena in Techville is a key venue for athletes and sports fans, hosting numerous large-scale events.",
+              "type": "public",
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "City Sports Arena in Techville celebrated HoloCourt's launch, with local basketball teams using it for strategic analysis.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "architect": "BuildMaster LLP",
+              "year_built": "2010",
+              "height": "50 meters",
+              "floors": "4",
+              "material": "concrete steel",
+              "capacity": "10000 spectators"
+            }
+          ],
+          "event": [],
+          "miscellaneous": []
+        }
+      },
+      {
+        "created_at": 1,
+        "date": "2025-05-10",
+        "entities": {
+          "person": [
+            {
+              "id": "PERSON-1",
+              "name": "Sarah Carson",
+              "entity_class": "person",
+              "description": "Sarah is celebrated for her innovative approach to augmented reality, aiming to transform everyday experiences.",
+              "type": null,
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "Sarah Carson led the development of HoloCourt, an augmented reality app that enhances basketball viewing experiences.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "date_of_birth": "1985-09-12",
+              "gender": "Female",
+              "profession": "Augmented Reality Developer",
+              "nationality": "Newlandian",
+              "education": "PhD in Computer Science",
+              "height": "5'7\"",
+              "weight": "135 pounds",
+              "eye_color": "blue",
+              "hair_color": "brown",
+              "political_affiliation": "Independent",
+              "marital_status": "Married",
+              "spouse": "Mark Carlson"
+            },
+            {
+              "id": "PERSON-2",
+              "name": "Jonathan Mills",
+              "entity_class": "person",
+              "description": "Jonathan is respected in the basketball world for his deep insights into the sport.",
+              "type": null,
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "Jonathan Mills provided positive feedback on HoloCourt's seamless integration and accuracy during its public demonstration.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "date_of_birth": "1980-04-21",
+              "gender": "Male",
+              "profession": "Basketball Analyst",
+              "nationality": "Atlantican",
+              "education": "Masters in Sports Management",
+              "height": "6'2\"",
+              "weight": "190 pounds",
+              "eye_color": "green",
+              "hair_color": "dark brown",
+              "political_affiliation": "Progressive Movement",
+              "marital_status": "Divorced"
+            },
+            {
+              "id": "PERSON-3",
+              "name": "Mia Thompson",
+              "entity_class": "person",
+              "description": "Mia's engaging sports reports have garnered a wide following for their depth and enthusiasm.",
+              "type": null,
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "Mia Thompson praised HoloCourt for its innovative approach to enriching at-home sports viewing and highlighted its user-friendly interface.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "date_of_birth": "1982-11-30",
+              "gender": "Female",
+              "profession": "Sports Journalist",
+              "nationality": "Terran",
+              "education": "Bachelors in Journalism",
+              "height": "5'5\"",
+              "weight": "130 pounds",
+              "eye_color": "hazel",
+              "hair_color": "blonde",
+              "political_affiliation": "Centrist",
+              "marital_status": "Single"
+            },
+            {
+              "id": "PERSON-4",
+              "name": "Liam Greene",
+              "entity_class": "person",
+              "description": "Liam is known for his balanced evaluations of new tech trends, focusing on user-centred design.",
+              "type": null,
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "Liam Greene cautioned against over-reliance on HoloCourt, suggesting balanced use to avoid distraction from live games.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "date_of_birth": "1979-07-15",
+              "gender": "Male",
+              "profession": "Tech Analyst",
+              "nationality": "Newlandian",
+              "education": "Masters in Information Systems",
+              "height": "6'0\"",
+              "weight": "170 pounds",
+              "eye_color": "grey",
+              "hair_color": "black",
+              "political_affiliation": "Republican",
+              "marital_status": "Married",
+              "spouse": "Hannah Greene"
+            },
+            {
+              "id": "PERSON-5",
+              "name": "Emily Rivers",
+              "entity_class": "person",
+              "description": "Emily Rivers is dedicated to fostering teamwork and strategic prowess on the basketball court, driven by a passion for the sport.",
+              "type": null,
+              "created_at": 1,
+              "last_updated": "2025-05-10",
+              "history": [
+                {
+                  "created_at": 1,
+                  "event_update": "Emily Rivers, head coach of the Techville Titans, led the team's first practice session using HoloCourt at Techville Sports Complex, emphasizing patience as the team adapts to the new technology.",
+                  "date": "2025-05-10"
+                }
+              ],
+              "date_of_birth": "1980-03-22",
+              "gender": "Female",
+              "profession": "Head Coach",
+              "nationality": "Newlandian",
+              "education": "Master's in Sports Science",
+              "height": "5'8\"",
+              "weight": "140 pounds",
+              "eye_color": "brown",
+              "hair_color": "red",
+              "political_affiliation": "Liberal Progressives",
+              "marital_status": "Married",
+              "spouse": "Nathan Rivers"
+            },
+            {
+              "id": "PERSON-6",
+              "name": "Alex Johnson",
+              "entity_class": "person",
+              "description": "Alex Johnson brings dynamic energy and agility to the team, aiming to leverage every opportunity to refine his skills.",
+              "type": null,
+              "created_at": 1,
+              "last_updated": "2025-05-10",
+              "history": [
+                {
+                  "created_at": 1,
+                  "event_update": "Alex Johnson, a rookie forward for the Techville Titans, expressed enthusiasm about HoloCourt, highlighting its potential to provide better insights into gameplay and refine his shooting technique.",
+                  "date": "2025-05-10"
+                }
+              ],
+              "date_of_birth": "2002-07-09",
+              "gender": "Male",
+              "profession": "Basketball Player (Rookie)",
+              "nationality": "Newlandian",
+              "education": "Bachelor's in Exercise Science",
+              "height": "6'3\"",
+              "weight": "185 pounds",
+              "eye_color": "blue",
+              "hair_color": "black",
+              "political_affiliation": "Independent"
+            },
+            {
+              "id": "PERSON-7",
+              "name": "Kevin Smith",
+              "entity_class": "person",
+              "description": "Kevin Smith is celebrated for constructing formidable defensive strategies that emphasize adaptability and resilience.",
+              "type": null,
+              "created_at": 1,
+              "last_updated": "2025-05-10",
+              "history": [
+                {
+                  "created_at": 1,
+                  "event_update": "Kevin Smith, the defensive coordinator for the Techville Titans, remained cautious about HoloCourt's effectiveness, suggesting integration with existing defensive drills.",
+                  "date": "2025-05-10"
+                }
+              ],
+              "date_of_birth": "1975-12-01",
+              "gender": "Male",
+              "profession": "Defensive Coordinator",
+              "nationality": "Atlantican",
+              "education": "Master's in Sports Management",
+              "height": "6'1\"",
+              "weight": "200 pounds",
+              "eye_color": "green",
+              "hair_color": "light brown",
+              "political_affiliation": "Green Alliance",
+              "marital_status": "Divorced"
+            },
+            {
+              "id": "PERSON-8",
+              "name": "Dr. Emma Fields",
+              "entity_class": "person",
+              "description": "Dr. Emma Fields is instrumental in enhancing player mental resilience and balancing the pressures of competitive sports with mental health.",
+              "type": null,
+              "created_at": 1,
+              "last_updated": "2025-05-10",
+              "history": [
+                {
+                  "created_at": 1,
+                  "event_update": "Dr. Emma Fields, the team psychologist for the Techville Titans, discussed the mental adjustment required for players to balance digital tools with intuitive gameplay strategies.",
+                  "date": "2025-05-10"
+                }
+              ],
+              "date_of_birth": "1978-05-17",
+              "gender": "Female",
+              "profession": "Team Psychologist",
+              "nationality": "Terran",
+              "education": "PhD in Sports Psychology",
+              "height": "5'5\"",
+              "weight": "130 pounds",
+              "eye_color": "hazel",
+              "hair_color": "blonde",
+              "political_affiliation": "Progressive Movement",
+              "marital_status": "Married",
+              "spouse": "James Fields"
+            },
+            {
+              "id": "PERSON-9",
+              "name": "Lara Thompson",
+              "entity_class": "person",
+              "description": "Lara Thompson is celebrated for her analytical approach to coaching, combining traditional techniques with innovative data insights.",
+              "type": null,
+              "created_at": 1,
+              "last_updated": "2025-05-10",
+              "history": [
+                {
+                  "created_at": 1,
+                  "event_update": "Lara Thompson, assistant coach for the Techville Titans, worked on integrating HoloCourt's analytics into the team's strategy, developing a hybrid approach combining traditional methods and advanced analytics.",
+                  "date": "2025-05-10"
+                }
+              ],
+              "date_of_birth": "1983-01-12",
+              "gender": "Female",
+              "profession": "Assistant Coach",
+              "nationality": "Newlandian",
+              "education": "Master's in Sports Analytics",
+              "height": "5'6\"",
+              "weight": "128 pounds",
+              "eye_color": "green",
+              "hair_color": "brown",
+              "political_affiliation": "Centrist",
+              "marital_status": "Single"
+            },
+            {
+              "id": "PERSON-12",
+              "name": "Sam Turner",
+              "entity_class": "person",
+              "description": "Sam Turner is known for his engaging sports reports that provide deep insights into the evolving dynamics of local sports.",
+              "type": null,
+              "created_at": 1,
+              "last_updated": "2025-05-10",
+              "history": [
+                {
+                  "created_at": 1,
+                  "event_update": "Sam Turner, a local sports journalist, covered the Techville Titans' practice session, focusing on the team's innovative use of technology and its potential impact on local sports culture.",
+                  "date": "2025-05-10"
+                }
+              ],
+              "date_of_birth": "1990-11-12",
+              "gender": "Male",
+              "profession": "Sports Journalist",
+              "nationality": "Atlantican",
+              "education": "Bachelor's in Journalism",
+              "height": "6'0\"",
+              "weight": "175 pounds",
+              "eye_color": "grey",
+              "hair_color": "brown",
+              "political_affiliation": "Independent",
+              "marital_status": "Single"
+            },
+            {
+              "id": "PERSON-11",
+              "name": "Daniel Black",
+              "entity_class": "person",
+              "description": "Daniel Black is a visionary in the tech industry, known for leading cutting-edge projects that push the boundaries of augmented reality.",
+              "type": null,
+              "created_at": 1,
+              "last_updated": "2025-05-10",
+              "history": [
+                {
+                  "created_at": 1,
+                  "event_update": "Daniel Black, a representative from Celerisoft Inc., met with the Techville Titans' management to discuss further customizations of HoloCourt based on the team's feedback.",
+                  "date": "2025-05-10"
+                }
+              ],
+              "date_of_birth": "1982-08-28",
+              "gender": "Male",
+              "profession": "Software Developer",
+              "nationality": "Atlantican",
+              "education": "PhD in Computer Science",
+              "height": "6'2\"",
+              "weight": "210 pounds",
+              "eye_color": "blue",
+              "hair_color": "blonde",
+              "political_affiliation": "Technocratic Party",
+              "marital_status": "Married",
+              "spouse": "Lauren Black"
+            },
+            {
+              "id": "PERSON-10",
+              "name": "Michael Lee",
+              "entity_class": "person",
+              "description": "Michael Lee is a key player known for his leadership on the court and his strategic mindset that steers gameplay.",
+              "type": null,
+              "created_at": 1,
+              "last_updated": "2025-05-10",
+              "history": [
+                {
+                  "created_at": 1,
+                  "event_update": "Michael Lee, a point guard for the Techville Titans, discussed using HoloCourt data to tailor his training sessions, focusing on areas needing improvement.",
+                  "date": "2025-05-10"
+                }
+              ],
+              "date_of_birth": "1991-02-15",
+              "gender": "Male",
+              "profession": "Basketball Player",
+              "nationality": "Terran",
+              "education": "Bachelor's in Business Administration",
+              "height": "6'4\"",
+              "weight": "195 pounds",
+              "eye_color": "hazel",
+              "hair_color": "dark brown",
+              "political_affiliation": "Green Alliance",
+              "marital_status": "Married",
+              "spouse": "Isabella Lee"
+            }
+          ],
+          "organization": [
+            {
+              "id": "ORGANIZATION-1",
+              "name": "Celerisoft Inc.",
+              "entity_class": "organization",
+              "description": "Celerisoft Inc. is a leader in innovative software development, focusing on interactive and user-friendly tech solutions.",
+              "type": "company",
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "Celerisoft Inc. unveiled the augmented reality app HoloCourt and announced a partnership with local sports bars in Techville to broaden its user base.",
+                  "date": "2025-04-15"
+                },
+                {
+                  "created_at": 1,
+                  "event_update": "Celerisoft Inc. engaged with the Techville Titans to refine HoloCourt based on feedback from the team's practice session.",
+                  "date": "2025-05-10"
+                }
+              ],
+              "founded": "2005",
+              "headquarters": "Techville TechPark",
+              "industry": "Software Development",
+              "mission_statement": "To pioneer groundbreaking software innovations.",
+              "number_of_employees": "350",
+              "annual_revenue": "$42 million"
+            },
+            {
+              "id": "ORGANIZATION-2",
+              "name": "Sports Innovation Fund",
+              "entity_class": "organization",
+              "description": "The Sports Innovation Fund promotes technological advancements within sports, aiming to enrich fan engagement and athlete performance.",
+              "type": "non-profit",
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "The Sports Innovation Fund supported the development of HoloCourt, which aims to enhance fan engagement and athlete performance.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "founded": "2010",
+              "headquarters": "Newlandia Innovation Hub",
+              "industry": "Non-Profit and Innovation",
+              "mission_statement": "Supporting initiatives that marry technology with sports.",
+              "number_of_employees": "50",
+              "annual_revenue": "$10 million"
+            },
+            {
+              "id": "ORGANIZATION-3",
+              "name": "Techville Titans",
+              "entity_class": "organization",
+              "description": "Techville Titans is a popular local basketball team known for strong community presence and competitive spirit.",
+              "type": "organization",
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "The Techville Titans utilized HoloCourt to analyze opponents, adding strategic benefits to their game plans.",
+                  "date": "2025-04-15"
+                },
+                {
+                  "created_at": 1,
+                  "event_update": "The Techville Titans held their first practice session using HoloCourt at Techville Sports Complex, integrating advanced technology into their routines.",
+                  "date": "2025-05-10"
+                }
+              ],
+              "founded": "1995",
+              "headquarters": "Techville Sports Complex",
+              "industry": "Sports",
+              "mission_statement": "To lead the basketball community with excellence and teamwork.",
+              "number_of_employees": "20 full-time and 15 part-time"
+            },
+            {
+              "id": "ORGANIZATION-4",
+              "name": "Techville Tigers",
+              "entity_class": "organization",
+              "description": "The Techville Tigers focus on cultivating young basketball talent, emphasizing skill and sportsmanship.",
+              "type": "organization",
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "The Techville Tigers used HoloCourt to study opponent strategies and player tendencies, gaining insights for their game plans.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "founded": "2000",
+              "headquarters": "Techville Youth Centre",
+              "industry": "Sports",
+              "mission_statement": "To foster growth and skill in young athletes.",
+              "number_of_employees": "10 full-time coaches"
+            }
+          ],
+          "location": [
+            {
+              "id": "LOCATION-1",
+              "name": "Techville",
+              "entity_class": "location",
+              "description": "Techville is a vibrant city celebrated for its innovative tech community and robust educational institutions.",
+              "type": "city",
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "Techville hosted the unveiling of the augmented reality app HoloCourt at Innovator's Hall, and local sports teams used the app for strategic analysis.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "population": "300000",
+              "area": "200square miles",
+              "elevation": "400feet",
+              "country": "Federation of Newlandia"
+            }
+          ],
+          "product": [
+            {
+              "id": "PRODUCT-1",
+              "name": "HoloCourt",
+              "entity_class": "product",
+              "description": "HoloCourt is a cutting-edge augmented reality app that transforms how basketball games are experienced at home.",
+              "type": "software",
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "HoloCourt was unveiled by Celerisoft Inc. and praised for its innovative features that enhance basketball viewing experiences.",
+                  "date": "2025-04-15"
+                },
+                {
+                  "created_at": 1,
+                  "event_update": "HoloCourt was utilized by the Techville Titans for analyzing offensive plays and providing real-time statistical feedback during practice sessions.",
+                  "date": "2025-05-10"
+                }
+              ],
+              "manufacturer": "Celerisoft Inc.",
+              "release_date": "2025-04-15",
+              "price": "$9.99 subscription-based",
+              "weight": "Not applicable",
+              "warranty": "1 year software support"
+            }
+          ],
+          "art": [],
+          "building": [
+            {
+              "id": "BUILDING-1",
+              "name": "Innovator's Hall",
+              "entity_class": "building",
+              "description": "Innovator's Hall in Techville is celebrated for hosting premier technology events and industry conferences.",
+              "type": "commercial",
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "Innovator's Hall in Techville hosted the unveiling of HoloCourt, attracting industry experts and media representatives.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "architect": "Elara Designs",
+              "year_built": "2020",
+              "height": "40 meters",
+              "floors": "8",
+              "material": "glass steel",
+              "capacity": "1200 attendees"
+            },
+            {
+              "id": "BUILDING-2",
+              "name": "City Sports Arena",
+              "entity_class": "building",
+              "description": "City Sports Arena in Techville is a key venue for athletes and sports fans, hosting numerous large-scale events.",
+              "type": "public",
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "City Sports Arena in Techville celebrated HoloCourt's launch, with local basketball teams using it for strategic analysis.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "architect": "BuildMaster LLP",
+              "year_built": "2010",
+              "height": "50 meters",
+              "floors": "4",
+              "material": "concrete steel",
+              "capacity": "10000 spectators"
+            },
+            {
+              "id": "BUILDING-3",
+              "name": "Techville Sports Complex",
+              "entity_class": "building",
+              "description": "Techville Sports Complex is a versatile facility renowned for its comprehensive sports amenities catering to various athletic events.",
+              "type": "public",
+              "created_at": 1,
+              "last_updated": "2025-05-10",
+              "history": [
+                {
+                  "created_at": 1,
+                  "event_update": "Techville Sports Complex hosted the Techville Titans' first practice session using HoloCourt, showcasing its state-of-the-art facilities.",
+                  "date": "2025-05-10"
+                }
+              ]
+            }
+          ],
+          "event": [],
+          "miscellaneous": []
+        }
+      },
+      {
+        "created_at": 2,
+        "date": "2025-06-01",
+        "entities": {
+          "person": [
+            {
+              "id": "PERSON-1",
+              "name": "Sarah Carson",
+              "entity_class": "person",
+              "description": "Sarah is celebrated for her innovative approach to augmented reality, aiming to transform everyday experiences.",
+              "type": null,
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "Sarah Carson led the development of HoloCourt, an augmented reality app that enhances basketball viewing experiences.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "date_of_birth": "1985-09-12",
+              "gender": "Female",
+              "profession": "Augmented Reality Developer",
+              "nationality": "Newlandian",
+              "education": "PhD in Computer Science",
+              "height": "5'7\"",
+              "weight": "135 pounds",
+              "eye_color": "blue",
+              "hair_color": "brown",
+              "political_affiliation": "Independent",
+              "marital_status": "Married",
+              "spouse": "Mark Carlson"
+            },
+            {
+              "id": "PERSON-2",
+              "name": "Jonathan Mills",
+              "entity_class": "person",
+              "description": "Jonathan is respected in the basketball world for his deep insights into the sport.",
+              "type": null,
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "Jonathan Mills provided positive feedback on HoloCourt's seamless integration and accuracy during its public demonstration.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "date_of_birth": "1980-04-21",
+              "gender": "Male",
+              "profession": "Basketball Analyst",
+              "nationality": "Atlantican",
+              "education": "Masters in Sports Management",
+              "height": "6'2\"",
+              "weight": "190 pounds",
+              "eye_color": "green",
+              "hair_color": "dark brown",
+              "political_affiliation": "Progressive Movement",
+              "marital_status": "Divorced"
+            },
+            {
+              "id": "PERSON-3",
+              "name": "Mia Thompson",
+              "entity_class": "person",
+              "description": "Mia's engaging sports reports have garnered a wide following for their depth and enthusiasm.",
+              "type": null,
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "Mia Thompson praised HoloCourt for its innovative approach to enriching at-home sports viewing and highlighted its user-friendly interface.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "date_of_birth": "1982-11-30",
+              "gender": "Female",
+              "profession": "Sports Journalist",
+              "nationality": "Terran",
+              "education": "Bachelors in Journalism",
+              "height": "5'5\"",
+              "weight": "130 pounds",
+              "eye_color": "hazel",
+              "hair_color": "blonde",
+              "political_affiliation": "Centrist",
+              "marital_status": "Single"
+            },
+            {
+              "id": "PERSON-4",
+              "name": "Liam Greene",
+              "entity_class": "person",
+              "description": "Liam is known for his balanced evaluations of new tech trends, focusing on user-centred design.",
+              "type": null,
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "Liam Greene cautioned against over-reliance on HoloCourt, suggesting balanced use to avoid distraction from live games.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "date_of_birth": "1979-07-15",
+              "gender": "Male",
+              "profession": "Tech Analyst",
+              "nationality": "Newlandian",
+              "education": "Masters in Information Systems",
+              "height": "6'0\"",
+              "weight": "170 pounds",
+              "eye_color": "grey",
+              "hair_color": "black",
+              "political_affiliation": "Republican",
+              "marital_status": "Married",
+              "spouse": "Hannah Greene"
+            },
+            {
+              "id": "PERSON-5",
+              "name": "Emily Rivers",
+              "entity_class": "person",
+              "description": "Emily Rivers is dedicated to fostering teamwork and strategic prowess on the basketball court, driven by a passion for the sport.",
+              "type": null,
+              "created_at": 1,
+              "last_updated": "2025-05-10",
+              "history": [
+                {
+                  "created_at": 1,
+                  "event_update": "Emily Rivers, head coach of the Techville Titans, led the team's first practice session using HoloCourt at Techville Sports Complex, emphasizing patience as the team adapts to the new technology.",
+                  "date": "2025-05-10"
+                },
+                {
+                  "created_at": 2,
+                  "event_update": "Emily Rivers led the Techville Titans' practice session on June 1, 2025, integrating HoloCourt into their training and emphasizing patience for adaptation.",
+                  "date": "2025-06-01"
+                }
+              ],
+              "date_of_birth": "1980-03-22",
+              "gender": "Female",
+              "profession": "Head Coach",
+              "nationality": "Newlandian",
+              "education": "Master's in Sports Science",
+              "height": "5'8\"",
+              "weight": "140 pounds",
+              "eye_color": "brown",
+              "hair_color": "red",
+              "political_affiliation": "Liberal Progressives",
+              "marital_status": "Married",
+              "spouse": "Nathan Rivers"
+            },
+            {
+              "id": "PERSON-6",
+              "name": "Alex Johnson",
+              "entity_class": "person",
+              "description": "Alex Johnson brings dynamic energy and agility to the team, aiming to leverage every opportunity to refine his skills.",
+              "type": null,
+              "created_at": 1,
+              "last_updated": "2025-05-10",
+              "history": [
+                {
+                  "created_at": 1,
+                  "event_update": "Alex Johnson, a rookie forward for the Techville Titans, expressed enthusiasm about HoloCourt, highlighting its potential to provide better insights into gameplay and refine his shooting technique.",
+                  "date": "2025-05-10"
+                },
+                {
+                  "created_at": 2,
+                  "event_update": "Alex Johnson engaged with HoloCourt analytics to refine his shooting technique during the June 1, 2025, practice session.",
+                  "date": "2025-06-01"
+                }
+              ],
+              "date_of_birth": "2002-07-09",
+              "gender": "Male",
+              "profession": "Basketball Player (Rookie)",
+              "nationality": "Newlandian",
+              "education": "Bachelor's in Exercise Science",
+              "height": "6'3\"",
+              "weight": "185 pounds",
+              "eye_color": "blue",
+              "hair_color": "black",
+              "political_affiliation": "Independent"
+            },
+            {
+              "id": "PERSON-7",
+              "name": "Kevin Smith",
+              "entity_class": "person",
+              "description": "Kevin Smith is celebrated for constructing formidable defensive strategies that emphasize adaptability and resilience.",
+              "type": null,
+              "created_at": 1,
+              "last_updated": "2025-05-10",
+              "history": [
+                {
+                  "created_at": 1,
+                  "event_update": "Kevin Smith, the defensive coordinator for the Techville Titans, remained cautious about HoloCourt's effectiveness, suggesting integration with existing defensive drills.",
+                  "date": "2025-05-10"
+                },
+                {
+                  "created_at": 2,
+                  "event_update": "Kevin Smith observed the practice on June 1, 2025, focusing on integrating HoloCourt insights with existing defensive drills.",
+                  "date": "2025-06-01"
+                }
+              ],
+              "date_of_birth": "1975-12-01",
+              "gender": "Male",
+              "profession": "Defensive Coordinator",
+              "nationality": "Atlantican",
+              "education": "Master's in Sports Management",
+              "height": "6'1\"",
+              "weight": "200 pounds",
+              "eye_color": "green",
+              "hair_color": "light brown",
+              "political_affiliation": "Green Alliance",
+              "marital_status": "Divorced"
+            },
+            {
+              "id": "PERSON-8",
+              "name": "Dr. Emma Fields",
+              "entity_class": "person",
+              "description": "Dr. Emma Fields is instrumental in enhancing player mental resilience and balancing the pressures of competitive sports with mental health.",
+              "type": null,
+              "created_at": 1,
+              "last_updated": "2025-05-10",
+              "history": [
+                {
+                  "created_at": 1,
+                  "event_update": "Dr. Emma Fields, the team psychologist for the Techville Titans, discussed the mental adjustment required for players to balance digital tools with intuitive gameplay strategies.",
+                  "date": "2025-05-10"
+                },
+                {
+                  "created_at": 2,
+                  "event_update": "Dr. Emma Fields conducted sessions on June 1, 2025, to help players adapt mentally to the integration of HoloCourt in their training.",
+                  "date": "2025-06-01"
+                }
+              ],
+              "date_of_birth": "1978-05-17",
+              "gender": "Female",
+              "profession": "Team Psychologist",
+              "nationality": "Terran",
+              "education": "PhD in Sports Psychology",
+              "height": "5'5\"",
+              "weight": "130 pounds",
+              "eye_color": "hazel",
+              "hair_color": "blonde",
+              "political_affiliation": "Progressive Movement",
+              "marital_status": "Married",
+              "spouse": "James Fields"
+            },
+            {
+              "id": "PERSON-9",
+              "name": "Lara Thompson",
+              "entity_class": "person",
+              "description": "Lara Thompson is celebrated for her analytical approach to coaching, combining traditional techniques with innovative data insights.",
+              "type": null,
+              "created_at": 1,
+              "last_updated": "2025-05-10",
+              "history": [
+                {
+                  "created_at": 1,
+                  "event_update": "Lara Thompson, assistant coach for the Techville Titans, worked on integrating HoloCourt's analytics into the team's strategy, developing a hybrid approach combining traditional methods and advanced analytics.",
+                  "date": "2025-05-10"
+                },
+                {
+                  "created_at": 2,
+                  "event_update": "Lara Thompson refined a hybrid strategy on June 1, 2025, balancing HoloCourt analytics with traditional coaching feedback.",
+                  "date": "2025-06-01"
+                }
+              ],
+              "date_of_birth": "1983-01-12",
+              "gender": "Female",
+              "profession": "Assistant Coach",
+              "nationality": "Newlandian",
+              "education": "Master's in Sports Analytics",
+              "height": "5'6\"",
+              "weight": "128 pounds",
+              "eye_color": "green",
+              "hair_color": "brown",
+              "political_affiliation": "Centrist",
+              "marital_status": "Single"
+            },
+            {
+              "id": "PERSON-12",
+              "name": "Sam Turner",
+              "entity_class": "person",
+              "description": "Sam Turner is known for his engaging sports reports that provide deep insights into the evolving dynamics of local sports.",
+              "type": null,
+              "created_at": 1,
+              "last_updated": "2025-05-10",
+              "history": [
+                {
+                  "created_at": 1,
+                  "event_update": "Sam Turner, a local sports journalist, covered the Techville Titans' practice session, focusing on the team's innovative use of technology and its potential impact on local sports culture.",
+                  "date": "2025-05-10"
+                },
+                {
+                  "created_at": 2,
+                  "event_update": "Sam Turner documented the June 1, 2025, practice session, highlighting the team's innovative approach and its potential impact on local sports culture.",
+                  "date": "2025-06-01"
+                }
+              ],
+              "date_of_birth": "1990-11-12",
+              "gender": "Male",
+              "profession": "Sports Journalist",
+              "nationality": "Atlantican",
+              "education": "Bachelor's in Journalism",
+              "height": "6'0\"",
+              "weight": "175 pounds",
+              "eye_color": "grey",
+              "hair_color": "brown",
+              "political_affiliation": "Independent",
+              "marital_status": "Single"
+            },
+            {
+              "id": "PERSON-11",
+              "name": "Daniel Black",
+              "entity_class": "person",
+              "description": "Daniel Black is a visionary in the tech industry, known for leading cutting-edge projects that push the boundaries of augmented reality.",
+              "type": null,
+              "created_at": 1,
+              "last_updated": "2025-05-10",
+              "history": [
+                {
+                  "created_at": 1,
+                  "event_update": "Daniel Black, a representative from Celerisoft Inc., met with the Techville Titans' management to discuss further customizations of HoloCourt based on the team's feedback.",
+                  "date": "2025-05-10"
+                },
+                {
+                  "created_at": 2,
+                  "event_update": "Daniel Black attended a feedback session on June 1, 2025, discussing future enhancements to HoloCourt with the Techville Titans' management.",
+                  "date": "2025-06-01"
+                }
+              ],
+              "date_of_birth": "1982-08-28",
+              "gender": "Male",
+              "profession": "Software Developer",
+              "nationality": "Atlantican",
+              "education": "PhD in Computer Science",
+              "height": "6'2\"",
+              "weight": "210 pounds",
+              "eye_color": "blue",
+              "hair_color": "blonde",
+              "political_affiliation": "Technocratic Party",
+              "marital_status": "Married",
+              "spouse": "Lauren Black"
+            },
+            {
+              "id": "PERSON-10",
+              "name": "Michael Lee",
+              "entity_class": "person",
+              "description": "Michael Lee is a key player known for his leadership on the court and his strategic mindset that steers gameplay.",
+              "type": null,
+              "created_at": 1,
+              "last_updated": "2025-05-10",
+              "history": [
+                {
+                  "created_at": 1,
+                  "event_update": "Michael Lee, a point guard for the Techville Titans, discussed using HoloCourt data to tailor his training sessions, focusing on areas needing improvement.",
+                  "date": "2025-05-10"
+                },
+                {
+                  "created_at": 2,
+                  "event_update": "Michael Lee discussed using HoloCourt data to tailor his training sessions on June 1, 2025, focusing on areas needing improvement.",
+                  "date": "2025-06-01"
+                }
+              ],
+              "date_of_birth": "1991-02-15",
+              "gender": "Male",
+              "profession": "Basketball Player",
+              "nationality": "Terran",
+              "education": "Bachelor's in Business Administration",
+              "height": "6'4\"",
+              "weight": "195 pounds",
+              "eye_color": "hazel",
+              "hair_color": "dark brown",
+              "political_affiliation": "Green Alliance",
+              "marital_status": "Married",
+              "spouse": "Isabella Lee"
+            }
+          ],
+          "organization": [
+            {
+              "id": "ORGANIZATION-1",
+              "name": "Celerisoft Inc.",
+              "entity_class": "organization",
+              "description": "Celerisoft Inc. is a leader in innovative software development, focusing on interactive and user-friendly tech solutions.",
+              "type": "company",
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "Celerisoft Inc. unveiled the augmented reality app HoloCourt and announced a partnership with local sports bars in Techville to broaden its user base.",
+                  "date": "2025-04-15"
+                },
+                {
+                  "created_at": 1,
+                  "event_update": "Celerisoft Inc. engaged with the Techville Titans to refine HoloCourt based on feedback from the team's practice session.",
+                  "date": "2025-05-10"
+                },
+                {
+                  "created_at": 2,
+                  "event_update": "Celerisoft Inc. engaged with the Techville Titans on June 1, 2025, to discuss future enhancements to HoloCourt based on team feedback.",
+                  "date": "2025-06-01"
+                }
+              ],
+              "founded": "2005",
+              "headquarters": "Techville TechPark",
+              "industry": "Software Development",
+              "mission_statement": "To pioneer groundbreaking software innovations.",
+              "number_of_employees": "350",
+              "annual_revenue": "$42 million"
+            },
+            {
+              "id": "ORGANIZATION-2",
+              "name": "Sports Innovation Fund",
+              "entity_class": "organization",
+              "description": "The Sports Innovation Fund promotes technological advancements within sports, aiming to enrich fan engagement and athlete performance.",
+              "type": "non-profit",
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "The Sports Innovation Fund supported the development of HoloCourt, which aims to enhance fan engagement and athlete performance.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "founded": "2010",
+              "headquarters": "Newlandia Innovation Hub",
+              "industry": "Non-Profit and Innovation",
+              "mission_statement": "Supporting initiatives that marry technology with sports.",
+              "number_of_employees": "50",
+              "annual_revenue": "$10 million"
+            },
+            {
+              "id": "ORGANIZATION-3",
+              "name": "Techville Titans",
+              "entity_class": "organization",
+              "description": "Techville Titans is a popular local basketball team known for strong community presence and competitive spirit.",
+              "type": "organization",
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "The Techville Titans utilized HoloCourt to analyze opponents, adding strategic benefits to their game plans.",
+                  "date": "2025-04-15"
+                },
+                {
+                  "created_at": 1,
+                  "event_update": "The Techville Titans held their first practice session using HoloCourt at Techville Sports Complex, integrating advanced technology into their routines.",
+                  "date": "2025-05-10"
+                },
+                {
+                  "created_at": 2,
+                  "event_update": "The Techville Titans held a practice session on June 1, 2025, using HoloCourt at Techville Sports Complex, integrating advanced technology into their routines.",
+                  "date": "2025-06-01"
+                }
+              ],
+              "founded": "1995",
+              "headquarters": "Techville Sports Complex",
+              "industry": "Sports",
+              "mission_statement": "To lead the basketball community with excellence and teamwork.",
+              "number_of_employees": "20 full-time and 15 part-time"
+            },
+            {
+              "id": "ORGANIZATION-4",
+              "name": "Techville Tigers",
+              "entity_class": "organization",
+              "description": "The Techville Tigers focus on cultivating young basketball talent, emphasizing skill and sportsmanship.",
+              "type": "organization",
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "The Techville Tigers used HoloCourt to study opponent strategies and player tendencies, gaining insights for their game plans.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "founded": "2000",
+              "headquarters": "Techville Youth Centre",
+              "industry": "Sports",
+              "mission_statement": "To foster growth and skill in young athletes.",
+              "number_of_employees": "10 full-time coaches"
+            }
+          ],
+          "location": [
+            {
+              "id": "LOCATION-1",
+              "name": "Techville",
+              "entity_class": "location",
+              "description": "Techville is a vibrant city celebrated for its innovative tech community and robust educational institutions.",
+              "type": "city",
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "Techville hosted the unveiling of the augmented reality app HoloCourt at Innovator's Hall, and local sports teams used the app for strategic analysis.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "population": "300000",
+              "area": "200square miles",
+              "elevation": "400feet",
+              "country": "Federation of Newlandia"
+            }
+          ],
+          "product": [
+            {
+              "id": "PRODUCT-1",
+              "name": "HoloCourt",
+              "entity_class": "product",
+              "description": "HoloCourt is a cutting-edge augmented reality app that transforms how basketball games are experienced at home.",
+              "type": "software",
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "HoloCourt was unveiled by Celerisoft Inc. and praised for its innovative features that enhance basketball viewing experiences.",
+                  "date": "2025-04-15"
+                },
+                {
+                  "created_at": 1,
+                  "event_update": "HoloCourt was utilized by the Techville Titans for analyzing offensive plays and providing real-time statistical feedback during practice sessions.",
+                  "date": "2025-05-10"
+                },
+                {
+                  "created_at": 2,
+                  "event_update": "HoloCourt was utilized by the Techville Titans on June 1, 2025, for analyzing offensive plays and providing real-time statistical feedback during practice sessions.",
+                  "date": "2025-06-01"
+                }
+              ],
+              "manufacturer": "Celerisoft Inc.",
+              "release_date": "2025-04-15",
+              "price": "$9.99 subscription-based",
+              "weight": "Not applicable",
+              "warranty": "1 year software support"
+            }
+          ],
+          "art": [],
+          "building": [
+            {
+              "id": "BUILDING-1",
+              "name": "Innovator's Hall",
+              "entity_class": "building",
+              "description": "Innovator's Hall in Techville is celebrated for hosting premier technology events and industry conferences.",
+              "type": "commercial",
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "Innovator's Hall in Techville hosted the unveiling of HoloCourt, attracting industry experts and media representatives.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "architect": "Elara Designs",
+              "year_built": "2020",
+              "height": "40 meters",
+              "floors": "8",
+              "material": "glass steel",
+              "capacity": "1200 attendees"
+            },
+            {
+              "id": "BUILDING-2",
+              "name": "City Sports Arena",
+              "entity_class": "building",
+              "description": "City Sports Arena in Techville is a key venue for athletes and sports fans, hosting numerous large-scale events.",
+              "type": "public",
+              "created_at": 0,
+              "last_updated": "2025-04-15",
+              "history": [
+                {
+                  "created_at": 0,
+                  "event_update": "City Sports Arena in Techville celebrated HoloCourt's launch, with local basketball teams using it for strategic analysis.",
+                  "date": "2025-04-15"
+                }
+              ],
+              "architect": "BuildMaster LLP",
+              "year_built": "2010",
+              "height": "50 meters",
+              "floors": "4",
+              "material": "concrete steel",
+              "capacity": "10000 spectators"
+            },
+            {
+              "id": "BUILDING-3",
+              "name": "Techville Sports Complex",
+              "entity_class": "building",
+              "description": "Techville Sports Complex is a versatile facility renowned for its comprehensive sports amenities catering to various athletic events.",
+              "type": "public",
+              "created_at": 1,
+              "last_updated": "2025-05-10",
+              "history": [
+                {
+                  "created_at": 1,
+                  "event_update": "Techville Sports Complex hosted the Techville Titans' first practice session using HoloCourt, showcasing its state-of-the-art facilities.",
+                  "date": "2025-05-10"
+                },
+                {
+                  "created_at": 2,
+                  "event_update": "Techville Sports Complex hosted the Techville Titans' practice session on June 1, 2025, integrating HoloCourt into their training routines.",
+                  "date": "2025-06-01"
+                }
+              ]
+            }
+          ],
+          "event": [],
+          "miscellaneous": []
+        }
+      }
+    ]
+  },
+  "query_counts": [
+    12,
+    24,
+    34
+  ],
+  "summary": "Researchers have developed an augmented reality app that enhances home viewing experiences by overlaying real-time statistics and player tracking during basketball games.",
+  "event_type": {
+    "category": "Sports Technology Innovations",
+    "event_type_id": "sports:7"
+  },
+  "event_type_id": "sports:7",
+  "story_seed_id": "sports:7:3",
+  "init_random_seed": 583485
+}

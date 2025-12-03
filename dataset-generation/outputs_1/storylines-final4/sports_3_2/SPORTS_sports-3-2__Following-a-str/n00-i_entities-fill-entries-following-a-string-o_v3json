@@ -1,0 +1,592 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "microsoft/phi-4-reasoning-plus",
+    "temperature": 1.0,
+    "max-tokens": 4096
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "```xml\n<results>\n\n<organization>\n  <id>ORGANIZATION-1</id>\n  <name>Greenfield Falcons</name>\n  <type>Company</type>\n  <description>The Greenfield Falcons is a prominent European rugby club established in 1985, with a mission to foster community spirit and sports excellence.</description>\n  <founded>1985</founded>\n  <headquarters>Greenfield Park, Rosendale</headquarters>\n  <industry>Sports club</industry>\n  <mission_statement>To nurture talent and promote the values of integrity and teamwork through rugby.</mission_statement>\n  <number_of_employees>150</number_of_employees>\n  <annual_revenue>\u20ac20 million</annual_revenue>\n</organization>\n\n<organization>\n  <id>ORGANIZATION-2</id>\n  <name>Nova Shield FC</name>\n  <type>Company</type>\n  <description>Nova Shield FC is a competitive European rugby team, formed in 1995, known for its dynamic defensive strategies and youth development programs.</description>\n  <founded>1995</founded>\n  <headquarters>Silverton, Newford</headquarters>\n  <industry>Sports club</industry>\n  <mission_statement>To become a leading force in rugby through innovative tactics and comprehensive player development.</mission_statement>\n  <number_of_employees>100</number_of_employees>\n  <annual_revenue>\u20ac15 million</annual_revenue>\n</organization>\n\n<organization>\n  <id>ORGANIZATION-3</id>\n  <name>Falcons United</name>\n  <type>Non-profit</type>\n  <description>Falcons United is a community-driven supporters' group for the Greenfield Falcons, founded in 2002, dedicated to engaging fans and organizing events.</description>\n  <founded>2002</founded>\n  <headquarters>Greenfield Park, Rosendale</headquarters>\n  <industry>Fan club</industry>\n  <mission_statement>To unite soccer fans, celebrate club culture, and support club endeavours through community engagement.</mission_statement>\n  <number_of_employees>20</number_of_employees>\n  <annual_revenue>\u20ac1 million</annual_revenue>\n</organization>\n\n<person>\n  <id>PERSON-1</id>\n  <name>Samuel Blackwood</name>\n  <date_of_birth>1975-03-12</date_of_birth>\n  <gender>Male</gender>\n  <profession>Rugby Coach</profession>\n  <nationality>British</nationality>\n  <education>Master's in Sports Science</education>\n  <description>Samuel Blackwood is a strategic thinker and coach, renowned for his ability to transform teams through defensive expertise and tactical innovations.</description>\n  <height>6'1\"</height>\n  <weight>190 lbs</weight>\n  <eye_color>Blue</eye_color>\n  <hair_color>Brown</hair_color>\n  <political_affiliation>Non-partisan</political_affiliation>\n  <marital_status>Married</marital_status>\n</person>\n\n<person>\n  <id>PERSON-2</id>\n  <name>Isabelle Ngo</name>\n  <date_of_birth>1988-06-25</date_of_birth>\n  <gender>Female</gender>\n  <profession>Data Analyst</profession>\n  <nationality>French</nationality>\n  <education>PhD in Data Science</education>\n  <description>Isabelle Ngo is an analytical powerhouse with a knack for using data to unlock team potential and optimize performance.</description>\n  <height>5'7\"</height>\n  <weight>135 lbs</weight>\n  <eye_color>Hazel</eye_color>\n  <hair_color>Black</hair_color>\n  <political_affiliation>Liberal</political_affiliation>\n  <marital_status>Single</marital_status>\n</person>\n\n<person>\n  <id>PERSON-3</id>\n  <name>Eliot Carver</name>\n  <date_of_birth>1990-11-14</date_of_birth>\n  <gender>Male</gender>\n  <profession>Rugby Assistant Coach</profession>\n  <nationality>Irish</nationality>\n  <education>Bachelors in Physical Education</education>\n  <description>Eliot Carver is an energetic and forward-thinking assistant coach, committed to enhancing team dynamics and fostering young talent.</description>\n  <height>5'9\"</height>\n  <weight>165 lbs</weight>\n  <eye_color>Green</eye_color>\n  <hair_color>Light Brown</hair_color>\n  <political_affiliation>Conservative</political_affiliation>\n  <marital_status>Married</marital_status>\n</person>\n\n<person>\n  <id>PERSON-4</id>\n  <name>Helena Marquez</name>\n  <date_of_birth>1965-08-30</date_of_birth>\n  <gender>Female</gender>\n  <profession>President of Greenfield Falcons</profession>\n  <nationality>Mexican</nationality>\n  <education>MBA in Sports Management</education>\n  <description>Helena Marquez is a visionary leader known for her strategic acumen and her unwavering commitment to grassroots sports development.</description>\n  <height>5'6\"</height>\n  <weight>140 lbs</weight>\n  <eye_color>Brown</eye_color>\n  <hair_color>Black</hair_color>\n  <political_affiliation>Socialist</political_affiliation>\n  <marital_status>Divorced</marital_status>\n</person>\n\n<person>\n  <id>PERSON-5</id>\n  <name>Dimitri Petrov</name>\n  <date_of_birth>1982-02-17</date_of_birth>\n  <gender>Male</gender>\n  <profession>Rugby Forward</profession>\n  <nationality>Russian</nationality>\n  <education>Bachelors in Sports Science</education>\n  <description>Dimitri Petrov is a seasoned rugby forward known for his strength on the field and his insightful perspectives on team dynamics.</description>\n  <height>6'2\"</height>\n  <weight>220 lbs</weight>\n  <eye_color>Gray</eye_color>\n  <hair_color>Blonde</hair_color>\n  <political_affiliation>Apathetic</political_affiliation>\n  <marital_status>Married</marital_status>\n</person>\n\n<event>\n  <id>EVENT-1</id>\n  <name>European Rugby Championship</name>\n  <type>Sporting</type>\n  <description>The European Rugby Championship is a vibrant annual event that showcases the top rugby talent across Europe, celebrated every year in July.</description>\n  <date>July 2024</date>\n  <place>Various</place>\n  <city>Various</city>\n  <country>Multiple</country>\n  <duration>3 weeks</duration>\n  <organizer>European Rugby Federation</organizer>\n  <number_of_participants>16 teams</number_of_participants>\n  <budget>\u20ac50 million</budget>\n</event>\n\n<event>\n  <id>EVENT-2</id>\n  <name>European Rugby League</name>\n  <type>Sporting</type>\n  <description>The European Rugby League, established in 1997, celebrates the spirit of rugby union with an emphasis on team cohesion and international rivalry.</description>\n  <date>August 2024</date>\n  <place>Zentralstadion, Tilersville</place>\n  <city>Tilersville</city>\n  <country>Borduria</country>\n  <duration>2 weeks</duration>\n  <organizer>Union of European Leagues</organizer>\n  <number_of_participants>20 teams</number_of_participants>\n  <budget>\u20ac45 million</budget>\n</event>\n\n<event>\n  <id>EVENT-3</id>\n  <name>European Rugby Champions Cup</name>\n  <type>Sporting</type>\n  <description>The European Rugby Champions Cup is a tournament that brings together elite European clubs in a fierce competition for supremacy in rugby.</description>\n  <date>May 2024</date>\n  <place>Stadium Arena, Eastport</place>\n  <city>Eastport</city>\n  <country>Solanis</country>\n  <duration>4 weeks</duration>\n  <organizer>European Rugby Council</organizer>\n  <number_of_participants>24 teams</number_of_participants>\n  <budget>\u20ac80 million</budget>\n</event>\n\n<building>\n  <id>BUILDING-1</id>\n  <name>Renaissance Stadium</name>\n  <type>Public</type>\n  <description>Renaissance Stadium is a modern multi-purpose facility located in Rosendale, renowned for hosting major sports events and community gatherings.</description>\n  <place>Renaissance Dome, Rosendale</place>\n  <city>Rosendale</city>\n  <country>Grevian Federation</country>\n  <architect>Elara Designs</architect>\n  <year_built>2010</year_built>\n  <height>50 meters</height>\n  <floors>4</floors>\n  <material>Steel and glass</material>\n  <capacity>25,000</capacity>\n</building>\n\n</results>\n```"
+  },
+  "response": "```xml\n<results>\n\n<organization>\n  <id>ORGANIZATION-1</id>\n  <name>Greenfield Falcons</name>\n  <type>Company</type>\n  <description>The Greenfield Falcons is a prominent European rugby club established in 1985, with a mission to foster community spirit and sports excellence.</description>\n  <founded>1985</founded>\n  <headquarters>Greenfield Park, Rosendale</headquarters>\n  <industry>Sports club</industry>\n  <mission_statement>To nurture talent and promote the values of integrity and teamwork through rugby.</mission_statement>\n  <number_of_employees>150</number_of_employees>\n  <annual_revenue>\u20ac20 million</annual_revenue>\n</organization>\n\n<organization>\n  <id>ORGANIZATION-2</id>\n  <name>Nova Shield FC</name>\n  <type>Company</type>\n  <description>Nova Shield FC is a competitive European rugby team, formed in 1995, known for its dynamic defensive strategies and youth development programs.</description>\n  <founded>1995</founded>\n  <headquarters>Silverton, Newford</headquarters>\n  <industry>Sports club</industry>\n  <mission_statement>To become a leading force in rugby through innovative tactics and comprehensive player development.</mission_statement>\n  <number_of_employees>100</number_of_employees>\n  <annual_revenue>\u20ac15 million</annual_revenue>\n</organization>\n\n<organization>\n  <id>ORGANIZATION-3</id>\n  <name>Falcons United</name>\n  <type>Non-profit</type>\n  <description>Falcons United is a community-driven supporters' group for the Greenfield Falcons, founded in 2002, dedicated to engaging fans and organizing events.</description>\n  <founded>2002</founded>\n  <headquarters>Greenfield Park, Rosendale</headquarters>\n  <industry>Fan club</industry>\n  <mission_statement>To unite soccer fans, celebrate club culture, and support club endeavours through community engagement.</mission_statement>\n  <number_of_employees>20</number_of_employees>\n  <annual_revenue>\u20ac1 million</annual_revenue>\n</organization>\n\n<person>\n  <id>PERSON-1</id>\n  <name>Samuel Blackwood</name>\n  <date_of_birth>1975-03-12</date_of_birth>\n  <gender>Male</gender>\n  <profession>Rugby Coach</profession>\n  <nationality>British</nationality>\n  <education>Master's in Sports Science</education>\n  <description>Samuel Blackwood is a strategic thinker and coach, renowned for his ability to transform teams through defensive expertise and tactical innovations.</description>\n  <height>6'1\"</height>\n  <weight>190 lbs</weight>\n  <eye_color>Blue</eye_color>\n  <hair_color>Brown</hair_color>\n  <political_affiliation>Non-partisan</political_affiliation>\n  <marital_status>Married</marital_status>\n</person>\n\n<person>\n  <id>PERSON-2</id>\n  <name>Isabelle Ngo</name>\n  <date_of_birth>1988-06-25</date_of_birth>\n  <gender>Female</gender>\n  <profession>Data Analyst</profession>\n  <nationality>French</nationality>\n  <education>PhD in Data Science</education>\n  <description>Isabelle Ngo is an analytical powerhouse with a knack for using data to unlock team potential and optimize performance.</description>\n  <height>5'7\"</height>\n  <weight>135 lbs</weight>\n  <eye_color>Hazel</eye_color>\n  <hair_color>Black</hair_color>\n  <political_affiliation>Liberal</political_affiliation>\n  <marital_status>Single</marital_status>\n</person>\n\n<person>\n  <id>PERSON-3</id>\n  <name>Eliot Carver</name>\n  <date_of_birth>1990-11-14</date_of_birth>\n  <gender>Male</gender>\n  <profession>Rugby Assistant Coach</profession>\n  <nationality>Irish</nationality>\n  <education>Bachelors in Physical Education</education>\n  <description>Eliot Carver is an energetic and forward-thinking assistant coach, committed to enhancing team dynamics and fostering young talent.</description>\n  <height>5'9\"</height>\n  <weight>165 lbs</weight>\n  <eye_color>Green</eye_color>\n  <hair_color>Light Brown</hair_color>\n  <political_affiliation>Conservative</political_affiliation>\n  <marital_status>Married</marital_status>\n</person>\n\n<person>\n  <id>PERSON-4</id>\n  <name>Helena Marquez</name>\n  <date_of_birth>1965-08-30</date_of_birth>\n  <gender>Female</gender>\n  <profession>President of Greenfield Falcons</profession>\n  <nationality>Mexican</nationality>\n  <education>MBA in Sports Management</education>\n  <description>Helena Marquez is a visionary leader known for her strategic acumen and her unwavering commitment to grassroots sports development.</description>\n  <height>5'6\"</height>\n  <weight>140 lbs</weight>\n  <eye_color>Brown</eye_color>\n  <hair_color>Black</hair_color>\n  <political_affiliation>Socialist</political_affiliation>\n  <marital_status>Divorced</marital_status>\n</person>\n\n<person>\n  <id>PERSON-5</id>\n  <name>Dimitri Petrov</name>\n  <date_of_birth>1982-02-17</date_of_birth>\n  <gender>Male</gender>\n  <profession>Rugby Forward</profession>\n  <nationality>Russian</nationality>\n  <education>Bachelors in Sports Science</education>\n  <description>Dimitri Petrov is a seasoned rugby forward known for his strength on the field and his insightful perspectives on team dynamics.</description>\n  <height>6'2\"</height>\n  <weight>220 lbs</weight>\n  <eye_color>Gray</eye_color>\n  <hair_color>Blonde</hair_color>\n  <political_affiliation>Apathetic</political_affiliation>\n  <marital_status>Married</marital_status>\n</person>\n\n<event>\n  <id>EVENT-1</id>\n  <name>European Rugby Championship</name>\n  <type>Sporting</type>\n  <description>The European Rugby Championship is a vibrant annual event that showcases the top rugby talent across Europe, celebrated every year in July.</description>\n  <date>July 2024</date>\n  <place>Various</place>\n  <city>Various</city>\n  <country>Multiple</country>\n  <duration>3 weeks</duration>\n  <organizer>European Rugby Federation</organizer>\n  <number_of_participants>16 teams</number_of_participants>\n  <budget>\u20ac50 million</budget>\n</event>\n\n<event>\n  <id>EVENT-2</id>\n  <name>European Rugby League</name>\n  <type>Sporting</type>\n  <description>The European Rugby League, established in 1997, celebrates the spirit of rugby union with an emphasis on team cohesion and international rivalry.</description>\n  <date>August 2024</date>\n  <place>Zentralstadion, Tilersville</place>\n  <city>Tilersville</city>\n  <country>Borduria</country>\n  <duration>2 weeks</duration>\n  <organizer>Union of European Leagues</organizer>\n  <number_of_participants>20 teams</number_of_participants>\n  <budget>\u20ac45 million</budget>\n</event>\n\n<event>\n  <id>EVENT-3</id>\n  <name>European Rugby Champions Cup</name>\n  <type>Sporting</type>\n  <description>The European Rugby Champions Cup is a tournament that brings together elite European clubs in a fierce competition for supremacy in rugby.</description>\n  <date>May 2024</date>\n  <place>Stadium Arena, Eastport</place>\n  <city>Eastport</city>\n  <country>Solanis</country>\n  <duration>4 weeks</duration>\n  <organizer>European Rugby Council</organizer>\n  <number_of_participants>24 teams</number_of_participants>\n  <budget>\u20ac80 million</budget>\n</event>\n\n<building>\n  <id>BUILDING-1</id>\n  <name>Renaissance Stadium</name>\n  <type>Public</type>\n  <description>Renaissance Stadium is a modern multi-purpose facility located in Rosendale, renowned for hosting major sports events and community gatherings.</description>\n  <place>Renaissance Dome, Rosendale</place>\n  <city>Rosendale</city>\n  <country>Grevian Federation</country>\n  <architect>Elara Designs</architect>\n  <year_built>2010</year_built>\n  <height>50 meters</height>\n  <floors>4</floors>\n  <material>Steel and glass</material>\n  <capacity>25,000</capacity>\n</building>\n\n</results>\n```",
+  "instructions": "You are an AI assistant tasked with creating fictional entities based on provided information. \nYour goal is to generate detailed, coherent, and realistic descriptions for new locations, persons, organizations, products, art, buildings, events, and miscellaneous entities. \nFollow these instructions carefully:\n\n1. Review the existing entities (if provided):\n\n<existing_entities>\n{{LOCATIONS_XML}}\n{{PERSONS_XML}}\n{{ORGANIZATIONS_XML}}\n{{PRODUCTS_XML}}\n{{ARTS_XML}}\n{{EVENTS_XML}}\n{{BUILDINGS_XML}}\n{{MISCELLANEOUSS_XML}}\n</existing_entities>\n\n2. Review the names of new entities to be created:\n<new_entity_names>\n{{USED_NEW-LOCATIONS_XML}}\n{{USED_NEW-PERSONS_XML}}\n{{USED_NEW-ORGANIZATIONS_XML}}\n{{USED_NEW-PRODUCTS_XML}}\n{{USED_NEW-ARTS_XML}}\n{{USED_NEW-EVENTS_XML}}\n{{USED_NEW-BUILDINGS_XML}}\n{{USED_NEW-MISCELLANEOUSS_XML}}\n</new_entity_names>\n\n3. Carefully read the provided outline:\n\nDate: {{DATE}}\n<outline>\n{{OUTLINE}}\n</outline>\n\nBased on the information provided, create detailed descriptions for each new entity following these guidelines:\n\nGeneral instructions:\n- Ensure all created entities are entirely fictional and not similar to any real or known fictional entities.\n- Maintain realism and coherence with the provided outline and other entities.\n- Create a believable and consistent fictional world that aligns with the context of the outline.\n- For entity descriptions, focus on providing a solid background that remains valid throughout the story, rather than basing it centrally on the outline itself.\n- Develop well-rounded entities with backgrounds and characteristics that can support various potential story developments beyond the specific outline provided.\n- Strictly derive all entities from the outline. Do not invent entities that are not mentioned in the outline.\n- Do not alter the name of the entities.\n- Some properties (e.g., place, city, country, spouse, architect, country, nationality) must be filled with named entities. Make sure to use FICTIONAL named entities ( fictional places, cities, countries, spouse names, architects, countries, nationalities, etc.). Check if you should use one of the existing fictional named entities (from <new_entity_names> and <existing_entities>) or create a fictional name instead. DO NOT say that any of the entities or properties are fictional. It is important that everything seems realistic!\n- Avoid exaggerating the named entities. They can be ordinary and don\u2019t need to be world-class or state-of-the-art.\n- Ensure the details of the named entities are realistic. If global impact isn\u2019t necessary, adjust the details to be more modest and appropriate.\n\nSpecific instructions for each entity type:\n\n1. For each new location:\n   - Use the provided name and ID\n   - Determine an appropriate type (city, village, country, region, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: population, area, founded, climate, elevation, country\n   - Format the output as follows:\n     <location>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[city/village/country/region]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: population, area, founded, climate, elevation, country]\n     </location>\n\n2. For each new person:\n   - Use the provided name and ID\n   - Create fictional details for: date_of_birth, gender, profession, nationality, education\n   - Write a concise single-sentence description that:\n     * Focuses on background, personality, and motivations\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: height, weight, eye_color, hair_color, political_affiliation, marital_status, spouse\n   - Format the output as follows:\n     <person>\n     <id>[Provided ID]</id>\n     <name>[Full name]</name>\n     <date_of_birth>[Date]</date_of_birth>\n     <gender>[Gender]</gender>\n     <profession>[Job title]</profession>\n     <nationality>[Country]</nationality>\n     <education>[Highest level of education]</education>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: height, weight, eye_color, hair_color, political_affiliation, marital_status]\n     </person>\n\n3. For each new organization:\n   - Use the provided name and ID\n   - Determine an appropriate type (company, non-profit, educational institution, government agency, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: founded, headquarters, industry, mission_statement, number_of_employees, annual_revenue\n   - Format the output as follows:\n     <organization>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[company/non-profit/educational institution/government agency]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: founded, headquarters, industry, mission_statement, number_of_employees, annual_revenue]\n     </organization>\n\n4. For each new product:\n   - Use the provided name and ID\n   - Determine an appropriate type (consumer good, software, service, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: manufacturer, release_date, price, weight, warranty\n   - Format the output as follows:\n     <product>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[consumer good/software/service]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: manufacturer, release_date, price, weight, warranty]\n     </product>\n\n5. For each new art piece:\n   - Use the provided name and ID\n   - Determine an appropriate type (painting, sculpture, novel, film, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: creator, year_created, current_location_country, current_location_city, current_location_place\n   - Format the output as follows:\n     <art>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[painting/sculpture/novel/film]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: creator, year_created, current_location_country, current_location_city, current_location_place]\n     </art>\n\n6. For each new building:\n   - Use the provided name and ID\n   - Determine an appropriate type (residential, commercial, public, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: place, city, country, architect, year_built, height, floors, material, capacity\n   - Format the output as follows:\n     <building>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[residential/commercial/public]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: place, city, country, architect, year_built, height, floors, material, capacity]\n     </building>\n\n7. For each new event:\n   - Use the provided name and ID\n   - Determine an appropriate type (historical, cultural, sporting, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: date, place, city, country, duration, organizer, number_of_participants, budget\n   - Format the output as follows:\n     <event>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[historical/cultural/sporting]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: date, place, city, country, duration, organizer, number_of_participants, budget]\n     </event>\n\n8. For each new miscellaneous entity:\n   - Use the provided name and ID\n   - Determine an appropriate type (concept, theory, phenomenon, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Format the output as follows:\n     <miscellaneous>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[concept/theory/phenomenon]</type>\n     <description>[One-sentence concise description]</description>\n     </miscellaneous>\n\nPresent your final output in the following format:\n<results>\n[Insert all created entities here, grouped by type]\n</results>\n\nRemember to create detailed, coherent, and realistic descriptions for each entity while adhering to the guidelines provided. Ensure that all descriptions are single, short, and concise sentences that do not refer to other entities and only discuss background information unrelated to the event described in the outline.",
+  "text_prompt": "You are an AI assistant tasked with creating fictional entities based on provided information. \nYour goal is to generate detailed, coherent, and realistic descriptions for new locations, persons, organizations, products, art, buildings, events, and miscellaneous entities. \nFollow these instructions carefully:\n\n1. Review the existing entities (if provided):\n\n<existing_entities>\n\n\n\n\n\n\n\n\n</existing_entities>\n\n2. Review the names of new entities to be created:\n<new_entity_names>\n\n<person><category>person</category><id>PERSON-1</id><name>Samuel Blackwood</name></person>\n<person><category>person</category><id>PERSON-2</id><name>Isabelle Ngo</name></person>\n<person><category>person</category><id>PERSON-3</id><name>Eliot Carver</name></person>\n<person><category>person</category><id>PERSON-4</id><name>Helena Marquez</name></person>\n<person><category>person</category><id>PERSON-5</id><name>Dimitri Petrov</name></person>\n<organization><category>organization</category><id>ORGANIZATION-1</id><name>Greenfield Falcons</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-2</id><name>Nova Shield FC</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-3</id><name>Falcons United</name></organization>\n\n\n<event><category>event</category><id>EVENT-1</id><name>European Rugby Championship</name></event>\n<event><category>event</category><id>EVENT-2</id><name>European Rugby League</name></event>\n<event><category>event</category><id>EVENT-3</id><name>European Rugby Champions Cup</name></event>\n<building><category>building</category><id>BUILDING-1</id><name>Renaissance Stadium</name></building>\n\n</new_entity_names>\n\n3. Carefully read the provided outline:\n\nDate: 2023-11-14\n<outline>\nThe {Greenfield Falcons|ORGANIZATION-1}, a major European rugby club, announced the departure of their entire coaching staff following an underwhelming season, matching the lowest finish in their history.\nThe {Greenfield Falcons|ORGANIZATION-1} had not finished below fifth place in the league since the 2010 season, making this year's performance particularly disappointing for the club's loyal fan base.\nOn November 14, 2023, {Greenfield Falcons|ORGANIZATION-1}'s management confirmed the recruitment of {Nova Shield FC|ORGANIZATION-2}\u2019s coaching team, known for their innovative defensive strategies, appealing to the club\u2019s desire for a systematic shift in performance.\n{Nova Shield FC|ORGANIZATION-2} had previously led their team to a top-three finish in the {European Rugby League|EVENT-2}, largely due to their emphasis on a robust defensive lineup.\nLead coach {Samuel Blackwood|PERSON-1}, heralded for his tactical acumen, along with defensive analyst {Isabelle Ngo|PERSON-2}, and assistant coach {Eliot Carver|PERSON-3}, would head the new coaching staff.\n{Samuel Blackwood|PERSON-1} had previously coached the national team of a neighboring country, where he implemented a defensive strategy that reduced the average points conceded per game by 30%.\n{Isabelle Ngo|PERSON-2}, known for her analytical prowess, had developed a proprietary software tool that helped {Nova Shield FC|ORGANIZATION-2} analyze opponent weaknesses in real-time.\nThe announcement was made at the club's headquarters, {Renaissance Stadium|BUILDING-1}, the former home of the {Falcons|ORGANIZATION-1}\u2019s long-time supporters.\n{Renaissance Stadium|BUILDING-1}, with a seating capacity of 25,000, has been the site of numerous historic victories for the {Greenfield Falcons|ORGANIZATION-1}, including their last championship win in 2015.\n{Greenfield Falcons|ORGANIZATION-1} President {Helena Marquez|PERSON-4} expressed optimism, stating, \"Our club is poised for a renaissance, ushering in a new era focused on strong defensive play and resilience.\"\nPresident {Helena Marquez|PERSON-4} emphasized that the new coaching staff's approach would be integrated with the club's youth academy to ensure long-term success.\nPlayer representatives from the {Greenfield Falcons|ORGANIZATION-1} expressed mixed reactions, with veteran forward {Dimitri Petrov|PERSON-5} emphasizing the need for \u201cfresh perspectives\u201d but highlighting concerns about adapting to new training routines and methodologies.\n{Dimitri Petrov|PERSON-5}, who has been with the {Greenfield Falcons|ORGANIZATION-1} for over a decade, expressed hope that the new strategies would rejuvenate the team's performance in the upcoming {European Rugby Championship|EVENT-1}.\nAnalysts predict that the new coaching staff\u2019s approach may require a more rigorous training regimen, with a greater emphasis on defensive drills and tactical formations, potentially reshaping team dynamics.\nThe new training regimen is expected to include twice-weekly sessions focused solely on defensive positioning and counter-attack strategies.\nDedicated supporter group {Falcons United|ORGANIZATION-3} organized a meeting to discuss the club\u2019s trajectory, noting that improved defense could lead to better results in the {European Rugby Championship|EVENT-1}.\n{Falcons United|ORGANIZATION-3}, comprising over 5,000 members, has been instrumental in organizing fan events and supporting the club through its challenging seasons.\nThe official unveiling of the new coaching staff was scheduled for November 18, 2023, with a press conference held to outline the {Greenfield Falcons|ORGANIZATION-1}\u2019s strategic goals for the upcoming season.\nDuring the press conference, the new coaching staff outlined a three-year plan aimed at achieving a top-two finish in the league and qualifying for the {European Rugby Champions Cup|EVENT-3}.\nIn anticipation of the new season, ticket sales for home matches saw a moderate increase, signaling growing optimism among the fan base for the {Greenfield Falcons|ORGANIZATION-1}\u2019s next steps under the new leadership.\nThe increase in ticket sales was particularly notable among younger fans, who were attracted by the club's renewed focus on innovation and youth development.\n</outline>\n\nBased on the information provided, create detailed descriptions for each new entity following these guidelines:\n\nGeneral instructions:\n- Ensure all created entities are entirely fictional and not similar to any real or known fictional entities.\n- Maintain realism and coherence with the provided outline and other entities.\n- Create a believable and consistent fictional world that aligns with the context of the outline.\n- For entity descriptions, focus on providing a solid background that remains valid throughout the story, rather than basing it centrally on the outline itself.\n- Develop well-rounded entities with backgrounds and characteristics that can support various potential story developments beyond the specific outline provided.\n- Strictly derive all entities from the outline. Do not invent entities that are not mentioned in the outline.\n- Do not alter the name of the entities.\n- Some properties (e.g., place, city, country, spouse, architect, country, nationality) must be filled with named entities. Make sure to use FICTIONAL named entities ( fictional places, cities, countries, spouse names, architects, countries, nationalities, etc.). Check if you should use one of the existing fictional named entities (from <new_entity_names> and <existing_entities>) or create a fictional name instead. DO NOT say that any of the entities or properties are fictional. It is important that everything seems realistic!\n- Avoid exaggerating the named entities. They can be ordinary and don\u2019t need to be world-class or state-of-the-art.\n- Ensure the details of the named entities are realistic. If global impact isn\u2019t necessary, adjust the details to be more modest and appropriate.\n\nSpecific instructions for each entity type:\n\n1. For each new location:\n   - Use the provided name and ID\n   - Determine an appropriate type (city, village, country, region, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: population, area, founded, climate, elevation, country\n   - Format the output as follows:\n     <location>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[city/village/country/region]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: population, area, founded, climate, elevation, country]\n     </location>\n\n2. For each new person:\n   - Use the provided name and ID\n   - Create fictional details for: date_of_birth, gender, profession, nationality, education\n   - Write a concise single-sentence description that:\n     * Focuses on background, personality, and motivations\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: height, weight, eye_color, hair_color, political_affiliation, marital_status, spouse\n   - Format the output as follows:\n     <person>\n     <id>[Provided ID]</id>\n     <name>[Full name]</name>\n     <date_of_birth>[Date]</date_of_birth>\n     <gender>[Gender]</gender>\n     <profession>[Job title]</profession>\n     <nationality>[Country]</nationality>\n     <education>[Highest level of education]</education>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: height, weight, eye_color, hair_color, political_affiliation, marital_status]\n     </person>\n\n3. For each new organization:\n   - Use the provided name and ID\n   - Determine an appropriate type (company, non-profit, educational institution, government agency, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: founded, headquarters, industry, mission_statement, number_of_employees, annual_revenue\n   - Format the output as follows:\n     <organization>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[company/non-profit/educational institution/government agency]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: founded, headquarters, industry, mission_statement, number_of_employees, annual_revenue]\n     </organization>\n\n4. For each new product:\n   - Use the provided name and ID\n   - Determine an appropriate type (consumer good, software, service, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: manufacturer, release_date, price, weight, warranty\n   - Format the output as follows:\n     <product>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[consumer good/software/service]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: manufacturer, release_date, price, weight, warranty]\n     </product>\n\n5. For each new art piece:\n   - Use the provided name and ID\n   - Determine an appropriate type (painting, sculpture, novel, film, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: creator, year_created, current_location_country, current_location_city, current_location_place\n   - Format the output as follows:\n     <art>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[painting/sculpture/novel/film]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: creator, year_created, current_location_country, current_location_city, current_location_place]\n     </art>\n\n6. For each new building:\n   - Use the provided name and ID\n   - Determine an appropriate type (residential, commercial, public, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: place, city, country, architect, year_built, height, floors, material, capacity\n   - Format the output as follows:\n     <building>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[residential/commercial/public]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: place, city, country, architect, year_built, height, floors, material, capacity]\n     </building>\n\n7. For each new event:\n   - Use the provided name and ID\n   - Determine an appropriate type (historical, cultural, sporting, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: date, place, city, country, duration, organizer, number_of_participants, budget\n   - Format the output as follows:\n     <event>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[historical/cultural/sporting]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: date, place, city, country, duration, organizer, number_of_participants, budget]\n     </event>\n\n8. For each new miscellaneous entity:\n   - Use the provided name and ID\n   - Determine an appropriate type (concept, theory, phenomenon, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Format the output as follows:\n     <miscellaneous>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[concept/theory/phenomenon]</type>\n     <description>[One-sentence concise description]</description>\n     </miscellaneous>\n\nPresent your final output in the following format:\n<results>\n[Insert all created entities here, grouped by type]\n</results>\n\nRemember to create detailed, coherent, and realistic descriptions for each entity while adhering to the guidelines provided. Ensure that all descriptions are single, short, and concise sentences that do not refer to other entities and only discuss background information unrelated to the event described in the outline.",
+  "system-prompt": null,
+  "values": {
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "GENRE": "Sports",
+    "HISTORIES": [],
+    "EVENT_SUMMARY": "Following a string of disappointing seasons, a major European rugby club has replaced its entire coaching staff with a team known for their innovative defensive strategies.",
+    "EVENT_SUMMARY_FOR_NAME": "Following a string o",
+    "KEYWORDS": "",
+    "CREATED_AT": 0,
+    "NEXT_IDS": {
+      "person": 6,
+      "organization": 4,
+      "location": 1,
+      "product": 1,
+      "art": 1,
+      "building": 2,
+      "event": 4,
+      "miscellaneous": 1
+    },
+    "PROVIDED_DATE": "",
+    "PERSON": [],
+    "ORGANIZATION": [],
+    "LOCATION": [],
+    "PRODUCT": [],
+    "ART": [],
+    "BUILDING": [],
+    "EVENT": [],
+    "MISCELLANEOUS": [],
+    "PERSONS_XML": "",
+    "ORGANIZATIONS_XML": "",
+    "LOCATIONS_XML": "",
+    "PRODUCTS_XML": "",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "",
+    "EVENTS_XML": "",
+    "MISCELLANEOUSS_XML": "",
+    "NUM_STORYITEMS": 10,
+    "HISTORY_XML": "",
+    "STORY_ITEM": [
+      "The {Greenfield Falcons|ORGANIZATION-1}, a major European rugby club, announced the departure of their entire coaching staff following an underwhelming season, matching the lowest finish in their history.",
+      "The {Greenfield Falcons|ORGANIZATION-1} had not finished below fifth place in the league since the 2010 season, making this year's performance particularly disappointing for the club's loyal fan base.",
+      "On November 14, 2023, {Greenfield Falcons|ORGANIZATION-1}'s management confirmed the recruitment of {Nova Shield FC|ORGANIZATION-2}\u2019s coaching team, known for their innovative defensive strategies, appealing to the club\u2019s desire for a systematic shift in performance.",
+      "{Nova Shield FC|ORGANIZATION-2} had previously led their team to a top-three finish in the {European Rugby League|EVENT-2}, largely due to their emphasis on a robust defensive lineup.",
+      "Lead coach {Samuel Blackwood|PERSON-1}, heralded for his tactical acumen, along with defensive analyst {Isabelle Ngo|PERSON-2}, and assistant coach {Eliot Carver|PERSON-3}, would head the new coaching staff.",
+      "{Samuel Blackwood|PERSON-1} had previously coached the national team of a neighboring country, where he implemented a defensive strategy that reduced the average points conceded per game by 30%.",
+      "{Isabelle Ngo|PERSON-2}, known for her analytical prowess, had developed a proprietary software tool that helped {Nova Shield FC|ORGANIZATION-2} analyze opponent weaknesses in real-time.",
+      "The announcement was made at the club's headquarters, {Renaissance Stadium|BUILDING-1}, the former home of the {Falcons|ORGANIZATION-1}\u2019s long-time supporters.",
+      "{Renaissance Stadium|BUILDING-1}, with a seating capacity of 25,000, has been the site of numerous historic victories for the {Greenfield Falcons|ORGANIZATION-1}, including their last championship win in 2015.",
+      "{Greenfield Falcons|ORGANIZATION-1} President {Helena Marquez|PERSON-4} expressed optimism, stating, \"Our club is poised for a renaissance, ushering in a new era focused on strong defensive play and resilience.\"",
+      "President {Helena Marquez|PERSON-4} emphasized that the new coaching staff's approach would be integrated with the club's youth academy to ensure long-term success.",
+      "Player representatives from the {Greenfield Falcons|ORGANIZATION-1} expressed mixed reactions, with veteran forward {Dimitri Petrov|PERSON-5} emphasizing the need for \u201cfresh perspectives\u201d but highlighting concerns about adapting to new training routines and methodologies.",
+      "{Dimitri Petrov|PERSON-5}, who has been with the {Greenfield Falcons|ORGANIZATION-1} for over a decade, expressed hope that the new strategies would rejuvenate the team's performance in the upcoming {European Rugby Championship|EVENT-1}.",
+      "Analysts predict that the new coaching staff\u2019s approach may require a more rigorous training regimen, with a greater emphasis on defensive drills and tactical formations, potentially reshaping team dynamics.",
+      "The new training regimen is expected to include twice-weekly sessions focused solely on defensive positioning and counter-attack strategies.",
+      "Dedicated supporter group {Falcons United|ORGANIZATION-3} organized a meeting to discuss the club\u2019s trajectory, noting that improved defense could lead to better results in the {European Rugby Championship|EVENT-1}.",
+      "{Falcons United|ORGANIZATION-3}, comprising over 5,000 members, has been instrumental in organizing fan events and supporting the club through its challenging seasons.",
+      "The official unveiling of the new coaching staff was scheduled for November 18, 2023, with a press conference held to outline the {Greenfield Falcons|ORGANIZATION-1}\u2019s strategic goals for the upcoming season.",
+      "During the press conference, the new coaching staff outlined a three-year plan aimed at achieving a top-two finish in the league and qualifying for the {European Rugby Champions Cup|EVENT-3}.",
+      "In anticipation of the new season, ticket sales for home matches saw a moderate increase, signaling growing optimism among the fan base for the {Greenfield Falcons|ORGANIZATION-1}\u2019s next steps under the new leadership.",
+      "The increase in ticket sales was particularly notable among younger fans, who were attracted by the club's renewed focus on innovation and youth development."
+    ],
+    "DATE": "2023-11-14",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 2,
+    "OUTLINE": "The {Greenfield Falcons|ORGANIZATION-1}, a major European rugby club, announced the departure of their entire coaching staff following an underwhelming season, matching the lowest finish in their history.\nThe {Greenfield Falcons|ORGANIZATION-1} had not finished below fifth place in the league since the 2010 season, making this year's performance particularly disappointing for the club's loyal fan base.\nOn November 14, 2023, {Greenfield Falcons|ORGANIZATION-1}'s management confirmed the recruitment of {Nova Shield FC|ORGANIZATION-2}\u2019s coaching team, known for their innovative defensive strategies, appealing to the club\u2019s desire for a systematic shift in performance.\n{Nova Shield FC|ORGANIZATION-2} had previously led their team to a top-three finish in the {European Rugby League|EVENT-2}, largely due to their emphasis on a robust defensive lineup.\nLead coach {Samuel Blackwood|PERSON-1}, heralded for his tactical acumen, along with defensive analyst {Isabelle Ngo|PERSON-2}, and assistant coach {Eliot Carver|PERSON-3}, would head the new coaching staff.\n{Samuel Blackwood|PERSON-1} had previously coached the national team of a neighboring country, where he implemented a defensive strategy that reduced the average points conceded per game by 30%.\n{Isabelle Ngo|PERSON-2}, known for her analytical prowess, had developed a proprietary software tool that helped {Nova Shield FC|ORGANIZATION-2} analyze opponent weaknesses in real-time.\nThe announcement was made at the club's headquarters, {Renaissance Stadium|BUILDING-1}, the former home of the {Falcons|ORGANIZATION-1}\u2019s long-time supporters.\n{Renaissance Stadium|BUILDING-1}, with a seating capacity of 25,000, has been the site of numerous historic victories for the {Greenfield Falcons|ORGANIZATION-1}, including their last championship win in 2015.\n{Greenfield Falcons|ORGANIZATION-1} President {Helena Marquez|PERSON-4} expressed optimism, stating, \"Our club is poised for a renaissance, ushering in a new era focused on strong defensive play and resilience.\"\nPresident {Helena Marquez|PERSON-4} emphasized that the new coaching staff's approach would be integrated with the club's youth academy to ensure long-term success.\nPlayer representatives from the {Greenfield Falcons|ORGANIZATION-1} expressed mixed reactions, with veteran forward {Dimitri Petrov|PERSON-5} emphasizing the need for \u201cfresh perspectives\u201d but highlighting concerns about adapting to new training routines and methodologies.\n{Dimitri Petrov|PERSON-5}, who has been with the {Greenfield Falcons|ORGANIZATION-1} for over a decade, expressed hope that the new strategies would rejuvenate the team's performance in the upcoming {European Rugby Championship|EVENT-1}.\nAnalysts predict that the new coaching staff\u2019s approach may require a more rigorous training regimen, with a greater emphasis on defensive drills and tactical formations, potentially reshaping team dynamics.\nThe new training regimen is expected to include twice-weekly sessions focused solely on defensive positioning and counter-attack strategies.\nDedicated supporter group {Falcons United|ORGANIZATION-3} organized a meeting to discuss the club\u2019s trajectory, noting that improved defense could lead to better results in the {European Rugby Championship|EVENT-1}.\n{Falcons United|ORGANIZATION-3}, comprising over 5,000 members, has been instrumental in organizing fan events and supporting the club through its challenging seasons.\nThe official unveiling of the new coaching staff was scheduled for November 18, 2023, with a press conference held to outline the {Greenfield Falcons|ORGANIZATION-1}\u2019s strategic goals for the upcoming season.\nDuring the press conference, the new coaching staff outlined a three-year plan aimed at achieving a top-two finish in the league and qualifying for the {European Rugby Champions Cup|EVENT-3}.\nIn anticipation of the new season, ticket sales for home matches saw a moderate increase, signaling growing optimism among the fan base for the {Greenfield Falcons|ORGANIZATION-1}\u2019s next steps under the new leadership.\nThe increase in ticket sales was particularly notable among younger fans, who were attracted by the club's renewed focus on innovation and youth development.",
+    "PRE-CONSISTENCY-NUM-ITEMS": 21,
+    "STORYITEM_XML": "<storyitems>\n<storyitem>The Greenfield Falcons, a major European rugby club, announced the departure of their entire coaching staff following an underwhelming season, matching the lowest finish in their history.</storyitem>\n<storyitem>The Greenfield Falcons had not finished below fifth place in the league since the 2010 season, making this year's performance particularly disappointing for the club's loyal fan base.</storyitem>\n<storyitem>On November 14, 2023, Greenfield Falcons' management confirmed the recruitment of Nova Shield FC\u2019s coaching team, known for their innovative defensive strategies, appealing to the club\u2019s desire for a systematic shift in performance.</storyitem>\n<storyitem>Nova Shield FC had previously led their team to a top-three finish in the European Rugby League, largely due to their emphasis on a robust defensive lineup.</storyitem>\n<storyitem>Lead coach Samuel Blackwood, heralded for his tactical acumen, along with defensive analyst Isabelle Ngo, and assistant coach Eliot Carver, would head the new coaching staff.</storyitem>\n<storyitem>Samuel Blackwood had previously coached the national team of a neighboring country, where he implemented a defensive strategy that reduced the average points conceded per game by 30%.</storyitem>\n<storyitem>Isabelle Ngo, known for her analytical prowess, had developed a proprietary software tool that helped Nova Shield FC analyze opponent weaknesses in real-time.</storyitem>\n<storyitem>The announcement was made at the club's headquarters, Renaissance Stadium, the former home of the Falcons\u2019 long-time supporters.</storyitem>\n<storyitem>Renaissance Stadium, with a seating capacity of 25,000, has been the site of numerous historic victories for the Falcons, including their last championship win in 2015.</storyitem>\n<storyitem>Greenfield Falcons President Helena Marquez expressed optimism, stating, \"Our club is poised for a renaissance, ushering in a new era focused on strong defensive play and resilience.\"</storyitem>\n<storyitem>President Marquez emphasized that the new coaching staff's approach would be integrated with the club's youth academy to ensure long-term success.</storyitem>\n<storyitem>Player representatives from the Falcons expressed mixed reactions, with veteran forward Dimitri Petrov emphasizing the need for \u201cfresh perspectives\u201d but highlighting concerns about adapting to new training routines and methodologies.</storyitem>\n<storyitem>Dimitri Petrov, who has been with the Falcons for over a decade, expressed hope that the new strategies would rejuvenate the team's performance in the upcoming European Rugby Championship.</storyitem>\n<storyitem>Analysts predict that the new coaching staff\u2019s approach may require a more rigorous training regimen, with a greater emphasis on defensive drills and tactical formations, potentially reshaping team dynamics.</storyitem>\n<storyitem>The new training regimen is expected to include twice-weekly sessions focused solely on defensive positioning and counter-attack strategies.</storyitem>\n<storyitem>Dedicated supporter group Falcons United organized a meeting to discuss the club\u2019s trajectory, noting that improved defense could lead to better results in the European Rugby Championship.</storyitem>\n<storyitem>Falcons United, comprising over 5,000 members, has been instrumental in organizing fan events and supporting the club through its challenging seasons.</storyitem>\n<storyitem>The official unveiling of the new coaching staff was scheduled for November 18, 2023, with a press conference held to outline the Falcons\u2019 strategic goals for the upcoming season.</storyitem>\n<storyitem>During the press conference, the new coaching staff outlined a three-year plan aimed at achieving a top-two finish in the league and qualifying for the European Rugby Champions Cup.</storyitem>\n<storyitem>In anticipation of the new season, ticket sales for home matches saw a moderate increase, signaling growing optimism among the fan base for the Falcons\u2019 next steps under the new leadership.</storyitem>\n<storyitem>The increase in ticket sales was particularly notable among younger fans, who were attracted by the club's renewed focus on innovation and youth development.</storyitem>\n<storyitems>",
+    "NEW_PERSON_NAME": [
+      {
+        "name": "Samuel Blackwood",
+        "old_name": "Samuel Blackwood"
+      },
+      {
+        "name": "Isabelle Ngo",
+        "old_name": "Isabelle Ngo"
+      },
+      {
+        "name": "Eliot Carver",
+        "old_name": "Eliot Carver"
+      },
+      {
+        "name": "Helena Marquez",
+        "old_name": "Helena Marquez"
+      },
+      {
+        "name": "Dimitri Petrov",
+        "old_name": "Dimitri Petrov"
+      }
+    ],
+    "NEW_ORGANIZATION_NAME": [
+      {
+        "name": "Greenfield Falcons",
+        "old_name": "Greenfield Falcons"
+      },
+      {
+        "name": "Nova Shield FC",
+        "old_name": "Nova Shield FC"
+      },
+      {
+        "name": "Falcons United",
+        "old_name": "Falcons United"
+      }
+    ],
+    "NEW_LOCATION_NAME": [],
+    "NEW_PRODUCT_NAME": [],
+    "NEW_ART_NAME": [],
+    "NEW_BUILDING_NAME": [
+      {
+        "name": "Renaissance Stadium",
+        "old_name": "Renaissance Stadium"
+      }
+    ],
+    "NEW_EVENT_NAME": [
+      {
+        "name": "European Rugby Championship",
+        "old_name": "European Rugby Championship"
+      },
+      {
+        "name": "European Rugby League",
+        "old_name": "European Rugby League"
+      },
+      {
+        "name": "European Rugby Champions Cup",
+        "old_name": "European Rugby Champions Cup"
+      }
+    ],
+    "NEW_MISCELLANEOUS_NAME": [],
+    "RESPONSE": "```xml\n<results>\n  <scratchpad>\n    I will begin by identifying all named entities mentioned in the OUTLINE and ensure each is listed only once under the correct category.\n\n    1. **Person**:\n       - Samuel Blackwood\n       - Isabelle Ngo\n       - Eliot Carver\n       - Helena Marquez\n       - Dimitri Petrov\n\n    2. **Organization**:\n       - Greenfield Falcons\n       - Nova Shield FC\n       - Falcons United\n\n    3. **Location**:\n       - (No new location entities identified beyond Renaissance Stadium)\n\n    4. **Event**:\n       - European Rugby Championship\n       - European Rugby League\n       - European Rugby Champions Cup\n\n    5. **Building**:\n       - Renaissance Stadium\n\n    Next, I will ensure that each entity is listed only once and under the correct category. Since \"Renaissance Stadium\" is explicitly a building, it should only be listed under the <building> category.\n\n    After verification, the final list of new named entities is as follows:\n\n    - **Person**:\n      - Samuel Blackwood\n      - Isabelle Ngo\n      - Eliot Carver\n      - Helena Marquez\n      - Dimitri Petrov\n\n    - **Organization**:\n      - Greenfield Falcons\n      - Nova Shield FC\n      - Falcons United\n\n    - **Event**:\n      - European Rugby Championship\n      - European Rugby League\n      - European Rugby Champions Cup\n\n    - **Building**:\n      - Renaissance Stadium\n\n    I will now format these entities in XML according to their categories.\n  </scratchpad>\n\n  <output>\n    <person>Samuel Blackwood</person>\n    <person>Isabelle Ngo</person>\n    <person>Eliot Carver</person>\n    <person>Helena Marquez</person>\n    <person>Dimitri Petrov</person>\n    <organization>Greenfield Falcons</organization>\n    <organization>Nova Shield FC</organization>\n    <organization>Falcons United</organization>\n    <event>European Rugby Championship</event>\n    <event>European Rugby League</event>\n    <event>European Rugby Champions Cup</event>\n    <building>Renaissance Stadium</building>\n  </output>\n</results>\n```",
+    "CORRECTED_PERSON_NAME": [
+      {
+        "name": "Samuel Blackwood",
+        "old_name": "Samuel Blackwood",
+        "id": "PERSON-1"
+      },
+      {
+        "name": "Isabelle Ngo",
+        "old_name": "Isabelle Ngo",
+        "id": "PERSON-2"
+      },
+      {
+        "name": "Eliot Carver",
+        "old_name": "Eliot Carver",
+        "id": "PERSON-3"
+      },
+      {
+        "name": "Helena Marquez",
+        "old_name": "Helena Marquez",
+        "id": "PERSON-4"
+      },
+      {
+        "name": "Dimitri Petrov",
+        "old_name": "Dimitri Petrov",
+        "id": "PERSON-5"
+      }
+    ],
+    "CORRECTED_ORGANIZATION_NAME": [
+      {
+        "name": "Greenfield Falcons",
+        "old_name": "Greenfield Falcons",
+        "id": "ORGANIZATION-1"
+      },
+      {
+        "name": "Nova Shield FC",
+        "old_name": "Nova Shield FC",
+        "id": "ORGANIZATION-2"
+      },
+      {
+        "name": "Falcons United",
+        "old_name": "Falcons United",
+        "id": "ORGANIZATION-3"
+      }
+    ],
+    "CORRECTED_LOCATION_NAME": [],
+    "CORRECTED_PRODUCT_NAME": [],
+    "CORRECTED_ART_NAME": [],
+    "CORRECTED_BUILDING_NAME": [
+      {
+        "name": "Renaissance Stadium",
+        "old_name": "Renaissance Stadium",
+        "id": "BUILDING-1"
+      }
+    ],
+    "CORRECTED_EVENT_NAME": [
+      {
+        "name": "European Rugby Championship",
+        "old_name": "European Rugby Championship",
+        "id": "EVENT-1"
+      },
+      {
+        "name": "European Rugby League",
+        "old_name": "European Rugby League",
+        "id": "EVENT-2"
+      },
+      {
+        "name": "European Rugby Champions Cup",
+        "old_name": "European Rugby Champions Cup",
+        "id": "EVENT-3"
+      }
+    ],
+    "CORRECTED_MISCELLANEOUS_NAME": [],
+    "CRITIQUE_ERRORS": {
+      "entity-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ]
+    },
+    "ADJUSTED_PERSONS_XML": "<person><id>PERSON-1</id><name>Samuel Blackwood</name><old_name>Samuel Blackwood</old_name></person>\n<person><id>PERSON-2</id><name>Isabelle Ngo</name><old_name>Isabelle Ngo</old_name></person>\n<person><id>PERSON-3</id><name>Eliot Carver</name><old_name>Eliot Carver</old_name></person>\n<person><id>PERSON-4</id><name>Helena Marquez</name><old_name>Helena Marquez</old_name></person>\n<person><id>PERSON-5</id><name>Dimitri Petrov</name><old_name>Dimitri Petrov</old_name></person>",
+    "ADJUSTED_ORGANIZATIONS_XML": "<organization><id>ORGANIZATION-1</id><name>Greenfield Falcons</name><old_name>Greenfield Falcons</old_name></organization>\n<organization><id>ORGANIZATION-2</id><name>Nova Shield FC</name><old_name>Nova Shield FC</old_name></organization>\n<organization><id>ORGANIZATION-3</id><name>Falcons United</name><old_name>Falcons United</old_name></organization>",
+    "ADJUSTED_LOCATIONS_XML": "",
+    "ADJUSTED_PRODUCTS_XML": "",
+    "ADJUSTED_ARTS_XML": "",
+    "ADJUSTED_BUILDINGS_XML": "<building><id>BUILDING-1</id><name>Renaissance Stadium</name><old_name>Renaissance Stadium</old_name></building>",
+    "ADJUSTED_EVENTS_XML": "<event><id>EVENT-1</id><name>European Rugby Championship</name><old_name>European Rugby Championship</old_name></event>\n<event><id>EVENT-2</id><name>European Rugby League</name><old_name>European Rugby League</old_name></event>\n<event><id>EVENT-3</id><name>European Rugby Champions Cup</name><old_name>European Rugby Champions Cup</old_name></event>",
+    "ADJUSTED_MISCELLANEOUSS_XML": "",
+    "USED_PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Samuel Blackwood"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Isabelle Ngo"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Eliot Carver"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Helena Marquez"
+      },
+      {
+        "id": "PERSON-5",
+        "name": "Dimitri Petrov"
+      }
+    ],
+    "USED_ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Greenfield Falcons"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Nova Shield FC"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Falcons United"
+      }
+    ],
+    "USED_LOCATION": [],
+    "USED_PRODUCT": [],
+    "USED_ART": [],
+    "USED_BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Renaissance Stadium"
+      }
+    ],
+    "USED_EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "European Rugby Championship"
+      },
+      {
+        "id": "EVENT-2",
+        "name": "European Rugby League"
+      },
+      {
+        "id": "EVENT-3",
+        "name": "European Rugby Champions Cup"
+      }
+    ],
+    "USED_MISCELLANEOUS": [],
+    "USED_PRE-EXISTING-PERSON": [],
+    "USED_NEW-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Samuel Blackwood",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Isabelle Ngo",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Eliot Carver",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Helena Marquez",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-5",
+        "name": "Dimitri Petrov",
+        "category": "person"
+      }
+    ],
+    "ALL_USED_PERSON_XML": "<person><category>person</category><id>PERSON-1</id><name>Samuel Blackwood</name></person>\n<person><category>person</category><id>PERSON-2</id><name>Isabelle Ngo</name></person>\n<person><category>person</category><id>PERSON-3</id><name>Eliot Carver</name></person>\n<person><category>person</category><id>PERSON-4</id><name>Helena Marquez</name></person>\n<person><category>person</category><id>PERSON-5</id><name>Dimitri Petrov</name></person>",
+    "USED-NAME-AND-ID-FOR-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Samuel Blackwood",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Isabelle Ngo",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Eliot Carver",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Helena Marquez",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-5",
+        "name": "Dimitri Petrov",
+        "category": "person"
+      }
+    ],
+    "USED_PRE-EXISTING-ORGANIZATION": [],
+    "USED_NEW-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Greenfield Falcons",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Nova Shield FC",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Falcons United",
+        "category": "organization"
+      }
+    ],
+    "ALL_USED_ORGANIZATION_XML": "<organization><category>organization</category><id>ORGANIZATION-1</id><name>Greenfield Falcons</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-2</id><name>Nova Shield FC</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-3</id><name>Falcons United</name></organization>",
+    "USED-NAME-AND-ID-FOR-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Greenfield Falcons",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Nova Shield FC",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Falcons United",
+        "category": "organization"
+      }
+    ],
+    "USED_PRE-EXISTING-LOCATION": [],
+    "USED_NEW-LOCATION": [],
+    "ALL_USED_LOCATION_XML": "",
+    "USED-NAME-AND-ID-FOR-LOCATION": [],
+    "USED_PRE-EXISTING-PRODUCT": [],
+    "USED_NEW-PRODUCT": [],
+    "ALL_USED_PRODUCT_XML": "",
+    "USED-NAME-AND-ID-FOR-PRODUCT": [],
+    "USED_PRE-EXISTING-ART": [],
+    "USED_NEW-ART": [],
+    "ALL_USED_ART_XML": "",
+    "USED-NAME-AND-ID-FOR-ART": [],
+    "USED_PRE-EXISTING-BUILDING": [],
+    "USED_NEW-BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Renaissance Stadium",
+        "category": "building"
+      }
+    ],
+    "ALL_USED_BUILDING_XML": "<building><category>building</category><id>BUILDING-1</id><name>Renaissance Stadium</name></building>",
+    "USED-NAME-AND-ID-FOR-BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Renaissance Stadium",
+        "category": "building"
+      }
+    ],
+    "USED_PRE-EXISTING-EVENT": [],
+    "USED_NEW-EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "European Rugby Championship",
+        "category": "event"
+      },
+      {
+        "id": "EVENT-2",
+        "name": "European Rugby League",
+        "category": "event"
+      },
+      {
+        "id": "EVENT-3",
+        "name": "European Rugby Champions Cup",
+        "category": "event"
+      }
+    ],
+    "ALL_USED_EVENT_XML": "<event><category>event</category><id>EVENT-1</id><name>European Rugby Championship</name></event>\n<event><category>event</category><id>EVENT-2</id><name>European Rugby League</name></event>\n<event><category>event</category><id>EVENT-3</id><name>European Rugby Champions Cup</name></event>",
+    "USED-NAME-AND-ID-FOR-EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "European Rugby Championship",
+        "category": "event"
+      },
+      {
+        "id": "EVENT-2",
+        "name": "European Rugby League",
+        "category": "event"
+      },
+      {
+        "id": "EVENT-3",
+        "name": "European Rugby Champions Cup",
+        "category": "event"
+      }
+    ],
+    "USED_PRE-EXISTING-MISCELLANEOUS": [],
+    "USED_NEW-MISCELLANEOUS": [],
+    "ALL_USED_MISCELLANEOUS_XML": "",
+    "USED-NAME-AND-ID-FOR-MISCELLANEOUS": [],
+    "USED_NEW-PERSONS_XML": "<person><category>person</category><id>PERSON-1</id><name>Samuel Blackwood</name></person>\n<person><category>person</category><id>PERSON-2</id><name>Isabelle Ngo</name></person>\n<person><category>person</category><id>PERSON-3</id><name>Eliot Carver</name></person>\n<person><category>person</category><id>PERSON-4</id><name>Helena Marquez</name></person>\n<person><category>person</category><id>PERSON-5</id><name>Dimitri Petrov</name></person>",
+    "USED_NEW-ORGANIZATIONS_XML": "<organization><category>organization</category><id>ORGANIZATION-1</id><name>Greenfield Falcons</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-2</id><name>Nova Shield FC</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-3</id><name>Falcons United</name></organization>",
+    "USED_NEW-LOCATIONS_XML": "",
+    "USED_NEW-PRODUCTS_XML": "",
+    "USED_NEW-ARTS_XML": "",
+    "USED_NEW-BUILDINGS_XML": "<building><category>building</category><id>BUILDING-1</id><name>Renaissance Stadium</name></building>",
+    "USED_NEW-EVENTS_XML": "<event><category>event</category><id>EVENT-1</id><name>European Rugby Championship</name></event>\n<event><category>event</category><id>EVENT-2</id><name>European Rugby League</name></event>\n<event><category>event</category><id>EVENT-3</id><name>European Rugby Champions Cup</name></event>",
+    "USED_NEW-MISCELLANEOUSS_XML": ""
+  },
+  "critiques": [
+    {
+      "critique": "I found problems with your response. Please fix these problems and return the corrected output using the same format as before. The problems I found are:\n\nChange the following properties of these entities, ensuring they do not include these characters: \")\", \"(\", \",\".\nLocations must have a unique name that doesn't rely on their larger context. For example, if 'Auvelais' already exists on Wikipedia and needs to be revised, choose a completely different name. Do NOT disambiguate by adding details like the country (e.g., do NOT use 'Auvelais, Belgaria').\n - [organization; ID=\"ORGANIZATION-1\"] Greenfield Falcons: The value \"Greenfield Park, Rosendale\" of the property \"headquarters\".\n\n - [organization; ID=\"ORGANIZATION-2\"] Nova Shield FC: The value \"Silverton, Newford\" of the property \"headquarters\".\n\n - [organization; ID=\"ORGANIZATION-3\"] Falcons United: The value \"Greenfield Park, Rosendale\" of the property \"headquarters\".\n\n\n\nChange the following properties of these entities, ensuring they do not include these characters: \")\", \"(\", \",\".\nLocations must have a unique name that doesn't rely on their larger context. For example, if 'Auvelais' already exists on Wikipedia and needs to be revised, choose a completely different name. Do NOT disambiguate by adding details like the country (e.g., do NOT use 'Auvelais, Belgaria').\n - [building; ID=\"BUILDING-1\"] Renaissance Stadium: The value \"Renaissance Dome, Rosendale\" of the property \"place\".",
+      "response": "```xml\n<results>\n\n<organization>\n  <id>ORGANIZATION-1</id>\n  <name>Greenfield Falcons</name>\n  <type>Company</type>\n  <description>The Greenfield Falcons is a prominent European rugby club established in 1985, with a mission to foster community spirit and sports excellence.</description>\n  <founded>1985</founded>\n  <headquarters>Clearfield Plaza</headquarters>\n  <industry>Sports club</industry>\n  <mission_statement>To nurture talent and promote the values of integrity and teamwork through rugby.</mission_statement>\n  <number_of_employees>150</number_of_employees>\n  <annual_revenue>\u20ac20 million</annual_revenue>\n</organization>\n\n<organization>\n  <id>ORGANIZATION-2</id>\n  <name>Nova Shield FC</name>\n  <type>Company</type>\n  <description>Nova Shield FC is a competitive European rugby team, formed in 1995, known for its dynamic defensive strategies and youth development programs.</description>\n  <founded>1995</founded>\n  <headquarters>Merritts Town</headquarters>\n  <industry>Sports club</industry>\n  <mission_statement>To become a leading force in rugby through innovative tactics and comprehensive player development.</mission_statement>\n  <number_of_employees>100</number_of_employees>\n  <annual_revenue>\u20ac15 million</annual_revenue>\n</organization>\n\n<organization>\n  <id>ORGANIZATION-3</id>\n  <name>Falcons United</name>\n  <type>Non-profit</type>\n  <description>Falcons United is a community-driven supporters' group for the Greenfield Falcons, founded in 2002, dedicated to engaging fans and organizing events.</description>\n  <founded>2002</founded>\n  <headquarters>Cherryfield Arena</headquarters>\n  <industry>Fan club</industry>\n  <mission_statement>To unite soccer fans, celebrate club culture, and support club endeavours through community engagement.</mission_statement>\n  <number_of_employees>20</number_of_employees>\n  <annual_revenue>\u20ac1 million</annual_revenue>\n</organization>\n\n<person>\n  <id>PERSON-1</id>\n  <name>Samuel Blackwood</name>\n  <date_of_birth>1975-03-12</date_of_birth>\n  <gender>Male</gender>\n  <profession>Rugby Coach</profession>\n  <nationality>British</nationality>\n  <education>Master's in Sports Science</education>\n  <description>Samuel Blackwood is a strategic thinker and coach, renowned for his ability to transform teams through defensive expertise and tactical innovations.</description>\n  <height>6'1\"</height>\n  <weight>190 lbs</weight>\n  <eye_color>Blue</eye_color>\n  <hair_color>Brown</hair_color>\n  <political_affiliation>Non-partisan</political_affiliation>\n  <marital_status>Married</marital_status>\n</person>\n\n<person>\n  <id>PERSON-2</id>\n  <name>Isabelle Ngo</name>\n  <date_of_birth>1988-06-25</date_of_birth>\n  <gender>Female</gender>\n  <profession>Data Analyst</profession>\n  <nationality>French</nationality>\n  <education>PhD in Data Science</education>\n  <description>Isabelle Ngo is an analytical powerhouse with a knack for using data to unlock team potential and optimize performance.</description>\n  <height>5'7\"</height>\n  <weight>135 lbs</weight>\n  <eye_color>Hazel</eye_color>\n  <hair_color>Black</hair_color>\n  <political_affiliation>Liberal</political_affiliation>\n  <marital_status>Single</marital_status>\n</person>\n\n<person>\n  <id>PERSON-3</id>\n  <name>Eliot Carver</name>\n  <date_of_birth>1990-11-14</date_of_birth>\n  <gender>Male</gender>\n  <profession>Rugby Assistant Coach</profession>\n  <nationality>Irish</nationality>\n  <education>Bachelors in Physical Education</education>\n  <description>Eliot Carver is an energetic and forward-thinking assistant coach, committed to enhancing team dynamics and fostering young talent.</description>\n  <height>5'9\"</height>\n  <weight>165 lbs</weight>\n  <eye_color>Green</eye_color>\n  <hair_color>Light Brown</hair_color>\n  <political_affiliation>Conservative</political_affiliation>\n  <marital_status>Married</marital_status>\n</person>\n\n<person>\n  <id>PERSON-4</id>\n  <name>Helena Marquez</name>\n  <date_of_birth>1965-08-30</date_of_birth>\n  <gender>Female</gender>\n  <profession>President of Greenfield Falcons</profession>\n  <nationality>Mexican</nationality>\n  <education>MBA in Sports Management</education>\n  <description>Helena Marquez is a visionary leader known for her strategic acumen and her unwavering commitment to grassroots sports development.</description>\n  <height>5'6\"</height>\n  <weight>140 lbs</weight>\n  <eye_color>Brown</eye_color>\n  <hair_color>Black</hair_color>\n  <political_affiliation>Socialist</political_affiliation>\n  <marital_status>Divorced</marital_status>\n</person>\n\n<person>\n  <id>PERSON-5</id>\n  <name>Dimitri Petrov</name>\n  <date_of_birth>1982-02-17</date_of_birth>\n  <gender>Male</gender>\n  <profession>Rugby Forward</profession>\n  <nationality>Russian</nationality>\n  <education>Bachelors in Sports Science</education>\n  <description>Dimitri Petrov is a seasoned rugby forward known for his strength on the field and his insightful perspectives on team dynamics.</description>\n  <height>6'2\"</height>\n  <weight>220 lbs</weight>\n  <eye_color>Gray</eye_color>\n  <hair_color>Blonde</hair_color>\n  <political_affiliation>Apathetic</political_affiliation>\n  <marital_status>Married</marital_status>\n</person>\n\n<event>\n  <id>EVENT-1</id>\n  <name>European Rugby Championship</name>\n  <type>Sporting</type>\n  <description>The European Rugby Championship is a vibrant annual event that showcases the top rugby talent across Europe, celebrated every year in July.</description>\n  <date>July 2024</date>\n  <place>Various</place>\n  <city>Various</city>\n  <country>Multiple</country>\n  <duration>3 weeks</duration>\n  <organizer>European Rugby Federation</organizer>\n  <number_of_participants>16 teams</number_of_participants>\n  <budget>\u20ac50 million</budget>\n</event>\n\n<event>\n  <id>EVENT-2</id>\n  <name>European Rugby League</name>\n  <type>Sporting</type>\n  <description>The European Rugby League, established in 1997, celebrates the spirit of rugby union with an emphasis on team cohesion and international rivalry.</description>\n  <date>August 2024</date>\n  <place>Zentralstadion in Tilersville</place>\n  <city>Tilersville</city>\n  <country>Borduria</country>\n  <duration>2 weeks</duration>\n  <organizer>Union of European Leagues</organizer>\n  <number_of_participants>20 teams</number_of_participants>\n  <budget>\u20ac45 million</budget>\n</event>\n\n<event>\n  <id>EVENT-3</id>\n  <name>European Rugby Champions Cup</name>\n  <type>Sporting</type>\n  <description>The European Rugby Champions Cup is a tournament that brings together elite European clubs in a fierce competition for supremacy in rugby.</description>\n  <date>May 2024</date>\n  <place>Stadium Arena in Eastport</place>\n  <city>Eastport</city>\n  <country>Solanis</country>\n  <duration>4 weeks</duration>\n  <organizer>European Rugby Council</organizer>\n  <number_of_participants>24 teams</number_of_participants>\n  <budget>\u20ac80 million</budget>\n</event>\n\n<building>\n  <id>BUILDING-1</id>\n  <name>Renaissance Stadium</name>\n  <type>Public</type>\n  <description>Renaissance Stadium is a modern multi-purpose facility located in Rosendale, renowned for hosting major sports events and community gatherings.</description>\n  <place>Central Park, Rosendale</place>\n  <city>Rosendale</city>\n  <country>Grevian Federation</country>\n  <architect>Elara Designs</architect>\n  <year_built>2010</year_built>\n  <height>50 meters</height>\n  <floors>4</floors>\n  <material>Steel and glass</material>\n  <capacity>25,000</capacity>\n</building>\n\n</results>\n```"
+    },
+    {
+      "critique": "I found problems with your response. Please fix these problems and return the corrected output using the same format as before. The problems I found are:\n\nChange the following properties of these entities, ensuring they do not include these characters: \")\", \"(\", \",\".\nLocations must have a unique name that doesn't rely on their larger context. For example, if 'Auvelais' already exists on Wikipedia and needs to be revised, choose a completely different name. Do NOT disambiguate by adding details like the country (e.g., do NOT use 'Auvelais, Belgaria').\n - [building; ID=\"BUILDING-1\"] Renaissance Stadium: The value \"Central Park, Rosendale\" of the property \"place\".",
+      "response": "```xml\n<results>\n\n<organization>\n  <id>ORGANIZATION-1</id>\n  <name>Greenfield Falcons</name>\n  <type>Company</type>\n  <description>The Greenfield Falcons is a prominent European rugby club established in 1985, with a mission to foster community spirit and sports excellence.</description>\n  <founded>1985</founded>\n  <headquarters>Clearfield Plaza</headquarters>\n  <industry>Sports club</industry>\n  <mission_statement>To nurture talent and promote the values of integrity and teamwork through rugby.</mission_statement>\n  <number_of_employees>150</number_of_employees>\n  <annual_revenue>\u20ac20 million</annual_revenue>\n</organization>\n\n<organization>\n  <id>ORGANIZATION-2</id>\n  <name>Nova Shield FC</name>\n  <type>Company</type>\n  <description>Nova Shield FC is a competitive European rugby team, formed in 1995, known for its dynamic defensive strategies and youth development programs.</description>\n  <founded>1995</founded>\n  <headquarters>Merritts Town</headquarters>\n  <industry>Sports club</industry>\n  <mission_statement>To become a leading force in rugby through innovative tactics and comprehensive player development.</mission_statement>\n  <number_of_employees>100</number_of_employees>\n  <annual_revenue>\u20ac15 million</annual_revenue>\n</organization>\n\n<organization>\n  <id>ORGANIZATION-3</id>\n  <name>Falcons United</name>\n  <type>Non-profit</type>\n  <description>Falcons United is a community-driven supporters' group for the Greenfield Falcons, founded in 2002, dedicated to engaging fans and organizing events.</description>\n  <founded>2002</founded>\n  <headquarters>Cherryfield Arena</headquarters>\n  <industry>Fan club</industry>\n  <mission_statement>To unite soccer fans, celebrate club culture, and support club endeavours through community engagement.</mission_statement>\n  <number_of_employees>20</number_of_employees>\n  <annual_revenue>\u20ac1 million</annual_revenue>\n</organization>\n\n<person>\n  <id>PERSON-1</id>\n  <name>Samuel Blackwood</name>\n  <date_of_birth>1975-03-12</date_of_birth>\n  <gender>Male</gender>\n  <profession>Rugby Coach</profession>\n  <nationality>British</nationality>\n  <education>Master's in Sports Science</education>\n  <description>Samuel Blackwood is a strategic thinker and coach, renowned for his ability to transform teams through defensive expertise and tactical innovations.</description>\n  <height>6'1\"</height>\n  <weight>190 lbs</weight>\n  <eye_color>Blue</eye_color>\n  <hair_color>Brown</hair_color>\n  <political_affiliation>Non-partisan</political_affiliation>\n  <marital_status>Married</marital_status>\n</person>\n\n<person>\n  <id>PERSON-2</id>\n  <name>Isabelle Ngo</name>\n  <date_of_birth>1988-06-25</date_of_birth>\n  <gender>Female</gender>\n  <profession>Data Analyst</profession>\n  <nationality>French</nationality>\n  <education>PhD in Data Science</education>\n  <description>Isabelle Ngo is an analytical powerhouse with a knack for using data to unlock team potential and optimize performance.</description>\n  <height>5'7\"</height>\n  <weight>135 lbs</weight>\n  <eye_color>Hazel</eye_color>\n  <hair_color>Black</hair_color>\n  <political_affiliation>Liberal</political_affiliation>\n  <marital_status>Single</marital_status>\n</person>\n\n<person>\n  <id>PERSON-3</id>\n  <name>Eliot Carver</name>\n  <date_of_birth>1990-11-14</date_of_birth>\n  <gender>Male</gender>\n  <profession>Rugby Assistant Coach</profession>\n  <nationality>Irish</nationality>\n  <education>Bachelors in Physical Education</education>\n  <description>Eliot Carver is an energetic and forward-thinking assistant coach, committed to enhancing team dynamics and fostering young talent.</description>\n  <height>5'9\"</height>\n  <weight>165 lbs</weight>\n  <eye_color>Green</eye_color>\n  <hair_color>Light Brown</hair_color>\n  <political_affiliation>Conservative</political_affiliation>\n  <marital_status>Married</marital_status>\n</person>\n\n<person>\n  <id>PERSON-4</id>\n  <name>Helena Marquez</name>\n  <date_of_birth>1965-08-30</date_of_birth>\n  <gender>Female</gender>\n  <profession>President of Greenfield Falcons</profession>\n  <nationality>Mexican</nationality>\n  <education>MBA in Sports Management</education>\n  <description>Helena Marquez is a visionary leader known for her strategic acumen and her unwavering commitment to grassroots sports development.</description>\n  <height>5'6\"</height>\n  <weight>140 lbs</weight>\n  <eye_color>Brown</eye_color>\n  <hair_color>Black</hair_color>\n  <political_affiliation>Socialist</political_affiliation>\n  <marital_status>Divorced</marital_status>\n</person>\n\n<person>\n  <id>PERSON-5</id>\n  <name>Dimitri Petrov</name>\n  <date_of_birth>1982-02-17</date_of_birth>\n  <gender>Male</gender>\n  <profession>Rugby Forward</profession>\n  <nationality>Russian</nationality>\n  <education>Bachelors in Sports Science</education>\n  <description>Dimitri Petrov is a seasoned rugby forward known for his strength on the field and his insightful perspectives on team dynamics.</description>\n  <height>6'2\"</height>\n  <weight>220 lbs</weight>\n  <eye_color>Gray</eye_color>\n  <hair_color>Blonde</hair_color>\n  <political_affiliation>Apathetic</political_affiliation>\n  <marital_status>Married</marital_status>\n</person>\n\n<event>\n  <id>EVENT-1</id>\n  <name>European Rugby Championship</name>\n  <type>Sporting</type>\n  <description>The European Rugby Championship is a vibrant annual event that showcases the top rugby talent across Europe, celebrated every year in July.</description>\n  <date>July 2024</date>\n  <place>Various</place>\n  <city>Various</city>\n  <country>Multiple</country>\n  <duration>3 weeks</duration>\n  <organizer>European Rugby Federation</organizer>\n  <number_of_participants>16 teams</number_of_participants>\n  <budget>\u20ac50 million</budget>\n</event>\n\n<event>\n  <id>EVENT-2</id>\n  <name>European Rugby League</name>\n  <type>Sporting</type>\n  <description>The European Rugby League, established in 1997, celebrates the spirit of rugby union with an emphasis on team cohesion and international rivalry.</description>\n  <date>August 2024</date>\n  <place>Zentralstadion in Tilersville</place>\n  <city>Tilersville</city>\n  <country>Borduria</country>\n  <duration>2 weeks</duration>\n  <organizer>Union of European Leagues</organizer>\n  <number_of_participants>20 teams</number_of_participants>\n  <budget>\u20ac45 million</budget>\n</event>\n\n<event>\n  <id>EVENT-3</id>\n  <name>European Rugby Champions Cup</name>\n  <type>Sporting</type>\n  <description>The European Rugby Champions Cup is a tournament that brings together elite European clubs in a fierce competition for supremacy in rugby.</description>\n  <date>May 2024</date>\n  <place>Stadium Arena in Eastport</place>\n  <city>Eastport</city>\n  <country>Solanis</country>\n  <duration>4 weeks</duration>\n  <organizer>European Rugby Council</organizer>\n  <number_of_participants>24 teams</number_of_participants>\n  <budget>\u20ac80 million</budget>\n</event>\n\n<building>\n  <id>BUILDING-1</id>\n  <name>Renaissance Stadium</name>\n  <type>Public</type>\n  <description>Renaissance Stadium is a modern multi-purpose facility in Rosendale, renowned for hosting major sports events and community gatherings.</description>\n  <place>Grandview Expanse</place>\n  <city>Rosendale</city>\n  <country>Grevian Federation</country>\n  <architect>Elara Designs</architect>\n  <year_built>2010</year_built>\n  <height>50 meters</height>\n  <floors>4</floors>\n  <material>Steel and glass</material>\n  <capacity>25000</capacity>\n</building>\n\n</results>\n```"
+    }
+  ]
+}

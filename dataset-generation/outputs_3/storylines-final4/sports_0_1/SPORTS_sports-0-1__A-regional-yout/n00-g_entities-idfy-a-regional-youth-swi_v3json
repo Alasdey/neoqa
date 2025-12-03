@@ -1,0 +1,299 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "openai/gpt-5-mini",
+    "temperature": 0.0,
+    "max-tokens": 10000
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "<results>\n<entities>\n<location><id>LOCATION-1</id><name>Bellwick</name></location>\n<person><id>PERSON-1</id><name>Sera Lortin</name></person>\n<person><id>PERSON-2</id><name>Ivo Harlen</name></person>\n<organization><id>ORGANIZATION-1</id><name>Merrowgate Development Squad</name></organization>\n<organization><id>ORGANIZATION-2</id><name>Carterline Regional Aquatics Federation</name></organization>\n<building><id>BUILDING-1</id><name>Brindemoor Aquatic Complex</name></building>\n<event><id>EVENT-1</id><name>Carterline Regional Youth Swimming Championship</name></event>\n</entities>\n</results>"
+  },
+  "response": "<results>\n<entities>\n<location><id>LOCATION-1</id><name>Bellwick</name></location>\n<person><id>PERSON-1</id><name>Sera Lortin</name></person>\n<person><id>PERSON-2</id><name>Ivo Harlen</name></person>\n<organization><id>ORGANIZATION-1</id><name>Merrowgate Development Squad</name></organization>\n<organization><id>ORGANIZATION-2</id><name>Carterline Regional Aquatics Federation</name></organization>\n<building><id>BUILDING-1</id><name>Brindemoor Aquatic Complex</name></building>\n<event><id>EVENT-1</id><name>Carterline Regional Youth Swimming Championship</name></event>\n</entities>\n</results>",
+  "instructions": "You are an AI assistant tasked with identifying which of the provided entities are explicitly named within the provided outline. Follow these instructions carefully:\n\n1. The date for this fictional event outline is:\n<date>{{DATE}}</date>\n\n2. Here is the outline you need to analyze:\n<outline>\n{{OUTLINE}}\n</outline>\n\n3. Here is the list of known (fictional) named entities:\n<entities>\n{{LOCATIONS_XML}}\n{{PERSONS_XML}}\n{{ORGANIZATIONS_XML}}\n{{PRODUCTS_XML}}\n{{ARTS_XML}}\n{{EVENTS_XML}}\n{{BUILDINGS_XML}}\n{{MISCELLANEOUSS_XML}}\n\n{{ADJUSTED_LOCATIONS_XML}}\n{{ADJUSTED_PERSONS_XML}}\n{{ADJUSTED_ORGANIZATIONS_XML}}\n{{ADJUSTED_PRODUCTS_XML}}\n{{ADJUSTED_ARTS_XML}}\n{{ADJUSTED_BUILDINGS_XML}}\n{{ADJUSTED_EVENTS_XML}}\n{{ADJUSTED_MISCELLANEOUSS_XML}}\n</entities>\n\n4. Your task is to go through all of the named entities in the provided list. For each named entity, check if it is explicitly referred to by name in the outline. If a named entity is explicitly mentioned by name, include it in your results.\n\n5. For each entity you identify, list them using the following format:\n<[entity_type]><id>[id of the entity]</id><name>[full name of the entity]</name></[entity_type]>\n\n6. Present your final output within a single <results> root node, structured as follows:\n\n<results>\n<entities>\n[List all identified entities here as described in step 5]\n</entities>\n</results>\n\n7. Double-check your work: For each entity that you have identified, make sure to find the sentence within the outline that explicitly refers to this identified entity by name. If you cannot find that the entity is mentioned explicitly by name in the outline, do not include it in your results.\n\n8. You can use a <scratchpad> for your thinking process. Do not include any XML tags within your scratchpad.\n\n9. Make sure that you have not missed any named entity from the outline that was also provided to you in the list of named entities.\n\nRemember, only include entities that are explicitly mentioned by name in the outline. Do not infer or assume the presence of entities that are not directly named.",
+  "text_prompt": "You are an AI assistant tasked with identifying which of the provided entities are explicitly named within the provided outline. Follow these instructions carefully:\n\n1. The date for this fictional event outline is:\n<date>2025-07-12</date>\n\n2. Here is the outline you need to analyze:\n<outline>\nThe Carterline Regional Youth Swimming Championship concluded on 2025-07-12 at Brindemoor Aquatic Complex in Bellwick.\nThe final session closed shortly after 6:30 p.m., with roughly 380 spectators in attendance at the Brindemoor Aquatic Complex's 50-meter competition pool.\nSera Lortin, age 16, lowered the meet record in the 200-meter freestyle by 0.4 seconds with a time of 1:59.86 in the championship final at the Carterline Regional Youth Swimming Championship.\nThe previous meet record of 2:00.26 had been set in 2018, and the official timing showed Sera Lortin touching the wall 0.35 seconds ahead of the second-place swimmer in the final.\nThe performance by Sera Lortin contributed directly to Merrowgate Development Squad securing the overall team title at the Carterline Regional Youth Swimming Championship.\nMerrowgate Development Squad finished the meet with 412 team points, clinching the title by a 28-point margin over the second-place team in a field of 18 squads.\nCoach Ivo Harlen of Merrowgate Development Squad said, \"Sera Lortin executed the race plan we practiced and her second-half pace sealed the finish,\" following the final at the Carterline Regional Youth Swimming Championship.\nCoach Ivo Harlen added that Sera Lortin produced a negative split\u2014covering the second 100 meters in 59.20 seconds\u2014and credited targeted 8x100 race-pace sets in training for the strong finish.\nCarterline Regional Youth Swimming Championship officials updated the official meet results to record Sera Lortin's new 200-meter freestyle meet record set at Brindemoor Aquatic Complex.\nOfficials posted an updated results PDF to the championship website within an hour and forwarded Sera Lortin's time to the Carterline Regional Aquatics Federation for formal ratification of the new meet record.\n</outline>\n\n3. Here is the list of known (fictional) named entities:\n<entities>\n\n\n\n\n\n\n\n\n\n<location><id>LOCATION-1</id><name>Bellwick</name><old_name>Bellwick</old_name></location>\n<person><id>PERSON-1</id><name>Sera Lortin</name><old_name>Sera Lortin</old_name></person>\n<person><id>PERSON-2</id><name>Ivo Harlen</name><old_name>Ivo Harlen</old_name></person>\n<organization><id>ORGANIZATION-1</id><name>Merrowgate Development Squad</name><old_name>Merrowgate Development Squad</old_name></organization>\n<organization><id>ORGANIZATION-2</id><name>Carterline Regional Aquatics Federation</name><old_name>Carterline Regional Aquatics Federation</old_name></organization>\n\n\n<building><id>BUILDING-1</id><name>Brindemoor Aquatic Complex</name><old_name>Brindemoor Aquatic Complex</old_name></building>\n<event><id>EVENT-1</id><name>Carterline Regional Youth Swimming Championship</name><old_name>Carterline Regional Youth Swimming Championship</old_name></event>\n\n</entities>\n\n4. Your task is to go through all of the named entities in the provided list. For each named entity, check if it is explicitly referred to by name in the outline. If a named entity is explicitly mentioned by name, include it in your results.\n\n5. For each entity you identify, list them using the following format:\n<[entity_type]><id>[id of the entity]</id><name>[full name of the entity]</name></[entity_type]>\n\n6. Present your final output within a single <results> root node, structured as follows:\n\n<results>\n<entities>\n[List all identified entities here as described in step 5]\n</entities>\n</results>\n\n7. Double-check your work: For each entity that you have identified, make sure to find the sentence within the outline that explicitly refers to this identified entity by name. If you cannot find that the entity is mentioned explicitly by name in the outline, do not include it in your results.\n\n8. You can use a <scratchpad> for your thinking process. Do not include any XML tags within your scratchpad.\n\n9. Make sure that you have not missed any named entity from the outline that was also provided to you in the list of named entities.\n\nRemember, only include entities that are explicitly mentioned by name in the outline. Do not infer or assume the presence of entities that are not directly named.",
+  "system-prompt": null,
+  "values": {
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "GENRE": "Sports",
+    "HISTORIES": [],
+    "EVENT_SUMMARY": "A regional youth swimming championship concluded at an indoor aquatic center with a 16-year-old competitor lowering the meet record in the 200-meter freestyle by 0.4 seconds, contributing to the overall team title for a mixed-age development squad.",
+    "EVENT_SUMMARY_FOR_NAME": "A regional youth swi",
+    "KEYWORDS": "",
+    "CREATED_AT": 0,
+    "NEXT_IDS": {
+      "person": 3,
+      "organization": 3,
+      "location": 2,
+      "product": 1,
+      "art": 1,
+      "building": 2,
+      "event": 2,
+      "miscellaneous": 1
+    },
+    "PROVIDED_DATE": "",
+    "PERSON": [],
+    "ORGANIZATION": [],
+    "LOCATION": [],
+    "PRODUCT": [],
+    "ART": [],
+    "BUILDING": [],
+    "EVENT": [],
+    "MISCELLANEOUS": [],
+    "PERSONS_XML": "",
+    "ORGANIZATIONS_XML": "",
+    "LOCATIONS_XML": "",
+    "PRODUCTS_XML": "",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "",
+    "EVENTS_XML": "",
+    "MISCELLANEOUSS_XML": "",
+    "NUM_STORYITEMS": 5,
+    "HISTORY_XML": "",
+    "STORY_ITEM": [
+      "The Carterline Regional Youth Swimming Championship concluded on 2025-07-12 at Brindemoor Aquatic Complex in Bellwick.",
+      "The final session closed shortly after 6:30 p.m., with roughly 380 spectators in attendance at the Brindemoor Aquatic Complex's 50-meter competition pool.",
+      "Sera Lortin, age 16, lowered the meet record in the 200-meter freestyle by 0.4 seconds with a time of 1:59.86 in the championship final at the Carterline Regional Youth Swimming Championship.",
+      "The previous meet record of 2:00.26 had been set in 2018, and the official timing showed Sera Lortin touching the wall 0.35 seconds ahead of the second-place swimmer in the final.",
+      "The performance by Sera Lortin contributed directly to Merrowgate Development Squad securing the overall team title at the Carterline Regional Youth Swimming Championship.",
+      "Merrowgate Development Squad finished the meet with 412 team points, clinching the title by a 28-point margin over the second-place team in a field of 18 squads.",
+      "Coach Ivo Harlen of Merrowgate Development Squad said, \"Sera Lortin executed the race plan we practiced and her second-half pace sealed the finish,\" following the final at the Carterline Regional Youth Swimming Championship.",
+      "Coach Ivo Harlen added that Sera Lortin produced a negative split\u2014covering the second 100 meters in 59.20 seconds\u2014and credited targeted 8x100 race-pace sets in training for the strong finish.",
+      "Carterline Regional Youth Swimming Championship officials updated the official meet results to record Sera Lortin's new 200-meter freestyle meet record set at Brindemoor Aquatic Complex.",
+      "Officials posted an updated results PDF to the championship website within an hour and forwarded Sera Lortin's time to the Carterline Regional Aquatics Federation for formal ratification of the new meet record."
+    ],
+    "DATE": "2025-07-12",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 1,
+    "OUTLINE": "The Carterline Regional Youth Swimming Championship concluded on 2025-07-12 at Brindemoor Aquatic Complex in Bellwick.\nThe final session closed shortly after 6:30 p.m., with roughly 380 spectators in attendance at the Brindemoor Aquatic Complex's 50-meter competition pool.\nSera Lortin, age 16, lowered the meet record in the 200-meter freestyle by 0.4 seconds with a time of 1:59.86 in the championship final at the Carterline Regional Youth Swimming Championship.\nThe previous meet record of 2:00.26 had been set in 2018, and the official timing showed Sera Lortin touching the wall 0.35 seconds ahead of the second-place swimmer in the final.\nThe performance by Sera Lortin contributed directly to Merrowgate Development Squad securing the overall team title at the Carterline Regional Youth Swimming Championship.\nMerrowgate Development Squad finished the meet with 412 team points, clinching the title by a 28-point margin over the second-place team in a field of 18 squads.\nCoach Ivo Harlen of Merrowgate Development Squad said, \"Sera Lortin executed the race plan we practiced and her second-half pace sealed the finish,\" following the final at the Carterline Regional Youth Swimming Championship.\nCoach Ivo Harlen added that Sera Lortin produced a negative split\u2014covering the second 100 meters in 59.20 seconds\u2014and credited targeted 8x100 race-pace sets in training for the strong finish.\nCarterline Regional Youth Swimming Championship officials updated the official meet results to record Sera Lortin's new 200-meter freestyle meet record set at Brindemoor Aquatic Complex.\nOfficials posted an updated results PDF to the championship website within an hour and forwarded Sera Lortin's time to the Carterline Regional Aquatics Federation for formal ratification of the new meet record.",
+    "PRE-CONSISTENCY-NUM-ITEMS": 10,
+    "STORYITEM_XML": "<storyitems>\n<storyitem>The Carterline Regional Youth Swimming Championship concluded on 2025-07-12 at Brindemoor Aquatic Complex in Bellwick.</storyitem>\n<storyitem>The final session closed shortly after 6:30 p.m., with roughly 380 spectators in attendance at the Brindemoor Aquatic Complex's 50-meter competition pool.</storyitem>\n<storyitem>Sera Lortin, age 16, lowered the meet record in the 200-meter freestyle by 0.4 seconds with a time of 1:59.86 in the championship final at the Carterline Regional Youth Swimming Championship.</storyitem>\n<storyitem>The previous meet record of 2:00.26 had been set in 2018, and the official timing showed Sera Lortin touching the wall 0.35 seconds ahead of the second-place swimmer in the final.</storyitem>\n<storyitem>The performance by Sera Lortin contributed directly to Merrowgate Development Squad securing the overall team title at the Carterline Regional Youth Swimming Championship.</storyitem>\n<storyitem>Merrowgate Development Squad finished the meet with 412 team points, clinching the title by a 28-point margin over the second-place team in a field of 18 squads.</storyitem>\n<storyitem>Coach Ivo Harlen of Merrowgate Development Squad said, \"Sera Lortin executed the race plan we practiced and her second-half pace sealed the finish,\" following the final at the Carterline Regional Youth Swimming Championship.</storyitem>\n<storyitem>Coach Ivo Harlen added that Sera Lortin produced a negative split\u2014covering the second 100 meters in 59.20 seconds\u2014and credited targeted 8x100 race-pace sets in training for the strong finish.</storyitem>\n<storyitem>Carterline Regional Youth Swimming Championship officials updated the official meet results to record Sera Lortin's new 200-meter freestyle meet record set at Brindemoor Aquatic Complex.</storyitem>\n<storyitem>Officials posted an updated results PDF to the championship website within an hour and forwarded Sera Lortin's time to the Carterline Regional Aquatics Federation for formal ratification of the new meet record.</storyitem>\n<storyitems>",
+    "NEW_PERSON_NAME": [
+      {
+        "name": "Sera Lortin",
+        "old_name": "Sera Lortin"
+      },
+      {
+        "name": "Ivo Harlen",
+        "old_name": "Ivo Harlen"
+      }
+    ],
+    "NEW_ORGANIZATION_NAME": [
+      {
+        "name": "Merrowgate Development Squad",
+        "old_name": "Merrowgate Development Squad"
+      },
+      {
+        "name": "Carterline Regional Aquatics Federation",
+        "old_name": "Carterline Regional Aquatics Federation"
+      }
+    ],
+    "NEW_LOCATION_NAME": [
+      {
+        "name": "Bellwick",
+        "old_name": "Bellwick"
+      }
+    ],
+    "NEW_PRODUCT_NAME": [],
+    "NEW_ART_NAME": [],
+    "NEW_BUILDING_NAME": [
+      {
+        "name": "Brindemoor Aquatic Complex",
+        "old_name": "Brindemoor Aquatic Complex"
+      }
+    ],
+    "NEW_EVENT_NAME": [
+      {
+        "name": "Carterline Regional Youth Swimming Championship",
+        "old_name": "Carterline Regional Youth Swimming Championship"
+      }
+    ],
+    "NEW_MISCELLANEOUS_NAME": [],
+    "CORRECTED_PERSON_NAME": [
+      {
+        "name": "Sera Lortin",
+        "old_name": "Sera Lortin",
+        "id": "PERSON-1"
+      },
+      {
+        "name": "Ivo Harlen",
+        "old_name": "Ivo Harlen",
+        "id": "PERSON-2"
+      }
+    ],
+    "CORRECTED_ORGANIZATION_NAME": [
+      {
+        "name": "Merrowgate Development Squad",
+        "old_name": "Merrowgate Development Squad",
+        "id": "ORGANIZATION-1"
+      },
+      {
+        "name": "Carterline Regional Aquatics Federation",
+        "old_name": "Carterline Regional Aquatics Federation",
+        "id": "ORGANIZATION-2"
+      }
+    ],
+    "CORRECTED_LOCATION_NAME": [
+      {
+        "name": "Bellwick",
+        "old_name": "Bellwick",
+        "id": "LOCATION-1"
+      }
+    ],
+    "CORRECTED_PRODUCT_NAME": [],
+    "CORRECTED_ART_NAME": [],
+    "CORRECTED_BUILDING_NAME": [
+      {
+        "name": "Brindemoor Aquatic Complex",
+        "old_name": "Brindemoor Aquatic Complex",
+        "id": "BUILDING-1"
+      }
+    ],
+    "CORRECTED_EVENT_NAME": [
+      {
+        "name": "Carterline Regional Youth Swimming Championship",
+        "old_name": "Carterline Regional Youth Swimming Championship",
+        "id": "EVENT-1"
+      }
+    ],
+    "CORRECTED_MISCELLANEOUS_NAME": [],
+    "CRITIQUE_ERRORS": {
+      "entity-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ]
+    },
+    "ADJUSTED_PERSONS_XML": "<person><id>PERSON-1</id><name>Sera Lortin</name><old_name>Sera Lortin</old_name></person>\n<person><id>PERSON-2</id><name>Ivo Harlen</name><old_name>Ivo Harlen</old_name></person>",
+    "ADJUSTED_ORGANIZATIONS_XML": "<organization><id>ORGANIZATION-1</id><name>Merrowgate Development Squad</name><old_name>Merrowgate Development Squad</old_name></organization>\n<organization><id>ORGANIZATION-2</id><name>Carterline Regional Aquatics Federation</name><old_name>Carterline Regional Aquatics Federation</old_name></organization>",
+    "ADJUSTED_LOCATIONS_XML": "<location><id>LOCATION-1</id><name>Bellwick</name><old_name>Bellwick</old_name></location>",
+    "ADJUSTED_PRODUCTS_XML": "",
+    "ADJUSTED_ARTS_XML": "",
+    "ADJUSTED_BUILDINGS_XML": "<building><id>BUILDING-1</id><name>Brindemoor Aquatic Complex</name><old_name>Brindemoor Aquatic Complex</old_name></building>",
+    "ADJUSTED_EVENTS_XML": "<event><id>EVENT-1</id><name>Carterline Regional Youth Swimming Championship</name><old_name>Carterline Regional Youth Swimming Championship</old_name></event>",
+    "ADJUSTED_MISCELLANEOUSS_XML": ""
+  }
+}

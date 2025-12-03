@@ -1,0 +1,732 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "microsoft/phi-4-reasoning-plus",
+    "temperature": 0.0,
+    "max-tokens": 4096
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "To solve this task, I will go through the provided outline and check for explicit mentions of each named entity from the list. I will then format the results according to the specified structure.\n\n### Step-by-Step Analysis:\n\n1. **Entities to Check:**\n   - **Locations:** Paris\n   - **Persons:** Samantha Lapierre, Dr. Theodore Frazer, Isabella Torres, Michael Dalton, Carla Mendez, Lucia Garcia, Chef Marco Ferrucci\n   - **Organizations:** Premier Sports Medicine Institute, Empower Tennis Foundation, Sports Insight Weekly, Green Valley Farms, Sunnybrook Poultry\n   - **Products:** The Champion Wrap\n   - **Events:** Hilda Valley Championships, 2021 Wimbledon Doubles Championship, Charity Gala\n   - **Buildings:** Hilda Valley Sports Complex\n\n2. **Outline Analysis:**\n\n   - **Carla Mendez's caf\u00e9** is mentioned multiple times, explicitly referring to Carla Mendez.\n   - **Empower Tennis Foundation** is mentioned explicitly.\n   - **Hilda Valley Sports Complex** is mentioned explicitly.\n   - **Samantha Lapierre** is mentioned explicitly.\n   - **Michael Dalton** is mentioned explicitly.\n   - **Lucia Garcia** is mentioned explicitly.\n   - **Green Valley Farms** is mentioned explicitly.\n   - **Sunnybrook Poultry** is mentioned explicitly.\n   - **The Champion Wrap** is mentioned explicitly.\n   - **Hilda Valley Championships** is mentioned explicitly.\n\n3. **Entities Identified in the Outline:**\n\n   - **Person: Carla Mendez**\n     - Mention: \"Carla Mendez's caf\u00e9 experienced a 50% increase in customer foot traffic...\"\n   - **Organization: Empower Tennis Foundation**\n     - Mention: \"The Empower Tennis Foundation organized a promotional giveaway...\"\n   - **Building: Hilda Valley Sports Complex**\n     - Mention: \"at the Hilda Valley Sports Complex...\"\n   - **Person: Samantha Lapierre**\n     - Mention: \"Samantha Lapierre, after her competitive match...\"\n   - **Person: Michael Dalton**\n     - Mention: \"Michael Dalton, a local sports journalist...\"\n   - **Person: Lucia Garcia**\n     - Mention: \"Lucia Garcia, the organizer from the Empower Tennis Foundation...\"\n   - **Organization: Green Valley Farms**\n     - Mention: \"Green Valley Farms dispatched additional delivery trucks...\"\n   - **Organization: Sunnybrook Poultry**\n     - Mention: \"Sunnybrook Poultry increased its production...\"\n   - **Product: The Champion Wrap**\n     - Mention: \"distributing 'The Champion Wrap' from Carla Mendez's caf\u00e9...\"\n   - **Event: Hilda Valley Championships**\n     - Mention: \"coincide with the opening ceremony of the Hilda Valley Championships...\"\n\n4. **Format the Results:**\n\n```xml\n<results>\n<entities>\n<person><id>PERSON-1</id><name>Samantha Lapierre</name></person>\n<person><id>PERSON-5</id><name>Carla Mendez</name></person>\n<organization><id>ORGANIZATION-2</id><name>Empower Tennis Foundation</name></organization>\n<building><id>BUILDING-1</id><name>Hilda Valley Sports Complex</name></building>\n<person><id>PERSON-4</id><name>Michael Dalton</name></person>\n<person><id>PERSON-6</id><name>Lucia Garcia</name></person>\n<organization><id>ORGANIZATION-4</id><name>Green Valley Farms</name></organization>\n<organization><id>ORGANIZATION-5</id><name>Sunnybrook Poultry</name></organization>\n<product><id>PRODUCT-1</id><name>The Champion Wrap</name></product>\n<event><id>EVENT-1</id><name>Hilda Valley Championships</name></event>\n</entities>\n</results>\n```\n\nThis output includes all entities explicitly mentioned by name in the outline."
+  },
+  "response": "To solve this task, I will go through the provided outline and check for explicit mentions of each named entity from the list. I will then format the results according to the specified structure.\n\n### Step-by-Step Analysis:\n\n1. **Entities to Check:**\n   - **Locations:** Paris\n   - **Persons:** Samantha Lapierre, Dr. Theodore Frazer, Isabella Torres, Michael Dalton, Carla Mendez, Lucia Garcia, Chef Marco Ferrucci\n   - **Organizations:** Premier Sports Medicine Institute, Empower Tennis Foundation, Sports Insight Weekly, Green Valley Farms, Sunnybrook Poultry\n   - **Products:** The Champion Wrap\n   - **Events:** Hilda Valley Championships, 2021 Wimbledon Doubles Championship, Charity Gala\n   - **Buildings:** Hilda Valley Sports Complex\n\n2. **Outline Analysis:**\n\n   - **Carla Mendez's caf\u00e9** is mentioned multiple times, explicitly referring to Carla Mendez.\n   - **Empower Tennis Foundation** is mentioned explicitly.\n   - **Hilda Valley Sports Complex** is mentioned explicitly.\n   - **Samantha Lapierre** is mentioned explicitly.\n   - **Michael Dalton** is mentioned explicitly.\n   - **Lucia Garcia** is mentioned explicitly.\n   - **Green Valley Farms** is mentioned explicitly.\n   - **Sunnybrook Poultry** is mentioned explicitly.\n   - **The Champion Wrap** is mentioned explicitly.\n   - **Hilda Valley Championships** is mentioned explicitly.\n\n3. **Entities Identified in the Outline:**\n\n   - **Person: Carla Mendez**\n     - Mention: \"Carla Mendez's caf\u00e9 experienced a 50% increase in customer foot traffic...\"\n   - **Organization: Empower Tennis Foundation**\n     - Mention: \"The Empower Tennis Foundation organized a promotional giveaway...\"\n   - **Building: Hilda Valley Sports Complex**\n     - Mention: \"at the Hilda Valley Sports Complex...\"\n   - **Person: Samantha Lapierre**\n     - Mention: \"Samantha Lapierre, after her competitive match...\"\n   - **Person: Michael Dalton**\n     - Mention: \"Michael Dalton, a local sports journalist...\"\n   - **Person: Lucia Garcia**\n     - Mention: \"Lucia Garcia, the organizer from the Empower Tennis Foundation...\"\n   - **Organization: Green Valley Farms**\n     - Mention: \"Green Valley Farms dispatched additional delivery trucks...\"\n   - **Organization: Sunnybrook Poultry**\n     - Mention: \"Sunnybrook Poultry increased its production...\"\n   - **Product: The Champion Wrap**\n     - Mention: \"distributing 'The Champion Wrap' from Carla Mendez's caf\u00e9...\"\n   - **Event: Hilda Valley Championships**\n     - Mention: \"coincide with the opening ceremony of the Hilda Valley Championships...\"\n\n4. **Format the Results:**\n\n```xml\n<results>\n<entities>\n<person><id>PERSON-1</id><name>Samantha Lapierre</name></person>\n<person><id>PERSON-5</id><name>Carla Mendez</name></person>\n<organization><id>ORGANIZATION-2</id><name>Empower Tennis Foundation</name></organization>\n<building><id>BUILDING-1</id><name>Hilda Valley Sports Complex</name></building>\n<person><id>PERSON-4</id><name>Michael Dalton</name></person>\n<person><id>PERSON-6</id><name>Lucia Garcia</name></person>\n<organization><id>ORGANIZATION-4</id><name>Green Valley Farms</name></organization>\n<organization><id>ORGANIZATION-5</id><name>Sunnybrook Poultry</name></organization>\n<product><id>PRODUCT-1</id><name>The Champion Wrap</name></product>\n<event><id>EVENT-1</id><name>Hilda Valley Championships</name></event>\n</entities>\n</results>\n```\n\nThis output includes all entities explicitly mentioned by name in the outline.",
+  "instructions": "You are an AI assistant tasked with identifying which of the provided entities are explicitly named within the provided outline. Follow these instructions carefully:\n\n1. The date for this fictional event outline is:\n<date>{{DATE}}</date>\n\n2. Here is the outline you need to analyze:\n<outline>\n{{OUTLINE}}\n</outline>\n\n3. Here is the list of known (fictional) named entities:\n<entities>\n{{LOCATIONS_XML}}\n{{PERSONS_XML}}\n{{ORGANIZATIONS_XML}}\n{{PRODUCTS_XML}}\n{{ARTS_XML}}\n{{EVENTS_XML}}\n{{BUILDINGS_XML}}\n{{MISCELLANEOUSS_XML}}\n\n{{ADJUSTED_LOCATIONS_XML}}\n{{ADJUSTED_PERSONS_XML}}\n{{ADJUSTED_ORGANIZATIONS_XML}}\n{{ADJUSTED_PRODUCTS_XML}}\n{{ADJUSTED_ARTS_XML}}\n{{ADJUSTED_BUILDINGS_XML}}\n{{ADJUSTED_EVENTS_XML}}\n{{ADJUSTED_MISCELLANEOUSS_XML}}\n</entities>\n\n4. Your task is to go through all of the named entities in the provided list. For each named entity, check if it is explicitly referred to by name in the outline. If a named entity is explicitly mentioned by name, include it in your results.\n\n5. For each entity you identify, list them using the following format:\n<[entity_type]><id>[id of the entity]</id><name>[full name of the entity]</name></[entity_type]>\n\n6. Present your final output within a single <results> root node, structured as follows:\n\n<results>\n<entities>\n[List all identified entities here as described in step 5]\n</entities>\n</results>\n\n7. Double-check your work: For each entity that you have identified, make sure to find the sentence within the outline that explicitly refers to this identified entity by name. If you cannot find that the entity is mentioned explicitly by name in the outline, do not include it in your results.\n\n8. You can use a <scratchpad> for your thinking process. Do not include any XML tags within your scratchpad.\n\n9. Make sure that you have not missed any named entity from the outline that was also provided to you in the list of named entities.\n\nRemember, only include entities that are explicitly mentioned by name in the outline. Do not infer or assume the presence of entities that are not directly named.",
+  "text_prompt": "You are an AI assistant tasked with identifying which of the provided entities are explicitly named within the provided outline. Follow these instructions carefully:\n\n1. The date for this fictional event outline is:\n<date>2023-09-20</date>\n\n2. Here is the outline you need to analyze:\n<outline>\nOn September 20, 2023, the Empower Tennis Foundation organized a promotional giveaway at the Hilda Valley Sports Complex, distributing \"The Champion Wrap\" from Carla Mendez's caf\u00e9 to all event attendees, significantly increasing demand for the menu item.\nThe giveaway was strategically timed to coincide with the opening ceremony of the Hilda Valley Championships, ensuring maximum visibility and participation from attendees.\nThe Empower Tennis Foundation set up multiple distribution points around the venue, staffed by volunteers who handed out the wraps to attendees as they entered the complex.\nDue to the successful promotional event, Carla Mendez's caf\u00e9 experienced a 50% increase in customer foot traffic compared to previous days during the Hilda Valley Championships.\nThe caf\u00e9 extended its operating hours to accommodate the surge in customers, opening earlier and closing later than usual.\nCarla Mendez expressed satisfaction with the caf\u00e9's ability to cater to high demand, stating, \"We're thrilled to support the Hilda Valley Championships with quality and fresh menu options.\"\nShe added, \"Our team worked tirelessly to ensure that every customer received the same high-quality experience, despite the increased demand.\"\nSupport staff from both Carla Mendez's caf\u00e9 and local suppliers coordinated efficiently to ensure a continuous supply of fresh ingredients, keeping up with the increased demand.\nCarla Mendez held daily briefings with her staff and suppliers to adjust orders and manage inventory effectively throughout the event.\nLocal suppliers, including Green Valley Farms and Sunnybrook Poultry, worked overtime to deliver fresh vegetables and organic chicken for the increased demand at Carla Mendez's caf\u00e9.\nGreen Valley Farms dispatched additional delivery trucks to ensure timely restocking of fresh produce, while Sunnybrook Poultry increased its production to meet the caf\u00e9's needs.\nThe Empower Tennis Foundation credited the giveaway as part of their effort to enhance the overall experience for attendees at the Hilda Valley Championships.\nLucia Garcia, the organizer from the Empower Tennis Foundation, mentioned that the giveaway was intended to create a memorable experience for attendees and promote local businesses.\nMichael Dalton, a local sports journalist, highlighted the effective collaboration between Carla Mendez and the Empower Tennis Foundation in an article for Sports Insight Weekly.\nIn his article, Dalton praised the seamless integration of the caf\u00e9's offerings into the event's promotional activities, noting the positive impact on both the event and the local community.\nSamantha Lapierre, after her competitive match at the Hilda Valley Championships, visited Carla Mendez's caf\u00e9 and praised the refreshed menu, stating it helped sustain her energy during the event.\n\"The Champion Wrap was exactly what I needed after a long match,\" said Lapierre, appreciating the balance of flavors and nutritional value.\nThe nearby Hilda Valley Sports Complex announced enhanced meal options in its food court, incorporating popular items like \"The Champion Wrap\" as part of their menu.\nThe sports complex collaborated with Carla Mendez to ensure that the wrap was available throughout the event, providing attendees with a consistent and popular dining option.\nEvent attendees appreciated the variety and speed of service at Carla Mendez's caf\u00e9, resulting in numerous positive online reviews following the day's events.\nMany attendees took to social media to share their experiences, with several praising the caf\u00e9's ability to maintain high service standards despite the increased demand.\n</outline>\n\n3. Here is the list of known (fictional) named entities:\n<entities>\n<location><area>105 square kilometers</area><country>France</country><created_at>0</created_at><description>Paris is a vibrant metropolis renowned for its iconic architecture, lively cultural scene, and status as a global hub for fashion and culinary arts.</description><entity_class>location</entity_class><history><event>2023-09-15: Paris is mentioned as the location where Samantha Lapierre's injury occurred during a Grand Slam event.</event></history><id>LOCATION-1</id><last_updated>2023-09-15</last_updated><name>Paris</name><population>2.2 million</population><type>city</type></location>\n<person><created_at>0</created_at><date_of_birth>1993-06-12</date_of_birth><description>Samantha Lapierre is a competitive athlete known for her determination and strategic prowess on the doubles tennis court.</description><education>Bachelor of Science in Kinesiology</education><entity_class>person</entity_class><eye_color>Hazel</eye_color><gender>Female</gender><hair_color>Brunette</hair_color><height>5'9\"</height><history><event>2023-09-15: Samantha Lapierre announced her return to professional tennis after recovering from a shoulder injury, with her comeback scheduled at the Hilda Valley Sports Complex.</event><event>2023-09-18: Samantha Lapierre participated in a press conference at the Hilda Valley Sports Complex, expressing optimism for the Hilda Valley Championships and discussing her new serve technique.</event><event>2023-09-18: Samantha Lapierre visited Carla Mendez's caf\u00e9, appreciating the welcoming atmosphere and joking about needing a \"champion's breakfast.\"</event></history><id>PERSON-1</id><last_updated>2023-09-15</last_updated><marital_status>Single</marital_status><name>Samantha Lapierre</name><nationality>Canadian</nationality><political_affiliation>Nonpartisan</political_affiliation><profession>Tennis Player</profession><type>None</type><weight>145 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1975-10-08</date_of_birth><description>Dr. Theodore Frazer is an acclaimed orthopedic surgeon dedicated to advancing sports injury treatments and rehabilitation.</description><education>Doctor of Medicine (MD)</education><entity_class>person</entity_class><eye_color>Blue</eye_color><gender>Male</gender><hair_color>Light Brown</hair_color><height>6'1\"</height><history><event>2023-09-15: Dr. Theodore Frazer is credited with developing a new shoulder rehabilitation technique that aided Samantha Lapierre's recovery and return to tennis.</event><event>2023-09-18: Dr. Theodore Frazer attended the press conference to show support and discussed new rehabilitation techniques with onlookers.</event></history><id>PERSON-2</id><last_updated>2023-09-15</last_updated><marital_status>Married</marital_status><name>Dr. Theodore Frazer</name><nationality>British</nationality><political_affiliation>Nonpartisan</political_affiliation><profession>Orthopedic Specialist</profession><spouse>Emily Frazer</spouse><type>None</type><weight>180 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1990-11-29</date_of_birth><description>Isabella Torres is a formidable singles player known for her explosive serving and tactical acumen on the tennis court.</description><education>Bachelor of Arts in Sports Management</education><entity_class>person</entity_class><eye_color>Green</eye_color><gender>Female</gender><hair_color>Russet Red</hair_color><height>5'7\"</height><history><event>2023-09-15: Isabella Torres is set to compete against Samantha Lapierre at the Hilda Valley Championships, adding excitement to the event.</event><event>2023-09-18: Isabella Torres released a statement reinforcing her preparation for the match against Samantha Lapierre, focusing on agility and precision.</event></history><id>PERSON-3</id><last_updated>2023-09-15</last_updated><marital_status>Engaged</marital_status><name>Isabella Torres</name><nationality>Spanish</nationality><political_affiliation>Nonpartisan</political_affiliation><profession>Tennis Player</profession><type>None</type><weight>130 lbs</weight></person>\n<person><created_at>1</created_at><date_of_birth>1985-04-20</date_of_birth><description>Michael Dalton is a seasoned journalist known for his engaging interview style and in-depth sports reporting.</description><education>Master of Arts in Journalism</education><entity_class>person</entity_class><eye_color>Brown</eye_color><gender>Male</gender><hair_color>Black</hair_color><height>6'0\"</height><history><event>2023-09-18: Michael Dalton moderated the press conference at the Hilda Valley Sports Complex, engaging with Samantha Lapierre and other attendees.</event></history><id>PERSON-4</id><last_updated>2023-09-18</last_updated><marital_status>Married</marital_status><name>Michael Dalton</name><nationality>Canadian</nationality><political_affiliation>Nonpartisan</political_affiliation><profession>Sports Journalist</profession><spouse>Jennifer Dalton</spouse><type>None</type><weight>175 lbs</weight></person>\n<person><created_at>1</created_at><date_of_birth>1981-09-15</date_of_birth><description>Carla Mendez is the vibrant owner of a popular caf\u00e9 known for its flavorful locally sourced dishes.</description><education>Bachelor of Business Administration</education><entity_class>person</entity_class><eye_color>Hazel</eye_color><gender>Female</gender><hair_color>Dark Brown</hair_color><height>5'6\"</height><history><event>2023-09-18: Carla Mendez reported increased interest in catering for the Hilda Valley Championships, with her caf\u00e9 experiencing a surge in orders.</event><event>2023-09-18: Carla Mendez successfully adapted her caf\u00e9's menu to meet the demands of the Hilda Valley Championships, introducing new sports-friendly items and engaging with the community.</event></history><id>PERSON-5</id><last_updated>2023-09-18</last_updated><marital_status>Divorced</marital_status><name>Carla Mendez</name><nationality>Venezuelan</nationality><political_affiliation>Nonpartisan</political_affiliation><profession>Small Business Owner</profession><type>None</type><weight>140 lbs</weight></person>\n<person><created_at>1</created_at><date_of_birth>1979-02-02</date_of_birth><description>Lucia Garcia is a dedicated organizer at the Empower Tennis Foundation, renowned for her dynamic approach to advancing youth sports opportunities.</description><education>Master of Public Administration</education><entity_class>person</entity_class><eye_color>Dark Green</eye_color><gender>Female</gender><hair_color>Black</hair_color><height>5'4\"</height><history><event>2023-09-18: Lucia Garcia announced a Charity Gala to be held in conjunction with the Hilda Valley Championships, aiming to raise funds for youth training programs.</event></history><id>PERSON-6</id><last_updated>2023-09-18</last_updated><marital_status>Single</marital_status><name>Lucia Garcia</name><nationality>Spanish</nationality><political_affiliation>Nonpartisan</political_affiliation><profession>Charity Organizer</profession><type>None</type><weight>125 lbs</weight></person>\n<person><created_at>2</created_at><date_of_birth>1984-03-12</date_of_birth><description>Renowned for his ability to infuse traditional Italian techniques with modern twists, Chef Marco Ferrucci is dedicated to crafting culinary experiences that evoke emotion and passion.</description><education>Culinary Arts Diploma</education><entity_class>person</entity_class><eye_color>Brown</eye_color><gender>Male</gender><hair_color>Black</hair_color><height>6'0\"</height><history><event>2023-09-18: Chef Marco Ferrucci contributed to the development of new menu items at Carla Mendez's caf\u00e9, bringing innovative culinary techniques to the offerings.</event></history><id>PERSON-7</id><last_updated>2023-09-18</last_updated><marital_status>Married</marital_status><name>Chef Marco Ferrucci</name><nationality>Italian</nationality><profession>Chef</profession><type>None</type><weight>170 lbs</weight></person>\n<organization><annual_revenue>10000000</annual_revenue><created_at>0</created_at><description>The Premier Sports Medicine Institute is a pioneering institution focused on developing cutting-edge therapies for athletes.</description><entity_class>organization</entity_class><founded>2008</founded><headquarters>Brighton United Kingdom</headquarters><history><event>2023-09-15: The Premier Sports Medicine Institute, where Dr. Theodore Frazer works, is recognized for its role in Samantha Lapierre's successful rehabilitation.</event></history><id>ORGANIZATION-1</id><industry>Sports Medicine</industry><last_updated>2023-09-15</last_updated><mission_statement>To innovate and enhance the recovery and performance of athletes worldwide.</mission_statement><name>Premier Sports Medicine Institute</name><number_of_employees>150</number_of_employees><type>Institution</type></organization>\n<organization><annual_revenue>1500000</annual_revenue><created_at>0</created_at><description>The Empower Tennis Foundation is dedicated to nurturing young tennis talent through financial support and training.</description><entity_class>organization</entity_class><founded>2015</founded><headquarters>Bogot\u00e1 in Colombia</headquarters><history><event>2023-09-15: Samantha Lapierre is participating in a charity event with the Empower Tennis Foundation to support aspiring youth athletes.</event><event>2023-09-18: The Empower Tennis Foundation is organizing a Charity Gala in conjunction with the Hilda Valley Championships to raise funds for youth training programs.</event><event>2023-09-18: The Empower Tennis Foundation endorsed Carla Mendez's caf\u00e9 as a preferred spot for players during the Hilda Valley Championships, enhancing its reputation.</event></history><id>ORGANIZATION-2</id><industry>Sports Development</industry><last_updated>2023-09-15</last_updated><mission_statement>To provide opportunities and resources for aspiring young athletes.</mission_statement><name>Empower Tennis Foundation</name><number_of_employees>20</number_of_employees><type>Non-profit</type></organization>\n<organization><annual_revenue>3000000</annual_revenue><created_at>1</created_at><description>Sports Insight Weekly is a digital platform established in 2023, focusing on comprehensive sports analysis and exclusive athlete interviews.</description><entity_class>organization</entity_class><founded>2023</founded><headquarters>Midtown Plaza</headquarters><history><event>2023-09-18: Sports Insight Weekly reported on Samantha Lapierre's press conference, highlighting her recovery journey.</event></history><id>ORGANIZATION-3</id><industry>Media and Journalism</industry><last_updated>2023-09-18</last_updated><mission_statement>To provide in-depth sports journalism and enhance public understanding of athlete narratives</mission_statement><name>Sports Insight Weekly</name><number_of_employees>25</number_of_employees><type>Media Company</type></organization>\n<organization><annual_revenue>800000</annual_revenue><created_at>2</created_at><description>A sustainable agriculture enterprise located in the lush valleys of Veridia, known for its commitment to environmentally friendly farming practices and high-quality produce.</description><entity_class>organization</entity_class><founded>2005</founded><headquarters>Veridian Springs</headquarters><history><event>2023-09-18: Green Valley Farms supplied fresh vegetables for Carla Mendez's new menu items, including The Champion Wrap.</event></history><id>ORGANIZATION-4</id><industry>Sustainable Agriculture</industry><last_updated>2023-09-18</last_updated><mission_statement>To promote eco-friendly farming practices and provide the community with the freshest organic farm produce.</mission_statement><name>Green Valley Farms</name><number_of_employees>45</number_of_employees><type>Company</type></organization>\n<organization><annual_revenue>1200000</annual_revenue><created_at>2</created_at><description>Founded in 2010, Sunnybrook Poultry is a leading supplier of free-range poultry, emphasizing animal welfare and sustainable farm-to-table practices.</description><entity_class>organization</entity_class><founded>2010</founded><headquarters>Clearbrook</headquarters><history><event>2023-09-18: Sunnybrook Poultry provided locally sourced organic chicken for Carla Mendez's new menu items, including The Champion Wrap.</event></history><id>ORGANIZATION-5</id><industry>Poultry Farming</industry><last_updated>2023-09-18</last_updated><mission_statement>To deliver high-quality, ethically-raised poultry while supporting ethical and sustainable farming initiatives.</mission_statement><name>Sunnybrook Poultry</name><number_of_employees>60</number_of_employees><type>Company</type></organization>\n<product><created_at>2</created_at><description>Developed by innovative chefs to provide athletes with a nutritious and energizing meal option, using organic grilled chicken and fresh vegetables wrapped in whole grain tortillas.</description><entity_class>product</entity_class><history><event>2023-09-18: The Champion Wrap became a popular item at Carla Mendez's caf\u00e9 during the Hilda Valley Championships, praised for its flavors and nutritional value.</event></history><id>PRODUCT-1</id><last_updated>2023-09-18</last_updated><manufacturer>Carla's Caf\u00e9</manufacturer><name>The Champion Wrap</name><price>$8.99</price><release_date>2023-09</release_date><type>Food Product</type><warranty>N/A</warranty><weight>0.5 lbs</weight></product>\n\n<event><budget>500000</budget><created_at>0</created_at><date>September 20 2023</date><description>The Hilda Valley Championships is an annual event that draws competitive tennis players from around the world to its historic venue.</description><duration>5 days</duration><entity_class>event</entity_class><history><event>2023-09-15: The Hilda Valley Championships, set for September 20, 2023, is anticipated to feature Samantha Lapierre's return match against Isabella Torres, drawing significant public interest.</event><event>2023-09-18: The Hilda Valley Championships is approaching, with Samantha Lapierre hinting at innovative strategies for her match against Isabella Torres.</event><event>2023-09-18: The Hilda Valley Championships saw increased interest in Carla Mendez's caf\u00e9, which attracted tennis players and fans with its new menu options.</event></history><id>EVENT-1</id><last_updated>2023-09-15</last_updated><name>Hilda Valley Championships</name><number_of_participants>64</number_of_participants><organizer>Chelmsford Tennis Association</organizer><type>Sporting</type></event>\n<event><budget>20000000</budget><created_at>0</created_at><date>July 2021</date><description>The 2021 Wimbledon Doubles Championship was a prestigious part of the grand slam series, celebrated globally for its high-level doubles competition.</description><duration>2 weeks</duration><entity_class>event</entity_class><history><event>2023-09-15: Samantha Lapierre's notable victory at the 2021 Wimbledon Doubles Championship is highlighted as part of her successful career history.</event></history><id>EVENT-2</id><last_updated>2023-09-15</last_updated><name>2021 Wimbledon Doubles Championship</name><type>Sporting</type></event>\n<event><budget>75000</budget><created_at>1</created_at><date>September 19, 2023</date><description>The Charity Gala, part of Hilda Valley Championships' activities, aims to raise funds for supporting young athletes through the Empower Tennis Foundation.</description><duration>4 hours</duration><entity_class>event</entity_class><history><event>2023-09-18: The Charity Gala, organized by the Empower Tennis Foundation, is scheduled for the evening of September 19, 2023, to raise funds for youth training programs.</event></history><id>EVENT-3</id><last_updated>2023-09-18</last_updated><name>Charity Gala</name><number_of_participants>200</number_of_participants><organizer>Empower Tennis Foundation</organizer><type>Cultural</type></event>\n<building><architect>Lisa Montgomery</architect><capacity>10000</capacity><created_at>0</created_at><description>The Hilda Valley Sports Complex is a modern venue designed to host a diverse array of sports and community events.</description><entity_class>building</entity_class><floors>3</floors><height>15 meters</height><history><event>2023-09-15: The Hilda Valley Sports Complex is the venue for Samantha Lapierre's comeback match and has become a local hotspot for sporting events.</event><event>2023-09-18: The Hilda Valley Sports Complex hosted a press conference with Samantha Lapierre and other notable figures, drawing attention to its facilities.</event><event>2023-09-18: The Hilda Valley Sports Complex was a key location for the Hilda Valley Championships, with Carla Mendez's caf\u00e9 nearby attracting visitors.</event></history><id>BUILDING-1</id><last_updated>2023-09-15</last_updated><material>Recycled Steel and Glass</material><name>Hilda Valley Sports Complex</name><type>Public</type><year_built>2022</year_built></building>\n\n\n\n\n\n\n\n\n\n\n</entities>\n\n4. Your task is to go through all of the named entities in the provided list. For each named entity, check if it is explicitly referred to by name in the outline. If a named entity is explicitly mentioned by name, include it in your results.\n\n5. For each entity you identify, list them using the following format:\n<[entity_type]><id>[id of the entity]</id><name>[full name of the entity]</name></[entity_type]>\n\n6. Present your final output within a single <results> root node, structured as follows:\n\n<results>\n<entities>\n[List all identified entities here as described in step 5]\n</entities>\n</results>\n\n7. Double-check your work: For each entity that you have identified, make sure to find the sentence within the outline that explicitly refers to this identified entity by name. If you cannot find that the entity is mentioned explicitly by name in the outline, do not include it in your results.\n\n8. You can use a <scratchpad> for your thinking process. Do not include any XML tags within your scratchpad.\n\n9. Make sure that you have not missed any named entity from the outline that was also provided to you in the list of named entities.\n\nRemember, only include entities that are explicitly mentioned by name in the outline. Do not infer or assume the presence of entities that are not directly named.",
+  "system-prompt": null,
+  "values": {
+    "GENRE": "Sports",
+    "EVENT_SUMMARY": "Carla Mendez's caf\u00e9 faced unexpected additional demand for \"The Champion Wrap\" due to a promotional giveaway by the Empower Tennis Foundation, drawing even more visitors to her establishment.",
+    "EVENT_SUMMARY_FOR_NAME": "Carla Mendez's caf\u00e9 ",
+    "INIT_SUMMARY": "A prominent tennis player is making a surprising comeback after a two-year hiatus, motivated by advancements in sports medicine that have improved her performance capabilities.",
+    "KEYWORDS": "",
+    "CREATED_AT": 3,
+    "HISTORIES": [
+      "<event><date>2023-09-15</date><outline>On September 15, 2023, {Samantha Lapierre|PERSON-1}, a well-known tennis player known for her aggressive doubles play, announced her return to professional tournaments after a two-year hiatus due to a severe shoulder injury. {Samantha Lapierre|PERSON-1}'s injury occurred during a high-stakes match at the Grand Slam event in {Paris|LOCATION-1}, where she was leading her doubles partner by a set. Her comeback is scheduled to take place at the {Hilda Valley Sports Complex|BUILDING-1}, a new venue that opened last year and has become a local hotspot for sporting events. The {Hilda Valley Sports Complex|BUILDING-1} features state-of-the-art facilities, including an indoor tennis court with advanced lighting and seating for 5,000 spectators. Her return is supported by {Dr. Theodore Frazer|PERSON-2} of the {Premier Sports Medicine Institute|ORGANIZATION-1}, who has developed a new shoulder rehabilitation technique credited with {Samantha Lapierre|PERSON-1}\u2019s improved performance. {Dr. Theodore Frazer|PERSON-2}, a renowned orthopedic specialist, has previously worked with several Olympic athletes, enhancing his reputation in sports medicine. Before her injury, {Samantha Lapierre|PERSON-1} had competed in 12 international tournaments, making it to the semifinals in five, thus establishing herself as a force in women's doubles tennis. {Samantha Lapierre|PERSON-1}'s notable victories include a memorable win at the {2021 Wimbledon Doubles Championship|EVENT-2}, where she and her partner defeated top-seeded opponents in a thrilling match. {Samantha Lapierre|PERSON-1} announced her decision to make a comeback on social media, expressing that she felt \"more confident and energized than ever\" thanks to the advancements in sports medicine. {Samantha Lapierre|PERSON-1}'s social media announcement received over 50,000 likes and thousands of supportive comments from fans and fellow athletes within the first 24 hours. Local sports fans anticipate her match against renowned player {Isabella Torres|PERSON-3} at the upcoming {Hilda Valley Championships|EVENT-1}, a key event set to take place later this month. {Isabella Torres|PERSON-3}, known for her powerful serve and strategic gameplay, has been a dominant force in singles tennis, adding to the excitement of their anticipated match. Organizers of the {Hilda Valley Championships|EVENT-1} have witnessed a surge in ticket sales since {Samantha Lapierre|PERSON-1}'s announcement, indicating high public interest in her return. Local businesses near the {Hilda Valley Sports Complex|BUILDING-1} have reported increased foot traffic and sales, attributing the boost to the upcoming tennis event. {Samantha Lapierre|PERSON-1} stated in a recent interview with The Arena Gazette, \"I'm ready to prove that hard work and cutting-edge medical support can make a real difference.\" In the interview, {Samantha Lapierre|PERSON-1} also mentioned her gratitude towards her family and coaching team for their unwavering support throughout her recovery. In addition to her competitive schedule, {Samantha Lapierre|PERSON-1} will be participating in a local charity event, partnering with the {Empower Tennis Foundation|ORGANIZATION-2} to raise funds for aspiring youth athletes in her community. The {Empower Tennis Foundation|ORGANIZATION-2}, established in 2015, has supported over 200 young athletes by providing training equipment and coaching scholarships. The premier match at the {Hilda Valley Championships|EVENT-1} is set to take place on September 20, 2023, with extensive media coverage expected surrounding {Samantha Lapierre|PERSON-1}'s highly anticipated performance. Local television stations and sports networks have scheduled special segments to cover {Samantha Lapierre|PERSON-1}'s journey and her match against {Isabella Torres|PERSON-3}.</outline></event>",
+      "<event><date>2023-09-18</date><outline>{Samantha Lapierre|PERSON-1} participated in a press conference at the {Hilda Valley Sports Complex|BUILDING-1} on September 18, 2023. The press conference was held in the main auditorium of the {Hilda Valley Sports Complex|BUILDING-1}, which was filled with sports journalists and local tennis enthusiasts. The press conference was moderated by sports journalist {Michael Dalton|PERSON-4}, who is known for his engaging style of interviewing. {Michael Dalton|PERSON-4}, a seasoned journalist with over 15 years of experience, is recognized for his insightful questions and ability to draw out compelling stories from athletes. {Samantha Lapierre|PERSON-1} expressed her optimism ahead of the {Hilda Valley Championships|EVENT-1}, stating, \"I'm ready to showcase what two years of hard work can achieve.\" She emphasized her rigorous training regimen, which included both physical conditioning and strategic planning sessions with her coaching team. A new media outlet, {Sports Insight Weekly|ORGANIZATION-3}, reported on the press conference, highlighting {Samantha Lapierre|PERSON-1}\u2019s recovery journey. {Sports Insight Weekly|ORGANIZATION-3}, a digital platform launched in early 2023, focuses on in-depth sports analysis and athlete profiles. At the press conference, {Samantha Lapierre|PERSON-1} hinted at using innovative strategies during her match against {Isabella Torres|PERSON-3}. She mentioned incorporating a new serve technique developed during her rehabilitation, which she believes will give her an edge in the match. {Dr. Theodore Frazer|PERSON-2} attended the event to show his support and discussed the new rehabilitation techniques with onlookers. {Dr. Frazer|PERSON-2} explained that the rehabilitation technique involved a combination of targeted exercises and advanced physiotherapy sessions. Local business owner, {Carla Mendez|PERSON-5}, who runs a caf\u00e9 near the {Hilda Valley Sports Complex|BUILDING-1}, reported increased interest in catering for the event. {Carla Mendez|PERSON-5}'s caf\u00e9, known for its locally sourced ingredients, has seen a surge in orders for catering services from event attendees. The {Empower Tennis Foundation|ORGANIZATION-2} organizer, {Lucia Garcia|PERSON-6}, announced a {Charity Gala|EVENT-3} to be held in conjunction with the {Hilda Valley Championships|EVENT-1}. The {Charity Gala|EVENT-3}, scheduled for the evening of September 19, aims to raise funds for the foundation's youth training programs. {Isabella Torres|PERSON-3} was not directly at the press conference but released a statement reinforcing her preparation, saying, \"Expect a tough match.\" In her statement, {Isabella Torres|PERSON-3} highlighted her focus on enhancing her agility and precision on the court to counter {Samantha Lapierre|PERSON-1}'s strategies. The {Chelmsford Tennis Association} emphasized their commitment to security and smooth operations during their pre-event briefing. The association detailed their plans for crowd management and emergency response protocols to ensure a safe environment for all attendees.</outline></event>",
+      "<event><date>2023-09-18</date><outline>{Carla Mendez|PERSON-5}'s caf\u00e9 experienced moderate demand during the {Hilda Valley Championships|EVENT-1}. The caf\u00e9, located just a block away from the {Hilda Valley Sports Complex|BUILDING-1}, attracted a steady stream of visitors throughout the event. In response, {Carla Mendez|PERSON-5} introduced new and inventive menu options tailored to sports enthusiasts. These options included high-protein snacks and energy-boosting smoothies designed to cater to athletes' dietary needs. A new popular item was \"{The Champion Wrap|PRODUCT-1}\", a signature creation with grilled chicken, fresh vegetables, and a zesty sauce. The wrap featured locally sourced organic chicken and a homemade sauce made with a blend of herbs and spices. {Carla Mendez|PERSON-5} collaborated with local suppliers to ensure all ingredients were fresh and locally sourced. She partnered with {Green Valley Farms|ORGANIZATION-4} for fresh vegetables and {Sunnybrook Poultry|ORGANIZATION-5} for the chicken, ensuring top-quality ingredients. The caf\u00e9 saw an influx of tennis players and fans, many of whom shared positive feedback about the new menu. One fan, a local tennis coach, praised the wrap for its balance of flavors and nutritional value. {Samantha Lapierre|PERSON-1}, after her press conference, stopped by {Carla Mendez|PERSON-5}'s caf\u00e9, expressing appreciation for the welcoming and energetic atmosphere. During her visit, {Samantha Lapierre|PERSON-1} shared a light-hearted moment with {Carla Mendez|PERSON-5}, joking about needing a \"champion's breakfast\" before her match. {Chef Marco Ferrucci|PERSON-7}, who recently joined {Carla Mendez|PERSON-5}'s team, played a critical role in developing the new menu items. {Chef Ferrucci|PERSON-7}, known for his innovative culinary techniques, brought a fresh perspective to the caf\u00e9's offerings. The {Empower Tennis Foundation|ORGANIZATION-2} mentioned the caf\u00e9 as a preferred spot for players during the event, enhancing its reputation. This endorsement led to an increase in inquiries from other athletes and event organizers about catering services. {Carla Mendez|PERSON-5} held a quick cooking demonstration for local media, highlighting easy-to-eat and nutritious sports-friendly meals. The demonstration, held in the caf\u00e9's outdoor seating area, attracted a small crowd of curious onlookers and media personnel. Despite the event's busy nature, {Carla Mendez|PERSON-5} reported steady business through these innovative menu adjustments and proactive community engagement. She noted that the caf\u00e9's ability to adapt quickly to the event's demands was key to maintaining a steady flow of customers.</outline></event>"
+    ],
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "NEXT_IDS": {
+      "person": 8,
+      "organization": 6,
+      "location": 2,
+      "product": 2,
+      "art": 1,
+      "building": 2,
+      "event": 4,
+      "miscellaneous": 1
+    },
+    "PROVIDED_DATE": "September 20, 2023",
+    "PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Samantha Lapierre",
+        "entity_class": "person",
+        "description": "Samantha Lapierre is a competitive athlete known for her determination and strategic prowess on the doubles tennis court.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Samantha Lapierre announced her return to professional tennis after recovering from a shoulder injury, with her comeback scheduled at the Hilda Valley Sports Complex.",
+            "date": "2023-09-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Samantha Lapierre participated in a press conference at the Hilda Valley Sports Complex, expressing optimism for the Hilda Valley Championships and discussing her new serve technique.",
+            "date": "2023-09-18"
+          },
+          {
+            "created_at": 2,
+            "event_update": "Samantha Lapierre visited Carla Mendez's caf\u00e9, appreciating the welcoming atmosphere and joking about needing a \"champion's breakfast.\"",
+            "date": "2023-09-18"
+          }
+        ],
+        "date_of_birth": "1993-06-12",
+        "gender": "Female",
+        "profession": "Tennis Player",
+        "nationality": "Canadian",
+        "education": "Bachelor of Science in Kinesiology",
+        "height": "5'9\"",
+        "weight": "145 lbs",
+        "eye_color": "Hazel",
+        "hair_color": "Brunette",
+        "political_affiliation": "Nonpartisan",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Dr. Theodore Frazer",
+        "entity_class": "person",
+        "description": "Dr. Theodore Frazer is an acclaimed orthopedic surgeon dedicated to advancing sports injury treatments and rehabilitation.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Dr. Theodore Frazer is credited with developing a new shoulder rehabilitation technique that aided Samantha Lapierre's recovery and return to tennis.",
+            "date": "2023-09-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Dr. Theodore Frazer attended the press conference to show support and discussed new rehabilitation techniques with onlookers.",
+            "date": "2023-09-18"
+          }
+        ],
+        "date_of_birth": "1975-10-08",
+        "gender": "Male",
+        "profession": "Orthopedic Specialist",
+        "nationality": "British",
+        "education": "Doctor of Medicine (MD)",
+        "height": "6'1\"",
+        "weight": "180 lbs",
+        "eye_color": "Blue",
+        "hair_color": "Light Brown",
+        "political_affiliation": "Nonpartisan",
+        "marital_status": "Married",
+        "spouse": "Emily Frazer"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Isabella Torres",
+        "entity_class": "person",
+        "description": "Isabella Torres is a formidable singles player known for her explosive serving and tactical acumen on the tennis court.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Isabella Torres is set to compete against Samantha Lapierre at the Hilda Valley Championships, adding excitement to the event.",
+            "date": "2023-09-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Isabella Torres released a statement reinforcing her preparation for the match against Samantha Lapierre, focusing on agility and precision.",
+            "date": "2023-09-18"
+          }
+        ],
+        "date_of_birth": "1990-11-29",
+        "gender": "Female",
+        "profession": "Tennis Player",
+        "nationality": "Spanish",
+        "education": "Bachelor of Arts in Sports Management",
+        "height": "5'7\"",
+        "weight": "130 lbs",
+        "eye_color": "Green",
+        "hair_color": "Russet Red",
+        "political_affiliation": "Nonpartisan",
+        "marital_status": "Engaged"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Michael Dalton",
+        "entity_class": "person",
+        "description": "Michael Dalton is a seasoned journalist known for his engaging interview style and in-depth sports reporting.",
+        "type": null,
+        "created_at": 1,
+        "last_updated": "2023-09-18",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "Michael Dalton moderated the press conference at the Hilda Valley Sports Complex, engaging with Samantha Lapierre and other attendees.",
+            "date": "2023-09-18"
+          }
+        ],
+        "date_of_birth": "1985-04-20",
+        "gender": "Male",
+        "profession": "Sports Journalist",
+        "nationality": "Canadian",
+        "education": "Master of Arts in Journalism",
+        "height": "6'0\"",
+        "eye_color": "Brown",
+        "hair_color": "Black",
+        "political_affiliation": "Nonpartisan",
+        "marital_status": "Married",
+        "spouse": "Jennifer Dalton",
+        "weight": "175 lbs"
+      },
+      {
+        "id": "PERSON-5",
+        "name": "Carla Mendez",
+        "entity_class": "person",
+        "description": "Carla Mendez is the vibrant owner of a popular caf\u00e9 known for its flavorful locally sourced dishes.",
+        "type": null,
+        "created_at": 1,
+        "last_updated": "2023-09-18",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "Carla Mendez reported increased interest in catering for the Hilda Valley Championships, with her caf\u00e9 experiencing a surge in orders.",
+            "date": "2023-09-18"
+          },
+          {
+            "created_at": 2,
+            "event_update": "Carla Mendez successfully adapted her caf\u00e9's menu to meet the demands of the Hilda Valley Championships, introducing new sports-friendly items and engaging with the community.",
+            "date": "2023-09-18"
+          }
+        ],
+        "date_of_birth": "1981-09-15",
+        "gender": "Female",
+        "profession": "Small Business Owner",
+        "nationality": "Venezuelan",
+        "education": "Bachelor of Business Administration",
+        "height": "5'6\"",
+        "eye_color": "Hazel",
+        "hair_color": "Dark Brown",
+        "political_affiliation": "Nonpartisan",
+        "marital_status": "Divorced",
+        "weight": "140 lbs"
+      },
+      {
+        "id": "PERSON-6",
+        "name": "Lucia Garcia",
+        "entity_class": "person",
+        "description": "Lucia Garcia is a dedicated organizer at the Empower Tennis Foundation, renowned for her dynamic approach to advancing youth sports opportunities.",
+        "type": null,
+        "created_at": 1,
+        "last_updated": "2023-09-18",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "Lucia Garcia announced a Charity Gala to be held in conjunction with the Hilda Valley Championships, aiming to raise funds for youth training programs.",
+            "date": "2023-09-18"
+          }
+        ],
+        "date_of_birth": "1979-02-02",
+        "gender": "Female",
+        "profession": "Charity Organizer",
+        "nationality": "Spanish",
+        "education": "Master of Public Administration",
+        "height": "5'4\"",
+        "eye_color": "Dark Green",
+        "hair_color": "Black",
+        "political_affiliation": "Nonpartisan",
+        "marital_status": "Single",
+        "weight": "125 lbs"
+      },
+      {
+        "id": "PERSON-7",
+        "name": "Chef Marco Ferrucci",
+        "entity_class": "person",
+        "description": "Renowned for his ability to infuse traditional Italian techniques with modern twists, Chef Marco Ferrucci is dedicated to crafting culinary experiences that evoke emotion and passion.",
+        "type": null,
+        "created_at": 2,
+        "last_updated": "2023-09-18",
+        "history": [
+          {
+            "created_at": 2,
+            "event_update": "Chef Marco Ferrucci contributed to the development of new menu items at Carla Mendez's caf\u00e9, bringing innovative culinary techniques to the offerings.",
+            "date": "2023-09-18"
+          }
+        ],
+        "date_of_birth": "1984-03-12",
+        "gender": "Male",
+        "profession": "Chef",
+        "nationality": "Italian",
+        "education": "Culinary Arts Diploma",
+        "height": "6'0\"",
+        "weight": "170 lbs",
+        "eye_color": "Brown",
+        "hair_color": "Black",
+        "marital_status": "Married"
+      }
+    ],
+    "ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Premier Sports Medicine Institute",
+        "entity_class": "organization",
+        "description": "The Premier Sports Medicine Institute is a pioneering institution focused on developing cutting-edge therapies for athletes.",
+        "type": "Institution",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Premier Sports Medicine Institute, where Dr. Theodore Frazer works, is recognized for its role in Samantha Lapierre's successful rehabilitation.",
+            "date": "2023-09-15"
+          }
+        ],
+        "founded": "2008",
+        "headquarters": "Brighton United Kingdom",
+        "industry": "Sports Medicine",
+        "mission_statement": "To innovate and enhance the recovery and performance of athletes worldwide.",
+        "number_of_employees": "150",
+        "annual_revenue": "10000000"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Empower Tennis Foundation",
+        "entity_class": "organization",
+        "description": "The Empower Tennis Foundation is dedicated to nurturing young tennis talent through financial support and training.",
+        "type": "Non-profit",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Samantha Lapierre is participating in a charity event with the Empower Tennis Foundation to support aspiring youth athletes.",
+            "date": "2023-09-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "The Empower Tennis Foundation is organizing a Charity Gala in conjunction with the Hilda Valley Championships to raise funds for youth training programs.",
+            "date": "2023-09-18"
+          },
+          {
+            "created_at": 2,
+            "event_update": "The Empower Tennis Foundation endorsed Carla Mendez's caf\u00e9 as a preferred spot for players during the Hilda Valley Championships, enhancing its reputation.",
+            "date": "2023-09-18"
+          }
+        ],
+        "founded": "2015",
+        "headquarters": "Bogot\u00e1 in Colombia",
+        "industry": "Sports Development",
+        "mission_statement": "To provide opportunities and resources for aspiring young athletes.",
+        "number_of_employees": "20",
+        "annual_revenue": "1500000"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Sports Insight Weekly",
+        "entity_class": "organization",
+        "description": "Sports Insight Weekly is a digital platform established in 2023, focusing on comprehensive sports analysis and exclusive athlete interviews.",
+        "type": "Media Company",
+        "created_at": 1,
+        "last_updated": "2023-09-18",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "Sports Insight Weekly reported on Samantha Lapierre's press conference, highlighting her recovery journey.",
+            "date": "2023-09-18"
+          }
+        ],
+        "founded": "2023",
+        "headquarters": "Midtown Plaza",
+        "mission_statement": "To provide in-depth sports journalism and enhance public understanding of athlete narratives",
+        "industry": "Media and Journalism",
+        "number_of_employees": "25",
+        "annual_revenue": "3000000"
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "Green Valley Farms",
+        "entity_class": "organization",
+        "description": "A sustainable agriculture enterprise located in the lush valleys of Veridia, known for its commitment to environmentally friendly farming practices and high-quality produce.",
+        "type": "Company",
+        "created_at": 2,
+        "last_updated": "2023-09-18",
+        "history": [
+          {
+            "created_at": 2,
+            "event_update": "Green Valley Farms supplied fresh vegetables for Carla Mendez's new menu items, including The Champion Wrap.",
+            "date": "2023-09-18"
+          }
+        ],
+        "founded": "2005",
+        "headquarters": "Veridian Springs",
+        "industry": "Sustainable Agriculture",
+        "mission_statement": "To promote eco-friendly farming practices and provide the community with the freshest organic farm produce.",
+        "number_of_employees": "45",
+        "annual_revenue": "800000"
+      },
+      {
+        "id": "ORGANIZATION-5",
+        "name": "Sunnybrook Poultry",
+        "entity_class": "organization",
+        "description": "Founded in 2010, Sunnybrook Poultry is a leading supplier of free-range poultry, emphasizing animal welfare and sustainable farm-to-table practices.",
+        "type": "Company",
+        "created_at": 2,
+        "last_updated": "2023-09-18",
+        "history": [
+          {
+            "created_at": 2,
+            "event_update": "Sunnybrook Poultry provided locally sourced organic chicken for Carla Mendez's new menu items, including The Champion Wrap.",
+            "date": "2023-09-18"
+          }
+        ],
+        "founded": "2010",
+        "headquarters": "Clearbrook",
+        "industry": "Poultry Farming",
+        "mission_statement": "To deliver high-quality, ethically-raised poultry while supporting ethical and sustainable farming initiatives.",
+        "number_of_employees": "60",
+        "annual_revenue": "1200000"
+      }
+    ],
+    "LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Paris",
+        "entity_class": "location",
+        "description": "Paris is a vibrant metropolis renowned for its iconic architecture, lively cultural scene, and status as a global hub for fashion and culinary arts.",
+        "type": "city",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Paris is mentioned as the location where Samantha Lapierre's injury occurred during a Grand Slam event.",
+            "date": "2023-09-15"
+          }
+        ],
+        "population": "2.2 million",
+        "area": "105 square kilometers",
+        "country": "France"
+      }
+    ],
+    "PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "The Champion Wrap",
+        "entity_class": "product",
+        "description": "Developed by innovative chefs to provide athletes with a nutritious and energizing meal option, using organic grilled chicken and fresh vegetables wrapped in whole grain tortillas.",
+        "type": "Food Product",
+        "created_at": 2,
+        "last_updated": "2023-09-18",
+        "history": [
+          {
+            "created_at": 2,
+            "event_update": "The Champion Wrap became a popular item at Carla Mendez's caf\u00e9 during the Hilda Valley Championships, praised for its flavors and nutritional value.",
+            "date": "2023-09-18"
+          }
+        ],
+        "manufacturer": "Carla's Caf\u00e9",
+        "release_date": "2023-09",
+        "price": "$8.99",
+        "weight": "0.5 lbs",
+        "warranty": "N/A"
+      }
+    ],
+    "ART": [],
+    "BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Hilda Valley Sports Complex",
+        "entity_class": "building",
+        "description": "The Hilda Valley Sports Complex is a modern venue designed to host a diverse array of sports and community events.",
+        "type": "Public",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Hilda Valley Sports Complex is the venue for Samantha Lapierre's comeback match and has become a local hotspot for sporting events.",
+            "date": "2023-09-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "The Hilda Valley Sports Complex hosted a press conference with Samantha Lapierre and other notable figures, drawing attention to its facilities.",
+            "date": "2023-09-18"
+          },
+          {
+            "created_at": 2,
+            "event_update": "The Hilda Valley Sports Complex was a key location for the Hilda Valley Championships, with Carla Mendez's caf\u00e9 nearby attracting visitors.",
+            "date": "2023-09-18"
+          }
+        ],
+        "architect": "Lisa Montgomery",
+        "year_built": "2022",
+        "height": "15 meters",
+        "floors": "3",
+        "material": "Recycled Steel and Glass",
+        "capacity": "10000"
+      }
+    ],
+    "EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "Hilda Valley Championships",
+        "entity_class": "event",
+        "description": "The Hilda Valley Championships is an annual event that draws competitive tennis players from around the world to its historic venue.",
+        "type": "Sporting",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Hilda Valley Championships, set for September 20, 2023, is anticipated to feature Samantha Lapierre's return match against Isabella Torres, drawing significant public interest.",
+            "date": "2023-09-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "The Hilda Valley Championships is approaching, with Samantha Lapierre hinting at innovative strategies for her match against Isabella Torres.",
+            "date": "2023-09-18"
+          },
+          {
+            "created_at": 2,
+            "event_update": "The Hilda Valley Championships saw increased interest in Carla Mendez's caf\u00e9, which attracted tennis players and fans with its new menu options.",
+            "date": "2023-09-18"
+          }
+        ],
+        "date": "September 20 2023",
+        "duration": "5 days",
+        "organizer": "Chelmsford Tennis Association",
+        "number_of_participants": "64",
+        "budget": "500000"
+      },
+      {
+        "id": "EVENT-2",
+        "name": "2021 Wimbledon Doubles Championship",
+        "entity_class": "event",
+        "description": "The 2021 Wimbledon Doubles Championship was a prestigious part of the grand slam series, celebrated globally for its high-level doubles competition.",
+        "type": "Sporting",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Samantha Lapierre's notable victory at the 2021 Wimbledon Doubles Championship is highlighted as part of her successful career history.",
+            "date": "2023-09-15"
+          }
+        ],
+        "date": "July 2021",
+        "duration": "2 weeks",
+        "budget": "20000000"
+      },
+      {
+        "id": "EVENT-3",
+        "name": "Charity Gala",
+        "entity_class": "event",
+        "description": "The Charity Gala, part of Hilda Valley Championships' activities, aims to raise funds for supporting young athletes through the Empower Tennis Foundation.",
+        "type": "Cultural",
+        "created_at": 1,
+        "last_updated": "2023-09-18",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "The Charity Gala, organized by the Empower Tennis Foundation, is scheduled for the evening of September 19, 2023, to raise funds for youth training programs.",
+            "date": "2023-09-18"
+          }
+        ],
+        "date": "September 19, 2023",
+        "duration": "4 hours",
+        "organizer": "Empower Tennis Foundation",
+        "number_of_participants": "200",
+        "budget": "75000"
+      }
+    ],
+    "MISCELLANEOUS": [],
+    "PERSONS_XML": "<person><created_at>0</created_at><date_of_birth>1993-06-12</date_of_birth><description>Samantha Lapierre is a competitive athlete known for her determination and strategic prowess on the doubles tennis court.</description><education>Bachelor of Science in Kinesiology</education><entity_class>person</entity_class><eye_color>Hazel</eye_color><gender>Female</gender><hair_color>Brunette</hair_color><height>5'9\"</height><history><event>2023-09-15: Samantha Lapierre announced her return to professional tennis after recovering from a shoulder injury, with her comeback scheduled at the Hilda Valley Sports Complex.</event><event>2023-09-18: Samantha Lapierre participated in a press conference at the Hilda Valley Sports Complex, expressing optimism for the Hilda Valley Championships and discussing her new serve technique.</event><event>2023-09-18: Samantha Lapierre visited Carla Mendez's caf\u00e9, appreciating the welcoming atmosphere and joking about needing a \"champion's breakfast.\"</event></history><id>PERSON-1</id><last_updated>2023-09-15</last_updated><marital_status>Single</marital_status><name>Samantha Lapierre</name><nationality>Canadian</nationality><political_affiliation>Nonpartisan</political_affiliation><profession>Tennis Player</profession><type>None</type><weight>145 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1975-10-08</date_of_birth><description>Dr. Theodore Frazer is an acclaimed orthopedic surgeon dedicated to advancing sports injury treatments and rehabilitation.</description><education>Doctor of Medicine (MD)</education><entity_class>person</entity_class><eye_color>Blue</eye_color><gender>Male</gender><hair_color>Light Brown</hair_color><height>6'1\"</height><history><event>2023-09-15: Dr. Theodore Frazer is credited with developing a new shoulder rehabilitation technique that aided Samantha Lapierre's recovery and return to tennis.</event><event>2023-09-18: Dr. Theodore Frazer attended the press conference to show support and discussed new rehabilitation techniques with onlookers.</event></history><id>PERSON-2</id><last_updated>2023-09-15</last_updated><marital_status>Married</marital_status><name>Dr. Theodore Frazer</name><nationality>British</nationality><political_affiliation>Nonpartisan</political_affiliation><profession>Orthopedic Specialist</profession><spouse>Emily Frazer</spouse><type>None</type><weight>180 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1990-11-29</date_of_birth><description>Isabella Torres is a formidable singles player known for her explosive serving and tactical acumen on the tennis court.</description><education>Bachelor of Arts in Sports Management</education><entity_class>person</entity_class><eye_color>Green</eye_color><gender>Female</gender><hair_color>Russet Red</hair_color><height>5'7\"</height><history><event>2023-09-15: Isabella Torres is set to compete against Samantha Lapierre at the Hilda Valley Championships, adding excitement to the event.</event><event>2023-09-18: Isabella Torres released a statement reinforcing her preparation for the match against Samantha Lapierre, focusing on agility and precision.</event></history><id>PERSON-3</id><last_updated>2023-09-15</last_updated><marital_status>Engaged</marital_status><name>Isabella Torres</name><nationality>Spanish</nationality><political_affiliation>Nonpartisan</political_affiliation><profession>Tennis Player</profession><type>None</type><weight>130 lbs</weight></person>\n<person><created_at>1</created_at><date_of_birth>1985-04-20</date_of_birth><description>Michael Dalton is a seasoned journalist known for his engaging interview style and in-depth sports reporting.</description><education>Master of Arts in Journalism</education><entity_class>person</entity_class><eye_color>Brown</eye_color><gender>Male</gender><hair_color>Black</hair_color><height>6'0\"</height><history><event>2023-09-18: Michael Dalton moderated the press conference at the Hilda Valley Sports Complex, engaging with Samantha Lapierre and other attendees.</event></history><id>PERSON-4</id><last_updated>2023-09-18</last_updated><marital_status>Married</marital_status><name>Michael Dalton</name><nationality>Canadian</nationality><political_affiliation>Nonpartisan</political_affiliation><profession>Sports Journalist</profession><spouse>Jennifer Dalton</spouse><type>None</type><weight>175 lbs</weight></person>\n<person><created_at>1</created_at><date_of_birth>1981-09-15</date_of_birth><description>Carla Mendez is the vibrant owner of a popular caf\u00e9 known for its flavorful locally sourced dishes.</description><education>Bachelor of Business Administration</education><entity_class>person</entity_class><eye_color>Hazel</eye_color><gender>Female</gender><hair_color>Dark Brown</hair_color><height>5'6\"</height><history><event>2023-09-18: Carla Mendez reported increased interest in catering for the Hilda Valley Championships, with her caf\u00e9 experiencing a surge in orders.</event><event>2023-09-18: Carla Mendez successfully adapted her caf\u00e9's menu to meet the demands of the Hilda Valley Championships, introducing new sports-friendly items and engaging with the community.</event></history><id>PERSON-5</id><last_updated>2023-09-18</last_updated><marital_status>Divorced</marital_status><name>Carla Mendez</name><nationality>Venezuelan</nationality><political_affiliation>Nonpartisan</political_affiliation><profession>Small Business Owner</profession><type>None</type><weight>140 lbs</weight></person>\n<person><created_at>1</created_at><date_of_birth>1979-02-02</date_of_birth><description>Lucia Garcia is a dedicated organizer at the Empower Tennis Foundation, renowned for her dynamic approach to advancing youth sports opportunities.</description><education>Master of Public Administration</education><entity_class>person</entity_class><eye_color>Dark Green</eye_color><gender>Female</gender><hair_color>Black</hair_color><height>5'4\"</height><history><event>2023-09-18: Lucia Garcia announced a Charity Gala to be held in conjunction with the Hilda Valley Championships, aiming to raise funds for youth training programs.</event></history><id>PERSON-6</id><last_updated>2023-09-18</last_updated><marital_status>Single</marital_status><name>Lucia Garcia</name><nationality>Spanish</nationality><political_affiliation>Nonpartisan</political_affiliation><profession>Charity Organizer</profession><type>None</type><weight>125 lbs</weight></person>\n<person><created_at>2</created_at><date_of_birth>1984-03-12</date_of_birth><description>Renowned for his ability to infuse traditional Italian techniques with modern twists, Chef Marco Ferrucci is dedicated to crafting culinary experiences that evoke emotion and passion.</description><education>Culinary Arts Diploma</education><entity_class>person</entity_class><eye_color>Brown</eye_color><gender>Male</gender><hair_color>Black</hair_color><height>6'0\"</height><history><event>2023-09-18: Chef Marco Ferrucci contributed to the development of new menu items at Carla Mendez's caf\u00e9, bringing innovative culinary techniques to the offerings.</event></history><id>PERSON-7</id><last_updated>2023-09-18</last_updated><marital_status>Married</marital_status><name>Chef Marco Ferrucci</name><nationality>Italian</nationality><profession>Chef</profession><type>None</type><weight>170 lbs</weight></person>",
+    "ORGANIZATIONS_XML": "<organization><annual_revenue>10000000</annual_revenue><created_at>0</created_at><description>The Premier Sports Medicine Institute is a pioneering institution focused on developing cutting-edge therapies for athletes.</description><entity_class>organization</entity_class><founded>2008</founded><headquarters>Brighton United Kingdom</headquarters><history><event>2023-09-15: The Premier Sports Medicine Institute, where Dr. Theodore Frazer works, is recognized for its role in Samantha Lapierre's successful rehabilitation.</event></history><id>ORGANIZATION-1</id><industry>Sports Medicine</industry><last_updated>2023-09-15</last_updated><mission_statement>To innovate and enhance the recovery and performance of athletes worldwide.</mission_statement><name>Premier Sports Medicine Institute</name><number_of_employees>150</number_of_employees><type>Institution</type></organization>\n<organization><annual_revenue>1500000</annual_revenue><created_at>0</created_at><description>The Empower Tennis Foundation is dedicated to nurturing young tennis talent through financial support and training.</description><entity_class>organization</entity_class><founded>2015</founded><headquarters>Bogot\u00e1 in Colombia</headquarters><history><event>2023-09-15: Samantha Lapierre is participating in a charity event with the Empower Tennis Foundation to support aspiring youth athletes.</event><event>2023-09-18: The Empower Tennis Foundation is organizing a Charity Gala in conjunction with the Hilda Valley Championships to raise funds for youth training programs.</event><event>2023-09-18: The Empower Tennis Foundation endorsed Carla Mendez's caf\u00e9 as a preferred spot for players during the Hilda Valley Championships, enhancing its reputation.</event></history><id>ORGANIZATION-2</id><industry>Sports Development</industry><last_updated>2023-09-15</last_updated><mission_statement>To provide opportunities and resources for aspiring young athletes.</mission_statement><name>Empower Tennis Foundation</name><number_of_employees>20</number_of_employees><type>Non-profit</type></organization>\n<organization><annual_revenue>3000000</annual_revenue><created_at>1</created_at><description>Sports Insight Weekly is a digital platform established in 2023, focusing on comprehensive sports analysis and exclusive athlete interviews.</description><entity_class>organization</entity_class><founded>2023</founded><headquarters>Midtown Plaza</headquarters><history><event>2023-09-18: Sports Insight Weekly reported on Samantha Lapierre's press conference, highlighting her recovery journey.</event></history><id>ORGANIZATION-3</id><industry>Media and Journalism</industry><last_updated>2023-09-18</last_updated><mission_statement>To provide in-depth sports journalism and enhance public understanding of athlete narratives</mission_statement><name>Sports Insight Weekly</name><number_of_employees>25</number_of_employees><type>Media Company</type></organization>\n<organization><annual_revenue>800000</annual_revenue><created_at>2</created_at><description>A sustainable agriculture enterprise located in the lush valleys of Veridia, known for its commitment to environmentally friendly farming practices and high-quality produce.</description><entity_class>organization</entity_class><founded>2005</founded><headquarters>Veridian Springs</headquarters><history><event>2023-09-18: Green Valley Farms supplied fresh vegetables for Carla Mendez's new menu items, including The Champion Wrap.</event></history><id>ORGANIZATION-4</id><industry>Sustainable Agriculture</industry><last_updated>2023-09-18</last_updated><mission_statement>To promote eco-friendly farming practices and provide the community with the freshest organic farm produce.</mission_statement><name>Green Valley Farms</name><number_of_employees>45</number_of_employees><type>Company</type></organization>\n<organization><annual_revenue>1200000</annual_revenue><created_at>2</created_at><description>Founded in 2010, Sunnybrook Poultry is a leading supplier of free-range poultry, emphasizing animal welfare and sustainable farm-to-table practices.</description><entity_class>organization</entity_class><founded>2010</founded><headquarters>Clearbrook</headquarters><history><event>2023-09-18: Sunnybrook Poultry provided locally sourced organic chicken for Carla Mendez's new menu items, including The Champion Wrap.</event></history><id>ORGANIZATION-5</id><industry>Poultry Farming</industry><last_updated>2023-09-18</last_updated><mission_statement>To deliver high-quality, ethically-raised poultry while supporting ethical and sustainable farming initiatives.</mission_statement><name>Sunnybrook Poultry</name><number_of_employees>60</number_of_employees><type>Company</type></organization>",
+    "LOCATIONS_XML": "<location><area>105 square kilometers</area><country>France</country><created_at>0</created_at><description>Paris is a vibrant metropolis renowned for its iconic architecture, lively cultural scene, and status as a global hub for fashion and culinary arts.</description><entity_class>location</entity_class><history><event>2023-09-15: Paris is mentioned as the location where Samantha Lapierre's injury occurred during a Grand Slam event.</event></history><id>LOCATION-1</id><last_updated>2023-09-15</last_updated><name>Paris</name><population>2.2 million</population><type>city</type></location>",
+    "PRODUCTS_XML": "<product><created_at>2</created_at><description>Developed by innovative chefs to provide athletes with a nutritious and energizing meal option, using organic grilled chicken and fresh vegetables wrapped in whole grain tortillas.</description><entity_class>product</entity_class><history><event>2023-09-18: The Champion Wrap became a popular item at Carla Mendez's caf\u00e9 during the Hilda Valley Championships, praised for its flavors and nutritional value.</event></history><id>PRODUCT-1</id><last_updated>2023-09-18</last_updated><manufacturer>Carla's Caf\u00e9</manufacturer><name>The Champion Wrap</name><price>$8.99</price><release_date>2023-09</release_date><type>Food Product</type><warranty>N/A</warranty><weight>0.5 lbs</weight></product>",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "<building><architect>Lisa Montgomery</architect><capacity>10000</capacity><created_at>0</created_at><description>The Hilda Valley Sports Complex is a modern venue designed to host a diverse array of sports and community events.</description><entity_class>building</entity_class><floors>3</floors><height>15 meters</height><history><event>2023-09-15: The Hilda Valley Sports Complex is the venue for Samantha Lapierre's comeback match and has become a local hotspot for sporting events.</event><event>2023-09-18: The Hilda Valley Sports Complex hosted a press conference with Samantha Lapierre and other notable figures, drawing attention to its facilities.</event><event>2023-09-18: The Hilda Valley Sports Complex was a key location for the Hilda Valley Championships, with Carla Mendez's caf\u00e9 nearby attracting visitors.</event></history><id>BUILDING-1</id><last_updated>2023-09-15</last_updated><material>Recycled Steel and Glass</material><name>Hilda Valley Sports Complex</name><type>Public</type><year_built>2022</year_built></building>",
+    "EVENTS_XML": "<event><budget>500000</budget><created_at>0</created_at><date>September 20 2023</date><description>The Hilda Valley Championships is an annual event that draws competitive tennis players from around the world to its historic venue.</description><duration>5 days</duration><entity_class>event</entity_class><history><event>2023-09-15: The Hilda Valley Championships, set for September 20, 2023, is anticipated to feature Samantha Lapierre's return match against Isabella Torres, drawing significant public interest.</event><event>2023-09-18: The Hilda Valley Championships is approaching, with Samantha Lapierre hinting at innovative strategies for her match against Isabella Torres.</event><event>2023-09-18: The Hilda Valley Championships saw increased interest in Carla Mendez's caf\u00e9, which attracted tennis players and fans with its new menu options.</event></history><id>EVENT-1</id><last_updated>2023-09-15</last_updated><name>Hilda Valley Championships</name><number_of_participants>64</number_of_participants><organizer>Chelmsford Tennis Association</organizer><type>Sporting</type></event>\n<event><budget>20000000</budget><created_at>0</created_at><date>July 2021</date><description>The 2021 Wimbledon Doubles Championship was a prestigious part of the grand slam series, celebrated globally for its high-level doubles competition.</description><duration>2 weeks</duration><entity_class>event</entity_class><history><event>2023-09-15: Samantha Lapierre's notable victory at the 2021 Wimbledon Doubles Championship is highlighted as part of her successful career history.</event></history><id>EVENT-2</id><last_updated>2023-09-15</last_updated><name>2021 Wimbledon Doubles Championship</name><type>Sporting</type></event>\n<event><budget>75000</budget><created_at>1</created_at><date>September 19, 2023</date><description>The Charity Gala, part of Hilda Valley Championships' activities, aims to raise funds for supporting young athletes through the Empower Tennis Foundation.</description><duration>4 hours</duration><entity_class>event</entity_class><history><event>2023-09-18: The Charity Gala, organized by the Empower Tennis Foundation, is scheduled for the evening of September 19, 2023, to raise funds for youth training programs.</event></history><id>EVENT-3</id><last_updated>2023-09-18</last_updated><name>Charity Gala</name><number_of_participants>200</number_of_participants><organizer>Empower Tennis Foundation</organizer><type>Cultural</type></event>",
+    "MISCELLANEOUSS_XML": "",
+    "NUM_STORYITEMS": 10,
+    "HISTORY_XML": "<event><date>2023-09-15</date><outline>On September 15, 2023, {Samantha Lapierre|PERSON-1}, a well-known tennis player known for her aggressive doubles play, announced her return to professional tournaments after a two-year hiatus due to a severe shoulder injury. {Samantha Lapierre|PERSON-1}'s injury occurred during a high-stakes match at the Grand Slam event in {Paris|LOCATION-1}, where she was leading her doubles partner by a set. Her comeback is scheduled to take place at the {Hilda Valley Sports Complex|BUILDING-1}, a new venue that opened last year and has become a local hotspot for sporting events. The {Hilda Valley Sports Complex|BUILDING-1} features state-of-the-art facilities, including an indoor tennis court with advanced lighting and seating for 5,000 spectators. Her return is supported by {Dr. Theodore Frazer|PERSON-2} of the {Premier Sports Medicine Institute|ORGANIZATION-1}, who has developed a new shoulder rehabilitation technique credited with {Samantha Lapierre|PERSON-1}\u2019s improved performance. {Dr. Theodore Frazer|PERSON-2}, a renowned orthopedic specialist, has previously worked with several Olympic athletes, enhancing his reputation in sports medicine. Before her injury, {Samantha Lapierre|PERSON-1} had competed in 12 international tournaments, making it to the semifinals in five, thus establishing herself as a force in women's doubles tennis. {Samantha Lapierre|PERSON-1}'s notable victories include a memorable win at the {2021 Wimbledon Doubles Championship|EVENT-2}, where she and her partner defeated top-seeded opponents in a thrilling match. {Samantha Lapierre|PERSON-1} announced her decision to make a comeback on social media, expressing that she felt \"more confident and energized than ever\" thanks to the advancements in sports medicine. {Samantha Lapierre|PERSON-1}'s social media announcement received over 50,000 likes and thousands of supportive comments from fans and fellow athletes within the first 24 hours. Local sports fans anticipate her match against renowned player {Isabella Torres|PERSON-3} at the upcoming {Hilda Valley Championships|EVENT-1}, a key event set to take place later this month. {Isabella Torres|PERSON-3}, known for her powerful serve and strategic gameplay, has been a dominant force in singles tennis, adding to the excitement of their anticipated match. Organizers of the {Hilda Valley Championships|EVENT-1} have witnessed a surge in ticket sales since {Samantha Lapierre|PERSON-1}'s announcement, indicating high public interest in her return. Local businesses near the {Hilda Valley Sports Complex|BUILDING-1} have reported increased foot traffic and sales, attributing the boost to the upcoming tennis event. {Samantha Lapierre|PERSON-1} stated in a recent interview with The Arena Gazette, \"I'm ready to prove that hard work and cutting-edge medical support can make a real difference.\" In the interview, {Samantha Lapierre|PERSON-1} also mentioned her gratitude towards her family and coaching team for their unwavering support throughout her recovery. In addition to her competitive schedule, {Samantha Lapierre|PERSON-1} will be participating in a local charity event, partnering with the {Empower Tennis Foundation|ORGANIZATION-2} to raise funds for aspiring youth athletes in her community. The {Empower Tennis Foundation|ORGANIZATION-2}, established in 2015, has supported over 200 young athletes by providing training equipment and coaching scholarships. The premier match at the {Hilda Valley Championships|EVENT-1} is set to take place on September 20, 2023, with extensive media coverage expected surrounding {Samantha Lapierre|PERSON-1}'s highly anticipated performance. Local television stations and sports networks have scheduled special segments to cover {Samantha Lapierre|PERSON-1}'s journey and her match against {Isabella Torres|PERSON-3}.</outline></event>\n<event><date>2023-09-18</date><outline>{Samantha Lapierre|PERSON-1} participated in a press conference at the {Hilda Valley Sports Complex|BUILDING-1} on September 18, 2023. The press conference was held in the main auditorium of the {Hilda Valley Sports Complex|BUILDING-1}, which was filled with sports journalists and local tennis enthusiasts. The press conference was moderated by sports journalist {Michael Dalton|PERSON-4}, who is known for his engaging style of interviewing. {Michael Dalton|PERSON-4}, a seasoned journalist with over 15 years of experience, is recognized for his insightful questions and ability to draw out compelling stories from athletes. {Samantha Lapierre|PERSON-1} expressed her optimism ahead of the {Hilda Valley Championships|EVENT-1}, stating, \"I'm ready to showcase what two years of hard work can achieve.\" She emphasized her rigorous training regimen, which included both physical conditioning and strategic planning sessions with her coaching team. A new media outlet, {Sports Insight Weekly|ORGANIZATION-3}, reported on the press conference, highlighting {Samantha Lapierre|PERSON-1}\u2019s recovery journey. {Sports Insight Weekly|ORGANIZATION-3}, a digital platform launched in early 2023, focuses on in-depth sports analysis and athlete profiles. At the press conference, {Samantha Lapierre|PERSON-1} hinted at using innovative strategies during her match against {Isabella Torres|PERSON-3}. She mentioned incorporating a new serve technique developed during her rehabilitation, which she believes will give her an edge in the match. {Dr. Theodore Frazer|PERSON-2} attended the event to show his support and discussed the new rehabilitation techniques with onlookers. {Dr. Frazer|PERSON-2} explained that the rehabilitation technique involved a combination of targeted exercises and advanced physiotherapy sessions. Local business owner, {Carla Mendez|PERSON-5}, who runs a caf\u00e9 near the {Hilda Valley Sports Complex|BUILDING-1}, reported increased interest in catering for the event. {Carla Mendez|PERSON-5}'s caf\u00e9, known for its locally sourced ingredients, has seen a surge in orders for catering services from event attendees. The {Empower Tennis Foundation|ORGANIZATION-2} organizer, {Lucia Garcia|PERSON-6}, announced a {Charity Gala|EVENT-3} to be held in conjunction with the {Hilda Valley Championships|EVENT-1}. The {Charity Gala|EVENT-3}, scheduled for the evening of September 19, aims to raise funds for the foundation's youth training programs. {Isabella Torres|PERSON-3} was not directly at the press conference but released a statement reinforcing her preparation, saying, \"Expect a tough match.\" In her statement, {Isabella Torres|PERSON-3} highlighted her focus on enhancing her agility and precision on the court to counter {Samantha Lapierre|PERSON-1}'s strategies. The {Chelmsford Tennis Association} emphasized their commitment to security and smooth operations during their pre-event briefing. The association detailed their plans for crowd management and emergency response protocols to ensure a safe environment for all attendees.</outline></event>\n<event><date>2023-09-18</date><outline>{Carla Mendez|PERSON-5}'s caf\u00e9 experienced moderate demand during the {Hilda Valley Championships|EVENT-1}. The caf\u00e9, located just a block away from the {Hilda Valley Sports Complex|BUILDING-1}, attracted a steady stream of visitors throughout the event. In response, {Carla Mendez|PERSON-5} introduced new and inventive menu options tailored to sports enthusiasts. These options included high-protein snacks and energy-boosting smoothies designed to cater to athletes' dietary needs. A new popular item was \"{The Champion Wrap|PRODUCT-1}\", a signature creation with grilled chicken, fresh vegetables, and a zesty sauce. The wrap featured locally sourced organic chicken and a homemade sauce made with a blend of herbs and spices. {Carla Mendez|PERSON-5} collaborated with local suppliers to ensure all ingredients were fresh and locally sourced. She partnered with {Green Valley Farms|ORGANIZATION-4} for fresh vegetables and {Sunnybrook Poultry|ORGANIZATION-5} for the chicken, ensuring top-quality ingredients. The caf\u00e9 saw an influx of tennis players and fans, many of whom shared positive feedback about the new menu. One fan, a local tennis coach, praised the wrap for its balance of flavors and nutritional value. {Samantha Lapierre|PERSON-1}, after her press conference, stopped by {Carla Mendez|PERSON-5}'s caf\u00e9, expressing appreciation for the welcoming and energetic atmosphere. During her visit, {Samantha Lapierre|PERSON-1} shared a light-hearted moment with {Carla Mendez|PERSON-5}, joking about needing a \"champion's breakfast\" before her match. {Chef Marco Ferrucci|PERSON-7}, who recently joined {Carla Mendez|PERSON-5}'s team, played a critical role in developing the new menu items. {Chef Ferrucci|PERSON-7}, known for his innovative culinary techniques, brought a fresh perspective to the caf\u00e9's offerings. The {Empower Tennis Foundation|ORGANIZATION-2} mentioned the caf\u00e9 as a preferred spot for players during the event, enhancing its reputation. This endorsement led to an increase in inquiries from other athletes and event organizers about catering services. {Carla Mendez|PERSON-5} held a quick cooking demonstration for local media, highlighting easy-to-eat and nutritious sports-friendly meals. The demonstration, held in the caf\u00e9's outdoor seating area, attracted a small crowd of curious onlookers and media personnel. Despite the event's busy nature, {Carla Mendez|PERSON-5} reported steady business through these innovative menu adjustments and proactive community engagement. She noted that the caf\u00e9's ability to adapt quickly to the event's demands was key to maintaining a steady flow of customers.</outline></event>",
+    "STORY_ITEM": [
+      "On September 20, 2023, the Empower Tennis Foundation organized a promotional giveaway at the Hilda Valley Sports Complex, distributing \"The Champion Wrap\" from Carla Mendez's caf\u00e9 to all event attendees, significantly increasing demand for the menu item.",
+      "The giveaway was strategically timed to coincide with the opening ceremony of the Hilda Valley Championships, ensuring maximum visibility and participation from attendees.",
+      "The Empower Tennis Foundation set up multiple distribution points around the venue, staffed by volunteers who handed out the wraps to attendees as they entered the complex.",
+      "Due to the successful promotional event, Carla Mendez's caf\u00e9 experienced a 50% increase in customer foot traffic compared to previous days during the Hilda Valley Championships.",
+      "The caf\u00e9 extended its operating hours to accommodate the surge in customers, opening earlier and closing later than usual.",
+      "Carla Mendez expressed satisfaction with the caf\u00e9's ability to cater to high demand, stating, \"We're thrilled to support the Hilda Valley Championships with quality and fresh menu options.\"",
+      "She added, \"Our team worked tirelessly to ensure that every customer received the same high-quality experience, despite the increased demand.\"",
+      "Support staff from both Carla Mendez's caf\u00e9 and local suppliers coordinated efficiently to ensure a continuous supply of fresh ingredients, keeping up with the increased demand.",
+      "Carla Mendez held daily briefings with her staff and suppliers to adjust orders and manage inventory effectively throughout the event.",
+      "Local suppliers, including Green Valley Farms and Sunnybrook Poultry, worked overtime to deliver fresh vegetables and organic chicken for the increased demand at Carla Mendez's caf\u00e9.",
+      "Green Valley Farms dispatched additional delivery trucks to ensure timely restocking of fresh produce, while Sunnybrook Poultry increased its production to meet the caf\u00e9's needs.",
+      "The Empower Tennis Foundation credited the giveaway as part of their effort to enhance the overall experience for attendees at the Hilda Valley Championships.",
+      "Lucia Garcia, the organizer from the Empower Tennis Foundation, mentioned that the giveaway was intended to create a memorable experience for attendees and promote local businesses.",
+      "Michael Dalton, a local sports journalist, highlighted the effective collaboration between Carla Mendez and the Empower Tennis Foundation in an article for Sports Insight Weekly.",
+      "In his article, Dalton praised the seamless integration of the caf\u00e9's offerings into the event's promotional activities, noting the positive impact on both the event and the local community.",
+      "Samantha Lapierre, after her competitive match at the Hilda Valley Championships, visited Carla Mendez's caf\u00e9 and praised the refreshed menu, stating it helped sustain her energy during the event.",
+      "\"The Champion Wrap was exactly what I needed after a long match,\" said Lapierre, appreciating the balance of flavors and nutritional value.",
+      "The nearby Hilda Valley Sports Complex announced enhanced meal options in its food court, incorporating popular items like \"The Champion Wrap\" as part of their menu.",
+      "The sports complex collaborated with Carla Mendez to ensure that the wrap was available throughout the event, providing attendees with a consistent and popular dining option.",
+      "Event attendees appreciated the variety and speed of service at Carla Mendez's caf\u00e9, resulting in numerous positive online reviews following the day's events.",
+      "Many attendees took to social media to share their experiences, with several praising the caf\u00e9's ability to maintain high service standards despite the increased demand."
+    ],
+    "DATE": "2023-09-20",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 2,
+    "OUTLINE": "On September 20, 2023, the Empower Tennis Foundation organized a promotional giveaway at the Hilda Valley Sports Complex, distributing \"The Champion Wrap\" from Carla Mendez's caf\u00e9 to all event attendees, significantly increasing demand for the menu item.\nThe giveaway was strategically timed to coincide with the opening ceremony of the Hilda Valley Championships, ensuring maximum visibility and participation from attendees.\nThe Empower Tennis Foundation set up multiple distribution points around the venue, staffed by volunteers who handed out the wraps to attendees as they entered the complex.\nDue to the successful promotional event, Carla Mendez's caf\u00e9 experienced a 50% increase in customer foot traffic compared to previous days during the Hilda Valley Championships.\nThe caf\u00e9 extended its operating hours to accommodate the surge in customers, opening earlier and closing later than usual.\nCarla Mendez expressed satisfaction with the caf\u00e9's ability to cater to high demand, stating, \"We're thrilled to support the Hilda Valley Championships with quality and fresh menu options.\"\nShe added, \"Our team worked tirelessly to ensure that every customer received the same high-quality experience, despite the increased demand.\"\nSupport staff from both Carla Mendez's caf\u00e9 and local suppliers coordinated efficiently to ensure a continuous supply of fresh ingredients, keeping up with the increased demand.\nCarla Mendez held daily briefings with her staff and suppliers to adjust orders and manage inventory effectively throughout the event.\nLocal suppliers, including Green Valley Farms and Sunnybrook Poultry, worked overtime to deliver fresh vegetables and organic chicken for the increased demand at Carla Mendez's caf\u00e9.\nGreen Valley Farms dispatched additional delivery trucks to ensure timely restocking of fresh produce, while Sunnybrook Poultry increased its production to meet the caf\u00e9's needs.\nThe Empower Tennis Foundation credited the giveaway as part of their effort to enhance the overall experience for attendees at the Hilda Valley Championships.\nLucia Garcia, the organizer from the Empower Tennis Foundation, mentioned that the giveaway was intended to create a memorable experience for attendees and promote local businesses.\nMichael Dalton, a local sports journalist, highlighted the effective collaboration between Carla Mendez and the Empower Tennis Foundation in an article for Sports Insight Weekly.\nIn his article, Dalton praised the seamless integration of the caf\u00e9's offerings into the event's promotional activities, noting the positive impact on both the event and the local community.\nSamantha Lapierre, after her competitive match at the Hilda Valley Championships, visited Carla Mendez's caf\u00e9 and praised the refreshed menu, stating it helped sustain her energy during the event.\n\"The Champion Wrap was exactly what I needed after a long match,\" said Lapierre, appreciating the balance of flavors and nutritional value.\nThe nearby Hilda Valley Sports Complex announced enhanced meal options in its food court, incorporating popular items like \"The Champion Wrap\" as part of their menu.\nThe sports complex collaborated with Carla Mendez to ensure that the wrap was available throughout the event, providing attendees with a consistent and popular dining option.\nEvent attendees appreciated the variety and speed of service at Carla Mendez's caf\u00e9, resulting in numerous positive online reviews following the day's events.\nMany attendees took to social media to share their experiences, with several praising the caf\u00e9's ability to maintain high service standards despite the increased demand.",
+    "PRE-CONSISTENCY-NUM-ITEMS": 21,
+    "STORYITEM_XML": "<storyitems>\n<storyitem>On September 20, 2023, the Empower Tennis Foundation organized a promotional giveaway at the Hilda Valley Sports Complex, distributing \"The Champion Wrap\" from Carla Mendez's caf\u00e9 to all event attendees, significantly increasing demand for the menu item.</storyitem>\n<storyitem>The giveaway was strategically timed to coincide with the opening ceremony of the Hilda Valley Championships, ensuring maximum visibility and participation from attendees.</storyitem>\n<storyitem>The Empower Tennis Foundation set up multiple distribution points around the venue, staffed by volunteers who handed out the wraps to attendees as they entered the complex.</storyitem>\n<storyitem>Due to the successful promotional event, Carla Mendez's caf\u00e9 experienced a 50% increase in customer foot traffic compared to previous days during the Hilda Valley Championships.</storyitem>\n<storyitem>The caf\u00e9 extended its operating hours to accommodate the surge in customers, opening earlier and closing later than usual.</storyitem>\n<storyitem>Carla Mendez expressed satisfaction with the caf\u00e9's ability to cater to high demand, stating, \"We're thrilled to support the Hilda Valley Championships with quality and fresh menu options.\"</storyitem>\n<storyitem>She added, \"Our team worked tirelessly to ensure that every customer received the same high-quality experience, despite the increased demand.\"</storyitem>\n<storyitem>Support staff from both Carla Mendez's caf\u00e9 and local suppliers coordinated efficiently to ensure a continuous supply of fresh ingredients, keeping up with the increased demand.</storyitem>\n<storyitem>Carla Mendez held daily briefings with her staff and suppliers to adjust orders and manage inventory effectively throughout the event.</storyitem>\n<storyitem>Local suppliers, including Green Valley Farms and Sunnybrook Poultry, worked overtime to deliver fresh vegetables and organic chicken for the increased demand at Carla Mendez's caf\u00e9.</storyitem>\n<storyitem>Green Valley Farms dispatched additional delivery trucks to ensure timely restocking of fresh produce, while Sunnybrook Poultry increased its production to meet the caf\u00e9's needs.</storyitem>\n<storyitem>The Empower Tennis Foundation credited the giveaway as part of their effort to enhance the overall experience for attendees at the Hilda Valley Championships.</storyitem>\n<storyitem>Lucia Garcia, the organizer from the Empower Tennis Foundation, mentioned that the giveaway was intended to create a memorable experience for attendees and promote local businesses.</storyitem>\n<storyitem>Michael Dalton, a local sports journalist, highlighted the effective collaboration between Carla Mendez and the Empower Tennis Foundation in an article for Sports Insight Weekly.</storyitem>\n<storyitem>In his article, Dalton praised the seamless integration of the caf\u00e9's offerings into the event's promotional activities, noting the positive impact on both the event and the local community.</storyitem>\n<storyitem>Samantha Lapierre, after her competitive match at the Hilda Valley Championships, visited Carla Mendez's caf\u00e9 and praised the refreshed menu, stating it helped sustain her energy during the event.</storyitem>\n<storyitem>\"The Champion Wrap was exactly what I needed after a long match,\" said Lapierre, appreciating the balance of flavors and nutritional value.</storyitem>\n<storyitem>The nearby Hilda Valley Sports Complex announced enhanced meal options in its food court, incorporating popular items like \"The Champion Wrap\" as part of their menu.</storyitem>\n<storyitem>The sports complex collaborated with Carla Mendez to ensure that the wrap was available throughout the event, providing attendees with a consistent and popular dining option.</storyitem>\n<storyitem>Event attendees appreciated the variety and speed of service at Carla Mendez's caf\u00e9, resulting in numerous positive online reviews following the day's events.</storyitem>\n<storyitem>Many attendees took to social media to share their experiences, with several praising the caf\u00e9's ability to maintain high service standards despite the increased demand.</storyitem>\n<storyitems>",
+    "NEW_PERSON_NAME": [],
+    "NEW_ORGANIZATION_NAME": [],
+    "NEW_LOCATION_NAME": [],
+    "NEW_PRODUCT_NAME": [],
+    "NEW_ART_NAME": [],
+    "NEW_BUILDING_NAME": [],
+    "NEW_EVENT_NAME": [],
+    "NEW_MISCELLANEOUS_NAME": [],
+    "CORRECTED_PERSON_NAME": [],
+    "CORRECTED_ORGANIZATION_NAME": [],
+    "CORRECTED_LOCATION_NAME": [],
+    "CORRECTED_PRODUCT_NAME": [],
+    "CORRECTED_ART_NAME": [],
+    "CORRECTED_BUILDING_NAME": [],
+    "CORRECTED_EVENT_NAME": [],
+    "CORRECTED_MISCELLANEOUS_NAME": [],
+    "CRITIQUE_ERRORS": {
+      "entity-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ]
+    },
+    "ADJUSTED_PERSONS_XML": "",
+    "ADJUSTED_ORGANIZATIONS_XML": "",
+    "ADJUSTED_LOCATIONS_XML": "",
+    "ADJUSTED_PRODUCTS_XML": "",
+    "ADJUSTED_ARTS_XML": "",
+    "ADJUSTED_BUILDINGS_XML": "",
+    "ADJUSTED_EVENTS_XML": "",
+    "ADJUSTED_MISCELLANEOUSS_XML": ""
+  },
+  "critiques": [
+    {
+      "critique": "I found problems with your response. Please fix these problems and return the corrected output using the same format as before. The problems I found are:\n\nThe following entities appear in the outline but are missing from your response. Please make sure to include all entities from the provided lists that are mentioned in the outline.:\n - [ID=ORGANIZATION-3] Name: \"Sports Insight Weekly\".",
+      "response": "I apologize for the oversight. Let's correct the response by including the missing entity \"Sports Insight Weekly\" and ensuring all explicitly mentioned entities are included.\n\n### Corrected Analysis:\n\n1. **Entities to Check:**\n   - **Locations:** Paris\n   - **Persons:** Samantha Lapierre, Dr. Theodore Frazer, Isabella Torres, Michael Dalton, Carla Mendez, Lucia Garcia, Chef Marco Ferrucci\n   - **Organizations:** Premier Sports Medicine Institute, Empower Tennis Foundation, Sports Insight Weekly, Green Valley Farms, Sunnybrook Poultry\n   - **Products:** The Champion Wrap\n   - **Events:** Hilda Valley Championships, 2021 Wimbledon Doubles Championship, Charity Gala\n   - **Buildings:** Hilda Valley Sports Complex\n\n2. **Entities Identified in the Outline:**\n\n   - **Person: Carla Mendez**\n     - Mention: \"Carla Mendez's caf\u00e9 experienced a 50% increase in customer foot traffic...\"\n   - **Organization: Empower Tennis Foundation**\n     - Mention: \"The Empower Tennis Foundation organized a promotional giveaway...\"\n   - **Building: Hilda Valley Sports Complex**\n     - Mention: \"at the Hilda Valley Sports Complex...\"\n   - **Person: Samantha Lapierre**\n     - Mention: \"Samantha Lapierre, after her competitive match...\"\n   - **Person: Michael Dalton**\n     - Mention: \"Michael Dalton, a local sports journalist...\"\n   - **Person: Lucia Garcia**\n     - Mention: \"Lucia Garcia, the organizer from the Empower Tennis Foundation...\"\n   - **Organization: Green Valley Farms**\n     - Mention: \"Green Valley Farms dispatched additional delivery trucks...\"\n   - **Organization: Sunnybrook Poultry**\n     - Mention: \"Sunnybrook Poultry increased its production...\"\n   - **Product: The Champion Wrap**\n     - Mention: \"distributing 'The Champion Wrap' from Carla Mendez's caf\u00e9...\"\n   - **Event: Hilda Valley Championships**\n     - Mention: \"coincide with the opening ceremony of the Hilda Valley Championships...\"\n   - **Organization: Sports Insight Weekly**\n     - Mention: \"Michael Dalton highlighted the effective collaboration... in an article for Sports Insight Weekly.\"\n\n3. **Format the Corrected Results:**\n\n```xml\n<results>\n<entities>\n<person><id>PERSON-1</id><name>Samantha Lapierre</name></person>\n<person><id>PERSON-5</id><name>Carla Mendez</name></person>\n<organization><id>ORGANIZATION-2</id><name>Empower Tennis Foundation</name></organization>\n<building><id>BUILDING-1</id><name>Hilda Valley Sports Complex</name></building>\n<person><id>PERSON-4</id><name>Michael Dalton</name></person>\n<person><id>PERSON-6</id><name>Lucia Garcia</name></person>\n<organization><id>ORGANIZATION-4</id><name>Green Valley Farms</name></organization>\n<organization><id>ORGANIZATION-5</id><name>Sunnybrook Poultry</name></organization>\n<product><id>PRODUCT-1</id><name>The Champion Wrap</name></product>\n<event><id>EVENT-1</id><name>Hilda Valley Championships</name></event>\n<organization><id>ORGANIZATION-3</id><name>Sports Insight Weekly</name></organization>\n</entities>\n</results>\n```\n\nThis corrected output now includes all entities explicitly mentioned by name in the outline."
+    }
+  ]
+}

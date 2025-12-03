@@ -1,0 +1,526 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "openai/gpt-4o-2024-08-06",
+    "temperature": 0.0,
+    "max-tokens": 4096
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "```xml\n<outline>\n<storyitem>The newly developed {Greenfield Sports Complex|BUILDING-1} is unveiled in the suburban area of {Rivertown|LOCATION-1} on 2025-05-15.</storyitem>\n<storyitem>The {Greenfield Sports Complex|BUILDING-1} is strategically located near {Rivertown|LOCATION-1}'s main public transport hub, making it easily accessible for residents and visitors.</storyitem>\n<storyitem>The {Greenfield Sports Complex|BUILDING-1} utilizes solar panels and rainwater harvesting systems to minimize its environmental impact.</storyitem>\n<storyitem>The solar panels installed at the {Greenfield Sports Complex|BUILDING-1} are expected to generate approximately 80% of the facility's energy needs, significantly reducing its carbon footprint.</storyitem>\n<storyitem>{Mayor Lily Thompson|PERSON-1} of {Rivertown|LOCATION-1} attends the inauguration ceremony of the {Greenfield Sports Complex|BUILDING-1}, highlighting its sustainable design.</storyitem>\n<storyitem>During her speech, {Mayor Lily Thompson|PERSON-1} emphasized the importance of integrating eco-friendly practices in urban development to ensure a healthier future for the community.</storyitem>\n<storyitem>The {Greenfield Sports Complex|BUILDING-1} houses facilities for soccer, tennis, and swimming, catering to a variety of local sports enthusiasts.</storyitem>\n<storyitem>The soccer field at the {Greenfield Sports Complex|BUILDING-1} features a state-of-the-art turf made from recycled materials, providing a durable and environmentally friendly playing surface.</storyitem>\n<storyitem>Local environmental activist group, {Earth Warriors|ORGANIZATION-1}, praises the {Greenfield Sports Complex|BUILDING-1} for its eco-friendly features.</storyitem>\n<storyitem>{Earth Warriors|ORGANIZATION-1} have been actively involved in the planning stages of the {Greenfield Sports Complex|BUILDING-1}, offering guidance on sustainable practices and materials.</storyitem>\n<storyitem>A community fun run is organized at the {Greenfield Sports Complex|BUILDING-1} to celebrate its opening with local residents.</storyitem>\n<storyitem>The fun run includes various age categories, encouraging participation from families and individuals of all fitness levels.</storyitem>\n<storyitem>Local high schools, including {Rivertown High|ORGANIZATION-2} and {West Side Academy|ORGANIZATION-3}, plan to use the {Greenfield Sports Complex|BUILDING-1} for their sports programs.</storyitem>\n<storyitem>{Rivertown High|ORGANIZATION-2}'s soccer team is particularly excited about the new facilities, as they have been seeking a dedicated space for training and matches.</storyitem>\n<storyitem>The {Rivertown Council|ORGANIZATION-4} reports an expected increase in local tourism due to the innovative {Greenfield Sports Complex|BUILDING-1}.</storyitem>\n<storyitem>Local businesses anticipate a boost in sales as visitors to the {Greenfield Sports Complex|BUILDING-1} explore {Rivertown|LOCATION-1}'s shops and restaurants.</storyitem>\n<storyitem>{John Ellison|PERSON-2}, head of the {Greenfield Development Group|ORGANIZATION-5}, states that the project serves as a model for future eco-friendly constructions.</storyitem>\n<storyitem>{John Ellison|PERSON-2} revealed plans to collaborate with other cities interested in adopting similar sustainable practices for their sports facilities.</storyitem>\n<storyitem>Local news outlet, {Rivertown Gazette|ORGANIZATION-6}, covers the successful opening event of the {Greenfield Sports Complex|BUILDING-1}, receiving positive community feedback.</storyitem>\n<storyitem>The {Rivertown Gazette|ORGANIZATION-6}'s coverage includes interviews with local athletes and residents who express enthusiasm for the new complex and its environmental benefits.</storyitem>\n</outline>\n```"
+  },
+  "response": "```xml\n<outline>\n<storyitem>The newly developed {Greenfield Sports Complex|BUILDING-1} is unveiled in the suburban area of {Rivertown|LOCATION-1} on 2025-05-15.</storyitem>\n<storyitem>The {Greenfield Sports Complex|BUILDING-1} is strategically located near {Rivertown|LOCATION-1}'s main public transport hub, making it easily accessible for residents and visitors.</storyitem>\n<storyitem>The {Greenfield Sports Complex|BUILDING-1} utilizes solar panels and rainwater harvesting systems to minimize its environmental impact.</storyitem>\n<storyitem>The solar panels installed at the {Greenfield Sports Complex|BUILDING-1} are expected to generate approximately 80% of the facility's energy needs, significantly reducing its carbon footprint.</storyitem>\n<storyitem>{Mayor Lily Thompson|PERSON-1} of {Rivertown|LOCATION-1} attends the inauguration ceremony of the {Greenfield Sports Complex|BUILDING-1}, highlighting its sustainable design.</storyitem>\n<storyitem>During her speech, {Mayor Lily Thompson|PERSON-1} emphasized the importance of integrating eco-friendly practices in urban development to ensure a healthier future for the community.</storyitem>\n<storyitem>The {Greenfield Sports Complex|BUILDING-1} houses facilities for soccer, tennis, and swimming, catering to a variety of local sports enthusiasts.</storyitem>\n<storyitem>The soccer field at the {Greenfield Sports Complex|BUILDING-1} features a state-of-the-art turf made from recycled materials, providing a durable and environmentally friendly playing surface.</storyitem>\n<storyitem>Local environmental activist group, {Earth Warriors|ORGANIZATION-1}, praises the {Greenfield Sports Complex|BUILDING-1} for its eco-friendly features.</storyitem>\n<storyitem>{Earth Warriors|ORGANIZATION-1} have been actively involved in the planning stages of the {Greenfield Sports Complex|BUILDING-1}, offering guidance on sustainable practices and materials.</storyitem>\n<storyitem>A community fun run is organized at the {Greenfield Sports Complex|BUILDING-1} to celebrate its opening with local residents.</storyitem>\n<storyitem>The fun run includes various age categories, encouraging participation from families and individuals of all fitness levels.</storyitem>\n<storyitem>Local high schools, including {Rivertown High|ORGANIZATION-2} and {West Side Academy|ORGANIZATION-3}, plan to use the {Greenfield Sports Complex|BUILDING-1} for their sports programs.</storyitem>\n<storyitem>{Rivertown High|ORGANIZATION-2}'s soccer team is particularly excited about the new facilities, as they have been seeking a dedicated space for training and matches.</storyitem>\n<storyitem>The {Rivertown Council|ORGANIZATION-4} reports an expected increase in local tourism due to the innovative {Greenfield Sports Complex|BUILDING-1}.</storyitem>\n<storyitem>Local businesses anticipate a boost in sales as visitors to the {Greenfield Sports Complex|BUILDING-1} explore {Rivertown|LOCATION-1}'s shops and restaurants.</storyitem>\n<storyitem>{John Ellison|PERSON-2}, head of the {Greenfield Development Group|ORGANIZATION-5}, states that the project serves as a model for future eco-friendly constructions.</storyitem>\n<storyitem>{John Ellison|PERSON-2} revealed plans to collaborate with other cities interested in adopting similar sustainable practices for their sports facilities.</storyitem>\n<storyitem>Local news outlet, {Rivertown Gazette|ORGANIZATION-6}, covers the successful opening event of the {Greenfield Sports Complex|BUILDING-1}, receiving positive community feedback.</storyitem>\n<storyitem>The {Rivertown Gazette|ORGANIZATION-6}'s coverage includes interviews with local athletes and residents who express enthusiasm for the new complex and its environmental benefits.</storyitem>\n</outline>\n```",
+  "instructions": "You are an AI assistant tasked with identifying and marking fictional entities within an outline of a fictional event. Your goal is to replace each occurrence of these entities with a specific format that includes the entity's ID. Follow these instructions carefully:\n\nYou will be working with the following inputs:\n\nDate: {{DATE}}\n\n<outline>\n{{OUTLINE}}\n</outline>\n\n<entities>\n{{ALL_USED_LOCATION_XML}}\n{{ALL_USED_PERSON_XML}}\n{{ALL_USED_ORGANIZATION_XML}}\n{{ALL_USED_PRODUCT_XML}}\n{{ALL_USED_ART_XML}}\n{{ALL_USED_BUILDING_XML}}\n{{ALL_USED_EVENT_XML}}\n{{ALL_USED_MISCELLANEOUS_XML}}\n</entities>\n\nProcess the outline by following these steps:\n\n1. Carefully review the list of entities provided in the <entities> section. Each entity will have an associated ID and a name.\n\n2. Search the outline for all occurrences of each entity in the list.\n\n3. For each occurrence found, replace it with the format: {full name|ID}\n   Where \"full name\" is the full name as provided via the \"name\" property of the entity.\n   \n4. Maintain the original structure and formatting of the outline, only changing the entities as described.\n\n5. After processing all entities, review the entire outline to ensure all occurrences have been properly marked and no entities were missed.\n\n6. Output the processed outline, maintaining its original structure but with all entity occurrences replaced as instructed.\n\nImportant points to remember:\n- Be thorough in your search for entities, including variations or partial mentions.\n- Always use the ID and name as provided in the entity list, even:\n    - If an entity is referred to by full name\n    - If an entity is referred to by an abbreviation\n    - If an entity is referred to using parts of the full name\n\nFormat your output as follows:\n- Enclose the entire processed outline within <outline> tags.\n- Place each sentence of the outline within separate <storyitem> tags.\n\nProvide your final output without any additional commentary or explanations. Focus solely on processing the outline as instructed.",
+  "text_prompt": "You are an AI assistant tasked with identifying and marking fictional entities within an outline of a fictional event. Your goal is to replace each occurrence of these entities with a specific format that includes the entity's ID. Follow these instructions carefully:\n\nYou will be working with the following inputs:\n\nDate: 2025-05-15\n\n<outline>\nThe newly developed Greenfield Sports Complex is unveiled in the suburban area of Rivertown on 2025-05-15.\nThe Greenfield Sports Complex is strategically located near Rivertown's main public transport hub, making it easily accessible for residents and visitors.\nThe Greenfield Sports Complex utilizes solar panels and rainwater harvesting systems to minimize its environmental impact.\nThe solar panels installed at the Greenfield Sports Complex are expected to generate approximately 80% of the facility's energy needs, significantly reducing its carbon footprint.\nMayor Lily Thompson of Rivertown attends the inauguration ceremony of the Greenfield Sports Complex, highlighting its sustainable design.\nDuring her speech, Mayor Lily Thompson emphasized the importance of integrating eco-friendly practices in urban development to ensure a healthier future for the community.\nThe Greenfield Sports Complex houses facilities for soccer, tennis, and swimming, catering to a variety of local sports enthusiasts.\nThe soccer field at the Greenfield Sports Complex features a state-of-the-art turf made from recycled materials, providing a durable and environmentally friendly playing surface.\nLocal environmental activist group, Earth Warriors, praises the Greenfield Sports Complex for its eco-friendly features.\nEarth Warriors have been actively involved in the planning stages of the Greenfield Sports Complex, offering guidance on sustainable practices and materials.\nA community fun run is organized at the Greenfield Sports Complex to celebrate its opening with local residents.\nThe fun run includes various age categories, encouraging participation from families and individuals of all fitness levels.\nLocal high schools, including Rivertown High and West Side Academy, plan to use the Greenfield Sports Complex for their sports programs.\nRivertown High's soccer team is particularly excited about the new facilities, as they have been seeking a dedicated space for training and matches.\nThe Rivertown Council reports an expected increase in local tourism due to the innovative Greenfield Sports Complex.\nLocal businesses anticipate a boost in sales as visitors to the Greenfield Sports Complex explore Rivertown's shops and restaurants.\nJohn Ellison, head of the Greenfield Development Group, states that the project serves as a model for future eco-friendly constructions.\nJohn Ellison revealed plans to collaborate with other cities interested in adopting similar sustainable practices for their sports facilities.\nLocal news outlet, Rivertown Gazette, covers the successful opening event of the Greenfield Sports Complex, receiving positive community feedback.\nThe Rivertown Gazette's coverage includes interviews with local athletes and residents who express enthusiasm for the new complex and its environmental benefits.\n</outline>\n\n<entities>\n<location><category>location</category><id>LOCATION-1</id><name>Rivertown</name></location>\n<person><category>person</category><id>PERSON-1</id><name>Mayor Lily Thompson</name></person>\n<person><category>person</category><id>PERSON-2</id><name>John Ellison</name></person>\n<organization><category>organization</category><id>ORGANIZATION-1</id><name>Earth Warriors</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-2</id><name>Rivertown High</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-3</id><name>West Side Academy</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-4</id><name>Rivertown Council</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-5</id><name>Greenfield Development Group</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-6</id><name>Rivertown Gazette</name></organization>\n\n\n<building><category>building</category><id>BUILDING-1</id><name>Greenfield Sports Complex</name></building>\n\n\n</entities>\n\nProcess the outline by following these steps:\n\n1. Carefully review the list of entities provided in the <entities> section. Each entity will have an associated ID and a name.\n\n2. Search the outline for all occurrences of each entity in the list.\n\n3. For each occurrence found, replace it with the format: {full name|ID}\n   Where \"full name\" is the full name as provided via the \"name\" property of the entity.\n   \n4. Maintain the original structure and formatting of the outline, only changing the entities as described.\n\n5. After processing all entities, review the entire outline to ensure all occurrences have been properly marked and no entities were missed.\n\n6. Output the processed outline, maintaining its original structure but with all entity occurrences replaced as instructed.\n\nImportant points to remember:\n- Be thorough in your search for entities, including variations or partial mentions.\n- Always use the ID and name as provided in the entity list, even:\n    - If an entity is referred to by full name\n    - If an entity is referred to by an abbreviation\n    - If an entity is referred to using parts of the full name\n\nFormat your output as follows:\n- Enclose the entire processed outline within <outline> tags.\n- Place each sentence of the outline within separate <storyitem> tags.\n\nProvide your final output without any additional commentary or explanations. Focus solely on processing the outline as instructed.",
+  "system-prompt": null,
+  "values": {
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "GENRE": "Sports",
+    "HISTORIES": [],
+    "EVENT_SUMMARY": "A new eco-friendly sports complex has been unveiled in a suburban area, featuring solar panels and rainwater harvesting systems to minimize its environmental impact.",
+    "EVENT_SUMMARY_FOR_NAME": "A new eco-friendly s",
+    "KEYWORDS": "",
+    "CREATED_AT": 0,
+    "NEXT_IDS": {
+      "person": 3,
+      "organization": 7,
+      "location": 2,
+      "product": 1,
+      "art": 1,
+      "building": 2,
+      "event": 1,
+      "miscellaneous": 1
+    },
+    "PROVIDED_DATE": "",
+    "PERSON": [],
+    "ORGANIZATION": [],
+    "LOCATION": [],
+    "PRODUCT": [],
+    "ART": [],
+    "BUILDING": [],
+    "EVENT": [],
+    "MISCELLANEOUS": [],
+    "PERSONS_XML": "",
+    "ORGANIZATIONS_XML": "",
+    "LOCATIONS_XML": "",
+    "PRODUCTS_XML": "",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "",
+    "EVENTS_XML": "",
+    "MISCELLANEOUSS_XML": "",
+    "NUM_STORYITEMS": 10,
+    "HISTORY_XML": "",
+    "STORY_ITEM": [
+      "The newly developed Greenfield Sports Complex is unveiled in the suburban area of Rivertown on 2025-05-15.",
+      "The Greenfield Sports Complex is strategically located near Rivertown's main public transport hub, making it easily accessible for residents and visitors.",
+      "The Greenfield Sports Complex utilizes solar panels and rainwater harvesting systems to minimize its environmental impact.",
+      "The solar panels installed at the Greenfield Sports Complex are expected to generate approximately 80% of the facility's energy needs, significantly reducing its carbon footprint.",
+      "Mayor Lily Thompson of Rivertown attends the inauguration ceremony of the Greenfield Sports Complex, highlighting its sustainable design.",
+      "During her speech, Mayor Lily Thompson emphasized the importance of integrating eco-friendly practices in urban development to ensure a healthier future for the community.",
+      "The Greenfield Sports Complex houses facilities for soccer, tennis, and swimming, catering to a variety of local sports enthusiasts.",
+      "The soccer field at the Greenfield Sports Complex features a state-of-the-art turf made from recycled materials, providing a durable and environmentally friendly playing surface.",
+      "Local environmental activist group, Earth Warriors, praises the Greenfield Sports Complex for its eco-friendly features.",
+      "Earth Warriors have been actively involved in the planning stages of the Greenfield Sports Complex, offering guidance on sustainable practices and materials.",
+      "A community fun run is organized at the Greenfield Sports Complex to celebrate its opening with local residents.",
+      "The fun run includes various age categories, encouraging participation from families and individuals of all fitness levels.",
+      "Local high schools, including Rivertown High and West Side Academy, plan to use the Greenfield Sports Complex for their sports programs.",
+      "Rivertown High's soccer team is particularly excited about the new facilities, as they have been seeking a dedicated space for training and matches.",
+      "The Rivertown Council reports an expected increase in local tourism due to the innovative Greenfield Sports Complex.",
+      "Local businesses anticipate a boost in sales as visitors to the Greenfield Sports Complex explore Rivertown's shops and restaurants.",
+      "John Ellison, head of the Greenfield Development Group, states that the project serves as a model for future eco-friendly constructions.",
+      "John Ellison revealed plans to collaborate with other cities interested in adopting similar sustainable practices for their sports facilities.",
+      "Local news outlet, Rivertown Gazette, covers the successful opening event of the Greenfield Sports Complex, receiving positive community feedback.",
+      "The Rivertown Gazette's coverage includes interviews with local athletes and residents who express enthusiasm for the new complex and its environmental benefits."
+    ],
+    "DATE": "2025-05-15",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 2,
+    "OUTLINE": "The newly developed Greenfield Sports Complex is unveiled in the suburban area of Rivertown on 2025-05-15.\nThe Greenfield Sports Complex is strategically located near Rivertown's main public transport hub, making it easily accessible for residents and visitors.\nThe Greenfield Sports Complex utilizes solar panels and rainwater harvesting systems to minimize its environmental impact.\nThe solar panels installed at the Greenfield Sports Complex are expected to generate approximately 80% of the facility's energy needs, significantly reducing its carbon footprint.\nMayor Lily Thompson of Rivertown attends the inauguration ceremony of the Greenfield Sports Complex, highlighting its sustainable design.\nDuring her speech, Mayor Lily Thompson emphasized the importance of integrating eco-friendly practices in urban development to ensure a healthier future for the community.\nThe Greenfield Sports Complex houses facilities for soccer, tennis, and swimming, catering to a variety of local sports enthusiasts.\nThe soccer field at the Greenfield Sports Complex features a state-of-the-art turf made from recycled materials, providing a durable and environmentally friendly playing surface.\nLocal environmental activist group, Earth Warriors, praises the Greenfield Sports Complex for its eco-friendly features.\nEarth Warriors have been actively involved in the planning stages of the Greenfield Sports Complex, offering guidance on sustainable practices and materials.\nA community fun run is organized at the Greenfield Sports Complex to celebrate its opening with local residents.\nThe fun run includes various age categories, encouraging participation from families and individuals of all fitness levels.\nLocal high schools, including Rivertown High and West Side Academy, plan to use the Greenfield Sports Complex for their sports programs.\nRivertown High's soccer team is particularly excited about the new facilities, as they have been seeking a dedicated space for training and matches.\nThe Rivertown Council reports an expected increase in local tourism due to the innovative Greenfield Sports Complex.\nLocal businesses anticipate a boost in sales as visitors to the Greenfield Sports Complex explore Rivertown's shops and restaurants.\nJohn Ellison, head of the Greenfield Development Group, states that the project serves as a model for future eco-friendly constructions.\nJohn Ellison revealed plans to collaborate with other cities interested in adopting similar sustainable practices for their sports facilities.\nLocal news outlet, Rivertown Gazette, covers the successful opening event of the Greenfield Sports Complex, receiving positive community feedback.\nThe Rivertown Gazette's coverage includes interviews with local athletes and residents who express enthusiasm for the new complex and its environmental benefits.",
+    "PRE-CONSISTENCY-NUM-ITEMS": 20,
+    "STORYITEM_XML": "<storyitems>\n<storyitem>The newly developed Greenfield Sports Complex is unveiled in the suburban area of Rivertown on 2025-05-15.</storyitem>\n<storyitem>The Greenfield Sports Complex is strategically located near Rivertown's main public transport hub, making it easily accessible for residents and visitors.</storyitem>\n<storyitem>The Greenfield Sports Complex utilizes solar panels and rainwater harvesting systems to minimize its environmental impact.</storyitem>\n<storyitem>The solar panels installed at the Greenfield Sports Complex are expected to generate approximately 80% of the facility's energy needs, significantly reducing its carbon footprint.</storyitem>\n<storyitem>Mayor Lily Thompson of Rivertown attends the inauguration ceremony of the Greenfield Sports Complex, highlighting its sustainable design.</storyitem>\n<storyitem>During her speech, Mayor Lily Thompson emphasized the importance of integrating eco-friendly practices in urban development to ensure a healthier future for the community.</storyitem>\n<storyitem>The Greenfield Sports Complex houses facilities for soccer, tennis, and swimming, catering to a variety of local sports enthusiasts.</storyitem>\n<storyitem>The soccer field at the Greenfield Sports Complex features a state-of-the-art turf made from recycled materials, providing a durable and environmentally friendly playing surface.</storyitem>\n<storyitem>Local environmental activist group, Earth Warriors, praises the Greenfield Sports Complex for its eco-friendly features.</storyitem>\n<storyitem>Earth Warriors have been actively involved in the planning stages of the Greenfield Sports Complex, offering guidance on sustainable practices and materials.</storyitem>\n<storyitem>A community fun run is organized at the Greenfield Sports Complex to celebrate its opening with local residents.</storyitem>\n<storyitem>The fun run includes various age categories, encouraging participation from families and individuals of all fitness levels.</storyitem>\n<storyitem>Local high schools, including Rivertown High and West Side Academy, plan to use the Greenfield Sports Complex for their sports programs.</storyitem>\n<storyitem>Rivertown High's soccer team is particularly excited about the new facilities, as they have been seeking a dedicated space for training and matches.</storyitem>\n<storyitem>The Rivertown Council reports an expected increase in local tourism due to the innovative Greenfield Sports Complex.</storyitem>\n<storyitem>Local businesses anticipate a boost in sales as visitors to the Greenfield Sports Complex explore Rivertown's shops and restaurants.</storyitem>\n<storyitem>John Ellison, head of the Greenfield Development Group, states that the project serves as a model for future eco-friendly constructions.</storyitem>\n<storyitem>John Ellison revealed plans to collaborate with other cities interested in adopting similar sustainable practices for their sports facilities.</storyitem>\n<storyitem>Local news outlet, Rivertown Gazette, covers the successful opening event of the Greenfield Sports Complex, receiving positive community feedback.</storyitem>\n<storyitem>The Rivertown Gazette's coverage includes interviews with local athletes and residents who express enthusiasm for the new complex and its environmental benefits.</storyitem>\n<storyitems>",
+    "NEW_PERSON_NAME": [
+      {
+        "name": "Mayor Lily Thompson",
+        "old_name": "Mayor Lily Thompson"
+      },
+      {
+        "name": "John Ellison",
+        "old_name": "John Ellison"
+      }
+    ],
+    "NEW_ORGANIZATION_NAME": [
+      {
+        "name": "Earth Warriors",
+        "old_name": "Earth Warriors"
+      },
+      {
+        "name": "Rivertown High",
+        "old_name": "Rivertown High"
+      },
+      {
+        "name": "West Side Academy",
+        "old_name": "West Side Academy"
+      },
+      {
+        "name": "Rivertown Council",
+        "old_name": "Rivertown Council"
+      },
+      {
+        "name": "Greenfield Development Group",
+        "old_name": "Greenfield Development Group"
+      },
+      {
+        "name": "Rivertown Gazette",
+        "old_name": "Rivertown Gazette"
+      }
+    ],
+    "NEW_LOCATION_NAME": [
+      {
+        "name": "Rivertown",
+        "old_name": "Rivertown"
+      }
+    ],
+    "NEW_PRODUCT_NAME": [],
+    "NEW_ART_NAME": [],
+    "NEW_BUILDING_NAME": [
+      {
+        "name": "Greenfield Sports Complex",
+        "old_name": "Greenfield Sports Complex"
+      }
+    ],
+    "NEW_EVENT_NAME": [],
+    "NEW_MISCELLANEOUS_NAME": [],
+    "CORRECTED_PERSON_NAME": [
+      {
+        "name": "Mayor Lily Thompson",
+        "old_name": "Mayor Lily Thompson",
+        "id": "PERSON-1"
+      },
+      {
+        "name": "John Ellison",
+        "old_name": "John Ellison",
+        "id": "PERSON-2"
+      }
+    ],
+    "CORRECTED_ORGANIZATION_NAME": [
+      {
+        "name": "Earth Warriors",
+        "old_name": "Earth Warriors",
+        "id": "ORGANIZATION-1"
+      },
+      {
+        "name": "Rivertown High",
+        "old_name": "Rivertown High",
+        "id": "ORGANIZATION-2"
+      },
+      {
+        "name": "West Side Academy",
+        "old_name": "West Side Academy",
+        "id": "ORGANIZATION-3"
+      },
+      {
+        "name": "Rivertown Council",
+        "old_name": "Rivertown Council",
+        "id": "ORGANIZATION-4"
+      },
+      {
+        "name": "Greenfield Development Group",
+        "old_name": "Greenfield Development Group",
+        "id": "ORGANIZATION-5"
+      },
+      {
+        "name": "Rivertown Gazette",
+        "old_name": "Rivertown Gazette",
+        "id": "ORGANIZATION-6"
+      }
+    ],
+    "CORRECTED_LOCATION_NAME": [
+      {
+        "name": "Rivertown",
+        "old_name": "Rivertown",
+        "id": "LOCATION-1"
+      }
+    ],
+    "CORRECTED_PRODUCT_NAME": [],
+    "CORRECTED_ART_NAME": [],
+    "CORRECTED_BUILDING_NAME": [
+      {
+        "name": "Greenfield Sports Complex",
+        "old_name": "Greenfield Sports Complex",
+        "id": "BUILDING-1"
+      }
+    ],
+    "CORRECTED_EVENT_NAME": [],
+    "CORRECTED_MISCELLANEOUS_NAME": [],
+    "CRITIQUE_ERRORS": {
+      "entity-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ]
+    },
+    "ADJUSTED_PERSONS_XML": "<person><id>PERSON-1</id><name>Mayor Lily Thompson</name><old_name>Mayor Lily Thompson</old_name></person>\n<person><id>PERSON-2</id><name>John Ellison</name><old_name>John Ellison</old_name></person>",
+    "ADJUSTED_ORGANIZATIONS_XML": "<organization><id>ORGANIZATION-1</id><name>Earth Warriors</name><old_name>Earth Warriors</old_name></organization>\n<organization><id>ORGANIZATION-2</id><name>Rivertown High</name><old_name>Rivertown High</old_name></organization>\n<organization><id>ORGANIZATION-3</id><name>West Side Academy</name><old_name>West Side Academy</old_name></organization>\n<organization><id>ORGANIZATION-4</id><name>Rivertown Council</name><old_name>Rivertown Council</old_name></organization>\n<organization><id>ORGANIZATION-5</id><name>Greenfield Development Group</name><old_name>Greenfield Development Group</old_name></organization>\n<organization><id>ORGANIZATION-6</id><name>Rivertown Gazette</name><old_name>Rivertown Gazette</old_name></organization>",
+    "ADJUSTED_LOCATIONS_XML": "<location><id>LOCATION-1</id><name>Rivertown</name><old_name>Rivertown</old_name></location>",
+    "ADJUSTED_PRODUCTS_XML": "",
+    "ADJUSTED_ARTS_XML": "",
+    "ADJUSTED_BUILDINGS_XML": "<building><id>BUILDING-1</id><name>Greenfield Sports Complex</name><old_name>Greenfield Sports Complex</old_name></building>",
+    "ADJUSTED_EVENTS_XML": "",
+    "ADJUSTED_MISCELLANEOUSS_XML": "",
+    "USED_PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Mayor Lily Thompson"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "John Ellison"
+      }
+    ],
+    "USED_ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Earth Warriors"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Rivertown High"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "West Side Academy"
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "Rivertown Council"
+      },
+      {
+        "id": "ORGANIZATION-5",
+        "name": "Greenfield Development Group"
+      },
+      {
+        "id": "ORGANIZATION-6",
+        "name": "Rivertown Gazette"
+      }
+    ],
+    "USED_LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Rivertown"
+      }
+    ],
+    "USED_PRODUCT": [],
+    "USED_ART": [],
+    "USED_BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Greenfield Sports Complex"
+      }
+    ],
+    "USED_EVENT": [],
+    "USED_MISCELLANEOUS": [],
+    "USED_PRE-EXISTING-PERSON": [],
+    "USED_NEW-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Mayor Lily Thompson",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "John Ellison",
+        "category": "person"
+      }
+    ],
+    "ALL_USED_PERSON_XML": "<person><category>person</category><id>PERSON-1</id><name>Mayor Lily Thompson</name></person>\n<person><category>person</category><id>PERSON-2</id><name>John Ellison</name></person>",
+    "USED-NAME-AND-ID-FOR-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Mayor Lily Thompson",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "John Ellison",
+        "category": "person"
+      }
+    ],
+    "USED_PRE-EXISTING-ORGANIZATION": [],
+    "USED_NEW-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Earth Warriors",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Rivertown High",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "West Side Academy",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "Rivertown Council",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-5",
+        "name": "Greenfield Development Group",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-6",
+        "name": "Rivertown Gazette",
+        "category": "organization"
+      }
+    ],
+    "ALL_USED_ORGANIZATION_XML": "<organization><category>organization</category><id>ORGANIZATION-1</id><name>Earth Warriors</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-2</id><name>Rivertown High</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-3</id><name>West Side Academy</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-4</id><name>Rivertown Council</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-5</id><name>Greenfield Development Group</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-6</id><name>Rivertown Gazette</name></organization>",
+    "USED-NAME-AND-ID-FOR-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Earth Warriors",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Rivertown High",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "West Side Academy",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "Rivertown Council",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-5",
+        "name": "Greenfield Development Group",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-6",
+        "name": "Rivertown Gazette",
+        "category": "organization"
+      }
+    ],
+    "USED_PRE-EXISTING-LOCATION": [],
+    "USED_NEW-LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Rivertown",
+        "category": "location"
+      }
+    ],
+    "ALL_USED_LOCATION_XML": "<location><category>location</category><id>LOCATION-1</id><name>Rivertown</name></location>",
+    "USED-NAME-AND-ID-FOR-LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Rivertown",
+        "category": "location"
+      }
+    ],
+    "USED_PRE-EXISTING-PRODUCT": [],
+    "USED_NEW-PRODUCT": [],
+    "ALL_USED_PRODUCT_XML": "",
+    "USED-NAME-AND-ID-FOR-PRODUCT": [],
+    "USED_PRE-EXISTING-ART": [],
+    "USED_NEW-ART": [],
+    "ALL_USED_ART_XML": "",
+    "USED-NAME-AND-ID-FOR-ART": [],
+    "USED_PRE-EXISTING-BUILDING": [],
+    "USED_NEW-BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Greenfield Sports Complex",
+        "category": "building"
+      }
+    ],
+    "ALL_USED_BUILDING_XML": "<building><category>building</category><id>BUILDING-1</id><name>Greenfield Sports Complex</name></building>",
+    "USED-NAME-AND-ID-FOR-BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Greenfield Sports Complex",
+        "category": "building"
+      }
+    ],
+    "USED_PRE-EXISTING-EVENT": [],
+    "USED_NEW-EVENT": [],
+    "ALL_USED_EVENT_XML": "",
+    "USED-NAME-AND-ID-FOR-EVENT": [],
+    "USED_PRE-EXISTING-MISCELLANEOUS": [],
+    "USED_NEW-MISCELLANEOUS": [],
+    "ALL_USED_MISCELLANEOUS_XML": "",
+    "USED-NAME-AND-ID-FOR-MISCELLANEOUS": []
+  }
+}

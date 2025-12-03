@@ -1,0 +1,397 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "deepcogito/cogito-v2-preview-llama-70b",
+    "temperature": 0.0,
+    "max-tokens": 4096
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "<scratchpad>\nLet me go through each entity and check if it's explicitly mentioned in the outline:\n\nLocations:\n- Slovenia: Mentioned in \"VBK \u017daladar of Slovenia\"\n- Korea: Mentioned in \"Korean Basketball League\"\n- Asia: Mentioned in \"Asia's fastest-growing basketball market\"\n- Japan: Mentioned in \"cultural exchange program with a Japanese basketball academy\"\n- Ljubljana: Mentioned in \"Arena Sto\u017eice in Ljubljana\"\n\nPeople:\n- Klemen \u017dgur: Mentioned multiple times\n- Park Min-ho: Mentioned as \"Seoul Metro Lions' General Manager Park Min-ho\"\n- David Cimerman: Mentioned as \"VBK \u017daladar's Sporting Director, David Cimerman\"\n- Lee Dong-hyun: Mentioned as \"the team's most popular player, Lee Dong-hyun\"\n- Ana Novak: Mentioned as \"VBK \u017daladar's youth academy director, Ana Novak\"\n- Kim Tae-young: Mentioned as \"veteran point guard Kim Tae-young\"\n\nOrganizations:\n- VBK \u017daladar: Mentioned multiple times\n- Seoul Metro Lions: Mentioned multiple times\n- Korean Basketball League: Mentioned as \"Korean Basketball League\"\n- Slovenian Basketball Federation: Mentioned as \"Slovenian Basketball Federation\"\n- Busan Thunderbolt: Mentioned as \"Busan Thunderbolt\"\n\nBuildings:\n- Arena Sto\u017eice: Mentioned as \"Arena Sto\u017eice in Ljubljana\"\n\nAll entities from the list are explicitly mentioned in the outline.\n</scratchpad>\n\n<results>\n<entities>\n<location><id>LOCATION-1</id><name>Slovenia</name></location>\n<location><id>LOCATION-2</id><name>Korea</name></location>\n<location><id>LOCATION-3</id><name>Asia</name></location>\n<location><id>LOCATION-4</id><name>Japan</name></location>\n<location><id>LOCATION-5</id><name>Ljubljana</name></location>\n<person><id>PERSON-1</id><name>Klemen \u017dgur</name></person>\n<person><id>PERSON-2</id><name>Park Min-ho</name></person>\n<person><id>PERSON-3</id><name>David Cimerman</name></person>\n<person><id>PERSON-4</id><name>Lee Dong-hyun</name></person>\n<person><id>PERSON-5</id><name>Ana Novak</name></person>\n<person><id>PERSON-6</id><name>Kim Tae-young</name></person>\n<organization><id>ORGANIZATION-1</id><name>VBK \u017daladar</name></organization>\n<organization><id>ORGANIZATION-2</id><name>Seoul Metro Lions</name></organization>\n<organization><id>ORGANIZATION-3</id><name>Korean Basketball League</name></organization>\n<organization><id>ORGANIZATION-4</id><name>Slovenian Basketball Federation</name></organization>\n<organization><id>ORGANIZATION-5</id><name>Busan Thunderbolt</name></organization>\n<building><id>BUILDING-1</id><name>Arena Sto\u017eice</name></building>\n</entities>\n</results>"
+  },
+  "response": "<scratchpad>\nLet me go through each entity and check if it's explicitly mentioned in the outline:\n\nLocations:\n- Slovenia: Mentioned in \"VBK \u017daladar of Slovenia\"\n- Korea: Mentioned in \"Korean Basketball League\"\n- Asia: Mentioned in \"Asia's fastest-growing basketball market\"\n- Japan: Mentioned in \"cultural exchange program with a Japanese basketball academy\"\n- Ljubljana: Mentioned in \"Arena Sto\u017eice in Ljubljana\"\n\nPeople:\n- Klemen \u017dgur: Mentioned multiple times\n- Park Min-ho: Mentioned as \"Seoul Metro Lions' General Manager Park Min-ho\"\n- David Cimerman: Mentioned as \"VBK \u017daladar's Sporting Director, David Cimerman\"\n- Lee Dong-hyun: Mentioned as \"the team's most popular player, Lee Dong-hyun\"\n- Ana Novak: Mentioned as \"VBK \u017daladar's youth academy director, Ana Novak\"\n- Kim Tae-young: Mentioned as \"veteran point guard Kim Tae-young\"\n\nOrganizations:\n- VBK \u017daladar: Mentioned multiple times\n- Seoul Metro Lions: Mentioned multiple times\n- Korean Basketball League: Mentioned as \"Korean Basketball League\"\n- Slovenian Basketball Federation: Mentioned as \"Slovenian Basketball Federation\"\n- Busan Thunderbolt: Mentioned as \"Busan Thunderbolt\"\n\nBuildings:\n- Arena Sto\u017eice: Mentioned as \"Arena Sto\u017eice in Ljubljana\"\n\nAll entities from the list are explicitly mentioned in the outline.\n</scratchpad>\n\n<results>\n<entities>\n<location><id>LOCATION-1</id><name>Slovenia</name></location>\n<location><id>LOCATION-2</id><name>Korea</name></location>\n<location><id>LOCATION-3</id><name>Asia</name></location>\n<location><id>LOCATION-4</id><name>Japan</name></location>\n<location><id>LOCATION-5</id><name>Ljubljana</name></location>\n<person><id>PERSON-1</id><name>Klemen \u017dgur</name></person>\n<person><id>PERSON-2</id><name>Park Min-ho</name></person>\n<person><id>PERSON-3</id><name>David Cimerman</name></person>\n<person><id>PERSON-4</id><name>Lee Dong-hyun</name></person>\n<person><id>PERSON-5</id><name>Ana Novak</name></person>\n<person><id>PERSON-6</id><name>Kim Tae-young</name></person>\n<organization><id>ORGANIZATION-1</id><name>VBK \u017daladar</name></organization>\n<organization><id>ORGANIZATION-2</id><name>Seoul Metro Lions</name></organization>\n<organization><id>ORGANIZATION-3</id><name>Korean Basketball League</name></organization>\n<organization><id>ORGANIZATION-4</id><name>Slovenian Basketball Federation</name></organization>\n<organization><id>ORGANIZATION-5</id><name>Busan Thunderbolt</name></organization>\n<building><id>BUILDING-1</id><name>Arena Sto\u017eice</name></building>\n</entities>\n</results>",
+  "instructions": "You are an AI assistant tasked with identifying which of the provided entities are explicitly named within the provided outline. Follow these instructions carefully:\n\n1. The date for this fictional event outline is:\n<date>{{DATE}}</date>\n\n2. Here is the outline you need to analyze:\n<outline>\n{{OUTLINE}}\n</outline>\n\n3. Here is the list of known (fictional) named entities:\n<entities>\n{{LOCATIONS_XML}}\n{{PERSONS_XML}}\n{{ORGANIZATIONS_XML}}\n{{PRODUCTS_XML}}\n{{ARTS_XML}}\n{{EVENTS_XML}}\n{{BUILDINGS_XML}}\n{{MISCELLANEOUSS_XML}}\n\n{{ADJUSTED_LOCATIONS_XML}}\n{{ADJUSTED_PERSONS_XML}}\n{{ADJUSTED_ORGANIZATIONS_XML}}\n{{ADJUSTED_PRODUCTS_XML}}\n{{ADJUSTED_ARTS_XML}}\n{{ADJUSTED_BUILDINGS_XML}}\n{{ADJUSTED_EVENTS_XML}}\n{{ADJUSTED_MISCELLANEOUSS_XML}}\n</entities>\n\n4. Your task is to go through all of the named entities in the provided list. For each named entity, check if it is explicitly referred to by name in the outline. If a named entity is explicitly mentioned by name, include it in your results.\n\n5. For each entity you identify, list them using the following format:\n<[entity_type]><id>[id of the entity]</id><name>[full name of the entity]</name></[entity_type]>\n\n6. Present your final output within a single <results> root node, structured as follows:\n\n<results>\n<entities>\n[List all identified entities here as described in step 5]\n</entities>\n</results>\n\n7. Double-check your work: For each entity that you have identified, make sure to find the sentence within the outline that explicitly refers to this identified entity by name. If you cannot find that the entity is mentioned explicitly by name in the outline, do not include it in your results.\n\n8. You can use a <scratchpad> for your thinking process. Do not include any XML tags within your scratchpad.\n\n9. Make sure that you have not missed any named entity from the outline that was also provided to you in the list of named entities.\n\nRemember, only include entities that are explicitly mentioned by name in the outline. Do not infer or assume the presence of entities that are not directly named.",
+  "text_prompt": "You are an AI assistant tasked with identifying which of the provided entities are explicitly named within the provided outline. Follow these instructions carefully:\n\n1. The date for this fictional event outline is:\n<date>2024-03-15</date>\n\n2. Here is the outline you need to analyze:\n<outline>\nVBK \u017daladar of Slovenia announced the transfer of 18-year-old prospect Klemen \u017dgur to Seoul Metro Lions of the Korean Basketball League for an undisclosed fee.\nThe transfer fee is reported to be in the range of \u20ac200,000 to \u20ac300,000, with potential bonuses tied to \u017dgur's performance milestones.\nKlemen \u017dgur, who averaged 12.5 points per game in VBK \u017daladar's developmental league, expressed excitement about the opportunity to compete in Asia's fastest-growing basketball market.\n\u017dgur's impressive 3-point shooting percentage of 38% and his ability to play both guard positions made him a standout prospect in the Slovenian youth system.\nSeoul Metro Lions' General Manager Park Min-ho stated that Klemen \u017dgur's exceptional ball-handling skills and 6'7\" frame made him an ideal addition to the team's roster.\nThe Lions, currently sitting in fourth place in the KBL standings, have been seeking a reliable playmaker to complement their strong frontcourt.\nVBK \u017daladar's Sporting Director, David Cimerman, confirmed that the transfer includes a buy-back clause after two seasons, allowing the club to monitor \u017dgur's development in the Asian league.\nThe buy-back clause is set at \u20ac500,000 and includes performance-based escalators if \u017dgur achieves certain statistical benchmarks in the KBL.\nThe Slovenian Basketball Federation praised VBK \u017daladar for creating innovative pathways for young players, citing the transfer as a milestone for the country's basketball development program.\nThe federation has already initiated discussions with other Asian leagues to establish similar development pathways for Slovenian prospects.\nKorean sports media reported that Klemen \u017dgur will wear jersey number 7 for Seoul Metro Lions and is expected to make his debut against Busan Thunderbolt in March 2024.\nThe number 7 jersey was previously worn by the team's most popular player, Lee Dong-hyun, who retired last season.\nVBK \u017daladar's youth academy director, Ana Novak, revealed that the club has already identified two more promising prospects for potential future transfers to Asian leagues.\nBoth prospects, aged 16 and 17, are currently participating in a cultural exchange program with a Japanese basketball academy to prepare them for potential moves to Asia.\nSeoul Metro Lions announced a special pre-season exhibition game against VBK \u017daladar in Slovenia, scheduled for September 2024, to celebrate the partnership between the clubs.\nThe exhibition game will be played at the 5,000-seat Arena Sto\u017eice in Ljubljana, with tickets expected to sell out within days of release.\nKorean basketball analysts noted that Klemen \u017dgur's arrival could help Seoul Metro Lions address their need for a skilled playmaker ahead of their KBL playoff push.\n\u017dgur's addition is expected to reduce the workload of veteran point guard Kim Tae-young, who has been averaging 35 minutes per game this season.\nThe transfer marks the first significant player exchange between Slovenian and Korean basketball leagues, potentially opening doors for future collaborations between the two national basketball associations.\nThe two basketball associations have already scheduled a joint coaching clinic for June 2024, focusing on youth development and tactical strategies.\n</outline>\n\n3. Here is the list of known (fictional) named entities:\n<entities>\n\n\n\n\n\n\n\n\n\n<location><id>LOCATION-1</id><name>Slovenia</name><old_name>Slovenia</old_name></location>\n<location><id>LOCATION-2</id><name>Korea</name><old_name>Korea</old_name></location>\n<location><id>LOCATION-3</id><name>Asia</name><old_name>Asia</old_name></location>\n<location><id>LOCATION-4</id><name>Japan</name><old_name>Japan</old_name></location>\n<location><id>LOCATION-5</id><name>Ljubljana</name><old_name>Ljubljana</old_name></location>\n<person><id>PERSON-1</id><name>Klemen \u017dgur</name><old_name>Klemen \u017dgur</old_name></person>\n<person><id>PERSON-2</id><name>Park Min-ho</name><old_name>Park Min-ho</old_name></person>\n<person><id>PERSON-3</id><name>David Cimerman</name><old_name>David Cimerman</old_name></person>\n<person><id>PERSON-4</id><name>Lee Dong-hyun</name><old_name>Lee Dong-hyun</old_name></person>\n<person><id>PERSON-5</id><name>Ana Novak</name><old_name>Ana Novak</old_name></person>\n<person><id>PERSON-6</id><name>Kim Tae-young</name><old_name>Kim Tae-young</old_name></person>\n<organization><id>ORGANIZATION-1</id><name>VBK \u017daladar</name><old_name>VBK \u017daladar</old_name></organization>\n<organization><id>ORGANIZATION-2</id><name>Seoul Metro Lions</name><old_name>Seoul Metro Lions</old_name></organization>\n<organization><id>ORGANIZATION-3</id><name>Korean Basketball League</name><old_name>Korean Basketball League</old_name></organization>\n<organization><id>ORGANIZATION-4</id><name>Slovenian Basketball Federation</name><old_name>Slovenian Basketball Federation</old_name></organization>\n<organization><id>ORGANIZATION-5</id><name>Busan Thunderbolt</name><old_name>Busan Thunderbolt</old_name></organization>\n\n\n<building><id>BUILDING-1</id><name>Arena Sto\u017eice</name><old_name>Arena Sto\u017eice</old_name></building>\n\n\n</entities>\n\n4. Your task is to go through all of the named entities in the provided list. For each named entity, check if it is explicitly referred to by name in the outline. If a named entity is explicitly mentioned by name, include it in your results.\n\n5. For each entity you identify, list them using the following format:\n<[entity_type]><id>[id of the entity]</id><name>[full name of the entity]</name></[entity_type]>\n\n6. Present your final output within a single <results> root node, structured as follows:\n\n<results>\n<entities>\n[List all identified entities here as described in step 5]\n</entities>\n</results>\n\n7. Double-check your work: For each entity that you have identified, make sure to find the sentence within the outline that explicitly refers to this identified entity by name. If you cannot find that the entity is mentioned explicitly by name in the outline, do not include it in your results.\n\n8. You can use a <scratchpad> for your thinking process. Do not include any XML tags within your scratchpad.\n\n9. Make sure that you have not missed any named entity from the outline that was also provided to you in the list of named entities.\n\nRemember, only include entities that are explicitly mentioned by name in the outline. Do not infer or assume the presence of entities that are not directly named.",
+  "system-prompt": null,
+  "values": {
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "GENRE": "Sports",
+    "HISTORIES": [],
+    "EVENT_SUMMARY": "A leading European basketball club has transferred a young prospect to an Asian league, seeking to capitalize on the player's potential and expand its global brand presence.",
+    "EVENT_SUMMARY_FOR_NAME": "A leading European b",
+    "KEYWORDS": "",
+    "CREATED_AT": 0,
+    "NEXT_IDS": {
+      "person": 7,
+      "organization": 6,
+      "location": 6,
+      "product": 1,
+      "art": 1,
+      "building": 2,
+      "event": 1,
+      "miscellaneous": 1
+    },
+    "PROVIDED_DATE": "",
+    "PERSON": [],
+    "ORGANIZATION": [],
+    "LOCATION": [],
+    "PRODUCT": [],
+    "ART": [],
+    "BUILDING": [],
+    "EVENT": [],
+    "MISCELLANEOUS": [],
+    "PERSONS_XML": "",
+    "ORGANIZATIONS_XML": "",
+    "LOCATIONS_XML": "",
+    "PRODUCTS_XML": "",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "",
+    "EVENTS_XML": "",
+    "MISCELLANEOUSS_XML": "",
+    "NUM_STORYITEMS": 10,
+    "HISTORY_XML": "",
+    "STORY_ITEM": [
+      "VBK \u017daladar of Slovenia announced the transfer of 18-year-old prospect Klemen \u017dgur to Seoul Metro Lions of the Korean Basketball League for an undisclosed fee.",
+      "The transfer fee is reported to be in the range of \u20ac200,000 to \u20ac300,000, with potential bonuses tied to \u017dgur's performance milestones.",
+      "Klemen \u017dgur, who averaged 12.5 points per game in VBK \u017daladar's developmental league, expressed excitement about the opportunity to compete in Asia's fastest-growing basketball market.",
+      "\u017dgur's impressive 3-point shooting percentage of 38% and his ability to play both guard positions made him a standout prospect in the Slovenian youth system.",
+      "Seoul Metro Lions' General Manager Park Min-ho stated that Klemen \u017dgur's exceptional ball-handling skills and 6'7\" frame made him an ideal addition to the team's roster.",
+      "The Lions, currently sitting in fourth place in the KBL standings, have been seeking a reliable playmaker to complement their strong frontcourt.",
+      "VBK \u017daladar's Sporting Director, David Cimerman, confirmed that the transfer includes a buy-back clause after two seasons, allowing the club to monitor \u017dgur's development in the Asian league.",
+      "The buy-back clause is set at \u20ac500,000 and includes performance-based escalators if \u017dgur achieves certain statistical benchmarks in the KBL.",
+      "The Slovenian Basketball Federation praised VBK \u017daladar for creating innovative pathways for young players, citing the transfer as a milestone for the country's basketball development program.",
+      "The federation has already initiated discussions with other Asian leagues to establish similar development pathways for Slovenian prospects.",
+      "Korean sports media reported that Klemen \u017dgur will wear jersey number 7 for Seoul Metro Lions and is expected to make his debut against Busan Thunderbolt in March 2024.",
+      "The number 7 jersey was previously worn by the team's most popular player, Lee Dong-hyun, who retired last season.",
+      "VBK \u017daladar's youth academy director, Ana Novak, revealed that the club has already identified two more promising prospects for potential future transfers to Asian leagues.",
+      "Both prospects, aged 16 and 17, are currently participating in a cultural exchange program with a Japanese basketball academy to prepare them for potential moves to Asia.",
+      "Seoul Metro Lions announced a special pre-season exhibition game against VBK \u017daladar in Slovenia, scheduled for September 2024, to celebrate the partnership between the clubs.",
+      "The exhibition game will be played at the 5,000-seat Arena Sto\u017eice in Ljubljana, with tickets expected to sell out within days of release.",
+      "Korean basketball analysts noted that Klemen \u017dgur's arrival could help Seoul Metro Lions address their need for a skilled playmaker ahead of their KBL playoff push.",
+      "\u017dgur's addition is expected to reduce the workload of veteran point guard Kim Tae-young, who has been averaging 35 minutes per game this season.",
+      "The transfer marks the first significant player exchange between Slovenian and Korean basketball leagues, potentially opening doors for future collaborations between the two national basketball associations.",
+      "The two basketball associations have already scheduled a joint coaching clinic for June 2024, focusing on youth development and tactical strategies."
+    ],
+    "DATE": "2024-03-15",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 2,
+    "OUTLINE": "VBK \u017daladar of Slovenia announced the transfer of 18-year-old prospect Klemen \u017dgur to Seoul Metro Lions of the Korean Basketball League for an undisclosed fee.\nThe transfer fee is reported to be in the range of \u20ac200,000 to \u20ac300,000, with potential bonuses tied to \u017dgur's performance milestones.\nKlemen \u017dgur, who averaged 12.5 points per game in VBK \u017daladar's developmental league, expressed excitement about the opportunity to compete in Asia's fastest-growing basketball market.\n\u017dgur's impressive 3-point shooting percentage of 38% and his ability to play both guard positions made him a standout prospect in the Slovenian youth system.\nSeoul Metro Lions' General Manager Park Min-ho stated that Klemen \u017dgur's exceptional ball-handling skills and 6'7\" frame made him an ideal addition to the team's roster.\nThe Lions, currently sitting in fourth place in the KBL standings, have been seeking a reliable playmaker to complement their strong frontcourt.\nVBK \u017daladar's Sporting Director, David Cimerman, confirmed that the transfer includes a buy-back clause after two seasons, allowing the club to monitor \u017dgur's development in the Asian league.\nThe buy-back clause is set at \u20ac500,000 and includes performance-based escalators if \u017dgur achieves certain statistical benchmarks in the KBL.\nThe Slovenian Basketball Federation praised VBK \u017daladar for creating innovative pathways for young players, citing the transfer as a milestone for the country's basketball development program.\nThe federation has already initiated discussions with other Asian leagues to establish similar development pathways for Slovenian prospects.\nKorean sports media reported that Klemen \u017dgur will wear jersey number 7 for Seoul Metro Lions and is expected to make his debut against Busan Thunderbolt in March 2024.\nThe number 7 jersey was previously worn by the team's most popular player, Lee Dong-hyun, who retired last season.\nVBK \u017daladar's youth academy director, Ana Novak, revealed that the club has already identified two more promising prospects for potential future transfers to Asian leagues.\nBoth prospects, aged 16 and 17, are currently participating in a cultural exchange program with a Japanese basketball academy to prepare them for potential moves to Asia.\nSeoul Metro Lions announced a special pre-season exhibition game against VBK \u017daladar in Slovenia, scheduled for September 2024, to celebrate the partnership between the clubs.\nThe exhibition game will be played at the 5,000-seat Arena Sto\u017eice in Ljubljana, with tickets expected to sell out within days of release.\nKorean basketball analysts noted that Klemen \u017dgur's arrival could help Seoul Metro Lions address their need for a skilled playmaker ahead of their KBL playoff push.\n\u017dgur's addition is expected to reduce the workload of veteran point guard Kim Tae-young, who has been averaging 35 minutes per game this season.\nThe transfer marks the first significant player exchange between Slovenian and Korean basketball leagues, potentially opening doors for future collaborations between the two national basketball associations.\nThe two basketball associations have already scheduled a joint coaching clinic for June 2024, focusing on youth development and tactical strategies.",
+    "PRE-CONSISTENCY-NUM-ITEMS": 20,
+    "STORYITEM_XML": "<storyitems>\n<storyitem>VBK \u017daladar of Slovenia announced the transfer of 18-year-old prospect Klemen \u017dgur to Seoul Metro Lions of the Korean Basketball League for an undisclosed fee.</storyitem>\n<storyitem>The transfer fee is reported to be in the range of \u20ac200,000 to \u20ac300,000, with potential bonuses tied to \u017dgur's performance milestones.</storyitem>\n<storyitem>Klemen \u017dgur, who averaged 12.5 points per game in VBK \u017daladar's developmental league, expressed excitement about the opportunity to compete in Asia's fastest-growing basketball market.</storyitem>\n<storyitem>\u017dgur's impressive 3-point shooting percentage of 38% and his ability to play both guard positions made him a standout prospect in the Slovenian youth system.</storyitem>\n<storyitem>Seoul Metro Lions' General Manager Park Min-ho stated that Klemen \u017dgur's exceptional ball-handling skills and 6'7\" frame made him an ideal addition to the team's roster.</storyitem>\n<storyitem>The Lions, currently sitting in fourth place in the KBL standings, have been seeking a reliable playmaker to complement their strong frontcourt.</storyitem>\n<storyitem>VBK \u017daladar's Sporting Director, David Cimerman, confirmed that the transfer includes a buy-back clause after two seasons, allowing the club to monitor \u017dgur's development in the Asian league.</storyitem>\n<storyitem>The buy-back clause is set at \u20ac500,000 and includes performance-based escalators if \u017dgur achieves certain statistical benchmarks in the KBL.</storyitem>\n<storyitem>The Slovenian Basketball Federation praised VBK \u017daladar for creating innovative pathways for young players, citing the transfer as a milestone for the country's basketball development program.</storyitem>\n<storyitem>The federation has already initiated discussions with other Asian leagues to establish similar development pathways for Slovenian prospects.</storyitem>\n<storyitem>Korean sports media reported that Klemen \u017dgur will wear jersey number 7 for Seoul Metro Lions and is expected to make his debut against Busan Thunderbolt in March 2024.</storyitem>\n<storyitem>The number 7 jersey was previously worn by the team's most popular player, Lee Dong-hyun, who retired last season.</storyitem>\n<storyitem>VBK \u017daladar's youth academy director, Ana Novak, revealed that the club has already identified two more promising prospects for potential future transfers to Asian leagues.</storyitem>\n<storyitem>Both prospects, aged 16 and 17, are currently participating in a cultural exchange program with a Japanese basketball academy to prepare them for potential moves to Asia.</storyitem>\n<storyitem>Seoul Metro Lions announced a special pre-season exhibition game against VBK \u017daladar in Slovenia, scheduled for September 2024, to celebrate the partnership between the clubs.</storyitem>\n<storyitem>The exhibition game will be played at the 5,000-seat Arena Sto\u017eice in Ljubljana, with tickets expected to sell out within days of release.</storyitem>\n<storyitem>Korean basketball analysts noted that Klemen \u017dgur's arrival could help Seoul Metro Lions address their need for a skilled playmaker ahead of their KBL playoff push.</storyitem>\n<storyitem>\u017dgur's addition is expected to reduce the workload of veteran point guard Kim Tae-young, who has been averaging 35 minutes per game this season.</storyitem>\n<storyitem>The transfer marks the first significant player exchange between Slovenian and Korean basketball leagues, potentially opening doors for future collaborations between the two national basketball associations.</storyitem>\n<storyitem>The two basketball associations have already scheduled a joint coaching clinic for June 2024, focusing on youth development and tactical strategies.</storyitem>\n<storyitems>",
+    "NEW_PERSON_NAME": [
+      {
+        "name": "Klemen \u017dgur",
+        "old_name": "Klemen \u017dgur"
+      },
+      {
+        "name": "Park Min-ho",
+        "old_name": "Park Min-ho"
+      },
+      {
+        "name": "David Cimerman",
+        "old_name": "David Cimerman"
+      },
+      {
+        "name": "Lee Dong-hyun",
+        "old_name": "Lee Dong-hyun"
+      },
+      {
+        "name": "Ana Novak",
+        "old_name": "Ana Novak"
+      },
+      {
+        "name": "Kim Tae-young",
+        "old_name": "Kim Tae-young"
+      }
+    ],
+    "NEW_ORGANIZATION_NAME": [
+      {
+        "name": "VBK \u017daladar",
+        "old_name": "VBK \u017daladar"
+      },
+      {
+        "name": "Seoul Metro Lions",
+        "old_name": "Seoul Metro Lions"
+      },
+      {
+        "name": "Korean Basketball League",
+        "old_name": "Korean Basketball League"
+      },
+      {
+        "name": "Slovenian Basketball Federation",
+        "old_name": "Slovenian Basketball Federation"
+      },
+      {
+        "name": "Busan Thunderbolt",
+        "old_name": "Busan Thunderbolt"
+      }
+    ],
+    "NEW_LOCATION_NAME": [
+      {
+        "name": "Slovenia",
+        "old_name": "Slovenia"
+      },
+      {
+        "name": "Korea",
+        "old_name": "Korea"
+      },
+      {
+        "name": "Asia",
+        "old_name": "Asia"
+      },
+      {
+        "name": "Japan",
+        "old_name": "Japan"
+      },
+      {
+        "name": "Ljubljana",
+        "old_name": "Ljubljana"
+      }
+    ],
+    "NEW_PRODUCT_NAME": [],
+    "NEW_ART_NAME": [],
+    "NEW_BUILDING_NAME": [
+      {
+        "name": "Arena Sto\u017eice",
+        "old_name": "Arena Sto\u017eice"
+      }
+    ],
+    "NEW_EVENT_NAME": [],
+    "NEW_MISCELLANEOUS_NAME": [],
+    "CORRECTED_PERSON_NAME": [
+      {
+        "name": "Klemen \u017dgur",
+        "old_name": "Klemen \u017dgur",
+        "id": "PERSON-1"
+      },
+      {
+        "name": "Park Min-ho",
+        "old_name": "Park Min-ho",
+        "id": "PERSON-2"
+      },
+      {
+        "name": "David Cimerman",
+        "old_name": "David Cimerman",
+        "id": "PERSON-3"
+      },
+      {
+        "name": "Lee Dong-hyun",
+        "old_name": "Lee Dong-hyun",
+        "id": "PERSON-4"
+      },
+      {
+        "name": "Ana Novak",
+        "old_name": "Ana Novak",
+        "id": "PERSON-5"
+      },
+      {
+        "name": "Kim Tae-young",
+        "old_name": "Kim Tae-young",
+        "id": "PERSON-6"
+      }
+    ],
+    "CORRECTED_ORGANIZATION_NAME": [
+      {
+        "name": "VBK \u017daladar",
+        "old_name": "VBK \u017daladar",
+        "id": "ORGANIZATION-1"
+      },
+      {
+        "name": "Seoul Metro Lions",
+        "old_name": "Seoul Metro Lions",
+        "id": "ORGANIZATION-2"
+      },
+      {
+        "name": "Korean Basketball League",
+        "old_name": "Korean Basketball League",
+        "id": "ORGANIZATION-3"
+      },
+      {
+        "name": "Slovenian Basketball Federation",
+        "old_name": "Slovenian Basketball Federation",
+        "id": "ORGANIZATION-4"
+      },
+      {
+        "name": "Busan Thunderbolt",
+        "old_name": "Busan Thunderbolt",
+        "id": "ORGANIZATION-5"
+      }
+    ],
+    "CORRECTED_LOCATION_NAME": [
+      {
+        "name": "Slovenia",
+        "old_name": "Slovenia",
+        "id": "LOCATION-1"
+      },
+      {
+        "name": "Korea",
+        "old_name": "Korea",
+        "id": "LOCATION-2"
+      },
+      {
+        "name": "Asia",
+        "old_name": "Asia",
+        "id": "LOCATION-3"
+      },
+      {
+        "name": "Japan",
+        "old_name": "Japan",
+        "id": "LOCATION-4"
+      },
+      {
+        "name": "Ljubljana",
+        "old_name": "Ljubljana",
+        "id": "LOCATION-5"
+      }
+    ],
+    "CORRECTED_PRODUCT_NAME": [],
+    "CORRECTED_ART_NAME": [],
+    "CORRECTED_BUILDING_NAME": [
+      {
+        "name": "Arena Sto\u017eice",
+        "old_name": "Arena Sto\u017eice",
+        "id": "BUILDING-1"
+      }
+    ],
+    "CORRECTED_EVENT_NAME": [],
+    "CORRECTED_MISCELLANEOUS_NAME": [],
+    "CRITIQUE_ERRORS": {
+      "entity-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ]
+    },
+    "ADJUSTED_PERSONS_XML": "<person><id>PERSON-1</id><name>Klemen \u017dgur</name><old_name>Klemen \u017dgur</old_name></person>\n<person><id>PERSON-2</id><name>Park Min-ho</name><old_name>Park Min-ho</old_name></person>\n<person><id>PERSON-3</id><name>David Cimerman</name><old_name>David Cimerman</old_name></person>\n<person><id>PERSON-4</id><name>Lee Dong-hyun</name><old_name>Lee Dong-hyun</old_name></person>\n<person><id>PERSON-5</id><name>Ana Novak</name><old_name>Ana Novak</old_name></person>\n<person><id>PERSON-6</id><name>Kim Tae-young</name><old_name>Kim Tae-young</old_name></person>",
+    "ADJUSTED_ORGANIZATIONS_XML": "<organization><id>ORGANIZATION-1</id><name>VBK \u017daladar</name><old_name>VBK \u017daladar</old_name></organization>\n<organization><id>ORGANIZATION-2</id><name>Seoul Metro Lions</name><old_name>Seoul Metro Lions</old_name></organization>\n<organization><id>ORGANIZATION-3</id><name>Korean Basketball League</name><old_name>Korean Basketball League</old_name></organization>\n<organization><id>ORGANIZATION-4</id><name>Slovenian Basketball Federation</name><old_name>Slovenian Basketball Federation</old_name></organization>\n<organization><id>ORGANIZATION-5</id><name>Busan Thunderbolt</name><old_name>Busan Thunderbolt</old_name></organization>",
+    "ADJUSTED_LOCATIONS_XML": "<location><id>LOCATION-1</id><name>Slovenia</name><old_name>Slovenia</old_name></location>\n<location><id>LOCATION-2</id><name>Korea</name><old_name>Korea</old_name></location>\n<location><id>LOCATION-3</id><name>Asia</name><old_name>Asia</old_name></location>\n<location><id>LOCATION-4</id><name>Japan</name><old_name>Japan</old_name></location>\n<location><id>LOCATION-5</id><name>Ljubljana</name><old_name>Ljubljana</old_name></location>",
+    "ADJUSTED_PRODUCTS_XML": "",
+    "ADJUSTED_ARTS_XML": "",
+    "ADJUSTED_BUILDINGS_XML": "<building><id>BUILDING-1</id><name>Arena Sto\u017eice</name><old_name>Arena Sto\u017eice</old_name></building>",
+    "ADJUSTED_EVENTS_XML": "",
+    "ADJUSTED_MISCELLANEOUSS_XML": ""
+  }
+}

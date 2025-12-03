@@ -1,0 +1,943 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "openai/gpt-5-mini",
+    "temperature": 0.0,
+    "max-tokens": 5000
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "<scratchpad>\nI identified key facts: N0-S7 names Coach Ivo Harlen saying Sera covered the second 100m in 59.20 and credited 8x100 race-pace sets; N1-S7 lists items Harlen will bring, including \"a short written summary of the team's 8x100 race-pace sets.\" I need to add one specific unverified detail per question that is possible but not confirmed or contradicted by any sentence. I must keep the question similar to the original and include only one added unverified detail each time.\n</scratchpad>\n<results>\n<qa>\n<question>What item will the coach who said Sera covered the second 100 meters in 59.20 seconds bring for review that documents the team's 8x100 race-pace sets, printed on Merrowgate Development Squad letterhead?</question>\n<explanation>The added detail (printed on team letterhead) is not confirmed or refuted by the provided sentences and would require verification.</explanation>\n</qa>\n\n<qa>\n<question>What item will the coach who said Sera covered the second 100 meters in 59.20 seconds bring for review that documents the team's 8x100 race-pace sets, specifically a two-page short written summary?</question>\n<explanation>The specific length (two pages) is not stated in the sentences and cannot be confirmed from the given information.</explanation>\n</qa>\n\n<qa>\n<question>What item will the coach who said Sera covered the second 100 meters in 59.20 seconds bring for review that documents the team's 8x100 race-pace sets, saved as a PDF on a USB flash drive?</question>\n<explanation>The format and storage medium (PDF on a USB) are not specified in the sentences and would need to be verified.</explanation>\n</qa>\n\n<qa>\n<question>What item will the coach who said Sera covered the second 100 meters in 59.20 seconds bring for review that documents the team's 8x100 race-pace sets, signed by the team's assistant coach?</question>\n<explanation>Whether the summary is signed by an assistant coach is not mentioned in the provided sentences and cannot be confirmed from the available information.</explanation>\n</qa>\n</results>"
+  },
+  "response": "<scratchpad>\nI identified key facts: N0-S7 names Coach Ivo Harlen saying Sera covered the second 100m in 59.20 and credited 8x100 race-pace sets; N1-S7 lists items Harlen will bring, including \"a short written summary of the team's 8x100 race-pace sets.\" I need to add one specific unverified detail per question that is possible but not confirmed or contradicted by any sentence. I must keep the question similar to the original and include only one added unverified detail each time.\n</scratchpad>\n<results>\n<qa>\n<question>What item will the coach who said Sera covered the second 100 meters in 59.20 seconds bring for review that documents the team's 8x100 race-pace sets, printed on Merrowgate Development Squad letterhead?</question>\n<explanation>The added detail (printed on team letterhead) is not confirmed or refuted by the provided sentences and would require verification.</explanation>\n</qa>\n\n<qa>\n<question>What item will the coach who said Sera covered the second 100 meters in 59.20 seconds bring for review that documents the team's 8x100 race-pace sets, specifically a two-page short written summary?</question>\n<explanation>The specific length (two pages) is not stated in the sentences and cannot be confirmed from the given information.</explanation>\n</qa>\n\n<qa>\n<question>What item will the coach who said Sera covered the second 100 meters in 59.20 seconds bring for review that documents the team's 8x100 race-pace sets, saved as a PDF on a USB flash drive?</question>\n<explanation>The format and storage medium (PDF on a USB) are not specified in the sentences and would need to be verified.</explanation>\n</qa>\n\n<qa>\n<question>What item will the coach who said Sera covered the second 100 meters in 59.20 seconds bring for review that documents the team's 8x100 race-pace sets, signed by the team's assistant coach?</question>\n<explanation>Whether the summary is signed by an assistant coach is not mentioned in the provided sentences and cannot be confirmed from the available information.</explanation>\n</qa>\n</results>",
+  "instructions": "You are an AI assistant tasked with generating false-premise questions based on fictional events. Your goal is to create questions that cannot be answered because they make possible but unknown assumptions about the events. Follow these instructions carefully:\n\nYou will be provided with the following information:\n<question>\n{{QUESTION}}\n</question>\n\n<selected_sentences>\n{{SELECTED_SENTENCES}}\n</selected_sentences>\n\n<answer>\n{{ANSWER}}\n</answer>\n\n<context>\n{{STORYLINE_OUTLINE_TO_DATE}}\n</context>\n\nTo generate unknown-premise questions:\n1. Identify key information in one of the two selected sentences.\n2. Modify the question by making it more specific. \n   - The added details must be POSSIBLE based on the provided sentences and the provided list of all outlines. \n   - The added details must be UNVERIFIED based on the provided sentences and the provided list of all outlines. \n   - The added details must be substantial to require additional verification. Avoid details that are not only possible but also very likely.\n3. Keep the question as similar as possible to the original question, asking for the same information but changing small details that contradict the two sentences.\n4. Only include ONE specific unverified detail to the question.\n\nConsider the additional context when creating the new question:\n1. Make sure that the details you add cannot be confirmed by any of the sentences\n2. Make sure that the details you add cannot be refuted by any of the sentences\n\nGenerate multiple such questions if possible, each based on different key information from the selected sentences.\nOnly output the questions for which you are certain that:\n- The details you add cannot be confirmed by any of the sentences\n- The details you add cannot be refuted by any of the sentences\n- The details are substantial enough to require additional verification.\n\nHere are some examples of ways to add specificity:\n- Let a person have a more specific role: Instead of \"a criminal of the ring,\" say \"a ring leader\" or \"a lookout.\"\n- Add a specific characteristic to an object: Instead of \"a car,\" say \"a red sports car\" or \"an old sedan.\"\n- Use a hyponym where the 'is-a' relation holds: Instead of \"a person,\" say \"a woman\" or \"a child.\"\n- Specify a location: Instead of \"a park,\" say \"a national park\" or \"Central Park.\"\n- Specify a time: Instead of \"at night,\" say \"at 9 PM\" or \"during the full moon.\"\n- Specify a number or quantity: Instead of \"several books,\" say \"three books\" or \"a dozen books.\"\n- Specify a direction: Instead of \"headed away,\" say \"headed east\" or \"to the mountains.\"\n- Specify a duration: Instead of \"waited,\" say \"waited for 15 minutes\" or \"waited for an hour.\"\n\nFormat your output as follows:\n<scratchpad>\n[Your thinking process]\n</scratchpad>\n<results>\n<qa>\n<question>[Your generated question]</question>\n<explanation>[Explanation of the unknown information]</explanation>\n</qa>\n</results>\n\nRepeat the <qa> section for each question you generate.\n\nRemember:\n- Keep your responses concise and avoid verbose explanations.\n- Always consider the additional context to avoid creating questions that can be validly answered using that information.",
+  "text_prompt": "You are an AI assistant tasked with generating false-premise questions based on fictional events. Your goal is to create questions that cannot be answered because they make possible but unknown assumptions about the events. Follow these instructions carefully:\n\nYou will be provided with the following information:\n<question>\nWhat item will the coach who said Sera covered the second 100 meters in 59.20 seconds bring for review that documents the team's 8x100 race-pace sets?\n</question>\n\n<selected_sentences>\n<item><id>N0-S7</id><text>Coach Ivo Harlen added that Sera Lortin produced a negative split\u2014covering the second 100 meters in 59.20 seconds\u2014and credited targeted 8x100 race-pace sets in training for the strong finish.</text></item>\n<item><id>N1-S7</id><text>Merrowgate Development Squad stated that Ivo Harlen will bring Sera Lortin's recent training log, official race split sheets from the championship, and a short written summary of the team's 8x100 race-pace sets for review during the evaluation.</text></item>\n</selected_sentences>\n\n<answer>\na short written summary of the team's 8x100 race-pace sets\n</answer>\n\n<context>\n<event>\n<date>2025-07-12</date>\n<content>\n<item><id>N0-S0</id><text>The Carterline Regional Youth Swimming Championship concluded on 2025-07-12 at Brindemoor Aquatic Complex in Bellwick.</text></item>\n<item><id>N0-S1</id><text>The final session closed shortly after 6:30 p.m., with roughly 380 spectators in attendance at the Brindemoor Aquatic Complex's 50-meter competition pool.</text></item>\n<item><id>N0-S2</id><text>Sera Lortin, age 16, lowered the meet record in the 200-meter freestyle by 0.4 seconds with a time of 1:59.86 in the championship final at the Carterline Regional Youth Swimming Championship.</text></item>\n<item><id>N0-S3</id><text>The previous meet record of 2:00.26 had been set in 2018, and the official timing showed Sera Lortin touching the wall 0.35 seconds ahead of the second-place swimmer in the final.</text></item>\n<item><id>N0-S4</id><text>The performance by Sera Lortin contributed directly to Merrowgate Development Squad securing the overall team title at the Carterline Regional Youth Swimming Championship.</text></item>\n<item><id>N0-S5</id><text>Merrowgate Development Squad finished the meet with 412 team points, clinching the title by a 28-point margin over the second-place team in a field of 18 squads.</text></item>\n<item><id>N0-S6</id><text>Coach Ivo Harlen of Merrowgate Development Squad said, \"Sera Lortin executed the race plan we practiced and her second-half pace sealed the finish,\" following the final at the Carterline Regional Youth Swimming Championship.</text></item>\n<item><id>N0-S7</id><text>Coach Ivo Harlen added that Sera Lortin produced a negative split\u2014covering the second 100 meters in 59.20 seconds\u2014and credited targeted 8x100 race-pace sets in training for the strong finish.</text></item>\n<item><id>N0-S8</id><text>Carterline Regional Youth Swimming Championship officials updated the official meet results to record Sera Lortin's new 200-meter freestyle meet record set at Brindemoor Aquatic Complex.</text></item>\n<item><id>N0-S9</id><text>Officials posted an updated results PDF to the championship website within an hour and forwarded Sera Lortin's time to the Carterline Regional Aquatics Federation for formal ratification of the new meet record.</text></item>\n</content>\n</event>\n<event>\n<date>2025-07-16</date>\n<content>\n<item><id>N1-S0</id><text>The Carterline Regional Aquatics Federation formally ratified Sera Lortin's 1:59.86 time in the 200-meter freestyle on 2025-07-16.</text></item>\n<item><id>N1-S1</id><text>The Carterline Regional Aquatics Federation issued a formal ratification letter signed by the Carterline Regional Aquatics Federation secretary and updated the Carterline Regional Aquatics Federation's official performance database to record the 1:59.86 time as effective 2025-07-16.</text></item>\n<item><id>N1-S2</id><text>The Carterline Regional Aquatics Federation announced a small honorarium to be paid to Sera Lortin in recognition of the ratified performance.</text></item>\n<item><id>N1-S3</id><text>The Carterline Regional Aquatics Federation said the honorarium is a one-time payment intended to defray travel and incidental expenses, that the payment will be processed via Merrowgate Development Squad's administrative account, and that a remittance notification will be issued to Sera Lortin within 14 days.</text></item>\n<item><id>N1-S4</id><text>The Carterline Regional Aquatics Federation scheduled a one-on-one evaluation between Sera Lortin and Nadia Varnell, the Carterline Regional Aquatics Federation under-17 head coach, for 2025-07-22.</text></item>\n<item><id>N1-S5</id><text>The Carterline Regional Aquatics Federation scheduled the evaluation to take place at the Valemont Sports Council Building's coaching office and assessment pool and allotted a 45-minute slot comprising a 20-minute in-pool technical review, a 15-minute video stroke analysis, and a 10-minute discussion of recent training history.</text></item>\n<item><id>N1-S6</id><text>Merrowgate Development Squad confirmed that Ivo Harlen will accompany Sera Lortin to the one-on-one evaluation with Nadia Varnell.</text></item>\n<item><id>N1-S7</id><text>Merrowgate Development Squad stated that Ivo Harlen will bring Sera Lortin's recent training log, official race split sheets from the championship, and a short written summary of the team's 8x100 race-pace sets for review during the evaluation.</text></item>\n<item><id>N1-S8</id><text>The Carterline Regional Aquatics Federation stated that the Carterline Regional Aquatics Federation selection committee will decide on any wider camp invitations after the evaluation with Nadia Varnell.</text></item>\n<item><id>N1-S9</id><text>The Carterline Regional Aquatics Federation added that the selection committee intends to review Nadia Varnell's written evaluation within 72 hours and will apply the Carterline Regional Aquatics Federation's published under-17 selection criteria, including objective time thresholds, technical assessment, and coach recommendations, when determining any invitations to the Carterline Regional Aquatics Federation's development camp.</text></item>\n</content>\n</event>\n</context>\n\nTo generate unknown-premise questions:\n1. Identify key information in one of the two selected sentences.\n2. Modify the question by making it more specific. \n   - The added details must be POSSIBLE based on the provided sentences and the provided list of all outlines. \n   - The added details must be UNVERIFIED based on the provided sentences and the provided list of all outlines. \n   - The added details must be substantial to require additional verification. Avoid details that are not only possible but also very likely.\n3. Keep the question as similar as possible to the original question, asking for the same information but changing small details that contradict the two sentences.\n4. Only include ONE specific unverified detail to the question.\n\nConsider the additional context when creating the new question:\n1. Make sure that the details you add cannot be confirmed by any of the sentences\n2. Make sure that the details you add cannot be refuted by any of the sentences\n\nGenerate multiple such questions if possible, each based on different key information from the selected sentences.\nOnly output the questions for which you are certain that:\n- The details you add cannot be confirmed by any of the sentences\n- The details you add cannot be refuted by any of the sentences\n- The details are substantial enough to require additional verification.\n\nHere are some examples of ways to add specificity:\n- Let a person have a more specific role: Instead of \"a criminal of the ring,\" say \"a ring leader\" or \"a lookout.\"\n- Add a specific characteristic to an object: Instead of \"a car,\" say \"a red sports car\" or \"an old sedan.\"\n- Use a hyponym where the 'is-a' relation holds: Instead of \"a person,\" say \"a woman\" or \"a child.\"\n- Specify a location: Instead of \"a park,\" say \"a national park\" or \"Central Park.\"\n- Specify a time: Instead of \"at night,\" say \"at 9 PM\" or \"during the full moon.\"\n- Specify a number or quantity: Instead of \"several books,\" say \"three books\" or \"a dozen books.\"\n- Specify a direction: Instead of \"headed away,\" say \"headed east\" or \"to the mountains.\"\n- Specify a duration: Instead of \"waited,\" say \"waited for 15 minutes\" or \"waited for an hour.\"\n\nFormat your output as follows:\n<scratchpad>\n[Your thinking process]\n</scratchpad>\n<results>\n<qa>\n<question>[Your generated question]</question>\n<explanation>[Explanation of the unknown information]</explanation>\n</qa>\n</results>\n\nRepeat the <qa> section for each question you generate.\n\nRemember:\n- Keep your responses concise and avoid verbose explanations.\n- Always consider the additional context to avoid creating questions that can be validly answered using that information.",
+  "system-prompt": null,
+  "values": {
+    "OUTLINES": "<event>\n<date>2025-07-12</date>\n<content>\n<item><id>N0-S0</id><text>The Carterline Regional Youth Swimming Championship concluded on 2025-07-12 at Brindemoor Aquatic Complex in Bellwick.</text></item>\n<item><id>N0-S1</id><text>The final session closed shortly after 6:30 p.m., with roughly 380 spectators in attendance at the Brindemoor Aquatic Complex's 50-meter competition pool.</text></item>\n<item><id>N0-S2</id><text>Sera Lortin, age 16, lowered the meet record in the 200-meter freestyle by 0.4 seconds with a time of 1:59.86 in the championship final at the Carterline Regional Youth Swimming Championship.</text></item>\n<item><id>N0-S3</id><text>The previous meet record of 2:00.26 had been set in 2018, and the official timing showed Sera Lortin touching the wall 0.35 seconds ahead of the second-place swimmer in the final.</text></item>\n<item><id>N0-S4</id><text>The performance by Sera Lortin contributed directly to Merrowgate Development Squad securing the overall team title at the Carterline Regional Youth Swimming Championship.</text></item>\n<item><id>N0-S5</id><text>Merrowgate Development Squad finished the meet with 412 team points, clinching the title by a 28-point margin over the second-place team in a field of 18 squads.</text></item>\n<item><id>N0-S6</id><text>Coach Ivo Harlen of Merrowgate Development Squad said, \"Sera Lortin executed the race plan we practiced and her second-half pace sealed the finish,\" following the final at the Carterline Regional Youth Swimming Championship.</text></item>\n<item><id>N0-S7</id><text>Coach Ivo Harlen added that Sera Lortin produced a negative split\u2014covering the second 100 meters in 59.20 seconds\u2014and credited targeted 8x100 race-pace sets in training for the strong finish.</text></item>\n<item><id>N0-S8</id><text>Carterline Regional Youth Swimming Championship officials updated the official meet results to record Sera Lortin's new 200-meter freestyle meet record set at Brindemoor Aquatic Complex.</text></item>\n<item><id>N0-S9</id><text>Officials posted an updated results PDF to the championship website within an hour and forwarded Sera Lortin's time to the Carterline Regional Aquatics Federation for formal ratification of the new meet record.</text></item>\n</content>\n</event>\n<event>\n<date>2025-07-16</date>\n<content>\n<item><id>N1-S0</id><text>The Carterline Regional Aquatics Federation formally ratified Sera Lortin's 1:59.86 time in the 200-meter freestyle on 2025-07-16.</text></item>\n<item><id>N1-S1</id><text>The Carterline Regional Aquatics Federation issued a formal ratification letter signed by the Carterline Regional Aquatics Federation secretary and updated the Carterline Regional Aquatics Federation's official performance database to record the 1:59.86 time as effective 2025-07-16.</text></item>\n<item><id>N1-S2</id><text>The Carterline Regional Aquatics Federation announced a small honorarium to be paid to Sera Lortin in recognition of the ratified performance.</text></item>\n<item><id>N1-S3</id><text>The Carterline Regional Aquatics Federation said the honorarium is a one-time payment intended to defray travel and incidental expenses, that the payment will be processed via Merrowgate Development Squad's administrative account, and that a remittance notification will be issued to Sera Lortin within 14 days.</text></item>\n<item><id>N1-S4</id><text>The Carterline Regional Aquatics Federation scheduled a one-on-one evaluation between Sera Lortin and Nadia Varnell, the Carterline Regional Aquatics Federation under-17 head coach, for 2025-07-22.</text></item>\n<item><id>N1-S5</id><text>The Carterline Regional Aquatics Federation scheduled the evaluation to take place at the Valemont Sports Council Building's coaching office and assessment pool and allotted a 45-minute slot comprising a 20-minute in-pool technical review, a 15-minute video stroke analysis, and a 10-minute discussion of recent training history.</text></item>\n<item><id>N1-S6</id><text>Merrowgate Development Squad confirmed that Ivo Harlen will accompany Sera Lortin to the one-on-one evaluation with Nadia Varnell.</text></item>\n<item><id>N1-S7</id><text>Merrowgate Development Squad stated that Ivo Harlen will bring Sera Lortin's recent training log, official race split sheets from the championship, and a short written summary of the team's 8x100 race-pace sets for review during the evaluation.</text></item>\n<item><id>N1-S8</id><text>The Carterline Regional Aquatics Federation stated that the Carterline Regional Aquatics Federation selection committee will decide on any wider camp invitations after the evaluation with Nadia Varnell.</text></item>\n<item><id>N1-S9</id><text>The Carterline Regional Aquatics Federation added that the selection committee intends to review Nadia Varnell's written evaluation within 72 hours and will apply the Carterline Regional Aquatics Federation's published under-17 selection criteria, including objective time thresholds, technical assessment, and coach recommendations, when determining any invitations to the Carterline Regional Aquatics Federation's development camp.</text></item>\n</content>\n</event>",
+    "STORYLINE_OUTLINE_TO_DATE": "<event>\n<date>2025-07-12</date>\n<content>\n<item><id>N0-S0</id><text>The Carterline Regional Youth Swimming Championship concluded on 2025-07-12 at Brindemoor Aquatic Complex in Bellwick.</text></item>\n<item><id>N0-S1</id><text>The final session closed shortly after 6:30 p.m., with roughly 380 spectators in attendance at the Brindemoor Aquatic Complex's 50-meter competition pool.</text></item>\n<item><id>N0-S2</id><text>Sera Lortin, age 16, lowered the meet record in the 200-meter freestyle by 0.4 seconds with a time of 1:59.86 in the championship final at the Carterline Regional Youth Swimming Championship.</text></item>\n<item><id>N0-S3</id><text>The previous meet record of 2:00.26 had been set in 2018, and the official timing showed Sera Lortin touching the wall 0.35 seconds ahead of the second-place swimmer in the final.</text></item>\n<item><id>N0-S4</id><text>The performance by Sera Lortin contributed directly to Merrowgate Development Squad securing the overall team title at the Carterline Regional Youth Swimming Championship.</text></item>\n<item><id>N0-S5</id><text>Merrowgate Development Squad finished the meet with 412 team points, clinching the title by a 28-point margin over the second-place team in a field of 18 squads.</text></item>\n<item><id>N0-S6</id><text>Coach Ivo Harlen of Merrowgate Development Squad said, \"Sera Lortin executed the race plan we practiced and her second-half pace sealed the finish,\" following the final at the Carterline Regional Youth Swimming Championship.</text></item>\n<item><id>N0-S7</id><text>Coach Ivo Harlen added that Sera Lortin produced a negative split\u2014covering the second 100 meters in 59.20 seconds\u2014and credited targeted 8x100 race-pace sets in training for the strong finish.</text></item>\n<item><id>N0-S8</id><text>Carterline Regional Youth Swimming Championship officials updated the official meet results to record Sera Lortin's new 200-meter freestyle meet record set at Brindemoor Aquatic Complex.</text></item>\n<item><id>N0-S9</id><text>Officials posted an updated results PDF to the championship website within an hour and forwarded Sera Lortin's time to the Carterline Regional Aquatics Federation for formal ratification of the new meet record.</text></item>\n</content>\n</event>\n<event>\n<date>2025-07-16</date>\n<content>\n<item><id>N1-S0</id><text>The Carterline Regional Aquatics Federation formally ratified Sera Lortin's 1:59.86 time in the 200-meter freestyle on 2025-07-16.</text></item>\n<item><id>N1-S1</id><text>The Carterline Regional Aquatics Federation issued a formal ratification letter signed by the Carterline Regional Aquatics Federation secretary and updated the Carterline Regional Aquatics Federation's official performance database to record the 1:59.86 time as effective 2025-07-16.</text></item>\n<item><id>N1-S2</id><text>The Carterline Regional Aquatics Federation announced a small honorarium to be paid to Sera Lortin in recognition of the ratified performance.</text></item>\n<item><id>N1-S3</id><text>The Carterline Regional Aquatics Federation said the honorarium is a one-time payment intended to defray travel and incidental expenses, that the payment will be processed via Merrowgate Development Squad's administrative account, and that a remittance notification will be issued to Sera Lortin within 14 days.</text></item>\n<item><id>N1-S4</id><text>The Carterline Regional Aquatics Federation scheduled a one-on-one evaluation between Sera Lortin and Nadia Varnell, the Carterline Regional Aquatics Federation under-17 head coach, for 2025-07-22.</text></item>\n<item><id>N1-S5</id><text>The Carterline Regional Aquatics Federation scheduled the evaluation to take place at the Valemont Sports Council Building's coaching office and assessment pool and allotted a 45-minute slot comprising a 20-minute in-pool technical review, a 15-minute video stroke analysis, and a 10-minute discussion of recent training history.</text></item>\n<item><id>N1-S6</id><text>Merrowgate Development Squad confirmed that Ivo Harlen will accompany Sera Lortin to the one-on-one evaluation with Nadia Varnell.</text></item>\n<item><id>N1-S7</id><text>Merrowgate Development Squad stated that Ivo Harlen will bring Sera Lortin's recent training log, official race split sheets from the championship, and a short written summary of the team's 8x100 race-pace sets for review during the evaluation.</text></item>\n<item><id>N1-S8</id><text>The Carterline Regional Aquatics Federation stated that the Carterline Regional Aquatics Federation selection committee will decide on any wider camp invitations after the evaluation with Nadia Varnell.</text></item>\n<item><id>N1-S9</id><text>The Carterline Regional Aquatics Federation added that the selection committee intends to review Nadia Varnell's written evaluation within 72 hours and will apply the Carterline Regional Aquatics Federation's published under-17 selection criteria, including objective time thresholds, technical assessment, and coach recommendations, when determining any invitations to the Carterline Regional Aquatics Federation's development camp.</text></item>\n</content>\n</event>",
+    "SELECTED_EVENTS": [
+      {
+        "created_at": 0,
+        "summary": "A regional youth swimming championship concluded at an indoor aquatic center with a 16-year-old competitor lowering the meet record in the 200-meter freestyle by 0.4 seconds, contributing to the overall team title for a mixed-age development squad.",
+        "outline": [
+          {
+            "sentence": "The {Carterline Regional Youth Swimming Championship|EVENT-1} concluded on 2025-07-12 at {Brindemoor Aquatic Complex|BUILDING-1} in {Bellwick|LOCATION-1}.",
+            "id": "N0-S0",
+            "pos": 0
+          },
+          {
+            "sentence": "The final session closed shortly after 6:30 p.m., with roughly 380 spectators in attendance at the {Brindemoor Aquatic Complex|BUILDING-1}'s 50-meter competition pool.",
+            "id": "N0-S1",
+            "pos": 1
+          },
+          {
+            "sentence": "{Sera Lortin|PERSON-1}, age 16, lowered the meet record in the 200-meter freestyle by 0.4 seconds with a time of 1:59.86 in the championship final at the {Carterline Regional Youth Swimming Championship|EVENT-1}.",
+            "id": "N0-S2",
+            "pos": 2
+          },
+          {
+            "sentence": "The previous meet record of 2:00.26 had been set in 2018, and the official timing showed {Sera Lortin|PERSON-1} touching the wall 0.35 seconds ahead of the second-place swimmer in the final.",
+            "id": "N0-S3",
+            "pos": 3
+          },
+          {
+            "sentence": "The performance by {Sera Lortin|PERSON-1} contributed directly to {Merrowgate Development Squad|ORGANIZATION-1} securing the overall team title at the {Carterline Regional Youth Swimming Championship|EVENT-1}.",
+            "id": "N0-S4",
+            "pos": 4
+          },
+          {
+            "sentence": "{Merrowgate Development Squad|ORGANIZATION-1} finished the meet with 412 team points, clinching the title by a 28-point margin over the second-place team in a field of 18 squads.",
+            "id": "N0-S5",
+            "pos": 5
+          },
+          {
+            "sentence": "Coach {Ivo Harlen|PERSON-2} of {Merrowgate Development Squad|ORGANIZATION-1} said, \"{Sera Lortin|PERSON-1} executed the race plan we practiced and her second-half pace sealed the finish,\" following the final at the {Carterline Regional Youth Swimming Championship|EVENT-1}.",
+            "id": "N0-S6",
+            "pos": 6
+          },
+          {
+            "sentence": "Coach {Ivo Harlen|PERSON-2} added that {Sera Lortin|PERSON-1} produced a negative split\u2014covering the second 100 meters in 59.20 seconds\u2014and credited targeted 8x100 race-pace sets in training for the strong finish.",
+            "id": "N0-S7",
+            "pos": 7
+          },
+          {
+            "sentence": "{Carterline Regional Youth Swimming Championship|EVENT-1} officials updated the official meet results to record {Sera Lortin|PERSON-1}'s new 200-meter freestyle meet record set at {Brindemoor Aquatic Complex|BUILDING-1}.",
+            "id": "N0-S8",
+            "pos": 8
+          },
+          {
+            "sentence": "Officials posted an updated results PDF to the championship website within an hour and forwarded {Sera Lortin|PERSON-1}'s time to the {Carterline Regional Aquatics Federation|ORGANIZATION-2} for formal ratification of the new meet record.",
+            "id": "N0-S9",
+            "pos": 9
+          }
+        ],
+        "used_entities": [
+          {
+            "id": "PERSON-1",
+            "name": "Sera Lortin",
+            "entity_type": "person",
+            "new": true
+          },
+          {
+            "id": "PERSON-2",
+            "name": "Ivo Harlen",
+            "entity_type": "person",
+            "new": true
+          },
+          {
+            "id": "ORGANIZATION-1",
+            "name": "Merrowgate Development Squad",
+            "entity_type": "organization",
+            "new": true
+          },
+          {
+            "id": "ORGANIZATION-2",
+            "name": "Carterline Regional Aquatics Federation",
+            "entity_type": "organization",
+            "new": true
+          },
+          {
+            "id": "LOCATION-1",
+            "name": "Bellwick",
+            "entity_type": "location",
+            "new": true
+          },
+          {
+            "id": "BUILDING-1",
+            "name": "Brindemoor Aquatic Complex",
+            "entity_type": "building",
+            "new": true
+          },
+          {
+            "id": "EVENT-1",
+            "name": "Carterline Regional Youth Swimming Championship",
+            "entity_type": "event",
+            "new": true
+          }
+        ],
+        "parent": null,
+        "continuation": {
+          "summary": "The Carterline Regional Aquatics Federation formally ratified Sera Lortin's 1:59.86 on 2025-07-16 and announced a small honorarium plus a one-on-one evaluation with the federation's under-17 head coach, with any wider camp invitations to be decided after that review.",
+          "last_date": "2025-07-12",
+          "continuation_date": "2025-07-16"
+        },
+        "date": "2025-07-12",
+        "entity_id_to_outline_ids": {
+          "PERSON-1": [
+            "N0-S2",
+            "N0-S3",
+            "N0-S4",
+            "N0-S6",
+            "N0-S7",
+            "N0-S8",
+            "N0-S9"
+          ],
+          "PERSON-2": [
+            "N0-S6",
+            "N0-S7"
+          ],
+          "ORGANIZATION-1": [
+            "N0-S4",
+            "N0-S5",
+            "N0-S6"
+          ],
+          "ORGANIZATION-2": [
+            "N0-S9"
+          ],
+          "LOCATION-1": [
+            "N0-S0"
+          ],
+          "BUILDING-1": [
+            "N0-S0",
+            "N0-S1",
+            "N0-S8"
+          ],
+          "EVENT-1": [
+            "N0-S0",
+            "N0-S2",
+            "N0-S4",
+            "N0-S6",
+            "N0-S8"
+          ],
+          "PERSON-3": []
+        }
+      },
+      {
+        "created_at": 1,
+        "summary": "The Carterline Regional Aquatics Federation formally ratified Sera Lortin's 1:59.86 on 2025-07-16 and announced a small honorarium plus a one-on-one evaluation with the federation's under-17 head coach, with any wider camp invitations to be decided after that review.",
+        "outline": [
+          {
+            "sentence": "The {Carterline Regional Aquatics Federation|ORGANIZATION-2} formally ratified {Sera Lortin|PERSON-1}'s 1:59.86 time in the 200-meter freestyle on 2025-07-16.",
+            "id": "N1-S0",
+            "pos": 0
+          },
+          {
+            "sentence": "The {Carterline Regional Aquatics Federation|ORGANIZATION-2} issued a formal ratification letter signed by the {Carterline Regional Aquatics Federation|ORGANIZATION-2} secretary and updated the {Carterline Regional Aquatics Federation|ORGANIZATION-2}'s official performance database to record the 1:59.86 time as effective 2025-07-16.",
+            "id": "N1-S1",
+            "pos": 1
+          },
+          {
+            "sentence": "The {Carterline Regional Aquatics Federation|ORGANIZATION-2} announced a small honorarium to be paid to {Sera Lortin|PERSON-1} in recognition of the ratified performance.",
+            "id": "N1-S2",
+            "pos": 2
+          },
+          {
+            "sentence": "The {Carterline Regional Aquatics Federation|ORGANIZATION-2} said the honorarium is a one-time payment intended to defray travel and incidental expenses, that the payment will be processed via {Merrowgate Development Squad|ORGANIZATION-1}'s administrative account, and that a remittance notification will be issued to {Sera Lortin|PERSON-1} within 14 days.",
+            "id": "N1-S3",
+            "pos": 3
+          },
+          {
+            "sentence": "The {Carterline Regional Aquatics Federation|ORGANIZATION-2} scheduled a one-on-one evaluation between {Sera Lortin|PERSON-1} and {Nadia Varnell|PERSON-3}, the {Carterline Regional Aquatics Federation|ORGANIZATION-2} under-17 head coach, for 2025-07-22.",
+            "id": "N1-S4",
+            "pos": 4
+          },
+          {
+            "sentence": "The {Carterline Regional Aquatics Federation|ORGANIZATION-2} scheduled the evaluation to take place at the Valemont Sports Council Building's coaching office and assessment pool and allotted a 45-minute slot comprising a 20-minute in-pool technical review, a 15-minute video stroke analysis, and a 10-minute discussion of recent training history.",
+            "id": "N1-S5",
+            "pos": 5
+          },
+          {
+            "sentence": "{Merrowgate Development Squad|ORGANIZATION-1} confirmed that {Ivo Harlen|PERSON-2} will accompany {Sera Lortin|PERSON-1} to the one-on-one evaluation with {Nadia Varnell|PERSON-3}.",
+            "id": "N1-S6",
+            "pos": 6
+          },
+          {
+            "sentence": "{Merrowgate Development Squad|ORGANIZATION-1} stated that {Ivo Harlen|PERSON-2} will bring {Sera Lortin|PERSON-1}'s recent training log, official race split sheets from the championship, and a short written summary of the team's 8x100 race-pace sets for review during the evaluation.",
+            "id": "N1-S7",
+            "pos": 7
+          },
+          {
+            "sentence": "The {Carterline Regional Aquatics Federation|ORGANIZATION-2} stated that the {Carterline Regional Aquatics Federation|ORGANIZATION-2} selection committee will decide on any wider camp invitations after the evaluation with {Nadia Varnell|PERSON-3}.",
+            "id": "N1-S8",
+            "pos": 8
+          },
+          {
+            "sentence": "The {Carterline Regional Aquatics Federation|ORGANIZATION-2} added that the selection committee intends to review {Nadia Varnell|PERSON-3}'s written evaluation within 72 hours and will apply the {Carterline Regional Aquatics Federation|ORGANIZATION-2}'s published under-17 selection criteria, including objective time thresholds, technical assessment, and coach recommendations, when determining any invitations to the {Carterline Regional Aquatics Federation|ORGANIZATION-2}'s development camp.",
+            "id": "N1-S9",
+            "pos": 9
+          }
+        ],
+        "used_entities": [
+          {
+            "id": "PERSON-1",
+            "name": "Sera Lortin",
+            "entity_type": "person",
+            "new": false
+          },
+          {
+            "id": "PERSON-2",
+            "name": "Ivo Harlen",
+            "entity_type": "person",
+            "new": false
+          },
+          {
+            "id": "PERSON-3",
+            "name": "Nadia Varnell",
+            "entity_type": "person",
+            "new": true
+          },
+          {
+            "id": "ORGANIZATION-1",
+            "name": "Merrowgate Development Squad",
+            "entity_type": "organization",
+            "new": false
+          },
+          {
+            "id": "ORGANIZATION-2",
+            "name": "Carterline Regional Aquatics Federation",
+            "entity_type": "organization",
+            "new": false
+          }
+        ],
+        "parent": 0,
+        "continuation": {
+          "summary": "On 2025-07-22 Nadia Varnell completed the scheduled 45-minute evaluation of Sera Lortin and submitted a written recommendation that, while Sera's second-half pacing is a clear strength, she be offered a focused two-week regional skills clinic rather than immediate development-camp placement to refine specific technical elements first.",
+          "last_date": "2025-07-16",
+          "continuation_date": "2025-07-22"
+        },
+        "date": "2025-07-16",
+        "entity_id_to_outline_ids": {
+          "PERSON-1": [
+            "N1-S0",
+            "N1-S2",
+            "N1-S3",
+            "N1-S4",
+            "N1-S6",
+            "N1-S7"
+          ],
+          "PERSON-2": [
+            "N1-S6",
+            "N1-S7"
+          ],
+          "PERSON-3": [
+            "N1-S4",
+            "N1-S6",
+            "N1-S8",
+            "N1-S9"
+          ],
+          "ORGANIZATION-1": [
+            "N1-S3",
+            "N1-S6",
+            "N1-S7"
+          ],
+          "ORGANIZATION-2": [
+            "N1-S0",
+            "N1-S1",
+            "N1-S2",
+            "N1-S3",
+            "N1-S4",
+            "N1-S5",
+            "N1-S8",
+            "N1-S9"
+          ]
+        }
+      }
+    ],
+    "BRIDGE_ENTITY_NAME": "Ivo Harlen",
+    "BRIDGE_ENTITY_ID": "PERSON-2",
+    "KNOWN_PREV_NAMED_ENTITIES": "<person>\n<created_at>0</created_at><date_of_birth>2008-09-14</date_of_birth><description>Sera Lortin is a disciplined and goal-oriented young athlete known for meticulous race preparation and a pragmatic, improvement-focused mindset.</description><education>Upper-secondary school (enrolled)</education><entity_class>person</entity_class><eye_color>Green</eye_color><gender>Female</gender><hair_color>Dark brown</hair_color><height>173 cm</height><id>PERSON-1</id><last_updated>2025-07-12</last_updated><marital_status>Single</marital_status><name>Sera Lortin</name><nationality>Carterline</nationality><profession>Competitive swimmer / Student-athlete</profession><type>None</type><weight>62 kg</weight>\n<created_at>0</created_at><date_of_birth>1982-03-02</date_of_birth><description>Ivo Harlen is a methodical and pragmatic coach who emphasizes technique, measurable progress, and individualized training plans.</description><education>Master's in Sports Science</education><entity_class>person</entity_class><gender>Male</gender><hair_color>Salt-and-pepper</hair_color><height>180 cm</height><id>PERSON-2</id><last_updated>2025-07-12</last_updated><marital_status>Married</marital_status><name>Ivo Harlen</name><nationality>Carterline</nationality><political_affiliation>Independent</political_affiliation><profession>Swimming coach (Head coach)</profession><type>None</type><weight>78 kg</weight>\n</person>\n<organization>\n<annual_revenue>240000</annual_revenue><created_at>0</created_at><description>Merrowgate Development Squad is a community-based swim club focused on developing young athletes through structured training and local competition.</description><entity_class>organization</entity_class><founded>2004</founded><headquarters>Merrowgate Training Centre</headquarters><id>ORGANIZATION-1</id><industry>sports / youth development</industry><last_updated>2025-07-12</last_updated><mission_statement>To provide accessible coaching and support that helps young swimmers progress in sport and personal development.</mission_statement><name>Merrowgate Development Squad</name><number_of_employees>18</number_of_employees><type>non-profit</type>\n<annual_revenue>1200000</annual_revenue><created_at>0</created_at><description>The Carterline Regional Aquatics Federation serves as the regional coordinating body for competitive swimming and water sports governance and development.</description><entity_class>organization</entity_class><founded>1978</founded><headquarters>Valemont Sports Council Building</headquarters><id>ORGANIZATION-2</id><industry>sports governance</industry><last_updated>2025-07-12</last_updated><mission_statement>To promote safe, fair, and organized aquatic sport participation across the Carterline region.</mission_statement><name>Carterline Regional Aquatics Federation</name><number_of_employees>34</number_of_employees><type>non-profit</type>\n</organization>\n<location>\n\n</location>\n<product>\n\n</product>\n<art>\n\n</art>\n<building>\n\n</building>\n<event>\n\n</event>\n<miscellaneous>\n\n</miscellaneous>",
+    "OUTLINE_DICT": {
+      "N0-S0": {
+        "sentence": "The {Carterline Regional Youth Swimming Championship|EVENT-1} concluded on 2025-07-12 at {Brindemoor Aquatic Complex|BUILDING-1} in {Bellwick|LOCATION-1}.",
+        "decoded_sentence": "The Carterline Regional Youth Swimming Championship concluded on 2025-07-12 at Brindemoor Aquatic Complex in Bellwick.",
+        "decoded_sentence_full": "The Carterline Regional Youth Swimming Championship concluded on 2025-07-12 at Brindemoor Aquatic Complex in Bellwick.",
+        "entity_ids": [
+          "BUILDING-1",
+          "EVENT-1",
+          "LOCATION-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N0-S1": {
+        "sentence": "The final session closed shortly after 6:30 p.m., with roughly 380 spectators in attendance at the {Brindemoor Aquatic Complex|BUILDING-1}'s 50-meter competition pool.",
+        "decoded_sentence": "The final session closed shortly after 6:30 p.m., with roughly 380 spectators in attendance at the Brindemoor Aquatic Complex's 50-meter competition pool.",
+        "decoded_sentence_full": "The final session closed shortly after 6:30 p.m., with roughly 380 spectators in attendance at the Brindemoor Aquatic Complex's 50-meter competition pool.",
+        "entity_ids": [
+          "BUILDING-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N0-S2": {
+        "sentence": "{Sera Lortin|PERSON-1}, age 16, lowered the meet record in the 200-meter freestyle by 0.4 seconds with a time of 1:59.86 in the championship final at the {Carterline Regional Youth Swimming Championship|EVENT-1}.",
+        "decoded_sentence": "Sera Lortin, age 16, lowered the meet record in the 200-meter freestyle by 0.4 seconds with a time of 1:59.86 in the championship final at the Carterline Regional Youth Swimming Championship.",
+        "decoded_sentence_full": "Sera Lortin, age 16, lowered the meet record in the 200-meter freestyle by 0.4 seconds with a time of 1:59.86 in the championship final at the Carterline Regional Youth Swimming Championship.",
+        "entity_ids": [
+          "EVENT-1",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N0-S3": {
+        "sentence": "The previous meet record of 2:00.26 had been set in 2018, and the official timing showed {Sera Lortin|PERSON-1} touching the wall 0.35 seconds ahead of the second-place swimmer in the final.",
+        "decoded_sentence": "The previous meet record of 2:00.26 had been set in 2018, and the official timing showed Sera Lortin touching the wall 0.35 seconds ahead of the second-place swimmer in the final.",
+        "decoded_sentence_full": "The previous meet record of 2:00.26 had been set in 2018, and the official timing showed Sera Lortin touching the wall 0.35 seconds ahead of the second-place swimmer in the final.",
+        "entity_ids": [
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N0-S4": {
+        "sentence": "The performance by {Sera Lortin|PERSON-1} contributed directly to {Merrowgate Development Squad|ORGANIZATION-1} securing the overall team title at the {Carterline Regional Youth Swimming Championship|EVENT-1}.",
+        "decoded_sentence": "The performance by Sera Lortin contributed directly to Merrowgate Development Squad securing the overall team title at the Carterline Regional Youth Swimming Championship.",
+        "decoded_sentence_full": "The performance by Sera Lortin contributed directly to Merrowgate Development Squad securing the overall team title at the Carterline Regional Youth Swimming Championship.",
+        "entity_ids": [
+          "EVENT-1",
+          "ORGANIZATION-1",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N0-S5": {
+        "sentence": "{Merrowgate Development Squad|ORGANIZATION-1} finished the meet with 412 team points, clinching the title by a 28-point margin over the second-place team in a field of 18 squads.",
+        "decoded_sentence": "Merrowgate Development Squad finished the meet with 412 team points, clinching the title by a 28-point margin over the second-place team in a field of 18 squads.",
+        "decoded_sentence_full": "Merrowgate Development Squad finished the meet with 412 team points, clinching the title by a 28-point margin over the second-place team in a field of 18 squads.",
+        "entity_ids": [
+          "ORGANIZATION-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N0-S6": {
+        "sentence": "Coach {Ivo Harlen|PERSON-2} of {Merrowgate Development Squad|ORGANIZATION-1} said, \"{Sera Lortin|PERSON-1} executed the race plan we practiced and her second-half pace sealed the finish,\" following the final at the {Carterline Regional Youth Swimming Championship|EVENT-1}.",
+        "decoded_sentence": "Coach Ivo Harlen of Merrowgate Development Squad said, \"Sera Lortin executed the race plan we practiced and her second-half pace sealed the finish,\" following the final at the Carterline Regional Youth Swimming Championship.",
+        "decoded_sentence_full": "Coach Ivo Harlen of Merrowgate Development Squad said, \"Sera Lortin executed the race plan we practiced and her second-half pace sealed the finish,\" following the final at the Carterline Regional Youth Swimming Championship.",
+        "entity_ids": [
+          "EVENT-1",
+          "ORGANIZATION-1",
+          "PERSON-1",
+          "PERSON-2"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N0-S7": {
+        "sentence": "Coach {Ivo Harlen|PERSON-2} added that {Sera Lortin|PERSON-1} produced a negative split\u2014covering the second 100 meters in 59.20 seconds\u2014and credited targeted 8x100 race-pace sets in training for the strong finish.",
+        "decoded_sentence": "Coach Ivo Harlen added that Sera Lortin produced a negative split\u2014covering the second 100 meters in 59.20 seconds\u2014and credited targeted 8x100 race-pace sets in training for the strong finish.",
+        "decoded_sentence_full": "Coach Ivo Harlen added that Sera Lortin produced a negative split\u2014covering the second 100 meters in 59.20 seconds\u2014and credited targeted 8x100 race-pace sets in training for the strong finish.",
+        "entity_ids": [
+          "PERSON-1",
+          "PERSON-2"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N0-S8": {
+        "sentence": "{Carterline Regional Youth Swimming Championship|EVENT-1} officials updated the official meet results to record {Sera Lortin|PERSON-1}'s new 200-meter freestyle meet record set at {Brindemoor Aquatic Complex|BUILDING-1}.",
+        "decoded_sentence": "Carterline Regional Youth Swimming Championship officials updated the official meet results to record Sera Lortin's new 200-meter freestyle meet record set at Brindemoor Aquatic Complex.",
+        "decoded_sentence_full": "Carterline Regional Youth Swimming Championship officials updated the official meet results to record Sera Lortin's new 200-meter freestyle meet record set at Brindemoor Aquatic Complex.",
+        "entity_ids": [
+          "BUILDING-1",
+          "EVENT-1",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N0-S9": {
+        "sentence": "Officials posted an updated results PDF to the championship website within an hour and forwarded {Sera Lortin|PERSON-1}'s time to the {Carterline Regional Aquatics Federation|ORGANIZATION-2} for formal ratification of the new meet record.",
+        "decoded_sentence": "Officials posted an updated results PDF to the championship website within an hour and forwarded Sera Lortin's time to the Carterline Regional Aquatics Federation for formal ratification of the new meet record.",
+        "decoded_sentence_full": "Officials posted an updated results PDF to the championship website within an hour and forwarded Sera Lortin's time to the Carterline Regional Aquatics Federation for formal ratification of the new meet record.",
+        "entity_ids": [
+          "ORGANIZATION-2",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N1-S0": {
+        "sentence": "The {Carterline Regional Aquatics Federation|ORGANIZATION-2} formally ratified {Sera Lortin|PERSON-1}'s 1:59.86 time in the 200-meter freestyle on 2025-07-16.",
+        "decoded_sentence": "The Carterline Regional Aquatics Federation formally ratified Sera Lortin's 1:59.86 time in the 200-meter freestyle on 2025-07-16.",
+        "decoded_sentence_full": "The Carterline Regional Aquatics Federation formally ratified Sera Lortin's 1:59.86 time in the 200-meter freestyle on 2025-07-16.",
+        "entity_ids": [
+          "ORGANIZATION-2",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N1-S1": {
+        "sentence": "The {Carterline Regional Aquatics Federation|ORGANIZATION-2} issued a formal ratification letter signed by the {Carterline Regional Aquatics Federation|ORGANIZATION-2} secretary and updated the {Carterline Regional Aquatics Federation|ORGANIZATION-2}'s official performance database to record the 1:59.86 time as effective 2025-07-16.",
+        "decoded_sentence": "The Carterline Regional Aquatics Federation issued a formal ratification letter signed by the Carterline Regional Aquatics Federation secretary and updated the Carterline Regional Aquatics Federation's official performance database to record the 1:59.86 time as effective 2025-07-16.",
+        "decoded_sentence_full": "The Carterline Regional Aquatics Federation issued a formal ratification letter signed by the Carterline Regional Aquatics Federation secretary and updated the Carterline Regional Aquatics Federation's official performance database to record the 1:59.86 time as effective 2025-07-16.",
+        "entity_ids": [
+          "ORGANIZATION-2",
+          "ORGANIZATION-2",
+          "ORGANIZATION-2"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N1-S2": {
+        "sentence": "The {Carterline Regional Aquatics Federation|ORGANIZATION-2} announced a small honorarium to be paid to {Sera Lortin|PERSON-1} in recognition of the ratified performance.",
+        "decoded_sentence": "The Carterline Regional Aquatics Federation announced a small honorarium to be paid to Sera Lortin in recognition of the ratified performance.",
+        "decoded_sentence_full": "The Carterline Regional Aquatics Federation announced a small honorarium to be paid to Sera Lortin in recognition of the ratified performance.",
+        "entity_ids": [
+          "ORGANIZATION-2",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N1-S3": {
+        "sentence": "The {Carterline Regional Aquatics Federation|ORGANIZATION-2} said the honorarium is a one-time payment intended to defray travel and incidental expenses, that the payment will be processed via {Merrowgate Development Squad|ORGANIZATION-1}'s administrative account, and that a remittance notification will be issued to {Sera Lortin|PERSON-1} within 14 days.",
+        "decoded_sentence": "The Carterline Regional Aquatics Federation said the honorarium is a one-time payment intended to defray travel and incidental expenses, that the payment will be processed via Merrowgate Development Squad's administrative account, and that a remittance notification will be issued to Sera Lortin within 14 days.",
+        "decoded_sentence_full": "The Carterline Regional Aquatics Federation said the honorarium is a one-time payment intended to defray travel and incidental expenses, that the payment will be processed via Merrowgate Development Squad's administrative account, and that a remittance notification will be issued to Sera Lortin within 14 days.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "ORGANIZATION-2",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N1-S4": {
+        "sentence": "The {Carterline Regional Aquatics Federation|ORGANIZATION-2} scheduled a one-on-one evaluation between {Sera Lortin|PERSON-1} and {Nadia Varnell|PERSON-3}, the {Carterline Regional Aquatics Federation|ORGANIZATION-2} under-17 head coach, for 2025-07-22.",
+        "decoded_sentence": "The Carterline Regional Aquatics Federation scheduled a one-on-one evaluation between Sera Lortin and Nadia Varnell, the Carterline Regional Aquatics Federation under-17 head coach, for 2025-07-22.",
+        "decoded_sentence_full": "The Carterline Regional Aquatics Federation scheduled a one-on-one evaluation between Sera Lortin and Nadia Varnell, the Carterline Regional Aquatics Federation under-17 head coach, for 2025-07-22.",
+        "entity_ids": [
+          "ORGANIZATION-2",
+          "ORGANIZATION-2",
+          "PERSON-1",
+          "PERSON-3"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N1-S5": {
+        "sentence": "The {Carterline Regional Aquatics Federation|ORGANIZATION-2} scheduled the evaluation to take place at the Valemont Sports Council Building's coaching office and assessment pool and allotted a 45-minute slot comprising a 20-minute in-pool technical review, a 15-minute video stroke analysis, and a 10-minute discussion of recent training history.",
+        "decoded_sentence": "The Carterline Regional Aquatics Federation scheduled the evaluation to take place at the Valemont Sports Council Building's coaching office and assessment pool and allotted a 45-minute slot comprising a 20-minute in-pool technical review, a 15-minute video stroke analysis, and a 10-minute discussion of recent training history.",
+        "decoded_sentence_full": "The Carterline Regional Aquatics Federation scheduled the evaluation to take place at the Valemont Sports Council Building's coaching office and assessment pool and allotted a 45-minute slot comprising a 20-minute in-pool technical review, a 15-minute video stroke analysis, and a 10-minute discussion of recent training history.",
+        "entity_ids": [
+          "ORGANIZATION-2"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N1-S6": {
+        "sentence": "{Merrowgate Development Squad|ORGANIZATION-1} confirmed that {Ivo Harlen|PERSON-2} will accompany {Sera Lortin|PERSON-1} to the one-on-one evaluation with {Nadia Varnell|PERSON-3}.",
+        "decoded_sentence": "Merrowgate Development Squad confirmed that Ivo Harlen will accompany Sera Lortin to the one-on-one evaluation with Nadia Varnell.",
+        "decoded_sentence_full": "Merrowgate Development Squad confirmed that Ivo Harlen will accompany Sera Lortin to the one-on-one evaluation with Nadia Varnell.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "PERSON-1",
+          "PERSON-2",
+          "PERSON-3"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N1-S7": {
+        "sentence": "{Merrowgate Development Squad|ORGANIZATION-1} stated that {Ivo Harlen|PERSON-2} will bring {Sera Lortin|PERSON-1}'s recent training log, official race split sheets from the championship, and a short written summary of the team's 8x100 race-pace sets for review during the evaluation.",
+        "decoded_sentence": "Merrowgate Development Squad stated that Ivo Harlen will bring Sera Lortin's recent training log, official race split sheets from the championship, and a short written summary of the team's 8x100 race-pace sets for review during the evaluation.",
+        "decoded_sentence_full": "Merrowgate Development Squad stated that Ivo Harlen will bring Sera Lortin's recent training log, official race split sheets from the championship, and a short written summary of the team's 8x100 race-pace sets for review during the evaluation.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "PERSON-1",
+          "PERSON-2"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N1-S8": {
+        "sentence": "The {Carterline Regional Aquatics Federation|ORGANIZATION-2} stated that the {Carterline Regional Aquatics Federation|ORGANIZATION-2} selection committee will decide on any wider camp invitations after the evaluation with {Nadia Varnell|PERSON-3}.",
+        "decoded_sentence": "The Carterline Regional Aquatics Federation stated that the Carterline Regional Aquatics Federation selection committee will decide on any wider camp invitations after the evaluation with Nadia Varnell.",
+        "decoded_sentence_full": "The Carterline Regional Aquatics Federation stated that the Carterline Regional Aquatics Federation selection committee will decide on any wider camp invitations after the evaluation with Nadia Varnell.",
+        "entity_ids": [
+          "ORGANIZATION-2",
+          "ORGANIZATION-2",
+          "PERSON-3"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N1-S9": {
+        "sentence": "The {Carterline Regional Aquatics Federation|ORGANIZATION-2} added that the selection committee intends to review {Nadia Varnell|PERSON-3}'s written evaluation within 72 hours and will apply the {Carterline Regional Aquatics Federation|ORGANIZATION-2}'s published under-17 selection criteria, including objective time thresholds, technical assessment, and coach recommendations, when determining any invitations to the {Carterline Regional Aquatics Federation|ORGANIZATION-2}'s development camp.",
+        "decoded_sentence": "The Carterline Regional Aquatics Federation added that the selection committee intends to review Nadia Varnell's written evaluation within 72 hours and will apply the Carterline Regional Aquatics Federation's published under-17 selection criteria, including objective time thresholds, technical assessment, and coach recommendations, when determining any invitations to the Carterline Regional Aquatics Federation's development camp.",
+        "decoded_sentence_full": "The Carterline Regional Aquatics Federation added that the selection committee intends to review Nadia Varnell's written evaluation within 72 hours and will apply the Carterline Regional Aquatics Federation's published under-17 selection criteria, including objective time thresholds, technical assessment, and coach recommendations, when determining any invitations to the Carterline Regional Aquatics Federation's development camp.",
+        "entity_ids": [
+          "ORGANIZATION-2",
+          "ORGANIZATION-2",
+          "ORGANIZATION-2",
+          "PERSON-3"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N2-S0": {
+        "sentence": "On 2025-07-22 {Nadia Varnell|PERSON-3} completed the scheduled 45-minute evaluation of {Sera Lortin|PERSON-1} at the Valemont Sports Council Building.",
+        "decoded_sentence": "On 2025-07-22 Nadia Varnell completed the scheduled 45-minute evaluation of Sera Lortin at the Valemont Sports Council Building.",
+        "decoded_sentence_full": "On 2025-07-22 Nadia Varnell completed the scheduled 45-minute evaluation of Sera Lortin at the Valemont Sports Council Building.",
+        "entity_ids": [
+          "PERSON-1",
+          "PERSON-3"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N2-S1": {
+        "sentence": "The evaluation began at 10:00 a.m. and concluded at 10:45 a.m., with {Nadia Varnell|PERSON-3} conducting timed short-pace sets in lane three of the Valemont Sports Council Building assessment pool while a portable high-frame-rate camera recorded {Sera Lortin|PERSON-1}'s stroke for later review.",
+        "decoded_sentence": "The evaluation began at 10:00 a.m. and concluded at 10:45 a.m., with Nadia Varnell conducting timed short-pace sets in lane three of the Valemont Sports Council Building assessment pool while a portable high-frame-rate camera recorded Sera Lortin's stroke for later review.",
+        "decoded_sentence_full": "The evaluation began at 10:00 a.m. and concluded at 10:45 a.m., with Nadia Varnell conducting timed short-pace sets in lane three of the Valemont Sports Council Building assessment pool while a portable high-frame-rate camera recorded Sera Lortin's stroke for later review.",
+        "entity_ids": [
+          "PERSON-1",
+          "PERSON-3"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N2-S2": {
+        "sentence": "{Nadia Varnell|PERSON-3}'s written assessment noted that {Sera Lortin|PERSON-1}'s second-half pacing is a clear competitive strength.",
+        "decoded_sentence": "Nadia Varnell's written assessment noted that Sera Lortin's second-half pacing is a clear competitive strength.",
+        "decoded_sentence_full": "Nadia Varnell's written assessment noted that Sera Lortin's second-half pacing is a clear competitive strength.",
+        "entity_ids": [
+          "PERSON-1",
+          "PERSON-3"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N2-S3": {
+        "sentence": "{Nadia Varnell|PERSON-3}'s written assessment included measured session data, citing three coached 50m closing efforts with an average split differential of roughly 0.15 seconds faster on the closing 50m as evidence of {Sera Lortin|PERSON-1}'s reliable race-closing speed.",
+        "decoded_sentence": "Nadia Varnell's written assessment included measured session data, citing three coached 50m closing efforts with an average split differential of roughly 0.15 seconds faster on the closing 50m as evidence of Sera Lortin's reliable race-closing speed.",
+        "decoded_sentence_full": "Nadia Varnell's written assessment included measured session data, citing three coached 50m closing efforts with an average split differential of roughly 0.15 seconds faster on the closing 50m as evidence of Sera Lortin's reliable race-closing speed.",
+        "entity_ids": [
+          "PERSON-1",
+          "PERSON-3"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N2-S4": {
+        "sentence": "{Nadia Varnell|PERSON-3} recommended that {Sera Lortin|PERSON-1} be offered a focused two-week regional skills clinic rather than immediate placement in the {Carterline Regional Aquatics Federation|ORGANIZATION-2} development camp.",
+        "decoded_sentence": "Nadia Varnell recommended that Sera Lortin be offered a focused two-week regional skills clinic rather than immediate placement in the Carterline Regional Aquatics Federation development camp.",
+        "decoded_sentence_full": "Nadia Varnell recommended that Sera Lortin be offered a focused two-week regional skills clinic rather than immediate placement in the Carterline Regional Aquatics Federation development camp.",
+        "entity_ids": [
+          "ORGANIZATION-2",
+          "PERSON-1",
+          "PERSON-3"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N2-S5": {
+        "sentence": "In the recommendation {Nadia Varnell|PERSON-3} specified the clinic should prioritize starts and turns, catch-phase refinement, and daily coached video review accompanied by prescribed dryland core-strength sessions across the two-week period.",
+        "decoded_sentence": "In the recommendation Nadia Varnell specified the clinic should prioritize starts and turns, catch-phase refinement, and daily coached video review accompanied by prescribed dryland core-strength sessions across the two-week period.",
+        "decoded_sentence_full": "In the recommendation Nadia Varnell specified the clinic should prioritize starts and turns, catch-phase refinement, and daily coached video review accompanied by prescribed dryland core-strength sessions across the two-week period.",
+        "entity_ids": [
+          "PERSON-3"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N2-S6": {
+        "sentence": "{Merrowgate Development Squad|ORGANIZATION-1} acknowledged receipt of {Nadia Varnell|PERSON-3}'s written recommendation and confirmed that {Ivo Harlen|PERSON-2} will coordinate next steps with the {Carterline Regional Aquatics Federation|ORGANIZATION-2}.",
+        "decoded_sentence": "Merrowgate Development Squad acknowledged receipt of Nadia Varnell's written recommendation and confirmed that Ivo Harlen will coordinate next steps with the Carterline Regional Aquatics Federation.",
+        "decoded_sentence_full": "Merrowgate Development Squad acknowledged receipt of Nadia Varnell's written recommendation and confirmed that Ivo Harlen will coordinate next steps with the Carterline Regional Aquatics Federation.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "ORGANIZATION-2",
+          "PERSON-2",
+          "PERSON-3"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N2-S7": {
+        "sentence": "{Merrowgate Development Squad|ORGANIZATION-1} stated it would confirm {Sera Lortin|PERSON-1}'s availability, provide the athlete's medical clearance and travel preferences, and aim to forward formal participation confirmation to the {Carterline Regional Aquatics Federation|ORGANIZATION-2} within 48 hours.",
+        "decoded_sentence": "Merrowgate Development Squad stated it would confirm Sera Lortin's availability, provide the athlete's medical clearance and travel preferences, and aim to forward formal participation confirmation to the Carterline Regional Aquatics Federation within 48 hours.",
+        "decoded_sentence_full": "Merrowgate Development Squad stated it would confirm Sera Lortin's availability, provide the athlete's medical clearance and travel preferences, and aim to forward formal participation confirmation to the Carterline Regional Aquatics Federation within 48 hours.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "ORGANIZATION-2",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N2-S8": {
+        "sentence": "The {Carterline Regional Aquatics Federation|ORGANIZATION-2} scheduled the two-week regional skills clinic at {Brindemoor Aquatic Complex|BUILDING-1} to run from 2025-08-05 to 2025-08-18 and asked {Merrowgate Development Squad|ORGANIZATION-1} to provide participant logistics for {Sera Lortin|PERSON-1}.",
+        "decoded_sentence": "The Carterline Regional Aquatics Federation scheduled the two-week regional skills clinic at Brindemoor Aquatic Complex to run from 2025-08-05 to 2025-08-18 and asked Merrowgate Development Squad to provide participant logistics for Sera Lortin.",
+        "decoded_sentence_full": "The Carterline Regional Aquatics Federation scheduled the two-week regional skills clinic at Brindemoor Aquatic Complex to run from 2025-08-05 to 2025-08-18 and asked Merrowgate Development Squad to provide participant logistics for Sera Lortin.",
+        "entity_ids": [
+          "BUILDING-1",
+          "ORGANIZATION-1",
+          "ORGANIZATION-2",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N2-S9": {
+        "sentence": "The {Carterline Regional Aquatics Federation|ORGANIZATION-2} requested that {Merrowgate Development Squad|ORGANIZATION-1} supply {Sera Lortin|PERSON-1}'s arrival time, emergency contact, and any dietary or accommodation needs by 2025-07-28, and noted the clinic will run morning and late-afternoon pool sessions with an on-site classroom reserved for daily video analysis.",
+        "decoded_sentence": "The Carterline Regional Aquatics Federation requested that Merrowgate Development Squad supply Sera Lortin's arrival time, emergency contact, and any dietary or accommodation needs by 2025-07-28, and noted the clinic will run morning and late-afternoon pool sessions with an on-site classroom reserved for daily video analysis.",
+        "decoded_sentence_full": "The Carterline Regional Aquatics Federation requested that Merrowgate Development Squad supply Sera Lortin's arrival time, emergency contact, and any dietary or accommodation needs by 2025-07-28, and noted the clinic will run morning and late-afternoon pool sessions with an on-site classroom reserved for daily video analysis.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "ORGANIZATION-2",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N3-S0": {
+        "sentence": "{Merrowgate Development Squad|ORGANIZATION-1} notified the {Carterline Regional Aquatics Federation|ORGANIZATION-2} on 2025-07-28 that {Sera Lortin|PERSON-1} has reported a minor shoulder complaint.",
+        "decoded_sentence": "Merrowgate Development Squad notified the Carterline Regional Aquatics Federation on 2025-07-28 that Sera Lortin has reported a minor shoulder complaint.",
+        "decoded_sentence_full": "Merrowgate Development Squad notified the Carterline Regional Aquatics Federation on 2025-07-28 that Sera Lortin has reported a minor shoulder complaint.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "ORGANIZATION-2",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N3-S1": {
+        "sentence": "The notification was sent in a 10:15 a.m. email from {Merrowgate Development Squad|ORGANIZATION-1}'s administrative officer to the {Carterline Regional Aquatics Federation|ORGANIZATION-2}'s selection coordinator and described the issue as minor left-shoulder tenderness that first materialized after a timed interval set on 2025-07-25 and has been managed with ice and modified training since then.",
+        "decoded_sentence": "The notification was sent in a 10:15 a.m. email from Merrowgate Development Squad's administrative officer to the Carterline Regional Aquatics Federation's selection coordinator and described the issue as minor left-shoulder tenderness that first materialized after a timed interval set on 2025-07-25 and has been managed with ice and modified training since then.",
+        "decoded_sentence_full": "The notification was sent in a 10:15 a.m. email from Merrowgate Development Squad's administrative officer to the Carterline Regional Aquatics Federation's selection coordinator and described the issue as minor left-shoulder tenderness that first materialized after a timed interval set on 2025-07-25 and has been managed with ice and modified training since then.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "ORGANIZATION-2"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N3-S2": {
+        "sentence": "{Merrowgate Development Squad|ORGANIZATION-1} requested that {Sera Lortin|PERSON-1} be permitted to attend the 2025-08-05 regional skills clinic for classroom and video-review sessions only, deferring {Sera Lortin|PERSON-1}'s in-pool training pending reassessment.",
+        "decoded_sentence": "Merrowgate Development Squad requested that Sera Lortin be permitted to attend the 2025-08-05 regional skills clinic for classroom and video-review sessions only, deferring Sera Lortin's in-pool training pending reassessment.",
+        "decoded_sentence_full": "Merrowgate Development Squad requested that Sera Lortin be permitted to attend the 2025-08-05 regional skills clinic for classroom and video-review sessions only, deferring Sera Lortin's in-pool training pending reassessment.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "PERSON-1",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N3-S3": {
+        "sentence": "{Merrowgate Development Squad|ORGANIZATION-1}'s request specified that {Sera Lortin|PERSON-1} would attend only non-pool activities including daily video-review sessions in the clinic classroom and prescribed dryland/core-strength work supervised by {Merrowgate Development Squad|ORGANIZATION-1} staff, and that {Merrowgate Development Squad|ORGANIZATION-1} offered to have its physiotherapist available for on-site reassessment if required by the {Carterline Regional Aquatics Federation|ORGANIZATION-2}.",
+        "decoded_sentence": "Merrowgate Development Squad's request specified that Sera Lortin would attend only non-pool activities including daily video-review sessions in the clinic classroom and prescribed dryland/core-strength work supervised by Merrowgate Development Squad staff, and that Merrowgate Development Squad offered to have its physiotherapist available for on-site reassessment if required by the Carterline Regional Aquatics Federation.",
+        "decoded_sentence_full": "Merrowgate Development Squad's request specified that Sera Lortin would attend only non-pool activities including daily video-review sessions in the clinic classroom and prescribed dryland/core-strength work supervised by Merrowgate Development Squad staff, and that Merrowgate Development Squad offered to have its physiotherapist available for on-site reassessment if required by the Carterline Regional Aquatics Federation.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "ORGANIZATION-1",
+          "ORGANIZATION-1",
+          "ORGANIZATION-2",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N3-S4": {
+        "sentence": "The {Carterline Regional Aquatics Federation|ORGANIZATION-2} acknowledged {Merrowgate Development Squad|ORGANIZATION-1}'s request and stated the {Carterline Regional Aquatics Federation|ORGANIZATION-2} requires a clinician's medical clearance before approving {Sera Lortin|PERSON-1}'s classroom-only participation.",
+        "decoded_sentence": "The Carterline Regional Aquatics Federation acknowledged Merrowgate Development Squad's request and stated the Carterline Regional Aquatics Federation requires a clinician's medical clearance before approving Sera Lortin's classroom-only participation.",
+        "decoded_sentence_full": "The Carterline Regional Aquatics Federation acknowledged Merrowgate Development Squad's request and stated the Carterline Regional Aquatics Federation requires a clinician's medical clearance before approving Sera Lortin's classroom-only participation.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "ORGANIZATION-2",
+          "ORGANIZATION-2",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N3-S5": {
+        "sentence": "The {Carterline Regional Aquatics Federation|ORGANIZATION-2}'s acknowledgement, issued by email from the {Carterline Regional Aquatics Federation|ORGANIZATION-2}'s selection coordinator, specified that the required clinician's medical clearance must be provided in writing by an accredited sports physician or chartered physiotherapist and include a clinical diagnosis, current functional limitations, and any recommended restrictions for the clinic period.",
+        "decoded_sentence": "The Carterline Regional Aquatics Federation's acknowledgement, issued by email from the Carterline Regional Aquatics Federation's selection coordinator, specified that the required clinician's medical clearance must be provided in writing by an accredited sports physician or chartered physiotherapist and include a clinical diagnosis, current functional limitations, and any recommended restrictions for the clinic period.",
+        "decoded_sentence_full": "The Carterline Regional Aquatics Federation's acknowledgement, issued by email from the Carterline Regional Aquatics Federation's selection coordinator, specified that the required clinician's medical clearance must be provided in writing by an accredited sports physician or chartered physiotherapist and include a clinical diagnosis, current functional limitations, and any recommended restrictions for the clinic period.",
+        "entity_ids": [
+          "ORGANIZATION-2",
+          "ORGANIZATION-2"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N3-S6": {
+        "sentence": "{Ivo Harlen|PERSON-2} confirmed that {Ivo Harlen|PERSON-2} will accompany {Sera Lortin|PERSON-1} to the clinic and that {Merrowgate Development Squad|ORGANIZATION-1} will submit {Sera Lortin|PERSON-1}'s medical clearance and arrival information to the {Carterline Regional Aquatics Federation|ORGANIZATION-2} by 2025-07-30.",
+        "decoded_sentence": "Ivo Harlen confirmed that Ivo Harlen will accompany Sera Lortin to the clinic and that Merrowgate Development Squad will submit Sera Lortin's medical clearance and arrival information to the Carterline Regional Aquatics Federation by 2025-07-30.",
+        "decoded_sentence_full": "Ivo Harlen confirmed that Ivo Harlen will accompany Sera Lortin to the clinic and that Merrowgate Development Squad will submit Sera Lortin's medical clearance and arrival information to the Carterline Regional Aquatics Federation by 2025-07-30.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "ORGANIZATION-2",
+          "PERSON-1",
+          "PERSON-1",
+          "PERSON-2",
+          "PERSON-2"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N3-S7": {
+        "sentence": "In his confirmation {Ivo Harlen|PERSON-2} stated he would act as {Sera Lortin|PERSON-1}'s team guardian at the clinic, provided a provisional arrival time of the evening of 2025-08-04, supplied a direct mobile contact for emergency use, and said the {Merrowgate Development Squad|ORGANIZATION-1} submission on 2025-07-30 would include the clinician's clearance document and {Sera Lortin|PERSON-1}'s accommodation preference.",
+        "decoded_sentence": "In his confirmation Ivo Harlen stated he would act as Sera Lortin's team guardian at the clinic, provided a provisional arrival time of the evening of 2025-08-04, supplied a direct mobile contact for emergency use, and said the Merrowgate Development Squad submission on 2025-07-30 would include the clinician's clearance document and Sera Lortin's accommodation preference.",
+        "decoded_sentence_full": "In his confirmation Ivo Harlen stated he would act as Sera Lortin's team guardian at the clinic, provided a provisional arrival time of the evening of 2025-08-04, supplied a direct mobile contact for emergency use, and said the Merrowgate Development Squad submission on 2025-07-30 would include the clinician's clearance document and Sera Lortin's accommodation preference.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "PERSON-1",
+          "PERSON-1",
+          "PERSON-2"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N3-S8": {
+        "sentence": "The {Carterline Regional Aquatics Federation|ORGANIZATION-2} asked {Brindemoor Aquatic Complex|BUILDING-1} to reserve the on-site classroom for {Sera Lortin|PERSON-1}'s video-review sessions pending receipt of the required medical clearance from {Merrowgate Development Squad|ORGANIZATION-1}.",
+        "decoded_sentence": "The Carterline Regional Aquatics Federation asked Brindemoor Aquatic Complex to reserve the on-site classroom for Sera Lortin's video-review sessions pending receipt of the required medical clearance from Merrowgate Development Squad.",
+        "decoded_sentence_full": "The Carterline Regional Aquatics Federation asked Brindemoor Aquatic Complex to reserve the on-site classroom for Sera Lortin's video-review sessions pending receipt of the required medical clearance from Merrowgate Development Squad.",
+        "entity_ids": [
+          "BUILDING-1",
+          "ORGANIZATION-1",
+          "ORGANIZATION-2",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N3-S9": {
+        "sentence": "{Brindemoor Aquatic Complex|BUILDING-1} placed a provisional hold on the clinic classroom for the 2025-08-05 to 2025-08-18 period and confirmed the room's AV setup includes a ceiling-mounted projector and a laptop playback station compatible with high-frame-rate video files, with seating arranged for up to 20 people pending the {Carterline Regional Aquatics Federation|ORGANIZATION-2}'s final approval.",
+        "decoded_sentence": "Brindemoor Aquatic Complex placed a provisional hold on the clinic classroom for the 2025-08-05 to 2025-08-18 period and confirmed the room's AV setup includes a ceiling-mounted projector and a laptop playback station compatible with high-frame-rate video files, with seating arranged for up to 20 people pending the Carterline Regional Aquatics Federation's final approval.",
+        "decoded_sentence_full": "Brindemoor Aquatic Complex placed a provisional hold on the clinic classroom for the 2025-08-05 to 2025-08-18 period and confirmed the room's AV setup includes a ceiling-mounted projector and a laptop playback station compatible with high-frame-rate video files, with seating arranged for up to 20 people pending the Carterline Regional Aquatics Federation's final approval.",
+        "entity_ids": [
+          "BUILDING-1",
+          "ORGANIZATION-2"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N4-S0": {
+        "sentence": "{Merrowgate Development Squad|ORGANIZATION-1} physiotherapist {Rowan Myles|PERSON-4} conducted an on-site reassessment of {Sera Lortin|PERSON-1} at {Brindemoor Aquatic Complex|BUILDING-1} on the evening of 2025-08-04.",
+        "decoded_sentence": "Merrowgate Development Squad physiotherapist Rowan Myles conducted an on-site reassessment of Sera Lortin at Brindemoor Aquatic Complex on the evening of 2025-08-04.",
+        "decoded_sentence_full": "Merrowgate Development Squad physiotherapist Rowan Myles conducted an on-site reassessment of Sera Lortin at Brindemoor Aquatic Complex on the evening of 2025-08-04.",
+        "entity_ids": [
+          "BUILDING-1",
+          "ORGANIZATION-1",
+          "PERSON-1",
+          "PERSON-4"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N4-S1": {
+        "sentence": "The reassessment began at approximately 19:10 local time, lasted about 25 minutes, and included recorded range-of-motion measurements, resisted shoulder tests and a documented pain-on-load rating of 4/10 for the left shoulder.",
+        "decoded_sentence": "The reassessment began at approximately 19:10 local time, lasted about 25 minutes, and included recorded range-of-motion measurements, resisted shoulder tests and a documented pain-on-load rating of 4/10 for the left shoulder.",
+        "decoded_sentence_full": "The reassessment began at approximately 19:10 local time, lasted about 25 minutes, and included recorded range-of-motion measurements, resisted shoulder tests and a documented pain-on-load rating of 4/10 for the left shoulder.",
+        "entity_ids": [],
+        "has_entity_name_conflict": false
+      },
+      "N4-S2": {
+        "sentence": "{Rowan Myles|PERSON-4} issued a same-day written medical clearance restricting {Sera Lortin|PERSON-1} to classroom and dryland sessions only and advising that {Sera Lortin|PERSON-1} must not undertake in-pool activity for the clinic period.",
+        "decoded_sentence": "Rowan Myles issued a same-day written medical clearance restricting Sera Lortin to classroom and dryland sessions only and advising that Sera Lortin must not undertake in-pool activity for the clinic period.",
+        "decoded_sentence_full": "Rowan Myles issued a same-day written medical clearance restricting Sera Lortin to classroom and dryland sessions only and advising that Sera Lortin must not undertake in-pool activity for the clinic period.",
+        "entity_ids": [
+          "PERSON-1",
+          "PERSON-1",
+          "PERSON-4"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N4-S3": {
+        "sentence": "The same-day written clearance, signed and dated by {Rowan Myles|PERSON-4}, specified a provisional diagnosis of left subacromial tendinopathy, a no-pool restriction for the two-week clinic period, and recommended supervised rotator-cuff strengthening and twice-daily ice as part of the dryland programme.",
+        "decoded_sentence": "The same-day written clearance, signed and dated by Rowan Myles, specified a provisional diagnosis of left subacromial tendinopathy, a no-pool restriction for the two-week clinic period, and recommended supervised rotator-cuff strengthening and twice-daily ice as part of the dryland programme.",
+        "decoded_sentence_full": "The same-day written clearance, signed and dated by Rowan Myles, specified a provisional diagnosis of left subacromial tendinopathy, a no-pool restriction for the two-week clinic period, and recommended supervised rotator-cuff strengthening and twice-daily ice as part of the dryland programme.",
+        "entity_ids": [
+          "PERSON-4"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N4-S4": {
+        "sentence": "{Merrowgate Development Squad|ORGANIZATION-1} forwarded {Rowan Myles|PERSON-4}'s written medical clearance to the {Carterline Regional Aquatics Federation|ORGANIZATION-2} by email on the evening of 2025-08-04; {Merrowgate Development Squad|ORGANIZATION-1} had previously aimed to submit clearance by 2025-07-30 but scheduling required the physiotherapist reassessment to occur on 2025-08-04, so the clearance was sent same-day after that assessment.",
+        "decoded_sentence": "Merrowgate Development Squad forwarded Rowan Myles's written medical clearance to the Carterline Regional Aquatics Federation by email on the evening of 2025-08-04; Merrowgate Development Squad had previously aimed to submit clearance by 2025-07-30 but scheduling required the physiotherapist reassessment to occur on 2025-08-04, so the clearance was sent same-day after that assessment.",
+        "decoded_sentence_full": "Merrowgate Development Squad forwarded Rowan Myles's written medical clearance to the Carterline Regional Aquatics Federation by email on the evening of 2025-08-04; Merrowgate Development Squad had previously aimed to submit clearance by 2025-07-30 but scheduling required the physiotherapist reassessment to occur on 2025-08-04, so the clearance was sent same-day after that assessment.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "ORGANIZATION-1",
+          "ORGANIZATION-2",
+          "PERSON-4"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N4-S5": {
+        "sentence": "{Merrowgate Development Squad|ORGANIZATION-1} sent the clearance as a PDF attachment titled \"{S_Lortin_Clearance_20250804.pdf|MISCELLANEOUS-1}\" in a 20:03 email to the {Carterline Regional Aquatics Federation|ORGANIZATION-2} selection coordinator and included {Rowan Myles|PERSON-4}'s direct mobile number for same-day follow-up.",
+        "decoded_sentence": "Merrowgate Development Squad sent the clearance as a PDF attachment titled \"S_Lortin_Clearance_20250804.pdf\" in a 20:03 email to the Carterline Regional Aquatics Federation selection coordinator and included Rowan Myles's direct mobile number for same-day follow-up.",
+        "decoded_sentence_full": "Merrowgate Development Squad sent the clearance as a PDF attachment titled \"S_Lortin_Clearance_20250804.pdf\" in a 20:03 email to the Carterline Regional Aquatics Federation selection coordinator and included Rowan Myles's direct mobile number for same-day follow-up.",
+        "entity_ids": [
+          "MISCELLANEOUS-1",
+          "ORGANIZATION-1",
+          "ORGANIZATION-2",
+          "PERSON-4"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N4-S6": {
+        "sentence": "The {Carterline Regional Aquatics Federation|ORGANIZATION-2} approved conditional classroom-only attendance for {Sera Lortin|PERSON-1} under the requirement of daily on-site physiotherapy monitoring by {Rowan Myles|PERSON-4} and a strict no-pool restriction.",
+        "decoded_sentence": "The Carterline Regional Aquatics Federation approved conditional classroom-only attendance for Sera Lortin under the requirement of daily on-site physiotherapy monitoring by Rowan Myles and a strict no-pool restriction.",
+        "decoded_sentence_full": "The Carterline Regional Aquatics Federation approved conditional classroom-only attendance for Sera Lortin under the requirement of daily on-site physiotherapy monitoring by Rowan Myles and a strict no-pool restriction.",
+        "entity_ids": [
+          "ORGANIZATION-2",
+          "PERSON-1",
+          "PERSON-4"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N4-S7": {
+        "sentence": "The {Carterline Regional Aquatics Federation|ORGANIZATION-2}'s approval email, issued at 21:14, added that {Rowan Myles|PERSON-4} must conduct a brief pre-class check each morning, provide a one-line written progress note to the {Carterline Regional Aquatics Federation|ORGANIZATION-2} after each monitoring session, and immediately notify the {Carterline Regional Aquatics Federation|ORGANIZATION-2} if {Sera Lortin|PERSON-1}'s symptoms worsened.",
+        "decoded_sentence": "The Carterline Regional Aquatics Federation's approval email, issued at 21:14, added that Rowan Myles must conduct a brief pre-class check each morning, provide a one-line written progress note to the Carterline Regional Aquatics Federation after each monitoring session, and immediately notify the Carterline Regional Aquatics Federation if Sera Lortin's symptoms worsened.",
+        "decoded_sentence_full": "The Carterline Regional Aquatics Federation's approval email, issued at 21:14, added that Rowan Myles must conduct a brief pre-class check each morning, provide a one-line written progress note to the Carterline Regional Aquatics Federation after each monitoring session, and immediately notify the Carterline Regional Aquatics Federation if Sera Lortin's symptoms worsened.",
+        "entity_ids": [
+          "ORGANIZATION-2",
+          "ORGANIZATION-2",
+          "ORGANIZATION-2",
+          "PERSON-1",
+          "PERSON-4"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N4-S8": {
+        "sentence": "{Ivo Harlen|PERSON-2} arrived at {Brindemoor Aquatic Complex|BUILDING-1} on the evening of 2025-08-04 to act as team guardian for {Sera Lortin|PERSON-1} and to coordinate on-site physiotherapy monitoring arrangements with the {Carterline Regional Aquatics Federation|ORGANIZATION-2}.",
+        "decoded_sentence": "Ivo Harlen arrived at Brindemoor Aquatic Complex on the evening of 2025-08-04 to act as team guardian for Sera Lortin and to coordinate on-site physiotherapy monitoring arrangements with the Carterline Regional Aquatics Federation.",
+        "decoded_sentence_full": "Ivo Harlen arrived at Brindemoor Aquatic Complex on the evening of 2025-08-04 to act as team guardian for Sera Lortin and to coordinate on-site physiotherapy monitoring arrangements with the Carterline Regional Aquatics Federation.",
+        "entity_ids": [
+          "BUILDING-1",
+          "ORGANIZATION-2",
+          "PERSON-1",
+          "PERSON-2"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N4-S9": {
+        "sentence": "{Ivo Harlen|PERSON-2} checked in at {Brindemoor Aquatic Complex|BUILDING-1} reception at about 20:30, provided a local emergency contact for {Sera Lortin|PERSON-1}, and confirmed by phone with the {Carterline Regional Aquatics Federation|ORGANIZATION-2}'s selection coordinator that physiotherapy monitoring would commence with an 08:15 check on 2025-08-05.",
+        "decoded_sentence": "Ivo Harlen checked in at Brindemoor Aquatic Complex reception at about 20:30, provided a local emergency contact for Sera Lortin, and confirmed by phone with the Carterline Regional Aquatics Federation's selection coordinator that physiotherapy monitoring would commence with an 08:15 check on 2025-08-05.",
+        "decoded_sentence_full": "Ivo Harlen checked in at Brindemoor Aquatic Complex reception at about 20:30, provided a local emergency contact for Sera Lortin, and confirmed by phone with the Carterline Regional Aquatics Federation's selection coordinator that physiotherapy monitoring would commence with an 08:15 check on 2025-08-05.",
+        "entity_ids": [
+          "BUILDING-1",
+          "ORGANIZATION-2",
+          "PERSON-1",
+          "PERSON-2"
+        ],
+        "has_entity_name_conflict": false
+      }
+    },
+    "CREATED_AT": 1,
+    "NUM_QUESTIONS": 1,
+    "NUM_DISTRACTORS": 5,
+    "SUBSET_IDX": 0,
+    "SELECTED_SENTENCES": "<item><id>N0-S7</id><text>Coach Ivo Harlen added that Sera Lortin produced a negative split\u2014covering the second 100 meters in 59.20 seconds\u2014and credited targeted 8x100 race-pace sets in training for the strong finish.</text></item>\n<item><id>N1-S7</id><text>Merrowgate Development Squad stated that Ivo Harlen will bring Sera Lortin's recent training log, official race split sheets from the championship, and a short written summary of the team's 8x100 race-pace sets for review during the evaluation.</text></item>",
+    "SELECTION_EXPLANATION": "These two sentences both mention Coach Ivo Harlen and connect a specific training element (the targeted 8x100 race-pace sets that he credited for Sera's strong finish in the championship final) with the materials he will bring to the subsequent evaluation (a short written summary of the team's 8x100 race-pace sets). Together they form a clear multi-hop chain across the two events: the coach attributes performance to a particular training set, and he will present documentation about that same set at the follow-up evaluation\u2014ideal for generating challenging multi-hop questions that require linking the credited training practice to the items the coach will provide.",
+    "SELECTION_IDX": 0,
+    "EVIDENCE_CURRENT_SELECTIONS": [
+      "N0-S7",
+      "N1-S7"
+    ],
+    "QA_CURRENT_PAIR": {
+      "question": "What item will the coach who said Sera covered the second 100 meters in 59.20 seconds bring for review that documents the team's 8x100 race-pace sets?",
+      "question_id": "e7dd64e31328a1f17f5005ced464f2cc38784871d7c2e6027ed060f204643425",
+      "evidence_ids": [
+        "N1-S7",
+        "N0-S7"
+      ],
+      "answer": "a short written summary of the team's 8x100 race-pace sets",
+      "num_hops": 2,
+      "created_at": 1,
+      "category": "multi-multi-hop-bridge",
+      "validation": {
+        "is_valid": true,
+        "validations": []
+      },
+      "distractors": [
+        {
+          "answer": "Sera Lortin's recent training log",
+          "explanation": "Incorrect \u2014 while the coach will bring the recent training log to the evaluation (and it may contain training details), the outline specifically identifies a \"short written summary of the team's 8x100 race-pace sets\" as the item documenting those sets.",
+          "distractor-sentences": [
+            "N1-S7",
+            "N0-S7"
+          ]
+        },
+        {
+          "answer": "Official race split sheets from the championship",
+          "explanation": "Incorrect \u2014 the split sheets document Sera's race times and splits (and are listed among items to be brought), but they are not the short written summary that explicitly describes the team's 8x100 race-pace sets.",
+          "distractor-sentences": [
+            "N1-S7",
+            "N0-S3"
+          ]
+        },
+        {
+          "answer": "The Carterline Regional Aquatics Federation's formal ratification letter",
+          "explanation": "Incorrect \u2014 the ratification letter verifies and records Sera's 1:59.86 performance, but it does not serve as the coach's written summary of the team's 8x100 race-pace sets.",
+          "distractor-sentences": [
+            "N1-S1",
+            "N1-S6"
+          ]
+        },
+        {
+          "answer": "The updated results PDF posted to the championship website",
+          "explanation": "Incorrect \u2014 the updated results PDF records official meet results and Sera's new meet record, but it is not the short written summary of the team's 8x100 race-pace sets that the coach will bring for review.",
+          "distractor-sentences": [
+            "N0-S9",
+            "N0-S8"
+          ]
+        },
+        {
+          "answer": "A race video for the 15-minute video stroke analysis",
+          "explanation": "Incorrect \u2014 a race video would be used for the planned video stroke analysis during the evaluation, yet the outline specifies the coach will bring a short written summary of the 8x100 race-pace sets rather than a race video as that specific documentation.",
+          "distractor-sentences": [
+            "N1-S5",
+            "N0-S2"
+          ]
+        }
+      ],
+      "distractor_answers": [
+        "The Carterline Regional Aquatics Federation's formal ratification letter",
+        "The updated results PDF posted to the championship website",
+        "Official race split sheets from the championship",
+        "A race video for the 15-minute video stroke analysis",
+        "Sera Lortin's recent training log",
+        "a short written summary of the team's 8x100 race-pace sets"
+      ],
+      "gold_answer_idx": 5,
+      "false_premise_category": null,
+      "false_premise_sentence_id": null,
+      "misc": {
+        "additional_sent": {
+          "additional_sentence_ids": [],
+          "additional_sentence_explanation": ""
+        },
+        "use_decoded": "corrected"
+      },
+      "event_information": {
+        "event_type": {
+          "category": "Major Tournament Results and Championship Outcomes",
+          "event_type_id": "sports:0"
+        },
+        "event_type_id": "sports:0",
+        "story_seed_id": "sports:0:1"
+      }
+    },
+    "QUESTION": "What item will the coach who said Sera covered the second 100 meters in 59.20 seconds bring for review that documents the team's 8x100 race-pace sets?",
+    "ANSWER": "a short written summary of the team's 8x100 race-pace sets"
+  }
+}

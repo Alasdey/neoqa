@@ -1,0 +1,1958 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "microsoft/phi-4-reasoning-plus",
+    "temperature": 0.0,
+    "max-tokens": 4096
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "```xml\n<results>\n<location>\n<entity_id>LOCATION-2</entity_id>\n<update>Westfield High School hosted the Mind and Body Symposium in its newly renovated auditorium.</update>\n<name>Westfield High School</name>\n<last_updated>2025-09-01</last_updated>\n</location>\n\n<person>\n<entity_id>PERSON-1</entity_id>\n<update>Mia Thompson shared her experiences at the Mind and Body Symposium, highlighting the benefits of academic support for her athletic performance.</update>\n<last_updated>2025-09-01</last_updated>\n</person>\n\n<person>\n<entity_id>PERSON-2</entity_id>\n<update>Alex Rivers gave concluding remarks at the Mind and Body Symposium, emphasizing holistic development.</update>\n<last_updated>2025-09-01</last_updated>\n</person>\n\n<person>\n<entity_id>PERSON-3</entity_id>\n<update>Jesse Hartley discussed psychological resilience techniques at the Mind and Body Symposium.</update>\n<last_updated>2025-09-01</last_updated>\n</person>\n\n<person>\n<entity_id>PERSON-4</entity_id>\n<update>Dr. Evelyn Grant delivered lectures at the Mind and Body Symposium on cognitive development and mental health in student athletes.</update>\n<last_updated>2025-09-01</last_updated>\n</person>\n\n<person>\n<entity_id>PERSON-5</entity_id>\n<update>Principal Sarah Langley spoke at the Mind and Body Symposium about integrating educational strategies with athletic training methodologies.</update>\n<last_updated>2025-09-01</last_updated>\n</person>\n\n<person>\n<entity_id>PERSON-6</entity_id>\n<update>Mark Benson presented a new mentorship program at the Mind and Body Symposium tailored for student athletes.</update>\n<last_updated>2025-09-01</last_updated>\n</person>\n\n<organization>\n<entity_id>ORGANIZATION-1</entity_id>\n<update>The National Youth Athletics Federation's chief instructor, Jesse Hartley, highlighted psychological resilience techniques at the Mind and Body Symposium.</update>\n<last_updated>2025-09-01</last_updated>\n</organization>\n\n<organization>\n<entity_id>ORGANIZATION-6</entity_id>\n<update>The Westfield Community Council announced a grant for new academic programs following the Mind and Body Symposium.</update>\n<last_updated>2025-09-01</last_updated>\n</organization>\n\n<product>\n<entity_id>PRODUCT-2</entity_id>\n<update>Lumosity was featured in interactive workshops at the Mind and Body Symposium to enhance cognitive skills.</update>\n<last_updated>2025-09-01</last_updated>\n</product>\n\n<event>\n<entity_id>EVENT-4</entity_id>\n<update>The Mind and Body Symposium was successfully held at Westfield High School, focusing on the integration of academic and athletic development.</update>\n<last_updated>2025-09-01</last_updated>\n</event>\n\n<miscellaneous>\n<entity_id>MISCELLANEOUS-1</entity_id>\n<update>The Pomodoro Technique was demonstrated in workshops at the Mind and Body Symposium to improve focus and retention.</update>\n<last_updated>2025-09-01</last_updated>\n</miscellaneous>\n</results>\n```"
+  },
+  "response": "```xml\n<results>\n<location>\n<entity_id>LOCATION-2</entity_id>\n<update>Westfield High School hosted the Mind and Body Symposium in its newly renovated auditorium.</update>\n<name>Westfield High School</name>\n<last_updated>2025-09-01</last_updated>\n</location>\n\n<person>\n<entity_id>PERSON-1</entity_id>\n<update>Mia Thompson shared her experiences at the Mind and Body Symposium, highlighting the benefits of academic support for her athletic performance.</update>\n<last_updated>2025-09-01</last_updated>\n</person>\n\n<person>\n<entity_id>PERSON-2</entity_id>\n<update>Alex Rivers gave concluding remarks at the Mind and Body Symposium, emphasizing holistic development.</update>\n<last_updated>2025-09-01</last_updated>\n</person>\n\n<person>\n<entity_id>PERSON-3</entity_id>\n<update>Jesse Hartley discussed psychological resilience techniques at the Mind and Body Symposium.</update>\n<last_updated>2025-09-01</last_updated>\n</person>\n\n<person>\n<entity_id>PERSON-4</entity_id>\n<update>Dr. Evelyn Grant delivered lectures at the Mind and Body Symposium on cognitive development and mental health in student athletes.</update>\n<last_updated>2025-09-01</last_updated>\n</person>\n\n<person>\n<entity_id>PERSON-5</entity_id>\n<update>Principal Sarah Langley spoke at the Mind and Body Symposium about integrating educational strategies with athletic training methodologies.</update>\n<last_updated>2025-09-01</last_updated>\n</person>\n\n<person>\n<entity_id>PERSON-6</entity_id>\n<update>Mark Benson presented a new mentorship program at the Mind and Body Symposium tailored for student athletes.</update>\n<last_updated>2025-09-01</last_updated>\n</person>\n\n<organization>\n<entity_id>ORGANIZATION-1</entity_id>\n<update>The National Youth Athletics Federation's chief instructor, Jesse Hartley, highlighted psychological resilience techniques at the Mind and Body Symposium.</update>\n<last_updated>2025-09-01</last_updated>\n</organization>\n\n<organization>\n<entity_id>ORGANIZATION-6</entity_id>\n<update>The Westfield Community Council announced a grant for new academic programs following the Mind and Body Symposium.</update>\n<last_updated>2025-09-01</last_updated>\n</organization>\n\n<product>\n<entity_id>PRODUCT-2</entity_id>\n<update>Lumosity was featured in interactive workshops at the Mind and Body Symposium to enhance cognitive skills.</update>\n<last_updated>2025-09-01</last_updated>\n</product>\n\n<event>\n<entity_id>EVENT-4</entity_id>\n<update>The Mind and Body Symposium was successfully held at Westfield High School, focusing on the integration of academic and athletic development.</update>\n<last_updated>2025-09-01</last_updated>\n</event>\n\n<miscellaneous>\n<entity_id>MISCELLANEOUS-1</entity_id>\n<update>The Pomodoro Technique was demonstrated in workshops at the Mind and Body Symposium to improve focus and retention.</update>\n<last_updated>2025-09-01</last_updated>\n</miscellaneous>\n</results>\n```",
+  "instructions": "You are an AI assistant tasked with updating a list of fictional entities based on an outline of events. Follow these instructions carefully to complete the task:\n\n1. First, read the outline of the fictional event:\n<outline>\n{{OUTLINE}}\n</outline>\n\n2. Next, review the list of fictional entities:\n<entities>\n{{USED_LOCATION_XML}}\n{{USED_PERSON_XML}}\n{{USED_ORGANIZATION_XML}}\n{{USED_PRODUCT_XML}}\n{{USED_ART_XML}}\n{{USED_EVENT_XML}}\n{{USED_BUILDING_XML}}\n{{USED_MISCELLANEOUS_XML}}\n</entities>\n\n3. For each entity in the list, follow these steps:\n   a. Identify the entity's role in the outline. Create an update sentence describing how the entity was affected by or involved in the events described in the outline.\n   b. Review all properties of the entity EXCEPT for \"id\", \"created_at\", \"history\", and \"entity_class\".\n   c. For each property:\n      - If the property does not need to be updated based on the outline, leave it as-is.\n      - If the events or the time difference since the last update (last_updated) indicate that the value has changed, update it accordingly.\n      - Ensure the new value is consistent with the outline, other entities, and plausible given the time difference.\n   d. Do not alter the \"description\" field unless the current description is no longer valid after the events in the outline.\n\n4. Output your results for each entity in the following format:\n<results>\n<[entity_type]>\n<entity_id>[Insert entity id here]</entity_id>\n<update>[Insert your update sentence here]</update>\n[List any properties that were changed, with their new values, using the format:]\n<[property_name]>[new value]</[property_name]>\n</[entity_type]>\n[Repeat for each entity]\n</results>\n\n5. Important reminders:\n   - Stick to the information provided in the outline and entities list. Do not invent new details or events.\n   - Ensure all updates and changes are consistent with the outline and with each other.\n   - Be concise in your updates, focusing only on relevant changes.\n   - If no properties need to be changed for an entity, do not include any property tags.\n   - Process each entity in the order they are presented in the list.\n   - Use the appropriate entity type tag (e.g., <location>, <person>, etc.) instead of <entity_update>.\n   - Begin your response with the first entity update immediately, without any preamble.\n\nAll actual results should be listed in <location>, <organization>, <person>, <product>, <art>, <building>, <event>, or <miscellaneous> nodes within the <results> node.\nDo not include any content outside of the <results> tags in your response.\n\nStart processing the entities now, following the instructions and format provided above.",
+  "text_prompt": "You are an AI assistant tasked with updating a list of fictional entities based on an outline of events. Follow these instructions carefully to complete the task:\n\n1. First, read the outline of the fictional event:\n<outline>\nThe {Westfield High School|LOCATION-2}, in collaboration with {Westfield Community Council|ORGANIZATION-6}, hosted an educational symposium titled \"{Mind and Body Symposium|EVENT-4}.\"\nThe symposium was held in the newly renovated auditorium of {Westfield High School|LOCATION-2}, which can accommodate up to 300 attendees, providing an ideal setting for interactive discussions.\nThe symposium's agenda included lectures on the importance of balancing academics and athletics, with key insights from educational psychologist {Dr. Evelyn Grant|PERSON-4}.\n{Dr. Evelyn Grant|PERSON-4}'s lectures covered topics such as cognitive development in student athletes and the role of mental health in academic performance.\n{Dr. Evelyn Grant|PERSON-4} emphasized the benefits of integrated learning models, proposing innovative curriculum enhancements to better equip students for both academic and sporting excellence.\nShe proposed a curriculum that includes modules on time management, stress reduction techniques, and interdisciplinary projects combining science and sports.\nHead of {Westfield High School|LOCATION-2}, {Principal Sarah Langley|PERSON-5}, expressed that the symposium's aim was to strengthen academic resources by drawing parallels between educational strategies and athletic training methodologies.\n{Principal Langley|PERSON-5} highlighted methodologies such as goal-setting techniques used in sports and their application in academic planning.\nDuring the event, {Mia Thompson|PERSON-1}, a student athlete at {Westfield High School|LOCATION-2}, shared her experiences on how academic support improved her performance in track events.\n{Mia Thompson|PERSON-1} credited the school's tutoring program and study groups for helping her manage her coursework alongside her training schedule.\nLocal educational consultant, {Mark Benson|PERSON-6}, presented a new mentorship program tailored for student athletes, focusing on skills transferable between academics and athletics.\nThe mentorship program pairs student athletes with academic mentors who provide guidance on balancing schoolwork and sports commitments.\nInteractive workshops allowed attendees to explore cognitive training apps and study techniques designed to enhance concentration and memory for student scholars and athletes alike.\nWorkshops featured apps like {Lumosity|PRODUCT-2} and techniques such as the {Pomodoro Technique|MISCELLANEOUS-1}, which help improve focus and retention.\n{Jesse Hartley|PERSON-3}, the {National Youth Athletics Federation|ORGANIZATION-1}'s appointed chief instructor, highlighted how psychological resilience learned in academics can be advantageous on the sports field.\n{Hartley|PERSON-3} discussed techniques such as visualization and positive self-talk, which athletes can use to overcome challenges both in sports and academics.\nThe {Westfield Community Council|ORGANIZATION-6} announced a grant for the development of new academic programs, based on feedback from the successful August youth sports workshop.\nThe grant will fund programs such as a STEM initiative and a leadership development course, both aimed at enhancing student athletes' academic and personal growth.\nConcluding remarks were given by {Alex Rivers|PERSON-2}, who underscored the critical role of holistic development in cultivating successful future leaders both in sports and academics.\n{Rivers|PERSON-2} emphasized the importance of nurturing emotional intelligence and ethical decision-making as key components of holistic development.\n</outline>\n\n2. Next, review the list of fictional entities:\n<entities>\n<location><area>2.5 acres</area><country>Rainfieldia</country><created_at>2</created_at><description>Westfield High School is a well-regarded public high school, celebrated for its strong academic and athletic programs.</description><elevation>360 feet</elevation><entity_class>location</entity_class><history><event>2025-08-15: Westfield High School's gymnasium served as the venue for the National Youth Athletics Federation's youth sports workshop.</event></history><id>LOCATION-2</id><last_updated>2025-08-15</last_updated><name>Westfield High School</name><population>1,200 (students enrolled)</population><type>educational institution</type></location>\n<person><created_at>0</created_at><date_of_birth>2009-03-15</date_of_birth><description>Mia Thompson is a dedicated and disciplined young athlete known for her enthusiasm and commitment to improving her sporting skills.</description><education>High school athlete with aspirations to compete on a national level</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>Female</gender><hair_color>brown</hair_color><height>5 feet 2 inches</height><history><event>2025-07-22: Mia Thompson, a young athlete, expressed appreciation for HydroBoost's commitment to natural ingredients and sustainable packaging.</event><event>2025-07-28: Mia Thompson participated in the Relay Race Challenge at the Westfield Community Fun Fair and expressed gratitude towards HydroBoost Beverages Inc. for their supportive atmosphere.</event><event>2025-08-15: Mia Thompson was recognized for her enthusiastic participation and impressive performance during the National Youth Athletics Federation's youth sports workshop.</event></history><id>PERSON-1</id><last_updated>2025-07-22</last_updated><marital_status>Single</marital_status><name>Mia Thompson</name><nationality>Rainfieldian</nationality><political_affiliation>None</political_affiliation><profession>Sprinter</profession><type>None</type><weight>120 pounds</weight></person>\n<person><created_at>1</created_at><date_of_birth>1992-11-14</date_of_birth><description>Alex Rivers is celebrated for his inspirational journey from a humble background to prominence in national sports and for his commitment to community engagement.</description><education>Master's in Sports Management</education><entity_class>person</entity_class><eye_color>green</eye_color><gender>Male</gender><hair_color>dark brown</hair_color><height>6 feet 1 inch</height><history><event>2025-07-28: Alex Rivers spoke at the opening ceremony of the Westfield Community Fun Fair, emphasizing the importance of community support in sports and praising the National Youth Athletics Federation.</event><event>2025-08-15: Alex Rivers led the \"Sportsmanship and Leadership\" seminar at the National Youth Athletics Federation's youth sports workshop, sharing insights from his career.</event></history><id>PERSON-2</id><last_updated>2025-07-28</last_updated><marital_status>Married</marital_status><name>Alex Rivers</name><nationality>Rainfieldian</nationality><political_affiliation>None</political_affiliation><profession>Renowned Sports Personality</profession><spouse>Jennifer Rivers</spouse><type>None</type><weight>180 pounds</weight></person>\n<person><created_at>2</created_at><date_of_birth>1985-04-10</date_of_birth><description>Jesse Hartley is a dedicated sports coach known for his innovative training techniques and motivational leadership.</description><education>Master's in Sports Psychology</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>Male</gender><hair_color>chestnut</hair_color><height>6 feet 0 inches</height><history><event>2025-08-15: Jesse Hartley was appointed as the chief instructor for the National Youth Athletics Federation's youth sports workshop, where he shared motivational talks and led training sessions.</event></history><id>PERSON-3</id><last_updated>2025-08-15</last_updated><marital_status>Married</marital_status><name>Jesse Hartley</name><nationality>Rainfieldian</nationality><profession>Coach</profession><spouse>Tamara Hartley</spouse><type>None</type><weight>175 pounds</weight></person>\n<person><created_at>3</created_at><date_of_birth>1982-06-15</date_of_birth><description>Dr. Evelyn Grant is a respected educational psychologist known for her innovative research on cognitive development and the integration of mental health with academic performance.</description><education>Ph.D. in Educational Psychology</education><entity_class>person</entity_class><eye_color>green</eye_color><gender>Female</gender><hair_color>dark brown</hair_color><height>5 feet 7 inches</height><history></history><id>PERSON-4</id><last_updated>2025-09-01</last_updated><marital_status>Married</marital_status><name>Dr. Evelyn Grant</name><nationality>Rainfieldian</nationality><political_affiliation>None</political_affiliation><profession>Educational Psychologist</profession><type>None</type><weight>145 pounds</weight></person>\n<person><created_at>3</created_at><date_of_birth>1975-09-20</date_of_birth><description>Principal Sarah Langley is a visionary leader renowned for her commitment to fostering balanced education emphasizing both academics and athletics at Westfield High School.</description><education>M.A. in Educational Leadership</education><entity_class>person</entity_class><eye_color>hazel</eye_color><gender>Female</gender><hair_color>brown</hair_color><height>5 feet 6 inches</height><history></history><id>PERSON-5</id><last_updated>2025-09-01</last_updated><marital_status>Single</marital_status><name>Principal Sarah Langley</name><nationality>Rainfieldian</nationality><political_affiliation>None</political_affiliation><profession>Principal</profession><type>None</type><weight>135 pounds</weight></person>\n<person><created_at>3</created_at><date_of_birth>1990-11-11</date_of_birth><description>Mark Benson is an educational consultant recognized for creating mentorship programs tailored to enhancing both academic and athletic skills among students.</description><education>MBA in Education Management</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>Male</gender><hair_color>blonde</hair_color><height>5 feet 10 inches</height><history></history><id>PERSON-6</id><last_updated>2025-09-01</last_updated><marital_status>Married</marital_status><name>Mark Benson</name><nationality>Rainfieldian</nationality><political_affiliation>None</political_affiliation><profession>Educational Consultant</profession><type>None</type><weight>165 pounds</weight></person>\n<organization><annual_revenue>$4 million</annual_revenue><created_at>0</created_at><description>The National Youth Athletics Federation is dedicated to promoting youth sports and providing opportunities for young athletes to excel.</description><entity_class>organization</entity_class><founded>1985</founded><headquarters>Rainfieldia City</headquarters><history><event>2025-07-22: The National Youth Athletics Federation has partnered with HydroBoost as the official sponsor for the Youth Track and Field Championship.</event><event>2025-07-28: The National Youth Athletics Federation was praised by Alex Rivers at the Westfield Community Fun Fair for nurturing grassroots sports talent and organized the prize distribution for the Relay Race Challenge.</event><event>2025-08-15: The National Youth Athletics Federation organized a youth sports workshop in partnership with Westfield High School, focusing on community engagement and youth athletics.</event></history><id>ORGANIZATION-1</id><industry>athletics</industry><last_updated>2025-07-22</last_updated><mission_statement>To nurture young athletic talent and foster a culture of healthy competition and sportsmanship.</mission_statement><name>National Youth Athletics Federation</name><number_of_employees>75</number_of_employees><type>non-profit</type></organization>\n<organization><annual_revenue>$200,000</annual_revenue><created_at>2</created_at><description>The Westfield Community Council focuses on promoting community development and engaging residents in local initiatives.</description><entity_class>organization</entity_class><founded>1990</founded><headquarters>Westfield</headquarters><history><event>2025-08-15: The Westfield Community Council funded sports equipment and refreshments for the National Youth Athletics Federation's youth sports workshop.</event></history><id>ORGANIZATION-6</id><industry>community development</industry><last_updated>2025-08-15</last_updated><mission_statement>To empower the community through active participation and sustainable growth initiatives.</mission_statement><name>Westfield Community Council</name><number_of_employees>20</number_of_employees><type>non-profit</type></organization>\n<product><created_at>3</created_at><description>Lumosity is a cognitive training app designed to improve mental skills such as memory, attention, and problem-solving through engaging brain games.</description><entity_class>product</entity_class><history></history><id>PRODUCT-2</id><last_updated>2025-09-01</last_updated><manufacturer>Cognitive Minds Ltd.</manufacturer><name>Lumosity</name><price>$12.99 per month</price><release_date>2023-01-15</release_date><type>software</type><warranty>N/A - Software product</warranty><weight>N/A</weight></product>\n\n<event><budget>$8,000</budget><created_at>3</created_at><date>2025-09-01</date><description>The Mind and Body Symposium focuses on blending academic insights with athletic training techniques to promote holistic student development.</description><duration>1 day</duration><entity_class>event</entity_class><history></history><id>EVENT-4</id><last_updated>2025-09-01</last_updated><name>Mind and Body Symposium</name><number_of_participants>300</number_of_participants><organizer>Westfield High School in partnership with the Westfield Community Council</organizer><type>cultural</type></event>\n\n<miscellaneous><created_at>3</created_at><description>The Pomodoro Technique is a time management method that uses timed intervals to enhance focus and productivity, particularly in academic and professional settings.</description><entity_class>miscellaneous</entity_class><history></history><id>MISCELLANEOUS-1</id><last_updated>2025-09-01</last_updated><name>Pomodoro Technique</name><type>method</type></miscellaneous>\n</entities>\n\n3. For each entity in the list, follow these steps:\n   a. Identify the entity's role in the outline. Create an update sentence describing how the entity was affected by or involved in the events described in the outline.\n   b. Review all properties of the entity EXCEPT for \"id\", \"created_at\", \"history\", and \"entity_class\".\n   c. For each property:\n      - If the property does not need to be updated based on the outline, leave it as-is.\n      - If the events or the time difference since the last update (last_updated) indicate that the value has changed, update it accordingly.\n      - Ensure the new value is consistent with the outline, other entities, and plausible given the time difference.\n   d. Do not alter the \"description\" field unless the current description is no longer valid after the events in the outline.\n\n4. Output your results for each entity in the following format:\n<results>\n<[entity_type]>\n<entity_id>[Insert entity id here]</entity_id>\n<update>[Insert your update sentence here]</update>\n[List any properties that were changed, with their new values, using the format:]\n<[property_name]>[new value]</[property_name]>\n</[entity_type]>\n[Repeat for each entity]\n</results>\n\n5. Important reminders:\n   - Stick to the information provided in the outline and entities list. Do not invent new details or events.\n   - Ensure all updates and changes are consistent with the outline and with each other.\n   - Be concise in your updates, focusing only on relevant changes.\n   - If no properties need to be changed for an entity, do not include any property tags.\n   - Process each entity in the order they are presented in the list.\n   - Use the appropriate entity type tag (e.g., <location>, <person>, etc.) instead of <entity_update>.\n   - Begin your response with the first entity update immediately, without any preamble.\n\nAll actual results should be listed in <location>, <organization>, <person>, <product>, <art>, <building>, <event>, or <miscellaneous> nodes within the <results> node.\nDo not include any content outside of the <results> tags in your response.\n\nStart processing the entities now, following the instructions and format provided above.",
+  "system-prompt": null,
+  "values": {
+    "GENRE": "Sports",
+    "EVENT_SUMMARY": "Westfield High School's grant is redirected to enhance their academic resources instead of sports facilities, inspired by feedback on educational improvements from the August workshop.",
+    "EVENT_SUMMARY_FOR_NAME": "Westfield High Schoo",
+    "INIT_SUMMARY": "An emerging energy drink brand has secured a deal as the official sponsor of a national youth athletics championship, aiming to boost brand visibility among younger demographics.",
+    "KEYWORDS": "",
+    "CREATED_AT": 3,
+    "HISTORIES": [
+      "<event><date>2025-07-22</date><outline>{HydroBoost|PRODUCT-1}, an emerging energy drink brand, announced its partnership with the {National Youth Athletics Federation|ORGANIZATION-1} as the official sponsor for the upcoming Youth Track and Field Championship. The partnership deal will prominently feature {HydroBoost|PRODUCT-1}'s branding on all event paraphernalia, including athletes' uniforms, event banners, and promotional materials. {HydroBoost|PRODUCT-1}'s logo will be displayed in large, eye-catching fonts on the front of athletes' uniforms, ensuring maximum visibility during competitions. Event banners will be strategically placed around {Vistara Stadium|BUILDING-1}, with {HydroBoost|PRODUCT-1}'s branding prominently displayed at the entrance and main competition areas. At the press conference, {HydroBoost|PRODUCT-1}'s CEO, Liana Sharp, stated, \"This partnership allows us to connect with a dynamic and energetic youth audience, aligning perfectly with our brand's vision.\" Liana Sharp emphasized that {HydroBoost|PRODUCT-1} aims to inspire young athletes by promoting a lifestyle of health, energy, and determination. The {National Youth Athletics Federation|ORGANIZATION-1} officials highlighted the significance of the sponsorship, noting that it would enhance the visibility and experience of the event for young athletes. Officials mentioned that the sponsorship would provide additional funding for improved facilities and resources for the athletes. The event will take place from July 25, 2025, to July 27, 2025, at the {Vistara Stadium|BUILDING-1}, located in the fictional town of {Westfield|LOCATION-1}. {Vistara Stadium|BUILDING-1}, known for its state-of-the-art track and field facilities, has been recently renovated to accommodate the influx of spectators expected for the championship. Local businesses around {Vistara Stadium|BUILDING-1}, such as {GreenLeaf Caf\u00e9|ORGANIZATION-2} and {Sentinel Sports Supply|ORGANIZATION-3}, are preparing for increased footfall due to the event. {GreenLeaf Caf\u00e9|ORGANIZATION-2} plans to introduce a special menu featuring healthy snacks and beverages, while {Sentinel Sports Supply|ORGANIZATION-3} is offering discounts on sports gear for event attendees. {HydroBoost|PRODUCT-1} plans to have a booth at the event, offering free samples of their latest products and engaging attendees with challenges that promote physical activity. The booth will feature interactive games like a mini-obstacle course and a hydration quiz, with winners receiving {HydroBoost|PRODUCT-1} merchandise. Young athletes preparing for the championship have voiced excitement about {HydroBoost|PRODUCT-1}\u2019s focus on health and well-being, with several expressing interest in their products. One athlete, 16-year-old sprinter {Mia Thompson|PERSON-1}, mentioned that she appreciates {HydroBoost|PRODUCT-1}'s commitment to natural ingredients and sustainable packaging. The event itinerary includes opening ceremonies, multiple track and field competitions, and closing ceremonies, which will be attended by local sports enthusiasts and national sports personalities. The opening ceremony will feature a parade of athletes, a performance by the {Westfield High School marching band|ORGANIZATION-4}, and a speech by a renowned national athlete. Reactions from competing energy drink brands have been observed, as some have started to strategize on how to address the new competition presented by {HydroBoost|PRODUCT-1}'s sponsorship. Competing brands are reportedly considering launching targeted marketing campaigns and promotional offers to retain their market share among young consumers.</outline></event>",
+      "<event><date>2025-07-28</date><outline>On July 28, 2025, organizers of the {Westfield Community Fun Fair|EVENT-1} announced the introduction of a newly designed relay race event designed to engage local families and sporting enthusiasts at various booths, including one prominently featuring interactive activities. The relay race was set up across a 1-mile course that looped through the fairgrounds, with each section themed to different sports, such as sprinting, jumping, and throwing. The {Relay Race Challenge|EVENT-2} featured teams composed of local families competing in a series of fun and skill-based sections, distributed across different fairgrounds including areas near {GreenLeaf Caf\u00e9|ORGANIZATION-2}. Each team consisted of four members, with at least one member from each family, ensuring a mix of ages and abilities to promote inclusivity and fun. {HydroBoost Beverages Inc.|ORGANIZATION-5} extended successful athlete engagement by sponsoring the Finishing Sprints with their signature energy drink infused with natural ingredients, creating a vibrant, eye-catching moment for participants. The {HydroBoost Beverages Inc.|ORGANIZATION-5} booth was decorated with bright banners and interactive displays, including a hydration station where participants could learn about the benefits of staying hydrated. To accommodate spectators, {Vistara Stadium|BUILDING-1} opened its pavilions at no additional cost to provide shaded viewing areas for the relay event, supported by refreshments supplied by {GreenLeaf Caf\u00e9|ORGANIZATION-2}. The pavilions were equipped with large screens broadcasting live footage of the race, allowing spectators to follow the action from any vantage point. {Sentinel Sports Supply|ORGANIZATION-3} organized a collaborative warm-up session before the relay race, showcased by {Westfield High School marching band|ORGANIZATION-4} performing energetic tunes to boost atmosphere and participant enthusiasm. The warm-up session included dynamic stretches and light jogging, led by local fitness trainers, to prepare participants for the race. A special guest speaker, renowned national sports personality {Alex Rivers|PERSON-2}, highlighted at the opening ceremony about the importance of balance between physical fitness and community involvement. {Alex Rivers|PERSON-2} shared personal anecdotes about his journey in sports, emphasizing the role of community support in achieving athletic success. {Alex Rivers|PERSON-2} stressed the crucial role of local organizations in nurturing grassroots sports talent during his speech at the event's opening ceremony. He praised the {National Youth Athletics Federation|ORGANIZATION-1} for their efforts in providing young athletes with opportunities to shine on a larger stage. After the race, {Mia Thompson|PERSON-1} expressed her gratitude to {HydroBoost Beverages Inc.|ORGANIZATION-5} for creating a supportive atmosphere that encouraged her to participate alongside community members, leaving a positive impact not just on the athletic scene, but also on personal connections within {Westfield|LOCATION-1}. {Mia Thompson|PERSON-1} mentioned that the interactive activities at the {HydroBoost Beverages Inc.|ORGANIZATION-5} booth, such as the mini-obstacle course, were particularly enjoyable and helped her connect with other young athletes. {HydroBoost Beverages Inc.|ORGANIZATION-5} sponsored a post-race celebration involving community dances and live music near their booth, inviting participants and spectators alike, which significantly increased their brand engagement among {Westfield|LOCATION-1} residents. The celebration featured local bands and dance groups, creating a festive atmosphere that encouraged community bonding and enjoyment. The event concluded with prize distribution organized by the {National Youth Athletics Federation|ORGANIZATION-1}, awarding certificates and custom-designed {HydroBoost|PRODUCT-1} merchandise to the top three relay team finishers, solidifying {HydroBoost Beverages Inc.|ORGANIZATION-5}'s enhanced local presence. The certificates were engraved with the event's logo and the names of the winning teams, serving as a lasting memento of their achievement.</outline></event>",
+      "<event><date>2025-08-15</date><outline>The {National Youth Athletics Federation|ORGANIZATION-1} announces a community-focused youth sports workshop in partnership with {Westfield High School|LOCATION-2}, scheduled to take place on August 15, 2025, in the small town of {Westfield|LOCATION-1}. The workshop aims to engage over 300 young athletes from various schools in {Westfield|LOCATION-1}, fostering a spirit of healthy competition and community involvement. {Renowned local sports coach and former athlete, Jesse Hartley|PERSON-3}, is appointed as the workshop's chief instructor, aimed at nurturing the athletic prowess of {Westfield|LOCATION-1}\u2019s young talent. {Jesse Hartley|PERSON-3}, known for his successful coaching career and multiple regional championships, brings a wealth of experience and a passion for developing young athletes. {Westfield High School|LOCATION-2}'s gymnasium is designated as the venue for the workshop, with arrangements made to accommodate over 300 participants in various sports training sessions. The gymnasium, recently renovated with state-of-the-art equipment and a capacity of 500, provides an ideal setting for the diverse range of sports activities planned. Sessions at the workshop include interactive lectures and practical training in running, gymnastics, and team sports, specifically designed to cater to different age groups and skill levels. Each session is structured to include a 30-minute lecture followed by a 45-minute hands-on training session, ensuring participants gain both theoretical knowledge and practical skills. {Westfield Community Council|ORGANIZATION-6} provides funding for sports equipment and refreshments, collaborating closely with {GreenLeaf Caf\u00e9|ORGANIZATION-2} to supply healthy snacks and beverages throughout the event. {GreenLeaf Caf\u00e9|ORGANIZATION-2}, known for its commitment to organic and locally-sourced ingredients, will offer a variety of nutritious snacks, including fruit smoothies and energy bars, to keep participants energized. {Sentinel Sports Supply|ORGANIZATION-3} offers all participants complimentary sportswear branded with the {National Youth Athletics Federation|ORGANIZATION-1}'s logo, enhancing the workshop's promotional reach. The sportswear includes moisture-wicking t-shirts and shorts, designed to provide comfort and support during intense physical activities. A highlight of the workshop is the interactive \"{Sportsmanship and Leadership|EVENT-3}\" seminar led by {Alex Rivers|PERSON-2}, drawing attention to the balance between competitive spirit and team unity. {Alex Rivers|PERSON-2}, a celebrated sports personality, will share insights from his career, emphasizing the importance of teamwork and ethical conduct in sports. {Jesse Hartley|PERSON-3} shares personal anecdotes during a motivational talk, emphasizing resilience and continuous improvement, which resonates with the young athletes. Hartley recounts his journey from a local athlete to a renowned coach, highlighting key moments of perseverance and the support he received from his community. A closing ceremony recognizes the top performers in each session with certificates and small trophies, with {Mia Thompson|PERSON-1} receiving special acknowledgment for her enthusiastic participation. {Mia Thompson|PERSON-1}, a promising sprinter from {Westfield High School|LOCATION-2}, is celebrated for her dedication and impressive performance during the workshop's track events. Participants and attendees provide positive feedback, commending the {National Youth Athletics Federation|ORGANIZATION-1} and {Westfield High School|LOCATION-2} for organizing an event that successfully promotes community sports engagement. Feedback highlights the well-organized schedule, the quality of instruction, and the supportive atmosphere, with many expressing interest in future workshops.</outline></event>"
+    ],
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "NEXT_IDS": {
+      "person": 7,
+      "organization": 7,
+      "location": 3,
+      "product": 3,
+      "art": 1,
+      "building": 2,
+      "event": 5,
+      "miscellaneous": 2
+    },
+    "PROVIDED_DATE": "2025-09-01",
+    "PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Mia Thompson",
+        "entity_class": "person",
+        "description": "Mia Thompson is a dedicated and disciplined young athlete known for her enthusiasm and commitment to improving her sporting skills.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Mia Thompson, a young athlete, expressed appreciation for HydroBoost's commitment to natural ingredients and sustainable packaging.",
+            "date": "2025-07-22"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Mia Thompson participated in the Relay Race Challenge at the Westfield Community Fun Fair and expressed gratitude towards HydroBoost Beverages Inc. for their supportive atmosphere.",
+            "date": "2025-07-28"
+          },
+          {
+            "created_at": 2,
+            "event_update": "Mia Thompson was recognized for her enthusiastic participation and impressive performance during the National Youth Athletics Federation's youth sports workshop.",
+            "date": "2025-08-15"
+          }
+        ],
+        "date_of_birth": "2009-03-15",
+        "gender": "Female",
+        "profession": "Sprinter",
+        "nationality": "Rainfieldian",
+        "education": "High school athlete with aspirations to compete on a national level",
+        "height": "5 feet 2 inches",
+        "weight": "120 pounds",
+        "eye_color": "blue",
+        "hair_color": "brown",
+        "political_affiliation": "None",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Alex Rivers",
+        "entity_class": "person",
+        "description": "Alex Rivers is celebrated for his inspirational journey from a humble background to prominence in national sports and for his commitment to community engagement.",
+        "type": null,
+        "created_at": 1,
+        "last_updated": "2025-07-28",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "Alex Rivers spoke at the opening ceremony of the Westfield Community Fun Fair, emphasizing the importance of community support in sports and praising the National Youth Athletics Federation.",
+            "date": "2025-07-28"
+          },
+          {
+            "created_at": 2,
+            "event_update": "Alex Rivers led the \"Sportsmanship and Leadership\" seminar at the National Youth Athletics Federation's youth sports workshop, sharing insights from his career.",
+            "date": "2025-08-15"
+          }
+        ],
+        "date_of_birth": "1992-11-14",
+        "gender": "Male",
+        "profession": "Renowned Sports Personality",
+        "nationality": "Rainfieldian",
+        "education": "Master's in Sports Management",
+        "height": "6 feet 1 inch",
+        "weight": "180 pounds",
+        "eye_color": "green",
+        "hair_color": "dark brown",
+        "political_affiliation": "None",
+        "marital_status": "Married",
+        "spouse": "Jennifer Rivers"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Jesse Hartley",
+        "entity_class": "person",
+        "description": "Jesse Hartley is a dedicated sports coach known for his innovative training techniques and motivational leadership.",
+        "type": null,
+        "created_at": 2,
+        "last_updated": "2025-08-15",
+        "history": [
+          {
+            "created_at": 2,
+            "event_update": "Jesse Hartley was appointed as the chief instructor for the National Youth Athletics Federation's youth sports workshop, where he shared motivational talks and led training sessions.",
+            "date": "2025-08-15"
+          }
+        ],
+        "date_of_birth": "1985-04-10",
+        "gender": "Male",
+        "profession": "Coach",
+        "nationality": "Rainfieldian",
+        "education": "Master's in Sports Psychology",
+        "height": "6 feet 0 inches",
+        "weight": "175 pounds",
+        "eye_color": "blue",
+        "hair_color": "chestnut",
+        "marital_status": "Married",
+        "spouse": "Tamara Hartley"
+      }
+    ],
+    "ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "National Youth Athletics Federation",
+        "entity_class": "organization",
+        "description": "The National Youth Athletics Federation is dedicated to promoting youth sports and providing opportunities for young athletes to excel.",
+        "type": "non-profit",
+        "created_at": 0,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The National Youth Athletics Federation has partnered with HydroBoost as the official sponsor for the Youth Track and Field Championship.",
+            "date": "2025-07-22"
+          },
+          {
+            "created_at": 1,
+            "event_update": "The National Youth Athletics Federation was praised by Alex Rivers at the Westfield Community Fun Fair for nurturing grassroots sports talent and organized the prize distribution for the Relay Race Challenge.",
+            "date": "2025-07-28"
+          },
+          {
+            "created_at": 2,
+            "event_update": "The National Youth Athletics Federation organized a youth sports workshop in partnership with Westfield High School, focusing on community engagement and youth athletics.",
+            "date": "2025-08-15"
+          }
+        ],
+        "founded": "1985",
+        "headquarters": "Rainfieldia City",
+        "industry": "athletics",
+        "mission_statement": "To nurture young athletic talent and foster a culture of healthy competition and sportsmanship.",
+        "number_of_employees": "75",
+        "annual_revenue": "$4 million"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "GreenLeaf Caf\u00e9",
+        "entity_class": "organization",
+        "description": "GreenLeaf Caf\u00e9 is a family-owned eatery in Westfield that focuses on providing healthy, organic meals to the community.",
+        "type": "company",
+        "created_at": 0,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "GreenLeaf Caf\u00e9 is preparing for increased footfall by introducing a special menu featuring healthy snacks and beverages for the event.",
+            "date": "2025-07-22"
+          },
+          {
+            "created_at": 1,
+            "event_update": "GreenLeaf Caf\u00e9 provided refreshments at Vistara Stadium during the Relay Race Challenge and collaborated with Vistara Stadium to accommodate spectators.",
+            "date": "2025-07-28"
+          },
+          {
+            "created_at": 2,
+            "event_update": "GreenLeaf Caf\u00e9 supplied healthy snacks and beverages for the National Youth Athletics Federation's youth sports workshop.",
+            "date": "2025-08-15"
+          }
+        ],
+        "founded": "2010",
+        "headquarters": "Westfield",
+        "industry": "food services",
+        "mission_statement": "Promoting wellness through nutritious, locally-sourced food.",
+        "number_of_employees": "15",
+        "annual_revenue": "$1.2 million"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Sentinel Sports Supply",
+        "entity_class": "organization",
+        "description": "Sentinel Sports Supply is known for offering a wide range of sports equipment and apparel at competitive prices.",
+        "type": "company",
+        "created_at": 0,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Sentinel Sports Supply is offering discounts on sports gear for attendees of the Youth Track and Field Championship.",
+            "date": "2025-07-22"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Sentinel Sports Supply organized a collaborative warm-up session for the Relay Race Challenge at the Westfield Community Fun Fair.",
+            "date": "2025-07-28"
+          },
+          {
+            "created_at": 2,
+            "event_update": "Sentinel Sports Supply provided complimentary sportswear branded with the National Youth Athletics Federation's logo for the youth sports workshop.",
+            "date": "2025-08-15"
+          }
+        ],
+        "founded": "2002",
+        "headquarters": "Westfield",
+        "industry": "retail",
+        "mission_statement": "Providing athletes with high-quality gear to enhance their performance.",
+        "number_of_employees": "50",
+        "annual_revenue": "$5 million"
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "Westfield High School marching band",
+        "entity_class": "organization",
+        "description": "The Westfield High School marching band is celebrated for its energetic performances and strong community following.",
+        "type": "educational institution",
+        "created_at": 0,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Westfield High School marching band will perform at the opening ceremony of the Youth Track and Field Championship.",
+            "date": "2025-07-22"
+          },
+          {
+            "created_at": 1,
+            "event_update": "The Westfield High School marching band performed at the warm-up session for the Relay Race Challenge at the Westfield Community Fun Fair.",
+            "date": "2025-07-28"
+          }
+        ],
+        "founded": "1953",
+        "headquarters": "Westfield High School",
+        "industry": "education",
+        "mission_statement": "To provide a creative outlet and build teamwork through music and performance.",
+        "number_of_employees": "25",
+        "annual_revenue": "$500,000"
+      },
+      {
+        "id": "ORGANIZATION-5",
+        "name": "HydroBoost Beverages Inc.",
+        "entity_class": "organization",
+        "description": "HydroBoost Beverages Inc. is a leading beverage company focused on creating sustainable and health-centric energy drinks.",
+        "type": "company",
+        "created_at": 1,
+        "last_updated": "2025-07-28",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "HydroBoost Beverages Inc. sponsored the Finishing Sprints of the Relay Race Challenge, hosted interactive activities, and organized a post-race celebration at the Westfield Community Fun Fair.",
+            "date": "2025-07-28"
+          }
+        ],
+        "founded": "2018",
+        "headquarters": "Rainfieldia City",
+        "industry": "beverage",
+        "mission_statement": "To energize lives using natural ingredients and sustainable practices.",
+        "number_of_employees": "300",
+        "annual_revenue": "$20 million"
+      },
+      {
+        "id": "ORGANIZATION-6",
+        "name": "Westfield Community Council",
+        "entity_class": "organization",
+        "description": "The Westfield Community Council focuses on promoting community development and engaging residents in local initiatives.",
+        "type": "non-profit",
+        "created_at": 2,
+        "last_updated": "2025-08-15",
+        "history": [
+          {
+            "created_at": 2,
+            "event_update": "The Westfield Community Council funded sports equipment and refreshments for the National Youth Athletics Federation's youth sports workshop.",
+            "date": "2025-08-15"
+          }
+        ],
+        "founded": "1990",
+        "headquarters": "Westfield",
+        "industry": "community development",
+        "mission_statement": "To empower the community through active participation and sustainable growth initiatives.",
+        "number_of_employees": "20",
+        "annual_revenue": "$200,000"
+      }
+    ],
+    "LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Westfield",
+        "entity_class": "location",
+        "description": "Westfield is a thriving small town known for its strong community spirit and diverse mix of young professionals and families.",
+        "type": "town",
+        "created_at": 0,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Westfield is hosting the Youth Track and Field Championship at Vistara Stadium, attracting increased attention and footfall.",
+            "date": "2025-07-22"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Westfield hosted the Westfield Community Fun Fair, which included the Relay Race Challenge, enhancing community engagement and local culture.",
+            "date": "2025-07-28"
+          },
+          {
+            "created_at": 2,
+            "event_update": "Westfield hosted a community-focused youth sports workshop organized by the National Youth Athletics Federation in partnership with Westfield High School.",
+            "date": "2025-08-15"
+          }
+        ],
+        "population": "12,500",
+        "area": "25 square miles",
+        "elevation": "350 feet",
+        "country": "Rainfieldia"
+      },
+      {
+        "id": "LOCATION-2",
+        "name": "Westfield High School",
+        "entity_class": "location",
+        "description": "Westfield High School is a well-regarded public high school, celebrated for its strong academic and athletic programs.",
+        "type": "educational institution",
+        "created_at": 2,
+        "last_updated": "2025-08-15",
+        "history": [
+          {
+            "created_at": 2,
+            "event_update": "Westfield High School's gymnasium served as the venue for the National Youth Athletics Federation's youth sports workshop.",
+            "date": "2025-08-15"
+          }
+        ],
+        "population": "1,200 (students enrolled)",
+        "area": "2.5 acres",
+        "elevation": "360 feet",
+        "country": "Rainfieldia"
+      }
+    ],
+    "PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "HydroBoost",
+        "entity_class": "product",
+        "description": "HydroBoost is an energy drink known for its natural ingredients and commitment to sustainability.",
+        "type": "consumer good",
+        "created_at": 0,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "HydroBoost has become the official sponsor for the Youth Track and Field Championship, featuring its branding on event paraphernalia and engaging attendees with interactive activities.",
+            "date": "2025-07-22"
+          },
+          {
+            "created_at": 1,
+            "event_update": "HydroBoost was featured at the Westfield Community Fun Fair, where it sponsored the Relay Race Challenge and provided merchandise for the event's prize distribution.",
+            "date": "2025-07-28"
+          }
+        ],
+        "manufacturer": "HydroBoost Beverages Inc.",
+        "release_date": "2024-03-01",
+        "price": "$2.50 per can",
+        "weight": "12 oz per can",
+        "warranty": "None, as it is a consumable product"
+      }
+    ],
+    "ART": [],
+    "BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Vistara Stadium",
+        "entity_class": "building",
+        "description": "Vistara Stadium is renowned for its modern facilities and capacity to host large-scale sporting events.",
+        "type": "public",
+        "created_at": 0,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Vistara Stadium is hosting the Youth Track and Field Championship, with HydroBoost branding prominently displayed and facilities recently renovated to accommodate spectators.",
+            "date": "2025-07-22"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Vistara Stadium provided pavilions for spectators of the Relay Race Challenge at the Westfield Community Fun Fair, enhancing the viewing experience with live broadcasts.",
+            "date": "2025-07-28"
+          }
+        ],
+        "architect": "Oliver Greenfield",
+        "year_built": "2023",
+        "height": "80 feet",
+        "floors": "2 (main floor plus a level for seating)",
+        "material": "Concrete and steel",
+        "capacity": "15,000 spectators"
+      }
+    ],
+    "EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "Westfield Community Fun Fair",
+        "entity_class": "event",
+        "description": "The Westfield Community Fun Fair, an annual event that brings together families and individuals for a series of engaging and entertaining activities, is known for fostering community bonding and promoting local culture.",
+        "type": "cultural",
+        "created_at": 1,
+        "last_updated": "2025-07-28",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "The Westfield Community Fun Fair introduced the Relay Race Challenge, engaging local families and sporting enthusiasts in a series of themed activities.",
+            "date": "2025-07-28"
+          }
+        ],
+        "date": "2025-07-28",
+        "duration": "3 days",
+        "organizer": "Westfield Community Council",
+        "number_of_participants": "5,000",
+        "budget": "$50,000"
+      },
+      {
+        "id": "EVENT-2",
+        "name": "Relay Race Challenge",
+        "entity_class": "event",
+        "description": "The Relay Race Challenge, introduced at the Westfield Community Fun Fair, is a fun-filled and inclusive sport event designed to engage all age groups in active participation and teamwork.",
+        "type": "sporting",
+        "created_at": 1,
+        "last_updated": "2025-07-28",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "The Relay Race Challenge at the Westfield Community Fun Fair featured local families in a fun and inclusive sporting event, with HydroBoost Beverages Inc. sponsoring the Finishing Sprints.",
+            "date": "2025-07-28"
+          }
+        ],
+        "date": "2025-07-28",
+        "duration": "1 day",
+        "organizer": "Westfield Community Council",
+        "number_of_participants": "200",
+        "budget": "$10,000"
+      },
+      {
+        "id": "EVENT-3",
+        "name": "Sportsmanship and Leadership seminar",
+        "entity_class": "event",
+        "description": "The Sportsmanship and Leadership seminar provides educators and coaches with insights into ethical conduct and motivational coaching in sports.",
+        "type": "cultural",
+        "created_at": 2,
+        "last_updated": "2025-08-15",
+        "history": [
+          {
+            "created_at": 2,
+            "event_update": "The \"Sportsmanship and Leadership\" seminar was featured as a highlight at the National Youth Athletics Federation's youth sports workshop, led by Alex Rivers.",
+            "date": "2025-08-15"
+          }
+        ],
+        "date": "2024-04-15",
+        "duration": "2 days",
+        "organizer": "Westfield Community Council",
+        "number_of_participants": "150",
+        "budget": "$15,000"
+      }
+    ],
+    "MISCELLANEOUS": [],
+    "PERSONS_XML": "<person><created_at>0</created_at><date_of_birth>2009-03-15</date_of_birth><description>Mia Thompson is a dedicated and disciplined young athlete known for her enthusiasm and commitment to improving her sporting skills.</description><education>High school athlete with aspirations to compete on a national level</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>Female</gender><hair_color>brown</hair_color><height>5 feet 2 inches</height><history><event>2025-07-22: Mia Thompson, a young athlete, expressed appreciation for HydroBoost's commitment to natural ingredients and sustainable packaging.</event><event>2025-07-28: Mia Thompson participated in the Relay Race Challenge at the Westfield Community Fun Fair and expressed gratitude towards HydroBoost Beverages Inc. for their supportive atmosphere.</event><event>2025-08-15: Mia Thompson was recognized for her enthusiastic participation and impressive performance during the National Youth Athletics Federation's youth sports workshop.</event></history><id>PERSON-1</id><last_updated>2025-07-22</last_updated><marital_status>Single</marital_status><name>Mia Thompson</name><nationality>Rainfieldian</nationality><political_affiliation>None</political_affiliation><profession>Sprinter</profession><type>None</type><weight>120 pounds</weight></person>\n<person><created_at>1</created_at><date_of_birth>1992-11-14</date_of_birth><description>Alex Rivers is celebrated for his inspirational journey from a humble background to prominence in national sports and for his commitment to community engagement.</description><education>Master's in Sports Management</education><entity_class>person</entity_class><eye_color>green</eye_color><gender>Male</gender><hair_color>dark brown</hair_color><height>6 feet 1 inch</height><history><event>2025-07-28: Alex Rivers spoke at the opening ceremony of the Westfield Community Fun Fair, emphasizing the importance of community support in sports and praising the National Youth Athletics Federation.</event><event>2025-08-15: Alex Rivers led the \"Sportsmanship and Leadership\" seminar at the National Youth Athletics Federation's youth sports workshop, sharing insights from his career.</event></history><id>PERSON-2</id><last_updated>2025-07-28</last_updated><marital_status>Married</marital_status><name>Alex Rivers</name><nationality>Rainfieldian</nationality><political_affiliation>None</political_affiliation><profession>Renowned Sports Personality</profession><spouse>Jennifer Rivers</spouse><type>None</type><weight>180 pounds</weight></person>\n<person><created_at>2</created_at><date_of_birth>1985-04-10</date_of_birth><description>Jesse Hartley is a dedicated sports coach known for his innovative training techniques and motivational leadership.</description><education>Master's in Sports Psychology</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>Male</gender><hair_color>chestnut</hair_color><height>6 feet 0 inches</height><history><event>2025-08-15: Jesse Hartley was appointed as the chief instructor for the National Youth Athletics Federation's youth sports workshop, where he shared motivational talks and led training sessions.</event></history><id>PERSON-3</id><last_updated>2025-08-15</last_updated><marital_status>Married</marital_status><name>Jesse Hartley</name><nationality>Rainfieldian</nationality><profession>Coach</profession><spouse>Tamara Hartley</spouse><type>None</type><weight>175 pounds</weight></person>",
+    "ORGANIZATIONS_XML": "<organization><annual_revenue>$4 million</annual_revenue><created_at>0</created_at><description>The National Youth Athletics Federation is dedicated to promoting youth sports and providing opportunities for young athletes to excel.</description><entity_class>organization</entity_class><founded>1985</founded><headquarters>Rainfieldia City</headquarters><history><event>2025-07-22: The National Youth Athletics Federation has partnered with HydroBoost as the official sponsor for the Youth Track and Field Championship.</event><event>2025-07-28: The National Youth Athletics Federation was praised by Alex Rivers at the Westfield Community Fun Fair for nurturing grassroots sports talent and organized the prize distribution for the Relay Race Challenge.</event><event>2025-08-15: The National Youth Athletics Federation organized a youth sports workshop in partnership with Westfield High School, focusing on community engagement and youth athletics.</event></history><id>ORGANIZATION-1</id><industry>athletics</industry><last_updated>2025-07-22</last_updated><mission_statement>To nurture young athletic talent and foster a culture of healthy competition and sportsmanship.</mission_statement><name>National Youth Athletics Federation</name><number_of_employees>75</number_of_employees><type>non-profit</type></organization>\n<organization><annual_revenue>$1.2 million</annual_revenue><created_at>0</created_at><description>GreenLeaf Caf\u00e9 is a family-owned eatery in Westfield that focuses on providing healthy, organic meals to the community.</description><entity_class>organization</entity_class><founded>2010</founded><headquarters>Westfield</headquarters><history><event>2025-07-22: GreenLeaf Caf\u00e9 is preparing for increased footfall by introducing a special menu featuring healthy snacks and beverages for the event.</event><event>2025-07-28: GreenLeaf Caf\u00e9 provided refreshments at Vistara Stadium during the Relay Race Challenge and collaborated with Vistara Stadium to accommodate spectators.</event><event>2025-08-15: GreenLeaf Caf\u00e9 supplied healthy snacks and beverages for the National Youth Athletics Federation's youth sports workshop.</event></history><id>ORGANIZATION-2</id><industry>food services</industry><last_updated>2025-07-22</last_updated><mission_statement>Promoting wellness through nutritious, locally-sourced food.</mission_statement><name>GreenLeaf Caf\u00e9</name><number_of_employees>15</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>$5 million</annual_revenue><created_at>0</created_at><description>Sentinel Sports Supply is known for offering a wide range of sports equipment and apparel at competitive prices.</description><entity_class>organization</entity_class><founded>2002</founded><headquarters>Westfield</headquarters><history><event>2025-07-22: Sentinel Sports Supply is offering discounts on sports gear for attendees of the Youth Track and Field Championship.</event><event>2025-07-28: Sentinel Sports Supply organized a collaborative warm-up session for the Relay Race Challenge at the Westfield Community Fun Fair.</event><event>2025-08-15: Sentinel Sports Supply provided complimentary sportswear branded with the National Youth Athletics Federation's logo for the youth sports workshop.</event></history><id>ORGANIZATION-3</id><industry>retail</industry><last_updated>2025-07-22</last_updated><mission_statement>Providing athletes with high-quality gear to enhance their performance.</mission_statement><name>Sentinel Sports Supply</name><number_of_employees>50</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>$500,000</annual_revenue><created_at>0</created_at><description>The Westfield High School marching band is celebrated for its energetic performances and strong community following.</description><entity_class>organization</entity_class><founded>1953</founded><headquarters>Westfield High School</headquarters><history><event>2025-07-22: The Westfield High School marching band will perform at the opening ceremony of the Youth Track and Field Championship.</event><event>2025-07-28: The Westfield High School marching band performed at the warm-up session for the Relay Race Challenge at the Westfield Community Fun Fair.</event></history><id>ORGANIZATION-4</id><industry>education</industry><last_updated>2025-07-22</last_updated><mission_statement>To provide a creative outlet and build teamwork through music and performance.</mission_statement><name>Westfield High School marching band</name><number_of_employees>25</number_of_employees><type>educational institution</type></organization>\n<organization><annual_revenue>$20 million</annual_revenue><created_at>1</created_at><description>HydroBoost Beverages Inc. is a leading beverage company focused on creating sustainable and health-centric energy drinks.</description><entity_class>organization</entity_class><founded>2018</founded><headquarters>Rainfieldia City</headquarters><history><event>2025-07-28: HydroBoost Beverages Inc. sponsored the Finishing Sprints of the Relay Race Challenge, hosted interactive activities, and organized a post-race celebration at the Westfield Community Fun Fair.</event></history><id>ORGANIZATION-5</id><industry>beverage</industry><last_updated>2025-07-28</last_updated><mission_statement>To energize lives using natural ingredients and sustainable practices.</mission_statement><name>HydroBoost Beverages Inc.</name><number_of_employees>300</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>$200,000</annual_revenue><created_at>2</created_at><description>The Westfield Community Council focuses on promoting community development and engaging residents in local initiatives.</description><entity_class>organization</entity_class><founded>1990</founded><headquarters>Westfield</headquarters><history><event>2025-08-15: The Westfield Community Council funded sports equipment and refreshments for the National Youth Athletics Federation's youth sports workshop.</event></history><id>ORGANIZATION-6</id><industry>community development</industry><last_updated>2025-08-15</last_updated><mission_statement>To empower the community through active participation and sustainable growth initiatives.</mission_statement><name>Westfield Community Council</name><number_of_employees>20</number_of_employees><type>non-profit</type></organization>",
+    "LOCATIONS_XML": "<location><area>25 square miles</area><country>Rainfieldia</country><created_at>0</created_at><description>Westfield is a thriving small town known for its strong community spirit and diverse mix of young professionals and families.</description><elevation>350 feet</elevation><entity_class>location</entity_class><history><event>2025-07-22: Westfield is hosting the Youth Track and Field Championship at Vistara Stadium, attracting increased attention and footfall.</event><event>2025-07-28: Westfield hosted the Westfield Community Fun Fair, which included the Relay Race Challenge, enhancing community engagement and local culture.</event><event>2025-08-15: Westfield hosted a community-focused youth sports workshop organized by the National Youth Athletics Federation in partnership with Westfield High School.</event></history><id>LOCATION-1</id><last_updated>2025-07-22</last_updated><name>Westfield</name><population>12,500</population><type>town</type></location>\n<location><area>2.5 acres</area><country>Rainfieldia</country><created_at>2</created_at><description>Westfield High School is a well-regarded public high school, celebrated for its strong academic and athletic programs.</description><elevation>360 feet</elevation><entity_class>location</entity_class><history><event>2025-08-15: Westfield High School's gymnasium served as the venue for the National Youth Athletics Federation's youth sports workshop.</event></history><id>LOCATION-2</id><last_updated>2025-08-15</last_updated><name>Westfield High School</name><population>1,200 (students enrolled)</population><type>educational institution</type></location>",
+    "PRODUCTS_XML": "<product><created_at>0</created_at><description>HydroBoost is an energy drink known for its natural ingredients and commitment to sustainability.</description><entity_class>product</entity_class><history><event>2025-07-22: HydroBoost has become the official sponsor for the Youth Track and Field Championship, featuring its branding on event paraphernalia and engaging attendees with interactive activities.</event><event>2025-07-28: HydroBoost was featured at the Westfield Community Fun Fair, where it sponsored the Relay Race Challenge and provided merchandise for the event's prize distribution.</event></history><id>PRODUCT-1</id><last_updated>2025-07-22</last_updated><manufacturer>HydroBoost Beverages Inc.</manufacturer><name>HydroBoost</name><price>$2.50 per can</price><release_date>2024-03-01</release_date><type>consumer good</type><warranty>None, as it is a consumable product</warranty><weight>12 oz per can</weight></product>",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "<building><architect>Oliver Greenfield</architect><capacity>15,000 spectators</capacity><created_at>0</created_at><description>Vistara Stadium is renowned for its modern facilities and capacity to host large-scale sporting events.</description><entity_class>building</entity_class><floors>2 (main floor plus a level for seating)</floors><height>80 feet</height><history><event>2025-07-22: Vistara Stadium is hosting the Youth Track and Field Championship, with HydroBoost branding prominently displayed and facilities recently renovated to accommodate spectators.</event><event>2025-07-28: Vistara Stadium provided pavilions for spectators of the Relay Race Challenge at the Westfield Community Fun Fair, enhancing the viewing experience with live broadcasts.</event></history><id>BUILDING-1</id><last_updated>2025-07-22</last_updated><material>Concrete and steel</material><name>Vistara Stadium</name><type>public</type><year_built>2023</year_built></building>",
+    "EVENTS_XML": "<event><budget>$50,000</budget><created_at>1</created_at><date>2025-07-28</date><description>The Westfield Community Fun Fair, an annual event that brings together families and individuals for a series of engaging and entertaining activities, is known for fostering community bonding and promoting local culture.</description><duration>3 days</duration><entity_class>event</entity_class><history><event>2025-07-28: The Westfield Community Fun Fair introduced the Relay Race Challenge, engaging local families and sporting enthusiasts in a series of themed activities.</event></history><id>EVENT-1</id><last_updated>2025-07-28</last_updated><name>Westfield Community Fun Fair</name><number_of_participants>5,000</number_of_participants><organizer>Westfield Community Council</organizer><type>cultural</type></event>\n<event><budget>$10,000</budget><created_at>1</created_at><date>2025-07-28</date><description>The Relay Race Challenge, introduced at the Westfield Community Fun Fair, is a fun-filled and inclusive sport event designed to engage all age groups in active participation and teamwork.</description><duration>1 day</duration><entity_class>event</entity_class><history><event>2025-07-28: The Relay Race Challenge at the Westfield Community Fun Fair featured local families in a fun and inclusive sporting event, with HydroBoost Beverages Inc. sponsoring the Finishing Sprints.</event></history><id>EVENT-2</id><last_updated>2025-07-28</last_updated><name>Relay Race Challenge</name><number_of_participants>200</number_of_participants><organizer>Westfield Community Council</organizer><type>sporting</type></event>\n<event><budget>$15,000</budget><created_at>2</created_at><date>2024-04-15</date><description>The Sportsmanship and Leadership seminar provides educators and coaches with insights into ethical conduct and motivational coaching in sports.</description><duration>2 days</duration><entity_class>event</entity_class><history><event>2025-08-15: The \"Sportsmanship and Leadership\" seminar was featured as a highlight at the National Youth Athletics Federation's youth sports workshop, led by Alex Rivers.</event></history><id>EVENT-3</id><last_updated>2025-08-15</last_updated><name>Sportsmanship and Leadership seminar</name><number_of_participants>150</number_of_participants><organizer>Westfield Community Council</organizer><type>cultural</type></event>",
+    "MISCELLANEOUSS_XML": "",
+    "NUM_STORYITEMS": 10,
+    "HISTORY_XML": "<event><date>2025-07-22</date><outline>{HydroBoost|PRODUCT-1}, an emerging energy drink brand, announced its partnership with the {National Youth Athletics Federation|ORGANIZATION-1} as the official sponsor for the upcoming Youth Track and Field Championship. The partnership deal will prominently feature {HydroBoost|PRODUCT-1}'s branding on all event paraphernalia, including athletes' uniforms, event banners, and promotional materials. {HydroBoost|PRODUCT-1}'s logo will be displayed in large, eye-catching fonts on the front of athletes' uniforms, ensuring maximum visibility during competitions. Event banners will be strategically placed around {Vistara Stadium|BUILDING-1}, with {HydroBoost|PRODUCT-1}'s branding prominently displayed at the entrance and main competition areas. At the press conference, {HydroBoost|PRODUCT-1}'s CEO, Liana Sharp, stated, \"This partnership allows us to connect with a dynamic and energetic youth audience, aligning perfectly with our brand's vision.\" Liana Sharp emphasized that {HydroBoost|PRODUCT-1} aims to inspire young athletes by promoting a lifestyle of health, energy, and determination. The {National Youth Athletics Federation|ORGANIZATION-1} officials highlighted the significance of the sponsorship, noting that it would enhance the visibility and experience of the event for young athletes. Officials mentioned that the sponsorship would provide additional funding for improved facilities and resources for the athletes. The event will take place from July 25, 2025, to July 27, 2025, at the {Vistara Stadium|BUILDING-1}, located in the fictional town of {Westfield|LOCATION-1}. {Vistara Stadium|BUILDING-1}, known for its state-of-the-art track and field facilities, has been recently renovated to accommodate the influx of spectators expected for the championship. Local businesses around {Vistara Stadium|BUILDING-1}, such as {GreenLeaf Caf\u00e9|ORGANIZATION-2} and {Sentinel Sports Supply|ORGANIZATION-3}, are preparing for increased footfall due to the event. {GreenLeaf Caf\u00e9|ORGANIZATION-2} plans to introduce a special menu featuring healthy snacks and beverages, while {Sentinel Sports Supply|ORGANIZATION-3} is offering discounts on sports gear for event attendees. {HydroBoost|PRODUCT-1} plans to have a booth at the event, offering free samples of their latest products and engaging attendees with challenges that promote physical activity. The booth will feature interactive games like a mini-obstacle course and a hydration quiz, with winners receiving {HydroBoost|PRODUCT-1} merchandise. Young athletes preparing for the championship have voiced excitement about {HydroBoost|PRODUCT-1}\u2019s focus on health and well-being, with several expressing interest in their products. One athlete, 16-year-old sprinter {Mia Thompson|PERSON-1}, mentioned that she appreciates {HydroBoost|PRODUCT-1}'s commitment to natural ingredients and sustainable packaging. The event itinerary includes opening ceremonies, multiple track and field competitions, and closing ceremonies, which will be attended by local sports enthusiasts and national sports personalities. The opening ceremony will feature a parade of athletes, a performance by the {Westfield High School marching band|ORGANIZATION-4}, and a speech by a renowned national athlete. Reactions from competing energy drink brands have been observed, as some have started to strategize on how to address the new competition presented by {HydroBoost|PRODUCT-1}'s sponsorship. Competing brands are reportedly considering launching targeted marketing campaigns and promotional offers to retain their market share among young consumers.</outline></event>\n<event><date>2025-07-28</date><outline>On July 28, 2025, organizers of the {Westfield Community Fun Fair|EVENT-1} announced the introduction of a newly designed relay race event designed to engage local families and sporting enthusiasts at various booths, including one prominently featuring interactive activities. The relay race was set up across a 1-mile course that looped through the fairgrounds, with each section themed to different sports, such as sprinting, jumping, and throwing. The {Relay Race Challenge|EVENT-2} featured teams composed of local families competing in a series of fun and skill-based sections, distributed across different fairgrounds including areas near {GreenLeaf Caf\u00e9|ORGANIZATION-2}. Each team consisted of four members, with at least one member from each family, ensuring a mix of ages and abilities to promote inclusivity and fun. {HydroBoost Beverages Inc.|ORGANIZATION-5} extended successful athlete engagement by sponsoring the Finishing Sprints with their signature energy drink infused with natural ingredients, creating a vibrant, eye-catching moment for participants. The {HydroBoost Beverages Inc.|ORGANIZATION-5} booth was decorated with bright banners and interactive displays, including a hydration station where participants could learn about the benefits of staying hydrated. To accommodate spectators, {Vistara Stadium|BUILDING-1} opened its pavilions at no additional cost to provide shaded viewing areas for the relay event, supported by refreshments supplied by {GreenLeaf Caf\u00e9|ORGANIZATION-2}. The pavilions were equipped with large screens broadcasting live footage of the race, allowing spectators to follow the action from any vantage point. {Sentinel Sports Supply|ORGANIZATION-3} organized a collaborative warm-up session before the relay race, showcased by {Westfield High School marching band|ORGANIZATION-4} performing energetic tunes to boost atmosphere and participant enthusiasm. The warm-up session included dynamic stretches and light jogging, led by local fitness trainers, to prepare participants for the race. A special guest speaker, renowned national sports personality {Alex Rivers|PERSON-2}, highlighted at the opening ceremony about the importance of balance between physical fitness and community involvement. {Alex Rivers|PERSON-2} shared personal anecdotes about his journey in sports, emphasizing the role of community support in achieving athletic success. {Alex Rivers|PERSON-2} stressed the crucial role of local organizations in nurturing grassroots sports talent during his speech at the event's opening ceremony. He praised the {National Youth Athletics Federation|ORGANIZATION-1} for their efforts in providing young athletes with opportunities to shine on a larger stage. After the race, {Mia Thompson|PERSON-1} expressed her gratitude to {HydroBoost Beverages Inc.|ORGANIZATION-5} for creating a supportive atmosphere that encouraged her to participate alongside community members, leaving a positive impact not just on the athletic scene, but also on personal connections within {Westfield|LOCATION-1}. {Mia Thompson|PERSON-1} mentioned that the interactive activities at the {HydroBoost Beverages Inc.|ORGANIZATION-5} booth, such as the mini-obstacle course, were particularly enjoyable and helped her connect with other young athletes. {HydroBoost Beverages Inc.|ORGANIZATION-5} sponsored a post-race celebration involving community dances and live music near their booth, inviting participants and spectators alike, which significantly increased their brand engagement among {Westfield|LOCATION-1} residents. The celebration featured local bands and dance groups, creating a festive atmosphere that encouraged community bonding and enjoyment. The event concluded with prize distribution organized by the {National Youth Athletics Federation|ORGANIZATION-1}, awarding certificates and custom-designed {HydroBoost|PRODUCT-1} merchandise to the top three relay team finishers, solidifying {HydroBoost Beverages Inc.|ORGANIZATION-5}'s enhanced local presence. The certificates were engraved with the event's logo and the names of the winning teams, serving as a lasting memento of their achievement.</outline></event>\n<event><date>2025-08-15</date><outline>The {National Youth Athletics Federation|ORGANIZATION-1} announces a community-focused youth sports workshop in partnership with {Westfield High School|LOCATION-2}, scheduled to take place on August 15, 2025, in the small town of {Westfield|LOCATION-1}. The workshop aims to engage over 300 young athletes from various schools in {Westfield|LOCATION-1}, fostering a spirit of healthy competition and community involvement. {Renowned local sports coach and former athlete, Jesse Hartley|PERSON-3}, is appointed as the workshop's chief instructor, aimed at nurturing the athletic prowess of {Westfield|LOCATION-1}\u2019s young talent. {Jesse Hartley|PERSON-3}, known for his successful coaching career and multiple regional championships, brings a wealth of experience and a passion for developing young athletes. {Westfield High School|LOCATION-2}'s gymnasium is designated as the venue for the workshop, with arrangements made to accommodate over 300 participants in various sports training sessions. The gymnasium, recently renovated with state-of-the-art equipment and a capacity of 500, provides an ideal setting for the diverse range of sports activities planned. Sessions at the workshop include interactive lectures and practical training in running, gymnastics, and team sports, specifically designed to cater to different age groups and skill levels. Each session is structured to include a 30-minute lecture followed by a 45-minute hands-on training session, ensuring participants gain both theoretical knowledge and practical skills. {Westfield Community Council|ORGANIZATION-6} provides funding for sports equipment and refreshments, collaborating closely with {GreenLeaf Caf\u00e9|ORGANIZATION-2} to supply healthy snacks and beverages throughout the event. {GreenLeaf Caf\u00e9|ORGANIZATION-2}, known for its commitment to organic and locally-sourced ingredients, will offer a variety of nutritious snacks, including fruit smoothies and energy bars, to keep participants energized. {Sentinel Sports Supply|ORGANIZATION-3} offers all participants complimentary sportswear branded with the {National Youth Athletics Federation|ORGANIZATION-1}'s logo, enhancing the workshop's promotional reach. The sportswear includes moisture-wicking t-shirts and shorts, designed to provide comfort and support during intense physical activities. A highlight of the workshop is the interactive \"{Sportsmanship and Leadership|EVENT-3}\" seminar led by {Alex Rivers|PERSON-2}, drawing attention to the balance between competitive spirit and team unity. {Alex Rivers|PERSON-2}, a celebrated sports personality, will share insights from his career, emphasizing the importance of teamwork and ethical conduct in sports. {Jesse Hartley|PERSON-3} shares personal anecdotes during a motivational talk, emphasizing resilience and continuous improvement, which resonates with the young athletes. Hartley recounts his journey from a local athlete to a renowned coach, highlighting key moments of perseverance and the support he received from his community. A closing ceremony recognizes the top performers in each session with certificates and small trophies, with {Mia Thompson|PERSON-1} receiving special acknowledgment for her enthusiastic participation. {Mia Thompson|PERSON-1}, a promising sprinter from {Westfield High School|LOCATION-2}, is celebrated for her dedication and impressive performance during the workshop's track events. Participants and attendees provide positive feedback, commending the {National Youth Athletics Federation|ORGANIZATION-1} and {Westfield High School|LOCATION-2} for organizing an event that successfully promotes community sports engagement. Feedback highlights the well-organized schedule, the quality of instruction, and the supportive atmosphere, with many expressing interest in future workshops.</outline></event>",
+    "STORY_ITEM": [
+      "The {Westfield High School|LOCATION-2}, in collaboration with {Westfield Community Council|ORGANIZATION-6}, hosted an educational symposium titled \"{Mind and Body Symposium|EVENT-4}.\"",
+      "The symposium was held in the newly renovated auditorium of {Westfield High School|LOCATION-2}, which can accommodate up to 300 attendees, providing an ideal setting for interactive discussions.",
+      "The symposium's agenda included lectures on the importance of balancing academics and athletics, with key insights from educational psychologist {Dr. Evelyn Grant|PERSON-4}.",
+      "{Dr. Evelyn Grant|PERSON-4}'s lectures covered topics such as cognitive development in student athletes and the role of mental health in academic performance.",
+      "{Dr. Evelyn Grant|PERSON-4} emphasized the benefits of integrated learning models, proposing innovative curriculum enhancements to better equip students for both academic and sporting excellence.",
+      "She proposed a curriculum that includes modules on time management, stress reduction techniques, and interdisciplinary projects combining science and sports.",
+      "Head of {Westfield High School|LOCATION-2}, {Principal Sarah Langley|PERSON-5}, expressed that the symposium's aim was to strengthen academic resources by drawing parallels between educational strategies and athletic training methodologies.",
+      "{Principal Langley|PERSON-5} highlighted methodologies such as goal-setting techniques used in sports and their application in academic planning.",
+      "During the event, {Mia Thompson|PERSON-1}, a student athlete at {Westfield High School|LOCATION-2}, shared her experiences on how academic support improved her performance in track events.",
+      "{Mia Thompson|PERSON-1} credited the school's tutoring program and study groups for helping her manage her coursework alongside her training schedule.",
+      "Local educational consultant, {Mark Benson|PERSON-6}, presented a new mentorship program tailored for student athletes, focusing on skills transferable between academics and athletics.",
+      "The mentorship program pairs student athletes with academic mentors who provide guidance on balancing schoolwork and sports commitments.",
+      "Interactive workshops allowed attendees to explore cognitive training apps and study techniques designed to enhance concentration and memory for student scholars and athletes alike.",
+      "Workshops featured apps like {Lumosity|PRODUCT-2} and techniques such as the {Pomodoro Technique|MISCELLANEOUS-1}, which help improve focus and retention.",
+      "{Jesse Hartley|PERSON-3}, the {National Youth Athletics Federation|ORGANIZATION-1}'s appointed chief instructor, highlighted how psychological resilience learned in academics can be advantageous on the sports field.",
+      "{Hartley|PERSON-3} discussed techniques such as visualization and positive self-talk, which athletes can use to overcome challenges both in sports and academics.",
+      "The {Westfield Community Council|ORGANIZATION-6} announced a grant for the development of new academic programs, based on feedback from the successful August youth sports workshop.",
+      "The grant will fund programs such as a STEM initiative and a leadership development course, both aimed at enhancing student athletes' academic and personal growth.",
+      "Concluding remarks were given by {Alex Rivers|PERSON-2}, who underscored the critical role of holistic development in cultivating successful future leaders both in sports and academics.",
+      "{Rivers|PERSON-2} emphasized the importance of nurturing emotional intelligence and ethical decision-making as key components of holistic development."
+    ],
+    "DATE": "2025-09-01",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 2,
+    "OUTLINE": "The {Westfield High School|LOCATION-2}, in collaboration with {Westfield Community Council|ORGANIZATION-6}, hosted an educational symposium titled \"{Mind and Body Symposium|EVENT-4}.\"\nThe symposium was held in the newly renovated auditorium of {Westfield High School|LOCATION-2}, which can accommodate up to 300 attendees, providing an ideal setting for interactive discussions.\nThe symposium's agenda included lectures on the importance of balancing academics and athletics, with key insights from educational psychologist {Dr. Evelyn Grant|PERSON-4}.\n{Dr. Evelyn Grant|PERSON-4}'s lectures covered topics such as cognitive development in student athletes and the role of mental health in academic performance.\n{Dr. Evelyn Grant|PERSON-4} emphasized the benefits of integrated learning models, proposing innovative curriculum enhancements to better equip students for both academic and sporting excellence.\nShe proposed a curriculum that includes modules on time management, stress reduction techniques, and interdisciplinary projects combining science and sports.\nHead of {Westfield High School|LOCATION-2}, {Principal Sarah Langley|PERSON-5}, expressed that the symposium's aim was to strengthen academic resources by drawing parallels between educational strategies and athletic training methodologies.\n{Principal Langley|PERSON-5} highlighted methodologies such as goal-setting techniques used in sports and their application in academic planning.\nDuring the event, {Mia Thompson|PERSON-1}, a student athlete at {Westfield High School|LOCATION-2}, shared her experiences on how academic support improved her performance in track events.\n{Mia Thompson|PERSON-1} credited the school's tutoring program and study groups for helping her manage her coursework alongside her training schedule.\nLocal educational consultant, {Mark Benson|PERSON-6}, presented a new mentorship program tailored for student athletes, focusing on skills transferable between academics and athletics.\nThe mentorship program pairs student athletes with academic mentors who provide guidance on balancing schoolwork and sports commitments.\nInteractive workshops allowed attendees to explore cognitive training apps and study techniques designed to enhance concentration and memory for student scholars and athletes alike.\nWorkshops featured apps like {Lumosity|PRODUCT-2} and techniques such as the {Pomodoro Technique|MISCELLANEOUS-1}, which help improve focus and retention.\n{Jesse Hartley|PERSON-3}, the {National Youth Athletics Federation|ORGANIZATION-1}'s appointed chief instructor, highlighted how psychological resilience learned in academics can be advantageous on the sports field.\n{Hartley|PERSON-3} discussed techniques such as visualization and positive self-talk, which athletes can use to overcome challenges both in sports and academics.\nThe {Westfield Community Council|ORGANIZATION-6} announced a grant for the development of new academic programs, based on feedback from the successful August youth sports workshop.\nThe grant will fund programs such as a STEM initiative and a leadership development course, both aimed at enhancing student athletes' academic and personal growth.\nConcluding remarks were given by {Alex Rivers|PERSON-2}, who underscored the critical role of holistic development in cultivating successful future leaders both in sports and academics.\n{Rivers|PERSON-2} emphasized the importance of nurturing emotional intelligence and ethical decision-making as key components of holistic development.",
+    "PRE-CONSISTENCY-NUM-ITEMS": 20,
+    "STORYITEM_XML": "<storyitems>\n<storyitem>The Westfield High School, in collaboration with Westfield Community Council, hosted an educational symposium titled \"Mind and Body: Fostering Academic Excellence through Integrated Programs.\"</storyitem>\n<storyitem>The symposium was held in the newly renovated auditorium of Westfield High School, which can accommodate up to 300 attendees, providing an ideal setting for interactive discussions.</storyitem>\n<storyitem>The symposium's agenda included lectures on the importance of balancing academics and athletics, with key insights from educational psychologist Dr. Evelyn Grant.</storyitem>\n<storyitem>Dr. Evelyn Grant's lectures covered topics such as cognitive development in student athletes and the role of mental health in academic performance.</storyitem>\n<storyitem>Dr. Evelyn Grant emphasized the benefits of integrated learning models, proposing innovative curriculum enhancements to better equip students for both academic and sporting excellence.</storyitem>\n<storyitem>She proposed a curriculum that includes modules on time management, stress reduction techniques, and interdisciplinary projects combining science and sports.</storyitem>\n<storyitem>Head of Westfield High School, Principal Sarah Langley, expressed that the symposium's aim was to strengthen academic resources by drawing parallels between educational strategies and athletic training methodologies.</storyitem>\n<storyitem>Principal Langley highlighted methodologies such as goal-setting techniques used in sports and their application in academic planning.</storyitem>\n<storyitem>During the event, Mia Thompson, a student athlete at Westfield High School, shared her experiences on how academic support improved her performance in track events.</storyitem>\n<storyitem>Mia Thompson credited the school's tutoring program and study groups for helping her manage her coursework alongside her training schedule.</storyitem>\n<storyitem>Local educational consultant, Mark Benson, presented a new mentorship program tailored for student athletes, focusing on skills transferable between academics and athletics.</storyitem>\n<storyitem>The mentorship program pairs student athletes with academic mentors who provide guidance on balancing schoolwork and sports commitments.</storyitem>\n<storyitem>Interactive workshops allowed attendees to explore cognitive training apps and study techniques designed to enhance concentration and memory for student scholars and athletes alike.</storyitem>\n<storyitem>Workshops featured apps like Lumosity and techniques such as the Pomodoro Technique, which help improve focus and retention.</storyitem>\n<storyitem>Jesse Hartley, the National Youth Athletics Federation's appointed chief instructor, highlighted how psychological resilience learned in academics can be advantageous on the sports field.</storyitem>\n<storyitem>Hartley discussed techniques such as visualization and positive self-talk, which athletes can use to overcome challenges both in sports and academics.</storyitem>\n<storyitem>The Westfield Community Council announced a grant for the development of new academic programs, based on feedback from the successful August youth sports workshop.</storyitem>\n<storyitem>The grant will fund programs such as a STEM initiative and a leadership development course, both aimed at enhancing student athletes' academic and personal growth.</storyitem>\n<storyitem>Concluding remarks were given by Alex Rivers, who underscored the critical role of holistic development in cultivating successful future leaders both in sports and academics.</storyitem>\n<storyitem>Rivers emphasized the importance of nurturing emotional intelligence and ethical decision-making as key components of holistic development.</storyitem>\n<storyitems>",
+    "NEW_PERSON_NAME": [
+      {
+        "name": "Dr. Evelyn Grant",
+        "old_name": "Dr. Evelyn Grant"
+      },
+      {
+        "name": "Principal Sarah Langley",
+        "old_name": "Principal Sarah Langley"
+      },
+      {
+        "name": "Mark Benson",
+        "old_name": "Mark Benson"
+      }
+    ],
+    "NEW_ORGANIZATION_NAME": [],
+    "NEW_LOCATION_NAME": [],
+    "NEW_PRODUCT_NAME": [
+      {
+        "name": "Lumosity",
+        "old_name": "Lumosity"
+      }
+    ],
+    "NEW_ART_NAME": [],
+    "NEW_BUILDING_NAME": [],
+    "NEW_EVENT_NAME": [
+      {
+        "name": "Mind and Body Symposium",
+        "old_name": "Mind and Body Symposium"
+      }
+    ],
+    "NEW_MISCELLANEOUS_NAME": [
+      {
+        "name": "Pomodoro Technique",
+        "old_name": "Pomodoro Technique"
+      }
+    ],
+    "RESPONSE": "```xml\n<results>\n  <scratchpad>\n    OUTLINE ANALYSIS:\n    - The symposium titled \"Mind and Body: Fostering Academic Excellence through Integrated Programs\" is mentioned.\n    - Dr. Evelyn Grant is mentioned as an educational psychologist.\n    - Principal Sarah Langley is mentioned as the head of Westfield High School.\n    - Mark Benson is mentioned as a local educational consultant.\n    - Cognitive training apps like Lumosity are mentioned.\n    - Techniques such as the Pomodoro Technique are mentioned.\n\n    EXISTING ENTITIES ANALYSIS:\n    - Locations: Westfield, Westfield High School\n    - Persons: Mia Thompson, Alex Rivers, Jesse Hartley\n    - Organizations: National Youth Athletics Federation, Westfield Community Council, GreenLeaf Caf\u00e9, Sentinel Sports Supply, HydroBoost Beverages Inc.\n    - Products: HydroBoost\n    - Buildings: Vistara Stadium\n    - Events: Westfield Community Fun Fair, Relay Race Challenge, Sportsmanship and Leadership seminar\n    - Miscellaneous: None\n\n    NEW NAMED ENTITIES IDENTIFICATION:\n    - \"Mind and Body: Fostering Academic Excellence through Integrated Programs\" is a new event but exceeds 5 words.\n    - Dr. Evelyn Grant is a new person.\n    - Principal Sarah Langley is a new person.\n    - Mark Benson is a new person.\n    - Lumosity is a new product.\n    - Pomodoro Technique is a new miscellaneous entity (technique).\n\n    VERIFICATION AND REDUNDANCY REMOVAL:\n    - \"Mind and Body: Fostering Academic Excellence through Integrated Programs\" exceeds 5 words, so it should be shortened to \"Mind and Body Symposium.\"\n    - Dr. Evelyn Grant is not listed in existing persons.\n    - Principal Sarah Langley is not listed in existing persons.\n    - Mark Benson is not listed in existing persons.\n    - Lumosity is not listed in existing products.\n    - Pomodoro Technique is not listed in existing miscellaneous entities.\n\n    FINAL LIST OF NEW NAMED ENTITIES:\n    - Event: \"Mind and Body Symposium\"\n    - Person: Dr. Evelyn Grant\n    - Person: Principal Sarah Langley\n    - Person: Mark Benson\n    - Product: Lumosity\n    - Miscellaneous: Pomodoro Technique\n  </scratchpad>\n\n  <output>\n    <event>Mind and Body Symposium</event>\n    <person>Dr. Evelyn Grant</person>\n    <person>Principal Sarah Langley</person>\n    <person>Mark Benson</person>\n    <product>Lumosity</product>\n    <miscellaneous>Pomodoro Technique</miscellaneous>\n  </output>\n</results>\n```",
+    "CORRECTED_PERSON_NAME": [
+      {
+        "name": "Dr. Evelyn Grant",
+        "old_name": "Dr. Evelyn Grant",
+        "id": "PERSON-4"
+      },
+      {
+        "name": "Principal Sarah Langley",
+        "old_name": "Principal Sarah Langley",
+        "id": "PERSON-5"
+      },
+      {
+        "name": "Mark Benson",
+        "old_name": "Mark Benson",
+        "id": "PERSON-6"
+      }
+    ],
+    "CORRECTED_ORGANIZATION_NAME": [],
+    "CORRECTED_LOCATION_NAME": [],
+    "CORRECTED_PRODUCT_NAME": [
+      {
+        "name": "Lumosity",
+        "old_name": "Lumosity",
+        "id": "PRODUCT-2"
+      }
+    ],
+    "CORRECTED_ART_NAME": [],
+    "CORRECTED_BUILDING_NAME": [],
+    "CORRECTED_EVENT_NAME": [
+      {
+        "name": "Mind and Body Symposium",
+        "old_name": "Mind and Body Symposium",
+        "id": "EVENT-4"
+      }
+    ],
+    "CORRECTED_MISCELLANEOUS_NAME": [
+      {
+        "name": "Pomodoro Technique",
+        "old_name": "Pomodoro Technique",
+        "id": "MISCELLANEOUS-1"
+      }
+    ],
+    "CRITIQUE_ERRORS": {
+      "entity-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-person-nationality": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-person-spouse": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization-headquarters": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product-manufacturer": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art-creator": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art-current_location_country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art-current_location_city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art-current_location_place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building-place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building-city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building-architect": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event-place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event-city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event-organizer": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-person-nationality": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-person-spouse": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-organization-headquarters": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-location-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-product-manufacturer": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-art-creator": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-art-current_location_country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-art-current_location_city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-art-current_location_place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-building-place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-building-city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-building-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-building-architect": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-event-place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-event-city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-event-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-event-organizer": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ]
+    },
+    "ADJUSTED_PERSONS_XML": "<person><id>PERSON-4</id><name>Dr. Evelyn Grant</name><old_name>Dr. Evelyn Grant</old_name></person>\n<person><id>PERSON-5</id><name>Principal Sarah Langley</name><old_name>Principal Sarah Langley</old_name></person>\n<person><id>PERSON-6</id><name>Mark Benson</name><old_name>Mark Benson</old_name></person>",
+    "ADJUSTED_ORGANIZATIONS_XML": "",
+    "ADJUSTED_LOCATIONS_XML": "",
+    "ADJUSTED_PRODUCTS_XML": "<product><id>PRODUCT-2</id><name>Lumosity</name><old_name>Lumosity</old_name></product>",
+    "ADJUSTED_ARTS_XML": "",
+    "ADJUSTED_BUILDINGS_XML": "",
+    "ADJUSTED_EVENTS_XML": "<event><id>EVENT-4</id><name>Mind and Body Symposium</name><old_name>Mind and Body Symposium</old_name></event>",
+    "ADJUSTED_MISCELLANEOUSS_XML": "<miscellaneous><id>MISCELLANEOUS-1</id><name>Pomodoro Technique</name><old_name>Pomodoro Technique</old_name></miscellaneous>",
+    "USED_PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Mia Thompson"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Alex Rivers"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Jesse Hartley"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Dr. Evelyn Grant"
+      },
+      {
+        "id": "PERSON-5",
+        "name": "Principal Sarah Langley"
+      },
+      {
+        "id": "PERSON-6",
+        "name": "Mark Benson"
+      }
+    ],
+    "USED_ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-6",
+        "name": "Westfield Community Council"
+      },
+      {
+        "id": "ORGANIZATION-1",
+        "name": "National Youth Athletics Federation"
+      }
+    ],
+    "USED_LOCATION": [
+      {
+        "id": "LOCATION-2",
+        "name": "Westfield High School"
+      }
+    ],
+    "USED_PRODUCT": [
+      {
+        "id": "PRODUCT-2",
+        "name": "Lumosity"
+      }
+    ],
+    "USED_ART": [],
+    "USED_BUILDING": [],
+    "USED_EVENT": [
+      {
+        "id": "EVENT-4",
+        "name": "Mind and Body Symposium"
+      }
+    ],
+    "USED_MISCELLANEOUS": [
+      {
+        "id": "MISCELLANEOUS-1",
+        "name": "Pomodoro Technique"
+      }
+    ],
+    "USED_PRE-EXISTING-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Mia Thompson",
+        "entity_class": "person",
+        "description": "Mia Thompson is a dedicated and disciplined young athlete known for her enthusiasm and commitment to improving her sporting skills.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Mia Thompson, a young athlete, expressed appreciation for HydroBoost's commitment to natural ingredients and sustainable packaging.",
+            "date": "2025-07-22"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Mia Thompson participated in the Relay Race Challenge at the Westfield Community Fun Fair and expressed gratitude towards HydroBoost Beverages Inc. for their supportive atmosphere.",
+            "date": "2025-07-28"
+          },
+          {
+            "created_at": 2,
+            "event_update": "Mia Thompson was recognized for her enthusiastic participation and impressive performance during the National Youth Athletics Federation's youth sports workshop.",
+            "date": "2025-08-15"
+          }
+        ],
+        "date_of_birth": "2009-03-15",
+        "gender": "Female",
+        "profession": "Sprinter",
+        "nationality": "Rainfieldian",
+        "education": "High school athlete with aspirations to compete on a national level",
+        "height": "5 feet 2 inches",
+        "weight": "120 pounds",
+        "eye_color": "blue",
+        "hair_color": "brown",
+        "political_affiliation": "None",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Alex Rivers",
+        "entity_class": "person",
+        "description": "Alex Rivers is celebrated for his inspirational journey from a humble background to prominence in national sports and for his commitment to community engagement.",
+        "type": null,
+        "created_at": 1,
+        "last_updated": "2025-07-28",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "Alex Rivers spoke at the opening ceremony of the Westfield Community Fun Fair, emphasizing the importance of community support in sports and praising the National Youth Athletics Federation.",
+            "date": "2025-07-28"
+          },
+          {
+            "created_at": 2,
+            "event_update": "Alex Rivers led the \"Sportsmanship and Leadership\" seminar at the National Youth Athletics Federation's youth sports workshop, sharing insights from his career.",
+            "date": "2025-08-15"
+          }
+        ],
+        "date_of_birth": "1992-11-14",
+        "gender": "Male",
+        "profession": "Renowned Sports Personality",
+        "nationality": "Rainfieldian",
+        "education": "Master's in Sports Management",
+        "height": "6 feet 1 inch",
+        "weight": "180 pounds",
+        "eye_color": "green",
+        "hair_color": "dark brown",
+        "political_affiliation": "None",
+        "marital_status": "Married",
+        "spouse": "Jennifer Rivers"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Jesse Hartley",
+        "entity_class": "person",
+        "description": "Jesse Hartley is a dedicated sports coach known for his innovative training techniques and motivational leadership.",
+        "type": null,
+        "created_at": 2,
+        "last_updated": "2025-08-15",
+        "history": [
+          {
+            "created_at": 2,
+            "event_update": "Jesse Hartley was appointed as the chief instructor for the National Youth Athletics Federation's youth sports workshop, where he shared motivational talks and led training sessions.",
+            "date": "2025-08-15"
+          }
+        ],
+        "date_of_birth": "1985-04-10",
+        "gender": "Male",
+        "profession": "Coach",
+        "nationality": "Rainfieldian",
+        "education": "Master's in Sports Psychology",
+        "height": "6 feet 0 inches",
+        "weight": "175 pounds",
+        "eye_color": "blue",
+        "hair_color": "chestnut",
+        "marital_status": "Married",
+        "spouse": "Tamara Hartley"
+      }
+    ],
+    "USED_NEW-PERSON": [
+      {
+        "id": "PERSON-4",
+        "name": "Dr. Evelyn Grant",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-5",
+        "name": "Principal Sarah Langley",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-6",
+        "name": "Mark Benson",
+        "category": "person"
+      }
+    ],
+    "ALL_USED_PERSON_XML": "<person><created_at>0</created_at><date_of_birth>2009-03-15</date_of_birth><description>Mia Thompson is a dedicated and disciplined young athlete known for her enthusiasm and commitment to improving her sporting skills.</description><education>High school athlete with aspirations to compete on a national level</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>Female</gender><hair_color>brown</hair_color><height>5 feet 2 inches</height><history><event>2025-07-22: Mia Thompson, a young athlete, expressed appreciation for HydroBoost's commitment to natural ingredients and sustainable packaging.</event><event>2025-07-28: Mia Thompson participated in the Relay Race Challenge at the Westfield Community Fun Fair and expressed gratitude towards HydroBoost Beverages Inc. for their supportive atmosphere.</event><event>2025-08-15: Mia Thompson was recognized for her enthusiastic participation and impressive performance during the National Youth Athletics Federation's youth sports workshop.</event></history><id>PERSON-1</id><last_updated>2025-07-22</last_updated><marital_status>Single</marital_status><name>Mia Thompson</name><nationality>Rainfieldian</nationality><political_affiliation>None</political_affiliation><profession>Sprinter</profession><type>None</type><weight>120 pounds</weight></person>\n<person><created_at>1</created_at><date_of_birth>1992-11-14</date_of_birth><description>Alex Rivers is celebrated for his inspirational journey from a humble background to prominence in national sports and for his commitment to community engagement.</description><education>Master's in Sports Management</education><entity_class>person</entity_class><eye_color>green</eye_color><gender>Male</gender><hair_color>dark brown</hair_color><height>6 feet 1 inch</height><history><event>2025-07-28: Alex Rivers spoke at the opening ceremony of the Westfield Community Fun Fair, emphasizing the importance of community support in sports and praising the National Youth Athletics Federation.</event><event>2025-08-15: Alex Rivers led the \"Sportsmanship and Leadership\" seminar at the National Youth Athletics Federation's youth sports workshop, sharing insights from his career.</event></history><id>PERSON-2</id><last_updated>2025-07-28</last_updated><marital_status>Married</marital_status><name>Alex Rivers</name><nationality>Rainfieldian</nationality><political_affiliation>None</political_affiliation><profession>Renowned Sports Personality</profession><spouse>Jennifer Rivers</spouse><type>None</type><weight>180 pounds</weight></person>\n<person><created_at>2</created_at><date_of_birth>1985-04-10</date_of_birth><description>Jesse Hartley is a dedicated sports coach known for his innovative training techniques and motivational leadership.</description><education>Master's in Sports Psychology</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>Male</gender><hair_color>chestnut</hair_color><height>6 feet 0 inches</height><history><event>2025-08-15: Jesse Hartley was appointed as the chief instructor for the National Youth Athletics Federation's youth sports workshop, where he shared motivational talks and led training sessions.</event></history><id>PERSON-3</id><last_updated>2025-08-15</last_updated><marital_status>Married</marital_status><name>Jesse Hartley</name><nationality>Rainfieldian</nationality><profession>Coach</profession><spouse>Tamara Hartley</spouse><type>None</type><weight>175 pounds</weight></person>\n<person><category>person</category><id>PERSON-4</id><name>Dr. Evelyn Grant</name></person>\n<person><category>person</category><id>PERSON-5</id><name>Principal Sarah Langley</name></person>\n<person><category>person</category><id>PERSON-6</id><name>Mark Benson</name></person>",
+    "USED-NAME-AND-ID-FOR-PERSON": [
+      {
+        "id": "PERSON-4",
+        "name": "Dr. Evelyn Grant",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-5",
+        "name": "Principal Sarah Langley",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-6",
+        "name": "Mark Benson",
+        "category": "person"
+      },
+      {
+        "name": "Mia Thompson",
+        "id": "PERSON-1"
+      },
+      {
+        "name": "Alex Rivers",
+        "id": "PERSON-2"
+      },
+      {
+        "name": "Jesse Hartley",
+        "id": "PERSON-3"
+      }
+    ],
+    "USED_PRE-EXISTING-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "National Youth Athletics Federation",
+        "entity_class": "organization",
+        "description": "The National Youth Athletics Federation is dedicated to promoting youth sports and providing opportunities for young athletes to excel.",
+        "type": "non-profit",
+        "created_at": 0,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The National Youth Athletics Federation has partnered with HydroBoost as the official sponsor for the Youth Track and Field Championship.",
+            "date": "2025-07-22"
+          },
+          {
+            "created_at": 1,
+            "event_update": "The National Youth Athletics Federation was praised by Alex Rivers at the Westfield Community Fun Fair for nurturing grassroots sports talent and organized the prize distribution for the Relay Race Challenge.",
+            "date": "2025-07-28"
+          },
+          {
+            "created_at": 2,
+            "event_update": "The National Youth Athletics Federation organized a youth sports workshop in partnership with Westfield High School, focusing on community engagement and youth athletics.",
+            "date": "2025-08-15"
+          }
+        ],
+        "founded": "1985",
+        "headquarters": "Rainfieldia City",
+        "industry": "athletics",
+        "mission_statement": "To nurture young athletic talent and foster a culture of healthy competition and sportsmanship.",
+        "number_of_employees": "75",
+        "annual_revenue": "$4 million"
+      },
+      {
+        "id": "ORGANIZATION-6",
+        "name": "Westfield Community Council",
+        "entity_class": "organization",
+        "description": "The Westfield Community Council focuses on promoting community development and engaging residents in local initiatives.",
+        "type": "non-profit",
+        "created_at": 2,
+        "last_updated": "2025-08-15",
+        "history": [
+          {
+            "created_at": 2,
+            "event_update": "The Westfield Community Council funded sports equipment and refreshments for the National Youth Athletics Federation's youth sports workshop.",
+            "date": "2025-08-15"
+          }
+        ],
+        "founded": "1990",
+        "headquarters": "Westfield",
+        "industry": "community development",
+        "mission_statement": "To empower the community through active participation and sustainable growth initiatives.",
+        "number_of_employees": "20",
+        "annual_revenue": "$200,000"
+      }
+    ],
+    "USED_NEW-ORGANIZATION": [],
+    "ALL_USED_ORGANIZATION_XML": "<organization><annual_revenue>$4 million</annual_revenue><created_at>0</created_at><description>The National Youth Athletics Federation is dedicated to promoting youth sports and providing opportunities for young athletes to excel.</description><entity_class>organization</entity_class><founded>1985</founded><headquarters>Rainfieldia City</headquarters><history><event>2025-07-22: The National Youth Athletics Federation has partnered with HydroBoost as the official sponsor for the Youth Track and Field Championship.</event><event>2025-07-28: The National Youth Athletics Federation was praised by Alex Rivers at the Westfield Community Fun Fair for nurturing grassroots sports talent and organized the prize distribution for the Relay Race Challenge.</event><event>2025-08-15: The National Youth Athletics Federation organized a youth sports workshop in partnership with Westfield High School, focusing on community engagement and youth athletics.</event></history><id>ORGANIZATION-1</id><industry>athletics</industry><last_updated>2025-07-22</last_updated><mission_statement>To nurture young athletic talent and foster a culture of healthy competition and sportsmanship.</mission_statement><name>National Youth Athletics Federation</name><number_of_employees>75</number_of_employees><type>non-profit</type></organization>\n<organization><annual_revenue>$200,000</annual_revenue><created_at>2</created_at><description>The Westfield Community Council focuses on promoting community development and engaging residents in local initiatives.</description><entity_class>organization</entity_class><founded>1990</founded><headquarters>Westfield</headquarters><history><event>2025-08-15: The Westfield Community Council funded sports equipment and refreshments for the National Youth Athletics Federation's youth sports workshop.</event></history><id>ORGANIZATION-6</id><industry>community development</industry><last_updated>2025-08-15</last_updated><mission_statement>To empower the community through active participation and sustainable growth initiatives.</mission_statement><name>Westfield Community Council</name><number_of_employees>20</number_of_employees><type>non-profit</type></organization>",
+    "USED-NAME-AND-ID-FOR-ORGANIZATION": [
+      {
+        "name": "National Youth Athletics Federation",
+        "id": "ORGANIZATION-1"
+      },
+      {
+        "name": "Westfield Community Council",
+        "id": "ORGANIZATION-6"
+      }
+    ],
+    "USED_PRE-EXISTING-LOCATION": [
+      {
+        "id": "LOCATION-2",
+        "name": "Westfield High School",
+        "entity_class": "location",
+        "description": "Westfield High School is a well-regarded public high school, celebrated for its strong academic and athletic programs.",
+        "type": "educational institution",
+        "created_at": 2,
+        "last_updated": "2025-08-15",
+        "history": [
+          {
+            "created_at": 2,
+            "event_update": "Westfield High School's gymnasium served as the venue for the National Youth Athletics Federation's youth sports workshop.",
+            "date": "2025-08-15"
+          }
+        ],
+        "population": "1,200 (students enrolled)",
+        "area": "2.5 acres",
+        "elevation": "360 feet",
+        "country": "Rainfieldia"
+      }
+    ],
+    "USED_NEW-LOCATION": [],
+    "ALL_USED_LOCATION_XML": "<location><area>2.5 acres</area><country>Rainfieldia</country><created_at>2</created_at><description>Westfield High School is a well-regarded public high school, celebrated for its strong academic and athletic programs.</description><elevation>360 feet</elevation><entity_class>location</entity_class><history><event>2025-08-15: Westfield High School's gymnasium served as the venue for the National Youth Athletics Federation's youth sports workshop.</event></history><id>LOCATION-2</id><last_updated>2025-08-15</last_updated><name>Westfield High School</name><population>1,200 (students enrolled)</population><type>educational institution</type></location>",
+    "USED-NAME-AND-ID-FOR-LOCATION": [
+      {
+        "name": "Westfield High School",
+        "id": "LOCATION-2"
+      }
+    ],
+    "USED_PRE-EXISTING-PRODUCT": [],
+    "USED_NEW-PRODUCT": [
+      {
+        "id": "PRODUCT-2",
+        "name": "Lumosity",
+        "category": "product"
+      }
+    ],
+    "ALL_USED_PRODUCT_XML": "<product><category>product</category><id>PRODUCT-2</id><name>Lumosity</name></product>",
+    "USED-NAME-AND-ID-FOR-PRODUCT": [
+      {
+        "id": "PRODUCT-2",
+        "name": "Lumosity",
+        "category": "product"
+      }
+    ],
+    "USED_PRE-EXISTING-ART": [],
+    "USED_NEW-ART": [],
+    "ALL_USED_ART_XML": "",
+    "USED-NAME-AND-ID-FOR-ART": [],
+    "USED_PRE-EXISTING-BUILDING": [],
+    "USED_NEW-BUILDING": [],
+    "ALL_USED_BUILDING_XML": "",
+    "USED-NAME-AND-ID-FOR-BUILDING": [],
+    "USED_PRE-EXISTING-EVENT": [],
+    "USED_NEW-EVENT": [
+      {
+        "id": "EVENT-4",
+        "name": "Mind and Body Symposium",
+        "category": "event"
+      }
+    ],
+    "ALL_USED_EVENT_XML": "<event><category>event</category><id>EVENT-4</id><name>Mind and Body Symposium</name></event>",
+    "USED-NAME-AND-ID-FOR-EVENT": [
+      {
+        "id": "EVENT-4",
+        "name": "Mind and Body Symposium",
+        "category": "event"
+      }
+    ],
+    "USED_PRE-EXISTING-MISCELLANEOUS": [],
+    "USED_NEW-MISCELLANEOUS": [
+      {
+        "id": "MISCELLANEOUS-1",
+        "name": "Pomodoro Technique",
+        "category": "miscellaneous"
+      }
+    ],
+    "ALL_USED_MISCELLANEOUS_XML": "<miscellaneous><category>miscellaneous</category><id>MISCELLANEOUS-1</id><name>Pomodoro Technique</name></miscellaneous>",
+    "USED-NAME-AND-ID-FOR-MISCELLANEOUS": [
+      {
+        "id": "MISCELLANEOUS-1",
+        "name": "Pomodoro Technique",
+        "category": "miscellaneous"
+      }
+    ],
+    "USED_NEW-PERSONS_XML": "<person><category>person</category><id>PERSON-4</id><name>Dr. Evelyn Grant</name></person>\n<person><category>person</category><id>PERSON-5</id><name>Principal Sarah Langley</name></person>\n<person><category>person</category><id>PERSON-6</id><name>Mark Benson</name></person>",
+    "USED_NEW-ORGANIZATIONS_XML": "",
+    "USED_NEW-LOCATIONS_XML": "",
+    "USED_NEW-PRODUCTS_XML": "<product><category>product</category><id>PRODUCT-2</id><name>Lumosity</name></product>",
+    "USED_NEW-ARTS_XML": "",
+    "USED_NEW-BUILDINGS_XML": "",
+    "USED_NEW-EVENTS_XML": "<event><category>event</category><id>EVENT-4</id><name>Mind and Body Symposium</name></event>",
+    "USED_NEW-MISCELLANEOUSS_XML": "<miscellaneous><category>miscellaneous</category><id>MISCELLANEOUS-1</id><name>Pomodoro Technique</name></miscellaneous>",
+    "NEW_PERSON": [
+      {
+        "id": "PERSON-4",
+        "name": "Dr. Evelyn Grant",
+        "date_of_birth": "1982-06-15",
+        "gender": "Female",
+        "profession": "Educational Psychologist",
+        "nationality": "Rainfieldian",
+        "education": "Ph.D. in Educational Psychology",
+        "description": "Dr. Evelyn Grant is a respected educational psychologist known for her innovative research on cognitive development and the integration of mental health with academic performance.",
+        "height": "5 feet 7 inches",
+        "weight": "145 pounds",
+        "eye_color": "green",
+        "hair_color": "dark brown",
+        "political_affiliation": "None",
+        "marital_status": "Married"
+      },
+      {
+        "id": "PERSON-5",
+        "name": "Principal Sarah Langley",
+        "date_of_birth": "1975-09-20",
+        "gender": "Female",
+        "profession": "Principal",
+        "nationality": "Rainfieldian",
+        "education": "M.A. in Educational Leadership",
+        "description": "Principal Sarah Langley is a visionary leader renowned for her commitment to fostering balanced education emphasizing both academics and athletics at Westfield High School.",
+        "height": "5 feet 6 inches",
+        "weight": "135 pounds",
+        "eye_color": "hazel",
+        "hair_color": "brown",
+        "political_affiliation": "None",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-6",
+        "name": "Mark Benson",
+        "date_of_birth": "1990-11-11",
+        "gender": "Male",
+        "profession": "Educational Consultant",
+        "nationality": "Rainfieldian",
+        "education": "MBA in Education Management",
+        "description": "Mark Benson is an educational consultant recognized for creating mentorship programs tailored to enhancing both academic and athletic skills among students.",
+        "height": "5 feet 10 inches",
+        "weight": "165 pounds",
+        "eye_color": "blue",
+        "hair_color": "blonde",
+        "political_affiliation": "None",
+        "marital_status": "Married"
+      }
+    ],
+    "NEW_ORGANIZATION": [],
+    "NEW_LOCATION": [],
+    "NEW_PRODUCT": [
+      {
+        "id": "PRODUCT-2",
+        "name": "Lumosity",
+        "type": "software",
+        "description": "Lumosity is a cognitive training app designed to improve mental skills such as memory, attention, and problem-solving through engaging brain games.",
+        "manufacturer": "Cognitive Minds Ltd.",
+        "release_date": "2023-01-15",
+        "price": "$12.99 per month",
+        "weight": "N/A",
+        "warranty": "N/A - Software product"
+      }
+    ],
+    "NEW_ART": [],
+    "NEW_BUILDING": [],
+    "NEW_EVENT": [
+      {
+        "id": "EVENT-4",
+        "name": "Mind and Body Symposium",
+        "type": "cultural",
+        "description": "The Mind and Body Symposium focuses on blending academic insights with athletic training techniques to promote holistic student development.",
+        "date": "2025-09-01",
+        "place": "Westfield High School Auditorium, Rainfieldia",
+        "city": "Westfield",
+        "country": "Rainfieldia",
+        "duration": "1 day",
+        "organizer": "Westfield High School in partnership with the Westfield Community Council",
+        "number_of_participants": "300",
+        "budget": "$8,000"
+      }
+    ],
+    "NEW_MISCELLANEOUS": [
+      {
+        "id": "MISCELLANEOUS-1",
+        "name": "Pomodoro Technique",
+        "type": "method",
+        "description": "The Pomodoro Technique is a time management method that uses timed intervals to enhance focus and productivity, particularly in academic and professional settings."
+      }
+    ],
+    "FICTIONAL_NEW_PERSONS": [
+      {
+        "id": "PERSON-4",
+        "name": "Dr. Evelyn Grant",
+        "entity_class": "person",
+        "description": "Dr. Evelyn Grant is a respected educational psychologist known for her innovative research on cognitive development and the integration of mental health with academic performance.",
+        "type": null,
+        "created_at": 3,
+        "last_updated": "2025-09-01",
+        "history": [],
+        "date_of_birth": "1982-06-15",
+        "gender": "Female",
+        "profession": "Educational Psychologist",
+        "nationality": "Rainfieldian",
+        "education": "Ph.D. in Educational Psychology",
+        "height": "5 feet 7 inches",
+        "weight": "145 pounds",
+        "eye_color": "green",
+        "hair_color": "dark brown",
+        "political_affiliation": "None",
+        "marital_status": "Married"
+      },
+      {
+        "id": "PERSON-5",
+        "name": "Principal Sarah Langley",
+        "entity_class": "person",
+        "description": "Principal Sarah Langley is a visionary leader renowned for her commitment to fostering balanced education emphasizing both academics and athletics at Westfield High School.",
+        "type": null,
+        "created_at": 3,
+        "last_updated": "2025-09-01",
+        "history": [],
+        "date_of_birth": "1975-09-20",
+        "gender": "Female",
+        "profession": "Principal",
+        "nationality": "Rainfieldian",
+        "education": "M.A. in Educational Leadership",
+        "height": "5 feet 6 inches",
+        "weight": "135 pounds",
+        "eye_color": "hazel",
+        "hair_color": "brown",
+        "political_affiliation": "None",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-6",
+        "name": "Mark Benson",
+        "entity_class": "person",
+        "description": "Mark Benson is an educational consultant recognized for creating mentorship programs tailored to enhancing both academic and athletic skills among students.",
+        "type": null,
+        "created_at": 3,
+        "last_updated": "2025-09-01",
+        "history": [],
+        "date_of_birth": "1990-11-11",
+        "gender": "Male",
+        "profession": "Educational Consultant",
+        "nationality": "Rainfieldian",
+        "education": "MBA in Education Management",
+        "height": "5 feet 10 inches",
+        "weight": "165 pounds",
+        "eye_color": "blue",
+        "hair_color": "blonde",
+        "political_affiliation": "None",
+        "marital_status": "Married"
+      }
+    ],
+    "FICTIONAL_NEW_ORGANIZATIONS": [],
+    "FICTIONAL_NEW_LOCATIONS": [],
+    "FICTIONAL_NEW_PRODUCTS": [
+      {
+        "id": "PRODUCT-2",
+        "name": "Lumosity",
+        "entity_class": "product",
+        "description": "Lumosity is a cognitive training app designed to improve mental skills such as memory, attention, and problem-solving through engaging brain games.",
+        "type": "software",
+        "created_at": 3,
+        "last_updated": "2025-09-01",
+        "history": [],
+        "manufacturer": "Cognitive Minds Ltd.",
+        "release_date": "2023-01-15",
+        "price": "$12.99 per month",
+        "weight": "N/A",
+        "warranty": "N/A - Software product"
+      }
+    ],
+    "FICTIONAL_NEW_ARTS": [],
+    "FICTIONAL_NEW_BUILDINGS": [],
+    "FICTIONAL_NEW_EVENTS": [
+      {
+        "id": "EVENT-4",
+        "name": "Mind and Body Symposium",
+        "entity_class": "event",
+        "description": "The Mind and Body Symposium focuses on blending academic insights with athletic training techniques to promote holistic student development.",
+        "type": "cultural",
+        "created_at": 3,
+        "last_updated": "2025-09-01",
+        "history": [],
+        "date": "2025-09-01",
+        "duration": "1 day",
+        "organizer": "Westfield High School in partnership with the Westfield Community Council",
+        "number_of_participants": "300",
+        "budget": "$8,000"
+      }
+    ],
+    "FICTIONAL_NEW_MISCELLANEOUSS": [
+      {
+        "id": "MISCELLANEOUS-1",
+        "name": "Pomodoro Technique",
+        "entity_class": "miscellaneous",
+        "description": "The Pomodoro Technique is a time management method that uses timed intervals to enhance focus and productivity, particularly in academic and professional settings.",
+        "type": "method",
+        "created_at": 3,
+        "last_updated": "2025-09-01",
+        "history": []
+      }
+    ],
+    "USED-ALL-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Mia Thompson",
+        "entity_class": "person",
+        "description": "Mia Thompson is a dedicated and disciplined young athlete known for her enthusiasm and commitment to improving her sporting skills.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Mia Thompson, a young athlete, expressed appreciation for HydroBoost's commitment to natural ingredients and sustainable packaging.",
+            "date": "2025-07-22"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Mia Thompson participated in the Relay Race Challenge at the Westfield Community Fun Fair and expressed gratitude towards HydroBoost Beverages Inc. for their supportive atmosphere.",
+            "date": "2025-07-28"
+          },
+          {
+            "created_at": 2,
+            "event_update": "Mia Thompson was recognized for her enthusiastic participation and impressive performance during the National Youth Athletics Federation's youth sports workshop.",
+            "date": "2025-08-15"
+          }
+        ],
+        "date_of_birth": "2009-03-15",
+        "gender": "Female",
+        "profession": "Sprinter",
+        "nationality": "Rainfieldian",
+        "education": "High school athlete with aspirations to compete on a national level",
+        "height": "5 feet 2 inches",
+        "weight": "120 pounds",
+        "eye_color": "blue",
+        "hair_color": "brown",
+        "political_affiliation": "None",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Alex Rivers",
+        "entity_class": "person",
+        "description": "Alex Rivers is celebrated for his inspirational journey from a humble background to prominence in national sports and for his commitment to community engagement.",
+        "type": null,
+        "created_at": 1,
+        "last_updated": "2025-07-28",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "Alex Rivers spoke at the opening ceremony of the Westfield Community Fun Fair, emphasizing the importance of community support in sports and praising the National Youth Athletics Federation.",
+            "date": "2025-07-28"
+          },
+          {
+            "created_at": 2,
+            "event_update": "Alex Rivers led the \"Sportsmanship and Leadership\" seminar at the National Youth Athletics Federation's youth sports workshop, sharing insights from his career.",
+            "date": "2025-08-15"
+          }
+        ],
+        "date_of_birth": "1992-11-14",
+        "gender": "Male",
+        "profession": "Renowned Sports Personality",
+        "nationality": "Rainfieldian",
+        "education": "Master's in Sports Management",
+        "height": "6 feet 1 inch",
+        "weight": "180 pounds",
+        "eye_color": "green",
+        "hair_color": "dark brown",
+        "political_affiliation": "None",
+        "marital_status": "Married",
+        "spouse": "Jennifer Rivers"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Jesse Hartley",
+        "entity_class": "person",
+        "description": "Jesse Hartley is a dedicated sports coach known for his innovative training techniques and motivational leadership.",
+        "type": null,
+        "created_at": 2,
+        "last_updated": "2025-08-15",
+        "history": [
+          {
+            "created_at": 2,
+            "event_update": "Jesse Hartley was appointed as the chief instructor for the National Youth Athletics Federation's youth sports workshop, where he shared motivational talks and led training sessions.",
+            "date": "2025-08-15"
+          }
+        ],
+        "date_of_birth": "1985-04-10",
+        "gender": "Male",
+        "profession": "Coach",
+        "nationality": "Rainfieldian",
+        "education": "Master's in Sports Psychology",
+        "height": "6 feet 0 inches",
+        "weight": "175 pounds",
+        "eye_color": "blue",
+        "hair_color": "chestnut",
+        "marital_status": "Married",
+        "spouse": "Tamara Hartley"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Dr. Evelyn Grant",
+        "entity_class": "person",
+        "description": "Dr. Evelyn Grant is a respected educational psychologist known for her innovative research on cognitive development and the integration of mental health with academic performance.",
+        "type": null,
+        "created_at": 3,
+        "last_updated": "2025-09-01",
+        "history": [],
+        "date_of_birth": "1982-06-15",
+        "gender": "Female",
+        "profession": "Educational Psychologist",
+        "nationality": "Rainfieldian",
+        "education": "Ph.D. in Educational Psychology",
+        "height": "5 feet 7 inches",
+        "weight": "145 pounds",
+        "eye_color": "green",
+        "hair_color": "dark brown",
+        "political_affiliation": "None",
+        "marital_status": "Married"
+      },
+      {
+        "id": "PERSON-5",
+        "name": "Principal Sarah Langley",
+        "entity_class": "person",
+        "description": "Principal Sarah Langley is a visionary leader renowned for her commitment to fostering balanced education emphasizing both academics and athletics at Westfield High School.",
+        "type": null,
+        "created_at": 3,
+        "last_updated": "2025-09-01",
+        "history": [],
+        "date_of_birth": "1975-09-20",
+        "gender": "Female",
+        "profession": "Principal",
+        "nationality": "Rainfieldian",
+        "education": "M.A. in Educational Leadership",
+        "height": "5 feet 6 inches",
+        "weight": "135 pounds",
+        "eye_color": "hazel",
+        "hair_color": "brown",
+        "political_affiliation": "None",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-6",
+        "name": "Mark Benson",
+        "entity_class": "person",
+        "description": "Mark Benson is an educational consultant recognized for creating mentorship programs tailored to enhancing both academic and athletic skills among students.",
+        "type": null,
+        "created_at": 3,
+        "last_updated": "2025-09-01",
+        "history": [],
+        "date_of_birth": "1990-11-11",
+        "gender": "Male",
+        "profession": "Educational Consultant",
+        "nationality": "Rainfieldian",
+        "education": "MBA in Education Management",
+        "height": "5 feet 10 inches",
+        "weight": "165 pounds",
+        "eye_color": "blue",
+        "hair_color": "blonde",
+        "political_affiliation": "None",
+        "marital_status": "Married"
+      }
+    ],
+    "USED_PERSON_XML": "<person><created_at>0</created_at><date_of_birth>2009-03-15</date_of_birth><description>Mia Thompson is a dedicated and disciplined young athlete known for her enthusiasm and commitment to improving her sporting skills.</description><education>High school athlete with aspirations to compete on a national level</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>Female</gender><hair_color>brown</hair_color><height>5 feet 2 inches</height><history><event>2025-07-22: Mia Thompson, a young athlete, expressed appreciation for HydroBoost's commitment to natural ingredients and sustainable packaging.</event><event>2025-07-28: Mia Thompson participated in the Relay Race Challenge at the Westfield Community Fun Fair and expressed gratitude towards HydroBoost Beverages Inc. for their supportive atmosphere.</event><event>2025-08-15: Mia Thompson was recognized for her enthusiastic participation and impressive performance during the National Youth Athletics Federation's youth sports workshop.</event></history><id>PERSON-1</id><last_updated>2025-07-22</last_updated><marital_status>Single</marital_status><name>Mia Thompson</name><nationality>Rainfieldian</nationality><political_affiliation>None</political_affiliation><profession>Sprinter</profession><type>None</type><weight>120 pounds</weight></person>\n<person><created_at>1</created_at><date_of_birth>1992-11-14</date_of_birth><description>Alex Rivers is celebrated for his inspirational journey from a humble background to prominence in national sports and for his commitment to community engagement.</description><education>Master's in Sports Management</education><entity_class>person</entity_class><eye_color>green</eye_color><gender>Male</gender><hair_color>dark brown</hair_color><height>6 feet 1 inch</height><history><event>2025-07-28: Alex Rivers spoke at the opening ceremony of the Westfield Community Fun Fair, emphasizing the importance of community support in sports and praising the National Youth Athletics Federation.</event><event>2025-08-15: Alex Rivers led the \"Sportsmanship and Leadership\" seminar at the National Youth Athletics Federation's youth sports workshop, sharing insights from his career.</event></history><id>PERSON-2</id><last_updated>2025-07-28</last_updated><marital_status>Married</marital_status><name>Alex Rivers</name><nationality>Rainfieldian</nationality><political_affiliation>None</political_affiliation><profession>Renowned Sports Personality</profession><spouse>Jennifer Rivers</spouse><type>None</type><weight>180 pounds</weight></person>\n<person><created_at>2</created_at><date_of_birth>1985-04-10</date_of_birth><description>Jesse Hartley is a dedicated sports coach known for his innovative training techniques and motivational leadership.</description><education>Master's in Sports Psychology</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>Male</gender><hair_color>chestnut</hair_color><height>6 feet 0 inches</height><history><event>2025-08-15: Jesse Hartley was appointed as the chief instructor for the National Youth Athletics Federation's youth sports workshop, where he shared motivational talks and led training sessions.</event></history><id>PERSON-3</id><last_updated>2025-08-15</last_updated><marital_status>Married</marital_status><name>Jesse Hartley</name><nationality>Rainfieldian</nationality><profession>Coach</profession><spouse>Tamara Hartley</spouse><type>None</type><weight>175 pounds</weight></person>\n<person><created_at>3</created_at><date_of_birth>1982-06-15</date_of_birth><description>Dr. Evelyn Grant is a respected educational psychologist known for her innovative research on cognitive development and the integration of mental health with academic performance.</description><education>Ph.D. in Educational Psychology</education><entity_class>person</entity_class><eye_color>green</eye_color><gender>Female</gender><hair_color>dark brown</hair_color><height>5 feet 7 inches</height><history></history><id>PERSON-4</id><last_updated>2025-09-01</last_updated><marital_status>Married</marital_status><name>Dr. Evelyn Grant</name><nationality>Rainfieldian</nationality><political_affiliation>None</political_affiliation><profession>Educational Psychologist</profession><type>None</type><weight>145 pounds</weight></person>\n<person><created_at>3</created_at><date_of_birth>1975-09-20</date_of_birth><description>Principal Sarah Langley is a visionary leader renowned for her commitment to fostering balanced education emphasizing both academics and athletics at Westfield High School.</description><education>M.A. in Educational Leadership</education><entity_class>person</entity_class><eye_color>hazel</eye_color><gender>Female</gender><hair_color>brown</hair_color><height>5 feet 6 inches</height><history></history><id>PERSON-5</id><last_updated>2025-09-01</last_updated><marital_status>Single</marital_status><name>Principal Sarah Langley</name><nationality>Rainfieldian</nationality><political_affiliation>None</political_affiliation><profession>Principal</profession><type>None</type><weight>135 pounds</weight></person>\n<person><created_at>3</created_at><date_of_birth>1990-11-11</date_of_birth><description>Mark Benson is an educational consultant recognized for creating mentorship programs tailored to enhancing both academic and athletic skills among students.</description><education>MBA in Education Management</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>Male</gender><hair_color>blonde</hair_color><height>5 feet 10 inches</height><history></history><id>PERSON-6</id><last_updated>2025-09-01</last_updated><marital_status>Married</marital_status><name>Mark Benson</name><nationality>Rainfieldian</nationality><political_affiliation>None</political_affiliation><profession>Educational Consultant</profession><type>None</type><weight>165 pounds</weight></person>",
+    "USED-ALL-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "National Youth Athletics Federation",
+        "entity_class": "organization",
+        "description": "The National Youth Athletics Federation is dedicated to promoting youth sports and providing opportunities for young athletes to excel.",
+        "type": "non-profit",
+        "created_at": 0,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The National Youth Athletics Federation has partnered with HydroBoost as the official sponsor for the Youth Track and Field Championship.",
+            "date": "2025-07-22"
+          },
+          {
+            "created_at": 1,
+            "event_update": "The National Youth Athletics Federation was praised by Alex Rivers at the Westfield Community Fun Fair for nurturing grassroots sports talent and organized the prize distribution for the Relay Race Challenge.",
+            "date": "2025-07-28"
+          },
+          {
+            "created_at": 2,
+            "event_update": "The National Youth Athletics Federation organized a youth sports workshop in partnership with Westfield High School, focusing on community engagement and youth athletics.",
+            "date": "2025-08-15"
+          }
+        ],
+        "founded": "1985",
+        "headquarters": "Rainfieldia City",
+        "industry": "athletics",
+        "mission_statement": "To nurture young athletic talent and foster a culture of healthy competition and sportsmanship.",
+        "number_of_employees": "75",
+        "annual_revenue": "$4 million"
+      },
+      {
+        "id": "ORGANIZATION-6",
+        "name": "Westfield Community Council",
+        "entity_class": "organization",
+        "description": "The Westfield Community Council focuses on promoting community development and engaging residents in local initiatives.",
+        "type": "non-profit",
+        "created_at": 2,
+        "last_updated": "2025-08-15",
+        "history": [
+          {
+            "created_at": 2,
+            "event_update": "The Westfield Community Council funded sports equipment and refreshments for the National Youth Athletics Federation's youth sports workshop.",
+            "date": "2025-08-15"
+          }
+        ],
+        "founded": "1990",
+        "headquarters": "Westfield",
+        "industry": "community development",
+        "mission_statement": "To empower the community through active participation and sustainable growth initiatives.",
+        "number_of_employees": "20",
+        "annual_revenue": "$200,000"
+      }
+    ],
+    "USED_ORGANIZATION_XML": "<organization><annual_revenue>$4 million</annual_revenue><created_at>0</created_at><description>The National Youth Athletics Federation is dedicated to promoting youth sports and providing opportunities for young athletes to excel.</description><entity_class>organization</entity_class><founded>1985</founded><headquarters>Rainfieldia City</headquarters><history><event>2025-07-22: The National Youth Athletics Federation has partnered with HydroBoost as the official sponsor for the Youth Track and Field Championship.</event><event>2025-07-28: The National Youth Athletics Federation was praised by Alex Rivers at the Westfield Community Fun Fair for nurturing grassroots sports talent and organized the prize distribution for the Relay Race Challenge.</event><event>2025-08-15: The National Youth Athletics Federation organized a youth sports workshop in partnership with Westfield High School, focusing on community engagement and youth athletics.</event></history><id>ORGANIZATION-1</id><industry>athletics</industry><last_updated>2025-07-22</last_updated><mission_statement>To nurture young athletic talent and foster a culture of healthy competition and sportsmanship.</mission_statement><name>National Youth Athletics Federation</name><number_of_employees>75</number_of_employees><type>non-profit</type></organization>\n<organization><annual_revenue>$200,000</annual_revenue><created_at>2</created_at><description>The Westfield Community Council focuses on promoting community development and engaging residents in local initiatives.</description><entity_class>organization</entity_class><founded>1990</founded><headquarters>Westfield</headquarters><history><event>2025-08-15: The Westfield Community Council funded sports equipment and refreshments for the National Youth Athletics Federation's youth sports workshop.</event></history><id>ORGANIZATION-6</id><industry>community development</industry><last_updated>2025-08-15</last_updated><mission_statement>To empower the community through active participation and sustainable growth initiatives.</mission_statement><name>Westfield Community Council</name><number_of_employees>20</number_of_employees><type>non-profit</type></organization>",
+    "USED-ALL-LOCATION": [
+      {
+        "id": "LOCATION-2",
+        "name": "Westfield High School",
+        "entity_class": "location",
+        "description": "Westfield High School is a well-regarded public high school, celebrated for its strong academic and athletic programs.",
+        "type": "educational institution",
+        "created_at": 2,
+        "last_updated": "2025-08-15",
+        "history": [
+          {
+            "created_at": 2,
+            "event_update": "Westfield High School's gymnasium served as the venue for the National Youth Athletics Federation's youth sports workshop.",
+            "date": "2025-08-15"
+          }
+        ],
+        "population": "1,200 (students enrolled)",
+        "area": "2.5 acres",
+        "elevation": "360 feet",
+        "country": "Rainfieldia"
+      }
+    ],
+    "USED_LOCATION_XML": "<location><area>2.5 acres</area><country>Rainfieldia</country><created_at>2</created_at><description>Westfield High School is a well-regarded public high school, celebrated for its strong academic and athletic programs.</description><elevation>360 feet</elevation><entity_class>location</entity_class><history><event>2025-08-15: Westfield High School's gymnasium served as the venue for the National Youth Athletics Federation's youth sports workshop.</event></history><id>LOCATION-2</id><last_updated>2025-08-15</last_updated><name>Westfield High School</name><population>1,200 (students enrolled)</population><type>educational institution</type></location>",
+    "USED-ALL-PRODUCT": [
+      {
+        "id": "PRODUCT-2",
+        "name": "Lumosity",
+        "entity_class": "product",
+        "description": "Lumosity is a cognitive training app designed to improve mental skills such as memory, attention, and problem-solving through engaging brain games.",
+        "type": "software",
+        "created_at": 3,
+        "last_updated": "2025-09-01",
+        "history": [],
+        "manufacturer": "Cognitive Minds Ltd.",
+        "release_date": "2023-01-15",
+        "price": "$12.99 per month",
+        "weight": "N/A",
+        "warranty": "N/A - Software product"
+      }
+    ],
+    "USED_PRODUCT_XML": "<product><created_at>3</created_at><description>Lumosity is a cognitive training app designed to improve mental skills such as memory, attention, and problem-solving through engaging brain games.</description><entity_class>product</entity_class><history></history><id>PRODUCT-2</id><last_updated>2025-09-01</last_updated><manufacturer>Cognitive Minds Ltd.</manufacturer><name>Lumosity</name><price>$12.99 per month</price><release_date>2023-01-15</release_date><type>software</type><warranty>N/A - Software product</warranty><weight>N/A</weight></product>",
+    "USED-ALL-ART": [],
+    "USED_ART_XML": "",
+    "USED-ALL-BUILDING": [],
+    "USED_BUILDING_XML": "",
+    "USED-ALL-EVENT": [
+      {
+        "id": "EVENT-4",
+        "name": "Mind and Body Symposium",
+        "entity_class": "event",
+        "description": "The Mind and Body Symposium focuses on blending academic insights with athletic training techniques to promote holistic student development.",
+        "type": "cultural",
+        "created_at": 3,
+        "last_updated": "2025-09-01",
+        "history": [],
+        "date": "2025-09-01",
+        "duration": "1 day",
+        "organizer": "Westfield High School in partnership with the Westfield Community Council",
+        "number_of_participants": "300",
+        "budget": "$8,000"
+      }
+    ],
+    "USED_EVENT_XML": "<event><budget>$8,000</budget><created_at>3</created_at><date>2025-09-01</date><description>The Mind and Body Symposium focuses on blending academic insights with athletic training techniques to promote holistic student development.</description><duration>1 day</duration><entity_class>event</entity_class><history></history><id>EVENT-4</id><last_updated>2025-09-01</last_updated><name>Mind and Body Symposium</name><number_of_participants>300</number_of_participants><organizer>Westfield High School in partnership with the Westfield Community Council</organizer><type>cultural</type></event>",
+    "USED-ALL-MISCELLANEOUS": [
+      {
+        "id": "MISCELLANEOUS-1",
+        "name": "Pomodoro Technique",
+        "entity_class": "miscellaneous",
+        "description": "The Pomodoro Technique is a time management method that uses timed intervals to enhance focus and productivity, particularly in academic and professional settings.",
+        "type": "method",
+        "created_at": 3,
+        "last_updated": "2025-09-01",
+        "history": []
+      }
+    ],
+    "USED_MISCELLANEOUS_XML": "<miscellaneous><created_at>3</created_at><description>The Pomodoro Technique is a time management method that uses timed intervals to enhance focus and productivity, particularly in academic and professional settings.</description><entity_class>miscellaneous</entity_class><history></history><id>MISCELLANEOUS-1</id><last_updated>2025-09-01</last_updated><name>Pomodoro Technique</name><type>method</type></miscellaneous>",
+    "USED_ENTITIES": [
+      {
+        "id": "PERSON-1",
+        "name": "Mia Thompson",
+        "entity_type": "person",
+        "new": false
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Alex Rivers",
+        "entity_type": "person",
+        "new": false
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Jesse Hartley",
+        "entity_type": "person",
+        "new": false
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Dr. Evelyn Grant",
+        "entity_type": "person",
+        "new": true
+      },
+      {
+        "id": "PERSON-5",
+        "name": "Principal Sarah Langley",
+        "entity_type": "person",
+        "new": true
+      },
+      {
+        "id": "PERSON-6",
+        "name": "Mark Benson",
+        "entity_type": "person",
+        "new": true
+      },
+      {
+        "id": "ORGANIZATION-1",
+        "name": "National Youth Athletics Federation",
+        "entity_type": "organization",
+        "new": false
+      },
+      {
+        "id": "ORGANIZATION-6",
+        "name": "Westfield Community Council",
+        "entity_type": "organization",
+        "new": false
+      },
+      {
+        "id": "LOCATION-2",
+        "name": "Westfield High School",
+        "entity_type": "location",
+        "new": false
+      },
+      {
+        "id": "PRODUCT-2",
+        "name": "Lumosity",
+        "entity_type": "product",
+        "new": true
+      },
+      {
+        "id": "EVENT-4",
+        "name": "Mind and Body Symposium",
+        "entity_type": "event",
+        "new": true
+      },
+      {
+        "id": "MISCELLANEOUS-1",
+        "name": "Pomodoro Technique",
+        "entity_type": "miscellaneous",
+        "new": true
+      }
+    ]
+  }
+}

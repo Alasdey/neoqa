@@ -1,0 +1,404 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "openai/gpt-5-mini",
+    "temperature": 0.0,
+    "max-tokens": 10000
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "scratchpad:\n- Entities to check: Bellwick, Sera Lortin, Ivo Harlen, Merrowgate Development Squad, Carterline Regional Aquatics Federation, Carterline Regional Youth Swimming Championship, Brindemoor Aquatic Complex, Nadia Varnell.\n- Search outline:\n  - \"Carterline Regional Aquatics Federation\" appears repeatedly (explicit).\n  - \"Sera Lortin\" appears repeatedly (explicit).\n  - \"Merrowgate Development Squad\" appears (explicit).\n  - \"Ivo Harlen\" appears (explicit).\n  - \"Nadia Varnell\" appears (explicit).\n  - \"Bellwick\" \u2014 not present.\n  - \"Carterline Regional Youth Swimming Championship\" \u2014 not present.\n  - \"Brindemoor Aquatic Complex\" \u2014 not present (outline mentions Valemont Sports Council Building instead).\n- Include only the five explicitly named entities.\n\n<results>\n<entities>\n<organization>\n<id>ORGANIZATION-2</id>\n<name>Carterline Regional Aquatics Federation</name>\n</organization>\n<person>\n<id>PERSON-1</id>\n<name>Sera Lortin</name>\n</person>\n<organization>\n<id>ORGANIZATION-1</id>\n<name>Merrowgate Development Squad</name>\n</organization>\n<person>\n<id>PERSON-2</id>\n<name>Ivo Harlen</name>\n</person>\n<person>\n<id>PERSON-3</id>\n<name>Nadia Varnell</name>\n</person>\n</entities>\n</results>"
+  },
+  "response": "scratchpad:\n- Entities to check: Bellwick, Sera Lortin, Ivo Harlen, Merrowgate Development Squad, Carterline Regional Aquatics Federation, Carterline Regional Youth Swimming Championship, Brindemoor Aquatic Complex, Nadia Varnell.\n- Search outline:\n  - \"Carterline Regional Aquatics Federation\" appears repeatedly (explicit).\n  - \"Sera Lortin\" appears repeatedly (explicit).\n  - \"Merrowgate Development Squad\" appears (explicit).\n  - \"Ivo Harlen\" appears (explicit).\n  - \"Nadia Varnell\" appears (explicit).\n  - \"Bellwick\" \u2014 not present.\n  - \"Carterline Regional Youth Swimming Championship\" \u2014 not present.\n  - \"Brindemoor Aquatic Complex\" \u2014 not present (outline mentions Valemont Sports Council Building instead).\n- Include only the five explicitly named entities.\n\n<results>\n<entities>\n<organization>\n<id>ORGANIZATION-2</id>\n<name>Carterline Regional Aquatics Federation</name>\n</organization>\n<person>\n<id>PERSON-1</id>\n<name>Sera Lortin</name>\n</person>\n<organization>\n<id>ORGANIZATION-1</id>\n<name>Merrowgate Development Squad</name>\n</organization>\n<person>\n<id>PERSON-2</id>\n<name>Ivo Harlen</name>\n</person>\n<person>\n<id>PERSON-3</id>\n<name>Nadia Varnell</name>\n</person>\n</entities>\n</results>",
+  "instructions": "You are an AI assistant tasked with identifying which of the provided entities are explicitly named within the provided outline. Follow these instructions carefully:\n\n1. The date for this fictional event outline is:\n<date>{{DATE}}</date>\n\n2. Here is the outline you need to analyze:\n<outline>\n{{OUTLINE}}\n</outline>\n\n3. Here is the list of known (fictional) named entities:\n<entities>\n{{LOCATIONS_XML}}\n{{PERSONS_XML}}\n{{ORGANIZATIONS_XML}}\n{{PRODUCTS_XML}}\n{{ARTS_XML}}\n{{EVENTS_XML}}\n{{BUILDINGS_XML}}\n{{MISCELLANEOUSS_XML}}\n\n{{ADJUSTED_LOCATIONS_XML}}\n{{ADJUSTED_PERSONS_XML}}\n{{ADJUSTED_ORGANIZATIONS_XML}}\n{{ADJUSTED_PRODUCTS_XML}}\n{{ADJUSTED_ARTS_XML}}\n{{ADJUSTED_BUILDINGS_XML}}\n{{ADJUSTED_EVENTS_XML}}\n{{ADJUSTED_MISCELLANEOUSS_XML}}\n</entities>\n\n4. Your task is to go through all of the named entities in the provided list. For each named entity, check if it is explicitly referred to by name in the outline. If a named entity is explicitly mentioned by name, include it in your results.\n\n5. For each entity you identify, list them using the following format:\n<[entity_type]><id>[id of the entity]</id><name>[full name of the entity]</name></[entity_type]>\n\n6. Present your final output within a single <results> root node, structured as follows:\n\n<results>\n<entities>\n[List all identified entities here as described in step 5]\n</entities>\n</results>\n\n7. Double-check your work: For each entity that you have identified, make sure to find the sentence within the outline that explicitly refers to this identified entity by name. If you cannot find that the entity is mentioned explicitly by name in the outline, do not include it in your results.\n\n8. You can use a <scratchpad> for your thinking process. Do not include any XML tags within your scratchpad.\n\n9. Make sure that you have not missed any named entity from the outline that was also provided to you in the list of named entities.\n\nRemember, only include entities that are explicitly mentioned by name in the outline. Do not infer or assume the presence of entities that are not directly named.",
+  "text_prompt": "You are an AI assistant tasked with identifying which of the provided entities are explicitly named within the provided outline. Follow these instructions carefully:\n\n1. The date for this fictional event outline is:\n<date>2025-07-16</date>\n\n2. Here is the outline you need to analyze:\n<outline>\nThe Carterline Regional Aquatics Federation formally ratified Sera Lortin's 1:59.86 time in the 200-meter freestyle on 2025-07-16.\nThe Carterline Regional Aquatics Federation issued a formal ratification letter signed by the federation secretary and updated the Carterline Regional Aquatics Federation's official performance database to record the 1:59.86 time as effective 2025-07-16.\nThe Carterline Regional Aquatics Federation announced a small honorarium to be paid to Sera Lortin in recognition of the ratified performance.\nThe Carterline Regional Aquatics Federation said the honorarium is a one-time payment intended to defray travel and incidental expenses, that the payment will be processed via Merrowgate Development Squad's administrative account, and that a remittance notification will be issued to Sera Lortin within 14 days.\nThe Carterline Regional Aquatics Federation scheduled a one-on-one evaluation between Sera Lortin and Nadia Varnell, the Carterline Regional Aquatics Federation under-17 head coach, for 2025-07-22.\nThe Carterline Regional Aquatics Federation scheduled the evaluation to take place at the Valemont Sports Council Building's coaching office and assessment pool and allotted a 45-minute slot comprising a 20-minute in-pool technical review, a 15-minute video stroke analysis, and a 10-minute discussion of recent training history.\nMerrowgate Development Squad confirmed that Ivo Harlen will accompany Sera Lortin to the one-on-one evaluation with Nadia Varnell.\nMerrowgate Development Squad stated that Ivo Harlen will bring Sera Lortin's recent training log, official race split sheets from the championship, and a short written summary of the team's 8x100 race-pace sets for review during the evaluation.\nThe Carterline Regional Aquatics Federation stated that the Carterline Regional Aquatics Federation selection committee will decide on any wider camp invitations after the evaluation with Nadia Varnell.\nThe Carterline Regional Aquatics Federation added that the selection committee intends to review Nadia Varnell's written evaluation within 72 hours and will apply the Carterline Regional Aquatics Federation's published under-17 selection criteria, including objective time thresholds, technical assessment, and coach recommendations, when determining any invitations to the federation's development camp.\n</outline>\n\n3. Here is the list of known (fictional) named entities:\n<entities>\n<location><area>34.7 km2</area><country>Carterline</country><created_at>0</created_at><description>Bellwick is a midsize river-port city with a mix of light industry, residential neighborhoods, and a growing cultural quarter.</description><elevation>12 m</elevation><entity_class>location</entity_class><history><event>2025-07-12: Bellwick served as the host city for the Carterline Regional Youth Swimming Championship held at Brindemoor Aquatic Complex on 2025-07-12.</event></history><id>LOCATION-1</id><last_updated>2025-07-12</last_updated><name>Bellwick</name><population>78,400</population><type>city</type></location>\n<person><created_at>0</created_at><date_of_birth>2008-09-14</date_of_birth><description>Sera Lortin is a disciplined and goal-oriented young athlete known for meticulous race preparation and a pragmatic, improvement-focused mindset.</description><education>Upper-secondary school (enrolled)</education><entity_class>person</entity_class><eye_color>Green</eye_color><gender>Female</gender><hair_color>Dark brown</hair_color><height>173 cm</height><history><event>2025-07-12: Sera Lortin (age 16) set a new meet record in the 200-meter freestyle with a time of 1:59.86, touched 0.35 seconds ahead of the runner-up, produced a 59.20s second 100m (negative split), and helped Merrowgate Development Squad secure the overall team title.</event></history><id>PERSON-1</id><last_updated>2025-07-12</last_updated><marital_status>Single</marital_status><name>Sera Lortin</name><nationality>Carterline</nationality><profession>Competitive swimmer / Student-athlete</profession><type>None</type><weight>62 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>1982-03-02</date_of_birth><description>Ivo Harlen is a methodical and pragmatic coach who emphasizes technique, measurable progress, and individualized training plans.</description><education>Master's in Sports Science</education><entity_class>person</entity_class><gender>Male</gender><hair_color>Salt-and-pepper</hair_color><height>180 cm</height><history><event>2025-07-12: Ivo Harlen, head coach of Merrowgate Development Squad, led the team at the championship, credited targeted 8x100 race-pace training for Sera Lortin's strong second-half performance, and provided post-race comments on the execution of the race plan.</event></history><id>PERSON-2</id><last_updated>2025-07-12</last_updated><marital_status>Married</marital_status><name>Ivo Harlen</name><nationality>Carterline</nationality><political_affiliation>Independent</political_affiliation><profession>Swimming coach (Head coach)</profession><type>None</type><weight>78 kg</weight></person>\n<organization><annual_revenue>240000</annual_revenue><created_at>0</created_at><description>Merrowgate Development Squad is a community-based swim club focused on developing young athletes through structured training and local competition.</description><entity_class>organization</entity_class><founded>2004</founded><headquarters>Merrowgate Training Centre</headquarters><history><event>2025-07-12: Merrowgate Development Squad won the overall team title at the Carterline Regional Youth Swimming Championship, finishing with 412 team points and clinching the title by a 28-point margin over the second-place team in a field of 18 squads.</event></history><id>ORGANIZATION-1</id><industry>sports / youth development</industry><last_updated>2025-07-12</last_updated><mission_statement>To provide accessible coaching and support that helps young swimmers progress in sport and personal development.</mission_statement><name>Merrowgate Development Squad</name><number_of_employees>18</number_of_employees><type>non-profit</type></organization>\n<organization><annual_revenue>1200000</annual_revenue><created_at>0</created_at><description>The Carterline Regional Aquatics Federation serves as the regional coordinating body for competitive swimming and water sports governance and development.</description><entity_class>organization</entity_class><founded>1978</founded><headquarters>Valemont Sports Council Building</headquarters><history><event>2025-07-12: The Carterline Regional Aquatics Federation organized the championship and received Sera Lortin's new 200m freestyle time from officials for formal ratification of the meet record.</event></history><id>ORGANIZATION-2</id><industry>sports governance</industry><last_updated>2025-07-12</last_updated><mission_statement>To promote safe, fair, and organized aquatic sport participation across the Carterline region.</mission_statement><name>Carterline Regional Aquatics Federation</name><number_of_employees>34</number_of_employees><type>non-profit</type></organization>\n\n\n<event><budget>48000</budget><created_at>0</created_at><date>2025-07-12</date><description>An annual regional youth swimming competition that brings together clubs across the Carterline area for multi-session age-group racing and qualification opportunities.</description><duration>2 days</duration><entity_class>event</entity_class><history><event>2025-07-12: The Carterline Regional Youth Swimming Championship concluded on 2025-07-12 at Brindemoor Aquatic Complex; the final session closed shortly after 6:30 p.m., with roughly 380 spectators in attendance at the 50-meter competition pool.</event></history><id>EVENT-1</id><last_updated>2025-07-12</last_updated><name>Carterline Regional Youth Swimming Championship</name><number_of_participants>320</number_of_participants><organizer>Carterline Regional Aquatics Federation</organizer><type>sporting</type></event>\n<building><architect>Aren Solvik</architect><capacity>1,200</capacity><created_at>0</created_at><description>Brindemoor Aquatic Complex is a mid-sized municipal aquatic center offering competition-standard pools alongside community leisure facilities.</description><entity_class>building</entity_class><floors>3</floors><history><event>2025-07-12: Brindemoor Aquatic Complex hosted the Carterline Regional Youth Swimming Championship on 2025-07-12, with its 50-meter competition pool accommodating roughly 380 spectators during the final session.</event></history><id>BUILDING-1</id><last_updated>2025-07-12</last_updated><material>reinforced concrete and glass</material><name>Brindemoor Aquatic Complex</name><type>public</type><year_built>2011</year_built></building>\n\n\n\n<person><id>PERSON-3</id><name>Nadia Varnell</name><old_name>Nadia Varnell</old_name></person>\n\n\n\n\n\n\n</entities>\n\n4. Your task is to go through all of the named entities in the provided list. For each named entity, check if it is explicitly referred to by name in the outline. If a named entity is explicitly mentioned by name, include it in your results.\n\n5. For each entity you identify, list them using the following format:\n<[entity_type]><id>[id of the entity]</id><name>[full name of the entity]</name></[entity_type]>\n\n6. Present your final output within a single <results> root node, structured as follows:\n\n<results>\n<entities>\n[List all identified entities here as described in step 5]\n</entities>\n</results>\n\n7. Double-check your work: For each entity that you have identified, make sure to find the sentence within the outline that explicitly refers to this identified entity by name. If you cannot find that the entity is mentioned explicitly by name in the outline, do not include it in your results.\n\n8. You can use a <scratchpad> for your thinking process. Do not include any XML tags within your scratchpad.\n\n9. Make sure that you have not missed any named entity from the outline that was also provided to you in the list of named entities.\n\nRemember, only include entities that are explicitly mentioned by name in the outline. Do not infer or assume the presence of entities that are not directly named.",
+  "system-prompt": null,
+  "values": {
+    "GENRE": "Sports",
+    "EVENT_SUMMARY": "The Carterline Regional Aquatics Federation formally ratified Sera Lortin's 1:59.86 on 2025-07-16 and announced a small honorarium plus a one-on-one evaluation with the federation's under-17 head coach, with any wider camp invitations to be decided after that review.",
+    "EVENT_SUMMARY_FOR_NAME": "The Carterline Regio",
+    "INIT_SUMMARY": "A regional youth swimming championship concluded at an indoor aquatic center with a 16-year-old competitor lowering the meet record in the 200-meter freestyle by 0.4 seconds, contributing to the overall team title for a mixed-age development squad.",
+    "KEYWORDS": "",
+    "CREATED_AT": 1,
+    "HISTORIES": [
+      "<event><date>2025-07-12</date><outline>The {Carterline Regional Youth Swimming Championship|EVENT-1} concluded on 2025-07-12 at {Brindemoor Aquatic Complex|BUILDING-1} in {Bellwick|LOCATION-1}. The final session closed shortly after 6:30 p.m., with roughly 380 spectators in attendance at the {Brindemoor Aquatic Complex|BUILDING-1}'s 50-meter competition pool. {Sera Lortin|PERSON-1}, age 16, lowered the meet record in the 200-meter freestyle by 0.4 seconds with a time of 1:59.86 in the championship final at the {Carterline Regional Youth Swimming Championship|EVENT-1}. The previous meet record of 2:00.26 had been set in 2018, and the official timing showed {Sera Lortin|PERSON-1} touching the wall 0.35 seconds ahead of the second-place swimmer in the final. The performance by {Sera Lortin|PERSON-1} contributed directly to {Merrowgate Development Squad|ORGANIZATION-1} securing the overall team title at the {Carterline Regional Youth Swimming Championship|EVENT-1}. {Merrowgate Development Squad|ORGANIZATION-1} finished the meet with 412 team points, clinching the title by a 28-point margin over the second-place team in a field of 18 squads. Coach {Ivo Harlen|PERSON-2} of {Merrowgate Development Squad|ORGANIZATION-1} said, \"{Sera Lortin|PERSON-1} executed the race plan we practiced and her second-half pace sealed the finish,\" following the final at the {Carterline Regional Youth Swimming Championship|EVENT-1}. Coach {Ivo Harlen|PERSON-2} added that {Sera Lortin|PERSON-1} produced a negative split\u2014covering the second 100 meters in 59.20 seconds\u2014and credited targeted 8x100 race-pace sets in training for the strong finish. {Carterline Regional Youth Swimming Championship|EVENT-1} officials updated the official meet results to record {Sera Lortin|PERSON-1}'s new 200-meter freestyle meet record set at {Brindemoor Aquatic Complex|BUILDING-1}. Officials posted an updated results PDF to the championship website within an hour and forwarded {Sera Lortin|PERSON-1}'s time to the {Carterline Regional Aquatics Federation|ORGANIZATION-2} for formal ratification of the new meet record.</outline></event>"
+    ],
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "NEXT_IDS": {
+      "person": 4,
+      "organization": 3,
+      "location": 2,
+      "product": 1,
+      "art": 1,
+      "building": 2,
+      "event": 2,
+      "miscellaneous": 1
+    },
+    "PROVIDED_DATE": "2025-07-16",
+    "PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Sera Lortin",
+        "entity_class": "person",
+        "description": "Sera Lortin is a disciplined and goal-oriented young athlete known for meticulous race preparation and a pragmatic, improvement-focused mindset.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-07-12",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Sera Lortin (age 16) set a new meet record in the 200-meter freestyle with a time of 1:59.86, touched 0.35 seconds ahead of the runner-up, produced a 59.20s second 100m (negative split), and helped Merrowgate Development Squad secure the overall team title.",
+            "date": "2025-07-12"
+          }
+        ],
+        "date_of_birth": "2008-09-14",
+        "gender": "Female",
+        "profession": "Competitive swimmer / Student-athlete",
+        "nationality": "Carterline",
+        "education": "Upper-secondary school (enrolled)",
+        "height": "173 cm",
+        "weight": "62 kg",
+        "eye_color": "Green",
+        "hair_color": "Dark brown",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Ivo Harlen",
+        "entity_class": "person",
+        "description": "Ivo Harlen is a methodical and pragmatic coach who emphasizes technique, measurable progress, and individualized training plans.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-07-12",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Ivo Harlen, head coach of Merrowgate Development Squad, led the team at the championship, credited targeted 8x100 race-pace training for Sera Lortin's strong second-half performance, and provided post-race comments on the execution of the race plan.",
+            "date": "2025-07-12"
+          }
+        ],
+        "date_of_birth": "1982-03-02",
+        "gender": "Male",
+        "profession": "Swimming coach (Head coach)",
+        "nationality": "Carterline",
+        "education": "Master's in Sports Science",
+        "height": "180 cm",
+        "weight": "78 kg",
+        "hair_color": "Salt-and-pepper",
+        "political_affiliation": "Independent",
+        "marital_status": "Married"
+      }
+    ],
+    "ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Merrowgate Development Squad",
+        "entity_class": "organization",
+        "description": "Merrowgate Development Squad is a community-based swim club focused on developing young athletes through structured training and local competition.",
+        "type": "non-profit",
+        "created_at": 0,
+        "last_updated": "2025-07-12",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Merrowgate Development Squad won the overall team title at the Carterline Regional Youth Swimming Championship, finishing with 412 team points and clinching the title by a 28-point margin over the second-place team in a field of 18 squads.",
+            "date": "2025-07-12"
+          }
+        ],
+        "founded": "2004",
+        "headquarters": "Merrowgate Training Centre",
+        "industry": "sports / youth development",
+        "mission_statement": "To provide accessible coaching and support that helps young swimmers progress in sport and personal development.",
+        "number_of_employees": "18",
+        "annual_revenue": "240000"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Carterline Regional Aquatics Federation",
+        "entity_class": "organization",
+        "description": "The Carterline Regional Aquatics Federation serves as the regional coordinating body for competitive swimming and water sports governance and development.",
+        "type": "non-profit",
+        "created_at": 0,
+        "last_updated": "2025-07-12",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Carterline Regional Aquatics Federation organized the championship and received Sera Lortin's new 200m freestyle time from officials for formal ratification of the meet record.",
+            "date": "2025-07-12"
+          }
+        ],
+        "founded": "1978",
+        "headquarters": "Valemont Sports Council Building",
+        "industry": "sports governance",
+        "mission_statement": "To promote safe, fair, and organized aquatic sport participation across the Carterline region.",
+        "number_of_employees": "34",
+        "annual_revenue": "1200000"
+      }
+    ],
+    "LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Bellwick",
+        "entity_class": "location",
+        "description": "Bellwick is a midsize river-port city with a mix of light industry, residential neighborhoods, and a growing cultural quarter.",
+        "type": "city",
+        "created_at": 0,
+        "last_updated": "2025-07-12",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Bellwick served as the host city for the Carterline Regional Youth Swimming Championship held at Brindemoor Aquatic Complex on 2025-07-12.",
+            "date": "2025-07-12"
+          }
+        ],
+        "population": "78,400",
+        "area": "34.7 km2",
+        "elevation": "12 m",
+        "country": "Carterline"
+      }
+    ],
+    "PRODUCT": [],
+    "ART": [],
+    "BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Brindemoor Aquatic Complex",
+        "entity_class": "building",
+        "description": "Brindemoor Aquatic Complex is a mid-sized municipal aquatic center offering competition-standard pools alongside community leisure facilities.",
+        "type": "public",
+        "created_at": 0,
+        "last_updated": "2025-07-12",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Brindemoor Aquatic Complex hosted the Carterline Regional Youth Swimming Championship on 2025-07-12, with its 50-meter competition pool accommodating roughly 380 spectators during the final session.",
+            "date": "2025-07-12"
+          }
+        ],
+        "architect": "Aren Solvik",
+        "year_built": "2011",
+        "material": "reinforced concrete and glass",
+        "capacity": "1,200",
+        "floors": "3"
+      }
+    ],
+    "EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "Carterline Regional Youth Swimming Championship",
+        "entity_class": "event",
+        "description": "An annual regional youth swimming competition that brings together clubs across the Carterline area for multi-session age-group racing and qualification opportunities.",
+        "type": "sporting",
+        "created_at": 0,
+        "last_updated": "2025-07-12",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Carterline Regional Youth Swimming Championship concluded on 2025-07-12 at Brindemoor Aquatic Complex; the final session closed shortly after 6:30 p.m., with roughly 380 spectators in attendance at the 50-meter competition pool.",
+            "date": "2025-07-12"
+          }
+        ],
+        "date": "2025-07-12",
+        "duration": "2 days",
+        "organizer": "Carterline Regional Aquatics Federation",
+        "number_of_participants": "320",
+        "budget": "48000"
+      }
+    ],
+    "MISCELLANEOUS": [],
+    "PERSONS_XML": "<person><created_at>0</created_at><date_of_birth>2008-09-14</date_of_birth><description>Sera Lortin is a disciplined and goal-oriented young athlete known for meticulous race preparation and a pragmatic, improvement-focused mindset.</description><education>Upper-secondary school (enrolled)</education><entity_class>person</entity_class><eye_color>Green</eye_color><gender>Female</gender><hair_color>Dark brown</hair_color><height>173 cm</height><history><event>2025-07-12: Sera Lortin (age 16) set a new meet record in the 200-meter freestyle with a time of 1:59.86, touched 0.35 seconds ahead of the runner-up, produced a 59.20s second 100m (negative split), and helped Merrowgate Development Squad secure the overall team title.</event></history><id>PERSON-1</id><last_updated>2025-07-12</last_updated><marital_status>Single</marital_status><name>Sera Lortin</name><nationality>Carterline</nationality><profession>Competitive swimmer / Student-athlete</profession><type>None</type><weight>62 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>1982-03-02</date_of_birth><description>Ivo Harlen is a methodical and pragmatic coach who emphasizes technique, measurable progress, and individualized training plans.</description><education>Master's in Sports Science</education><entity_class>person</entity_class><gender>Male</gender><hair_color>Salt-and-pepper</hair_color><height>180 cm</height><history><event>2025-07-12: Ivo Harlen, head coach of Merrowgate Development Squad, led the team at the championship, credited targeted 8x100 race-pace training for Sera Lortin's strong second-half performance, and provided post-race comments on the execution of the race plan.</event></history><id>PERSON-2</id><last_updated>2025-07-12</last_updated><marital_status>Married</marital_status><name>Ivo Harlen</name><nationality>Carterline</nationality><political_affiliation>Independent</political_affiliation><profession>Swimming coach (Head coach)</profession><type>None</type><weight>78 kg</weight></person>",
+    "ORGANIZATIONS_XML": "<organization><annual_revenue>240000</annual_revenue><created_at>0</created_at><description>Merrowgate Development Squad is a community-based swim club focused on developing young athletes through structured training and local competition.</description><entity_class>organization</entity_class><founded>2004</founded><headquarters>Merrowgate Training Centre</headquarters><history><event>2025-07-12: Merrowgate Development Squad won the overall team title at the Carterline Regional Youth Swimming Championship, finishing with 412 team points and clinching the title by a 28-point margin over the second-place team in a field of 18 squads.</event></history><id>ORGANIZATION-1</id><industry>sports / youth development</industry><last_updated>2025-07-12</last_updated><mission_statement>To provide accessible coaching and support that helps young swimmers progress in sport and personal development.</mission_statement><name>Merrowgate Development Squad</name><number_of_employees>18</number_of_employees><type>non-profit</type></organization>\n<organization><annual_revenue>1200000</annual_revenue><created_at>0</created_at><description>The Carterline Regional Aquatics Federation serves as the regional coordinating body for competitive swimming and water sports governance and development.</description><entity_class>organization</entity_class><founded>1978</founded><headquarters>Valemont Sports Council Building</headquarters><history><event>2025-07-12: The Carterline Regional Aquatics Federation organized the championship and received Sera Lortin's new 200m freestyle time from officials for formal ratification of the meet record.</event></history><id>ORGANIZATION-2</id><industry>sports governance</industry><last_updated>2025-07-12</last_updated><mission_statement>To promote safe, fair, and organized aquatic sport participation across the Carterline region.</mission_statement><name>Carterline Regional Aquatics Federation</name><number_of_employees>34</number_of_employees><type>non-profit</type></organization>",
+    "LOCATIONS_XML": "<location><area>34.7 km2</area><country>Carterline</country><created_at>0</created_at><description>Bellwick is a midsize river-port city with a mix of light industry, residential neighborhoods, and a growing cultural quarter.</description><elevation>12 m</elevation><entity_class>location</entity_class><history><event>2025-07-12: Bellwick served as the host city for the Carterline Regional Youth Swimming Championship held at Brindemoor Aquatic Complex on 2025-07-12.</event></history><id>LOCATION-1</id><last_updated>2025-07-12</last_updated><name>Bellwick</name><population>78,400</population><type>city</type></location>",
+    "PRODUCTS_XML": "",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "<building><architect>Aren Solvik</architect><capacity>1,200</capacity><created_at>0</created_at><description>Brindemoor Aquatic Complex is a mid-sized municipal aquatic center offering competition-standard pools alongside community leisure facilities.</description><entity_class>building</entity_class><floors>3</floors><history><event>2025-07-12: Brindemoor Aquatic Complex hosted the Carterline Regional Youth Swimming Championship on 2025-07-12, with its 50-meter competition pool accommodating roughly 380 spectators during the final session.</event></history><id>BUILDING-1</id><last_updated>2025-07-12</last_updated><material>reinforced concrete and glass</material><name>Brindemoor Aquatic Complex</name><type>public</type><year_built>2011</year_built></building>",
+    "EVENTS_XML": "<event><budget>48000</budget><created_at>0</created_at><date>2025-07-12</date><description>An annual regional youth swimming competition that brings together clubs across the Carterline area for multi-session age-group racing and qualification opportunities.</description><duration>2 days</duration><entity_class>event</entity_class><history><event>2025-07-12: The Carterline Regional Youth Swimming Championship concluded on 2025-07-12 at Brindemoor Aquatic Complex; the final session closed shortly after 6:30 p.m., with roughly 380 spectators in attendance at the 50-meter competition pool.</event></history><id>EVENT-1</id><last_updated>2025-07-12</last_updated><name>Carterline Regional Youth Swimming Championship</name><number_of_participants>320</number_of_participants><organizer>Carterline Regional Aquatics Federation</organizer><type>sporting</type></event>",
+    "MISCELLANEOUSS_XML": "",
+    "NUM_STORYITEMS": 5,
+    "HISTORY_XML": "<event><date>2025-07-12</date><outline>The {Carterline Regional Youth Swimming Championship|EVENT-1} concluded on 2025-07-12 at {Brindemoor Aquatic Complex|BUILDING-1} in {Bellwick|LOCATION-1}. The final session closed shortly after 6:30 p.m., with roughly 380 spectators in attendance at the {Brindemoor Aquatic Complex|BUILDING-1}'s 50-meter competition pool. {Sera Lortin|PERSON-1}, age 16, lowered the meet record in the 200-meter freestyle by 0.4 seconds with a time of 1:59.86 in the championship final at the {Carterline Regional Youth Swimming Championship|EVENT-1}. The previous meet record of 2:00.26 had been set in 2018, and the official timing showed {Sera Lortin|PERSON-1} touching the wall 0.35 seconds ahead of the second-place swimmer in the final. The performance by {Sera Lortin|PERSON-1} contributed directly to {Merrowgate Development Squad|ORGANIZATION-1} securing the overall team title at the {Carterline Regional Youth Swimming Championship|EVENT-1}. {Merrowgate Development Squad|ORGANIZATION-1} finished the meet with 412 team points, clinching the title by a 28-point margin over the second-place team in a field of 18 squads. Coach {Ivo Harlen|PERSON-2} of {Merrowgate Development Squad|ORGANIZATION-1} said, \"{Sera Lortin|PERSON-1} executed the race plan we practiced and her second-half pace sealed the finish,\" following the final at the {Carterline Regional Youth Swimming Championship|EVENT-1}. Coach {Ivo Harlen|PERSON-2} added that {Sera Lortin|PERSON-1} produced a negative split\u2014covering the second 100 meters in 59.20 seconds\u2014and credited targeted 8x100 race-pace sets in training for the strong finish. {Carterline Regional Youth Swimming Championship|EVENT-1} officials updated the official meet results to record {Sera Lortin|PERSON-1}'s new 200-meter freestyle meet record set at {Brindemoor Aquatic Complex|BUILDING-1}. Officials posted an updated results PDF to the championship website within an hour and forwarded {Sera Lortin|PERSON-1}'s time to the {Carterline Regional Aquatics Federation|ORGANIZATION-2} for formal ratification of the new meet record.</outline></event>",
+    "STORY_ITEM": [
+      "The Carterline Regional Aquatics Federation formally ratified Sera Lortin's 1:59.86 time in the 200-meter freestyle on 2025-07-16.",
+      "The Carterline Regional Aquatics Federation issued a formal ratification letter signed by the federation secretary and updated the Carterline Regional Aquatics Federation's official performance database to record the 1:59.86 time as effective 2025-07-16.",
+      "The Carterline Regional Aquatics Federation announced a small honorarium to be paid to Sera Lortin in recognition of the ratified performance.",
+      "The Carterline Regional Aquatics Federation said the honorarium is a one-time payment intended to defray travel and incidental expenses, that the payment will be processed via Merrowgate Development Squad's administrative account, and that a remittance notification will be issued to Sera Lortin within 14 days.",
+      "The Carterline Regional Aquatics Federation scheduled a one-on-one evaluation between Sera Lortin and Nadia Varnell, the Carterline Regional Aquatics Federation under-17 head coach, for 2025-07-22.",
+      "The Carterline Regional Aquatics Federation scheduled the evaluation to take place at the Valemont Sports Council Building's coaching office and assessment pool and allotted a 45-minute slot comprising a 20-minute in-pool technical review, a 15-minute video stroke analysis, and a 10-minute discussion of recent training history.",
+      "Merrowgate Development Squad confirmed that Ivo Harlen will accompany Sera Lortin to the one-on-one evaluation with Nadia Varnell.",
+      "Merrowgate Development Squad stated that Ivo Harlen will bring Sera Lortin's recent training log, official race split sheets from the championship, and a short written summary of the team's 8x100 race-pace sets for review during the evaluation.",
+      "The Carterline Regional Aquatics Federation stated that the Carterline Regional Aquatics Federation selection committee will decide on any wider camp invitations after the evaluation with Nadia Varnell.",
+      "The Carterline Regional Aquatics Federation added that the selection committee intends to review Nadia Varnell's written evaluation within 72 hours and will apply the Carterline Regional Aquatics Federation's published under-17 selection criteria, including objective time thresholds, technical assessment, and coach recommendations, when determining any invitations to the federation's development camp."
+    ],
+    "DATE": "2025-07-16",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 1,
+    "OUTLINE": "The Carterline Regional Aquatics Federation formally ratified Sera Lortin's 1:59.86 time in the 200-meter freestyle on 2025-07-16.\nThe Carterline Regional Aquatics Federation issued a formal ratification letter signed by the federation secretary and updated the Carterline Regional Aquatics Federation's official performance database to record the 1:59.86 time as effective 2025-07-16.\nThe Carterline Regional Aquatics Federation announced a small honorarium to be paid to Sera Lortin in recognition of the ratified performance.\nThe Carterline Regional Aquatics Federation said the honorarium is a one-time payment intended to defray travel and incidental expenses, that the payment will be processed via Merrowgate Development Squad's administrative account, and that a remittance notification will be issued to Sera Lortin within 14 days.\nThe Carterline Regional Aquatics Federation scheduled a one-on-one evaluation between Sera Lortin and Nadia Varnell, the Carterline Regional Aquatics Federation under-17 head coach, for 2025-07-22.\nThe Carterline Regional Aquatics Federation scheduled the evaluation to take place at the Valemont Sports Council Building's coaching office and assessment pool and allotted a 45-minute slot comprising a 20-minute in-pool technical review, a 15-minute video stroke analysis, and a 10-minute discussion of recent training history.\nMerrowgate Development Squad confirmed that Ivo Harlen will accompany Sera Lortin to the one-on-one evaluation with Nadia Varnell.\nMerrowgate Development Squad stated that Ivo Harlen will bring Sera Lortin's recent training log, official race split sheets from the championship, and a short written summary of the team's 8x100 race-pace sets for review during the evaluation.\nThe Carterline Regional Aquatics Federation stated that the Carterline Regional Aquatics Federation selection committee will decide on any wider camp invitations after the evaluation with Nadia Varnell.\nThe Carterline Regional Aquatics Federation added that the selection committee intends to review Nadia Varnell's written evaluation within 72 hours and will apply the Carterline Regional Aquatics Federation's published under-17 selection criteria, including objective time thresholds, technical assessment, and coach recommendations, when determining any invitations to the federation's development camp.",
+    "PRE-CONSISTENCY-NUM-ITEMS": 10,
+    "STORYITEM_XML": "<storyitems>\n<storyitem>The Carterline Regional Aquatics Federation formally ratified Sera Lortin's 1:59.86 time in the 200-meter freestyle on 2025-07-16.</storyitem>\n<storyitem>The Carterline Regional Aquatics Federation issued a formal ratification letter signed by the federation secretary and updated the federation's official performance database to record the 1:59.86 time as effective 2025-07-16.</storyitem>\n<storyitem>The Carterline Regional Aquatics Federation announced a small honorarium to be paid to Sera Lortin in recognition of the ratified performance.</storyitem>\n<storyitem>The Carterline Regional Aquatics Federation said the honorarium is a one-time payment intended to defray travel and incidental expenses, that the payment will be processed via Merrowgate Development Squad's administrative account, and that a remittance notification will be issued to Sera Lortin within 14 days.</storyitem>\n<storyitem>The Carterline Regional Aquatics Federation scheduled a one-on-one evaluation between Sera Lortin and Nadia Varnell, the Carterline Regional Aquatics Federation under-17 head coach, for 2025-07-22.</storyitem>\n<storyitem>The Carterline Regional Aquatics Federation scheduled the evaluation to take place at the Valemont Sports Council Building's coaching office and assessment pool and allotted a 45-minute slot comprising a 20-minute in-pool technical review, a 15-minute video stroke analysis, and a 10-minute discussion of recent training history.</storyitem>\n<storyitem>Merrowgate Development Squad confirmed that Ivo Harlen will accompany Sera Lortin to the one-on-one evaluation with Nadia Varnell.</storyitem>\n<storyitem>Merrowgate Development Squad stated that Ivo Harlen will bring Sera Lortin's recent training log, official race split sheets from the championship, and a short written summary of the team's 8x100 race-pace sets for review during the evaluation.</storyitem>\n<storyitem>The Carterline Regional Aquatics Federation stated that the Carterline Regional Aquatics Federation selection committee will decide on any wider camp invitations after the evaluation with Nadia Varnell.</storyitem>\n<storyitem>The Carterline Regional Aquatics Federation added that the selection committee intends to review Nadia Varnell's written evaluation within 72 hours and will apply the federation's published under-17 selection criteria, including objective time thresholds, technical assessment, and coach recommendations, when determining any invitations to the federation's development camp.</storyitem>\n<storyitems>",
+    "NEW_PERSON_NAME": [
+      {
+        "name": "Nadia Varnell",
+        "old_name": "Nadia Varnell"
+      }
+    ],
+    "NEW_ORGANIZATION_NAME": [],
+    "NEW_LOCATION_NAME": [],
+    "NEW_PRODUCT_NAME": [],
+    "NEW_ART_NAME": [],
+    "NEW_BUILDING_NAME": [],
+    "NEW_EVENT_NAME": [],
+    "NEW_MISCELLANEOUS_NAME": [],
+    "RESPONSE": "<results>\n<scratchpad>\nIDENTIFIED_ENTITIES_FROM_OUTLINE:\n- The Carterline Regional Aquatics Federation (organization) \u2014 already present in entities.\n- Sera Lortin (person) \u2014 already present in entities.\n- Merrowgate Development Squad (organization) \u2014 already present in entities.\n- Ivo Harlen (person) \u2014 already present in entities.\n- Nadia Varnell (person) \u2014 NOT present in entities \u2192 candidate NEW.\n- Valemont Sports Council Building (building) \u2014 referenced in existing organization entry as the Carterline Regional Aquatics Federation headquarters; treated as already present in the provided XML (appears in that field) \u2192 not new.\n- \"Carterline Regional Aquatics Federation selection committee\" (organizational subunit) \u2014 explicitly named in the outline but exceeds the 5-word limit you requested. Also it is a subunit of an existing organization (the Federation), not clearly modeled as an independent organization in the provided XML.\n\nDECISION LOGIC:\n- RULE: Must use full names as they appear in the OUTLINE and only list entities not already in <entities>.\n- CONSTRAINT (from your feedback): Named entity should not exceed 5 words.\n- ACTION: Remove the selection-committee entry because its full name in the outline has 6 words and the user requested named entities be \u22645 words. Additionally, the committee is a subunit of an existing organization, supporting omission.\n- RETAIN: Nadia Varnell as a new person (name appears exactly and is not in the provided entities).\n\nFINAL NEW ENTITIES TO OUTPUT:\n- Nadia Varnell (person) only.\n</scratchpad>\n\n<output>\n<person>Nadia Varnell</person>\n</output>\n</results>",
+    "CORRECTED_PERSON_NAME": [
+      {
+        "name": "Nadia Varnell",
+        "old_name": "Nadia Varnell",
+        "id": "PERSON-3"
+      }
+    ],
+    "CORRECTED_ORGANIZATION_NAME": [],
+    "CORRECTED_LOCATION_NAME": [],
+    "CORRECTED_PRODUCT_NAME": [],
+    "CORRECTED_ART_NAME": [],
+    "CORRECTED_BUILDING_NAME": [],
+    "CORRECTED_EVENT_NAME": [],
+    "CORRECTED_MISCELLANEOUS_NAME": [],
+    "CRITIQUE_ERRORS": {
+      "entity-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ]
+    },
+    "ADJUSTED_PERSONS_XML": "<person><id>PERSON-3</id><name>Nadia Varnell</name><old_name>Nadia Varnell</old_name></person>",
+    "ADJUSTED_ORGANIZATIONS_XML": "",
+    "ADJUSTED_LOCATIONS_XML": "",
+    "ADJUSTED_PRODUCTS_XML": "",
+    "ADJUSTED_ARTS_XML": "",
+    "ADJUSTED_BUILDINGS_XML": "",
+    "ADJUSTED_EVENTS_XML": "",
+    "ADJUSTED_MISCELLANEOUSS_XML": ""
+  }
+}

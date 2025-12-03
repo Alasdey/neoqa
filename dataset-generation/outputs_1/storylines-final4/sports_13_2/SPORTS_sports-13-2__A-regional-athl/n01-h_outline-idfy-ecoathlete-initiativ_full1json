@@ -1,0 +1,735 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "openai/gpt-4o-2024-08-06",
+    "temperature": 0.0,
+    "max-tokens": 4096
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "```xml\n<outline>\n<storyitem>The {EcoAthlete Initiative|ORGANIZATION-2} launches a fundraising campaign aimed at upgrading the {Bayhaven Coastal Stadium|BUILDING-1} with energy-efficient technologies.</storyitem>\n<storyitem>The campaign includes plans to install state-of-the-art solar panels and LED lighting systems to significantly reduce the stadium's carbon footprint.</storyitem>\n<storyitem>{EcoAthlete Initiative|ORGANIZATION-2} plans to reduce the {Bayhaven Coastal Stadium|BUILDING-1}'s energy consumption by 30% as part of its sustainability goals.</storyitem>\n<storyitem>Experts estimate that the energy savings from the upgrades could power approximately 500 homes in {Bayhaven|LOCATION-1} for a year.</storyitem>\n<storyitem>Local businesses and community members in {Bayhaven|LOCATION-1} are invited to participate in the {EcoAthlete Initiative|ORGANIZATION-2}'s fundraising campaign.</storyitem>\n<storyitem>Several local cafes and restaurants have pledged to donate a portion of their sales to the campaign, organizing special \"Green Days\" to boost contributions.</storyitem>\n<storyitem>The {Bayhaven City Council|ORGANIZATION-1} pledges support to the {EcoAthlete Initiative|ORGANIZATION-2}, endorsing the plan to enhance environmental sustainability at the {Bayhaven Coastal Stadium|BUILDING-1}.</storyitem>\n<storyitem>The {Bayhaven City Council|ORGANIZATION-1} has allocated a portion of its annual budget to match community donations, doubling the impact of local contributions.</storyitem>\n<storyitem>The {EcoAthlete Initiative|ORGANIZATION-2} announces a series of community events, including eco-friendly sports activities, to raise awareness and funds for the {Bayhaven Coastal Stadium|BUILDING-1}'s upgrades.</storyitem>\n<storyitem>These events will feature workshops on sustainable living and interactive sessions with local environmental experts.</storyitem>\n<storyitem>The {Bayhaven Times|ORGANIZATION-3} publishes an article highlighting the significance of the {EcoAthlete Initiative|ORGANIZATION-2}'s campaign, encouraging public engagement and contribution.</storyitem>\n<storyitem>The article features interviews with key figures from the {EcoAthlete Initiative|ORGANIZATION-2}, discussing the long-term benefits of the stadium's upgrades for the community.</storyitem>\n<storyitem>High-profile local athletes, including {Jaxon Cartwright|PERSON-1}, endorse the {EcoAthlete Initiative|ORGANIZATION-2}'s efforts, motivating the public to invest in sustainable sports infrastructure.</storyitem>\n<storyitem>{Jaxon Cartwright|PERSON-1} shares his personal commitment to sustainability, encouraging fans to support the initiative through a series of motivational videos.</storyitem>\n<storyitem>{Bayhaven Coastal Stadium|BUILDING-1} will see upgrades like solar panels and energy-efficient lighting as part of the {EcoAthlete Initiative|ORGANIZATION-2}'s campaign once sufficient funds are raised.</storyitem>\n<storyitem>The planned upgrades are expected to reduce the stadium's annual energy costs by 40%, allowing for reinvestment in community sports programs.</storyitem>\n<storyitem>{Bayhaven|LOCATION-1} residents express support for the {EcoAthlete Initiative|ORGANIZATION-2}'s campaign on social media, using the hashtags {#SustainableStadium|MISCELLANEOUS-4} and {#EcoAthleteBayhaven|MISCELLANEOUS-5}.</storyitem>\n<storyitem>Local influencers and environmental activists are actively promoting the campaign, sharing stories and updates to keep the community engaged.</storyitem>\n<storyitem>The {EcoAthlete Initiative|ORGANIZATION-2} sets a goal to complete the {Bayhaven Coastal Stadium|BUILDING-1}'s upgrades within a year, contingent on the success of its fundraising campaign.</storyitem>\n<storyitem>Project managers have outlined a phased approach to the upgrades, ensuring minimal disruption to scheduled events at the stadium.</storyitem>\n</outline>\n```"
+  },
+  "response": "```xml\n<outline>\n<storyitem>The {EcoAthlete Initiative|ORGANIZATION-2} launches a fundraising campaign aimed at upgrading the {Bayhaven Coastal Stadium|BUILDING-1} with energy-efficient technologies.</storyitem>\n<storyitem>The campaign includes plans to install state-of-the-art solar panels and LED lighting systems to significantly reduce the stadium's carbon footprint.</storyitem>\n<storyitem>{EcoAthlete Initiative|ORGANIZATION-2} plans to reduce the {Bayhaven Coastal Stadium|BUILDING-1}'s energy consumption by 30% as part of its sustainability goals.</storyitem>\n<storyitem>Experts estimate that the energy savings from the upgrades could power approximately 500 homes in {Bayhaven|LOCATION-1} for a year.</storyitem>\n<storyitem>Local businesses and community members in {Bayhaven|LOCATION-1} are invited to participate in the {EcoAthlete Initiative|ORGANIZATION-2}'s fundraising campaign.</storyitem>\n<storyitem>Several local cafes and restaurants have pledged to donate a portion of their sales to the campaign, organizing special \"Green Days\" to boost contributions.</storyitem>\n<storyitem>The {Bayhaven City Council|ORGANIZATION-1} pledges support to the {EcoAthlete Initiative|ORGANIZATION-2}, endorsing the plan to enhance environmental sustainability at the {Bayhaven Coastal Stadium|BUILDING-1}.</storyitem>\n<storyitem>The {Bayhaven City Council|ORGANIZATION-1} has allocated a portion of its annual budget to match community donations, doubling the impact of local contributions.</storyitem>\n<storyitem>The {EcoAthlete Initiative|ORGANIZATION-2} announces a series of community events, including eco-friendly sports activities, to raise awareness and funds for the {Bayhaven Coastal Stadium|BUILDING-1}'s upgrades.</storyitem>\n<storyitem>These events will feature workshops on sustainable living and interactive sessions with local environmental experts.</storyitem>\n<storyitem>The {Bayhaven Times|ORGANIZATION-3} publishes an article highlighting the significance of the {EcoAthlete Initiative|ORGANIZATION-2}'s campaign, encouraging public engagement and contribution.</storyitem>\n<storyitem>The article features interviews with key figures from the {EcoAthlete Initiative|ORGANIZATION-2}, discussing the long-term benefits of the stadium's upgrades for the community.</storyitem>\n<storyitem>High-profile local athletes, including {Jaxon Cartwright|PERSON-1}, endorse the {EcoAthlete Initiative|ORGANIZATION-2}'s efforts, motivating the public to invest in sustainable sports infrastructure.</storyitem>\n<storyitem>{Jaxon Cartwright|PERSON-1} shares his personal commitment to sustainability, encouraging fans to support the initiative through a series of motivational videos.</storyitem>\n<storyitem>{Bayhaven Coastal Stadium|BUILDING-1} will see upgrades like solar panels and energy-efficient lighting as part of the {EcoAthlete Initiative|ORGANIZATION-2}'s campaign once sufficient funds are raised.</storyitem>\n<storyitem>The planned upgrades are expected to reduce the stadium's annual energy costs by 40%, allowing for reinvestment in community sports programs.</storyitem>\n<storyitem>{Bayhaven|LOCATION-1} residents express support for the {EcoAthlete Initiative|ORGANIZATION-2}'s campaign on social media, using the hashtags {#SustainableStadium|MISCELLANEOUS-4} and {#EcoAthleteBayhaven|MISCELLANEOUS-5}.</storyitem>\n<storyitem>Local influencers and environmental activists are actively promoting the campaign, sharing stories and updates to keep the community engaged.</storyitem>\n<storyitem>The {EcoAthlete Initiative|ORGANIZATION-2} sets a goal to complete the {Bayhaven Coastal Stadium|BUILDING-1}'s upgrades within a year, contingent on the success of its fundraising campaign.</storyitem>\n<storyitem>Project managers have outlined a phased approach to the upgrades, ensuring minimal disruption to scheduled events at the stadium.</storyitem>\n</outline>\n```",
+  "instructions": "You are an AI assistant tasked with identifying and marking fictional entities within an outline of a fictional event. Your goal is to replace each occurrence of these entities with a specific format that includes the entity's ID. Follow these instructions carefully:\n\nYou will be working with the following inputs:\n\nDate: {{DATE}}\n\n<outline>\n{{OUTLINE}}\n</outline>\n\n<entities>\n{{ALL_USED_LOCATION_XML}}\n{{ALL_USED_PERSON_XML}}\n{{ALL_USED_ORGANIZATION_XML}}\n{{ALL_USED_PRODUCT_XML}}\n{{ALL_USED_ART_XML}}\n{{ALL_USED_BUILDING_XML}}\n{{ALL_USED_EVENT_XML}}\n{{ALL_USED_MISCELLANEOUS_XML}}\n</entities>\n\nProcess the outline by following these steps:\n\n1. Carefully review the list of entities provided in the <entities> section. Each entity will have an associated ID and a name.\n\n2. Search the outline for all occurrences of each entity in the list.\n\n3. For each occurrence found, replace it with the format: {full name|ID}\n   Where \"full name\" is the full name as provided via the \"name\" property of the entity.\n   \n4. Maintain the original structure and formatting of the outline, only changing the entities as described.\n\n5. After processing all entities, review the entire outline to ensure all occurrences have been properly marked and no entities were missed.\n\n6. Output the processed outline, maintaining its original structure but with all entity occurrences replaced as instructed.\n\nImportant points to remember:\n- Be thorough in your search for entities, including variations or partial mentions.\n- Always use the ID and name as provided in the entity list, even:\n    - If an entity is referred to by full name\n    - If an entity is referred to by an abbreviation\n    - If an entity is referred to using parts of the full name\n\nFormat your output as follows:\n- Enclose the entire processed outline within <outline> tags.\n- Place each sentence of the outline within separate <storyitem> tags.\n\nProvide your final output without any additional commentary or explanations. Focus solely on processing the outline as instructed.",
+  "text_prompt": "You are an AI assistant tasked with identifying and marking fictional entities within an outline of a fictional event. Your goal is to replace each occurrence of these entities with a specific format that includes the entity's ID. Follow these instructions carefully:\n\nYou will be working with the following inputs:\n\nDate: 2023-06-25\n\n<outline>\nThe EcoAthlete Initiative launches a fundraising campaign aimed at upgrading the Bayhaven Coastal Stadium with energy-efficient technologies.\nThe campaign includes plans to install state-of-the-art solar panels and LED lighting systems to significantly reduce the stadium's carbon footprint.\nEcoAthlete Initiative plans to reduce the Bayhaven Coastal Stadium's energy consumption by 30% as part of its sustainability goals.\nExperts estimate that the energy savings from the upgrades could power approximately 500 homes in Bayhaven for a year.\nLocal businesses and community members in Bayhaven are invited to participate in the EcoAthlete Initiative's fundraising campaign.\nSeveral local cafes and restaurants have pledged to donate a portion of their sales to the campaign, organizing special \"Green Days\" to boost contributions.\nThe Bayhaven City Council pledges support to the EcoAthlete Initiative, endorsing the plan to enhance environmental sustainability at the Bayhaven Coastal Stadium.\nThe City Council has allocated a portion of its annual budget to match community donations, doubling the impact of local contributions.\nThe EcoAthlete Initiative announces a series of community events, including eco-friendly sports activities, to raise awareness and funds for the Bayhaven Coastal Stadium's upgrades.\nThese events will feature workshops on sustainable living and interactive sessions with local environmental experts.\nThe Bayhaven Times publishes an article highlighting the significance of the EcoAthlete Initiative's campaign, encouraging public engagement and contribution.\nThe article features interviews with key figures from the EcoAthlete Initiative, discussing the long-term benefits of the stadium's upgrades for the community.\nHigh-profile local athletes, including Jaxon Cartwright, endorse the EcoAthlete Initiative's efforts, motivating the public to invest in sustainable sports infrastructure.\nJaxon Cartwright shares his personal commitment to sustainability, encouraging fans to support the initiative through a series of motivational videos.\nBayhaven Coastal Stadium will see upgrades like solar panels and energy-efficient lighting as part of the EcoAthlete Initiative's campaign once sufficient funds are raised.\nThe planned upgrades are expected to reduce the stadium's annual energy costs by 40%, allowing for reinvestment in community sports programs.\nBayhaven residents express support for the EcoAthlete Initiative's campaign on social media, using the hashtags #SustainableStadium and #EcoAthleteBayhaven.\nLocal influencers and environmental activists are actively promoting the campaign, sharing stories and updates to keep the community engaged.\nThe EcoAthlete Initiative sets a goal to complete the Bayhaven Coastal Stadium's upgrades within a year, contingent on the success of its fundraising campaign.\nProject managers have outlined a phased approach to the upgrades, ensuring minimal disruption to scheduled events at the stadium.\n</outline>\n\n<entities>\n<location><area>60 square kilometers</area><country>Greenlandia</country><created_at>0</created_at><description>Bayhaven is a bustling coastal city known for its vibrant community and beautiful seaside landscapes.</description><elevation>30 meters</elevation><entity_class>location</entity_class><history><event>2023-05-17: Bayhaven successfully hosted the first annual GreenSports Challenge, showcasing its commitment to sustainability and community engagement.</event></history><id>LOCATION-1</id><last_updated>2023-05-17</last_updated><name>Bayhaven</name><population>120,000</population><type>city</type></location>\n<person><created_at>0</created_at><date_of_birth>1997-07-15</date_of_birth><description>Jaxon Cartwright is a determined athlete passionate about sustainability and environmental causes.</description><education>Bachelor's in Sports Science</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>male</gender><hair_color>brown</hair_color><height>185 cm</height><history><event>2023-05-17: Jaxon Cartwright won the 1500-meter race at the GreenSports Challenge and was inspired to adopt more eco-friendly practices in his training routine.</event></history><id>PERSON-1</id><last_updated>2023-05-17</last_updated><marital_status>single</marital_status><name>Jaxon Cartwright</name><nationality>Greenlandian</nationality><political_affiliation>independent</political_affiliation><profession>professional athlete</profession><type>None</type><weight>75 kg</weight></person>\n<organization><annual_revenue>$20 million</annual_revenue><created_at>0</created_at><description>Bayhaven City Council is the governing body that manages the city's development and community services.</description><entity_class>organization</entity_class><founded>1895</founded><headquarters>Bayhaven Government Center</headquarters><history><event>2023-05-17: Bayhaven City Council partnered with EcoAthlete Initiative to implement a zero-waste policy at the GreenSports Challenge, receiving positive feedback from the community.</event></history><id>ORGANIZATION-1</id><industry>public administration</industry><last_updated>2023-05-17</last_updated><mission_statement>To enhance the quality of life for Bayhaven residents through effective governance and community engagement.</mission_statement><name>Bayhaven City Council</name><number_of_employees>150</number_of_employees><type>government agency</type></organization>\n<organization><annual_revenue>$1 million</annual_revenue><created_at>0</created_at><description>EcoAthlete Initiative is dedicated to promoting sustainable practices within sports communities across Greenlandia.</description><entity_class>organization</entity_class><founded>2015</founded><headquarters>Bayhaven Ecological Center</headquarters><history><event>2023-05-17: EcoAthlete Initiative played a key role in organizing the GreenSports Challenge, promoting sustainability through educational booths and a zero-waste policy.</event></history><id>ORGANIZATION-2</id><industry>environmentalism</industry><last_updated>2023-05-17</last_updated><mission_statement>To inspire athletes and communities to embrace sustainability in sports and daily activities.</mission_statement><name>EcoAthlete Initiative</name><number_of_employees>30</number_of_employees><type>non-profit</type></organization>\n<organization><annual_revenue>$5 million</annual_revenue><created_at>0</created_at><description>Bayhaven Times is a respected regional newspaper offering comprehensive news coverage and insights into local affairs.</description><entity_class>organization</entity_class><founded>1920</founded><headquarters>Bayhaven Publishing House</headquarters><history><event>2023-05-17: Bayhaven Times conducted a survey showing strong community support for the zero-waste policy at the GreenSports Challenge.</event></history><id>ORGANIZATION-3</id><industry>media and communications</industry><last_updated>2023-05-17</last_updated><mission_statement>To provide accurate and engaging news that impacts and informs the Bayhaven community.</mission_statement><name>Bayhaven Times</name><number_of_employees>45</number_of_employees><type>media organization</type></organization>\n\n\n<building><architect>Elena Fischer</architect><capacity>15,000</capacity><created_at>0</created_at><description>Bayhaven Coastal Stadium is an eco-friendly sports facility offering spectacular views and accommodating various athletic events.</description><entity_class>building</entity_class><floors>4</floors><height>45 meters</height><history><event>2023-05-17: Bayhaven Coastal Stadium hosted the GreenSports Challenge, highlighting its eco-friendly facilities and scenic views.</event></history><id>BUILDING-1</id><last_updated>2023-05-17</last_updated><material>recycled steel and glass</material><name>Bayhaven Coastal Stadium</name><type>public</type><year_built>2018</year_built></building>\n\n<miscellaneous><category>miscellaneous</category><id>MISCELLANEOUS-4</id><name>#SustainableStadium</name></miscellaneous>\n<miscellaneous><category>miscellaneous</category><id>MISCELLANEOUS-5</id><name>#EcoAthleteBayhaven</name></miscellaneous>\n</entities>\n\nProcess the outline by following these steps:\n\n1. Carefully review the list of entities provided in the <entities> section. Each entity will have an associated ID and a name.\n\n2. Search the outline for all occurrences of each entity in the list.\n\n3. For each occurrence found, replace it with the format: {full name|ID}\n   Where \"full name\" is the full name as provided via the \"name\" property of the entity.\n   \n4. Maintain the original structure and formatting of the outline, only changing the entities as described.\n\n5. After processing all entities, review the entire outline to ensure all occurrences have been properly marked and no entities were missed.\n\n6. Output the processed outline, maintaining its original structure but with all entity occurrences replaced as instructed.\n\nImportant points to remember:\n- Be thorough in your search for entities, including variations or partial mentions.\n- Always use the ID and name as provided in the entity list, even:\n    - If an entity is referred to by full name\n    - If an entity is referred to by an abbreviation\n    - If an entity is referred to using parts of the full name\n\nFormat your output as follows:\n- Enclose the entire processed outline within <outline> tags.\n- Place each sentence of the outline within separate <storyitem> tags.\n\nProvide your final output without any additional commentary or explanations. Focus solely on processing the outline as instructed.",
+  "system-prompt": null,
+  "values": {
+    "GENRE": "Sports",
+    "EVENT_SUMMARY": "EcoAthlete Initiative begins a fundraising campaign to enhance the Bayhaven Coastal Stadium's facilities, aiming to reduce energy consumption by 30%.",
+    "EVENT_SUMMARY_FOR_NAME": "EcoAthlete Initiativ",
+    "INIT_SUMMARY": "A regional athletic competition has successfully implemented a zero-waste policy, drastically reducing the amount of garbage typically produced by such events.",
+    "KEYWORDS": "",
+    "CREATED_AT": 1,
+    "HISTORIES": [
+      "<event><date>2023-05-17</date><outline>The coastal city of {Bayhaven|LOCATION-1} hosts the first annual {GreenSports Challenge|EVENT-1}, focusing on sustainable athletic practices. The event takes place at the {Bayhaven Coastal Stadium|BUILDING-1}, known for its scenic views and eco-friendly facilities. Local athletes from the five regions around {Bayhaven|LOCATION-1} compete in track and field events, attracting a moderate crowd. Participants include high school and college athletes, as well as amateur runners from local clubs. {Bayhaven City Council|ORGANIZATION-1} partners with {EcoAthlete Initiative|ORGANIZATION-2}, a local environmental organization, to implement a zero-waste policy at the event. The {EcoAthlete Initiative|ORGANIZATION-2} has been recognized for its efforts in promoting sustainability in sports through various community programs. Organizers distribute reusable water bottles to athletes and attendees to minimize plastic waste during the {GreenSports Challenge|EVENT-1}. The water bottles are made from recycled materials and feature the event's logo, encouraging attendees to keep them as souvenirs. Athletes participating in the {GreenSports Challenge|EVENT-1} are encouraged to use sustainable transportation options like bicycles and electric shuttles to reach the venue. Local bike rental shops offer discounts to participants, promoting eco-friendly travel to the event. The {GreenSports Challenge|EVENT-1} features educational booths, where {EcoAthlete Initiative|ORGANIZATION-2} volunteers provide information on sustainable sports practices. Interactive displays at the booths demonstrate the environmental impact of traditional sports events and the benefits of sustainable alternatives. The {Bayhaven|LOCATION-1} residents positively respond to the event, as indicated by a local survey conducted by the {Bayhaven Times|ORGANIZATION-3}. The survey highlights that 85% of attendees support the continuation of the zero-waste policy in future events. Athlete {Jaxon Cartwright|PERSON-1} wins the 1500-meter race and praises the zero-waste initiative in his post-race interview. {Jaxon Cartwright|PERSON-1} mentions that the event's focus on sustainability inspired him to adopt more eco-friendly practices in his training routine. Local social media platforms buzz with chatter about the successful implementation of zero-waste policies at the {GreenSports Challenge|EVENT-1}. Hashtags like {#GreenSportsBayhaven|MISCELLANEOUS-2} and {#ZeroWasteChallenge|MISCELLANEOUS-3} trend locally, with users sharing photos and positive feedback. The event concludes with a small awards ceremony, emphasizing the importance of sustainability in sports, as reflected in {Bayhaven's Green Vision 2030|MISCELLANEOUS-1} plan. Speakers at the ceremony include local environmental leaders and city officials, who commend the community's efforts in supporting sustainable initiatives.</outline></event>"
+    ],
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "NEXT_IDS": {
+      "person": 2,
+      "organization": 4,
+      "location": 2,
+      "product": 1,
+      "art": 1,
+      "building": 2,
+      "event": 2,
+      "miscellaneous": 6
+    },
+    "PROVIDED_DATE": "2023-06-25",
+    "PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Jaxon Cartwright",
+        "entity_class": "person",
+        "description": "Jaxon Cartwright is a determined athlete passionate about sustainability and environmental causes.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2023-05-17",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Jaxon Cartwright won the 1500-meter race at the GreenSports Challenge and was inspired to adopt more eco-friendly practices in his training routine.",
+            "date": "2023-05-17"
+          }
+        ],
+        "date_of_birth": "1997-07-15",
+        "gender": "male",
+        "profession": "professional athlete",
+        "nationality": "Greenlandian",
+        "education": "Bachelor's in Sports Science",
+        "height": "185 cm",
+        "weight": "75 kg",
+        "eye_color": "blue",
+        "hair_color": "brown",
+        "political_affiliation": "independent",
+        "marital_status": "single"
+      }
+    ],
+    "ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Bayhaven City Council",
+        "entity_class": "organization",
+        "description": "Bayhaven City Council is the governing body that manages the city's development and community services.",
+        "type": "government agency",
+        "created_at": 0,
+        "last_updated": "2023-05-17",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Bayhaven City Council partnered with EcoAthlete Initiative to implement a zero-waste policy at the GreenSports Challenge, receiving positive feedback from the community.",
+            "date": "2023-05-17"
+          }
+        ],
+        "founded": "1895",
+        "headquarters": "Bayhaven Government Center",
+        "industry": "public administration",
+        "mission_statement": "To enhance the quality of life for Bayhaven residents through effective governance and community engagement.",
+        "number_of_employees": "150",
+        "annual_revenue": "$20 million"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "EcoAthlete Initiative",
+        "entity_class": "organization",
+        "description": "EcoAthlete Initiative is dedicated to promoting sustainable practices within sports communities across Greenlandia.",
+        "type": "non-profit",
+        "created_at": 0,
+        "last_updated": "2023-05-17",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "EcoAthlete Initiative played a key role in organizing the GreenSports Challenge, promoting sustainability through educational booths and a zero-waste policy.",
+            "date": "2023-05-17"
+          }
+        ],
+        "founded": "2015",
+        "headquarters": "Bayhaven Ecological Center",
+        "industry": "environmentalism",
+        "mission_statement": "To inspire athletes and communities to embrace sustainability in sports and daily activities.",
+        "number_of_employees": "30",
+        "annual_revenue": "$1 million"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Bayhaven Times",
+        "entity_class": "organization",
+        "description": "Bayhaven Times is a respected regional newspaper offering comprehensive news coverage and insights into local affairs.",
+        "type": "media organization",
+        "created_at": 0,
+        "last_updated": "2023-05-17",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Bayhaven Times conducted a survey showing strong community support for the zero-waste policy at the GreenSports Challenge.",
+            "date": "2023-05-17"
+          }
+        ],
+        "founded": "1920",
+        "headquarters": "Bayhaven Publishing House",
+        "industry": "media and communications",
+        "mission_statement": "To provide accurate and engaging news that impacts and informs the Bayhaven community.",
+        "number_of_employees": "45",
+        "annual_revenue": "$5 million"
+      }
+    ],
+    "LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Bayhaven",
+        "entity_class": "location",
+        "description": "Bayhaven is a bustling coastal city known for its vibrant community and beautiful seaside landscapes.",
+        "type": "city",
+        "created_at": 0,
+        "last_updated": "2023-05-17",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Bayhaven successfully hosted the first annual GreenSports Challenge, showcasing its commitment to sustainability and community engagement.",
+            "date": "2023-05-17"
+          }
+        ],
+        "population": "120,000",
+        "area": "60 square kilometers",
+        "elevation": "30 meters",
+        "country": "Greenlandia"
+      }
+    ],
+    "PRODUCT": [],
+    "ART": [],
+    "BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Bayhaven Coastal Stadium",
+        "entity_class": "building",
+        "description": "Bayhaven Coastal Stadium is an eco-friendly sports facility offering spectacular views and accommodating various athletic events.",
+        "type": "public",
+        "created_at": 0,
+        "last_updated": "2023-05-17",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Bayhaven Coastal Stadium hosted the GreenSports Challenge, highlighting its eco-friendly facilities and scenic views.",
+            "date": "2023-05-17"
+          }
+        ],
+        "architect": "Elena Fischer",
+        "year_built": "2018",
+        "height": "45 meters",
+        "floors": "4",
+        "material": "recycled steel and glass",
+        "capacity": "15,000"
+      }
+    ],
+    "EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "GreenSports Challenge",
+        "entity_class": "event",
+        "description": "The GreenSports Challenge is an eco-conscious sporting event that highlights sustainable athletic practices and competitions.",
+        "type": "sporting",
+        "created_at": 0,
+        "last_updated": "2023-05-17",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The GreenSports Challenge successfully implemented a zero-waste policy and promoted sustainable practices, receiving positive feedback from participants and attendees.",
+            "date": "2023-05-17"
+          }
+        ],
+        "date": "2023-05-17",
+        "duration": "1 day",
+        "organizer": "EcoAthlete Initiative",
+        "number_of_participants": "200",
+        "budget": "$50,000"
+      }
+    ],
+    "MISCELLANEOUS": [
+      {
+        "id": "MISCELLANEOUS-1",
+        "name": "Bayhaven's Green Vision 2030",
+        "entity_class": "miscellaneous",
+        "description": "Bayhaven's Green Vision 2030 outlines the city's commitment to becoming a leader in sustainable urban living and environmental stewardship.",
+        "type": "concept",
+        "created_at": 0,
+        "last_updated": "2023-05-17",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The GreenSports Challenge aligned with Bayhaven's Green Vision 2030, emphasizing sustainability in sports and community initiatives.",
+            "date": "2023-05-17"
+          }
+        ]
+      },
+      {
+        "id": "MISCELLANEOUS-2",
+        "name": "#GreenSportsBayhaven",
+        "entity_class": "miscellaneous",
+        "description": "#GreenSportsBayhaven is a trending hashtag capturing the excitement and support for Bayhaven's eco-friendly sporting initiative.",
+        "type": "phenomenon",
+        "created_at": 0,
+        "last_updated": "2023-05-17",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "#GreenSportsBayhaven trended locally as the community celebrated the success of the eco-friendly sporting event.",
+            "date": "2023-05-17"
+          }
+        ]
+      },
+      {
+        "id": "MISCELLANEOUS-3",
+        "name": "#ZeroWasteChallenge",
+        "entity_class": "miscellaneous",
+        "description": "#ZeroWasteChallenge encourages individuals and organizations to commit to reducing waste and embracing sustainable practices.",
+        "type": "concept",
+        "created_at": 0,
+        "last_updated": "2023-05-17",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "#ZeroWasteChallenge gained traction as attendees and participants shared their commitment to reducing waste at the GreenSports Challenge.",
+            "date": "2023-05-17"
+          }
+        ]
+      }
+    ],
+    "PERSONS_XML": "<person><created_at>0</created_at><date_of_birth>1997-07-15</date_of_birth><description>Jaxon Cartwright is a determined athlete passionate about sustainability and environmental causes.</description><education>Bachelor's in Sports Science</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>male</gender><hair_color>brown</hair_color><height>185 cm</height><history><event>2023-05-17: Jaxon Cartwright won the 1500-meter race at the GreenSports Challenge and was inspired to adopt more eco-friendly practices in his training routine.</event></history><id>PERSON-1</id><last_updated>2023-05-17</last_updated><marital_status>single</marital_status><name>Jaxon Cartwright</name><nationality>Greenlandian</nationality><political_affiliation>independent</political_affiliation><profession>professional athlete</profession><type>None</type><weight>75 kg</weight></person>",
+    "ORGANIZATIONS_XML": "<organization><annual_revenue>$20 million</annual_revenue><created_at>0</created_at><description>Bayhaven City Council is the governing body that manages the city's development and community services.</description><entity_class>organization</entity_class><founded>1895</founded><headquarters>Bayhaven Government Center</headquarters><history><event>2023-05-17: Bayhaven City Council partnered with EcoAthlete Initiative to implement a zero-waste policy at the GreenSports Challenge, receiving positive feedback from the community.</event></history><id>ORGANIZATION-1</id><industry>public administration</industry><last_updated>2023-05-17</last_updated><mission_statement>To enhance the quality of life for Bayhaven residents through effective governance and community engagement.</mission_statement><name>Bayhaven City Council</name><number_of_employees>150</number_of_employees><type>government agency</type></organization>\n<organization><annual_revenue>$1 million</annual_revenue><created_at>0</created_at><description>EcoAthlete Initiative is dedicated to promoting sustainable practices within sports communities across Greenlandia.</description><entity_class>organization</entity_class><founded>2015</founded><headquarters>Bayhaven Ecological Center</headquarters><history><event>2023-05-17: EcoAthlete Initiative played a key role in organizing the GreenSports Challenge, promoting sustainability through educational booths and a zero-waste policy.</event></history><id>ORGANIZATION-2</id><industry>environmentalism</industry><last_updated>2023-05-17</last_updated><mission_statement>To inspire athletes and communities to embrace sustainability in sports and daily activities.</mission_statement><name>EcoAthlete Initiative</name><number_of_employees>30</number_of_employees><type>non-profit</type></organization>\n<organization><annual_revenue>$5 million</annual_revenue><created_at>0</created_at><description>Bayhaven Times is a respected regional newspaper offering comprehensive news coverage and insights into local affairs.</description><entity_class>organization</entity_class><founded>1920</founded><headquarters>Bayhaven Publishing House</headquarters><history><event>2023-05-17: Bayhaven Times conducted a survey showing strong community support for the zero-waste policy at the GreenSports Challenge.</event></history><id>ORGANIZATION-3</id><industry>media and communications</industry><last_updated>2023-05-17</last_updated><mission_statement>To provide accurate and engaging news that impacts and informs the Bayhaven community.</mission_statement><name>Bayhaven Times</name><number_of_employees>45</number_of_employees><type>media organization</type></organization>",
+    "LOCATIONS_XML": "<location><area>60 square kilometers</area><country>Greenlandia</country><created_at>0</created_at><description>Bayhaven is a bustling coastal city known for its vibrant community and beautiful seaside landscapes.</description><elevation>30 meters</elevation><entity_class>location</entity_class><history><event>2023-05-17: Bayhaven successfully hosted the first annual GreenSports Challenge, showcasing its commitment to sustainability and community engagement.</event></history><id>LOCATION-1</id><last_updated>2023-05-17</last_updated><name>Bayhaven</name><population>120,000</population><type>city</type></location>",
+    "PRODUCTS_XML": "",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "<building><architect>Elena Fischer</architect><capacity>15,000</capacity><created_at>0</created_at><description>Bayhaven Coastal Stadium is an eco-friendly sports facility offering spectacular views and accommodating various athletic events.</description><entity_class>building</entity_class><floors>4</floors><height>45 meters</height><history><event>2023-05-17: Bayhaven Coastal Stadium hosted the GreenSports Challenge, highlighting its eco-friendly facilities and scenic views.</event></history><id>BUILDING-1</id><last_updated>2023-05-17</last_updated><material>recycled steel and glass</material><name>Bayhaven Coastal Stadium</name><type>public</type><year_built>2018</year_built></building>",
+    "EVENTS_XML": "<event><budget>$50,000</budget><created_at>0</created_at><date>2023-05-17</date><description>The GreenSports Challenge is an eco-conscious sporting event that highlights sustainable athletic practices and competitions.</description><duration>1 day</duration><entity_class>event</entity_class><history><event>2023-05-17: The GreenSports Challenge successfully implemented a zero-waste policy and promoted sustainable practices, receiving positive feedback from participants and attendees.</event></history><id>EVENT-1</id><last_updated>2023-05-17</last_updated><name>GreenSports Challenge</name><number_of_participants>200</number_of_participants><organizer>EcoAthlete Initiative</organizer><type>sporting</type></event>",
+    "MISCELLANEOUSS_XML": "<miscellaneous><created_at>0</created_at><description>Bayhaven's Green Vision 2030 outlines the city's commitment to becoming a leader in sustainable urban living and environmental stewardship.</description><entity_class>miscellaneous</entity_class><history><event>2023-05-17: The GreenSports Challenge aligned with Bayhaven's Green Vision 2030, emphasizing sustainability in sports and community initiatives.</event></history><id>MISCELLANEOUS-1</id><last_updated>2023-05-17</last_updated><name>Bayhaven's Green Vision 2030</name><type>concept</type></miscellaneous>\n<miscellaneous><created_at>0</created_at><description>#GreenSportsBayhaven is a trending hashtag capturing the excitement and support for Bayhaven's eco-friendly sporting initiative.</description><entity_class>miscellaneous</entity_class><history><event>2023-05-17: #GreenSportsBayhaven trended locally as the community celebrated the success of the eco-friendly sporting event.</event></history><id>MISCELLANEOUS-2</id><last_updated>2023-05-17</last_updated><name>#GreenSportsBayhaven</name><type>phenomenon</type></miscellaneous>\n<miscellaneous><created_at>0</created_at><description>#ZeroWasteChallenge encourages individuals and organizations to commit to reducing waste and embracing sustainable practices.</description><entity_class>miscellaneous</entity_class><history><event>2023-05-17: #ZeroWasteChallenge gained traction as attendees and participants shared their commitment to reducing waste at the GreenSports Challenge.</event></history><id>MISCELLANEOUS-3</id><last_updated>2023-05-17</last_updated><name>#ZeroWasteChallenge</name><type>concept</type></miscellaneous>",
+    "NUM_STORYITEMS": 10,
+    "HISTORY_XML": "<event><date>2023-05-17</date><outline>The coastal city of {Bayhaven|LOCATION-1} hosts the first annual {GreenSports Challenge|EVENT-1}, focusing on sustainable athletic practices. The event takes place at the {Bayhaven Coastal Stadium|BUILDING-1}, known for its scenic views and eco-friendly facilities. Local athletes from the five regions around {Bayhaven|LOCATION-1} compete in track and field events, attracting a moderate crowd. Participants include high school and college athletes, as well as amateur runners from local clubs. {Bayhaven City Council|ORGANIZATION-1} partners with {EcoAthlete Initiative|ORGANIZATION-2}, a local environmental organization, to implement a zero-waste policy at the event. The {EcoAthlete Initiative|ORGANIZATION-2} has been recognized for its efforts in promoting sustainability in sports through various community programs. Organizers distribute reusable water bottles to athletes and attendees to minimize plastic waste during the {GreenSports Challenge|EVENT-1}. The water bottles are made from recycled materials and feature the event's logo, encouraging attendees to keep them as souvenirs. Athletes participating in the {GreenSports Challenge|EVENT-1} are encouraged to use sustainable transportation options like bicycles and electric shuttles to reach the venue. Local bike rental shops offer discounts to participants, promoting eco-friendly travel to the event. The {GreenSports Challenge|EVENT-1} features educational booths, where {EcoAthlete Initiative|ORGANIZATION-2} volunteers provide information on sustainable sports practices. Interactive displays at the booths demonstrate the environmental impact of traditional sports events and the benefits of sustainable alternatives. The {Bayhaven|LOCATION-1} residents positively respond to the event, as indicated by a local survey conducted by the {Bayhaven Times|ORGANIZATION-3}. The survey highlights that 85% of attendees support the continuation of the zero-waste policy in future events. Athlete {Jaxon Cartwright|PERSON-1} wins the 1500-meter race and praises the zero-waste initiative in his post-race interview. {Jaxon Cartwright|PERSON-1} mentions that the event's focus on sustainability inspired him to adopt more eco-friendly practices in his training routine. Local social media platforms buzz with chatter about the successful implementation of zero-waste policies at the {GreenSports Challenge|EVENT-1}. Hashtags like {#GreenSportsBayhaven|MISCELLANEOUS-2} and {#ZeroWasteChallenge|MISCELLANEOUS-3} trend locally, with users sharing photos and positive feedback. The event concludes with a small awards ceremony, emphasizing the importance of sustainability in sports, as reflected in {Bayhaven's Green Vision 2030|MISCELLANEOUS-1} plan. Speakers at the ceremony include local environmental leaders and city officials, who commend the community's efforts in supporting sustainable initiatives.</outline></event>",
+    "STORY_ITEM": [
+      "The EcoAthlete Initiative launches a fundraising campaign aimed at upgrading the Bayhaven Coastal Stadium with energy-efficient technologies.",
+      "The campaign includes plans to install state-of-the-art solar panels and LED lighting systems to significantly reduce the stadium's carbon footprint.",
+      "EcoAthlete Initiative plans to reduce the Bayhaven Coastal Stadium's energy consumption by 30% as part of its sustainability goals.",
+      "Experts estimate that the energy savings from the upgrades could power approximately 500 homes in Bayhaven for a year.",
+      "Local businesses and community members in Bayhaven are invited to participate in the EcoAthlete Initiative's fundraising campaign.",
+      "Several local cafes and restaurants have pledged to donate a portion of their sales to the campaign, organizing special \"Green Days\" to boost contributions.",
+      "The Bayhaven City Council pledges support to the EcoAthlete Initiative, endorsing the plan to enhance environmental sustainability at the Bayhaven Coastal Stadium.",
+      "The City Council has allocated a portion of its annual budget to match community donations, doubling the impact of local contributions.",
+      "The EcoAthlete Initiative announces a series of community events, including eco-friendly sports activities, to raise awareness and funds for the Bayhaven Coastal Stadium's upgrades.",
+      "These events will feature workshops on sustainable living and interactive sessions with local environmental experts.",
+      "The Bayhaven Times publishes an article highlighting the significance of the EcoAthlete Initiative's campaign, encouraging public engagement and contribution.",
+      "The article features interviews with key figures from the EcoAthlete Initiative, discussing the long-term benefits of the stadium's upgrades for the community.",
+      "High-profile local athletes, including Jaxon Cartwright, endorse the EcoAthlete Initiative's efforts, motivating the public to invest in sustainable sports infrastructure.",
+      "Jaxon Cartwright shares his personal commitment to sustainability, encouraging fans to support the initiative through a series of motivational videos.",
+      "Bayhaven Coastal Stadium will see upgrades like solar panels and energy-efficient lighting as part of the EcoAthlete Initiative's campaign once sufficient funds are raised.",
+      "The planned upgrades are expected to reduce the stadium's annual energy costs by 40%, allowing for reinvestment in community sports programs.",
+      "Bayhaven residents express support for the EcoAthlete Initiative's campaign on social media, using the hashtags #SustainableStadium and #EcoAthleteBayhaven.",
+      "Local influencers and environmental activists are actively promoting the campaign, sharing stories and updates to keep the community engaged.",
+      "The EcoAthlete Initiative sets a goal to complete the Bayhaven Coastal Stadium's upgrades within a year, contingent on the success of its fundraising campaign.",
+      "Project managers have outlined a phased approach to the upgrades, ensuring minimal disruption to scheduled events at the stadium."
+    ],
+    "DATE": "2023-06-25",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 2,
+    "OUTLINE": "The EcoAthlete Initiative launches a fundraising campaign aimed at upgrading the Bayhaven Coastal Stadium with energy-efficient technologies.\nThe campaign includes plans to install state-of-the-art solar panels and LED lighting systems to significantly reduce the stadium's carbon footprint.\nEcoAthlete Initiative plans to reduce the Bayhaven Coastal Stadium's energy consumption by 30% as part of its sustainability goals.\nExperts estimate that the energy savings from the upgrades could power approximately 500 homes in Bayhaven for a year.\nLocal businesses and community members in Bayhaven are invited to participate in the EcoAthlete Initiative's fundraising campaign.\nSeveral local cafes and restaurants have pledged to donate a portion of their sales to the campaign, organizing special \"Green Days\" to boost contributions.\nThe Bayhaven City Council pledges support to the EcoAthlete Initiative, endorsing the plan to enhance environmental sustainability at the Bayhaven Coastal Stadium.\nThe City Council has allocated a portion of its annual budget to match community donations, doubling the impact of local contributions.\nThe EcoAthlete Initiative announces a series of community events, including eco-friendly sports activities, to raise awareness and funds for the Bayhaven Coastal Stadium's upgrades.\nThese events will feature workshops on sustainable living and interactive sessions with local environmental experts.\nThe Bayhaven Times publishes an article highlighting the significance of the EcoAthlete Initiative's campaign, encouraging public engagement and contribution.\nThe article features interviews with key figures from the EcoAthlete Initiative, discussing the long-term benefits of the stadium's upgrades for the community.\nHigh-profile local athletes, including Jaxon Cartwright, endorse the EcoAthlete Initiative's efforts, motivating the public to invest in sustainable sports infrastructure.\nJaxon Cartwright shares his personal commitment to sustainability, encouraging fans to support the initiative through a series of motivational videos.\nBayhaven Coastal Stadium will see upgrades like solar panels and energy-efficient lighting as part of the EcoAthlete Initiative's campaign once sufficient funds are raised.\nThe planned upgrades are expected to reduce the stadium's annual energy costs by 40%, allowing for reinvestment in community sports programs.\nBayhaven residents express support for the EcoAthlete Initiative's campaign on social media, using the hashtags #SustainableStadium and #EcoAthleteBayhaven.\nLocal influencers and environmental activists are actively promoting the campaign, sharing stories and updates to keep the community engaged.\nThe EcoAthlete Initiative sets a goal to complete the Bayhaven Coastal Stadium's upgrades within a year, contingent on the success of its fundraising campaign.\nProject managers have outlined a phased approach to the upgrades, ensuring minimal disruption to scheduled events at the stadium.",
+    "PRE-CONSISTENCY-NUM-ITEMS": 20,
+    "STORYITEM_XML": "<storyitems>\n<storyitem>The EcoAthlete Initiative launches a fundraising campaign aimed at upgrading the Bayhaven Coastal Stadium with energy-efficient technologies.</storyitem>\n<storyitem>The campaign includes plans to install state-of-the-art solar panels and LED lighting systems to significantly reduce the stadium's carbon footprint.</storyitem>\n<storyitem>EcoAthlete Initiative plans to reduce the Bayhaven Coastal Stadium's energy consumption by 30% as part of its sustainability goals.</storyitem>\n<storyitem>Experts estimate that the energy savings from the upgrades could power approximately 500 homes in Bayhaven for a year.</storyitem>\n<storyitem>Local businesses and community members in Bayhaven are invited to participate in the EcoAthlete Initiative's fundraising campaign.</storyitem>\n<storyitem>Several local cafes and restaurants have pledged to donate a portion of their sales to the campaign, organizing special \"Green Days\" to boost contributions.</storyitem>\n<storyitem>The Bayhaven City Council pledges support to the EcoAthlete Initiative, endorsing the plan to enhance environmental sustainability at the Bayhaven Coastal Stadium.</storyitem>\n<storyitem>The City Council has allocated a portion of its annual budget to match community donations, doubling the impact of local contributions.</storyitem>\n<storyitem>The EcoAthlete Initiative announces a series of community events, including eco-friendly sports activities, to raise awareness and funds for the Bayhaven Coastal Stadium's upgrades.</storyitem>\n<storyitem>These events will feature workshops on sustainable living and interactive sessions with local environmental experts.</storyitem>\n<storyitem>The Bayhaven Times publishes an article highlighting the significance of the EcoAthlete Initiative's campaign, encouraging public engagement and contribution.</storyitem>\n<storyitem>The article features interviews with key figures from the EcoAthlete Initiative, discussing the long-term benefits of the stadium's upgrades for the community.</storyitem>\n<storyitem>High-profile local athletes, including Jaxon Cartwright, endorse the EcoAthlete Initiative's efforts, motivating the public to invest in sustainable sports infrastructure.</storyitem>\n<storyitem>Jaxon Cartwright shares his personal commitment to sustainability, encouraging fans to support the initiative through a series of motivational videos.</storyitem>\n<storyitem>Bayhaven Coastal Stadium will see upgrades like solar panels and energy-efficient lighting as part of the EcoAthlete Initiative's campaign once sufficient funds are raised.</storyitem>\n<storyitem>The planned upgrades are expected to reduce the stadium's annual energy costs by 40%, allowing for reinvestment in community sports programs.</storyitem>\n<storyitem>Bayhaven residents express support for the EcoAthlete Initiative's campaign on social media, using the hashtags #SustainableStadium and #EcoAthleteBayhaven.</storyitem>\n<storyitem>Local influencers and environmental activists are actively promoting the campaign, sharing stories and updates to keep the community engaged.</storyitem>\n<storyitem>The EcoAthlete Initiative sets a goal to complete the Bayhaven Coastal Stadium's upgrades within a year, contingent on the success of its fundraising campaign.</storyitem>\n<storyitem>Project managers have outlined a phased approach to the upgrades, ensuring minimal disruption to scheduled events at the stadium.</storyitem>\n<storyitems>",
+    "NEW_PERSON_NAME": [],
+    "NEW_ORGANIZATION_NAME": [],
+    "NEW_LOCATION_NAME": [],
+    "NEW_PRODUCT_NAME": [],
+    "NEW_ART_NAME": [],
+    "NEW_BUILDING_NAME": [],
+    "NEW_EVENT_NAME": [],
+    "NEW_MISCELLANEOUS_NAME": [
+      {
+        "name": "#SustainableStadium",
+        "old_name": "#SustainableStadium"
+      },
+      {
+        "name": "#EcoAthleteBayhaven",
+        "old_name": "#EcoAthleteBayhaven"
+      }
+    ],
+    "CORRECTED_PERSON_NAME": [],
+    "CORRECTED_ORGANIZATION_NAME": [],
+    "CORRECTED_LOCATION_NAME": [],
+    "CORRECTED_PRODUCT_NAME": [],
+    "CORRECTED_ART_NAME": [],
+    "CORRECTED_BUILDING_NAME": [],
+    "CORRECTED_EVENT_NAME": [],
+    "CORRECTED_MISCELLANEOUS_NAME": [
+      {
+        "name": "#SustainableStadium",
+        "old_name": "#SustainableStadium",
+        "id": "MISCELLANEOUS-4"
+      },
+      {
+        "name": "#EcoAthleteBayhaven",
+        "old_name": "#EcoAthleteBayhaven",
+        "id": "MISCELLANEOUS-5"
+      }
+    ],
+    "CRITIQUE_ERRORS": {
+      "entity-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ]
+    },
+    "ADJUSTED_PERSONS_XML": "",
+    "ADJUSTED_ORGANIZATIONS_XML": "",
+    "ADJUSTED_LOCATIONS_XML": "",
+    "ADJUSTED_PRODUCTS_XML": "",
+    "ADJUSTED_ARTS_XML": "",
+    "ADJUSTED_BUILDINGS_XML": "",
+    "ADJUSTED_EVENTS_XML": "",
+    "ADJUSTED_MISCELLANEOUSS_XML": "<miscellaneous><id>MISCELLANEOUS-4</id><name>#SustainableStadium</name><old_name>#SustainableStadium</old_name></miscellaneous>\n<miscellaneous><id>MISCELLANEOUS-5</id><name>#EcoAthleteBayhaven</name><old_name>#EcoAthleteBayhaven</old_name></miscellaneous>",
+    "USED_PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Jaxon Cartwright"
+      }
+    ],
+    "USED_ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Bayhaven City Council"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "EcoAthlete Initiative"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Bayhaven Times"
+      }
+    ],
+    "USED_LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Bayhaven"
+      }
+    ],
+    "USED_PRODUCT": [],
+    "USED_ART": [],
+    "USED_BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Bayhaven Coastal Stadium"
+      }
+    ],
+    "USED_EVENT": [],
+    "USED_MISCELLANEOUS": [
+      {
+        "id": "MISCELLANEOUS-4",
+        "name": "#SustainableStadium"
+      },
+      {
+        "id": "MISCELLANEOUS-5",
+        "name": "#EcoAthleteBayhaven"
+      }
+    ],
+    "USED_PRE-EXISTING-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Jaxon Cartwright",
+        "entity_class": "person",
+        "description": "Jaxon Cartwright is a determined athlete passionate about sustainability and environmental causes.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2023-05-17",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Jaxon Cartwright won the 1500-meter race at the GreenSports Challenge and was inspired to adopt more eco-friendly practices in his training routine.",
+            "date": "2023-05-17"
+          }
+        ],
+        "date_of_birth": "1997-07-15",
+        "gender": "male",
+        "profession": "professional athlete",
+        "nationality": "Greenlandian",
+        "education": "Bachelor's in Sports Science",
+        "height": "185 cm",
+        "weight": "75 kg",
+        "eye_color": "blue",
+        "hair_color": "brown",
+        "political_affiliation": "independent",
+        "marital_status": "single"
+      }
+    ],
+    "USED_NEW-PERSON": [],
+    "ALL_USED_PERSON_XML": "<person><created_at>0</created_at><date_of_birth>1997-07-15</date_of_birth><description>Jaxon Cartwright is a determined athlete passionate about sustainability and environmental causes.</description><education>Bachelor's in Sports Science</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>male</gender><hair_color>brown</hair_color><height>185 cm</height><history><event>2023-05-17: Jaxon Cartwright won the 1500-meter race at the GreenSports Challenge and was inspired to adopt more eco-friendly practices in his training routine.</event></history><id>PERSON-1</id><last_updated>2023-05-17</last_updated><marital_status>single</marital_status><name>Jaxon Cartwright</name><nationality>Greenlandian</nationality><political_affiliation>independent</political_affiliation><profession>professional athlete</profession><type>None</type><weight>75 kg</weight></person>",
+    "USED-NAME-AND-ID-FOR-PERSON": [
+      {
+        "name": "Jaxon Cartwright",
+        "id": "PERSON-1"
+      }
+    ],
+    "USED_PRE-EXISTING-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Bayhaven City Council",
+        "entity_class": "organization",
+        "description": "Bayhaven City Council is the governing body that manages the city's development and community services.",
+        "type": "government agency",
+        "created_at": 0,
+        "last_updated": "2023-05-17",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Bayhaven City Council partnered with EcoAthlete Initiative to implement a zero-waste policy at the GreenSports Challenge, receiving positive feedback from the community.",
+            "date": "2023-05-17"
+          }
+        ],
+        "founded": "1895",
+        "headquarters": "Bayhaven Government Center",
+        "industry": "public administration",
+        "mission_statement": "To enhance the quality of life for Bayhaven residents through effective governance and community engagement.",
+        "number_of_employees": "150",
+        "annual_revenue": "$20 million"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "EcoAthlete Initiative",
+        "entity_class": "organization",
+        "description": "EcoAthlete Initiative is dedicated to promoting sustainable practices within sports communities across Greenlandia.",
+        "type": "non-profit",
+        "created_at": 0,
+        "last_updated": "2023-05-17",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "EcoAthlete Initiative played a key role in organizing the GreenSports Challenge, promoting sustainability through educational booths and a zero-waste policy.",
+            "date": "2023-05-17"
+          }
+        ],
+        "founded": "2015",
+        "headquarters": "Bayhaven Ecological Center",
+        "industry": "environmentalism",
+        "mission_statement": "To inspire athletes and communities to embrace sustainability in sports and daily activities.",
+        "number_of_employees": "30",
+        "annual_revenue": "$1 million"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Bayhaven Times",
+        "entity_class": "organization",
+        "description": "Bayhaven Times is a respected regional newspaper offering comprehensive news coverage and insights into local affairs.",
+        "type": "media organization",
+        "created_at": 0,
+        "last_updated": "2023-05-17",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Bayhaven Times conducted a survey showing strong community support for the zero-waste policy at the GreenSports Challenge.",
+            "date": "2023-05-17"
+          }
+        ],
+        "founded": "1920",
+        "headquarters": "Bayhaven Publishing House",
+        "industry": "media and communications",
+        "mission_statement": "To provide accurate and engaging news that impacts and informs the Bayhaven community.",
+        "number_of_employees": "45",
+        "annual_revenue": "$5 million"
+      }
+    ],
+    "USED_NEW-ORGANIZATION": [],
+    "ALL_USED_ORGANIZATION_XML": "<organization><annual_revenue>$20 million</annual_revenue><created_at>0</created_at><description>Bayhaven City Council is the governing body that manages the city's development and community services.</description><entity_class>organization</entity_class><founded>1895</founded><headquarters>Bayhaven Government Center</headquarters><history><event>2023-05-17: Bayhaven City Council partnered with EcoAthlete Initiative to implement a zero-waste policy at the GreenSports Challenge, receiving positive feedback from the community.</event></history><id>ORGANIZATION-1</id><industry>public administration</industry><last_updated>2023-05-17</last_updated><mission_statement>To enhance the quality of life for Bayhaven residents through effective governance and community engagement.</mission_statement><name>Bayhaven City Council</name><number_of_employees>150</number_of_employees><type>government agency</type></organization>\n<organization><annual_revenue>$1 million</annual_revenue><created_at>0</created_at><description>EcoAthlete Initiative is dedicated to promoting sustainable practices within sports communities across Greenlandia.</description><entity_class>organization</entity_class><founded>2015</founded><headquarters>Bayhaven Ecological Center</headquarters><history><event>2023-05-17: EcoAthlete Initiative played a key role in organizing the GreenSports Challenge, promoting sustainability through educational booths and a zero-waste policy.</event></history><id>ORGANIZATION-2</id><industry>environmentalism</industry><last_updated>2023-05-17</last_updated><mission_statement>To inspire athletes and communities to embrace sustainability in sports and daily activities.</mission_statement><name>EcoAthlete Initiative</name><number_of_employees>30</number_of_employees><type>non-profit</type></organization>\n<organization><annual_revenue>$5 million</annual_revenue><created_at>0</created_at><description>Bayhaven Times is a respected regional newspaper offering comprehensive news coverage and insights into local affairs.</description><entity_class>organization</entity_class><founded>1920</founded><headquarters>Bayhaven Publishing House</headquarters><history><event>2023-05-17: Bayhaven Times conducted a survey showing strong community support for the zero-waste policy at the GreenSports Challenge.</event></history><id>ORGANIZATION-3</id><industry>media and communications</industry><last_updated>2023-05-17</last_updated><mission_statement>To provide accurate and engaging news that impacts and informs the Bayhaven community.</mission_statement><name>Bayhaven Times</name><number_of_employees>45</number_of_employees><type>media organization</type></organization>",
+    "USED-NAME-AND-ID-FOR-ORGANIZATION": [
+      {
+        "name": "Bayhaven City Council",
+        "id": "ORGANIZATION-1"
+      },
+      {
+        "name": "EcoAthlete Initiative",
+        "id": "ORGANIZATION-2"
+      },
+      {
+        "name": "Bayhaven Times",
+        "id": "ORGANIZATION-3"
+      }
+    ],
+    "USED_PRE-EXISTING-LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Bayhaven",
+        "entity_class": "location",
+        "description": "Bayhaven is a bustling coastal city known for its vibrant community and beautiful seaside landscapes.",
+        "type": "city",
+        "created_at": 0,
+        "last_updated": "2023-05-17",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Bayhaven successfully hosted the first annual GreenSports Challenge, showcasing its commitment to sustainability and community engagement.",
+            "date": "2023-05-17"
+          }
+        ],
+        "population": "120,000",
+        "area": "60 square kilometers",
+        "elevation": "30 meters",
+        "country": "Greenlandia"
+      }
+    ],
+    "USED_NEW-LOCATION": [],
+    "ALL_USED_LOCATION_XML": "<location><area>60 square kilometers</area><country>Greenlandia</country><created_at>0</created_at><description>Bayhaven is a bustling coastal city known for its vibrant community and beautiful seaside landscapes.</description><elevation>30 meters</elevation><entity_class>location</entity_class><history><event>2023-05-17: Bayhaven successfully hosted the first annual GreenSports Challenge, showcasing its commitment to sustainability and community engagement.</event></history><id>LOCATION-1</id><last_updated>2023-05-17</last_updated><name>Bayhaven</name><population>120,000</population><type>city</type></location>",
+    "USED-NAME-AND-ID-FOR-LOCATION": [
+      {
+        "name": "Bayhaven",
+        "id": "LOCATION-1"
+      }
+    ],
+    "USED_PRE-EXISTING-PRODUCT": [],
+    "USED_NEW-PRODUCT": [],
+    "ALL_USED_PRODUCT_XML": "",
+    "USED-NAME-AND-ID-FOR-PRODUCT": [],
+    "USED_PRE-EXISTING-ART": [],
+    "USED_NEW-ART": [],
+    "ALL_USED_ART_XML": "",
+    "USED-NAME-AND-ID-FOR-ART": [],
+    "USED_PRE-EXISTING-BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Bayhaven Coastal Stadium",
+        "entity_class": "building",
+        "description": "Bayhaven Coastal Stadium is an eco-friendly sports facility offering spectacular views and accommodating various athletic events.",
+        "type": "public",
+        "created_at": 0,
+        "last_updated": "2023-05-17",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Bayhaven Coastal Stadium hosted the GreenSports Challenge, highlighting its eco-friendly facilities and scenic views.",
+            "date": "2023-05-17"
+          }
+        ],
+        "architect": "Elena Fischer",
+        "year_built": "2018",
+        "height": "45 meters",
+        "floors": "4",
+        "material": "recycled steel and glass",
+        "capacity": "15,000"
+      }
+    ],
+    "USED_NEW-BUILDING": [],
+    "ALL_USED_BUILDING_XML": "<building><architect>Elena Fischer</architect><capacity>15,000</capacity><created_at>0</created_at><description>Bayhaven Coastal Stadium is an eco-friendly sports facility offering spectacular views and accommodating various athletic events.</description><entity_class>building</entity_class><floors>4</floors><height>45 meters</height><history><event>2023-05-17: Bayhaven Coastal Stadium hosted the GreenSports Challenge, highlighting its eco-friendly facilities and scenic views.</event></history><id>BUILDING-1</id><last_updated>2023-05-17</last_updated><material>recycled steel and glass</material><name>Bayhaven Coastal Stadium</name><type>public</type><year_built>2018</year_built></building>",
+    "USED-NAME-AND-ID-FOR-BUILDING": [
+      {
+        "name": "Bayhaven Coastal Stadium",
+        "id": "BUILDING-1"
+      }
+    ],
+    "USED_PRE-EXISTING-EVENT": [],
+    "USED_NEW-EVENT": [],
+    "ALL_USED_EVENT_XML": "",
+    "USED-NAME-AND-ID-FOR-EVENT": [],
+    "USED_PRE-EXISTING-MISCELLANEOUS": [],
+    "USED_NEW-MISCELLANEOUS": [
+      {
+        "id": "MISCELLANEOUS-4",
+        "name": "#SustainableStadium",
+        "category": "miscellaneous"
+      },
+      {
+        "id": "MISCELLANEOUS-5",
+        "name": "#EcoAthleteBayhaven",
+        "category": "miscellaneous"
+      }
+    ],
+    "ALL_USED_MISCELLANEOUS_XML": "<miscellaneous><category>miscellaneous</category><id>MISCELLANEOUS-4</id><name>#SustainableStadium</name></miscellaneous>\n<miscellaneous><category>miscellaneous</category><id>MISCELLANEOUS-5</id><name>#EcoAthleteBayhaven</name></miscellaneous>",
+    "USED-NAME-AND-ID-FOR-MISCELLANEOUS": [
+      {
+        "id": "MISCELLANEOUS-4",
+        "name": "#SustainableStadium",
+        "category": "miscellaneous"
+      },
+      {
+        "id": "MISCELLANEOUS-5",
+        "name": "#EcoAthleteBayhaven",
+        "category": "miscellaneous"
+      }
+    ]
+  }
+}

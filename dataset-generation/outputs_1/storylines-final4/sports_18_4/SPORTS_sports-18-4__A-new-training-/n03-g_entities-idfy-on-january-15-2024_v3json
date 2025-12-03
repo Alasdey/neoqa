@@ -1,0 +1,582 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "microsoft/phi-4-reasoning-plus",
+    "temperature": 0.0,
+    "max-tokens": 4096
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "To solve this task, I will go through the provided outline and check for explicit mentions of each named entity from the list. I will then format the results according to the specified structure.\n\n### Step-by-Step Analysis:\n\n1. **Entities to Check:**\n   - **Locations:** Richmond Meadows\n   - **Persons:** Alex Varner, Alicia Wilton, Kevin Stratton, Chloe Mercer, Sophia Lang, Mark Thornton, Jessica Klein, Devin Grove\n   - **Organizations:** Zenith Athletics Institute, BioTrack Innovations\n\n2. **Outline Analysis:**\n\n   - **Richmond Meadows** is mentioned in the outline:\n     - \"On January 15, 2024, at the Richmond Meadows training facility...\"\n     - \"The Richmond Meadows training facility, known for its state-of-the-art biometric monitoring technology...\"\n\n   - **Alex Varner** is mentioned in the outline:\n     - \"On January 15, 2024, at the Richmond Meadows training facility, Alex Varner competed...\"\n     - \"Athletes and coaches at the Zenith Athletics Institute expressed support for Alex Varner's performance...\"\n     - \"Coaches praised Alex Varner for his resilience and determination...\"\n     - \"After the race, Alex Varner acknowledged insufficient recovery time...\"\n     - \"Alex Varner mentioned that the intense training schedule...\"\n     - \"Institute Director Kevin Stratton noted that Alex Varner's commitment...\"\n     - \"Kevin Stratton emphasized that the institute would collaborate with Alex Varner...\"\n\n   - **Alicia Wilton** is mentioned in the outline:\n     - \"Athlete Alicia Wilton, who was present at the event, credited the new training sessions...\"\n     - \"Alicia Wilton highlighted how the integration of biometric feedback...\"\n\n   - **Kevin Stratton** is mentioned in the outline:\n     - \"Institute Director Kevin Stratton noted that Alex Varner's commitment...\"\n     - \"Kevin Stratton emphasized that the institute would collaborate with Alex Varner...\"\n\n   - **Chloe Mercer** is mentioned in the outline:\n     - \"Chloe Mercer, also part of the institute's athletic team, shared her insights...\"\n\n   - **Sophia Lang** is mentioned in the outline:\n     - \"Nutritionist Sophia Lang suggested that integrating additional recovery-focused dietary plans...\"\n\n   - **Mark Thornton** is mentioned in the outline:\n     - \"Physiotherapist Mark Thornton discussed the upcoming implementation of a new recovery protocol...\"\n\n   - **Jessica Klein** is mentioned in the outline:\n     - \"Legal expert Jessica Klein reassured athletes that their health data continues to be protected...\"\n\n   - **Devin Grove** is mentioned in the outline:\n     - \"Head Coach Devin Grove emphasized the importance of monitoring recovery time...\"\n\n   - **Zenith Athletics Institute** is mentioned in the outline:\n     - \"On January 15, 2024, at the Richmond Meadows training facility, Alex Varner competed in a 1500-meter race organized by the Zenith Athletics Institute.\"\n     - \"Athletes and coaches at the Zenith Athletics Institute expressed support for Alex Varner's performance...\"\n     - \"Institute Director Kevin Stratton noted that Alex Varner's commitment...\"\n\n   - **BioTrack Innovations** is mentioned in the outline:\n     - \"Athlete Alicia Wilton, who was present at the event, credited the new training sessions with BioTrack Innovations...\"\n\n3. **Entities Not Mentioned:**\n   - **Alicia Wilton** is mentioned, so no issue here.\n   - **Devin Grove** is mentioned, so no issue here.\n\n### Final Output:\n\n```xml\n<results>\n<entities>\n<location><id>LOCATION-1</id><name>Richmond Meadows</name></location>\n<person><id>PERSON-1</id><name>Alex Varner</name></person>\n<person><id>PERSON-2</id><name>Alicia Wilton</name></person>\n<person><id>PERSON-3</id><name>Kevin Stratton</name></person>\n<person><id>PERSON-4</id><name>Chloe Mercer</name></person>\n<person><id>PERSON-5</id><name>Sophia Lang</name></person>\n<person><id>PERSON-6</id><name>Mark Thornton</name></person>\n<person><id>PERSON-7</id><name>Jessica Klein</name></person>\n<person><id>PERSON-8</id><name>Devin Grove</name></person>\n<organization><id>ORGANIZATION-1</id><name>Zenith Athletics Institute</name></organization>\n<organization><id>ORGANIZATION-2</id><name>BioTrack Innovations</name></organization>\n</entities>\n</results>\n```"
+  },
+  "response": "To solve this task, I will go through the provided outline and check for explicit mentions of each named entity from the list. I will then format the results according to the specified structure.\n\n### Step-by-Step Analysis:\n\n1. **Entities to Check:**\n   - **Locations:** Richmond Meadows\n   - **Persons:** Alex Varner, Alicia Wilton, Kevin Stratton, Chloe Mercer, Sophia Lang, Mark Thornton, Jessica Klein, Devin Grove\n   - **Organizations:** Zenith Athletics Institute, BioTrack Innovations\n\n2. **Outline Analysis:**\n\n   - **Richmond Meadows** is mentioned in the outline:\n     - \"On January 15, 2024, at the Richmond Meadows training facility...\"\n     - \"The Richmond Meadows training facility, known for its state-of-the-art biometric monitoring technology...\"\n\n   - **Alex Varner** is mentioned in the outline:\n     - \"On January 15, 2024, at the Richmond Meadows training facility, Alex Varner competed...\"\n     - \"Athletes and coaches at the Zenith Athletics Institute expressed support for Alex Varner's performance...\"\n     - \"Coaches praised Alex Varner for his resilience and determination...\"\n     - \"After the race, Alex Varner acknowledged insufficient recovery time...\"\n     - \"Alex Varner mentioned that the intense training schedule...\"\n     - \"Institute Director Kevin Stratton noted that Alex Varner's commitment...\"\n     - \"Kevin Stratton emphasized that the institute would collaborate with Alex Varner...\"\n\n   - **Alicia Wilton** is mentioned in the outline:\n     - \"Athlete Alicia Wilton, who was present at the event, credited the new training sessions...\"\n     - \"Alicia Wilton highlighted how the integration of biometric feedback...\"\n\n   - **Kevin Stratton** is mentioned in the outline:\n     - \"Institute Director Kevin Stratton noted that Alex Varner's commitment...\"\n     - \"Kevin Stratton emphasized that the institute would collaborate with Alex Varner...\"\n\n   - **Chloe Mercer** is mentioned in the outline:\n     - \"Chloe Mercer, also part of the institute's athletic team, shared her insights...\"\n\n   - **Sophia Lang** is mentioned in the outline:\n     - \"Nutritionist Sophia Lang suggested that integrating additional recovery-focused dietary plans...\"\n\n   - **Mark Thornton** is mentioned in the outline:\n     - \"Physiotherapist Mark Thornton discussed the upcoming implementation of a new recovery protocol...\"\n\n   - **Jessica Klein** is mentioned in the outline:\n     - \"Legal expert Jessica Klein reassured athletes that their health data continues to be protected...\"\n\n   - **Devin Grove** is mentioned in the outline:\n     - \"Head Coach Devin Grove emphasized the importance of monitoring recovery time...\"\n\n   - **Zenith Athletics Institute** is mentioned in the outline:\n     - \"On January 15, 2024, at the Richmond Meadows training facility, Alex Varner competed in a 1500-meter race organized by the Zenith Athletics Institute.\"\n     - \"Athletes and coaches at the Zenith Athletics Institute expressed support for Alex Varner's performance...\"\n     - \"Institute Director Kevin Stratton noted that Alex Varner's commitment...\"\n\n   - **BioTrack Innovations** is mentioned in the outline:\n     - \"Athlete Alicia Wilton, who was present at the event, credited the new training sessions with BioTrack Innovations...\"\n\n3. **Entities Not Mentioned:**\n   - **Alicia Wilton** is mentioned, so no issue here.\n   - **Devin Grove** is mentioned, so no issue here.\n\n### Final Output:\n\n```xml\n<results>\n<entities>\n<location><id>LOCATION-1</id><name>Richmond Meadows</name></location>\n<person><id>PERSON-1</id><name>Alex Varner</name></person>\n<person><id>PERSON-2</id><name>Alicia Wilton</name></person>\n<person><id>PERSON-3</id><name>Kevin Stratton</name></person>\n<person><id>PERSON-4</id><name>Chloe Mercer</name></person>\n<person><id>PERSON-5</id><name>Sophia Lang</name></person>\n<person><id>PERSON-6</id><name>Mark Thornton</name></person>\n<person><id>PERSON-7</id><name>Jessica Klein</name></person>\n<person><id>PERSON-8</id><name>Devin Grove</name></person>\n<organization><id>ORGANIZATION-1</id><name>Zenith Athletics Institute</name></organization>\n<organization><id>ORGANIZATION-2</id><name>BioTrack Innovations</name></organization>\n</entities>\n</results>\n```",
+  "instructions": "You are an AI assistant tasked with identifying which of the provided entities are explicitly named within the provided outline. Follow these instructions carefully:\n\n1. The date for this fictional event outline is:\n<date>{{DATE}}</date>\n\n2. Here is the outline you need to analyze:\n<outline>\n{{OUTLINE}}\n</outline>\n\n3. Here is the list of known (fictional) named entities:\n<entities>\n{{LOCATIONS_XML}}\n{{PERSONS_XML}}\n{{ORGANIZATIONS_XML}}\n{{PRODUCTS_XML}}\n{{ARTS_XML}}\n{{EVENTS_XML}}\n{{BUILDINGS_XML}}\n{{MISCELLANEOUSS_XML}}\n\n{{ADJUSTED_LOCATIONS_XML}}\n{{ADJUSTED_PERSONS_XML}}\n{{ADJUSTED_ORGANIZATIONS_XML}}\n{{ADJUSTED_PRODUCTS_XML}}\n{{ADJUSTED_ARTS_XML}}\n{{ADJUSTED_BUILDINGS_XML}}\n{{ADJUSTED_EVENTS_XML}}\n{{ADJUSTED_MISCELLANEOUSS_XML}}\n</entities>\n\n4. Your task is to go through all of the named entities in the provided list. For each named entity, check if it is explicitly referred to by name in the outline. If a named entity is explicitly mentioned by name, include it in your results.\n\n5. For each entity you identify, list them using the following format:\n<[entity_type]><id>[id of the entity]</id><name>[full name of the entity]</name></[entity_type]>\n\n6. Present your final output within a single <results> root node, structured as follows:\n\n<results>\n<entities>\n[List all identified entities here as described in step 5]\n</entities>\n</results>\n\n7. Double-check your work: For each entity that you have identified, make sure to find the sentence within the outline that explicitly refers to this identified entity by name. If you cannot find that the entity is mentioned explicitly by name in the outline, do not include it in your results.\n\n8. You can use a <scratchpad> for your thinking process. Do not include any XML tags within your scratchpad.\n\n9. Make sure that you have not missed any named entity from the outline that was also provided to you in the list of named entities.\n\nRemember, only include entities that are explicitly mentioned by name in the outline. Do not infer or assume the presence of entities that are not directly named.",
+  "text_prompt": "You are an AI assistant tasked with identifying which of the provided entities are explicitly named within the provided outline. Follow these instructions carefully:\n\n1. The date for this fictional event outline is:\n<date>2024-01-15</date>\n\n2. Here is the outline you need to analyze:\n<outline>\nOn January 15, 2024, at the Richmond Meadows training facility, Alex Varner competed in a 1500-meter race organized by the Zenith Athletics Institute.\nThe Richmond Meadows training facility, known for its state-of-the-art biometric monitoring technology, provided an ideal environment for athletes to perform at their best.\nAthletes and coaches at the Zenith Athletics Institute expressed support for Alex Varner's performance, despite his failure to set a new regional record.\nCoaches praised Alex Varner for his resilience and determination, noting that his performance was commendable given the circumstances.\nAthlete Alicia Wilton, who was present at the event, credited the new training sessions with BioTrack Innovations for enhancing overall team morale.\nAlicia Wilton highlighted how the integration of biometric feedback had allowed her to refine her gymnastics routines, contributing to a more cohesive team spirit.\nAfter the race, Alex Varner acknowledged insufficient recovery time as a key factor contributing to his inability to achieve the regional record.\nAlex Varner mentioned that the intense training schedule leading up to the race left little time for adequate rest, impacting his performance.\nInstitute Director Kevin Stratton noted that Alex Varner's commitment to training remains strong, and adjustments will be made to his training schedule.\nKevin Stratton emphasized that the institute would collaborate with Alex Varner to develop a more balanced training plan, incorporating more rest days.\nNutritionist Sophia Lang suggested that integrating additional recovery-focused dietary plans could better prepare athletes like Alex Varner for future competitions.\nSophia Lang proposed a diet rich in antioxidants and proteins to aid in muscle recovery and reduce fatigue.\nHead Coach Devin Grove emphasized the importance of monitoring recovery time, planning subsequent sessions to address this gap in preparation.\nDevin Grove outlined a new training protocol that includes regular assessments of athletes' recovery metrics to optimize their training schedules.\nPhysiotherapist Mark Thornton discussed the upcoming implementation of a new recovery protocol using biometric data to tailor rehabilitation timelines.\nMark Thornton explained that the new protocol would use data from wearable sensors to customize recovery plans for each athlete, ensuring optimal performance.\nLegal expert Jessica Klein reassured athletes that their health data continues to be protected by the latest data security measures at the institute.\nJessica Klein detailed the use of advanced encryption techniques and regular security audits to safeguard athletes' biometric data.\nChloe Mercer, also part of the institute's athletic team, shared her insights on using biometric systems for personalized training adjustments that could be applied to future training sessions.\nChloe Mercer described how real-time feedback from the biometric systems had helped her identify and correct inefficiencies in her sprinting technique.\n</outline>\n\n3. Here is the list of known (fictional) named entities:\n<entities>\n<location><area>52 square miles</area><created_at>0</created_at><description>A picturesque region notable for its expansive meadows and vibrant seasons, making it a prime location for outdoor activities.</description><elevation>320 meters</elevation><entity_class>location</entity_class><history><event>2023-09-15: The Zenith Athletics Institute unveiled its new training center in Richmond Meadows, highlighting the area's scenic beauty and proximity to sports clubs.</event><event>2023-11-15: Richmond Meadows hosted the Echo Summit, a significant event for the regional sports community, held at the Zenith Athletics Institute's new training center.</event><event>2023-12-20: Richmond Meadows was highlighted in the report for its scenic beauty and proximity to sports clubs, which contributed to the success of the Zenith Athletics Institute's new training center.</event></history><id>LOCATION-1</id><last_updated>2023-09-15</last_updated><name>Richmond Meadows</name><population>42,000</population><type>region</type></location>\n<person><created_at>0</created_at><date_of_birth>1995-04-12</date_of_birth><description>A resilient athlete known for his dedication, Alex dreams of breaking regional records and promoting sports education in local communities.</description><education>Bachelor's in Sports Science from Oxford University</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>Male</gender><hair_color>brown</hair_color><height>6'1\"</height><history><event>2023-09-15: Alex Varner, a prominent runner at the Zenith Athletics Institute, expressed excitement about the new training opportunities at the institute's state-of-the-art facility.</event><event>2023-11-15: Alex Varner actively engaged in the Echo Summit, proposing enhancements to the biometric system for better athlete interaction and insights.</event></history><id>PERSON-1</id><last_updated>2023-09-15</last_updated><marital_status>Single</marital_status><name>Alex Varner</name><nationality>British</nationality><political_affiliation>None</political_affiliation><profession>Professional Middle-distance Runner</profession><type>None</type><weight>160 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1997-11-30</date_of_birth><description>An elegant gymnast with a passion for graceful performance, Alicia aspires to inspire young girls through her achievements and community workshops.</description><education>Bachelor's in Kinesiology from Stanford University</education><entity_class>person</entity_class><eye_color>green</eye_color><gender>Female</gender><hair_color>blonde</hair_color><height>5'6\"</height><history><event>2023-09-15: Alicia Wilton, a gymnast at the Zenith Athletics Institute, shared her enthusiasm for the new training center and its potential to enhance athletic performance.</event><event>2023-12-20: Alicia Wilton expressed enthusiasm about the ongoing advancements in biometric systems, noting their positive impact on her performance and safety during training sessions.</event></history><id>PERSON-2</id><last_updated>2023-09-15</last_updated><marital_status>Single</marital_status><name>Alicia Wilton</name><nationality>American</nationality><political_affiliation>None</political_affiliation><profession>Professional Gymnast</profession><type>None</type><weight>115 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1972-08-23</date_of_birth><description>With over two decades of experience in sports administration, Kevin is committed to advancing athlete support systems through innovative facilities.</description><education>Masters in Sports Management from the University of British Columbia</education><entity_class>person</entity_class><eye_color>hazel</eye_color><gender>Male</gender><hair_color>grey</hair_color><height>5'11\"</height><history><event>2023-09-15: Kevin Stratton, the Institute Director, emphasized the facility's advanced technology for injury prevention and performance enhancement during the inauguration ceremony.</event><event>2023-12-20: Kevin Stratton praised the collaborative efforts with BioTrack Innovations, emphasizing the integration of real-time data analytics in optimizing training regimens at the Zenith Athletics Institute.</event></history><id>PERSON-3</id><last_updated>2023-09-15</last_updated><marital_status>Married</marital_status><name>Kevin Stratton</name><nationality>Canadian</nationality><political_affiliation>None</political_affiliation><profession>Institute Director</profession><spouse>Evelyn Stratton</spouse><type>None</type><weight>185 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>2001-03-15</date_of_birth><description>Chloe's relentless determination and curiosity about performance analytics drive her running career and her interest in biometric systems.</description><education>Honours in Sports Technology from the University of Melbourne</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>Female</gender><hair_color>red</hair_color><height>5'8\"</height><history><event>2023-09-15: Chloe Mercer, an amateur sprinter, praised the biometric system for providing valuable real-time feedback on her running form, aiding in her performance improvement.</event><event>2023-11-15: Chloe Mercer benefited from the software updates announced at the Echo Summit, which improved data visualization tools in the biometric system she uses.</event><event>2023-12-20: Chloe Mercer credited the biometric system for her reduced injury incidences, highlighting the real-time feedback on her form as crucial to her injury-free training.</event></history><id>PERSON-4</id><last_updated>2023-09-15</last_updated><marital_status>Single</marital_status><name>Chloe Mercer</name><nationality>Australian</nationality><political_affiliation>None</political_affiliation><profession>Amateur Sprinter</profession><type>None</type><weight>130 lbs</weight></person>\n<person><created_at>2</created_at><date_of_birth>1988-05-13</date_of_birth><description>Sophia Lang is a dedicated nutritionist known for her expertise in designing personalized nutrition programs that enhance athletic performance and recovery.</description><education>Master's in Nutrition Science from the University of Sydney</education><entity_class>person</entity_class><eye_color>green</eye_color><gender>Female</gender><hair_color>brown</hair_color><height>5'7\"</height><history><event>2023-12-20: Sophia Lang presented insights on personalized nutrition programs that complemented the biometric data to support athlete recovery and performance.</event></history><id>PERSON-5</id><last_updated>2023-12-20</last_updated><marital_status>Married</marital_status><name>Sophia Lang</name><nationality>Australian</nationality><political_affiliation>None</political_affiliation><profession>Nutritionist and Analyst</profession><spouse>Dr. Elijah Graham</spouse><type>None</type><weight>140 lbs</weight></person>\n<person><created_at>2</created_at><date_of_birth>1979-07-22</date_of_birth><description>Mark Thornton is a physiotherapist recognized for his innovative athlete-specific recovery protocols, grounded in comprehensive biomechanical understanding.</description><education>Doctorate in Physiotherapy from Oxford Brookes University</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>Male</gender><hair_color>black</hair_color><height>6'0\"</height><history><event>2023-12-20: Mark Thornton discussed the customization of athlete-specific recovery protocols, emphasizing the role of biometric data in shaping these effective strategies at the institute.</event></history><id>PERSON-6</id><last_updated>2023-12-20</last_updated><marital_status>Divorced</marital_status><name>Mark Thornton</name><nationality>British</nationality><political_affiliation>None</political_affiliation><profession>Physiotherapist</profession><type>None</type><weight>180 lbs</weight></person>\n<person><created_at>2</created_at><date_of_birth>1983-12-04</date_of_birth><description>Jessica Klein is a legal expert focused on data privacy, ensuring ethical compliance in technology applications with end-to-end encryption and security audits.</description><education>Juris Doctor from McGill University</education><entity_class>person</entity_class><eye_color>hazel</eye_color><gender>Female</gender><hair_color>dark brown</hair_color><height>5'5\"</height><history><event>2023-12-20: Jessica Klein reassured participants of continued vigilance in data privacy, detailing the implementation of end-to-end encryption and regular audits to ensure the security of athletes' biometric data.</event></history><id>PERSON-7</id><last_updated>2023-12-20</last_updated><marital_status>Engaged</marital_status><name>Jessica Klein</name><nationality>Canadian</nationality><political_affiliation>None</political_affiliation><profession>Legal Expert</profession><spouse>Michael O'Shea</spouse><type>None</type><weight>125 lbs</weight></person>\n<person><created_at>2</created_at><date_of_birth>1975-03-18</date_of_birth><description>Devin Grove is a visionary head coach with a passion for integrating machine learning algorithms into athlete training programs to predict and prevent injuries.</description><education>Bachelor's in Kinesiology from the University of Southern California</education><entity_class>person</entity_class><eye_color>green</eye_color><gender>Male</gender><hair_color>grey</hair_color><height>6'2\"</height><history><event>2023-12-20: Devin Grove shared upcoming plans to expand the system's capabilities, focusing on integrating machine learning algorithms to predict potential injury risks based on historical data patterns.</event></history><id>PERSON-8</id><last_updated>2023-12-20</last_updated><marital_status>Married</marital_status><name>Devin Grove</name><nationality>American</nationality><political_affiliation>None</political_affiliation><profession>Head Coach</profession><spouse>Diana Grove</spouse><type>None</type><weight>190 lbs</weight></person>\n<organization><annual_revenue>4 million AUD</annual_revenue><created_at>0</created_at><description>Established to nurture regional athletic talent through comprehensive training programs and state-of-the-art facilities.</description><entity_class>organization</entity_class><founded>2015</founded><headquarters>72 Willow Lane - Lakeside - Melbourne</headquarters><history><event>2023-09-15: The Zenith Athletics Institute unveiled a new training center in Richmond Meadows, featuring advanced biometric monitoring technology developed in collaboration with BioTrack Innovations.</event><event>2023-11-15: Zenith Athletics Institute successfully organized the Echo Summit, collaborating with BioTrack Innovations to discuss advancements in athlete training methodologies.</event><event>2023-12-20: The Zenith Athletics Institute released a report detailing significant improvements in athlete injury prevention statistics, attributed to the implementation of advanced biometric monitoring systems developed by BioTrack Innovations.</event></history><id>ORGANIZATION-1</id><industry>Sports Education</industry><last_updated>2023-09-15</last_updated><mission_statement>To empower athletes with knowledge, skills, and resources to excel in their chosen sports disciplines.</mission_statement><name>Zenith Athletics Institute</name><number_of_employees>150</number_of_employees><type>educational institution</type></organization>\n<organization><annual_revenue>7 million USD</annual_revenue><created_at>0</created_at><description>A pioneering tech firm specializing in biometric systems and performance analytics for athletes and sports professionals worldwide.</description><entity_class>organization</entity_class><founded>2018</founded><headquarters>350 Innovation Drive in Silicon Valley California</headquarters><history><event>2023-09-15: BioTrack Innovations collaborated with the Zenith Athletics Institute to develop a unique biometric system for personalized athlete performance analytics.</event><event>2023-11-15: BioTrack Innovations announced software updates at the Echo Summit, enhancing data visualization tools and addressing user feedback, including that from Chloe Mercer.</event><event>2023-12-20: BioTrack Innovations released a report detailing the significant improvements in athlete injury prevention statistics observed at the Zenith Athletics Institute, attributing the reduction in injury rates to their biometric systems.</event></history><id>ORGANIZATION-2</id><industry>Biometric Technology</industry><last_updated>2023-09-15</last_updated><mission_statement>To revolutionize sports performance through cutting-edge technology offering precise analytics for improved outcomes.</mission_statement><name>BioTrack Innovations</name><number_of_employees>75</number_of_employees><type>company</type></organization>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n</entities>\n\n4. Your task is to go through all of the named entities in the provided list. For each named entity, check if it is explicitly referred to by name in the outline. If a named entity is explicitly mentioned by name, include it in your results.\n\n5. For each entity you identify, list them using the following format:\n<[entity_type]><id>[id of the entity]</id><name>[full name of the entity]</name></[entity_type]>\n\n6. Present your final output within a single <results> root node, structured as follows:\n\n<results>\n<entities>\n[List all identified entities here as described in step 5]\n</entities>\n</results>\n\n7. Double-check your work: For each entity that you have identified, make sure to find the sentence within the outline that explicitly refers to this identified entity by name. If you cannot find that the entity is mentioned explicitly by name in the outline, do not include it in your results.\n\n8. You can use a <scratchpad> for your thinking process. Do not include any XML tags within your scratchpad.\n\n9. Make sure that you have not missed any named entity from the outline that was also provided to you in the list of named entities.\n\nRemember, only include entities that are explicitly mentioned by name in the outline. Do not infer or assume the presence of entities that are not directly named.",
+  "system-prompt": null,
+  "values": {
+    "GENRE": "Sports",
+    "EVENT_SUMMARY": "On January 15, 2024, athletes at the Zenith Athletics Institute expressed support as Alex Varner competed but narrowly missed setting a new regional record in the 1500 meters, attributing the setback to having insufficient recovery time prior to the race.",
+    "EVENT_SUMMARY_FOR_NAME": "On January 15, 2024,",
+    "INIT_SUMMARY": "A new training facility equipped with state-of-the-art biometric technology has opened for athletes, offering personalized data analysis to optimize performance and prevent injuries.",
+    "KEYWORDS": "",
+    "CREATED_AT": 3,
+    "HISTORIES": [
+      "<event><date>2023-09-15</date><outline>On September 15, 2023, the {Zenith Athletics Institute|ORGANIZATION-1} unveiled its new state-of-the-art training center in {Richmond Meadows|LOCATION-1}, a scenic area known for its lush greenery and proximity to local sports clubs. The new facility, designed with an open-concept layout, features large glass windows that allow natural light to flood the indoor track and weight rooms. This institute was specifically designed to cater to the training needs of regional athletes, focusing on sports such as track and field, gymnastics, and swimming. The new facility, equipped with advanced biometric monitoring technology, was inaugurated with a formal ceremony attended by the known athletes of the institute, including prominent runners like {Alex Varner|PERSON-1} and gymnast {Alicia Wilton|PERSON-2}, who both expressed excitement about the new opportunities for training. The {Zenith Athletics Institute|ORGANIZATION-1}, in collaboration with tech firm {BioTrack Innovations|ORGANIZATION-2}, developed the unique biometric system to provide athletes with personalized performance analytics, integrating sensors that track heart rate, muscle activity, and movement patterns. During the event, Institute Director {Kevin Stratton|PERSON-3} highlighted, \"This facility represents a leap forward in training technology for athletes, especially those specializing in high-risk sports,\" emphasizing the potential for injury prevention and performance enhancement. The systems installed use sensors to gather real-time data, which is then analyzed to help athletes optimize their performance and reduce injury risks, with data being accessible through a secure mobile app. First to test the new biometric system were a group of young sprinters, who were fascinated by the real-time feedback they received during drills, noting improvements in their stride and posture. Sprinter {Chloe Mercer|PERSON-4} noted, \"The instant feedback on my running form has been invaluable. It\u2019s like having a coach at every moment,\" and mentioned how the system helped her identify areas for improvement that were previously unnoticed. Some concerns were voiced regarding the privacy of personal health data collected by the systems, prompting Director {Kevin Stratton|PERSON-3} to assure attendees of strict adherence to data protection regulations, including encryption and limited access to sensitive information. The facility contains a medium-sized field adjacent to an indoor track and several weight rooms, designed to support various sports such as track and field, gymnastics, and swimming, with each area equipped with specialized equipment for different training needs. Ongoing educational workshops about the benefits and usage of biometric technology are planned to be held at the {Zenith Athletics Institute|ORGANIZATION-1}, with sessions led by experts from {BioTrack Innovations|ORGANIZATION-2} and experienced coaches.</outline></event>",
+      "<event><date>2023-11-15</date><outline>The Echo Summit began on November 15, 2023, in {Richmond Meadows|LOCATION-1} as a technical symposium focused on enhancing athlete training regimens through engaged discussions between industry experts and practitioners. The symposium was held at the newly inaugurated training center of the {Zenith Athletics Institute|ORGANIZATION-1}, which provided a state-of-the-art venue with advanced facilities for the event. The event was organized by {Zenith Athletics Institute|ORGANIZATION-1}, in collaboration with {BioTrack Innovations|ORGANIZATION-2}, with the goal of identifying improvements in the training methodology post the unveiling of the new training center. Over 200 attendees, including coaches, athletes, and sports scientists, participated in the symposium, reflecting the event's significance in the regional sports community. Alyssa Grove, a sports psychologist from Prism Dynamics Center, presented findings on mental resilience and its role in achieving peak athletic performance, emphasizing the necessity for integrating psychological support into training programs. Alyssa Grove shared case studies from her work with elite athletes, illustrating how mental resilience training has led to measurable improvements in performance under pressure. During a panel discussion, Coach David Finnegan from Northern Arena Track Club highlighted the practical challenges faced by coaches in implementing biometric feedback systems in regular training routines. Coach Finnegan discussed specific examples from his track club, where integrating biometric data into training schedules initially faced resistance but eventually led to enhanced athlete performance. The session attended by professional athletes, including {Alex Varner|PERSON-1} from {Zenith Athletics Institute|ORGANIZATION-1}, saw active engagement with suggestions for refining the biometric system for more user-friendly interactions and insights. {Alex Varner|PERSON-1} proposed the inclusion of a customizable dashboard feature in the biometric system to allow athletes to prioritize the data most relevant to their training goals. Mark Thornton, a physiotherapist from Renown Wellness Group, proposed solutions for injury prevention, focusing on incorporating customized recovery protocols based on the athlete-specific data from biometric systems. Mark Thornton demonstrated a prototype recovery protocol tailored for middle-distance runners, which showed a 20% reduction in recovery time in preliminary trials. Elena Crest, a nutritionist and researcher, illustrated the impact of personalized nutritional strategies on athletes\u2019 performance, referencing real-time data for tailored dietary adjustments. Elena Crest presented a case study of a swimmer whose performance improved by 15% after implementing a diet plan based on biometric feedback. Representatives from {BioTrack Innovations|ORGANIZATION-2} announced software updates designed to enhance data visualization tools, addressing some of the feedback received from current users like {Chloe Mercer|PERSON-4}. The software updates included a new feature that allows athletes to compare their performance metrics over time, providing a clearer picture of progress and areas needing improvement. A session on data privacy was led by a legal expert, Jessica Klein, who assured the attendees about enhanced protocols safeguarding athletes' personal health information and compliance with data protection standards. Jessica Klein outlined the new encryption methods and access controls that would be implemented to ensure the confidentiality and security of athletes' biometric data. The symposium concluded with plans set to implement incremental enhancements, fostering a commitment to continuous improvement aligned with previous discussions on maintaining athlete satisfaction while advancing technology. The closing remarks emphasized the importance of ongoing collaboration between the {Zenith Athletics Institute|ORGANIZATION-1} and {BioTrack Innovations|ORGANIZATION-2} to ensure the training center remains at the forefront of sports technology.</outline></event>",
+      "<event><date>2023-12-20</date><outline>On December 20, 2023, {BioTrack Innovations|ORGANIZATION-2} released a comprehensive report detailing the significant improvements in athlete injury prevention statistics observed at the {Zenith Athletics Institute|ORGANIZATION-1}. The report highlighted a 30% reduction in common injuries such as sprains and strains among athletes using the biometric systems. The report attributed the reduction in injury rates to the implementation of the advanced biometric monitoring systems developed by {BioTrack Innovations|ORGANIZATION-2} at the {Zenith Athletics Institute|ORGANIZATION-1}\u2019s training center in {Richmond Meadows|LOCATION-1}. These systems include wearable sensors that track athletes' biomechanics in real-time, providing immediate feedback to coaches and athletes. Director {Kevin Stratton|PERSON-3} of the {Zenith Athletics Institute|ORGANIZATION-1} praised the collaborative efforts with {BioTrack Innovations|ORGANIZATION-2}, highlighting how the integration of real-time data analytics contributed to optimizing training regimens. {Kevin Stratton|PERSON-3} emphasized that the collaboration allowed for a seamless integration of technology into daily training routines, enhancing both safety and performance. Sprinter {Chloe Mercer|PERSON-4}, an athlete from the {Zenith Athletics Institute|ORGANIZATION-1}, credited the biometric system for her reduced injury incidences, stating, \"The real-time feedback on my form has been crucial to my injury-free training.\" {Chloe Mercer|PERSON-4} shared that the system helped her adjust her stride length and cadence, which significantly reduced her risk of hamstring injuries. At the report unveiling, Nutritionist and Analyst {Sophia Lang|PERSON-5} presented insights on personalized nutrition programs that complemented the biometric data to support athlete recovery and performance. {Sophia Lang|PERSON-5} explained how the nutrition programs were tailored to individual metabolic rates and recovery needs, enhancing overall athlete health. Physiotherapist {Mark Thornton|PERSON-6} discussed the customization of athlete-specific recovery protocols, emphasizing the role of biometric data in shaping these effective strategies at the institute. {Mark Thornton|PERSON-6} highlighted a case where a tailored recovery protocol reduced downtime for a gymnast recovering from a wrist injury by 25%. During the presentation, legal expert {Jessica Klein|PERSON-7} reassured participants of continued vigilance in data privacy, underscoring {BioTrack Innovations|ORGANIZATION-2}'s commitment to athlete data protection. {Jessica Klein|PERSON-7} detailed the implementation of end-to-end encryption and regular audits to ensure the security of athletes' biometric data. The collaborative team, including the Institute\u2019s head coach {Devin Grove|PERSON-8}, shared upcoming plans to expand the system's capabilities, focusing on further fine-tuning personalized athlete training paths. {Devin Grove|PERSON-8} outlined plans to integrate machine learning algorithms that predict potential injury risks based on historical data patterns. {Gymnast Alicia Wilton|PERSON-2} expressed enthusiasm about the ongoing advancements, noting the positive impact on athletes' performance and safety during varied training sessions. {Alicia Wilton|PERSON-2} mentioned that the enhanced feedback from the biometric systems allowed her to perfect her routines with greater precision and confidence. Overall, the report solidified the success of the {Zenith Athletics Institute|ORGANIZATION-1} and {BioTrack Innovations|ORGANIZATION-2}'s joint initiative, setting a benchmark for sports training technology applications focused on injury prevention. The report also suggested that similar systems could be adapted for use in other sports disciplines, potentially benefiting a wider range of athletes.</outline></event>"
+    ],
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "NEXT_IDS": {
+      "person": 9,
+      "organization": 3,
+      "location": 2,
+      "product": 1,
+      "art": 1,
+      "building": 1,
+      "event": 1,
+      "miscellaneous": 1
+    },
+    "PROVIDED_DATE": "2024-01-15",
+    "PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Alex Varner",
+        "entity_class": "person",
+        "description": "A resilient athlete known for his dedication, Alex dreams of breaking regional records and promoting sports education in local communities.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Alex Varner, a prominent runner at the Zenith Athletics Institute, expressed excitement about the new training opportunities at the institute's state-of-the-art facility.",
+            "date": "2023-09-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Alex Varner actively engaged in the Echo Summit, proposing enhancements to the biometric system for better athlete interaction and insights.",
+            "date": "2023-11-15"
+          }
+        ],
+        "date_of_birth": "1995-04-12",
+        "gender": "Male",
+        "profession": "Professional Middle-distance Runner",
+        "nationality": "British",
+        "education": "Bachelor's in Sports Science from Oxford University",
+        "height": "6'1\"",
+        "weight": "160 lbs",
+        "eye_color": "blue",
+        "hair_color": "brown",
+        "political_affiliation": "None",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Alicia Wilton",
+        "entity_class": "person",
+        "description": "An elegant gymnast with a passion for graceful performance, Alicia aspires to inspire young girls through her achievements and community workshops.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Alicia Wilton, a gymnast at the Zenith Athletics Institute, shared her enthusiasm for the new training center and its potential to enhance athletic performance.",
+            "date": "2023-09-15"
+          },
+          {
+            "created_at": 2,
+            "event_update": "Alicia Wilton expressed enthusiasm about the ongoing advancements in biometric systems, noting their positive impact on her performance and safety during training sessions.",
+            "date": "2023-12-20"
+          }
+        ],
+        "date_of_birth": "1997-11-30",
+        "gender": "Female",
+        "profession": "Professional Gymnast",
+        "nationality": "American",
+        "education": "Bachelor's in Kinesiology from Stanford University",
+        "height": "5'6\"",
+        "weight": "115 lbs",
+        "eye_color": "green",
+        "hair_color": "blonde",
+        "political_affiliation": "None",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Kevin Stratton",
+        "entity_class": "person",
+        "description": "With over two decades of experience in sports administration, Kevin is committed to advancing athlete support systems through innovative facilities.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Kevin Stratton, the Institute Director, emphasized the facility's advanced technology for injury prevention and performance enhancement during the inauguration ceremony.",
+            "date": "2023-09-15"
+          },
+          {
+            "created_at": 2,
+            "event_update": "Kevin Stratton praised the collaborative efforts with BioTrack Innovations, emphasizing the integration of real-time data analytics in optimizing training regimens at the Zenith Athletics Institute.",
+            "date": "2023-12-20"
+          }
+        ],
+        "date_of_birth": "1972-08-23",
+        "gender": "Male",
+        "profession": "Institute Director",
+        "nationality": "Canadian",
+        "education": "Masters in Sports Management from the University of British Columbia",
+        "height": "5'11\"",
+        "weight": "185 lbs",
+        "eye_color": "hazel",
+        "hair_color": "grey",
+        "political_affiliation": "None",
+        "marital_status": "Married",
+        "spouse": "Evelyn Stratton"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Chloe Mercer",
+        "entity_class": "person",
+        "description": "Chloe's relentless determination and curiosity about performance analytics drive her running career and her interest in biometric systems.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Chloe Mercer, an amateur sprinter, praised the biometric system for providing valuable real-time feedback on her running form, aiding in her performance improvement.",
+            "date": "2023-09-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Chloe Mercer benefited from the software updates announced at the Echo Summit, which improved data visualization tools in the biometric system she uses.",
+            "date": "2023-11-15"
+          },
+          {
+            "created_at": 2,
+            "event_update": "Chloe Mercer credited the biometric system for her reduced injury incidences, highlighting the real-time feedback on her form as crucial to her injury-free training.",
+            "date": "2023-12-20"
+          }
+        ],
+        "date_of_birth": "2001-03-15",
+        "gender": "Female",
+        "profession": "Amateur Sprinter",
+        "nationality": "Australian",
+        "education": "Honours in Sports Technology from the University of Melbourne",
+        "height": "5'8\"",
+        "weight": "130 lbs",
+        "eye_color": "blue",
+        "hair_color": "red",
+        "political_affiliation": "None",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-5",
+        "name": "Sophia Lang",
+        "entity_class": "person",
+        "description": "Sophia Lang is a dedicated nutritionist known for her expertise in designing personalized nutrition programs that enhance athletic performance and recovery.",
+        "type": null,
+        "created_at": 2,
+        "last_updated": "2023-12-20",
+        "history": [
+          {
+            "created_at": 2,
+            "event_update": "Sophia Lang presented insights on personalized nutrition programs that complemented the biometric data to support athlete recovery and performance.",
+            "date": "2023-12-20"
+          }
+        ],
+        "date_of_birth": "1988-05-13",
+        "gender": "Female",
+        "profession": "Nutritionist and Analyst",
+        "nationality": "Australian",
+        "education": "Master's in Nutrition Science from the University of Sydney",
+        "height": "5'7\"",
+        "weight": "140 lbs",
+        "eye_color": "green",
+        "hair_color": "brown",
+        "political_affiliation": "None",
+        "marital_status": "Married",
+        "spouse": "Dr. Elijah Graham"
+      },
+      {
+        "id": "PERSON-6",
+        "name": "Mark Thornton",
+        "entity_class": "person",
+        "description": "Mark Thornton is a physiotherapist recognized for his innovative athlete-specific recovery protocols, grounded in comprehensive biomechanical understanding.",
+        "type": null,
+        "created_at": 2,
+        "last_updated": "2023-12-20",
+        "history": [
+          {
+            "created_at": 2,
+            "event_update": "Mark Thornton discussed the customization of athlete-specific recovery protocols, emphasizing the role of biometric data in shaping these effective strategies at the institute.",
+            "date": "2023-12-20"
+          }
+        ],
+        "date_of_birth": "1979-07-22",
+        "gender": "Male",
+        "profession": "Physiotherapist",
+        "nationality": "British",
+        "education": "Doctorate in Physiotherapy from Oxford Brookes University",
+        "height": "6'0\"",
+        "weight": "180 lbs",
+        "eye_color": "blue",
+        "hair_color": "black",
+        "political_affiliation": "None",
+        "marital_status": "Divorced"
+      },
+      {
+        "id": "PERSON-7",
+        "name": "Jessica Klein",
+        "entity_class": "person",
+        "description": "Jessica Klein is a legal expert focused on data privacy, ensuring ethical compliance in technology applications with end-to-end encryption and security audits.",
+        "type": null,
+        "created_at": 2,
+        "last_updated": "2023-12-20",
+        "history": [
+          {
+            "created_at": 2,
+            "event_update": "Jessica Klein reassured participants of continued vigilance in data privacy, detailing the implementation of end-to-end encryption and regular audits to ensure the security of athletes' biometric data.",
+            "date": "2023-12-20"
+          }
+        ],
+        "date_of_birth": "1983-12-04",
+        "gender": "Female",
+        "profession": "Legal Expert",
+        "nationality": "Canadian",
+        "education": "Juris Doctor from McGill University",
+        "height": "5'5\"",
+        "weight": "125 lbs",
+        "eye_color": "hazel",
+        "hair_color": "dark brown",
+        "political_affiliation": "None",
+        "marital_status": "Engaged",
+        "spouse": "Michael O'Shea"
+      },
+      {
+        "id": "PERSON-8",
+        "name": "Devin Grove",
+        "entity_class": "person",
+        "description": "Devin Grove is a visionary head coach with a passion for integrating machine learning algorithms into athlete training programs to predict and prevent injuries.",
+        "type": null,
+        "created_at": 2,
+        "last_updated": "2023-12-20",
+        "history": [
+          {
+            "created_at": 2,
+            "event_update": "Devin Grove shared upcoming plans to expand the system's capabilities, focusing on integrating machine learning algorithms to predict potential injury risks based on historical data patterns.",
+            "date": "2023-12-20"
+          }
+        ],
+        "date_of_birth": "1975-03-18",
+        "gender": "Male",
+        "profession": "Head Coach",
+        "nationality": "American",
+        "education": "Bachelor's in Kinesiology from the University of Southern California",
+        "height": "6'2\"",
+        "weight": "190 lbs",
+        "eye_color": "green",
+        "hair_color": "grey",
+        "political_affiliation": "None",
+        "marital_status": "Married",
+        "spouse": "Diana Grove"
+      }
+    ],
+    "ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Zenith Athletics Institute",
+        "entity_class": "organization",
+        "description": "Established to nurture regional athletic talent through comprehensive training programs and state-of-the-art facilities.",
+        "type": "educational institution",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Zenith Athletics Institute unveiled a new training center in Richmond Meadows, featuring advanced biometric monitoring technology developed in collaboration with BioTrack Innovations.",
+            "date": "2023-09-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Zenith Athletics Institute successfully organized the Echo Summit, collaborating with BioTrack Innovations to discuss advancements in athlete training methodologies.",
+            "date": "2023-11-15"
+          },
+          {
+            "created_at": 2,
+            "event_update": "The Zenith Athletics Institute released a report detailing significant improvements in athlete injury prevention statistics, attributed to the implementation of advanced biometric monitoring systems developed by BioTrack Innovations.",
+            "date": "2023-12-20"
+          }
+        ],
+        "founded": "2015",
+        "headquarters": "72 Willow Lane - Lakeside - Melbourne",
+        "industry": "Sports Education",
+        "mission_statement": "To empower athletes with knowledge, skills, and resources to excel in their chosen sports disciplines.",
+        "number_of_employees": "150",
+        "annual_revenue": "4 million AUD"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "BioTrack Innovations",
+        "entity_class": "organization",
+        "description": "A pioneering tech firm specializing in biometric systems and performance analytics for athletes and sports professionals worldwide.",
+        "type": "company",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "BioTrack Innovations collaborated with the Zenith Athletics Institute to develop a unique biometric system for personalized athlete performance analytics.",
+            "date": "2023-09-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "BioTrack Innovations announced software updates at the Echo Summit, enhancing data visualization tools and addressing user feedback, including that from Chloe Mercer.",
+            "date": "2023-11-15"
+          },
+          {
+            "created_at": 2,
+            "event_update": "BioTrack Innovations released a report detailing the significant improvements in athlete injury prevention statistics observed at the Zenith Athletics Institute, attributing the reduction in injury rates to their biometric systems.",
+            "date": "2023-12-20"
+          }
+        ],
+        "founded": "2018",
+        "headquarters": "350 Innovation Drive in Silicon Valley California",
+        "industry": "Biometric Technology",
+        "mission_statement": "To revolutionize sports performance through cutting-edge technology offering precise analytics for improved outcomes.",
+        "number_of_employees": "75",
+        "annual_revenue": "7 million USD"
+      }
+    ],
+    "LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Richmond Meadows",
+        "entity_class": "location",
+        "description": "A picturesque region notable for its expansive meadows and vibrant seasons, making it a prime location for outdoor activities.",
+        "type": "region",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Zenith Athletics Institute unveiled its new training center in Richmond Meadows, highlighting the area's scenic beauty and proximity to sports clubs.",
+            "date": "2023-09-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Richmond Meadows hosted the Echo Summit, a significant event for the regional sports community, held at the Zenith Athletics Institute's new training center.",
+            "date": "2023-11-15"
+          },
+          {
+            "created_at": 2,
+            "event_update": "Richmond Meadows was highlighted in the report for its scenic beauty and proximity to sports clubs, which contributed to the success of the Zenith Athletics Institute's new training center.",
+            "date": "2023-12-20"
+          }
+        ],
+        "population": "42,000",
+        "area": "52 square miles",
+        "elevation": "320 meters"
+      }
+    ],
+    "PRODUCT": [],
+    "ART": [],
+    "BUILDING": [],
+    "EVENT": [],
+    "MISCELLANEOUS": [],
+    "PERSONS_XML": "<person><created_at>0</created_at><date_of_birth>1995-04-12</date_of_birth><description>A resilient athlete known for his dedication, Alex dreams of breaking regional records and promoting sports education in local communities.</description><education>Bachelor's in Sports Science from Oxford University</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>Male</gender><hair_color>brown</hair_color><height>6'1\"</height><history><event>2023-09-15: Alex Varner, a prominent runner at the Zenith Athletics Institute, expressed excitement about the new training opportunities at the institute's state-of-the-art facility.</event><event>2023-11-15: Alex Varner actively engaged in the Echo Summit, proposing enhancements to the biometric system for better athlete interaction and insights.</event></history><id>PERSON-1</id><last_updated>2023-09-15</last_updated><marital_status>Single</marital_status><name>Alex Varner</name><nationality>British</nationality><political_affiliation>None</political_affiliation><profession>Professional Middle-distance Runner</profession><type>None</type><weight>160 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1997-11-30</date_of_birth><description>An elegant gymnast with a passion for graceful performance, Alicia aspires to inspire young girls through her achievements and community workshops.</description><education>Bachelor's in Kinesiology from Stanford University</education><entity_class>person</entity_class><eye_color>green</eye_color><gender>Female</gender><hair_color>blonde</hair_color><height>5'6\"</height><history><event>2023-09-15: Alicia Wilton, a gymnast at the Zenith Athletics Institute, shared her enthusiasm for the new training center and its potential to enhance athletic performance.</event><event>2023-12-20: Alicia Wilton expressed enthusiasm about the ongoing advancements in biometric systems, noting their positive impact on her performance and safety during training sessions.</event></history><id>PERSON-2</id><last_updated>2023-09-15</last_updated><marital_status>Single</marital_status><name>Alicia Wilton</name><nationality>American</nationality><political_affiliation>None</political_affiliation><profession>Professional Gymnast</profession><type>None</type><weight>115 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1972-08-23</date_of_birth><description>With over two decades of experience in sports administration, Kevin is committed to advancing athlete support systems through innovative facilities.</description><education>Masters in Sports Management from the University of British Columbia</education><entity_class>person</entity_class><eye_color>hazel</eye_color><gender>Male</gender><hair_color>grey</hair_color><height>5'11\"</height><history><event>2023-09-15: Kevin Stratton, the Institute Director, emphasized the facility's advanced technology for injury prevention and performance enhancement during the inauguration ceremony.</event><event>2023-12-20: Kevin Stratton praised the collaborative efforts with BioTrack Innovations, emphasizing the integration of real-time data analytics in optimizing training regimens at the Zenith Athletics Institute.</event></history><id>PERSON-3</id><last_updated>2023-09-15</last_updated><marital_status>Married</marital_status><name>Kevin Stratton</name><nationality>Canadian</nationality><political_affiliation>None</political_affiliation><profession>Institute Director</profession><spouse>Evelyn Stratton</spouse><type>None</type><weight>185 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>2001-03-15</date_of_birth><description>Chloe's relentless determination and curiosity about performance analytics drive her running career and her interest in biometric systems.</description><education>Honours in Sports Technology from the University of Melbourne</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>Female</gender><hair_color>red</hair_color><height>5'8\"</height><history><event>2023-09-15: Chloe Mercer, an amateur sprinter, praised the biometric system for providing valuable real-time feedback on her running form, aiding in her performance improvement.</event><event>2023-11-15: Chloe Mercer benefited from the software updates announced at the Echo Summit, which improved data visualization tools in the biometric system she uses.</event><event>2023-12-20: Chloe Mercer credited the biometric system for her reduced injury incidences, highlighting the real-time feedback on her form as crucial to her injury-free training.</event></history><id>PERSON-4</id><last_updated>2023-09-15</last_updated><marital_status>Single</marital_status><name>Chloe Mercer</name><nationality>Australian</nationality><political_affiliation>None</political_affiliation><profession>Amateur Sprinter</profession><type>None</type><weight>130 lbs</weight></person>\n<person><created_at>2</created_at><date_of_birth>1988-05-13</date_of_birth><description>Sophia Lang is a dedicated nutritionist known for her expertise in designing personalized nutrition programs that enhance athletic performance and recovery.</description><education>Master's in Nutrition Science from the University of Sydney</education><entity_class>person</entity_class><eye_color>green</eye_color><gender>Female</gender><hair_color>brown</hair_color><height>5'7\"</height><history><event>2023-12-20: Sophia Lang presented insights on personalized nutrition programs that complemented the biometric data to support athlete recovery and performance.</event></history><id>PERSON-5</id><last_updated>2023-12-20</last_updated><marital_status>Married</marital_status><name>Sophia Lang</name><nationality>Australian</nationality><political_affiliation>None</political_affiliation><profession>Nutritionist and Analyst</profession><spouse>Dr. Elijah Graham</spouse><type>None</type><weight>140 lbs</weight></person>\n<person><created_at>2</created_at><date_of_birth>1979-07-22</date_of_birth><description>Mark Thornton is a physiotherapist recognized for his innovative athlete-specific recovery protocols, grounded in comprehensive biomechanical understanding.</description><education>Doctorate in Physiotherapy from Oxford Brookes University</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>Male</gender><hair_color>black</hair_color><height>6'0\"</height><history><event>2023-12-20: Mark Thornton discussed the customization of athlete-specific recovery protocols, emphasizing the role of biometric data in shaping these effective strategies at the institute.</event></history><id>PERSON-6</id><last_updated>2023-12-20</last_updated><marital_status>Divorced</marital_status><name>Mark Thornton</name><nationality>British</nationality><political_affiliation>None</political_affiliation><profession>Physiotherapist</profession><type>None</type><weight>180 lbs</weight></person>\n<person><created_at>2</created_at><date_of_birth>1983-12-04</date_of_birth><description>Jessica Klein is a legal expert focused on data privacy, ensuring ethical compliance in technology applications with end-to-end encryption and security audits.</description><education>Juris Doctor from McGill University</education><entity_class>person</entity_class><eye_color>hazel</eye_color><gender>Female</gender><hair_color>dark brown</hair_color><height>5'5\"</height><history><event>2023-12-20: Jessica Klein reassured participants of continued vigilance in data privacy, detailing the implementation of end-to-end encryption and regular audits to ensure the security of athletes' biometric data.</event></history><id>PERSON-7</id><last_updated>2023-12-20</last_updated><marital_status>Engaged</marital_status><name>Jessica Klein</name><nationality>Canadian</nationality><political_affiliation>None</political_affiliation><profession>Legal Expert</profession><spouse>Michael O'Shea</spouse><type>None</type><weight>125 lbs</weight></person>\n<person><created_at>2</created_at><date_of_birth>1975-03-18</date_of_birth><description>Devin Grove is a visionary head coach with a passion for integrating machine learning algorithms into athlete training programs to predict and prevent injuries.</description><education>Bachelor's in Kinesiology from the University of Southern California</education><entity_class>person</entity_class><eye_color>green</eye_color><gender>Male</gender><hair_color>grey</hair_color><height>6'2\"</height><history><event>2023-12-20: Devin Grove shared upcoming plans to expand the system's capabilities, focusing on integrating machine learning algorithms to predict potential injury risks based on historical data patterns.</event></history><id>PERSON-8</id><last_updated>2023-12-20</last_updated><marital_status>Married</marital_status><name>Devin Grove</name><nationality>American</nationality><political_affiliation>None</political_affiliation><profession>Head Coach</profession><spouse>Diana Grove</spouse><type>None</type><weight>190 lbs</weight></person>",
+    "ORGANIZATIONS_XML": "<organization><annual_revenue>4 million AUD</annual_revenue><created_at>0</created_at><description>Established to nurture regional athletic talent through comprehensive training programs and state-of-the-art facilities.</description><entity_class>organization</entity_class><founded>2015</founded><headquarters>72 Willow Lane - Lakeside - Melbourne</headquarters><history><event>2023-09-15: The Zenith Athletics Institute unveiled a new training center in Richmond Meadows, featuring advanced biometric monitoring technology developed in collaboration with BioTrack Innovations.</event><event>2023-11-15: Zenith Athletics Institute successfully organized the Echo Summit, collaborating with BioTrack Innovations to discuss advancements in athlete training methodologies.</event><event>2023-12-20: The Zenith Athletics Institute released a report detailing significant improvements in athlete injury prevention statistics, attributed to the implementation of advanced biometric monitoring systems developed by BioTrack Innovations.</event></history><id>ORGANIZATION-1</id><industry>Sports Education</industry><last_updated>2023-09-15</last_updated><mission_statement>To empower athletes with knowledge, skills, and resources to excel in their chosen sports disciplines.</mission_statement><name>Zenith Athletics Institute</name><number_of_employees>150</number_of_employees><type>educational institution</type></organization>\n<organization><annual_revenue>7 million USD</annual_revenue><created_at>0</created_at><description>A pioneering tech firm specializing in biometric systems and performance analytics for athletes and sports professionals worldwide.</description><entity_class>organization</entity_class><founded>2018</founded><headquarters>350 Innovation Drive in Silicon Valley California</headquarters><history><event>2023-09-15: BioTrack Innovations collaborated with the Zenith Athletics Institute to develop a unique biometric system for personalized athlete performance analytics.</event><event>2023-11-15: BioTrack Innovations announced software updates at the Echo Summit, enhancing data visualization tools and addressing user feedback, including that from Chloe Mercer.</event><event>2023-12-20: BioTrack Innovations released a report detailing the significant improvements in athlete injury prevention statistics observed at the Zenith Athletics Institute, attributing the reduction in injury rates to their biometric systems.</event></history><id>ORGANIZATION-2</id><industry>Biometric Technology</industry><last_updated>2023-09-15</last_updated><mission_statement>To revolutionize sports performance through cutting-edge technology offering precise analytics for improved outcomes.</mission_statement><name>BioTrack Innovations</name><number_of_employees>75</number_of_employees><type>company</type></organization>",
+    "LOCATIONS_XML": "<location><area>52 square miles</area><created_at>0</created_at><description>A picturesque region notable for its expansive meadows and vibrant seasons, making it a prime location for outdoor activities.</description><elevation>320 meters</elevation><entity_class>location</entity_class><history><event>2023-09-15: The Zenith Athletics Institute unveiled its new training center in Richmond Meadows, highlighting the area's scenic beauty and proximity to sports clubs.</event><event>2023-11-15: Richmond Meadows hosted the Echo Summit, a significant event for the regional sports community, held at the Zenith Athletics Institute's new training center.</event><event>2023-12-20: Richmond Meadows was highlighted in the report for its scenic beauty and proximity to sports clubs, which contributed to the success of the Zenith Athletics Institute's new training center.</event></history><id>LOCATION-1</id><last_updated>2023-09-15</last_updated><name>Richmond Meadows</name><population>42,000</population><type>region</type></location>",
+    "PRODUCTS_XML": "",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "",
+    "EVENTS_XML": "",
+    "MISCELLANEOUSS_XML": "",
+    "NUM_STORYITEMS": 10,
+    "HISTORY_XML": "<event><date>2023-09-15</date><outline>On September 15, 2023, the {Zenith Athletics Institute|ORGANIZATION-1} unveiled its new state-of-the-art training center in {Richmond Meadows|LOCATION-1}, a scenic area known for its lush greenery and proximity to local sports clubs. The new facility, designed with an open-concept layout, features large glass windows that allow natural light to flood the indoor track and weight rooms. This institute was specifically designed to cater to the training needs of regional athletes, focusing on sports such as track and field, gymnastics, and swimming. The new facility, equipped with advanced biometric monitoring technology, was inaugurated with a formal ceremony attended by the known athletes of the institute, including prominent runners like {Alex Varner|PERSON-1} and gymnast {Alicia Wilton|PERSON-2}, who both expressed excitement about the new opportunities for training. The {Zenith Athletics Institute|ORGANIZATION-1}, in collaboration with tech firm {BioTrack Innovations|ORGANIZATION-2}, developed the unique biometric system to provide athletes with personalized performance analytics, integrating sensors that track heart rate, muscle activity, and movement patterns. During the event, Institute Director {Kevin Stratton|PERSON-3} highlighted, \"This facility represents a leap forward in training technology for athletes, especially those specializing in high-risk sports,\" emphasizing the potential for injury prevention and performance enhancement. The systems installed use sensors to gather real-time data, which is then analyzed to help athletes optimize their performance and reduce injury risks, with data being accessible through a secure mobile app. First to test the new biometric system were a group of young sprinters, who were fascinated by the real-time feedback they received during drills, noting improvements in their stride and posture. Sprinter {Chloe Mercer|PERSON-4} noted, \"The instant feedback on my running form has been invaluable. It\u2019s like having a coach at every moment,\" and mentioned how the system helped her identify areas for improvement that were previously unnoticed. Some concerns were voiced regarding the privacy of personal health data collected by the systems, prompting Director {Kevin Stratton|PERSON-3} to assure attendees of strict adherence to data protection regulations, including encryption and limited access to sensitive information. The facility contains a medium-sized field adjacent to an indoor track and several weight rooms, designed to support various sports such as track and field, gymnastics, and swimming, with each area equipped with specialized equipment for different training needs. Ongoing educational workshops about the benefits and usage of biometric technology are planned to be held at the {Zenith Athletics Institute|ORGANIZATION-1}, with sessions led by experts from {BioTrack Innovations|ORGANIZATION-2} and experienced coaches.</outline></event>\n<event><date>2023-11-15</date><outline>The Echo Summit began on November 15, 2023, in {Richmond Meadows|LOCATION-1} as a technical symposium focused on enhancing athlete training regimens through engaged discussions between industry experts and practitioners. The symposium was held at the newly inaugurated training center of the {Zenith Athletics Institute|ORGANIZATION-1}, which provided a state-of-the-art venue with advanced facilities for the event. The event was organized by {Zenith Athletics Institute|ORGANIZATION-1}, in collaboration with {BioTrack Innovations|ORGANIZATION-2}, with the goal of identifying improvements in the training methodology post the unveiling of the new training center. Over 200 attendees, including coaches, athletes, and sports scientists, participated in the symposium, reflecting the event's significance in the regional sports community. Alyssa Grove, a sports psychologist from Prism Dynamics Center, presented findings on mental resilience and its role in achieving peak athletic performance, emphasizing the necessity for integrating psychological support into training programs. Alyssa Grove shared case studies from her work with elite athletes, illustrating how mental resilience training has led to measurable improvements in performance under pressure. During a panel discussion, Coach David Finnegan from Northern Arena Track Club highlighted the practical challenges faced by coaches in implementing biometric feedback systems in regular training routines. Coach Finnegan discussed specific examples from his track club, where integrating biometric data into training schedules initially faced resistance but eventually led to enhanced athlete performance. The session attended by professional athletes, including {Alex Varner|PERSON-1} from {Zenith Athletics Institute|ORGANIZATION-1}, saw active engagement with suggestions for refining the biometric system for more user-friendly interactions and insights. {Alex Varner|PERSON-1} proposed the inclusion of a customizable dashboard feature in the biometric system to allow athletes to prioritize the data most relevant to their training goals. Mark Thornton, a physiotherapist from Renown Wellness Group, proposed solutions for injury prevention, focusing on incorporating customized recovery protocols based on the athlete-specific data from biometric systems. Mark Thornton demonstrated a prototype recovery protocol tailored for middle-distance runners, which showed a 20% reduction in recovery time in preliminary trials. Elena Crest, a nutritionist and researcher, illustrated the impact of personalized nutritional strategies on athletes\u2019 performance, referencing real-time data for tailored dietary adjustments. Elena Crest presented a case study of a swimmer whose performance improved by 15% after implementing a diet plan based on biometric feedback. Representatives from {BioTrack Innovations|ORGANIZATION-2} announced software updates designed to enhance data visualization tools, addressing some of the feedback received from current users like {Chloe Mercer|PERSON-4}. The software updates included a new feature that allows athletes to compare their performance metrics over time, providing a clearer picture of progress and areas needing improvement. A session on data privacy was led by a legal expert, Jessica Klein, who assured the attendees about enhanced protocols safeguarding athletes' personal health information and compliance with data protection standards. Jessica Klein outlined the new encryption methods and access controls that would be implemented to ensure the confidentiality and security of athletes' biometric data. The symposium concluded with plans set to implement incremental enhancements, fostering a commitment to continuous improvement aligned with previous discussions on maintaining athlete satisfaction while advancing technology. The closing remarks emphasized the importance of ongoing collaboration between the {Zenith Athletics Institute|ORGANIZATION-1} and {BioTrack Innovations|ORGANIZATION-2} to ensure the training center remains at the forefront of sports technology.</outline></event>\n<event><date>2023-12-20</date><outline>On December 20, 2023, {BioTrack Innovations|ORGANIZATION-2} released a comprehensive report detailing the significant improvements in athlete injury prevention statistics observed at the {Zenith Athletics Institute|ORGANIZATION-1}. The report highlighted a 30% reduction in common injuries such as sprains and strains among athletes using the biometric systems. The report attributed the reduction in injury rates to the implementation of the advanced biometric monitoring systems developed by {BioTrack Innovations|ORGANIZATION-2} at the {Zenith Athletics Institute|ORGANIZATION-1}\u2019s training center in {Richmond Meadows|LOCATION-1}. These systems include wearable sensors that track athletes' biomechanics in real-time, providing immediate feedback to coaches and athletes. Director {Kevin Stratton|PERSON-3} of the {Zenith Athletics Institute|ORGANIZATION-1} praised the collaborative efforts with {BioTrack Innovations|ORGANIZATION-2}, highlighting how the integration of real-time data analytics contributed to optimizing training regimens. {Kevin Stratton|PERSON-3} emphasized that the collaboration allowed for a seamless integration of technology into daily training routines, enhancing both safety and performance. Sprinter {Chloe Mercer|PERSON-4}, an athlete from the {Zenith Athletics Institute|ORGANIZATION-1}, credited the biometric system for her reduced injury incidences, stating, \"The real-time feedback on my form has been crucial to my injury-free training.\" {Chloe Mercer|PERSON-4} shared that the system helped her adjust her stride length and cadence, which significantly reduced her risk of hamstring injuries. At the report unveiling, Nutritionist and Analyst {Sophia Lang|PERSON-5} presented insights on personalized nutrition programs that complemented the biometric data to support athlete recovery and performance. {Sophia Lang|PERSON-5} explained how the nutrition programs were tailored to individual metabolic rates and recovery needs, enhancing overall athlete health. Physiotherapist {Mark Thornton|PERSON-6} discussed the customization of athlete-specific recovery protocols, emphasizing the role of biometric data in shaping these effective strategies at the institute. {Mark Thornton|PERSON-6} highlighted a case where a tailored recovery protocol reduced downtime for a gymnast recovering from a wrist injury by 25%. During the presentation, legal expert {Jessica Klein|PERSON-7} reassured participants of continued vigilance in data privacy, underscoring {BioTrack Innovations|ORGANIZATION-2}'s commitment to athlete data protection. {Jessica Klein|PERSON-7} detailed the implementation of end-to-end encryption and regular audits to ensure the security of athletes' biometric data. The collaborative team, including the Institute\u2019s head coach {Devin Grove|PERSON-8}, shared upcoming plans to expand the system's capabilities, focusing on further fine-tuning personalized athlete training paths. {Devin Grove|PERSON-8} outlined plans to integrate machine learning algorithms that predict potential injury risks based on historical data patterns. {Gymnast Alicia Wilton|PERSON-2} expressed enthusiasm about the ongoing advancements, noting the positive impact on athletes' performance and safety during varied training sessions. {Alicia Wilton|PERSON-2} mentioned that the enhanced feedback from the biometric systems allowed her to perfect her routines with greater precision and confidence. Overall, the report solidified the success of the {Zenith Athletics Institute|ORGANIZATION-1} and {BioTrack Innovations|ORGANIZATION-2}'s joint initiative, setting a benchmark for sports training technology applications focused on injury prevention. The report also suggested that similar systems could be adapted for use in other sports disciplines, potentially benefiting a wider range of athletes.</outline></event>",
+    "STORY_ITEM": [
+      "On January 15, 2024, at the Richmond Meadows training facility, Alex Varner competed in a 1500-meter race organized by the Zenith Athletics Institute.",
+      "The Richmond Meadows training facility, known for its state-of-the-art biometric monitoring technology, provided an ideal environment for athletes to perform at their best.",
+      "Athletes and coaches at the Zenith Athletics Institute expressed support for Alex Varner's performance, despite his failure to set a new regional record.",
+      "Coaches praised Alex Varner for his resilience and determination, noting that his performance was commendable given the circumstances.",
+      "Athlete Alicia Wilton, who was present at the event, credited the new training sessions with BioTrack Innovations for enhancing overall team morale.",
+      "Alicia Wilton highlighted how the integration of biometric feedback had allowed her to refine her gymnastics routines, contributing to a more cohesive team spirit.",
+      "After the race, Alex Varner acknowledged insufficient recovery time as a key factor contributing to his inability to achieve the regional record.",
+      "Alex Varner mentioned that the intense training schedule leading up to the race left little time for adequate rest, impacting his performance.",
+      "Institute Director Kevin Stratton noted that Alex Varner's commitment to training remains strong, and adjustments will be made to his training schedule.",
+      "Kevin Stratton emphasized that the institute would collaborate with Alex Varner to develop a more balanced training plan, incorporating more rest days.",
+      "Nutritionist Sophia Lang suggested that integrating additional recovery-focused dietary plans could better prepare athletes like Alex Varner for future competitions.",
+      "Sophia Lang proposed a diet rich in antioxidants and proteins to aid in muscle recovery and reduce fatigue.",
+      "Head Coach Devin Grove emphasized the importance of monitoring recovery time, planning subsequent sessions to address this gap in preparation.",
+      "Devin Grove outlined a new training protocol that includes regular assessments of athletes' recovery metrics to optimize their training schedules.",
+      "Physiotherapist Mark Thornton discussed the upcoming implementation of a new recovery protocol using biometric data to tailor rehabilitation timelines.",
+      "Mark Thornton explained that the new protocol would use data from wearable sensors to customize recovery plans for each athlete, ensuring optimal performance.",
+      "Legal expert Jessica Klein reassured athletes that their health data continues to be protected by the latest data security measures at the institute.",
+      "Jessica Klein detailed the use of advanced encryption techniques and regular security audits to safeguard athletes' biometric data.",
+      "Chloe Mercer, also part of the institute's athletic team, shared her insights on using biometric systems for personalized training adjustments that could be applied to future training sessions.",
+      "Chloe Mercer described how real-time feedback from the biometric systems had helped her identify and correct inefficiencies in her sprinting technique."
+    ],
+    "DATE": "2024-01-15",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 2,
+    "OUTLINE": "On January 15, 2024, at the Richmond Meadows training facility, Alex Varner competed in a 1500-meter race organized by the Zenith Athletics Institute.\nThe Richmond Meadows training facility, known for its state-of-the-art biometric monitoring technology, provided an ideal environment for athletes to perform at their best.\nAthletes and coaches at the Zenith Athletics Institute expressed support for Alex Varner's performance, despite his failure to set a new regional record.\nCoaches praised Alex Varner for his resilience and determination, noting that his performance was commendable given the circumstances.\nAthlete Alicia Wilton, who was present at the event, credited the new training sessions with BioTrack Innovations for enhancing overall team morale.\nAlicia Wilton highlighted how the integration of biometric feedback had allowed her to refine her gymnastics routines, contributing to a more cohesive team spirit.\nAfter the race, Alex Varner acknowledged insufficient recovery time as a key factor contributing to his inability to achieve the regional record.\nAlex Varner mentioned that the intense training schedule leading up to the race left little time for adequate rest, impacting his performance.\nInstitute Director Kevin Stratton noted that Alex Varner's commitment to training remains strong, and adjustments will be made to his training schedule.\nKevin Stratton emphasized that the institute would collaborate with Alex Varner to develop a more balanced training plan, incorporating more rest days.\nNutritionist Sophia Lang suggested that integrating additional recovery-focused dietary plans could better prepare athletes like Alex Varner for future competitions.\nSophia Lang proposed a diet rich in antioxidants and proteins to aid in muscle recovery and reduce fatigue.\nHead Coach Devin Grove emphasized the importance of monitoring recovery time, planning subsequent sessions to address this gap in preparation.\nDevin Grove outlined a new training protocol that includes regular assessments of athletes' recovery metrics to optimize their training schedules.\nPhysiotherapist Mark Thornton discussed the upcoming implementation of a new recovery protocol using biometric data to tailor rehabilitation timelines.\nMark Thornton explained that the new protocol would use data from wearable sensors to customize recovery plans for each athlete, ensuring optimal performance.\nLegal expert Jessica Klein reassured athletes that their health data continues to be protected by the latest data security measures at the institute.\nJessica Klein detailed the use of advanced encryption techniques and regular security audits to safeguard athletes' biometric data.\nChloe Mercer, also part of the institute's athletic team, shared her insights on using biometric systems for personalized training adjustments that could be applied to future training sessions.\nChloe Mercer described how real-time feedback from the biometric systems had helped her identify and correct inefficiencies in her sprinting technique.",
+    "PRE-CONSISTENCY-NUM-ITEMS": 20,
+    "STORYITEM_XML": "<storyitems>\n<storyitem>On January 15, 2024, at the Richmond Meadows training facility, Alex Varner competed in a 1500-meter race organized by the Zenith Athletics Institute.</storyitem>\n<storyitem>The Richmond Meadows training facility, known for its state-of-the-art biometric monitoring technology, provided an ideal environment for athletes to perform at their best.</storyitem>\n<storyitem>Athletes and coaches at the Zenith Athletics Institute expressed support for Alex Varner's performance, despite his failure to set a new regional record.</storyitem>\n<storyitem>Coaches praised Alex Varner for his resilience and determination, noting that his performance was commendable given the circumstances.</storyitem>\n<storyitem>Athlete Alicia Wilton, who was present at the event, credited the new training sessions with BioTrack Innovations for enhancing overall team morale.</storyitem>\n<storyitem>Alicia Wilton highlighted how the integration of biometric feedback had allowed her to refine her gymnastics routines, contributing to a more cohesive team spirit.</storyitem>\n<storyitem>After the race, Alex Varner acknowledged insufficient recovery time as a key factor contributing to his inability to achieve the regional record.</storyitem>\n<storyitem>Alex Varner mentioned that the intense training schedule leading up to the race left little time for adequate rest, impacting his performance.</storyitem>\n<storyitem>Institute Director Kevin Stratton noted that Alex Varner's commitment to training remains strong, and adjustments will be made to his training schedule.</storyitem>\n<storyitem>Kevin Stratton emphasized that the institute would collaborate with Alex Varner to develop a more balanced training plan, incorporating more rest days.</storyitem>\n<storyitem>Nutritionist Sophia Lang suggested that integrating additional recovery-focused dietary plans could better prepare athletes like Alex Varner for future competitions.</storyitem>\n<storyitem>Sophia Lang proposed a diet rich in antioxidants and proteins to aid in muscle recovery and reduce fatigue.</storyitem>\n<storyitem>Head Coach Devin Grove emphasized the importance of monitoring recovery time, planning subsequent sessions to address this gap in preparation.</storyitem>\n<storyitem>Devin Grove outlined a new training protocol that includes regular assessments of athletes' recovery metrics to optimize their training schedules.</storyitem>\n<storyitem>Physiotherapist Mark Thornton discussed the upcoming implementation of a new recovery protocol using biometric data to tailor rehabilitation timelines.</storyitem>\n<storyitem>Mark Thornton explained that the new protocol would use data from wearable sensors to customize recovery plans for each athlete, ensuring optimal performance.</storyitem>\n<storyitem>Legal expert Jessica Klein reassured athletes that their health data continues to be protected by the latest data security measures at the institute.</storyitem>\n<storyitem>Jessica Klein detailed the use of advanced encryption techniques and regular security audits to safeguard athletes' biometric data.</storyitem>\n<storyitem>Chloe Mercer, also part of the institute's athletic team, shared her insights on using biometric systems for personalized training adjustments that could be applied to future training sessions.</storyitem>\n<storyitem>Chloe Mercer described how real-time feedback from the biometric systems had helped her identify and correct inefficiencies in her sprinting technique.</storyitem>\n<storyitems>",
+    "NEW_PERSON_NAME": [],
+    "NEW_ORGANIZATION_NAME": [],
+    "NEW_LOCATION_NAME": [],
+    "NEW_PRODUCT_NAME": [],
+    "NEW_ART_NAME": [],
+    "NEW_BUILDING_NAME": [],
+    "NEW_EVENT_NAME": [],
+    "NEW_MISCELLANEOUS_NAME": [],
+    "CORRECTED_PERSON_NAME": [],
+    "CORRECTED_ORGANIZATION_NAME": [],
+    "CORRECTED_LOCATION_NAME": [],
+    "CORRECTED_PRODUCT_NAME": [],
+    "CORRECTED_ART_NAME": [],
+    "CORRECTED_BUILDING_NAME": [],
+    "CORRECTED_EVENT_NAME": [],
+    "CORRECTED_MISCELLANEOUS_NAME": [],
+    "CRITIQUE_ERRORS": {
+      "entity-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ]
+    },
+    "ADJUSTED_PERSONS_XML": "",
+    "ADJUSTED_ORGANIZATIONS_XML": "",
+    "ADJUSTED_LOCATIONS_XML": "",
+    "ADJUSTED_PRODUCTS_XML": "",
+    "ADJUSTED_ARTS_XML": "",
+    "ADJUSTED_BUILDINGS_XML": "",
+    "ADJUSTED_EVENTS_XML": "",
+    "ADJUSTED_MISCELLANEOUSS_XML": ""
+  }
+}

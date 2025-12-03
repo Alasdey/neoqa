@@ -1,0 +1,318 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "microsoft/phi-4-reasoning-plus",
+    "temperature": 0.0,
+    "max-tokens": 4096
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "To identify the named entities explicitly mentioned in the outline, I will go through each entity in the provided list and check if it is directly referred to by name in the outline. Here is the analysis:\n\n1. **Westfield** (LOCATION-1)\n   - Mentioned: \"The event will take place... at the Vistara Stadium, located in the fictional town of Westfield.\"\n\n2. **Mia Thompson** (PERSON-1)\n   - Mentioned: \"One athlete, 16-year-old sprinter Mia Thompson, mentioned that she appreciates HydroBoost's commitment...\"\n\n3. **National Youth Athletics Federation** (ORGANIZATION-1)\n   - Mentioned: \"HydroBoost, an emerging energy drink brand, announced its partnership with the National Youth Athletics Federation...\"\n\n4. **GreenLeaf Caf\u00e9** (ORGANIZATION-2)\n   - Mentioned: \"Local businesses around Vistara Stadium, such as GreenLeaf Caf\u00e9...\"\n\n5. **Sentinel Sports Supply** (ORGANIZATION-3)\n   - Mentioned: \"...and Sentinel Sports Supply, are preparing for increased footfall due to the event.\"\n\n6. **Westfield High School marching band** (ORGANIZATION-4)\n   - Mentioned: \"...a performance by the Westfield High School marching band...\"\n\n7. **HydroBoost** (PRODUCT-1)\n   - Mentioned multiple times, e.g., \"HydroBoost, an emerging energy drink brand...\"\n\n8. **Vistara Stadium** (BUILDING-1)\n   - Mentioned: \"The event will take place... at the Vistara Stadium...\"\n\nAll the entities listed are explicitly mentioned by name in the outline. Here is the final output:\n\n```xml\n<results>\n<entities>\n<location><id>LOCATION-1</id><name>Westfield</name></location>\n<person><id>PERSON-1</id><name>Mia Thompson</name></person>\n<organization><id>ORGANIZATION-1</id><name>National Youth Athletics Federation</name></organization>\n<organization><id>ORGANIZATION-2</id><name>GreenLeaf Caf\u00e9</name></organization>\n<organization><id>ORGANIZATION-3</id><name>Sentinel Sports Supply</name></organization>\n<organization><id>ORGANIZATION-4</id><name>Westfield High School marching band</name></organization>\n<product><id>PRODUCT-1</id><name>HydroBoost</name></product>\n<building><id>BUILDING-1</id><name>Vistara Stadium</name></building>\n</entities>\n</results>\n```"
+  },
+  "response": "To identify the named entities explicitly mentioned in the outline, I will go through each entity in the provided list and check if it is directly referred to by name in the outline. Here is the analysis:\n\n1. **Westfield** (LOCATION-1)\n   - Mentioned: \"The event will take place... at the Vistara Stadium, located in the fictional town of Westfield.\"\n\n2. **Mia Thompson** (PERSON-1)\n   - Mentioned: \"One athlete, 16-year-old sprinter Mia Thompson, mentioned that she appreciates HydroBoost's commitment...\"\n\n3. **National Youth Athletics Federation** (ORGANIZATION-1)\n   - Mentioned: \"HydroBoost, an emerging energy drink brand, announced its partnership with the National Youth Athletics Federation...\"\n\n4. **GreenLeaf Caf\u00e9** (ORGANIZATION-2)\n   - Mentioned: \"Local businesses around Vistara Stadium, such as GreenLeaf Caf\u00e9...\"\n\n5. **Sentinel Sports Supply** (ORGANIZATION-3)\n   - Mentioned: \"...and Sentinel Sports Supply, are preparing for increased footfall due to the event.\"\n\n6. **Westfield High School marching band** (ORGANIZATION-4)\n   - Mentioned: \"...a performance by the Westfield High School marching band...\"\n\n7. **HydroBoost** (PRODUCT-1)\n   - Mentioned multiple times, e.g., \"HydroBoost, an emerging energy drink brand...\"\n\n8. **Vistara Stadium** (BUILDING-1)\n   - Mentioned: \"The event will take place... at the Vistara Stadium...\"\n\nAll the entities listed are explicitly mentioned by name in the outline. Here is the final output:\n\n```xml\n<results>\n<entities>\n<location><id>LOCATION-1</id><name>Westfield</name></location>\n<person><id>PERSON-1</id><name>Mia Thompson</name></person>\n<organization><id>ORGANIZATION-1</id><name>National Youth Athletics Federation</name></organization>\n<organization><id>ORGANIZATION-2</id><name>GreenLeaf Caf\u00e9</name></organization>\n<organization><id>ORGANIZATION-3</id><name>Sentinel Sports Supply</name></organization>\n<organization><id>ORGANIZATION-4</id><name>Westfield High School marching band</name></organization>\n<product><id>PRODUCT-1</id><name>HydroBoost</name></product>\n<building><id>BUILDING-1</id><name>Vistara Stadium</name></building>\n</entities>\n</results>\n```",
+  "instructions": "You are an AI assistant tasked with identifying which of the provided entities are explicitly named within the provided outline. Follow these instructions carefully:\n\n1. The date for this fictional event outline is:\n<date>{{DATE}}</date>\n\n2. Here is the outline you need to analyze:\n<outline>\n{{OUTLINE}}\n</outline>\n\n3. Here is the list of known (fictional) named entities:\n<entities>\n{{LOCATIONS_XML}}\n{{PERSONS_XML}}\n{{ORGANIZATIONS_XML}}\n{{PRODUCTS_XML}}\n{{ARTS_XML}}\n{{EVENTS_XML}}\n{{BUILDINGS_XML}}\n{{MISCELLANEOUSS_XML}}\n\n{{ADJUSTED_LOCATIONS_XML}}\n{{ADJUSTED_PERSONS_XML}}\n{{ADJUSTED_ORGANIZATIONS_XML}}\n{{ADJUSTED_PRODUCTS_XML}}\n{{ADJUSTED_ARTS_XML}}\n{{ADJUSTED_BUILDINGS_XML}}\n{{ADJUSTED_EVENTS_XML}}\n{{ADJUSTED_MISCELLANEOUSS_XML}}\n</entities>\n\n4. Your task is to go through all of the named entities in the provided list. For each named entity, check if it is explicitly referred to by name in the outline. If a named entity is explicitly mentioned by name, include it in your results.\n\n5. For each entity you identify, list them using the following format:\n<[entity_type]><id>[id of the entity]</id><name>[full name of the entity]</name></[entity_type]>\n\n6. Present your final output within a single <results> root node, structured as follows:\n\n<results>\n<entities>\n[List all identified entities here as described in step 5]\n</entities>\n</results>\n\n7. Double-check your work: For each entity that you have identified, make sure to find the sentence within the outline that explicitly refers to this identified entity by name. If you cannot find that the entity is mentioned explicitly by name in the outline, do not include it in your results.\n\n8. You can use a <scratchpad> for your thinking process. Do not include any XML tags within your scratchpad.\n\n9. Make sure that you have not missed any named entity from the outline that was also provided to you in the list of named entities.\n\nRemember, only include entities that are explicitly mentioned by name in the outline. Do not infer or assume the presence of entities that are not directly named.",
+  "text_prompt": "You are an AI assistant tasked with identifying which of the provided entities are explicitly named within the provided outline. Follow these instructions carefully:\n\n1. The date for this fictional event outline is:\n<date>2025-07-22</date>\n\n2. Here is the outline you need to analyze:\n<outline>\nHydroBoost, an emerging energy drink brand, announced its partnership with the National Youth Athletics Federation as the official sponsor for the upcoming Youth Track and Field Championship.\nThe partnership deal will prominently feature HydroBoost's branding on all event paraphernalia, including athletes' uniforms, event banners, and promotional materials.\nHydroBoost's logo will be displayed in large, eye-catching fonts on the front of athletes' uniforms, ensuring maximum visibility during competitions.\nEvent banners will be strategically placed around Vistara Stadium, with HydroBoost's branding prominently displayed at the entrance and main competition areas.\nAt the press conference, HydroBoost's CEO, Liana Sharp, stated, \"This partnership allows us to connect with a dynamic and energetic youth audience, aligning perfectly with our brand's vision.\"\nLiana Sharp emphasized that HydroBoost aims to inspire young athletes by promoting a lifestyle of health, energy, and determination.\nThe National Youth Athletics Federation officials highlighted the significance of the sponsorship, noting that it would enhance the visibility and experience of the event for young athletes.\nOfficials mentioned that the sponsorship would provide additional funding for improved facilities and resources for the athletes.\nThe event will take place from July 25, 2025, to July 27, 2025, at the Vistara Stadium, located in the fictional town of Westfield.\nVistara Stadium, known for its state-of-the-art track and field facilities, has been recently renovated to accommodate the influx of spectators expected for the championship.\nLocal businesses around Vistara Stadium, such as GreenLeaf Caf\u00e9 and Sentinel Sports Supply, are preparing for increased footfall due to the event.\nGreenLeaf Caf\u00e9 plans to introduce a special menu featuring healthy snacks and beverages, while Sentinel Sports Supply is offering discounts on sports gear for event attendees.\nHydroBoost plans to have a booth at the event, offering free samples of their latest products and engaging attendees with challenges that promote physical activity.\nThe booth will feature interactive games like a mini-obstacle course and a hydration quiz, with winners receiving HydroBoost merchandise.\nYoung athletes preparing for the championship have voiced excitement about HydroBoost\u2019s focus on health and well-being, with several expressing interest in their products.\nOne athlete, 16-year-old sprinter Mia Thompson, mentioned that she appreciates HydroBoost's commitment to natural ingredients and sustainable packaging.\nThe event itinerary includes opening ceremonies, multiple track and field competitions, and closing ceremonies, which will be attended by local sports enthusiasts and national sports personalities.\nThe opening ceremony will feature a parade of athletes, a performance by the Westfield High School marching band, and a speech by a renowned national athlete.\nReactions from competing energy drink brands have been observed, as some have started to strategize on how to address the new competition presented by HydroBoost's sponsorship.\nCompeting brands are reportedly considering launching targeted marketing campaigns and promotional offers to retain their market share among young consumers.\n</outline>\n\n3. Here is the list of known (fictional) named entities:\n<entities>\n\n\n\n\n\n\n\n\n\n<location><id>LOCATION-1</id><name>Westfield</name><old_name>Westfield</old_name></location>\n<person><id>PERSON-1</id><name>Mia Thompson</name><old_name>Mia Thompson</old_name></person>\n<organization><id>ORGANIZATION-1</id><name>National Youth Athletics Federation</name><old_name>National Youth Athletics Federation</old_name></organization>\n<organization><id>ORGANIZATION-2</id><name>GreenLeaf Caf\u00e9</name><old_name>GreenLeaf Caf\u00e9</old_name></organization>\n<organization><id>ORGANIZATION-3</id><name>Sentinel Sports Supply</name><old_name>Sentinel Sports Supply</old_name></organization>\n<organization><id>ORGANIZATION-4</id><name>Westfield High School marching band</name><old_name>Westfield High School marching band</old_name></organization>\n<product><id>PRODUCT-1</id><name>HydroBoost</name><old_name>HydroBoost</old_name></product>\n\n<building><id>BUILDING-1</id><name>Vistara Stadium</name><old_name>Vistara Stadium</old_name></building>\n\n\n</entities>\n\n4. Your task is to go through all of the named entities in the provided list. For each named entity, check if it is explicitly referred to by name in the outline. If a named entity is explicitly mentioned by name, include it in your results.\n\n5. For each entity you identify, list them using the following format:\n<[entity_type]><id>[id of the entity]</id><name>[full name of the entity]</name></[entity_type]>\n\n6. Present your final output within a single <results> root node, structured as follows:\n\n<results>\n<entities>\n[List all identified entities here as described in step 5]\n</entities>\n</results>\n\n7. Double-check your work: For each entity that you have identified, make sure to find the sentence within the outline that explicitly refers to this identified entity by name. If you cannot find that the entity is mentioned explicitly by name in the outline, do not include it in your results.\n\n8. You can use a <scratchpad> for your thinking process. Do not include any XML tags within your scratchpad.\n\n9. Make sure that you have not missed any named entity from the outline that was also provided to you in the list of named entities.\n\nRemember, only include entities that are explicitly mentioned by name in the outline. Do not infer or assume the presence of entities that are not directly named.",
+  "system-prompt": null,
+  "values": {
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "GENRE": "Sports",
+    "HISTORIES": [],
+    "EVENT_SUMMARY": "An emerging energy drink brand has secured a deal as the official sponsor of a national youth athletics championship, aiming to boost brand visibility among younger demographics.",
+    "EVENT_SUMMARY_FOR_NAME": "An emerging energy d",
+    "KEYWORDS": "",
+    "CREATED_AT": 0,
+    "NEXT_IDS": {
+      "person": 2,
+      "organization": 5,
+      "location": 2,
+      "product": 2,
+      "art": 1,
+      "building": 2,
+      "event": 1,
+      "miscellaneous": 1
+    },
+    "PROVIDED_DATE": "",
+    "PERSON": [],
+    "ORGANIZATION": [],
+    "LOCATION": [],
+    "PRODUCT": [],
+    "ART": [],
+    "BUILDING": [],
+    "EVENT": [],
+    "MISCELLANEOUS": [],
+    "PERSONS_XML": "",
+    "ORGANIZATIONS_XML": "",
+    "LOCATIONS_XML": "",
+    "PRODUCTS_XML": "",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "",
+    "EVENTS_XML": "",
+    "MISCELLANEOUSS_XML": "",
+    "NUM_STORYITEMS": 10,
+    "HISTORY_XML": "",
+    "STORY_ITEM": [
+      "HydroBoost, an emerging energy drink brand, announced its partnership with the National Youth Athletics Federation as the official sponsor for the upcoming Youth Track and Field Championship.",
+      "The partnership deal will prominently feature HydroBoost's branding on all event paraphernalia, including athletes' uniforms, event banners, and promotional materials.",
+      "HydroBoost's logo will be displayed in large, eye-catching fonts on the front of athletes' uniforms, ensuring maximum visibility during competitions.",
+      "Event banners will be strategically placed around Vistara Stadium, with HydroBoost's branding prominently displayed at the entrance and main competition areas.",
+      "At the press conference, HydroBoost's CEO, Liana Sharp, stated, \"This partnership allows us to connect with a dynamic and energetic youth audience, aligning perfectly with our brand's vision.\"",
+      "Liana Sharp emphasized that HydroBoost aims to inspire young athletes by promoting a lifestyle of health, energy, and determination.",
+      "The National Youth Athletics Federation officials highlighted the significance of the sponsorship, noting that it would enhance the visibility and experience of the event for young athletes.",
+      "Officials mentioned that the sponsorship would provide additional funding for improved facilities and resources for the athletes.",
+      "The event will take place from July 25, 2025, to July 27, 2025, at the Vistara Stadium, located in the fictional town of Westfield.",
+      "Vistara Stadium, known for its state-of-the-art track and field facilities, has been recently renovated to accommodate the influx of spectators expected for the championship.",
+      "Local businesses around Vistara Stadium, such as GreenLeaf Caf\u00e9 and Sentinel Sports Supply, are preparing for increased footfall due to the event.",
+      "GreenLeaf Caf\u00e9 plans to introduce a special menu featuring healthy snacks and beverages, while Sentinel Sports Supply is offering discounts on sports gear for event attendees.",
+      "HydroBoost plans to have a booth at the event, offering free samples of their latest products and engaging attendees with challenges that promote physical activity.",
+      "The booth will feature interactive games like a mini-obstacle course and a hydration quiz, with winners receiving HydroBoost merchandise.",
+      "Young athletes preparing for the championship have voiced excitement about HydroBoost\u2019s focus on health and well-being, with several expressing interest in their products.",
+      "One athlete, 16-year-old sprinter Mia Thompson, mentioned that she appreciates HydroBoost's commitment to natural ingredients and sustainable packaging.",
+      "The event itinerary includes opening ceremonies, multiple track and field competitions, and closing ceremonies, which will be attended by local sports enthusiasts and national sports personalities.",
+      "The opening ceremony will feature a parade of athletes, a performance by the Westfield High School marching band, and a speech by a renowned national athlete.",
+      "Reactions from competing energy drink brands have been observed, as some have started to strategize on how to address the new competition presented by HydroBoost's sponsorship.",
+      "Competing brands are reportedly considering launching targeted marketing campaigns and promotional offers to retain their market share among young consumers."
+    ],
+    "DATE": "2025-07-22",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 2,
+    "OUTLINE": "HydroBoost, an emerging energy drink brand, announced its partnership with the National Youth Athletics Federation as the official sponsor for the upcoming Youth Track and Field Championship.\nThe partnership deal will prominently feature HydroBoost's branding on all event paraphernalia, including athletes' uniforms, event banners, and promotional materials.\nHydroBoost's logo will be displayed in large, eye-catching fonts on the front of athletes' uniforms, ensuring maximum visibility during competitions.\nEvent banners will be strategically placed around Vistara Stadium, with HydroBoost's branding prominently displayed at the entrance and main competition areas.\nAt the press conference, HydroBoost's CEO, Liana Sharp, stated, \"This partnership allows us to connect with a dynamic and energetic youth audience, aligning perfectly with our brand's vision.\"\nLiana Sharp emphasized that HydroBoost aims to inspire young athletes by promoting a lifestyle of health, energy, and determination.\nThe National Youth Athletics Federation officials highlighted the significance of the sponsorship, noting that it would enhance the visibility and experience of the event for young athletes.\nOfficials mentioned that the sponsorship would provide additional funding for improved facilities and resources for the athletes.\nThe event will take place from July 25, 2025, to July 27, 2025, at the Vistara Stadium, located in the fictional town of Westfield.\nVistara Stadium, known for its state-of-the-art track and field facilities, has been recently renovated to accommodate the influx of spectators expected for the championship.\nLocal businesses around Vistara Stadium, such as GreenLeaf Caf\u00e9 and Sentinel Sports Supply, are preparing for increased footfall due to the event.\nGreenLeaf Caf\u00e9 plans to introduce a special menu featuring healthy snacks and beverages, while Sentinel Sports Supply is offering discounts on sports gear for event attendees.\nHydroBoost plans to have a booth at the event, offering free samples of their latest products and engaging attendees with challenges that promote physical activity.\nThe booth will feature interactive games like a mini-obstacle course and a hydration quiz, with winners receiving HydroBoost merchandise.\nYoung athletes preparing for the championship have voiced excitement about HydroBoost\u2019s focus on health and well-being, with several expressing interest in their products.\nOne athlete, 16-year-old sprinter Mia Thompson, mentioned that she appreciates HydroBoost's commitment to natural ingredients and sustainable packaging.\nThe event itinerary includes opening ceremonies, multiple track and field competitions, and closing ceremonies, which will be attended by local sports enthusiasts and national sports personalities.\nThe opening ceremony will feature a parade of athletes, a performance by the Westfield High School marching band, and a speech by a renowned national athlete.\nReactions from competing energy drink brands have been observed, as some have started to strategize on how to address the new competition presented by HydroBoost's sponsorship.\nCompeting brands are reportedly considering launching targeted marketing campaigns and promotional offers to retain their market share among young consumers.",
+    "PRE-CONSISTENCY-NUM-ITEMS": 20,
+    "STORYITEM_XML": "<storyitems>\n<storyitem>HydroBoost, an emerging energy drink brand, announced its partnership with the National Youth Athletics Federation as the official sponsor for the upcoming Youth Track and Field Championship.</storyitem>\n<storyitem>The partnership deal will prominently feature HydroBoost's branding on all event paraphernalia, including athletes' uniforms, event banners, and promotional materials.</storyitem>\n<storyitem>HydroBoost's logo will be displayed in large, eye-catching fonts on the front of athletes' uniforms, ensuring maximum visibility during competitions.</storyitem>\n<storyitem>Event banners will be strategically placed around Vistara Stadium, with HydroBoost's branding prominently displayed at the entrance and main competition areas.</storyitem>\n<storyitem>At the press conference, HydroBoost's CEO, Liana Sharp, stated, \"This partnership allows us to connect with a dynamic and energetic youth audience, aligning perfectly with our brand's vision.\"</storyitem>\n<storyitem>Liana Sharp emphasized that HydroBoost aims to inspire young athletes by promoting a lifestyle of health, energy, and determination.</storyitem>\n<storyitem>The National Youth Athletics Federation officials highlighted the significance of the sponsorship, noting that it would enhance the visibility and experience of the event for young athletes.</storyitem>\n<storyitem>Officials mentioned that the sponsorship would provide additional funding for improved facilities and resources for the athletes.</storyitem>\n<storyitem>The event will take place from July 25, 2025, to July 27, 2025, at the Vistara Stadium, located in the fictional town of Westfield.</storyitem>\n<storyitem>Vistara Stadium, known for its state-of-the-art track and field facilities, has been recently renovated to accommodate the influx of spectators expected for the championship.</storyitem>\n<storyitem>Local businesses around Vistara Stadium, such as GreenLeaf Caf\u00e9 and Sentinel Sports Supply, are preparing for increased footfall due to the event.</storyitem>\n<storyitem>GreenLeaf Caf\u00e9 plans to introduce a special menu featuring healthy snacks and beverages, while Sentinel Sports Supply is offering discounts on sports gear for event attendees.</storyitem>\n<storyitem>HydroBoost plans to have a booth at the event, offering free samples of their latest products and engaging attendees with challenges that promote physical activity.</storyitem>\n<storyitem>The booth will feature interactive games like a mini-obstacle course and a hydration quiz, with winners receiving HydroBoost merchandise.</storyitem>\n<storyitem>Young athletes preparing for the championship have voiced excitement about HydroBoost\u2019s focus on health and well-being, with several expressing interest in their products.</storyitem>\n<storyitem>One athlete, 16-year-old sprinter Mia Thompson, mentioned that she appreciates HydroBoost's commitment to natural ingredients and sustainable packaging.</storyitem>\n<storyitem>The event itinerary includes opening ceremonies, multiple track and field competitions, and closing ceremonies, which will be attended by local sports enthusiasts and national sports personalities.</storyitem>\n<storyitem>The opening ceremony will feature a parade of athletes, a performance by the Westfield High School marching band, and a speech by a renowned national athlete.</storyitem>\n<storyitem>Reactions from competing energy drink brands have been observed, as some have started to strategize on how to address the new competition presented by HydroBoost's sponsorship.</storyitem>\n<storyitem>Competing brands are reportedly considering launching targeted marketing campaigns and promotional offers to retain their market share among young consumers.</storyitem>\n<storyitems>",
+    "NEW_PERSON_NAME": [
+      {
+        "name": "Mia Thompson",
+        "old_name": "Mia Thompson"
+      }
+    ],
+    "NEW_ORGANIZATION_NAME": [
+      {
+        "name": "National Youth Athletics Federation",
+        "old_name": "National Youth Athletics Federation"
+      },
+      {
+        "name": "GreenLeaf Caf\u00e9",
+        "old_name": "GreenLeaf Caf\u00e9"
+      },
+      {
+        "name": "Sentinel Sports Supply",
+        "old_name": "Sentinel Sports Supply"
+      },
+      {
+        "name": "Westfield High School marching band",
+        "old_name": "Westfield High School marching band"
+      }
+    ],
+    "NEW_LOCATION_NAME": [
+      {
+        "name": "Westfield",
+        "old_name": "Westfield"
+      }
+    ],
+    "NEW_PRODUCT_NAME": [
+      {
+        "name": "HydroBoost",
+        "old_name": "HydroBoost"
+      }
+    ],
+    "NEW_ART_NAME": [],
+    "NEW_BUILDING_NAME": [
+      {
+        "name": "Vistara Stadium",
+        "old_name": "Vistara Stadium"
+      }
+    ],
+    "NEW_EVENT_NAME": [],
+    "NEW_MISCELLANEOUS_NAME": [],
+    "CORRECTED_PERSON_NAME": [
+      {
+        "name": "Mia Thompson",
+        "old_name": "Mia Thompson",
+        "id": "PERSON-1"
+      }
+    ],
+    "CORRECTED_ORGANIZATION_NAME": [
+      {
+        "name": "National Youth Athletics Federation",
+        "old_name": "National Youth Athletics Federation",
+        "id": "ORGANIZATION-1"
+      },
+      {
+        "name": "GreenLeaf Caf\u00e9",
+        "old_name": "GreenLeaf Caf\u00e9",
+        "id": "ORGANIZATION-2"
+      },
+      {
+        "name": "Sentinel Sports Supply",
+        "old_name": "Sentinel Sports Supply",
+        "id": "ORGANIZATION-3"
+      },
+      {
+        "name": "Westfield High School marching band",
+        "old_name": "Westfield High School marching band",
+        "id": "ORGANIZATION-4"
+      }
+    ],
+    "CORRECTED_LOCATION_NAME": [
+      {
+        "name": "Westfield",
+        "old_name": "Westfield",
+        "id": "LOCATION-1"
+      }
+    ],
+    "CORRECTED_PRODUCT_NAME": [
+      {
+        "name": "HydroBoost",
+        "old_name": "HydroBoost",
+        "id": "PRODUCT-1"
+      }
+    ],
+    "CORRECTED_ART_NAME": [],
+    "CORRECTED_BUILDING_NAME": [
+      {
+        "name": "Vistara Stadium",
+        "old_name": "Vistara Stadium",
+        "id": "BUILDING-1"
+      }
+    ],
+    "CORRECTED_EVENT_NAME": [],
+    "CORRECTED_MISCELLANEOUS_NAME": [],
+    "CRITIQUE_ERRORS": {
+      "entity-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ]
+    },
+    "ADJUSTED_PERSONS_XML": "<person><id>PERSON-1</id><name>Mia Thompson</name><old_name>Mia Thompson</old_name></person>",
+    "ADJUSTED_ORGANIZATIONS_XML": "<organization><id>ORGANIZATION-1</id><name>National Youth Athletics Federation</name><old_name>National Youth Athletics Federation</old_name></organization>\n<organization><id>ORGANIZATION-2</id><name>GreenLeaf Caf\u00e9</name><old_name>GreenLeaf Caf\u00e9</old_name></organization>\n<organization><id>ORGANIZATION-3</id><name>Sentinel Sports Supply</name><old_name>Sentinel Sports Supply</old_name></organization>\n<organization><id>ORGANIZATION-4</id><name>Westfield High School marching band</name><old_name>Westfield High School marching band</old_name></organization>",
+    "ADJUSTED_LOCATIONS_XML": "<location><id>LOCATION-1</id><name>Westfield</name><old_name>Westfield</old_name></location>",
+    "ADJUSTED_PRODUCTS_XML": "<product><id>PRODUCT-1</id><name>HydroBoost</name><old_name>HydroBoost</old_name></product>",
+    "ADJUSTED_ARTS_XML": "",
+    "ADJUSTED_BUILDINGS_XML": "<building><id>BUILDING-1</id><name>Vistara Stadium</name><old_name>Vistara Stadium</old_name></building>",
+    "ADJUSTED_EVENTS_XML": "",
+    "ADJUSTED_MISCELLANEOUSS_XML": ""
+  }
+}

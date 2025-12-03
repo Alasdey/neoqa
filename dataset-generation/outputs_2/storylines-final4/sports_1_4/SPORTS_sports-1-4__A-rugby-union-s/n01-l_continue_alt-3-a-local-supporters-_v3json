@@ -1,0 +1,1819 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "openai/gpt-5-mini",
+    "temperature": 1.0,
+    "max-tokens": 10000
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "<results>\n<thought_process>\nKnown follow-up events to consider: the Harwick Community Supporters' Trust published a disclosure request on 2025-07-22 with a 14-day deadline to 2025-08-05; Harwick Vale Rugby Club acknowledged the request, said it would consult advisers and prepare a redacted budget summary and meeting proposals; Cormac Halloway issued a statement on 2025-07-22 saying he would cooperate and was available to meet Trust representatives; the Elmstone Regional Rugby Championship had already registered Halloway's contract on 2025-07-15. A meeting on 2025-07-31 fits the timeline and is consistent with these known events. I created three plausible, locally focused, neutral-to-positive continuations for 2025-07-31 that are mutually exclusive by varying what Halloway did or provided during the single meeting (immediate provision of redacted contract details; declining to discuss contractual matters and focusing on coaching; agreeing to join an independent liaison panel), while keeping the central subject (Cormac Halloway), stance (neutral/constructive), impact (low\u2013medium local/community) and the date the same.\n</thought_process>\n<summaries>\n<summary>\n<text>Cormac Halloway met informally with two representatives of the Harwick Community Supporters' Trust for a moderated community Q&A, reiterated his willingness to cooperate and handed over a written, redacted outline of the leadership-bonus criteria alongside his mentoring plan for promoted academy players, which the Trust said addressed several transparency concerns.</text>\n<date>2025-07-31</date>\n</summary>\n<summary>\n<text>Cormac Halloway met informally with two representatives of the Harwick Community Supporters' Trust for a moderated community Q&A, reiterated his willingness to cooperate and announced a schedule of weekly open coaching sessions for promoted academy players while deferring contractual and budgetary questions to the club and competition compliance offices.</text>\n<date>2025-07-31</date>\n</summary>\n<summary>\n<text>Cormac Halloway met informally with two representatives of the Harwick Community Supporters' Trust for a moderated community Q&A, reiterated his willingness to cooperate and agreed to join an independent liaison panel with club finance and Trust members to oversee publication of a redacted 2025 operating-budget summary and review the leadership-bonus triggers.</text>\n<date>2025-07-31</date>\n</summary>\n</summaries>\n</results>"
+  },
+  "response": "<results>\n<thought_process>\nKnown follow-up events to consider: the Harwick Community Supporters' Trust published a disclosure request on 2025-07-22 with a 14-day deadline to 2025-08-05; Harwick Vale Rugby Club acknowledged the request, said it would consult advisers and prepare a redacted budget summary and meeting proposals; Cormac Halloway issued a statement on 2025-07-22 saying he would cooperate and was available to meet Trust representatives; the Elmstone Regional Rugby Championship had already registered Halloway's contract on 2025-07-15. A meeting on 2025-07-31 fits the timeline and is consistent with these known events. I created three plausible, locally focused, neutral-to-positive continuations for 2025-07-31 that are mutually exclusive by varying what Halloway did or provided during the single meeting (immediate provision of redacted contract details; declining to discuss contractual matters and focusing on coaching; agreeing to join an independent liaison panel), while keeping the central subject (Cormac Halloway), stance (neutral/constructive), impact (low\u2013medium local/community) and the date the same.\n</thought_process>\n<summaries>\n<summary>\n<text>Cormac Halloway met informally with two representatives of the Harwick Community Supporters' Trust for a moderated community Q&A, reiterated his willingness to cooperate and handed over a written, redacted outline of the leadership-bonus criteria alongside his mentoring plan for promoted academy players, which the Trust said addressed several transparency concerns.</text>\n<date>2025-07-31</date>\n</summary>\n<summary>\n<text>Cormac Halloway met informally with two representatives of the Harwick Community Supporters' Trust for a moderated community Q&A, reiterated his willingness to cooperate and announced a schedule of weekly open coaching sessions for promoted academy players while deferring contractual and budgetary questions to the club and competition compliance offices.</text>\n<date>2025-07-31</date>\n</summary>\n<summary>\n<text>Cormac Halloway met informally with two representatives of the Harwick Community Supporters' Trust for a moderated community Q&A, reiterated his willingness to cooperate and agreed to join an independent liaison panel with club finance and Trust members to oversee publication of a redacted 2025 operating-budget summary and review the leadership-bonus triggers.</text>\n<date>2025-07-31</date>\n</summary>\n</summaries>\n</results>",
+  "instructions": "You are an AI tasked with creating alternative fictional future news summaries based on provided information. \nYour goal is to generate summaries of plausible alternative continuations of an existing narrative. Follow these instructions carefully:\n\n1. First, you will be given known entities in this fictional world:\n\n<known_entities>\n{{LOCATIONS_XML}}\n{{PERSONS_XML}}\n{{ORGANIZATIONS_XML}}\n{{PRODUCTS_XML}}\n{{ARTS_XML}}\n{{EVENTS_XML}}\n{{BUILDINGS_XML}}\n{{MISCELLANEOUSS_XML}}\n</known_entities>\n\n2. Next, you will be provided with the history of events that have already occurred in this fictional world:\n\n<history>\n{{HISTORY_XML}}\n</history>\n\n3. You will be given the following plausible summary of how the fictional event evolves:\n<continuation_summary>\n<text>{{CONTINUATION_TEXT}}</text>\n<date>{{CONTINUATION_DATE}}</date>\n</continuation_summary>\n\n4. Your task is to create {{NUM_ALTERNATIVES}} contradictory alternative summaries of how the fictional event can progress based on the provided continuation summary. \nEach of these continuation summaries must make subtle changes to the continuation summary such that they are contradictory alternatives to one another.\nThis means, if the story evolves with one of the continuation summaries, the other ones cannot happen anymore.\n\n5. When changing the provided continuation summary, maintain these key properties:\n   a) The central topic and involved main entity\n   b) The stance (whether this is a positive, neutral or negative story evolvement)\n   c) The impact (whether this is a high impact, medium impact or low impact evolvement)\n   d) The same date\n\n6. Guidelines for creating alternative summaries:\n   - Ensure each new continuation summary is consistent with the existing story and represents a plausible continuation or development of the original narrative.\n   - Write each continuation summary as a single concise sentence in an objective tone.\n   - Make sure your continuations are consistent with any known followup events regarding the date.\n\n7. Output format:\n   - Enclose your entire response in <results> tags.\n   - Before the summaries, explain your thought process in <thought_process> tags. Make sure to identify all known followup events based on the provided history first, and verify that your continuations are consistent with these known followup events regarding the date.\n   - Enclose all summaries in <summaries> tags.\n   - For each summary:\n     <summary>\n       <text>[The generated summary]</text>\n       <date>[The date for the next event]</date>\n     </summary>\n\n8. Special instructions:\n   - The history and entities have special formatting. They sometimes include statements like {[PHRASE]|[ID]}. Read it as [PHRASE], while the [ID] specifies the ID of the linked entity.\n   - Example: \"I met {Boris Bowman|PERSON-1} yesterday.\" Read as: \"I met Boris Bowman yesterday.\" (The ID of Boris Bowman is PERSON-1).\n   - DO NOT use the {[PHRASE]|[ID]} formulation when generating new summaries.\n   - When brainstorming alternative event summaries, carefully consider whether each continuation aligns with the provided history of events, provided named entities, and the genre {{GENRE}}. Before creating summaries with global or large-scale impact, double-check if such developments seem plausible based on how real-world events of this type would typically unfold. Focus on what fits the genre and provided history, ensuring that every dimension feels realistic and consistent with the context.\n   - Do not exaggerate the summaries. Avoid making summaries \"groundbreaking.\" Keep the summaries realistic.\n   - Do not create summaries with global or national impact unless the genre specifically requires it. Instead, focus on smaller or local developments.\n   - Do not focus on technological discoveries or topics like AI tools, virtual reality, quantum computing, etc. You may include such topics only if they are HIGHLY relevant to the genre {{GENRE}} AND the provided history of events.\n   - Focus on realistic, meaningful summaries with specific details and developments that align with typical, realistic scenarios of the genre {{GENRE}}.\n\n9. Here's an example of the desired output format:\n\n<results>\n<thought_process>\n[Your explanation of the thought process, including identification of known followup events and verification of consistency]\n</thought_process>\n<summaries>\n<summary>\n<text>[First alternative summary]</text>\n<date>[Date of the event]</date>\n</summary>\n<summary>\n<text>[Second alternative summary]</text>\n<date>[Date of the event]</date>\n</summary>\n[Additional summaries as needed]\n</summaries>\n</results>\n\nRemember to maintain the desired format and brevity of the event continuations while creating plausible and engaging continuations of the narrative. Begin your response with the <results> tag and end it with the </results> tag.",
+  "text_prompt": "You are an AI tasked with creating alternative fictional future news summaries based on provided information. \nYour goal is to generate summaries of plausible alternative continuations of an existing narrative. Follow these instructions carefully:\n\n1. First, you will be given known entities in this fictional world:\n\n<known_entities>\n\n<person><created_at>0</created_at><date_of_birth>1994-03-12</date_of_birth><description>Driven and community-minded leader known for a high work ethic, strong discipline, and a focus on mentoring younger athletes while pursuing a long-term playing career.</description><education>Bachelor of Sports Science, St. Lysander University</education><entity_class>person</entity_class><eye_color>Green</eye_color><gender>Male</gender><hair_color>Dark brown</hair_color><height>1.88 m</height><history><event>2025-07-15: Cormac Halloway signed a four-season contract extension with Harwick Vale Rugby Club (effective from the 2025-26 season through 2028-29), with his annual salary raised to \u00a395,000 and a \u00a320,000-per-season leadership bonus payable quarterly; the contract was registered with the Elmstone Regional Rugby Championship on 15 July 2025.</event><event>2025-07-22: Cormac Halloway issued a brief statement via Harwick Vale Rugby Club on 2025-07-22 saying he will cooperate with transparency measures and is available to meet Harwick Community Supporters' Trust representatives once the club and competition offices clarify what can be shared publicly.</event></history><id>PERSON-1</id><last_updated>2025-07-15</last_updated><marital_status>Single</marital_status><name>Cormac Halloway</name><nationality>Ardenia</nationality><profession>Professional rugby player</profession><type>None</type><weight>102 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>1979-11-28</date_of_birth><description>Strategic and pragmatic administrator with a focus on sustainable club development, youth pathways, and pragmatic financial planning.</description><education>MBA, Northcliff Business School</education><entity_class>person</entity_class><eye_color>Hazel</eye_color><gender>Female</gender><hair_color>Salt-and-pepper</hair_color><height>1.70 m</height><history><event>2025-07-15: Marina Kestrel, director of Harwick Vale Rugby Club, announced the retention of Cormac Halloway at a media briefing and highlighted his leadership, mentoring of younger players, and role in the club's player-development pathway.</event><event>2025-07-22: Marina Kestrel, director of Harwick Vale Rugby Club, instructed the club's finance team to prepare a redacted summary of the 2025 operating budget and to engage directly with Harwick Community Supporters' Trust, proposing meeting dates within ten working days (action reported 2025-07-22).</event></history><id>PERSON-2</id><last_updated>2025-07-15</last_updated><marital_status>Married</marital_status><name>Marina Kestrel</name><nationality>Calderia</nationality><political_affiliation>Centrist Progressive League</political_affiliation><profession>Sports director</profession><type>None</type><weight>63 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>1978-06-05</date_of_birth><description>Tactical-minded coach who emphasizes disciplined defense, structured training, and the long-term development of players through data-informed methods.</description><education>Advanced Coaching Diploma, Vale Institute of Coaching</education><entity_class>person</entity_class><eye_color>Blue</eye_color><gender>Male</gender><hair_color>Light brown</hair_color><height>1.82 m</height><history><event>2025-07-15: Eden Trask, head coach of Harwick Vale Rugby Club, supported the extension, citing Cormac Halloway's work rate, experience and last-season contributions leading the squad in tackles and minutes played.</event></history><id>PERSON-3</id><last_updated>2025-07-15</last_updated><marital_status>Divorced</marital_status><name>Eden Trask</name><nationality>Marinellia</nationality><profession>Head coach</profession><type>None</type><weight>85 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>2006-08-02</date_of_birth><description>Athletic and tenacious back-row prospect noted for physical tackling, high work-rate, and strong determination to establish a professional career.</description><education>Diploma in Sports Performance, Valeview Sports Academy (in progress)</education><entity_class>person</entity_class><eye_color>Brown</eye_color><gender>Male</gender><hair_color>Black</hair_color><height>1.90 m</height><history><event>2025-07-15: Jules Renby was promoted from the academy to Harwick Vale's senior squad, signing a one-year development contract, joining first-team training immediately and becoming eligible for selection in the matchday 23.</event></history><id>PERSON-4</id><last_updated>2025-07-15</last_updated><marital_status>Single</marital_status><name>Jules Renby</name><nationality>Ardenia</nationality><profession>Rugby player (development contract; promoted to senior squad)</profession><type>None</type><weight>98 kg</weight></person>\n<organization><annual_revenue>\u00a31,200,000</annual_revenue><created_at>0</created_at><description>Community-rooted rugby club with a long history of developing regional talent and maintaining strong local engagement.</description><entity_class>organization</entity_class><founded>1924</founded><headquarters>Harwick-on-Teal</headquarters><history><event>2025-07-15: Harwick Vale Rugby Club announced Cormac Halloway's four-season extension, hosted a media briefing at its training ground, confirmed the salary and leadership-bonus terms, arranged a one-year front-of-shirt sponsorship with Northbridge Brewing (reported at ~\u00a365,000) to help balance the 2025 operating budget, and promoted academy player Jules Renby to the senior squad; the club submitted amended squad and financial disclosures for registration on 15 July 2025.</event><event>2025-07-22: Harwick Vale Rugby Club acknowledged receipt of the Harwick Community Supporters' Trust letter on 2025-07-22, said it would consult legal and financial advisers about commercially sensitive information, and tasked its finance team with preparing a redacted 2025 operating-budget summary and meeting proposals for the Trust.</event></history><id>ORGANIZATION-1</id><industry>Sports (rugby union)</industry><last_updated>2025-07-15</last_updated><mission_statement>To develop local athletic talent, promote community participation in sport, and sustain a competitive club culture.</mission_statement><name>Harwick Vale Rugby Club</name><number_of_employees>42</number_of_employees><type>non-profit sports club</type></organization>\n<organization><annual_revenue>\u00a31,100,000</annual_revenue><created_at>0</created_at><description>Regional craft brewery producing traditional ales and partnering with local businesses for community events and hospitality.</description><entity_class>organization</entity_class><founded>2011</founded><headquarters>Northbridge</headquarters><history><event>2025-07-15: Northbridge Brewing agreed a one-year front-of-shirt sponsorship with Harwick Vale Rugby Club reported to be worth approximately \u00a365,000 and including co-promotional activities on two home matchdays.</event><event>2025-07-22: Northbridge Brewing's one-year front-of-shirt sponsorship with Harwick Vale Rugby Club was the subject of a disclosure request in the Trust's public letter of 2025-07-22, which asked for the sponsorship value, payment schedule and any in-kind elements.</event></history><id>ORGANIZATION-2</id><industry>Beverage (craft brewing)</industry><last_updated>2025-07-15</last_updated><mission_statement>To craft approachable, locally inspired beers while supporting regional hospitality and events.</mission_statement><name>Northbridge Brewing</name><number_of_employees>25</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>\u00a342,000</annual_revenue><created_at>1</created_at><description>A member-led trust that advocates for supporter representation, financial transparency, and community involvement in the governance of local sporting and leisure facilities.</description><entity_class>organization</entity_class><founded>2012</founded><headquarters>Harwick-on-Teal</headquarters><history><event>2025-07-22: Harwick Community Supporters' Trust published a dated public letter on 2025-07-22 requesting detailed disclosure of Harwick Vale Rugby Club's 2025 operating budget and the full terms of Cormac Halloway's contract extension, set a 14-day deadline to 2025-08-05 and warned it would file a formal compliance complaint with Elmstone Regional Rugby Council if unsatisfied.</event></history><id>ORGANIZATION-3</id><industry>Community advocacy</industry><last_updated>2025-07-22</last_updated><mission_statement>To represent season-ticket holders and local members by promoting transparent decision-making, safeguarding community access to sport, and supporting sustainable club stewardship.</mission_statement><name>Harwick Community Supporters' Trust</name><number_of_employees>6</number_of_employees><type>non-profit</type></organization>\n<organization><annual_revenue>\u00a3260,000</annual_revenue><created_at>1</created_at><description>A local daily newspaper focused on neighbourhood reporting, public affairs, and community features across the Harwick region.</description><entity_class>organization</entity_class><founded>1898</founded><headquarters>Harwick-on-Teal</headquarters><history><event>2025-07-22: Harwick Gazette was one of the local media outlets sent a PDF copy of the Harwick Community Supporters' Trust public letter, which the Trust posted and distributed at 09:30 BST on 2025-07-22.</event></history><id>ORGANIZATION-4</id><industry>Journalism and publishing</industry><last_updated>2025-07-22</last_updated><mission_statement>To deliver accurate, timely and relevant local news while fostering civic engagement and accountability.</mission_statement><name>Harwick Gazette</name><number_of_employees>22</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>\u00a3140,000</annual_revenue><created_at>1</created_at><description>An independent weekly magazine covering cultural life, local business, and community events across the Teal valley and surrounding towns.</description><entity_class>organization</entity_class><founded>2014</founded><headquarters>Tealbridge</headquarters><history><event>2025-07-22: Teal Chronicle received a circulated PDF of the Harwick Community Supporters' Trust's public letter on 2025-07-22 requesting financial and contract disclosures from Harwick Vale Rugby Club.</event></history><id>ORGANIZATION-5</id><industry>Print and digital media</industry><last_updated>2025-07-22</last_updated><mission_statement>To document and celebrate local culture, support small enterprises, and provide thoughtful reporting on civic issues.</mission_statement><name>Teal Chronicle</name><number_of_employees>12</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>\u00a375,000</annual_revenue><created_at>1</created_at><description>A community radio broadcaster offering a mix of local news, music programming and volunteer-led shows aimed at connecting neighbourhoods across the Vale region.</description><entity_class>organization</entity_class><founded>2008</founded><headquarters>Valeview</headquarters><history><event>2025-07-22: Vale FM was emailed a PDF copy of the Harwick Community Supporters' Trust public letter on 2025-07-22 and was listed among local outlets the Trust notified about its disclosure request.</event></history><id>ORGANIZATION-6</id><industry>Broadcasting</industry><last_updated>2025-07-22</last_updated><mission_statement>To provide accessible on-air and online programming that reflects local tastes, supports community voices, and promotes civic participation.</mission_statement><name>Vale FM</name><number_of_employees>9</number_of_employees><type>non-profit</type></organization>\n\n\n<event><budget>\u00a3450,000</budget><created_at>0</created_at><date>Annual (season runs September\u2013May)</date><description>Seasonal regional rugby competition that brings together semi-professional clubs across the Elmstone area in a structured league format.</description><duration>9 months</duration><entity_class>event</entity_class><history><event>2025-07-15: The Elmstone Regional Rugby Championship registered Cormac Halloway's contract extension on 15 July 2025 and confirmed the contract met the competition's salary-cap and registration requirements.</event><event>2025-07-22: The Elmstone Regional Rugby Championship was cited as the relevant competition office for compliance matters in the correspondence; the Championship had previously registered Cormac Halloway's contract extension on 2025-07-15.</event></history><id>EVENT-1</id><last_updated>2025-07-15</last_updated><name>Elmstone Regional Rugby Championship</name><number_of_participants>12 clubs</number_of_participants><organizer>Elmstone Regional Rugby Council</organizer><type>sporting</type></event>\n\n\n</known_entities>\n\n2. Next, you will be provided with the history of events that have already occurred in this fictional world:\n\n<history>\n<event><date>2025-07-15</date><outline>{Harwick Vale Rugby Club|ORGANIZATION-1} announced a contract extension for captain {Cormac Halloway|PERSON-1}. {Harwick Vale Rugby Club|ORGANIZATION-1} made the announcement via a 12:00 BST press release on the {Harwick Vale Rugby Club|ORGANIZATION-1} website and hosted a short media briefing at the {Harwick Vale Rugby Club|ORGANIZATION-1}'s training ground. {Cormac Halloway|PERSON-1} signed a four-season extension running through the end of the 2028-29 {Elmstone Regional Rugby Championship|EVENT-1} season. The extension takes effect from the start of the 2025-26 campaign and guarantees {Cormac Halloway|PERSON-1}'s services for the 2025-26, 2026-27, 2027-28 and 2028-29 seasons. {Harwick Vale Rugby Club|ORGANIZATION-1} reported that the contract raises {Cormac Halloway|PERSON-1}'s annual salary to \u00a395,000. The {Harwick Vale Rugby Club|ORGANIZATION-1} said this represents an increase from {Cormac Halloway|PERSON-1}'s previous reported annual salary of \u00a372,000, an uplift of approximately \u00a323,000 per year. {Harwick Vale Rugby Club|ORGANIZATION-1} confirmed that the contract for {Cormac Halloway|PERSON-1} includes a leadership bonus of \u00a320,000 per season. {Harwick Vale Rugby Club|ORGANIZATION-1} stated that the leadership bonus of \u00a320,000 per season is payable in quarterly instalments provided {Cormac Halloway|PERSON-1} remains club captain and is included in at least two-thirds of {Elmstone Regional Rugby Championship|EVENT-1} matchday squads each season. {Marina Kestrel|PERSON-2}, director of {Harwick Vale Rugby Club|ORGANIZATION-1}, said \"Retaining {Cormac Halloway|PERSON-1} secures core leadership for our {Elmstone Regional Rugby Championship|EVENT-1} campaigns.\" {Marina Kestrel|PERSON-2} made the remark at the media briefing and highlighted {Cormac Halloway|PERSON-1}'s role mentoring younger players and his influence on the {Harwick Vale Rugby Club|ORGANIZATION-1}'s player-development pathway. {Eden Trask|PERSON-3}, head coach of {Harwick Vale Rugby Club|ORGANIZATION-1}, said \"Cormac Halloway's work rate and experience were decisive factors in this extension.\" {Eden Trask|PERSON-3} also cited {Cormac Halloway|PERSON-1}'s last season contributions \u2014 noting that {Cormac Halloway|PERSON-1} led the {Harwick Vale Rugby Club|ORGANIZATION-1} squad in tackles and minutes played \u2014 as part of the reasoning behind the decision. {Cormac Halloway|PERSON-1} said \"I am committed to {Harwick Vale Rugby Club|ORGANIZATION-1} and looking forward to leading the group through the next four seasons.\" {Cormac Halloway|PERSON-1} added that he plans to remain based locally to continue community coaching sessions and to help integrate promoted academy players into the senior group. {Harwick Vale Rugby Club|ORGANIZATION-1} announced a one-year front-of-shirt sponsorship with {Northbridge Brewing|ORGANIZATION-2} to help balance the 2025 operating budget after the {Cormac Halloway|PERSON-1} extension. {Harwick Vale Rugby Club|ORGANIZATION-1} confirmed the one-year front-of-shirt sponsorship with {Northbridge Brewing|ORGANIZATION-2} is reported to be worth approximately \u00a365,000 and will include co-promotional activities on two home matchdays. {Elmstone Regional Rugby Championship|EVENT-1} registered the {Cormac Halloway|PERSON-1} contract extension and confirmed the contract met the competition's salary-cap and registration requirements. The {Elmstone Regional Rugby Championship|EVENT-1}'s compliance office confirmed registration on 15 July 2025 after {Harwick Vale Rugby Club|ORGANIZATION-1} submitted the amended squad list and the financial disclosures required under the competition rules. {Harwick Vale Rugby Club|ORGANIZATION-1} promoted academy back-row {Jules Renby|PERSON-4} to the senior squad as a roster consequence of the {Cormac Halloway|PERSON-1} contract adjustments. {Harwick Vale Rugby Club|ORGANIZATION-1} announced that 19-year-old academy back-row {Jules Renby|PERSON-4} has signed a one-year development contract, will train with the first team immediately and will be eligible for selection in the matchday 23.</outline></event>\n<event><date>2025-07-22</date><outline>{Harwick Community Supporters' Trust|ORGANIZATION-3} published a public letter on 2025-07-22 requesting a detailed breakdown of {Harwick Vale Rugby Club|ORGANIZATION-1}'s 2025 operating budget and the full terms of the {Cormac Halloway|PERSON-1} contract extension. The public letter was dated and signed by the {Harwick Community Supporters' Trust|ORGANIZATION-3} chair and four trustees and stated the request was submitted \"on behalf of season-ticket holders and local members\" who had raised concerns about recent high-profile contract activity at the {Harwick Vale Rugby Club|ORGANIZATION-1}. {Harwick Community Supporters' Trust|ORGANIZATION-3} set a 14-day deadline in the published letter and warned it would file a formal compliance complaint with Elmstone Regional Rugby Council if {Harwick Vale Rugby Club|ORGANIZATION-1} did not publish the requested financial details. {Harwick Community Supporters' Trust|ORGANIZATION-3}'s deadline was specified in the letter as 2025-08-05 and {Harwick Community Supporters' Trust|ORGANIZATION-3} said any formal complaint would be lodged with supporting documentation by email and registered post to the Elmstone Regional Rugby Council compliance office if no satisfactory disclosure was provided by that date. {Harwick Community Supporters' Trust|ORGANIZATION-3} posted the public letter on the {Harwick Community Supporters' Trust|ORGANIZATION-3} website and circulated the letter to local media outlets in Harwick-on-Teal. {Harwick Community Supporters' Trust|ORGANIZATION-3} confirmed it published the letter at 09:30 BST and distributed PDF copies to local outlets including the {Harwick Gazette|ORGANIZATION-4}, the {Teal Chronicle|ORGANIZATION-5} and {Vale FM|ORGANIZATION-6}, while also emailing a copy directly to the {Harwick Vale Rugby Club|ORGANIZATION-1} communications address. {Harwick Community Supporters' Trust|ORGANIZATION-3} specifically requested a salary breakdown for {Cormac Halloway|PERSON-1} that separates base pay, bonuses and any leadership payments. {Harwick Community Supporters' Trust|ORGANIZATION-3} asked that the salary breakdown show gross and net figures, the frequency of payments, any appearance- or performance-related bonuses, details of employer pension or National Insurance contributions related to payments to {Cormac Halloway|PERSON-1}, and whether any third-party payments were made. {Harwick Community Supporters' Trust|ORGANIZATION-3} specifically requested the terms and conditional criteria for the \u00a320,000-per-season leadership bonus included in the {Cormac Halloway|PERSON-1} extension. {Harwick Community Supporters' Trust|ORGANIZATION-3} requested that the {Harwick Vale Rugby Club|ORGANIZATION-1} supply the precise triggering conditions, measurement criteria and any medical or discretionary exemptions for the leadership bonus, and asked how the {Harwick Vale Rugby Club|ORGANIZATION-1} would verify and publish each season whether those conditions had been met. {Harwick Community Supporters' Trust|ORGANIZATION-3} requested a disclosure of the one-year front-of-shirt sponsorship with {Northbridge Brewing|ORGANIZATION-2} and an explanation of how the {Northbridge Brewing|ORGANIZATION-2} agreement affects {Harwick Vale Rugby Club|ORGANIZATION-1}'s 2025 operating budget. {Harwick Community Supporters' Trust|ORGANIZATION-3} asked for the sponsorship contract value to be shown with its payment schedule, any in-kind elements or matchday revenue guarantees included in the deal with {Northbridge Brewing|ORGANIZATION-2}, and a statement of whether sponsorship receipts had been ear-marked against player remuneration or general operating costs. {Harwick Vale Rugby Club|ORGANIZATION-1} issued a short statement acknowledging receipt of the {Harwick Community Supporters' Trust|ORGANIZATION-3} request and said {Harwick Vale Rugby Club|ORGANIZATION-1} would review the letter and seek advice on commercially sensitive information. The {Harwick Vale Rugby Club|ORGANIZATION-1} statement, posted on the {Harwick Vale Rugby Club|ORGANIZATION-1} website at 11:45 BST, said {Harwick Vale Rugby Club|ORGANIZATION-1} would consult its legal and financial advisers and aimed to provide a considered reply to the {Harwick Community Supporters' Trust|ORGANIZATION-3} while balancing contractual confidentiality and regulatory obligations. {Marina Kestrel|PERSON-2}, director of {Harwick Vale Rugby Club|ORGANIZATION-1}, said {Marina Kestrel|PERSON-2} had instructed {Harwick Vale Rugby Club|ORGANIZATION-1}'s finance team to prepare a considered response and to engage directly with the {Harwick Community Supporters' Trust|ORGANIZATION-3}. {Marina Kestrel|PERSON-2} asked the finance team to prepare an initial redacted summary of the 2025 operating budget and to propose dates for a meeting with {Harwick Community Supporters' Trust|ORGANIZATION-3} representatives within ten working days. Elmstone Regional Rugby Council confirmed Elmstone Regional Rugby Council had not received a formal complaint from {Harwick Community Supporters' Trust|ORGANIZATION-3} as of 2025-07-22 and outlined that any formal complaint would be processed under Elmstone Regional Rugby Council compliance procedures. The Elmstone Regional Rugby Council compliance office provided guidance to local media that formal complaints must be submitted in writing with supporting evidence, and it supplied contact details for the designated compliance officer who would acknowledge receipt within five working days of a submission. {Cormac Halloway|PERSON-1} issued a brief statement via {Harwick Vale Rugby Club|ORGANIZATION-1} saying {Cormac Halloway|PERSON-1} would cooperate with transparency measures and that contractual details should be addressed by {Harwick Vale Rugby Club|ORGANIZATION-1} and relevant competition offices such as {Elmstone Regional Rugby Championship|EVENT-1} compliance staff. The {Cormac Halloway|PERSON-1} statement was released through {Harwick Vale Rugby Club|ORGANIZATION-1}'s official channels at 14:05 BST and emphasised that {Cormac Halloway|PERSON-1} was available to meet {Harwick Community Supporters' Trust|ORGANIZATION-3} representatives for a discussion once {Harwick Vale Rugby Club|ORGANIZATION-1} and competition offices had clarified what information could be shared publicly.</outline></event>\n</history>\n\n3. You will be given the following plausible summary of how the fictional event evolves:\n<continuation_summary>\n<text>Cormac Halloway met informally with two representatives of the Harwick Community Supporters' Trust for a moderated community Q&A in which he reiterated his willingness to cooperate and outlined mentoring plans for promoted academy players.</text>\n<date>2025-07-31</date>\n</continuation_summary>\n\n4. Your task is to create 3 contradictory alternative summaries of how the fictional event can progress based on the provided continuation summary. \nEach of these continuation summaries must make subtle changes to the continuation summary such that they are contradictory alternatives to one another.\nThis means, if the story evolves with one of the continuation summaries, the other ones cannot happen anymore.\n\n5. When changing the provided continuation summary, maintain these key properties:\n   a) The central topic and involved main entity\n   b) The stance (whether this is a positive, neutral or negative story evolvement)\n   c) The impact (whether this is a high impact, medium impact or low impact evolvement)\n   d) The same date\n\n6. Guidelines for creating alternative summaries:\n   - Ensure each new continuation summary is consistent with the existing story and represents a plausible continuation or development of the original narrative.\n   - Write each continuation summary as a single concise sentence in an objective tone.\n   - Make sure your continuations are consistent with any known followup events regarding the date.\n\n7. Output format:\n   - Enclose your entire response in <results> tags.\n   - Before the summaries, explain your thought process in <thought_process> tags. Make sure to identify all known followup events based on the provided history first, and verify that your continuations are consistent with these known followup events regarding the date.\n   - Enclose all summaries in <summaries> tags.\n   - For each summary:\n     <summary>\n       <text>[The generated summary]</text>\n       <date>[The date for the next event]</date>\n     </summary>\n\n8. Special instructions:\n   - The history and entities have special formatting. They sometimes include statements like {[PHRASE]|[ID]}. Read it as [PHRASE], while the [ID] specifies the ID of the linked entity.\n   - Example: \"I met {Boris Bowman|PERSON-1} yesterday.\" Read as: \"I met Boris Bowman yesterday.\" (The ID of Boris Bowman is PERSON-1).\n   - DO NOT use the {[PHRASE]|[ID]} formulation when generating new summaries.\n   - When brainstorming alternative event summaries, carefully consider whether each continuation aligns with the provided history of events, provided named entities, and the genre Sports. Before creating summaries with global or large-scale impact, double-check if such developments seem plausible based on how real-world events of this type would typically unfold. Focus on what fits the genre and provided history, ensuring that every dimension feels realistic and consistent with the context.\n   - Do not exaggerate the summaries. Avoid making summaries \"groundbreaking.\" Keep the summaries realistic.\n   - Do not create summaries with global or national impact unless the genre specifically requires it. Instead, focus on smaller or local developments.\n   - Do not focus on technological discoveries or topics like AI tools, virtual reality, quantum computing, etc. You may include such topics only if they are HIGHLY relevant to the genre Sports AND the provided history of events.\n   - Focus on realistic, meaningful summaries with specific details and developments that align with typical, realistic scenarios of the genre Sports.\n\n9. Here's an example of the desired output format:\n\n<results>\n<thought_process>\n[Your explanation of the thought process, including identification of known followup events and verification of consistency]\n</thought_process>\n<summaries>\n<summary>\n<text>[First alternative summary]</text>\n<date>[Date of the event]</date>\n</summary>\n<summary>\n<text>[Second alternative summary]</text>\n<date>[Date of the event]</date>\n</summary>\n[Additional summaries as needed]\n</summaries>\n</results>\n\nRemember to maintain the desired format and brevity of the event continuations while creating plausible and engaging continuations of the narrative. Begin your response with the <results> tag and end it with the </results> tag.",
+  "system-prompt": null,
+  "values": {
+    "GENRE": "Sports",
+    "EVENT_SUMMARY": "A local supporters' trust publicly requested a detailed breakdown of Harwick Vale's 2025 operating budget and the terms of the Cormac Halloway extension, warning it will file a formal compliance complaint with the Elmstone Regional Rugby Council within 14 days if the club does not publish the requested financial details.",
+    "EVENT_SUMMARY_FOR_NAME": "A local supporters' ",
+    "INIT_SUMMARY": "A rugby union side competing in a regional championship has secured a contract extension with its captain, locking in the back-row player for four additional seasons with a reported salary increase and leadership bonus.",
+    "KEYWORDS": "",
+    "CREATED_AT": 1,
+    "HISTORIES": [
+      "<event><date>2025-07-15</date><outline>{Harwick Vale Rugby Club|ORGANIZATION-1} announced a contract extension for captain {Cormac Halloway|PERSON-1}. {Harwick Vale Rugby Club|ORGANIZATION-1} made the announcement via a 12:00 BST press release on the {Harwick Vale Rugby Club|ORGANIZATION-1} website and hosted a short media briefing at the {Harwick Vale Rugby Club|ORGANIZATION-1}'s training ground. {Cormac Halloway|PERSON-1} signed a four-season extension running through the end of the 2028-29 {Elmstone Regional Rugby Championship|EVENT-1} season. The extension takes effect from the start of the 2025-26 campaign and guarantees {Cormac Halloway|PERSON-1}'s services for the 2025-26, 2026-27, 2027-28 and 2028-29 seasons. {Harwick Vale Rugby Club|ORGANIZATION-1} reported that the contract raises {Cormac Halloway|PERSON-1}'s annual salary to \u00a395,000. The {Harwick Vale Rugby Club|ORGANIZATION-1} said this represents an increase from {Cormac Halloway|PERSON-1}'s previous reported annual salary of \u00a372,000, an uplift of approximately \u00a323,000 per year. {Harwick Vale Rugby Club|ORGANIZATION-1} confirmed that the contract for {Cormac Halloway|PERSON-1} includes a leadership bonus of \u00a320,000 per season. {Harwick Vale Rugby Club|ORGANIZATION-1} stated that the leadership bonus of \u00a320,000 per season is payable in quarterly instalments provided {Cormac Halloway|PERSON-1} remains club captain and is included in at least two-thirds of {Elmstone Regional Rugby Championship|EVENT-1} matchday squads each season. {Marina Kestrel|PERSON-2}, director of {Harwick Vale Rugby Club|ORGANIZATION-1}, said \"Retaining {Cormac Halloway|PERSON-1} secures core leadership for our {Elmstone Regional Rugby Championship|EVENT-1} campaigns.\" {Marina Kestrel|PERSON-2} made the remark at the media briefing and highlighted {Cormac Halloway|PERSON-1}'s role mentoring younger players and his influence on the {Harwick Vale Rugby Club|ORGANIZATION-1}'s player-development pathway. {Eden Trask|PERSON-3}, head coach of {Harwick Vale Rugby Club|ORGANIZATION-1}, said \"Cormac Halloway's work rate and experience were decisive factors in this extension.\" {Eden Trask|PERSON-3} also cited {Cormac Halloway|PERSON-1}'s last season contributions \u2014 noting that {Cormac Halloway|PERSON-1} led the {Harwick Vale Rugby Club|ORGANIZATION-1} squad in tackles and minutes played \u2014 as part of the reasoning behind the decision. {Cormac Halloway|PERSON-1} said \"I am committed to {Harwick Vale Rugby Club|ORGANIZATION-1} and looking forward to leading the group through the next four seasons.\" {Cormac Halloway|PERSON-1} added that he plans to remain based locally to continue community coaching sessions and to help integrate promoted academy players into the senior group. {Harwick Vale Rugby Club|ORGANIZATION-1} announced a one-year front-of-shirt sponsorship with {Northbridge Brewing|ORGANIZATION-2} to help balance the 2025 operating budget after the {Cormac Halloway|PERSON-1} extension. {Harwick Vale Rugby Club|ORGANIZATION-1} confirmed the one-year front-of-shirt sponsorship with {Northbridge Brewing|ORGANIZATION-2} is reported to be worth approximately \u00a365,000 and will include co-promotional activities on two home matchdays. {Elmstone Regional Rugby Championship|EVENT-1} registered the {Cormac Halloway|PERSON-1} contract extension and confirmed the contract met the competition's salary-cap and registration requirements. The {Elmstone Regional Rugby Championship|EVENT-1}'s compliance office confirmed registration on 15 July 2025 after {Harwick Vale Rugby Club|ORGANIZATION-1} submitted the amended squad list and the financial disclosures required under the competition rules. {Harwick Vale Rugby Club|ORGANIZATION-1} promoted academy back-row {Jules Renby|PERSON-4} to the senior squad as a roster consequence of the {Cormac Halloway|PERSON-1} contract adjustments. {Harwick Vale Rugby Club|ORGANIZATION-1} announced that 19-year-old academy back-row {Jules Renby|PERSON-4} has signed a one-year development contract, will train with the first team immediately and will be eligible for selection in the matchday 23.</outline></event>",
+      "<event><date>2025-07-22</date><outline>{Harwick Community Supporters' Trust|ORGANIZATION-3} published a public letter on 2025-07-22 requesting a detailed breakdown of {Harwick Vale Rugby Club|ORGANIZATION-1}'s 2025 operating budget and the full terms of the {Cormac Halloway|PERSON-1} contract extension. The public letter was dated and signed by the {Harwick Community Supporters' Trust|ORGANIZATION-3} chair and four trustees and stated the request was submitted \"on behalf of season-ticket holders and local members\" who had raised concerns about recent high-profile contract activity at the {Harwick Vale Rugby Club|ORGANIZATION-1}. {Harwick Community Supporters' Trust|ORGANIZATION-3} set a 14-day deadline in the published letter and warned it would file a formal compliance complaint with Elmstone Regional Rugby Council if {Harwick Vale Rugby Club|ORGANIZATION-1} did not publish the requested financial details. {Harwick Community Supporters' Trust|ORGANIZATION-3}'s deadline was specified in the letter as 2025-08-05 and {Harwick Community Supporters' Trust|ORGANIZATION-3} said any formal complaint would be lodged with supporting documentation by email and registered post to the Elmstone Regional Rugby Council compliance office if no satisfactory disclosure was provided by that date. {Harwick Community Supporters' Trust|ORGANIZATION-3} posted the public letter on the {Harwick Community Supporters' Trust|ORGANIZATION-3} website and circulated the letter to local media outlets in Harwick-on-Teal. {Harwick Community Supporters' Trust|ORGANIZATION-3} confirmed it published the letter at 09:30 BST and distributed PDF copies to local outlets including the {Harwick Gazette|ORGANIZATION-4}, the {Teal Chronicle|ORGANIZATION-5} and {Vale FM|ORGANIZATION-6}, while also emailing a copy directly to the {Harwick Vale Rugby Club|ORGANIZATION-1} communications address. {Harwick Community Supporters' Trust|ORGANIZATION-3} specifically requested a salary breakdown for {Cormac Halloway|PERSON-1} that separates base pay, bonuses and any leadership payments. {Harwick Community Supporters' Trust|ORGANIZATION-3} asked that the salary breakdown show gross and net figures, the frequency of payments, any appearance- or performance-related bonuses, details of employer pension or National Insurance contributions related to payments to {Cormac Halloway|PERSON-1}, and whether any third-party payments were made. {Harwick Community Supporters' Trust|ORGANIZATION-3} specifically requested the terms and conditional criteria for the \u00a320,000-per-season leadership bonus included in the {Cormac Halloway|PERSON-1} extension. {Harwick Community Supporters' Trust|ORGANIZATION-3} requested that the {Harwick Vale Rugby Club|ORGANIZATION-1} supply the precise triggering conditions, measurement criteria and any medical or discretionary exemptions for the leadership bonus, and asked how the {Harwick Vale Rugby Club|ORGANIZATION-1} would verify and publish each season whether those conditions had been met. {Harwick Community Supporters' Trust|ORGANIZATION-3} requested a disclosure of the one-year front-of-shirt sponsorship with {Northbridge Brewing|ORGANIZATION-2} and an explanation of how the {Northbridge Brewing|ORGANIZATION-2} agreement affects {Harwick Vale Rugby Club|ORGANIZATION-1}'s 2025 operating budget. {Harwick Community Supporters' Trust|ORGANIZATION-3} asked for the sponsorship contract value to be shown with its payment schedule, any in-kind elements or matchday revenue guarantees included in the deal with {Northbridge Brewing|ORGANIZATION-2}, and a statement of whether sponsorship receipts had been ear-marked against player remuneration or general operating costs. {Harwick Vale Rugby Club|ORGANIZATION-1} issued a short statement acknowledging receipt of the {Harwick Community Supporters' Trust|ORGANIZATION-3} request and said {Harwick Vale Rugby Club|ORGANIZATION-1} would review the letter and seek advice on commercially sensitive information. The {Harwick Vale Rugby Club|ORGANIZATION-1} statement, posted on the {Harwick Vale Rugby Club|ORGANIZATION-1} website at 11:45 BST, said {Harwick Vale Rugby Club|ORGANIZATION-1} would consult its legal and financial advisers and aimed to provide a considered reply to the {Harwick Community Supporters' Trust|ORGANIZATION-3} while balancing contractual confidentiality and regulatory obligations. {Marina Kestrel|PERSON-2}, director of {Harwick Vale Rugby Club|ORGANIZATION-1}, said {Marina Kestrel|PERSON-2} had instructed {Harwick Vale Rugby Club|ORGANIZATION-1}'s finance team to prepare a considered response and to engage directly with the {Harwick Community Supporters' Trust|ORGANIZATION-3}. {Marina Kestrel|PERSON-2} asked the finance team to prepare an initial redacted summary of the 2025 operating budget and to propose dates for a meeting with {Harwick Community Supporters' Trust|ORGANIZATION-3} representatives within ten working days. Elmstone Regional Rugby Council confirmed Elmstone Regional Rugby Council had not received a formal complaint from {Harwick Community Supporters' Trust|ORGANIZATION-3} as of 2025-07-22 and outlined that any formal complaint would be processed under Elmstone Regional Rugby Council compliance procedures. The Elmstone Regional Rugby Council compliance office provided guidance to local media that formal complaints must be submitted in writing with supporting evidence, and it supplied contact details for the designated compliance officer who would acknowledge receipt within five working days of a submission. {Cormac Halloway|PERSON-1} issued a brief statement via {Harwick Vale Rugby Club|ORGANIZATION-1} saying {Cormac Halloway|PERSON-1} would cooperate with transparency measures and that contractual details should be addressed by {Harwick Vale Rugby Club|ORGANIZATION-1} and relevant competition offices such as {Elmstone Regional Rugby Championship|EVENT-1} compliance staff. The {Cormac Halloway|PERSON-1} statement was released through {Harwick Vale Rugby Club|ORGANIZATION-1}'s official channels at 14:05 BST and emphasised that {Cormac Halloway|PERSON-1} was available to meet {Harwick Community Supporters' Trust|ORGANIZATION-3} representatives for a discussion once {Harwick Vale Rugby Club|ORGANIZATION-1} and competition offices had clarified what information could be shared publicly.</outline></event>"
+    ],
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "NEXT_IDS": {
+      "person": 5,
+      "organization": 7,
+      "location": 1,
+      "product": 1,
+      "art": 1,
+      "building": 1,
+      "event": 2,
+      "miscellaneous": 1
+    },
+    "PROVIDED_DATE": "2025-07-22",
+    "PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Cormac Halloway",
+        "entity_class": "person",
+        "description": "Driven and community-minded leader known for a high work ethic, strong discipline, and a focus on mentoring younger athletes while pursuing a long-term playing career.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Cormac Halloway signed a four-season contract extension with Harwick Vale Rugby Club (effective from the 2025-26 season through 2028-29), with his annual salary raised to \u00a395,000 and a \u00a320,000-per-season leadership bonus payable quarterly; the contract was registered with the Elmstone Regional Rugby Championship on 15 July 2025.",
+            "date": "2025-07-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Cormac Halloway issued a brief statement via Harwick Vale Rugby Club on 2025-07-22 saying he will cooperate with transparency measures and is available to meet Harwick Community Supporters' Trust representatives once the club and competition offices clarify what can be shared publicly.",
+            "date": "2025-07-22"
+          }
+        ],
+        "date_of_birth": "1994-03-12",
+        "gender": "Male",
+        "profession": "Professional rugby player",
+        "nationality": "Ardenia",
+        "education": "Bachelor of Sports Science, St. Lysander University",
+        "height": "1.88 m",
+        "weight": "102 kg",
+        "eye_color": "Green",
+        "hair_color": "Dark brown",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Marina Kestrel",
+        "entity_class": "person",
+        "description": "Strategic and pragmatic administrator with a focus on sustainable club development, youth pathways, and pragmatic financial planning.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Marina Kestrel, director of Harwick Vale Rugby Club, announced the retention of Cormac Halloway at a media briefing and highlighted his leadership, mentoring of younger players, and role in the club's player-development pathway.",
+            "date": "2025-07-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Marina Kestrel, director of Harwick Vale Rugby Club, instructed the club's finance team to prepare a redacted summary of the 2025 operating budget and to engage directly with Harwick Community Supporters' Trust, proposing meeting dates within ten working days (action reported 2025-07-22).",
+            "date": "2025-07-22"
+          }
+        ],
+        "date_of_birth": "1979-11-28",
+        "gender": "Female",
+        "profession": "Sports director",
+        "nationality": "Calderia",
+        "education": "MBA, Northcliff Business School",
+        "height": "1.70 m",
+        "weight": "63 kg",
+        "eye_color": "Hazel",
+        "hair_color": "Salt-and-pepper",
+        "political_affiliation": "Centrist Progressive League",
+        "marital_status": "Married"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Eden Trask",
+        "entity_class": "person",
+        "description": "Tactical-minded coach who emphasizes disciplined defense, structured training, and the long-term development of players through data-informed methods.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Eden Trask, head coach of Harwick Vale Rugby Club, supported the extension, citing Cormac Halloway's work rate, experience and last-season contributions leading the squad in tackles and minutes played.",
+            "date": "2025-07-15"
+          }
+        ],
+        "date_of_birth": "1978-06-05",
+        "gender": "Male",
+        "profession": "Head coach",
+        "nationality": "Marinellia",
+        "education": "Advanced Coaching Diploma, Vale Institute of Coaching",
+        "height": "1.82 m",
+        "weight": "85 kg",
+        "eye_color": "Blue",
+        "hair_color": "Light brown",
+        "marital_status": "Divorced"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Jules Renby",
+        "entity_class": "person",
+        "description": "Athletic and tenacious back-row prospect noted for physical tackling, high work-rate, and strong determination to establish a professional career.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Jules Renby was promoted from the academy to Harwick Vale's senior squad, signing a one-year development contract, joining first-team training immediately and becoming eligible for selection in the matchday 23.",
+            "date": "2025-07-15"
+          }
+        ],
+        "date_of_birth": "2006-08-02",
+        "gender": "Male",
+        "profession": "Rugby player (development contract; promoted to senior squad)",
+        "nationality": "Ardenia",
+        "education": "Diploma in Sports Performance, Valeview Sports Academy (in progress)",
+        "height": "1.90 m",
+        "weight": "98 kg",
+        "eye_color": "Brown",
+        "hair_color": "Black",
+        "marital_status": "Single"
+      }
+    ],
+    "ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Harwick Vale Rugby Club",
+        "entity_class": "organization",
+        "description": "Community-rooted rugby club with a long history of developing regional talent and maintaining strong local engagement.",
+        "type": "non-profit sports club",
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Harwick Vale Rugby Club announced Cormac Halloway's four-season extension, hosted a media briefing at its training ground, confirmed the salary and leadership-bonus terms, arranged a one-year front-of-shirt sponsorship with Northbridge Brewing (reported at ~\u00a365,000) to help balance the 2025 operating budget, and promoted academy player Jules Renby to the senior squad; the club submitted amended squad and financial disclosures for registration on 15 July 2025.",
+            "date": "2025-07-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Harwick Vale Rugby Club acknowledged receipt of the Harwick Community Supporters' Trust letter on 2025-07-22, said it would consult legal and financial advisers about commercially sensitive information, and tasked its finance team with preparing a redacted 2025 operating-budget summary and meeting proposals for the Trust.",
+            "date": "2025-07-22"
+          }
+        ],
+        "founded": "1924",
+        "headquarters": "Harwick-on-Teal",
+        "industry": "Sports (rugby union)",
+        "mission_statement": "To develop local athletic talent, promote community participation in sport, and sustain a competitive club culture.",
+        "number_of_employees": "42",
+        "annual_revenue": "\u00a31,200,000"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Northbridge Brewing",
+        "entity_class": "organization",
+        "description": "Regional craft brewery producing traditional ales and partnering with local businesses for community events and hospitality.",
+        "type": "company",
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Northbridge Brewing agreed a one-year front-of-shirt sponsorship with Harwick Vale Rugby Club reported to be worth approximately \u00a365,000 and including co-promotional activities on two home matchdays.",
+            "date": "2025-07-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Northbridge Brewing's one-year front-of-shirt sponsorship with Harwick Vale Rugby Club was the subject of a disclosure request in the Trust's public letter of 2025-07-22, which asked for the sponsorship value, payment schedule and any in-kind elements.",
+            "date": "2025-07-22"
+          }
+        ],
+        "founded": "2011",
+        "headquarters": "Northbridge",
+        "industry": "Beverage (craft brewing)",
+        "mission_statement": "To craft approachable, locally inspired beers while supporting regional hospitality and events.",
+        "number_of_employees": "25",
+        "annual_revenue": "\u00a31,100,000"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Harwick Community Supporters' Trust",
+        "entity_class": "organization",
+        "description": "A member-led trust that advocates for supporter representation, financial transparency, and community involvement in the governance of local sporting and leisure facilities.",
+        "type": "non-profit",
+        "created_at": 1,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "Harwick Community Supporters' Trust published a dated public letter on 2025-07-22 requesting detailed disclosure of Harwick Vale Rugby Club's 2025 operating budget and the full terms of Cormac Halloway's contract extension, set a 14-day deadline to 2025-08-05 and warned it would file a formal compliance complaint with Elmstone Regional Rugby Council if unsatisfied.",
+            "date": "2025-07-22"
+          }
+        ],
+        "founded": "2012",
+        "headquarters": "Harwick-on-Teal",
+        "industry": "Community advocacy",
+        "mission_statement": "To represent season-ticket holders and local members by promoting transparent decision-making, safeguarding community access to sport, and supporting sustainable club stewardship.",
+        "number_of_employees": "6",
+        "annual_revenue": "\u00a342,000"
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "Harwick Gazette",
+        "entity_class": "organization",
+        "description": "A local daily newspaper focused on neighbourhood reporting, public affairs, and community features across the Harwick region.",
+        "type": "company",
+        "created_at": 1,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "Harwick Gazette was one of the local media outlets sent a PDF copy of the Harwick Community Supporters' Trust public letter, which the Trust posted and distributed at 09:30 BST on 2025-07-22.",
+            "date": "2025-07-22"
+          }
+        ],
+        "founded": "1898",
+        "headquarters": "Harwick-on-Teal",
+        "industry": "Journalism and publishing",
+        "mission_statement": "To deliver accurate, timely and relevant local news while fostering civic engagement and accountability.",
+        "number_of_employees": "22",
+        "annual_revenue": "\u00a3260,000"
+      },
+      {
+        "id": "ORGANIZATION-5",
+        "name": "Teal Chronicle",
+        "entity_class": "organization",
+        "description": "An independent weekly magazine covering cultural life, local business, and community events across the Teal valley and surrounding towns.",
+        "type": "company",
+        "created_at": 1,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "Teal Chronicle received a circulated PDF of the Harwick Community Supporters' Trust's public letter on 2025-07-22 requesting financial and contract disclosures from Harwick Vale Rugby Club.",
+            "date": "2025-07-22"
+          }
+        ],
+        "founded": "2014",
+        "headquarters": "Tealbridge",
+        "industry": "Print and digital media",
+        "mission_statement": "To document and celebrate local culture, support small enterprises, and provide thoughtful reporting on civic issues.",
+        "number_of_employees": "12",
+        "annual_revenue": "\u00a3140,000"
+      },
+      {
+        "id": "ORGANIZATION-6",
+        "name": "Vale FM",
+        "entity_class": "organization",
+        "description": "A community radio broadcaster offering a mix of local news, music programming and volunteer-led shows aimed at connecting neighbourhoods across the Vale region.",
+        "type": "non-profit",
+        "created_at": 1,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "Vale FM was emailed a PDF copy of the Harwick Community Supporters' Trust public letter on 2025-07-22 and was listed among local outlets the Trust notified about its disclosure request.",
+            "date": "2025-07-22"
+          }
+        ],
+        "founded": "2008",
+        "headquarters": "Valeview",
+        "industry": "Broadcasting",
+        "mission_statement": "To provide accessible on-air and online programming that reflects local tastes, supports community voices, and promotes civic participation.",
+        "number_of_employees": "9",
+        "annual_revenue": "\u00a375,000"
+      }
+    ],
+    "LOCATION": [],
+    "PRODUCT": [],
+    "ART": [],
+    "BUILDING": [],
+    "EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "Elmstone Regional Rugby Championship",
+        "entity_class": "event",
+        "description": "Seasonal regional rugby competition that brings together semi-professional clubs across the Elmstone area in a structured league format.",
+        "type": "sporting",
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Elmstone Regional Rugby Championship registered Cormac Halloway's contract extension on 15 July 2025 and confirmed the contract met the competition's salary-cap and registration requirements.",
+            "date": "2025-07-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "The Elmstone Regional Rugby Championship was cited as the relevant competition office for compliance matters in the correspondence; the Championship had previously registered Cormac Halloway's contract extension on 2025-07-15.",
+            "date": "2025-07-22"
+          }
+        ],
+        "date": "Annual (season runs September\u2013May)",
+        "duration": "9 months",
+        "organizer": "Elmstone Regional Rugby Council",
+        "number_of_participants": "12 clubs",
+        "budget": "\u00a3450,000"
+      }
+    ],
+    "MISCELLANEOUS": [],
+    "PERSONS_XML": "<person><created_at>0</created_at><date_of_birth>1994-03-12</date_of_birth><description>Driven and community-minded leader known for a high work ethic, strong discipline, and a focus on mentoring younger athletes while pursuing a long-term playing career.</description><education>Bachelor of Sports Science, St. Lysander University</education><entity_class>person</entity_class><eye_color>Green</eye_color><gender>Male</gender><hair_color>Dark brown</hair_color><height>1.88 m</height><history><event>2025-07-15: Cormac Halloway signed a four-season contract extension with Harwick Vale Rugby Club (effective from the 2025-26 season through 2028-29), with his annual salary raised to \u00a395,000 and a \u00a320,000-per-season leadership bonus payable quarterly; the contract was registered with the Elmstone Regional Rugby Championship on 15 July 2025.</event><event>2025-07-22: Cormac Halloway issued a brief statement via Harwick Vale Rugby Club on 2025-07-22 saying he will cooperate with transparency measures and is available to meet Harwick Community Supporters' Trust representatives once the club and competition offices clarify what can be shared publicly.</event></history><id>PERSON-1</id><last_updated>2025-07-15</last_updated><marital_status>Single</marital_status><name>Cormac Halloway</name><nationality>Ardenia</nationality><profession>Professional rugby player</profession><type>None</type><weight>102 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>1979-11-28</date_of_birth><description>Strategic and pragmatic administrator with a focus on sustainable club development, youth pathways, and pragmatic financial planning.</description><education>MBA, Northcliff Business School</education><entity_class>person</entity_class><eye_color>Hazel</eye_color><gender>Female</gender><hair_color>Salt-and-pepper</hair_color><height>1.70 m</height><history><event>2025-07-15: Marina Kestrel, director of Harwick Vale Rugby Club, announced the retention of Cormac Halloway at a media briefing and highlighted his leadership, mentoring of younger players, and role in the club's player-development pathway.</event><event>2025-07-22: Marina Kestrel, director of Harwick Vale Rugby Club, instructed the club's finance team to prepare a redacted summary of the 2025 operating budget and to engage directly with Harwick Community Supporters' Trust, proposing meeting dates within ten working days (action reported 2025-07-22).</event></history><id>PERSON-2</id><last_updated>2025-07-15</last_updated><marital_status>Married</marital_status><name>Marina Kestrel</name><nationality>Calderia</nationality><political_affiliation>Centrist Progressive League</political_affiliation><profession>Sports director</profession><type>None</type><weight>63 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>1978-06-05</date_of_birth><description>Tactical-minded coach who emphasizes disciplined defense, structured training, and the long-term development of players through data-informed methods.</description><education>Advanced Coaching Diploma, Vale Institute of Coaching</education><entity_class>person</entity_class><eye_color>Blue</eye_color><gender>Male</gender><hair_color>Light brown</hair_color><height>1.82 m</height><history><event>2025-07-15: Eden Trask, head coach of Harwick Vale Rugby Club, supported the extension, citing Cormac Halloway's work rate, experience and last-season contributions leading the squad in tackles and minutes played.</event></history><id>PERSON-3</id><last_updated>2025-07-15</last_updated><marital_status>Divorced</marital_status><name>Eden Trask</name><nationality>Marinellia</nationality><profession>Head coach</profession><type>None</type><weight>85 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>2006-08-02</date_of_birth><description>Athletic and tenacious back-row prospect noted for physical tackling, high work-rate, and strong determination to establish a professional career.</description><education>Diploma in Sports Performance, Valeview Sports Academy (in progress)</education><entity_class>person</entity_class><eye_color>Brown</eye_color><gender>Male</gender><hair_color>Black</hair_color><height>1.90 m</height><history><event>2025-07-15: Jules Renby was promoted from the academy to Harwick Vale's senior squad, signing a one-year development contract, joining first-team training immediately and becoming eligible for selection in the matchday 23.</event></history><id>PERSON-4</id><last_updated>2025-07-15</last_updated><marital_status>Single</marital_status><name>Jules Renby</name><nationality>Ardenia</nationality><profession>Rugby player (development contract; promoted to senior squad)</profession><type>None</type><weight>98 kg</weight></person>",
+    "ORGANIZATIONS_XML": "<organization><annual_revenue>\u00a31,200,000</annual_revenue><created_at>0</created_at><description>Community-rooted rugby club with a long history of developing regional talent and maintaining strong local engagement.</description><entity_class>organization</entity_class><founded>1924</founded><headquarters>Harwick-on-Teal</headquarters><history><event>2025-07-15: Harwick Vale Rugby Club announced Cormac Halloway's four-season extension, hosted a media briefing at its training ground, confirmed the salary and leadership-bonus terms, arranged a one-year front-of-shirt sponsorship with Northbridge Brewing (reported at ~\u00a365,000) to help balance the 2025 operating budget, and promoted academy player Jules Renby to the senior squad; the club submitted amended squad and financial disclosures for registration on 15 July 2025.</event><event>2025-07-22: Harwick Vale Rugby Club acknowledged receipt of the Harwick Community Supporters' Trust letter on 2025-07-22, said it would consult legal and financial advisers about commercially sensitive information, and tasked its finance team with preparing a redacted 2025 operating-budget summary and meeting proposals for the Trust.</event></history><id>ORGANIZATION-1</id><industry>Sports (rugby union)</industry><last_updated>2025-07-15</last_updated><mission_statement>To develop local athletic talent, promote community participation in sport, and sustain a competitive club culture.</mission_statement><name>Harwick Vale Rugby Club</name><number_of_employees>42</number_of_employees><type>non-profit sports club</type></organization>\n<organization><annual_revenue>\u00a31,100,000</annual_revenue><created_at>0</created_at><description>Regional craft brewery producing traditional ales and partnering with local businesses for community events and hospitality.</description><entity_class>organization</entity_class><founded>2011</founded><headquarters>Northbridge</headquarters><history><event>2025-07-15: Northbridge Brewing agreed a one-year front-of-shirt sponsorship with Harwick Vale Rugby Club reported to be worth approximately \u00a365,000 and including co-promotional activities on two home matchdays.</event><event>2025-07-22: Northbridge Brewing's one-year front-of-shirt sponsorship with Harwick Vale Rugby Club was the subject of a disclosure request in the Trust's public letter of 2025-07-22, which asked for the sponsorship value, payment schedule and any in-kind elements.</event></history><id>ORGANIZATION-2</id><industry>Beverage (craft brewing)</industry><last_updated>2025-07-15</last_updated><mission_statement>To craft approachable, locally inspired beers while supporting regional hospitality and events.</mission_statement><name>Northbridge Brewing</name><number_of_employees>25</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>\u00a342,000</annual_revenue><created_at>1</created_at><description>A member-led trust that advocates for supporter representation, financial transparency, and community involvement in the governance of local sporting and leisure facilities.</description><entity_class>organization</entity_class><founded>2012</founded><headquarters>Harwick-on-Teal</headquarters><history><event>2025-07-22: Harwick Community Supporters' Trust published a dated public letter on 2025-07-22 requesting detailed disclosure of Harwick Vale Rugby Club's 2025 operating budget and the full terms of Cormac Halloway's contract extension, set a 14-day deadline to 2025-08-05 and warned it would file a formal compliance complaint with Elmstone Regional Rugby Council if unsatisfied.</event></history><id>ORGANIZATION-3</id><industry>Community advocacy</industry><last_updated>2025-07-22</last_updated><mission_statement>To represent season-ticket holders and local members by promoting transparent decision-making, safeguarding community access to sport, and supporting sustainable club stewardship.</mission_statement><name>Harwick Community Supporters' Trust</name><number_of_employees>6</number_of_employees><type>non-profit</type></organization>\n<organization><annual_revenue>\u00a3260,000</annual_revenue><created_at>1</created_at><description>A local daily newspaper focused on neighbourhood reporting, public affairs, and community features across the Harwick region.</description><entity_class>organization</entity_class><founded>1898</founded><headquarters>Harwick-on-Teal</headquarters><history><event>2025-07-22: Harwick Gazette was one of the local media outlets sent a PDF copy of the Harwick Community Supporters' Trust public letter, which the Trust posted and distributed at 09:30 BST on 2025-07-22.</event></history><id>ORGANIZATION-4</id><industry>Journalism and publishing</industry><last_updated>2025-07-22</last_updated><mission_statement>To deliver accurate, timely and relevant local news while fostering civic engagement and accountability.</mission_statement><name>Harwick Gazette</name><number_of_employees>22</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>\u00a3140,000</annual_revenue><created_at>1</created_at><description>An independent weekly magazine covering cultural life, local business, and community events across the Teal valley and surrounding towns.</description><entity_class>organization</entity_class><founded>2014</founded><headquarters>Tealbridge</headquarters><history><event>2025-07-22: Teal Chronicle received a circulated PDF of the Harwick Community Supporters' Trust's public letter on 2025-07-22 requesting financial and contract disclosures from Harwick Vale Rugby Club.</event></history><id>ORGANIZATION-5</id><industry>Print and digital media</industry><last_updated>2025-07-22</last_updated><mission_statement>To document and celebrate local culture, support small enterprises, and provide thoughtful reporting on civic issues.</mission_statement><name>Teal Chronicle</name><number_of_employees>12</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>\u00a375,000</annual_revenue><created_at>1</created_at><description>A community radio broadcaster offering a mix of local news, music programming and volunteer-led shows aimed at connecting neighbourhoods across the Vale region.</description><entity_class>organization</entity_class><founded>2008</founded><headquarters>Valeview</headquarters><history><event>2025-07-22: Vale FM was emailed a PDF copy of the Harwick Community Supporters' Trust public letter on 2025-07-22 and was listed among local outlets the Trust notified about its disclosure request.</event></history><id>ORGANIZATION-6</id><industry>Broadcasting</industry><last_updated>2025-07-22</last_updated><mission_statement>To provide accessible on-air and online programming that reflects local tastes, supports community voices, and promotes civic participation.</mission_statement><name>Vale FM</name><number_of_employees>9</number_of_employees><type>non-profit</type></organization>",
+    "LOCATIONS_XML": "",
+    "PRODUCTS_XML": "",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "",
+    "EVENTS_XML": "<event><budget>\u00a3450,000</budget><created_at>0</created_at><date>Annual (season runs September\u2013May)</date><description>Seasonal regional rugby competition that brings together semi-professional clubs across the Elmstone area in a structured league format.</description><duration>9 months</duration><entity_class>event</entity_class><history><event>2025-07-15: The Elmstone Regional Rugby Championship registered Cormac Halloway's contract extension on 15 July 2025 and confirmed the contract met the competition's salary-cap and registration requirements.</event><event>2025-07-22: The Elmstone Regional Rugby Championship was cited as the relevant competition office for compliance matters in the correspondence; the Championship had previously registered Cormac Halloway's contract extension on 2025-07-15.</event></history><id>EVENT-1</id><last_updated>2025-07-15</last_updated><name>Elmstone Regional Rugby Championship</name><number_of_participants>12 clubs</number_of_participants><organizer>Elmstone Regional Rugby Council</organizer><type>sporting</type></event>",
+    "MISCELLANEOUSS_XML": "",
+    "NUM_STORYITEMS": 10,
+    "HISTORY_XML": "<event><date>2025-07-15</date><outline>{Harwick Vale Rugby Club|ORGANIZATION-1} announced a contract extension for captain {Cormac Halloway|PERSON-1}. {Harwick Vale Rugby Club|ORGANIZATION-1} made the announcement via a 12:00 BST press release on the {Harwick Vale Rugby Club|ORGANIZATION-1} website and hosted a short media briefing at the {Harwick Vale Rugby Club|ORGANIZATION-1}'s training ground. {Cormac Halloway|PERSON-1} signed a four-season extension running through the end of the 2028-29 {Elmstone Regional Rugby Championship|EVENT-1} season. The extension takes effect from the start of the 2025-26 campaign and guarantees {Cormac Halloway|PERSON-1}'s services for the 2025-26, 2026-27, 2027-28 and 2028-29 seasons. {Harwick Vale Rugby Club|ORGANIZATION-1} reported that the contract raises {Cormac Halloway|PERSON-1}'s annual salary to \u00a395,000. The {Harwick Vale Rugby Club|ORGANIZATION-1} said this represents an increase from {Cormac Halloway|PERSON-1}'s previous reported annual salary of \u00a372,000, an uplift of approximately \u00a323,000 per year. {Harwick Vale Rugby Club|ORGANIZATION-1} confirmed that the contract for {Cormac Halloway|PERSON-1} includes a leadership bonus of \u00a320,000 per season. {Harwick Vale Rugby Club|ORGANIZATION-1} stated that the leadership bonus of \u00a320,000 per season is payable in quarterly instalments provided {Cormac Halloway|PERSON-1} remains club captain and is included in at least two-thirds of {Elmstone Regional Rugby Championship|EVENT-1} matchday squads each season. {Marina Kestrel|PERSON-2}, director of {Harwick Vale Rugby Club|ORGANIZATION-1}, said \"Retaining {Cormac Halloway|PERSON-1} secures core leadership for our {Elmstone Regional Rugby Championship|EVENT-1} campaigns.\" {Marina Kestrel|PERSON-2} made the remark at the media briefing and highlighted {Cormac Halloway|PERSON-1}'s role mentoring younger players and his influence on the {Harwick Vale Rugby Club|ORGANIZATION-1}'s player-development pathway. {Eden Trask|PERSON-3}, head coach of {Harwick Vale Rugby Club|ORGANIZATION-1}, said \"Cormac Halloway's work rate and experience were decisive factors in this extension.\" {Eden Trask|PERSON-3} also cited {Cormac Halloway|PERSON-1}'s last season contributions \u2014 noting that {Cormac Halloway|PERSON-1} led the {Harwick Vale Rugby Club|ORGANIZATION-1} squad in tackles and minutes played \u2014 as part of the reasoning behind the decision. {Cormac Halloway|PERSON-1} said \"I am committed to {Harwick Vale Rugby Club|ORGANIZATION-1} and looking forward to leading the group through the next four seasons.\" {Cormac Halloway|PERSON-1} added that he plans to remain based locally to continue community coaching sessions and to help integrate promoted academy players into the senior group. {Harwick Vale Rugby Club|ORGANIZATION-1} announced a one-year front-of-shirt sponsorship with {Northbridge Brewing|ORGANIZATION-2} to help balance the 2025 operating budget after the {Cormac Halloway|PERSON-1} extension. {Harwick Vale Rugby Club|ORGANIZATION-1} confirmed the one-year front-of-shirt sponsorship with {Northbridge Brewing|ORGANIZATION-2} is reported to be worth approximately \u00a365,000 and will include co-promotional activities on two home matchdays. {Elmstone Regional Rugby Championship|EVENT-1} registered the {Cormac Halloway|PERSON-1} contract extension and confirmed the contract met the competition's salary-cap and registration requirements. The {Elmstone Regional Rugby Championship|EVENT-1}'s compliance office confirmed registration on 15 July 2025 after {Harwick Vale Rugby Club|ORGANIZATION-1} submitted the amended squad list and the financial disclosures required under the competition rules. {Harwick Vale Rugby Club|ORGANIZATION-1} promoted academy back-row {Jules Renby|PERSON-4} to the senior squad as a roster consequence of the {Cormac Halloway|PERSON-1} contract adjustments. {Harwick Vale Rugby Club|ORGANIZATION-1} announced that 19-year-old academy back-row {Jules Renby|PERSON-4} has signed a one-year development contract, will train with the first team immediately and will be eligible for selection in the matchday 23.</outline></event>\n<event><date>2025-07-22</date><outline>{Harwick Community Supporters' Trust|ORGANIZATION-3} published a public letter on 2025-07-22 requesting a detailed breakdown of {Harwick Vale Rugby Club|ORGANIZATION-1}'s 2025 operating budget and the full terms of the {Cormac Halloway|PERSON-1} contract extension. The public letter was dated and signed by the {Harwick Community Supporters' Trust|ORGANIZATION-3} chair and four trustees and stated the request was submitted \"on behalf of season-ticket holders and local members\" who had raised concerns about recent high-profile contract activity at the {Harwick Vale Rugby Club|ORGANIZATION-1}. {Harwick Community Supporters' Trust|ORGANIZATION-3} set a 14-day deadline in the published letter and warned it would file a formal compliance complaint with Elmstone Regional Rugby Council if {Harwick Vale Rugby Club|ORGANIZATION-1} did not publish the requested financial details. {Harwick Community Supporters' Trust|ORGANIZATION-3}'s deadline was specified in the letter as 2025-08-05 and {Harwick Community Supporters' Trust|ORGANIZATION-3} said any formal complaint would be lodged with supporting documentation by email and registered post to the Elmstone Regional Rugby Council compliance office if no satisfactory disclosure was provided by that date. {Harwick Community Supporters' Trust|ORGANIZATION-3} posted the public letter on the {Harwick Community Supporters' Trust|ORGANIZATION-3} website and circulated the letter to local media outlets in Harwick-on-Teal. {Harwick Community Supporters' Trust|ORGANIZATION-3} confirmed it published the letter at 09:30 BST and distributed PDF copies to local outlets including the {Harwick Gazette|ORGANIZATION-4}, the {Teal Chronicle|ORGANIZATION-5} and {Vale FM|ORGANIZATION-6}, while also emailing a copy directly to the {Harwick Vale Rugby Club|ORGANIZATION-1} communications address. {Harwick Community Supporters' Trust|ORGANIZATION-3} specifically requested a salary breakdown for {Cormac Halloway|PERSON-1} that separates base pay, bonuses and any leadership payments. {Harwick Community Supporters' Trust|ORGANIZATION-3} asked that the salary breakdown show gross and net figures, the frequency of payments, any appearance- or performance-related bonuses, details of employer pension or National Insurance contributions related to payments to {Cormac Halloway|PERSON-1}, and whether any third-party payments were made. {Harwick Community Supporters' Trust|ORGANIZATION-3} specifically requested the terms and conditional criteria for the \u00a320,000-per-season leadership bonus included in the {Cormac Halloway|PERSON-1} extension. {Harwick Community Supporters' Trust|ORGANIZATION-3} requested that the {Harwick Vale Rugby Club|ORGANIZATION-1} supply the precise triggering conditions, measurement criteria and any medical or discretionary exemptions for the leadership bonus, and asked how the {Harwick Vale Rugby Club|ORGANIZATION-1} would verify and publish each season whether those conditions had been met. {Harwick Community Supporters' Trust|ORGANIZATION-3} requested a disclosure of the one-year front-of-shirt sponsorship with {Northbridge Brewing|ORGANIZATION-2} and an explanation of how the {Northbridge Brewing|ORGANIZATION-2} agreement affects {Harwick Vale Rugby Club|ORGANIZATION-1}'s 2025 operating budget. {Harwick Community Supporters' Trust|ORGANIZATION-3} asked for the sponsorship contract value to be shown with its payment schedule, any in-kind elements or matchday revenue guarantees included in the deal with {Northbridge Brewing|ORGANIZATION-2}, and a statement of whether sponsorship receipts had been ear-marked against player remuneration or general operating costs. {Harwick Vale Rugby Club|ORGANIZATION-1} issued a short statement acknowledging receipt of the {Harwick Community Supporters' Trust|ORGANIZATION-3} request and said {Harwick Vale Rugby Club|ORGANIZATION-1} would review the letter and seek advice on commercially sensitive information. The {Harwick Vale Rugby Club|ORGANIZATION-1} statement, posted on the {Harwick Vale Rugby Club|ORGANIZATION-1} website at 11:45 BST, said {Harwick Vale Rugby Club|ORGANIZATION-1} would consult its legal and financial advisers and aimed to provide a considered reply to the {Harwick Community Supporters' Trust|ORGANIZATION-3} while balancing contractual confidentiality and regulatory obligations. {Marina Kestrel|PERSON-2}, director of {Harwick Vale Rugby Club|ORGANIZATION-1}, said {Marina Kestrel|PERSON-2} had instructed {Harwick Vale Rugby Club|ORGANIZATION-1}'s finance team to prepare a considered response and to engage directly with the {Harwick Community Supporters' Trust|ORGANIZATION-3}. {Marina Kestrel|PERSON-2} asked the finance team to prepare an initial redacted summary of the 2025 operating budget and to propose dates for a meeting with {Harwick Community Supporters' Trust|ORGANIZATION-3} representatives within ten working days. Elmstone Regional Rugby Council confirmed Elmstone Regional Rugby Council had not received a formal complaint from {Harwick Community Supporters' Trust|ORGANIZATION-3} as of 2025-07-22 and outlined that any formal complaint would be processed under Elmstone Regional Rugby Council compliance procedures. The Elmstone Regional Rugby Council compliance office provided guidance to local media that formal complaints must be submitted in writing with supporting evidence, and it supplied contact details for the designated compliance officer who would acknowledge receipt within five working days of a submission. {Cormac Halloway|PERSON-1} issued a brief statement via {Harwick Vale Rugby Club|ORGANIZATION-1} saying {Cormac Halloway|PERSON-1} would cooperate with transparency measures and that contractual details should be addressed by {Harwick Vale Rugby Club|ORGANIZATION-1} and relevant competition offices such as {Elmstone Regional Rugby Championship|EVENT-1} compliance staff. The {Cormac Halloway|PERSON-1} statement was released through {Harwick Vale Rugby Club|ORGANIZATION-1}'s official channels at 14:05 BST and emphasised that {Cormac Halloway|PERSON-1} was available to meet {Harwick Community Supporters' Trust|ORGANIZATION-3} representatives for a discussion once {Harwick Vale Rugby Club|ORGANIZATION-1} and competition offices had clarified what information could be shared publicly.</outline></event>",
+    "STORY_ITEM": [
+      "{Harwick Community Supporters' Trust|ORGANIZATION-3} published a public letter on 2025-07-22 requesting a detailed breakdown of {Harwick Vale Rugby Club|ORGANIZATION-1}'s 2025 operating budget and the full terms of the {Cormac Halloway|PERSON-1} contract extension.",
+      "The public letter was dated and signed by the {Harwick Community Supporters' Trust|ORGANIZATION-3} chair and four trustees and stated the request was submitted \"on behalf of season-ticket holders and local members\" who had raised concerns about recent high-profile contract activity at the {Harwick Vale Rugby Club|ORGANIZATION-1}.",
+      "{Harwick Community Supporters' Trust|ORGANIZATION-3} set a 14-day deadline in the published letter and warned it would file a formal compliance complaint with Elmstone Regional Rugby Council if {Harwick Vale Rugby Club|ORGANIZATION-1} did not publish the requested financial details.",
+      "{Harwick Community Supporters' Trust|ORGANIZATION-3}'s deadline was specified in the letter as 2025-08-05 and {Harwick Community Supporters' Trust|ORGANIZATION-3} said any formal complaint would be lodged with supporting documentation by email and registered post to the Elmstone Regional Rugby Council compliance office if no satisfactory disclosure was provided by that date.",
+      "{Harwick Community Supporters' Trust|ORGANIZATION-3} posted the public letter on the {Harwick Community Supporters' Trust|ORGANIZATION-3} website and circulated the letter to local media outlets in Harwick-on-Teal.",
+      "{Harwick Community Supporters' Trust|ORGANIZATION-3} confirmed it published the letter at 09:30 BST and distributed PDF copies to local outlets including the {Harwick Gazette|ORGANIZATION-4}, the {Teal Chronicle|ORGANIZATION-5} and {Vale FM|ORGANIZATION-6}, while also emailing a copy directly to the {Harwick Vale Rugby Club|ORGANIZATION-1} communications address.",
+      "{Harwick Community Supporters' Trust|ORGANIZATION-3} specifically requested a salary breakdown for {Cormac Halloway|PERSON-1} that separates base pay, bonuses and any leadership payments.",
+      "{Harwick Community Supporters' Trust|ORGANIZATION-3} asked that the salary breakdown show gross and net figures, the frequency of payments, any appearance- or performance-related bonuses, details of employer pension or National Insurance contributions related to payments to {Cormac Halloway|PERSON-1}, and whether any third-party payments were made.",
+      "{Harwick Community Supporters' Trust|ORGANIZATION-3} specifically requested the terms and conditional criteria for the \u00a320,000-per-season leadership bonus included in the {Cormac Halloway|PERSON-1} extension.",
+      "{Harwick Community Supporters' Trust|ORGANIZATION-3} requested that the {Harwick Vale Rugby Club|ORGANIZATION-1} supply the precise triggering conditions, measurement criteria and any medical or discretionary exemptions for the leadership bonus, and asked how the {Harwick Vale Rugby Club|ORGANIZATION-1} would verify and publish each season whether those conditions had been met.",
+      "{Harwick Community Supporters' Trust|ORGANIZATION-3} requested a disclosure of the one-year front-of-shirt sponsorship with {Northbridge Brewing|ORGANIZATION-2} and an explanation of how the {Northbridge Brewing|ORGANIZATION-2} agreement affects {Harwick Vale Rugby Club|ORGANIZATION-1}'s 2025 operating budget.",
+      "{Harwick Community Supporters' Trust|ORGANIZATION-3} asked for the sponsorship contract value to be shown with its payment schedule, any in-kind elements or matchday revenue guarantees included in the deal with {Northbridge Brewing|ORGANIZATION-2}, and a statement of whether sponsorship receipts had been ear-marked against player remuneration or general operating costs.",
+      "{Harwick Vale Rugby Club|ORGANIZATION-1} issued a short statement acknowledging receipt of the {Harwick Community Supporters' Trust|ORGANIZATION-3} request and said {Harwick Vale Rugby Club|ORGANIZATION-1} would review the letter and seek advice on commercially sensitive information.",
+      "The {Harwick Vale Rugby Club|ORGANIZATION-1} statement, posted on the {Harwick Vale Rugby Club|ORGANIZATION-1} website at 11:45 BST, said {Harwick Vale Rugby Club|ORGANIZATION-1} would consult its legal and financial advisers and aimed to provide a considered reply to the {Harwick Community Supporters' Trust|ORGANIZATION-3} while balancing contractual confidentiality and regulatory obligations.",
+      "{Marina Kestrel|PERSON-2}, director of {Harwick Vale Rugby Club|ORGANIZATION-1}, said {Marina Kestrel|PERSON-2} had instructed {Harwick Vale Rugby Club|ORGANIZATION-1}'s finance team to prepare a considered response and to engage directly with the {Harwick Community Supporters' Trust|ORGANIZATION-3}.",
+      "{Marina Kestrel|PERSON-2} asked the finance team to prepare an initial redacted summary of the 2025 operating budget and to propose dates for a meeting with {Harwick Community Supporters' Trust|ORGANIZATION-3} representatives within ten working days.",
+      "Elmstone Regional Rugby Council confirmed Elmstone Regional Rugby Council had not received a formal complaint from {Harwick Community Supporters' Trust|ORGANIZATION-3} as of 2025-07-22 and outlined that any formal complaint would be processed under Elmstone Regional Rugby Council compliance procedures.",
+      "The Elmstone Regional Rugby Council compliance office provided guidance to local media that formal complaints must be submitted in writing with supporting evidence, and it supplied contact details for the designated compliance officer who would acknowledge receipt within five working days of a submission.",
+      "{Cormac Halloway|PERSON-1} issued a brief statement via {Harwick Vale Rugby Club|ORGANIZATION-1} saying {Cormac Halloway|PERSON-1} would cooperate with transparency measures and that contractual details should be addressed by {Harwick Vale Rugby Club|ORGANIZATION-1} and relevant competition offices such as {Elmstone Regional Rugby Championship|EVENT-1} compliance staff.",
+      "The {Cormac Halloway|PERSON-1} statement was released through {Harwick Vale Rugby Club|ORGANIZATION-1}'s official channels at 14:05 BST and emphasised that {Cormac Halloway|PERSON-1} was available to meet {Harwick Community Supporters' Trust|ORGANIZATION-3} representatives for a discussion once {Harwick Vale Rugby Club|ORGANIZATION-1} and competition offices had clarified what information could be shared publicly."
+    ],
+    "DATE": "2025-07-22",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 2,
+    "OUTLINE": "{Harwick Community Supporters' Trust|ORGANIZATION-3} published a public letter on 2025-07-22 requesting a detailed breakdown of {Harwick Vale Rugby Club|ORGANIZATION-1}'s 2025 operating budget and the full terms of the {Cormac Halloway|PERSON-1} contract extension.\nThe public letter was dated and signed by the {Harwick Community Supporters' Trust|ORGANIZATION-3} chair and four trustees and stated the request was submitted \"on behalf of season-ticket holders and local members\" who had raised concerns about recent high-profile contract activity at the {Harwick Vale Rugby Club|ORGANIZATION-1}.\n{Harwick Community Supporters' Trust|ORGANIZATION-3} set a 14-day deadline in the published letter and warned it would file a formal compliance complaint with Elmstone Regional Rugby Council if {Harwick Vale Rugby Club|ORGANIZATION-1} did not publish the requested financial details.\n{Harwick Community Supporters' Trust|ORGANIZATION-3}'s deadline was specified in the letter as 2025-08-05 and {Harwick Community Supporters' Trust|ORGANIZATION-3} said any formal complaint would be lodged with supporting documentation by email and registered post to the Elmstone Regional Rugby Council compliance office if no satisfactory disclosure was provided by that date.\n{Harwick Community Supporters' Trust|ORGANIZATION-3} posted the public letter on the {Harwick Community Supporters' Trust|ORGANIZATION-3} website and circulated the letter to local media outlets in Harwick-on-Teal.\n{Harwick Community Supporters' Trust|ORGANIZATION-3} confirmed it published the letter at 09:30 BST and distributed PDF copies to local outlets including the {Harwick Gazette|ORGANIZATION-4}, the {Teal Chronicle|ORGANIZATION-5} and {Vale FM|ORGANIZATION-6}, while also emailing a copy directly to the {Harwick Vale Rugby Club|ORGANIZATION-1} communications address.\n{Harwick Community Supporters' Trust|ORGANIZATION-3} specifically requested a salary breakdown for {Cormac Halloway|PERSON-1} that separates base pay, bonuses and any leadership payments.\n{Harwick Community Supporters' Trust|ORGANIZATION-3} asked that the salary breakdown show gross and net figures, the frequency of payments, any appearance- or performance-related bonuses, details of employer pension or National Insurance contributions related to payments to {Cormac Halloway|PERSON-1}, and whether any third-party payments were made.\n{Harwick Community Supporters' Trust|ORGANIZATION-3} specifically requested the terms and conditional criteria for the \u00a320,000-per-season leadership bonus included in the {Cormac Halloway|PERSON-1} extension.\n{Harwick Community Supporters' Trust|ORGANIZATION-3} requested that the {Harwick Vale Rugby Club|ORGANIZATION-1} supply the precise triggering conditions, measurement criteria and any medical or discretionary exemptions for the leadership bonus, and asked how the {Harwick Vale Rugby Club|ORGANIZATION-1} would verify and publish each season whether those conditions had been met.\n{Harwick Community Supporters' Trust|ORGANIZATION-3} requested a disclosure of the one-year front-of-shirt sponsorship with {Northbridge Brewing|ORGANIZATION-2} and an explanation of how the {Northbridge Brewing|ORGANIZATION-2} agreement affects {Harwick Vale Rugby Club|ORGANIZATION-1}'s 2025 operating budget.\n{Harwick Community Supporters' Trust|ORGANIZATION-3} asked for the sponsorship contract value to be shown with its payment schedule, any in-kind elements or matchday revenue guarantees included in the deal with {Northbridge Brewing|ORGANIZATION-2}, and a statement of whether sponsorship receipts had been ear-marked against player remuneration or general operating costs.\n{Harwick Vale Rugby Club|ORGANIZATION-1} issued a short statement acknowledging receipt of the {Harwick Community Supporters' Trust|ORGANIZATION-3} request and said {Harwick Vale Rugby Club|ORGANIZATION-1} would review the letter and seek advice on commercially sensitive information.\nThe {Harwick Vale Rugby Club|ORGANIZATION-1} statement, posted on the {Harwick Vale Rugby Club|ORGANIZATION-1} website at 11:45 BST, said {Harwick Vale Rugby Club|ORGANIZATION-1} would consult its legal and financial advisers and aimed to provide a considered reply to the {Harwick Community Supporters' Trust|ORGANIZATION-3} while balancing contractual confidentiality and regulatory obligations.\n{Marina Kestrel|PERSON-2}, director of {Harwick Vale Rugby Club|ORGANIZATION-1}, said {Marina Kestrel|PERSON-2} had instructed {Harwick Vale Rugby Club|ORGANIZATION-1}'s finance team to prepare a considered response and to engage directly with the {Harwick Community Supporters' Trust|ORGANIZATION-3}.\n{Marina Kestrel|PERSON-2} asked the finance team to prepare an initial redacted summary of the 2025 operating budget and to propose dates for a meeting with {Harwick Community Supporters' Trust|ORGANIZATION-3} representatives within ten working days.\nElmstone Regional Rugby Council confirmed Elmstone Regional Rugby Council had not received a formal complaint from {Harwick Community Supporters' Trust|ORGANIZATION-3} as of 2025-07-22 and outlined that any formal complaint would be processed under Elmstone Regional Rugby Council compliance procedures.\nThe Elmstone Regional Rugby Council compliance office provided guidance to local media that formal complaints must be submitted in writing with supporting evidence, and it supplied contact details for the designated compliance officer who would acknowledge receipt within five working days of a submission.\n{Cormac Halloway|PERSON-1} issued a brief statement via {Harwick Vale Rugby Club|ORGANIZATION-1} saying {Cormac Halloway|PERSON-1} would cooperate with transparency measures and that contractual details should be addressed by {Harwick Vale Rugby Club|ORGANIZATION-1} and relevant competition offices such as {Elmstone Regional Rugby Championship|EVENT-1} compliance staff.\nThe {Cormac Halloway|PERSON-1} statement was released through {Harwick Vale Rugby Club|ORGANIZATION-1}'s official channels at 14:05 BST and emphasised that {Cormac Halloway|PERSON-1} was available to meet {Harwick Community Supporters' Trust|ORGANIZATION-3} representatives for a discussion once {Harwick Vale Rugby Club|ORGANIZATION-1} and competition offices had clarified what information could be shared publicly.",
+    "PRE-CONSISTENCY-NUM-ITEMS": 20,
+    "STORYITEM_XML": "<storyitems>\n<storyitem>Harwick Community Supporters' Trust published a public letter on 2025-07-22 requesting a detailed breakdown of Harwick Vale Rugby Club's 2025 operating budget and the full terms of the Cormac Halloway contract extension.</storyitem>\n<storyitem>The public letter was dated and signed by the Harwick Community Supporters' Trust chair and four trustees and stated the request was submitted \"on behalf of season-ticket holders and local members\" who had raised concerns about recent high-profile contract activity at the club.</storyitem>\n<storyitem>Harwick Community Supporters' Trust set a 14-day deadline in the published letter and warned it would file a formal compliance complaint with Elmstone Regional Rugby Council if Harwick Vale Rugby Club did not publish the requested financial details.</storyitem>\n<storyitem>The Trust's deadline was specified in the letter as 2025-08-05 and the Trust said any formal complaint would be lodged with supporting documentation by email and registered post to the Elmstone Regional Rugby Council compliance office if no satisfactory disclosure was provided by that date.</storyitem>\n<storyitem>Harwick Community Supporters' Trust posted the public letter on the Harwick Community Supporters' Trust website and circulated the letter to local media outlets in Harwick-on-Teal.</storyitem>\n<storyitem>The Trust confirmed it published the letter at 09:30 BST and distributed PDF copies to local outlets including the Harwick Gazette, the Teal Chronicle and Vale FM, while also emailing a copy directly to the Harwick Vale Rugby Club communications address.</storyitem>\n<storyitem>Harwick Community Supporters' Trust specifically requested a salary breakdown for Cormac Halloway that separates base pay, bonuses and any leadership payments.</storyitem>\n<storyitem>The Trust asked that the salary breakdown show gross and net figures, the frequency of payments, any appearance- or performance-related bonuses, details of employer pension or National Insurance contributions related to payments to Cormac Halloway, and whether any third-party payments were made.</storyitem>\n<storyitem>Harwick Community Supporters' Trust specifically requested the terms and conditional criteria for the \u00a320,000-per-season leadership bonus included in the Cormac Halloway extension.</storyitem>\n<storyitem>The Trust requested that the club supply the precise triggering conditions, measurement criteria and any medical or discretionary exemptions for the leadership bonus, and asked how the club would verify and publish each season whether those conditions had been met.</storyitem>\n<storyitem>Harwick Community Supporters' Trust requested a disclosure of the one-year front-of-shirt sponsorship with Northbridge Brewing and an explanation of how the Northbridge Brewing agreement affects Harwick Vale Rugby Club's 2025 operating budget.</storyitem>\n<storyitem>The Trust asked for the sponsorship contract value to be shown with its payment schedule, any in-kind elements or matchday revenue guarantees included in the deal with Northbridge Brewing, and a statement of whether sponsorship receipts had been ear-marked against player remuneration or general operating costs.</storyitem>\n<storyitem>Harwick Vale Rugby Club issued a short statement acknowledging receipt of the Harwick Community Supporters' Trust request and said Harwick Vale Rugby Club would review the letter and seek advice on commercially sensitive information.</storyitem>\n<storyitem>The club statement, posted on the Harwick Vale website at 11:45 BST, said Harwick Vale Rugby Club would consult its legal and financial advisers and aimed to provide a considered reply to the Trust while balancing contractual confidentiality and regulatory obligations.</storyitem>\n<storyitem>Marina Kestrel, director of Harwick Vale Rugby Club, said Marina Kestrel had instructed the club's finance team to prepare a considered response and to engage directly with Harwick Community Supporters' Trust.</storyitem>\n<storyitem>Marina Kestrel asked the finance team to prepare an initial redacted summary of the 2025 operating budget and to propose dates for a meeting with Harwick Community Supporters' Trust representatives within ten working days.</storyitem>\n<storyitem>Elmstone Regional Rugby Council confirmed Elmstone Regional Rugby Council had not received a formal complaint from Harwick Community Supporters' Trust as of 2025-07-22 and outlined that any formal complaint would be processed under Elmstone Regional Rugby Council compliance procedures.</storyitem>\n<storyitem>The Elmstone Regional Rugby Council compliance office provided guidance to local media that formal complaints must be submitted in writing with supporting evidence, and it supplied contact details for the designated compliance officer who would acknowledge receipt within five working days of a submission.</storyitem>\n<storyitem>Cormac Halloway issued a brief statement via Harwick Vale Rugby Club saying Cormac Halloway would cooperate with transparency measures and that contractual details should be addressed by Harwick Vale Rugby Club and relevant competition offices such as Elmstone Regional Rugby Championship compliance staff.</storyitem>\n<storyitem>The Halloway statement was released through Harwick Vale Rugby Club's official channels at 14:05 BST and emphasised that Cormac Halloway was available to meet Trust representatives for a discussion once club and competition offices had clarified what information could be shared publicly.</storyitem>\n<storyitems>",
+    "NEW_PERSON_NAME": [],
+    "NEW_ORGANIZATION_NAME": [
+      {
+        "name": "Harwick Community Supporters' Trust",
+        "old_name": "Harwick Community Supporters' Trust"
+      },
+      {
+        "name": "Harwick Gazette",
+        "old_name": "Harwick Gazette"
+      },
+      {
+        "name": "Teal Chronicle",
+        "old_name": "Teal Chronicle"
+      },
+      {
+        "name": "Vale FM",
+        "old_name": "Vale FM"
+      }
+    ],
+    "NEW_LOCATION_NAME": [],
+    "NEW_PRODUCT_NAME": [],
+    "NEW_ART_NAME": [],
+    "NEW_BUILDING_NAME": [],
+    "NEW_EVENT_NAME": [],
+    "NEW_MISCELLANEOUS_NAME": [],
+    "CORRECTED_PERSON_NAME": [],
+    "CORRECTED_ORGANIZATION_NAME": [
+      {
+        "name": "Harwick Community Supporters' Trust",
+        "old_name": "Harwick Community Supporters' Trust",
+        "id": "ORGANIZATION-3"
+      },
+      {
+        "name": "Harwick Gazette",
+        "old_name": "Harwick Gazette",
+        "id": "ORGANIZATION-4"
+      },
+      {
+        "name": "Teal Chronicle",
+        "old_name": "Teal Chronicle",
+        "id": "ORGANIZATION-5"
+      },
+      {
+        "name": "Vale FM",
+        "old_name": "Vale FM",
+        "id": "ORGANIZATION-6"
+      }
+    ],
+    "CORRECTED_LOCATION_NAME": [],
+    "CORRECTED_PRODUCT_NAME": [],
+    "CORRECTED_ART_NAME": [],
+    "CORRECTED_BUILDING_NAME": [],
+    "CORRECTED_EVENT_NAME": [],
+    "CORRECTED_MISCELLANEOUS_NAME": [],
+    "CRITIQUE_ERRORS": {
+      "entity-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-person-nationality": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-person-spouse": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization-headquarters": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product-manufacturer": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art-creator": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art-current_location_country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art-current_location_city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art-current_location_place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building-place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building-city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building-architect": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event-place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event-city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event-organizer": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-person-nationality": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-person-spouse": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-organization-headquarters": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-location-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-product-manufacturer": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-art-creator": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-art-current_location_country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-art-current_location_city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-art-current_location_place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-building-place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-building-city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-building-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-building-architect": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-event-place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-event-city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-event-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-event-organizer": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ]
+    },
+    "ADJUSTED_PERSONS_XML": "",
+    "ADJUSTED_ORGANIZATIONS_XML": "<organization><id>ORGANIZATION-3</id><name>Harwick Community Supporters' Trust</name><old_name>Harwick Community Supporters' Trust</old_name></organization>\n<organization><id>ORGANIZATION-4</id><name>Harwick Gazette</name><old_name>Harwick Gazette</old_name></organization>\n<organization><id>ORGANIZATION-5</id><name>Teal Chronicle</name><old_name>Teal Chronicle</old_name></organization>\n<organization><id>ORGANIZATION-6</id><name>Vale FM</name><old_name>Vale FM</old_name></organization>",
+    "ADJUSTED_LOCATIONS_XML": "",
+    "ADJUSTED_PRODUCTS_XML": "",
+    "ADJUSTED_ARTS_XML": "",
+    "ADJUSTED_BUILDINGS_XML": "",
+    "ADJUSTED_EVENTS_XML": "",
+    "ADJUSTED_MISCELLANEOUSS_XML": "",
+    "USED_PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Cormac Halloway"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Marina Kestrel"
+      }
+    ],
+    "USED_ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Harwick Community Supporters' Trust"
+      },
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Harwick Vale Rugby Club"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Northbridge Brewing"
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "Harwick Gazette"
+      },
+      {
+        "id": "ORGANIZATION-5",
+        "name": "Teal Chronicle"
+      },
+      {
+        "id": "ORGANIZATION-6",
+        "name": "Vale FM"
+      }
+    ],
+    "USED_LOCATION": [],
+    "USED_PRODUCT": [],
+    "USED_ART": [],
+    "USED_BUILDING": [],
+    "USED_EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "Elmstone Regional Rugby Championship"
+      }
+    ],
+    "USED_MISCELLANEOUS": [],
+    "USED_PRE-EXISTING-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Cormac Halloway",
+        "entity_class": "person",
+        "description": "Driven and community-minded leader known for a high work ethic, strong discipline, and a focus on mentoring younger athletes while pursuing a long-term playing career.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Cormac Halloway signed a four-season contract extension with Harwick Vale Rugby Club (effective from the 2025-26 season through 2028-29), with his annual salary raised to \u00a395,000 and a \u00a320,000-per-season leadership bonus payable quarterly; the contract was registered with the Elmstone Regional Rugby Championship on 15 July 2025.",
+            "date": "2025-07-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Cormac Halloway issued a brief statement via Harwick Vale Rugby Club on 2025-07-22 saying he will cooperate with transparency measures and is available to meet Harwick Community Supporters' Trust representatives once the club and competition offices clarify what can be shared publicly.",
+            "date": "2025-07-22"
+          }
+        ],
+        "date_of_birth": "1994-03-12",
+        "gender": "Male",
+        "profession": "Professional rugby player",
+        "nationality": "Ardenia",
+        "education": "Bachelor of Sports Science, St. Lysander University",
+        "height": "1.88 m",
+        "weight": "102 kg",
+        "eye_color": "Green",
+        "hair_color": "Dark brown",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Marina Kestrel",
+        "entity_class": "person",
+        "description": "Strategic and pragmatic administrator with a focus on sustainable club development, youth pathways, and pragmatic financial planning.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Marina Kestrel, director of Harwick Vale Rugby Club, announced the retention of Cormac Halloway at a media briefing and highlighted his leadership, mentoring of younger players, and role in the club's player-development pathway.",
+            "date": "2025-07-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Marina Kestrel, director of Harwick Vale Rugby Club, instructed the club's finance team to prepare a redacted summary of the 2025 operating budget and to engage directly with Harwick Community Supporters' Trust, proposing meeting dates within ten working days (action reported 2025-07-22).",
+            "date": "2025-07-22"
+          }
+        ],
+        "date_of_birth": "1979-11-28",
+        "gender": "Female",
+        "profession": "Sports director",
+        "nationality": "Calderia",
+        "education": "MBA, Northcliff Business School",
+        "height": "1.70 m",
+        "weight": "63 kg",
+        "eye_color": "Hazel",
+        "hair_color": "Salt-and-pepper",
+        "political_affiliation": "Centrist Progressive League",
+        "marital_status": "Married"
+      }
+    ],
+    "USED_NEW-PERSON": [],
+    "ALL_USED_PERSON_XML": "<person><created_at>0</created_at><date_of_birth>1994-03-12</date_of_birth><description>Driven and community-minded leader known for a high work ethic, strong discipline, and a focus on mentoring younger athletes while pursuing a long-term playing career.</description><education>Bachelor of Sports Science, St. Lysander University</education><entity_class>person</entity_class><eye_color>Green</eye_color><gender>Male</gender><hair_color>Dark brown</hair_color><height>1.88 m</height><history><event>2025-07-15: Cormac Halloway signed a four-season contract extension with Harwick Vale Rugby Club (effective from the 2025-26 season through 2028-29), with his annual salary raised to \u00a395,000 and a \u00a320,000-per-season leadership bonus payable quarterly; the contract was registered with the Elmstone Regional Rugby Championship on 15 July 2025.</event></history><id>PERSON-1</id><last_updated>2025-07-15</last_updated><marital_status>Single</marital_status><name>Cormac Halloway</name><nationality>Ardenia</nationality><profession>Professional rugby player</profession><type>None</type><weight>102 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>1979-11-28</date_of_birth><description>Strategic and pragmatic administrator with a focus on sustainable club development, youth pathways, and pragmatic financial planning.</description><education>MBA, Northcliff Business School</education><entity_class>person</entity_class><eye_color>Hazel</eye_color><gender>Female</gender><hair_color>Salt-and-pepper</hair_color><height>1.70 m</height><history><event>2025-07-15: Marina Kestrel, director of Harwick Vale Rugby Club, announced the retention of Cormac Halloway at a media briefing and highlighted his leadership, mentoring of younger players, and role in the club's player-development pathway.</event></history><id>PERSON-2</id><last_updated>2025-07-15</last_updated><marital_status>Married</marital_status><name>Marina Kestrel</name><nationality>Calderia</nationality><political_affiliation>Centrist Progressive League</political_affiliation><profession>Sports director</profession><type>None</type><weight>63 kg</weight></person>",
+    "USED-NAME-AND-ID-FOR-PERSON": [
+      {
+        "name": "Cormac Halloway",
+        "id": "PERSON-1"
+      },
+      {
+        "name": "Marina Kestrel",
+        "id": "PERSON-2"
+      }
+    ],
+    "USED_PRE-EXISTING-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Harwick Vale Rugby Club",
+        "entity_class": "organization",
+        "description": "Community-rooted rugby club with a long history of developing regional talent and maintaining strong local engagement.",
+        "type": "non-profit sports club",
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Harwick Vale Rugby Club announced Cormac Halloway's four-season extension, hosted a media briefing at its training ground, confirmed the salary and leadership-bonus terms, arranged a one-year front-of-shirt sponsorship with Northbridge Brewing (reported at ~\u00a365,000) to help balance the 2025 operating budget, and promoted academy player Jules Renby to the senior squad; the club submitted amended squad and financial disclosures for registration on 15 July 2025.",
+            "date": "2025-07-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Harwick Vale Rugby Club acknowledged receipt of the Harwick Community Supporters' Trust letter on 2025-07-22, said it would consult legal and financial advisers about commercially sensitive information, and tasked its finance team with preparing a redacted 2025 operating-budget summary and meeting proposals for the Trust.",
+            "date": "2025-07-22"
+          }
+        ],
+        "founded": "1924",
+        "headquarters": "Harwick-on-Teal",
+        "industry": "Sports (rugby union)",
+        "mission_statement": "To develop local athletic talent, promote community participation in sport, and sustain a competitive club culture.",
+        "number_of_employees": "42",
+        "annual_revenue": "\u00a31,200,000"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Northbridge Brewing",
+        "entity_class": "organization",
+        "description": "Regional craft brewery producing traditional ales and partnering with local businesses for community events and hospitality.",
+        "type": "company",
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Northbridge Brewing agreed a one-year front-of-shirt sponsorship with Harwick Vale Rugby Club reported to be worth approximately \u00a365,000 and including co-promotional activities on two home matchdays.",
+            "date": "2025-07-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Northbridge Brewing's one-year front-of-shirt sponsorship with Harwick Vale Rugby Club was the subject of a disclosure request in the Trust's public letter of 2025-07-22, which asked for the sponsorship value, payment schedule and any in-kind elements.",
+            "date": "2025-07-22"
+          }
+        ],
+        "founded": "2011",
+        "headquarters": "Northbridge",
+        "industry": "Beverage (craft brewing)",
+        "mission_statement": "To craft approachable, locally inspired beers while supporting regional hospitality and events.",
+        "number_of_employees": "25",
+        "annual_revenue": "\u00a31,100,000"
+      }
+    ],
+    "USED_NEW-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Harwick Community Supporters' Trust",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "Harwick Gazette",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-5",
+        "name": "Teal Chronicle",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-6",
+        "name": "Vale FM",
+        "category": "organization"
+      }
+    ],
+    "ALL_USED_ORGANIZATION_XML": "<organization><annual_revenue>\u00a31,200,000</annual_revenue><created_at>0</created_at><description>Community-rooted rugby club with a long history of developing regional talent and maintaining strong local engagement.</description><entity_class>organization</entity_class><founded>1924</founded><headquarters>Harwick-on-Teal</headquarters><history><event>2025-07-15: Harwick Vale Rugby Club announced Cormac Halloway's four-season extension, hosted a media briefing at its training ground, confirmed the salary and leadership-bonus terms, arranged a one-year front-of-shirt sponsorship with Northbridge Brewing (reported at ~\u00a365,000) to help balance the 2025 operating budget, and promoted academy player Jules Renby to the senior squad; the club submitted amended squad and financial disclosures for registration on 15 July 2025.</event></history><id>ORGANIZATION-1</id><industry>Sports (rugby union)</industry><last_updated>2025-07-15</last_updated><mission_statement>To develop local athletic talent, promote community participation in sport, and sustain a competitive club culture.</mission_statement><name>Harwick Vale Rugby Club</name><number_of_employees>42</number_of_employees><type>non-profit sports club</type></organization>\n<organization><annual_revenue>\u00a31,100,000</annual_revenue><created_at>0</created_at><description>Regional craft brewery producing traditional ales and partnering with local businesses for community events and hospitality.</description><entity_class>organization</entity_class><founded>2011</founded><headquarters>Northbridge</headquarters><history><event>2025-07-15: Northbridge Brewing agreed a one-year front-of-shirt sponsorship with Harwick Vale Rugby Club reported to be worth approximately \u00a365,000 and including co-promotional activities on two home matchdays.</event></history><id>ORGANIZATION-2</id><industry>Beverage (craft brewing)</industry><last_updated>2025-07-15</last_updated><mission_statement>To craft approachable, locally inspired beers while supporting regional hospitality and events.</mission_statement><name>Northbridge Brewing</name><number_of_employees>25</number_of_employees><type>company</type></organization>\n<organization><category>organization</category><id>ORGANIZATION-3</id><name>Harwick Community Supporters' Trust</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-4</id><name>Harwick Gazette</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-5</id><name>Teal Chronicle</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-6</id><name>Vale FM</name></organization>",
+    "USED-NAME-AND-ID-FOR-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Harwick Community Supporters' Trust",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "Harwick Gazette",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-5",
+        "name": "Teal Chronicle",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-6",
+        "name": "Vale FM",
+        "category": "organization"
+      },
+      {
+        "name": "Harwick Vale Rugby Club",
+        "id": "ORGANIZATION-1"
+      },
+      {
+        "name": "Northbridge Brewing",
+        "id": "ORGANIZATION-2"
+      }
+    ],
+    "USED_PRE-EXISTING-LOCATION": [],
+    "USED_NEW-LOCATION": [],
+    "ALL_USED_LOCATION_XML": "",
+    "USED-NAME-AND-ID-FOR-LOCATION": [],
+    "USED_PRE-EXISTING-PRODUCT": [],
+    "USED_NEW-PRODUCT": [],
+    "ALL_USED_PRODUCT_XML": "",
+    "USED-NAME-AND-ID-FOR-PRODUCT": [],
+    "USED_PRE-EXISTING-ART": [],
+    "USED_NEW-ART": [],
+    "ALL_USED_ART_XML": "",
+    "USED-NAME-AND-ID-FOR-ART": [],
+    "USED_PRE-EXISTING-BUILDING": [],
+    "USED_NEW-BUILDING": [],
+    "ALL_USED_BUILDING_XML": "",
+    "USED-NAME-AND-ID-FOR-BUILDING": [],
+    "USED_PRE-EXISTING-EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "Elmstone Regional Rugby Championship",
+        "entity_class": "event",
+        "description": "Seasonal regional rugby competition that brings together semi-professional clubs across the Elmstone area in a structured league format.",
+        "type": "sporting",
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Elmstone Regional Rugby Championship registered Cormac Halloway's contract extension on 15 July 2025 and confirmed the contract met the competition's salary-cap and registration requirements.",
+            "date": "2025-07-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "The Elmstone Regional Rugby Championship was cited as the relevant competition office for compliance matters in the correspondence; the Championship had previously registered Cormac Halloway's contract extension on 2025-07-15.",
+            "date": "2025-07-22"
+          }
+        ],
+        "date": "Annual (season runs September\u2013May)",
+        "duration": "9 months",
+        "organizer": "Elmstone Regional Rugby Council",
+        "number_of_participants": "12 clubs",
+        "budget": "\u00a3450,000"
+      }
+    ],
+    "USED_NEW-EVENT": [],
+    "ALL_USED_EVENT_XML": "<event><budget>\u00a3450,000</budget><created_at>0</created_at><date>Annual (season runs September\u2013May)</date><description>Seasonal regional rugby competition that brings together semi-professional clubs across the Elmstone area in a structured league format.</description><duration>9 months</duration><entity_class>event</entity_class><history><event>2025-07-15: The Elmstone Regional Rugby Championship registered Cormac Halloway's contract extension on 15 July 2025 and confirmed the contract met the competition's salary-cap and registration requirements.</event></history><id>EVENT-1</id><last_updated>2025-07-15</last_updated><name>Elmstone Regional Rugby Championship</name><number_of_participants>12 clubs</number_of_participants><organizer>Elmstone Regional Rugby Council</organizer><type>sporting</type></event>",
+    "USED-NAME-AND-ID-FOR-EVENT": [
+      {
+        "name": "Elmstone Regional Rugby Championship",
+        "id": "EVENT-1"
+      }
+    ],
+    "USED_PRE-EXISTING-MISCELLANEOUS": [],
+    "USED_NEW-MISCELLANEOUS": [],
+    "ALL_USED_MISCELLANEOUS_XML": "",
+    "USED-NAME-AND-ID-FOR-MISCELLANEOUS": [],
+    "USED_NEW-PERSONS_XML": "",
+    "USED_NEW-ORGANIZATIONS_XML": "<organization><category>organization</category><id>ORGANIZATION-3</id><name>Harwick Community Supporters' Trust</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-4</id><name>Harwick Gazette</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-5</id><name>Teal Chronicle</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-6</id><name>Vale FM</name></organization>",
+    "USED_NEW-LOCATIONS_XML": "",
+    "USED_NEW-PRODUCTS_XML": "",
+    "USED_NEW-ARTS_XML": "",
+    "USED_NEW-BUILDINGS_XML": "",
+    "USED_NEW-EVENTS_XML": "",
+    "USED_NEW-MISCELLANEOUSS_XML": "",
+    "NEW_PERSON": [],
+    "NEW_ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Harwick Community Supporters' Trust",
+        "type": "non-profit",
+        "description": "A member-led trust that advocates for supporter representation, financial transparency, and community involvement in the governance of local sporting and leisure facilities.",
+        "founded": "2012",
+        "headquarters": "Harwick-on-Teal",
+        "industry": "Community advocacy",
+        "mission_statement": "To represent season-ticket holders and local members by promoting transparent decision-making, safeguarding community access to sport, and supporting sustainable club stewardship.",
+        "number_of_employees": "6",
+        "annual_revenue": "\u00a342,000"
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "Harwick Gazette",
+        "type": "company",
+        "description": "A local daily newspaper focused on neighbourhood reporting, public affairs, and community features across the Harwick region.",
+        "founded": "1898",
+        "headquarters": "Harwick-on-Teal",
+        "industry": "Journalism and publishing",
+        "mission_statement": "To deliver accurate, timely and relevant local news while fostering civic engagement and accountability.",
+        "number_of_employees": "22",
+        "annual_revenue": "\u00a3260,000"
+      },
+      {
+        "id": "ORGANIZATION-5",
+        "name": "Teal Chronicle",
+        "type": "company",
+        "description": "An independent weekly magazine covering cultural life, local business, and community events across the Teal valley and surrounding towns.",
+        "founded": "2014",
+        "headquarters": "Tealbridge",
+        "industry": "Print and digital media",
+        "mission_statement": "To document and celebrate local culture, support small enterprises, and provide thoughtful reporting on civic issues.",
+        "number_of_employees": "12",
+        "annual_revenue": "\u00a3140,000"
+      },
+      {
+        "id": "ORGANIZATION-6",
+        "name": "Vale FM",
+        "type": "non-profit",
+        "description": "A community radio broadcaster offering a mix of local news, music programming and volunteer-led shows aimed at connecting neighbourhoods across the Vale region.",
+        "founded": "2008",
+        "headquarters": "Valeview",
+        "industry": "Broadcasting",
+        "mission_statement": "To provide accessible on-air and online programming that reflects local tastes, supports community voices, and promotes civic participation.",
+        "number_of_employees": "9",
+        "annual_revenue": "\u00a375,000"
+      }
+    ],
+    "NEW_LOCATION": [],
+    "NEW_PRODUCT": [],
+    "NEW_ART": [],
+    "NEW_BUILDING": [],
+    "NEW_EVENT": [],
+    "NEW_MISCELLANEOUS": [],
+    "FICTIONAL_NEW_PERSONS": [],
+    "FICTIONAL_NEW_ORGANIZATIONS": [
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Harwick Community Supporters' Trust",
+        "entity_class": "organization",
+        "description": "A member-led trust that advocates for supporter representation, financial transparency, and community involvement in the governance of local sporting and leisure facilities.",
+        "type": "non-profit",
+        "created_at": 1,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "Harwick Community Supporters' Trust published a dated public letter on 2025-07-22 requesting detailed disclosure of Harwick Vale Rugby Club's 2025 operating budget and the full terms of Cormac Halloway's contract extension, set a 14-day deadline to 2025-08-05 and warned it would file a formal compliance complaint with Elmstone Regional Rugby Council if unsatisfied.",
+            "date": "2025-07-22"
+          }
+        ],
+        "founded": "2012",
+        "headquarters": "Harwick-on-Teal",
+        "industry": "Community advocacy",
+        "mission_statement": "To represent season-ticket holders and local members by promoting transparent decision-making, safeguarding community access to sport, and supporting sustainable club stewardship.",
+        "number_of_employees": "6",
+        "annual_revenue": "\u00a342,000"
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "Harwick Gazette",
+        "entity_class": "organization",
+        "description": "A local daily newspaper focused on neighbourhood reporting, public affairs, and community features across the Harwick region.",
+        "type": "company",
+        "created_at": 1,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "Harwick Gazette was one of the local media outlets sent a PDF copy of the Harwick Community Supporters' Trust public letter, which the Trust posted and distributed at 09:30 BST on 2025-07-22.",
+            "date": "2025-07-22"
+          }
+        ],
+        "founded": "1898",
+        "headquarters": "Harwick-on-Teal",
+        "industry": "Journalism and publishing",
+        "mission_statement": "To deliver accurate, timely and relevant local news while fostering civic engagement and accountability.",
+        "number_of_employees": "22",
+        "annual_revenue": "\u00a3260,000"
+      },
+      {
+        "id": "ORGANIZATION-5",
+        "name": "Teal Chronicle",
+        "entity_class": "organization",
+        "description": "An independent weekly magazine covering cultural life, local business, and community events across the Teal valley and surrounding towns.",
+        "type": "company",
+        "created_at": 1,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "Teal Chronicle received a circulated PDF of the Harwick Community Supporters' Trust's public letter on 2025-07-22 requesting financial and contract disclosures from Harwick Vale Rugby Club.",
+            "date": "2025-07-22"
+          }
+        ],
+        "founded": "2014",
+        "headquarters": "Tealbridge",
+        "industry": "Print and digital media",
+        "mission_statement": "To document and celebrate local culture, support small enterprises, and provide thoughtful reporting on civic issues.",
+        "number_of_employees": "12",
+        "annual_revenue": "\u00a3140,000"
+      },
+      {
+        "id": "ORGANIZATION-6",
+        "name": "Vale FM",
+        "entity_class": "organization",
+        "description": "A community radio broadcaster offering a mix of local news, music programming and volunteer-led shows aimed at connecting neighbourhoods across the Vale region.",
+        "type": "non-profit",
+        "created_at": 1,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "Vale FM was emailed a PDF copy of the Harwick Community Supporters' Trust public letter on 2025-07-22 and was listed among local outlets the Trust notified about its disclosure request.",
+            "date": "2025-07-22"
+          }
+        ],
+        "founded": "2008",
+        "headquarters": "Valeview",
+        "industry": "Broadcasting",
+        "mission_statement": "To provide accessible on-air and online programming that reflects local tastes, supports community voices, and promotes civic participation.",
+        "number_of_employees": "9",
+        "annual_revenue": "\u00a375,000"
+      }
+    ],
+    "FICTIONAL_NEW_LOCATIONS": [],
+    "FICTIONAL_NEW_PRODUCTS": [],
+    "FICTIONAL_NEW_ARTS": [],
+    "FICTIONAL_NEW_BUILDINGS": [],
+    "FICTIONAL_NEW_EVENTS": [],
+    "FICTIONAL_NEW_MISCELLANEOUSS": [],
+    "USED-ALL-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Cormac Halloway",
+        "entity_class": "person",
+        "description": "Driven and community-minded leader known for a high work ethic, strong discipline, and a focus on mentoring younger athletes while pursuing a long-term playing career.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Cormac Halloway signed a four-season contract extension with Harwick Vale Rugby Club (effective from the 2025-26 season through 2028-29), with his annual salary raised to \u00a395,000 and a \u00a320,000-per-season leadership bonus payable quarterly; the contract was registered with the Elmstone Regional Rugby Championship on 15 July 2025.",
+            "date": "2025-07-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Cormac Halloway issued a brief statement via Harwick Vale Rugby Club on 2025-07-22 saying he will cooperate with transparency measures and is available to meet Harwick Community Supporters' Trust representatives once the club and competition offices clarify what can be shared publicly.",
+            "date": "2025-07-22"
+          }
+        ],
+        "date_of_birth": "1994-03-12",
+        "gender": "Male",
+        "profession": "Professional rugby player",
+        "nationality": "Ardenia",
+        "education": "Bachelor of Sports Science, St. Lysander University",
+        "height": "1.88 m",
+        "weight": "102 kg",
+        "eye_color": "Green",
+        "hair_color": "Dark brown",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Marina Kestrel",
+        "entity_class": "person",
+        "description": "Strategic and pragmatic administrator with a focus on sustainable club development, youth pathways, and pragmatic financial planning.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Marina Kestrel, director of Harwick Vale Rugby Club, announced the retention of Cormac Halloway at a media briefing and highlighted his leadership, mentoring of younger players, and role in the club's player-development pathway.",
+            "date": "2025-07-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Marina Kestrel, director of Harwick Vale Rugby Club, instructed the club's finance team to prepare a redacted summary of the 2025 operating budget and to engage directly with Harwick Community Supporters' Trust, proposing meeting dates within ten working days (action reported 2025-07-22).",
+            "date": "2025-07-22"
+          }
+        ],
+        "date_of_birth": "1979-11-28",
+        "gender": "Female",
+        "profession": "Sports director",
+        "nationality": "Calderia",
+        "education": "MBA, Northcliff Business School",
+        "height": "1.70 m",
+        "weight": "63 kg",
+        "eye_color": "Hazel",
+        "hair_color": "Salt-and-pepper",
+        "political_affiliation": "Centrist Progressive League",
+        "marital_status": "Married"
+      }
+    ],
+    "USED_PERSON_XML": "<person><created_at>0</created_at><date_of_birth>1994-03-12</date_of_birth><description>Driven and community-minded leader known for a high work ethic, strong discipline, and a focus on mentoring younger athletes while pursuing a long-term playing career.</description><education>Bachelor of Sports Science, St. Lysander University</education><entity_class>person</entity_class><eye_color>Green</eye_color><gender>Male</gender><hair_color>Dark brown</hair_color><height>1.88 m</height><history><event>2025-07-15: Cormac Halloway signed a four-season contract extension with Harwick Vale Rugby Club (effective from the 2025-26 season through 2028-29), with his annual salary raised to \u00a395,000 and a \u00a320,000-per-season leadership bonus payable quarterly; the contract was registered with the Elmstone Regional Rugby Championship on 15 July 2025.</event></history><id>PERSON-1</id><last_updated>2025-07-15</last_updated><marital_status>Single</marital_status><name>Cormac Halloway</name><nationality>Ardenia</nationality><profession>Professional rugby player</profession><type>None</type><weight>102 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>1979-11-28</date_of_birth><description>Strategic and pragmatic administrator with a focus on sustainable club development, youth pathways, and pragmatic financial planning.</description><education>MBA, Northcliff Business School</education><entity_class>person</entity_class><eye_color>Hazel</eye_color><gender>Female</gender><hair_color>Salt-and-pepper</hair_color><height>1.70 m</height><history><event>2025-07-15: Marina Kestrel, director of Harwick Vale Rugby Club, announced the retention of Cormac Halloway at a media briefing and highlighted his leadership, mentoring of younger players, and role in the club's player-development pathway.</event></history><id>PERSON-2</id><last_updated>2025-07-15</last_updated><marital_status>Married</marital_status><name>Marina Kestrel</name><nationality>Calderia</nationality><political_affiliation>Centrist Progressive League</political_affiliation><profession>Sports director</profession><type>None</type><weight>63 kg</weight></person>",
+    "USED-ALL-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Harwick Vale Rugby Club",
+        "entity_class": "organization",
+        "description": "Community-rooted rugby club with a long history of developing regional talent and maintaining strong local engagement.",
+        "type": "non-profit sports club",
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Harwick Vale Rugby Club announced Cormac Halloway's four-season extension, hosted a media briefing at its training ground, confirmed the salary and leadership-bonus terms, arranged a one-year front-of-shirt sponsorship with Northbridge Brewing (reported at ~\u00a365,000) to help balance the 2025 operating budget, and promoted academy player Jules Renby to the senior squad; the club submitted amended squad and financial disclosures for registration on 15 July 2025.",
+            "date": "2025-07-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Harwick Vale Rugby Club acknowledged receipt of the Harwick Community Supporters' Trust letter on 2025-07-22, said it would consult legal and financial advisers about commercially sensitive information, and tasked its finance team with preparing a redacted 2025 operating-budget summary and meeting proposals for the Trust.",
+            "date": "2025-07-22"
+          }
+        ],
+        "founded": "1924",
+        "headquarters": "Harwick-on-Teal",
+        "industry": "Sports (rugby union)",
+        "mission_statement": "To develop local athletic talent, promote community participation in sport, and sustain a competitive club culture.",
+        "number_of_employees": "42",
+        "annual_revenue": "\u00a31,200,000"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Northbridge Brewing",
+        "entity_class": "organization",
+        "description": "Regional craft brewery producing traditional ales and partnering with local businesses for community events and hospitality.",
+        "type": "company",
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Northbridge Brewing agreed a one-year front-of-shirt sponsorship with Harwick Vale Rugby Club reported to be worth approximately \u00a365,000 and including co-promotional activities on two home matchdays.",
+            "date": "2025-07-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Northbridge Brewing's one-year front-of-shirt sponsorship with Harwick Vale Rugby Club was the subject of a disclosure request in the Trust's public letter of 2025-07-22, which asked for the sponsorship value, payment schedule and any in-kind elements.",
+            "date": "2025-07-22"
+          }
+        ],
+        "founded": "2011",
+        "headquarters": "Northbridge",
+        "industry": "Beverage (craft brewing)",
+        "mission_statement": "To craft approachable, locally inspired beers while supporting regional hospitality and events.",
+        "number_of_employees": "25",
+        "annual_revenue": "\u00a31,100,000"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Harwick Community Supporters' Trust",
+        "entity_class": "organization",
+        "description": "A member-led trust that advocates for supporter representation, financial transparency, and community involvement in the governance of local sporting and leisure facilities.",
+        "type": "non-profit",
+        "created_at": 1,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "Harwick Community Supporters' Trust published a dated public letter on 2025-07-22 requesting detailed disclosure of Harwick Vale Rugby Club's 2025 operating budget and the full terms of Cormac Halloway's contract extension, set a 14-day deadline to 2025-08-05 and warned it would file a formal compliance complaint with Elmstone Regional Rugby Council if unsatisfied.",
+            "date": "2025-07-22"
+          }
+        ],
+        "founded": "2012",
+        "headquarters": "Harwick-on-Teal",
+        "industry": "Community advocacy",
+        "mission_statement": "To represent season-ticket holders and local members by promoting transparent decision-making, safeguarding community access to sport, and supporting sustainable club stewardship.",
+        "number_of_employees": "6",
+        "annual_revenue": "\u00a342,000"
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "Harwick Gazette",
+        "entity_class": "organization",
+        "description": "A local daily newspaper focused on neighbourhood reporting, public affairs, and community features across the Harwick region.",
+        "type": "company",
+        "created_at": 1,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "Harwick Gazette was one of the local media outlets sent a PDF copy of the Harwick Community Supporters' Trust public letter, which the Trust posted and distributed at 09:30 BST on 2025-07-22.",
+            "date": "2025-07-22"
+          }
+        ],
+        "founded": "1898",
+        "headquarters": "Harwick-on-Teal",
+        "industry": "Journalism and publishing",
+        "mission_statement": "To deliver accurate, timely and relevant local news while fostering civic engagement and accountability.",
+        "number_of_employees": "22",
+        "annual_revenue": "\u00a3260,000"
+      },
+      {
+        "id": "ORGANIZATION-5",
+        "name": "Teal Chronicle",
+        "entity_class": "organization",
+        "description": "An independent weekly magazine covering cultural life, local business, and community events across the Teal valley and surrounding towns.",
+        "type": "company",
+        "created_at": 1,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "Teal Chronicle received a circulated PDF of the Harwick Community Supporters' Trust's public letter on 2025-07-22 requesting financial and contract disclosures from Harwick Vale Rugby Club.",
+            "date": "2025-07-22"
+          }
+        ],
+        "founded": "2014",
+        "headquarters": "Tealbridge",
+        "industry": "Print and digital media",
+        "mission_statement": "To document and celebrate local culture, support small enterprises, and provide thoughtful reporting on civic issues.",
+        "number_of_employees": "12",
+        "annual_revenue": "\u00a3140,000"
+      },
+      {
+        "id": "ORGANIZATION-6",
+        "name": "Vale FM",
+        "entity_class": "organization",
+        "description": "A community radio broadcaster offering a mix of local news, music programming and volunteer-led shows aimed at connecting neighbourhoods across the Vale region.",
+        "type": "non-profit",
+        "created_at": 1,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "Vale FM was emailed a PDF copy of the Harwick Community Supporters' Trust public letter on 2025-07-22 and was listed among local outlets the Trust notified about its disclosure request.",
+            "date": "2025-07-22"
+          }
+        ],
+        "founded": "2008",
+        "headquarters": "Valeview",
+        "industry": "Broadcasting",
+        "mission_statement": "To provide accessible on-air and online programming that reflects local tastes, supports community voices, and promotes civic participation.",
+        "number_of_employees": "9",
+        "annual_revenue": "\u00a375,000"
+      }
+    ],
+    "USED_ORGANIZATION_XML": "<organization><annual_revenue>\u00a31,200,000</annual_revenue><created_at>0</created_at><description>Community-rooted rugby club with a long history of developing regional talent and maintaining strong local engagement.</description><entity_class>organization</entity_class><founded>1924</founded><headquarters>Harwick-on-Teal</headquarters><history><event>2025-07-15: Harwick Vale Rugby Club announced Cormac Halloway's four-season extension, hosted a media briefing at its training ground, confirmed the salary and leadership-bonus terms, arranged a one-year front-of-shirt sponsorship with Northbridge Brewing (reported at ~\u00a365,000) to help balance the 2025 operating budget, and promoted academy player Jules Renby to the senior squad; the club submitted amended squad and financial disclosures for registration on 15 July 2025.</event></history><id>ORGANIZATION-1</id><industry>Sports (rugby union)</industry><last_updated>2025-07-15</last_updated><mission_statement>To develop local athletic talent, promote community participation in sport, and sustain a competitive club culture.</mission_statement><name>Harwick Vale Rugby Club</name><number_of_employees>42</number_of_employees><type>non-profit sports club</type></organization>\n<organization><annual_revenue>\u00a31,100,000</annual_revenue><created_at>0</created_at><description>Regional craft brewery producing traditional ales and partnering with local businesses for community events and hospitality.</description><entity_class>organization</entity_class><founded>2011</founded><headquarters>Northbridge</headquarters><history><event>2025-07-15: Northbridge Brewing agreed a one-year front-of-shirt sponsorship with Harwick Vale Rugby Club reported to be worth approximately \u00a365,000 and including co-promotional activities on two home matchdays.</event></history><id>ORGANIZATION-2</id><industry>Beverage (craft brewing)</industry><last_updated>2025-07-15</last_updated><mission_statement>To craft approachable, locally inspired beers while supporting regional hospitality and events.</mission_statement><name>Northbridge Brewing</name><number_of_employees>25</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>\u00a342,000</annual_revenue><created_at>1</created_at><description>A member-led trust that advocates for supporter representation, financial transparency, and community involvement in the governance of local sporting and leisure facilities.</description><entity_class>organization</entity_class><founded>2012</founded><headquarters>Harwick-on-Teal</headquarters><history></history><id>ORGANIZATION-3</id><industry>Community advocacy</industry><last_updated>2025-07-22</last_updated><mission_statement>To represent season-ticket holders and local members by promoting transparent decision-making, safeguarding community access to sport, and supporting sustainable club stewardship.</mission_statement><name>Harwick Community Supporters' Trust</name><number_of_employees>6</number_of_employees><type>non-profit</type></organization>\n<organization><annual_revenue>\u00a3260,000</annual_revenue><created_at>1</created_at><description>A local daily newspaper focused on neighbourhood reporting, public affairs, and community features across the Harwick region.</description><entity_class>organization</entity_class><founded>1898</founded><headquarters>Harwick-on-Teal</headquarters><history></history><id>ORGANIZATION-4</id><industry>Journalism and publishing</industry><last_updated>2025-07-22</last_updated><mission_statement>To deliver accurate, timely and relevant local news while fostering civic engagement and accountability.</mission_statement><name>Harwick Gazette</name><number_of_employees>22</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>\u00a3140,000</annual_revenue><created_at>1</created_at><description>An independent weekly magazine covering cultural life, local business, and community events across the Teal valley and surrounding towns.</description><entity_class>organization</entity_class><founded>2014</founded><headquarters>Tealbridge</headquarters><history></history><id>ORGANIZATION-5</id><industry>Print and digital media</industry><last_updated>2025-07-22</last_updated><mission_statement>To document and celebrate local culture, support small enterprises, and provide thoughtful reporting on civic issues.</mission_statement><name>Teal Chronicle</name><number_of_employees>12</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>\u00a375,000</annual_revenue><created_at>1</created_at><description>A community radio broadcaster offering a mix of local news, music programming and volunteer-led shows aimed at connecting neighbourhoods across the Vale region.</description><entity_class>organization</entity_class><founded>2008</founded><headquarters>Valeview</headquarters><history></history><id>ORGANIZATION-6</id><industry>Broadcasting</industry><last_updated>2025-07-22</last_updated><mission_statement>To provide accessible on-air and online programming that reflects local tastes, supports community voices, and promotes civic participation.</mission_statement><name>Vale FM</name><number_of_employees>9</number_of_employees><type>non-profit</type></organization>",
+    "USED-ALL-LOCATION": [],
+    "USED_LOCATION_XML": "",
+    "USED-ALL-PRODUCT": [],
+    "USED_PRODUCT_XML": "",
+    "USED-ALL-ART": [],
+    "USED_ART_XML": "",
+    "USED-ALL-BUILDING": [],
+    "USED_BUILDING_XML": "",
+    "USED-ALL-EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "Elmstone Regional Rugby Championship",
+        "entity_class": "event",
+        "description": "Seasonal regional rugby competition that brings together semi-professional clubs across the Elmstone area in a structured league format.",
+        "type": "sporting",
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Elmstone Regional Rugby Championship registered Cormac Halloway's contract extension on 15 July 2025 and confirmed the contract met the competition's salary-cap and registration requirements.",
+            "date": "2025-07-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "The Elmstone Regional Rugby Championship was cited as the relevant competition office for compliance matters in the correspondence; the Championship had previously registered Cormac Halloway's contract extension on 2025-07-15.",
+            "date": "2025-07-22"
+          }
+        ],
+        "date": "Annual (season runs September\u2013May)",
+        "duration": "9 months",
+        "organizer": "Elmstone Regional Rugby Council",
+        "number_of_participants": "12 clubs",
+        "budget": "\u00a3450,000"
+      }
+    ],
+    "USED_EVENT_XML": "<event><budget>\u00a3450,000</budget><created_at>0</created_at><date>Annual (season runs September\u2013May)</date><description>Seasonal regional rugby competition that brings together semi-professional clubs across the Elmstone area in a structured league format.</description><duration>9 months</duration><entity_class>event</entity_class><history><event>2025-07-15: The Elmstone Regional Rugby Championship registered Cormac Halloway's contract extension on 15 July 2025 and confirmed the contract met the competition's salary-cap and registration requirements.</event></history><id>EVENT-1</id><last_updated>2025-07-15</last_updated><name>Elmstone Regional Rugby Championship</name><number_of_participants>12 clubs</number_of_participants><organizer>Elmstone Regional Rugby Council</organizer><type>sporting</type></event>",
+    "USED-ALL-MISCELLANEOUS": [],
+    "USED_MISCELLANEOUS_XML": "",
+    "USED_ENTITIES": [
+      {
+        "id": "PERSON-1",
+        "name": "Cormac Halloway",
+        "entity_type": "person",
+        "new": false
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Marina Kestrel",
+        "entity_type": "person",
+        "new": false
+      },
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Harwick Vale Rugby Club",
+        "entity_type": "organization",
+        "new": false
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Northbridge Brewing",
+        "entity_type": "organization",
+        "new": false
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Harwick Community Supporters' Trust",
+        "entity_type": "organization",
+        "new": true
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "Harwick Gazette",
+        "entity_type": "organization",
+        "new": true
+      },
+      {
+        "id": "ORGANIZATION-5",
+        "name": "Teal Chronicle",
+        "entity_type": "organization",
+        "new": true
+      },
+      {
+        "id": "ORGANIZATION-6",
+        "name": "Vale FM",
+        "entity_type": "organization",
+        "new": true
+      },
+      {
+        "id": "EVENT-1",
+        "name": "Elmstone Regional Rugby Championship",
+        "entity_type": "event",
+        "new": false
+      }
+    ],
+    "TMP_PERSON_UPDATES": [
+      {
+        "entity_id": "PERSON-1",
+        "update": "Cormac Halloway issued a brief statement via Harwick Vale Rugby Club on 2025-07-22 saying he will cooperate with transparency measures and is available to meet Harwick Community Supporters' Trust representatives once the club and competition offices clarify what can be shared publicly.",
+        "last_updated": "2025-07-22"
+      },
+      {
+        "entity_id": "PERSON-2",
+        "update": "Marina Kestrel, director of Harwick Vale Rugby Club, instructed the club's finance team to prepare a redacted summary of the 2025 operating budget and to engage directly with Harwick Community Supporters' Trust, proposing meeting dates within ten working days (action reported 2025-07-22).",
+        "last_updated": "2025-07-22"
+      }
+    ],
+    "TMP_ORGANIZATION_UPDATES": [
+      {
+        "entity_id": "ORGANIZATION-1",
+        "update": "Harwick Vale Rugby Club acknowledged receipt of the Harwick Community Supporters' Trust letter on 2025-07-22, said it would consult legal and financial advisers about commercially sensitive information, and tasked its finance team with preparing a redacted 2025 operating-budget summary and meeting proposals for the Trust.",
+        "last_updated": "2025-07-22"
+      },
+      {
+        "entity_id": "ORGANIZATION-2",
+        "update": "Northbridge Brewing's one-year front-of-shirt sponsorship with Harwick Vale Rugby Club was the subject of a disclosure request in the Trust's public letter of 2025-07-22, which asked for the sponsorship value, payment schedule and any in-kind elements."
+      },
+      {
+        "entity_id": "ORGANIZATION-3",
+        "update": "Harwick Community Supporters' Trust published a dated public letter on 2025-07-22 requesting detailed disclosure of Harwick Vale Rugby Club's 2025 operating budget and the full terms of Cormac Halloway's contract extension, set a 14-day deadline to 2025-08-05 and warned it would file a formal compliance complaint with Elmstone Regional Rugby Council if unsatisfied."
+      },
+      {
+        "entity_id": "ORGANIZATION-4",
+        "update": "Harwick Gazette was one of the local media outlets sent a PDF copy of the Harwick Community Supporters' Trust public letter, which the Trust posted and distributed at 09:30 BST on 2025-07-22."
+      },
+      {
+        "entity_id": "ORGANIZATION-5",
+        "update": "Teal Chronicle received a circulated PDF of the Harwick Community Supporters' Trust's public letter on 2025-07-22 requesting financial and contract disclosures from Harwick Vale Rugby Club."
+      },
+      {
+        "entity_id": "ORGANIZATION-6",
+        "update": "Vale FM was emailed a PDF copy of the Harwick Community Supporters' Trust public letter on 2025-07-22 and was listed among local outlets the Trust notified about its disclosure request."
+      }
+    ],
+    "TMP_LOCATION_UPDATES": [],
+    "TMP_PRODUCT_UPDATES": [],
+    "TMP_ART_UPDATES": [],
+    "TMP_BUILDING_UPDATES": [],
+    "TMP_EVENT_UPDATES": [
+      {
+        "entity_id": "EVENT-1",
+        "update": "The Elmstone Regional Rugby Championship was cited as the relevant competition office for compliance matters in the correspondence; the Championship had previously registered Cormac Halloway's contract extension on 2025-07-15."
+      }
+    ],
+    "TMP_MISCELLANEOUS_UPDATES": [],
+    "PERSON_UPDATES": [
+      {
+        "entity_id": "PERSON-1",
+        "last_updated": "2025-07-22"
+      },
+      {
+        "entity_id": "PERSON-2",
+        "last_updated": "2025-07-22"
+      }
+    ],
+    "ORGANIZATION_UPDATES": [
+      {
+        "entity_id": "ORGANIZATION-1",
+        "last_updated": "2025-07-22"
+      },
+      {
+        "entity_id": "ORGANIZATION-2"
+      },
+      {
+        "entity_id": "ORGANIZATION-3"
+      },
+      {
+        "entity_id": "ORGANIZATION-4"
+      },
+      {
+        "entity_id": "ORGANIZATION-5"
+      },
+      {
+        "entity_id": "ORGANIZATION-6"
+      }
+    ],
+    "LOCATION_UPDATES": [],
+    "PRODUCT_UPDATES": [],
+    "ART_UPDATES": [],
+    "BUILDING_UPDATES": [],
+    "EVENT_UPDATES": [
+      {
+        "entity_id": "EVENT-1"
+      }
+    ],
+    "MISCELLANEOUS_UPDATES": [],
+    "NUMBER_SUMMARIES": 4,
+    "CONTINUATIONS": [
+      {
+        "text": "Harwick Vale Rugby Club published a redacted summary of its 2025 operating budget and proposed meeting dates for the Harwick Community Supporters' Trust after legal and financial review.",
+        "date": "2025-07-29"
+      },
+      {
+        "text": "Northbridge Brewing issued a statement to local media clarifying the one-year front-of-shirt sponsorship value, its payment timetable and the two-match co-promotional commitments referenced in the club's disclosures.",
+        "date": "2025-07-27"
+      },
+      {
+        "text": "Cormac Halloway met informally with two representatives of the Harwick Community Supporters' Trust for a moderated community Q&A in which he reiterated his willingness to cooperate and outlined mentoring plans for promoted academy players.",
+        "date": "2025-07-31"
+      },
+      {
+        "text": "After judging the club's redacted disclosures insufficient, the Harwick Community Supporters' Trust filed a formal compliance complaint with the Elmstone Regional Rugby Council requesting review of Harwick Vale's 2025 financial disclosures and the captain's contract terms.",
+        "date": "2025-08-05"
+      }
+    ],
+    "CONTINUATION": {
+      "summary": "Cormac Halloway met informally with two representatives of the Harwick Community Supporters' Trust for a moderated community Q&A in which he reiterated his willingness to cooperate and outlined mentoring plans for promoted academy players.",
+      "last_date": "2025-07-22",
+      "continuation_date": "2025-07-31"
+    },
+    "CONTINUATION_TEXT": "Cormac Halloway met informally with two representatives of the Harwick Community Supporters' Trust for a moderated community Q&A in which he reiterated his willingness to cooperate and outlined mentoring plans for promoted academy players.",
+    "CONTINUATION_DATE": "2025-07-31",
+    "NUM_ALTERNATIVES": 3
+  },
+  "critiques": [
+    {
+      "critique": "<results>\n<thought_process>\n[Your explanation of the thought process, including identification of known followup events and verification of consistency]\n</thought_process>\n<summaries>\n<summary>\n<text>[First alternative summary]</text>\n<date>[Date of the event]</date>\n</summary>\n<summary>\n<text>[Second alternative summary]</text>\n<date>[Date of the event]</date>\n</summary>\n[Additional summaries as needed]\n</summaries>\n</results>\nEnsure that special characters within the XML nodes (like \"&\") are properly escaped and encoded in UTF-8 to ensure the output can be parsed automatically. For example, instead of \"Q&A\" write \"Q&amp;A\".",
+      "response": "<results>\n<thought_process>\nKnown follow-up events considered: the Harwick Community Supporters' Trust published a disclosure request on 2025-07-22 with a 14-day deadline to 2025-08-05; Harwick Vale Rugby Club acknowledged the request and instructed its finance team to prepare a redacted 2025 operating-budget summary and propose meeting dates; Cormac Halloway stated on 2025-07-22 he would cooperate and was available to meet Trust representatives; the Elmstone Regional Rugby Championship registered Halloway's contract on 2025-07-15. A meeting on 2025-07-31 is consistent with these timelines. I produced three plausible, mutually exclusive continuations for 2025-07-31 (each alters what Halloway provided or agreed to) while keeping the same central subject, a constructive/neutral stance, and a local low\u2013medium impact.\n</thought_process>\n<summaries>\n<summary>\n<text>Cormac Halloway met informally with two representatives of the Harwick Community Supporters' Trust for a moderated community Q&amp;A, reiterated his willingness to cooperate and handed over a written, redacted outline of the leadership-bonus criteria alongside his mentoring plan for promoted academy players, which the Trust said addressed several transparency concerns.</text>\n<date>2025-07-31</date>\n</summary>\n<summary>\n<text>Cormac Halloway met informally with two representatives of the Harwick Community Supporters' Trust for a moderated community Q&amp;A, reiterated his willingness to cooperate and announced a schedule of weekly open coaching sessions for promoted academy players while deferring contractual and budgetary questions to the club and competition compliance offices.</text>\n<date>2025-07-31</date>\n</summary>\n<summary>\n<text>Cormac Halloway met informally with two representatives of the Harwick Community Supporters' Trust for a moderated community Q&amp;A, reiterated his willingness to cooperate and agreed to join an independent liaison panel with club finance and Trust members to oversee publication of a redacted 2025 operating-budget summary and review the leadership-bonus triggers.</text>\n<date>2025-07-31</date>\n</summary>\n</summaries>\n</results>"
+    }
+  ]
+}

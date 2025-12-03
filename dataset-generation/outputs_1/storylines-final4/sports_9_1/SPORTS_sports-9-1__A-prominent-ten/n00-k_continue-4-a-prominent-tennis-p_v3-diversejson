@@ -1,0 +1,2282 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "microsoft/phi-4-reasoning-plus",
+    "temperature": 1.0,
+    "max-tokens": 4096
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "<results>\n<thought_process>\nThe history outlines Samantha Lapierre's return to tennis, particularly focusing on the upcoming Hilda Valley Championships and her match against Isabella Torres. The last known event date is September 15, 2023, with the premier match set for September 20, 2023. We need to create plausible continuations that occur between these dates or slightly after, involving the main entities like Samantha Lapierre, Isabella Torres, the Premier Sports Medicine Institute, and the Hilda Valley Sports Complex. Important factors include Samantha's preparation and recovery, the buildup to the match, the local community's response, and the venue's activities. Potential story directions include both positive (successful return, community support) and negative (complications, setbacks). \n</thought_process>\n\n<summaries>\n\n<summary>\n<text>Following a rigorous training session at the Hilda Valley Sports Complex, Samantha Lapierre attends a press conference on September 18, 2023, expressing her eagerness and optimism ahead of her championship match.</text>\n<date>September 18, 2023</date>\n</summary>\n\n<summary>\n<text>On September 19, 2023, excitement swells around Hilda Valley as local businesses see a record increase in pre-match visitors, experiencing a 30% boost in sales compared to previous tournaments.</text>\n<date>September 19, 2023</date>\n</summary>\n\n<summary>\n<text>The Premier Sports Medicine Institute honors the groundbreaking shoulder rehabilitation technique developed by Dr. Theodore Frazer during a private event on September 17, 2023, attended by notable sports figures.</text>\n<date>September 17, 2023</date>\n</summary>\n\n<summary>\n<text>Tensions rise on September 19, 2023, as Isabella Torres reveals a minor wrist complaint impacting her pre-match practice but insists she remains fit for the highly anticipated match against Samantha Lapierre.</text>\n<date>September 19, 2023</date>\n</summary>\n\n</summaries>\n</results>"
+  },
+  "response": "<results>\n<thought_process>\nThe history outlines Samantha Lapierre's return to tennis, particularly focusing on the upcoming Hilda Valley Championships and her match against Isabella Torres. The last known event date is September 15, 2023, with the premier match set for September 20, 2023. We need to create plausible continuations that occur between these dates or slightly after, involving the main entities like Samantha Lapierre, Isabella Torres, the Premier Sports Medicine Institute, and the Hilda Valley Sports Complex. Important factors include Samantha's preparation and recovery, the buildup to the match, the local community's response, and the venue's activities. Potential story directions include both positive (successful return, community support) and negative (complications, setbacks). \n</thought_process>\n\n<summaries>\n\n<summary>\n<text>Following a rigorous training session at the Hilda Valley Sports Complex, Samantha Lapierre attends a press conference on September 18, 2023, expressing her eagerness and optimism ahead of her championship match.</text>\n<date>September 18, 2023</date>\n</summary>\n\n<summary>\n<text>On September 19, 2023, excitement swells around Hilda Valley as local businesses see a record increase in pre-match visitors, experiencing a 30% boost in sales compared to previous tournaments.</text>\n<date>September 19, 2023</date>\n</summary>\n\n<summary>\n<text>The Premier Sports Medicine Institute honors the groundbreaking shoulder rehabilitation technique developed by Dr. Theodore Frazer during a private event on September 17, 2023, attended by notable sports figures.</text>\n<date>September 17, 2023</date>\n</summary>\n\n<summary>\n<text>Tensions rise on September 19, 2023, as Isabella Torres reveals a minor wrist complaint impacting her pre-match practice but insists she remains fit for the highly anticipated match against Samantha Lapierre.</text>\n<date>September 19, 2023</date>\n</summary>\n\n</summaries>\n</results>",
+  "instructions": "You are an AI tasked with creating fictional future news summaries based on provided information. Your goal is to generate plausible continuations of an existing narrative. Follow these instructions carefully:\n\n1. First, you will be given known entities in this fictional world. These will be provided in the following format:\n<known_entities>\n{{LOCATIONS_XML}}\n{{PERSONS_XML}}\n{{ORGANIZATIONS_XML}}\n{{PRODUCTS_XML}}\n{{ARTS_XML}}\n{{EVENTS_XML}}\n{{BUILDINGS_XML}}\n{{MISCELLANEOUSS_XML}}\n</known_entities>\n\n2. Next, you will be provided with the history of events that have already occurred in this fictional world:\n\n<history>\n{{HISTORY_XML}}\n</history>\n\n3. Your task is to create {{NUMBER_SUMMARIES}} new summaries that describe future fictional events following the last event from the <history>. These new summaries should be consistent with the existing story and represent plausible continuations or developments of the original narrative.\n\n4. For each summary, create:\n   a. A summary text (a single concise sentence)\n   b. The date on which this fictional next event happens\n\n5. Before starting, check if the history of events indicates specific dates for followup events. Ensure your continuations are consistent with these expected followup events. All your summaries must either concern this event, or happen before this event.\n\n6. Make sure that each summary you generate focuses on at least one of the main named entities from the history of events.\n\n7. Follow these guidelines when creating your summaries:\n   a. Ensure all summaries are fictional and not based on real events or real people.\n   b. Make the summaries sound realistic and plausible as follow-up stories to the previous outlines. \n   c. Think about plausible next events based on the fictional named entities, the history of the past fictional events and the genre {{GENRE}}. \n   d. Create summaries that are unbiased and objective in tone.\n   e. Each summary MUST BE ONLY A SINGLE concise sentence.\n   f. Summaries may focus on different personas or organizations from the provided lists.\n   g. Ensure a balance of positive and negative news stories, developments, and alternative scenarios.\n   h. Consider various dimensions or personas that could be varied when generating diverse summaries.\n\nTry to be diverse in the summaries you generate. Consider different plausible substories and vary:\n- between impact: Try to create various low-impact next events, but you may also at times mix in an event with a slightly higher impact.\n- between directions: Vary between positive and negative story developments. Think about how stories in the {{GENRE}} genre progress in the real-world, NOT in a novel. Provide various realistic alternatives for how the story may progress in either direction.\n- between different key named entities of the fictional story.\n\n8. Output format:\n   - Enclose each summary in <summary> tags.\n   - Each summary must have two child properties:\n     <text>[The generated summary]</text>\n     <date>[The date for the next event]</date>\n   - Before each summary, explain your thought process in <thought_process> tags. Make sure to identify all known followup events based on the provided history first, and verify that your continuations are consistent with these known followup events regarding the date.\n   - Output everything within a <results> root node.\n\n9. Special instructions:\n   - The history and entities have special formatting. They sometimes include statements like {[PHRASE]|[ID]}. Read it as [PHRASE], while the [ID] specifies the ID of the linked entity.\n   - Example: \"I met {Boris Bowman|PERSON-1} yesterday.\" Read as: \"I met Boris Bowman yesterday.\" (The ID of Boris Bowman is PERSON-1).\n   - DO NOT use the {[PHRASE]|[ID]} formulation when generating new summaries.\n   - Do not exaggerate the summaries. Avoid using words like \"groundbreaking\", \"worldwide\", \"global\". Keep the summaries realistic.\n   - Do not create summaries with global or national impact unless the genre specifically requires it. Instead, focus on smaller or local developments.\n   - Do not focus on technological discoveries or topics like AI tools, virtual reality, augmented reality, 3D-modelling, quantum computing, etc. You may include such topics only if they are HIGHLY relevant to the genre {{GENRE}} AND the provided history of events.\n   - Focus on realistic, meaningful summaries with specific details and developments that align with typical, realistic scenarios of the genre {{GENRE}}.\n\n10. Final reminders:\n   - Repeat this process for all {{NUMBER_SUMMARIES}} summaries.\n   - Ensure that each summary explores a different aspect or potential next step of the fictional situation presented in the HISTORY.\n   - Each summary text MUST BE ONLY A SINGLE concise sentence.\n   - The continuations should be diverse in terms of high (at most one), medium and low impact, positive and negative story developments, etc., and can cover different alternatives of how the future event can play out.\n   - Do not enumerate over the summaries.\n   - When brainstorming future event summaries, carefully consider whether each continuation aligns with the provided history of events, provided named entities, and the genre {{GENRE}}. Before creating summaries with global or large-scale impact, double-check if such developments seem plausible based on how real-world events of this type would typically unfold. Focus on what fits the genre and provided history, ensuring that every dimension feels realistic and consistent with the context.\n\nRemember to maintain the desired format and brevity of the event summaries while creating plausible and engaging continuations of the narrative.\n\nHere's an example of the desired output format:\n\n<results>\n<thought_process>\n[This includes the thought process for all summaries.]\n</thought_process>\n\n<summaries>\n<summary>\n<text>[Your first summary text here]</text>\n<date>[Date for the first summary]</date>\n</summary>\n\n<summary>\n<text>[Your second summary text here]</text>\n<date>[Date for the second summary]</date>\n</summary>\n\n[... continue for all summaries ...]\n</summaries>\n</results>",
+  "text_prompt": "You are an AI tasked with creating fictional future news summaries based on provided information. Your goal is to generate plausible continuations of an existing narrative. Follow these instructions carefully:\n\n1. First, you will be given known entities in this fictional world. These will be provided in the following format:\n<known_entities>\n<location><area>105 square kilometers</area><country>France</country><created_at>0</created_at><description>Paris is a vibrant metropolis renowned for its iconic architecture, lively cultural scene, and status as a global hub for fashion and culinary arts.</description><entity_class>location</entity_class><history><event>2023-09-15: Paris is mentioned as the location where Samantha Lapierre's injury occurred during a Grand Slam event.</event></history><id>LOCATION-1</id><last_updated>2023-09-15</last_updated><name>Paris</name><population>2.2 million</population><type>city</type></location>\n<person><created_at>0</created_at><date_of_birth>1993-06-12</date_of_birth><description>Samantha Lapierre is a competitive athlete known for her determination and strategic prowess on the doubles tennis court.</description><education>Bachelor of Science in Kinesiology</education><entity_class>person</entity_class><eye_color>Hazel</eye_color><gender>Female</gender><hair_color>Brunette</hair_color><height>5'9\"</height><history><event>2023-09-15: Samantha Lapierre announced her return to professional tennis after recovering from a shoulder injury, with her comeback scheduled at the Hilda Valley Sports Complex.</event></history><id>PERSON-1</id><last_updated>2023-09-15</last_updated><marital_status>Single</marital_status><name>Samantha Lapierre</name><nationality>Canadian</nationality><political_affiliation>Nonpartisan</political_affiliation><profession>Tennis Player</profession><type>None</type><weight>145 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1975-10-08</date_of_birth><description>Dr. Theodore Frazer is an acclaimed orthopedic surgeon dedicated to advancing sports injury treatments and rehabilitation.</description><education>Doctor of Medicine (MD)</education><entity_class>person</entity_class><eye_color>Blue</eye_color><gender>Male</gender><hair_color>Light Brown</hair_color><height>6'1\"</height><history><event>2023-09-15: Dr. Theodore Frazer is credited with developing a new shoulder rehabilitation technique that aided Samantha Lapierre's recovery and return to tennis.</event></history><id>PERSON-2</id><last_updated>2023-09-15</last_updated><marital_status>Married</marital_status><name>Dr. Theodore Frazer</name><nationality>British</nationality><political_affiliation>Nonpartisan</political_affiliation><profession>Orthopedic Specialist</profession><spouse>Emily Frazer</spouse><type>None</type><weight>180 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1990-11-29</date_of_birth><description>Isabella Torres is a formidable singles player known for her explosive serving and tactical acumen on the tennis court.</description><education>Bachelor of Arts in Sports Management</education><entity_class>person</entity_class><eye_color>Green</eye_color><gender>Female</gender><hair_color>Russet Red</hair_color><height>5'7\"</height><history><event>2023-09-15: Isabella Torres is set to compete against Samantha Lapierre at the Hilda Valley Championships, adding excitement to the event.</event></history><id>PERSON-3</id><last_updated>2023-09-15</last_updated><marital_status>Engaged</marital_status><name>Isabella Torres</name><nationality>Spanish</nationality><political_affiliation>Nonpartisan</political_affiliation><profession>Tennis Player</profession><type>None</type><weight>130 lbs</weight></person>\n<organization><annual_revenue>10000000</annual_revenue><created_at>0</created_at><description>The Premier Sports Medicine Institute is a pioneering institution focused on developing cutting-edge therapies for athletes.</description><entity_class>organization</entity_class><founded>2008</founded><headquarters>Brighton United Kingdom</headquarters><history><event>2023-09-15: The Premier Sports Medicine Institute, where Dr. Theodore Frazer works, is recognized for its role in Samantha Lapierre's successful rehabilitation.</event></history><id>ORGANIZATION-1</id><industry>Sports Medicine</industry><last_updated>2023-09-15</last_updated><mission_statement>To innovate and enhance the recovery and performance of athletes worldwide.</mission_statement><name>Premier Sports Medicine Institute</name><number_of_employees>150</number_of_employees><type>Institution</type></organization>\n<organization><annual_revenue>1500000</annual_revenue><created_at>0</created_at><description>The Empower Tennis Foundation is dedicated to nurturing young tennis talent through financial support and training.</description><entity_class>organization</entity_class><founded>2015</founded><headquarters>Bogot\u00e1 in Colombia</headquarters><history><event>2023-09-15: Samantha Lapierre is participating in a charity event with the Empower Tennis Foundation to support aspiring youth athletes.</event></history><id>ORGANIZATION-2</id><industry>Sports Development</industry><last_updated>2023-09-15</last_updated><mission_statement>To provide opportunities and resources for aspiring young athletes.</mission_statement><name>Empower Tennis Foundation</name><number_of_employees>20</number_of_employees><type>Non-profit</type></organization>\n\n\n<event><budget>500000</budget><created_at>0</created_at><date>September 20 2023</date><description>The Hilda Valley Championships is an annual event that draws competitive tennis players from around the world to its historic venue.</description><duration>5 days</duration><entity_class>event</entity_class><history><event>2023-09-15: The Hilda Valley Championships, set for September 20, 2023, is anticipated to feature Samantha Lapierre's return match against Isabella Torres, drawing significant public interest.</event></history><id>EVENT-1</id><last_updated>2023-09-15</last_updated><name>Hilda Valley Championships</name><number_of_participants>64</number_of_participants><organizer>Chelmsford Tennis Association</organizer><type>Sporting</type></event>\n<event><budget>20000000</budget><created_at>0</created_at><date>July 2021</date><description>The 2021 Wimbledon Doubles Championship was a prestigious part of the grand slam series, celebrated globally for its high-level doubles competition.</description><duration>2 weeks</duration><entity_class>event</entity_class><history><event>2023-09-15: Samantha Lapierre's notable victory at the 2021 Wimbledon Doubles Championship is highlighted as part of her successful career history.</event></history><id>EVENT-2</id><last_updated>2023-09-15</last_updated><name>2021 Wimbledon Doubles Championship</name><type>Sporting</type></event>\n<building><architect>Lisa Montgomery</architect><capacity>10000</capacity><created_at>0</created_at><description>The Hilda Valley Sports Complex is a modern venue designed to host a diverse array of sports and community events.</description><entity_class>building</entity_class><floors>3</floors><height>15 meters</height><history><event>2023-09-15: The Hilda Valley Sports Complex is the venue for Samantha Lapierre's comeback match and has become a local hotspot for sporting events.</event></history><id>BUILDING-1</id><last_updated>2023-09-15</last_updated><material>Recycled Steel and Glass</material><name>Hilda Valley Sports Complex</name><type>Public</type><year_built>2022</year_built></building>\n\n</known_entities>\n\n2. Next, you will be provided with the history of events that have already occurred in this fictional world:\n\n<history>\n<event><date>2023-09-15</date><outline>On September 15, 2023, {Samantha Lapierre|PERSON-1}, a well-known tennis player known for her aggressive doubles play, announced her return to professional tournaments after a two-year hiatus due to a severe shoulder injury. {Samantha Lapierre|PERSON-1}'s injury occurred during a high-stakes match at the Grand Slam event in {Paris|LOCATION-1}, where she was leading her doubles partner by a set. Her comeback is scheduled to take place at the {Hilda Valley Sports Complex|BUILDING-1}, a new venue that opened last year and has become a local hotspot for sporting events. The {Hilda Valley Sports Complex|BUILDING-1} features state-of-the-art facilities, including an indoor tennis court with advanced lighting and seating for 5,000 spectators. Her return is supported by {Dr. Theodore Frazer|PERSON-2} of the {Premier Sports Medicine Institute|ORGANIZATION-1}, who has developed a new shoulder rehabilitation technique credited with {Samantha Lapierre|PERSON-1}\u2019s improved performance. {Dr. Theodore Frazer|PERSON-2}, a renowned orthopedic specialist, has previously worked with several Olympic athletes, enhancing his reputation in sports medicine. Before her injury, {Samantha Lapierre|PERSON-1} had competed in 12 international tournaments, making it to the semifinals in five, thus establishing herself as a force in women's doubles tennis. {Samantha Lapierre|PERSON-1}'s notable victories include a memorable win at the {2021 Wimbledon Doubles Championship|EVENT-2}, where she and her partner defeated top-seeded opponents in a thrilling match. {Samantha Lapierre|PERSON-1} announced her decision to make a comeback on social media, expressing that she felt \"more confident and energized than ever\" thanks to the advancements in sports medicine. {Samantha Lapierre|PERSON-1}'s social media announcement received over 50,000 likes and thousands of supportive comments from fans and fellow athletes within the first 24 hours. Local sports fans anticipate her match against renowned player {Isabella Torres|PERSON-3} at the upcoming {Hilda Valley Championships|EVENT-1}, a key event set to take place later this month. {Isabella Torres|PERSON-3}, known for her powerful serve and strategic gameplay, has been a dominant force in singles tennis, adding to the excitement of their anticipated match. Organizers of the {Hilda Valley Championships|EVENT-1} have witnessed a surge in ticket sales since {Samantha Lapierre|PERSON-1}'s announcement, indicating high public interest in her return. Local businesses near the {Hilda Valley Sports Complex|BUILDING-1} have reported increased foot traffic and sales, attributing the boost to the upcoming tennis event. {Samantha Lapierre|PERSON-1} stated in a recent interview with The Arena Gazette, \"I'm ready to prove that hard work and cutting-edge medical support can make a real difference.\" In the interview, {Samantha Lapierre|PERSON-1} also mentioned her gratitude towards her family and coaching team for their unwavering support throughout her recovery. In addition to her competitive schedule, {Samantha Lapierre|PERSON-1} will be participating in a local charity event, partnering with the {Empower Tennis Foundation|ORGANIZATION-2} to raise funds for aspiring youth athletes in her community. The {Empower Tennis Foundation|ORGANIZATION-2}, established in 2015, has supported over 200 young athletes by providing training equipment and coaching scholarships. The premier match at the {Hilda Valley Championships|EVENT-1} is set to take place on September 20, 2023, with extensive media coverage expected surrounding {Samantha Lapierre|PERSON-1}'s highly anticipated performance. Local television stations and sports networks have scheduled special segments to cover {Samantha Lapierre|PERSON-1}'s journey and her match against {Isabella Torres|PERSON-3}.</outline></event>\n</history>\n\n3. Your task is to create 4 new summaries that describe future fictional events following the last event from the <history>. These new summaries should be consistent with the existing story and represent plausible continuations or developments of the original narrative.\n\n4. For each summary, create:\n   a. A summary text (a single concise sentence)\n   b. The date on which this fictional next event happens\n\n5. Before starting, check if the history of events indicates specific dates for followup events. Ensure your continuations are consistent with these expected followup events. All your summaries must either concern this event, or happen before this event.\n\n6. Make sure that each summary you generate focuses on at least one of the main named entities from the history of events.\n\n7. Follow these guidelines when creating your summaries:\n   a. Ensure all summaries are fictional and not based on real events or real people.\n   b. Make the summaries sound realistic and plausible as follow-up stories to the previous outlines. \n   c. Think about plausible next events based on the fictional named entities, the history of the past fictional events and the genre Sports. \n   d. Create summaries that are unbiased and objective in tone.\n   e. Each summary MUST BE ONLY A SINGLE concise sentence.\n   f. Summaries may focus on different personas or organizations from the provided lists.\n   g. Ensure a balance of positive and negative news stories, developments, and alternative scenarios.\n   h. Consider various dimensions or personas that could be varied when generating diverse summaries.\n\nTry to be diverse in the summaries you generate. Consider different plausible substories and vary:\n- between impact: Try to create various low-impact next events, but you may also at times mix in an event with a slightly higher impact.\n- between directions: Vary between positive and negative story developments. Think about how stories in the Sports genre progress in the real-world, NOT in a novel. Provide various realistic alternatives for how the story may progress in either direction.\n- between different key named entities of the fictional story.\n\n8. Output format:\n   - Enclose each summary in <summary> tags.\n   - Each summary must have two child properties:\n     <text>[The generated summary]</text>\n     <date>[The date for the next event]</date>\n   - Before each summary, explain your thought process in <thought_process> tags. Make sure to identify all known followup events based on the provided history first, and verify that your continuations are consistent with these known followup events regarding the date.\n   - Output everything within a <results> root node.\n\n9. Special instructions:\n   - The history and entities have special formatting. They sometimes include statements like {[PHRASE]|[ID]}. Read it as [PHRASE], while the [ID] specifies the ID of the linked entity.\n   - Example: \"I met {Boris Bowman|PERSON-1} yesterday.\" Read as: \"I met Boris Bowman yesterday.\" (The ID of Boris Bowman is PERSON-1).\n   - DO NOT use the {[PHRASE]|[ID]} formulation when generating new summaries.\n   - Do not exaggerate the summaries. Avoid using words like \"groundbreaking\", \"worldwide\", \"global\". Keep the summaries realistic.\n   - Do not create summaries with global or national impact unless the genre specifically requires it. Instead, focus on smaller or local developments.\n   - Do not focus on technological discoveries or topics like AI tools, virtual reality, augmented reality, 3D-modelling, quantum computing, etc. You may include such topics only if they are HIGHLY relevant to the genre Sports AND the provided history of events.\n   - Focus on realistic, meaningful summaries with specific details and developments that align with typical, realistic scenarios of the genre Sports.\n\n10. Final reminders:\n   - Repeat this process for all 4 summaries.\n   - Ensure that each summary explores a different aspect or potential next step of the fictional situation presented in the HISTORY.\n   - Each summary text MUST BE ONLY A SINGLE concise sentence.\n   - The continuations should be diverse in terms of high (at most one), medium and low impact, positive and negative story developments, etc., and can cover different alternatives of how the future event can play out.\n   - Do not enumerate over the summaries.\n   - When brainstorming future event summaries, carefully consider whether each continuation aligns with the provided history of events, provided named entities, and the genre Sports. Before creating summaries with global or large-scale impact, double-check if such developments seem plausible based on how real-world events of this type would typically unfold. Focus on what fits the genre and provided history, ensuring that every dimension feels realistic and consistent with the context.\n\nRemember to maintain the desired format and brevity of the event summaries while creating plausible and engaging continuations of the narrative.\n\nHere's an example of the desired output format:\n\n<results>\n<thought_process>\n[This includes the thought process for all summaries.]\n</thought_process>\n\n<summaries>\n<summary>\n<text>[Your first summary text here]</text>\n<date>[Date for the first summary]</date>\n</summary>\n\n<summary>\n<text>[Your second summary text here]</text>\n<date>[Date for the second summary]</date>\n</summary>\n\n[... continue for all summaries ...]\n</summaries>\n</results>",
+  "system-prompt": null,
+  "values": {
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "GENRE": "Sports",
+    "HISTORIES": [
+      "<event><date>2023-09-15</date><outline>On September 15, 2023, {Samantha Lapierre|PERSON-1}, a well-known tennis player known for her aggressive doubles play, announced her return to professional tournaments after a two-year hiatus due to a severe shoulder injury. {Samantha Lapierre|PERSON-1}'s injury occurred during a high-stakes match at the Grand Slam event in {Paris|LOCATION-1}, where she was leading her doubles partner by a set. Her comeback is scheduled to take place at the {Hilda Valley Sports Complex|BUILDING-1}, a new venue that opened last year and has become a local hotspot for sporting events. The {Hilda Valley Sports Complex|BUILDING-1} features state-of-the-art facilities, including an indoor tennis court with advanced lighting and seating for 5,000 spectators. Her return is supported by {Dr. Theodore Frazer|PERSON-2} of the {Premier Sports Medicine Institute|ORGANIZATION-1}, who has developed a new shoulder rehabilitation technique credited with {Samantha Lapierre|PERSON-1}\u2019s improved performance. {Dr. Theodore Frazer|PERSON-2}, a renowned orthopedic specialist, has previously worked with several Olympic athletes, enhancing his reputation in sports medicine. Before her injury, {Samantha Lapierre|PERSON-1} had competed in 12 international tournaments, making it to the semifinals in five, thus establishing herself as a force in women's doubles tennis. {Samantha Lapierre|PERSON-1}'s notable victories include a memorable win at the {2021 Wimbledon Doubles Championship|EVENT-2}, where she and her partner defeated top-seeded opponents in a thrilling match. {Samantha Lapierre|PERSON-1} announced her decision to make a comeback on social media, expressing that she felt \"more confident and energized than ever\" thanks to the advancements in sports medicine. {Samantha Lapierre|PERSON-1}'s social media announcement received over 50,000 likes and thousands of supportive comments from fans and fellow athletes within the first 24 hours. Local sports fans anticipate her match against renowned player {Isabella Torres|PERSON-3} at the upcoming {Hilda Valley Championships|EVENT-1}, a key event set to take place later this month. {Isabella Torres|PERSON-3}, known for her powerful serve and strategic gameplay, has been a dominant force in singles tennis, adding to the excitement of their anticipated match. Organizers of the {Hilda Valley Championships|EVENT-1} have witnessed a surge in ticket sales since {Samantha Lapierre|PERSON-1}'s announcement, indicating high public interest in her return. Local businesses near the {Hilda Valley Sports Complex|BUILDING-1} have reported increased foot traffic and sales, attributing the boost to the upcoming tennis event. {Samantha Lapierre|PERSON-1} stated in a recent interview with The Arena Gazette, \"I'm ready to prove that hard work and cutting-edge medical support can make a real difference.\" In the interview, {Samantha Lapierre|PERSON-1} also mentioned her gratitude towards her family and coaching team for their unwavering support throughout her recovery. In addition to her competitive schedule, {Samantha Lapierre|PERSON-1} will be participating in a local charity event, partnering with the {Empower Tennis Foundation|ORGANIZATION-2} to raise funds for aspiring youth athletes in her community. The {Empower Tennis Foundation|ORGANIZATION-2}, established in 2015, has supported over 200 young athletes by providing training equipment and coaching scholarships. The premier match at the {Hilda Valley Championships|EVENT-1} is set to take place on September 20, 2023, with extensive media coverage expected surrounding {Samantha Lapierre|PERSON-1}'s highly anticipated performance. Local television stations and sports networks have scheduled special segments to cover {Samantha Lapierre|PERSON-1}'s journey and her match against {Isabella Torres|PERSON-3}.</outline></event>"
+    ],
+    "EVENT_SUMMARY": "A prominent tennis player is making a surprising comeback after a two-year hiatus, motivated by advancements in sports medicine that have improved her performance capabilities.",
+    "EVENT_SUMMARY_FOR_NAME": "A prominent tennis p",
+    "KEYWORDS": "",
+    "CREATED_AT": 0,
+    "NEXT_IDS": {
+      "person": 4,
+      "organization": 3,
+      "location": 2,
+      "product": 1,
+      "art": 1,
+      "building": 2,
+      "event": 3,
+      "miscellaneous": 1
+    },
+    "PROVIDED_DATE": "",
+    "PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Samantha Lapierre",
+        "entity_class": "person",
+        "description": "Samantha Lapierre is a competitive athlete known for her determination and strategic prowess on the doubles tennis court.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Samantha Lapierre announced her return to professional tennis after recovering from a shoulder injury, with her comeback scheduled at the Hilda Valley Sports Complex.",
+            "date": "2023-09-15"
+          }
+        ],
+        "date_of_birth": "1993-06-12",
+        "gender": "Female",
+        "profession": "Tennis Player",
+        "nationality": "Canadian",
+        "education": "Bachelor of Science in Kinesiology",
+        "height": "5'9\"",
+        "weight": "145 lbs",
+        "eye_color": "Hazel",
+        "hair_color": "Brunette",
+        "political_affiliation": "Nonpartisan",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Dr. Theodore Frazer",
+        "entity_class": "person",
+        "description": "Dr. Theodore Frazer is an acclaimed orthopedic surgeon dedicated to advancing sports injury treatments and rehabilitation.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Dr. Theodore Frazer is credited with developing a new shoulder rehabilitation technique that aided Samantha Lapierre's recovery and return to tennis.",
+            "date": "2023-09-15"
+          }
+        ],
+        "date_of_birth": "1975-10-08",
+        "gender": "Male",
+        "profession": "Orthopedic Specialist",
+        "nationality": "British",
+        "education": "Doctor of Medicine (MD)",
+        "height": "6'1\"",
+        "weight": "180 lbs",
+        "eye_color": "Blue",
+        "hair_color": "Light Brown",
+        "political_affiliation": "Nonpartisan",
+        "marital_status": "Married",
+        "spouse": "Emily Frazer"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Isabella Torres",
+        "entity_class": "person",
+        "description": "Isabella Torres is a formidable singles player known for her explosive serving and tactical acumen on the tennis court.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Isabella Torres is set to compete against Samantha Lapierre at the Hilda Valley Championships, adding excitement to the event.",
+            "date": "2023-09-15"
+          }
+        ],
+        "date_of_birth": "1990-11-29",
+        "gender": "Female",
+        "profession": "Tennis Player",
+        "nationality": "Spanish",
+        "education": "Bachelor of Arts in Sports Management",
+        "height": "5'7\"",
+        "weight": "130 lbs",
+        "eye_color": "Green",
+        "hair_color": "Russet Red",
+        "political_affiliation": "Nonpartisan",
+        "marital_status": "Engaged"
+      }
+    ],
+    "ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Premier Sports Medicine Institute",
+        "entity_class": "organization",
+        "description": "The Premier Sports Medicine Institute is a pioneering institution focused on developing cutting-edge therapies for athletes.",
+        "type": "Institution",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Premier Sports Medicine Institute, where Dr. Theodore Frazer works, is recognized for its role in Samantha Lapierre's successful rehabilitation.",
+            "date": "2023-09-15"
+          }
+        ],
+        "founded": "2008",
+        "headquarters": "Brighton United Kingdom",
+        "industry": "Sports Medicine",
+        "mission_statement": "To innovate and enhance the recovery and performance of athletes worldwide.",
+        "number_of_employees": "150",
+        "annual_revenue": "10000000"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Empower Tennis Foundation",
+        "entity_class": "organization",
+        "description": "The Empower Tennis Foundation is dedicated to nurturing young tennis talent through financial support and training.",
+        "type": "Non-profit",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Samantha Lapierre is participating in a charity event with the Empower Tennis Foundation to support aspiring youth athletes.",
+            "date": "2023-09-15"
+          }
+        ],
+        "founded": "2015",
+        "headquarters": "Bogot\u00e1 in Colombia",
+        "industry": "Sports Development",
+        "mission_statement": "To provide opportunities and resources for aspiring young athletes.",
+        "number_of_employees": "20",
+        "annual_revenue": "1500000"
+      }
+    ],
+    "LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Paris",
+        "entity_class": "location",
+        "description": "Paris is a vibrant metropolis renowned for its iconic architecture, lively cultural scene, and status as a global hub for fashion and culinary arts.",
+        "type": "city",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Paris is mentioned as the location where Samantha Lapierre's injury occurred during a Grand Slam event.",
+            "date": "2023-09-15"
+          }
+        ],
+        "population": "2.2 million",
+        "area": "105 square kilometers",
+        "country": "France"
+      }
+    ],
+    "PRODUCT": [],
+    "ART": [],
+    "BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Hilda Valley Sports Complex",
+        "entity_class": "building",
+        "description": "The Hilda Valley Sports Complex is a modern venue designed to host a diverse array of sports and community events.",
+        "type": "Public",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Hilda Valley Sports Complex is the venue for Samantha Lapierre's comeback match and has become a local hotspot for sporting events.",
+            "date": "2023-09-15"
+          }
+        ],
+        "architect": "Lisa Montgomery",
+        "year_built": "2022",
+        "height": "15 meters",
+        "floors": "3",
+        "material": "Recycled Steel and Glass",
+        "capacity": "10000"
+      }
+    ],
+    "EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "Hilda Valley Championships",
+        "entity_class": "event",
+        "description": "The Hilda Valley Championships is an annual event that draws competitive tennis players from around the world to its historic venue.",
+        "type": "Sporting",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Hilda Valley Championships, set for September 20, 2023, is anticipated to feature Samantha Lapierre's return match against Isabella Torres, drawing significant public interest.",
+            "date": "2023-09-15"
+          }
+        ],
+        "date": "September 20 2023",
+        "duration": "5 days",
+        "organizer": "Chelmsford Tennis Association",
+        "number_of_participants": "64",
+        "budget": "500000"
+      },
+      {
+        "id": "EVENT-2",
+        "name": "2021 Wimbledon Doubles Championship",
+        "entity_class": "event",
+        "description": "The 2021 Wimbledon Doubles Championship was a prestigious part of the grand slam series, celebrated globally for its high-level doubles competition.",
+        "type": "Sporting",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Samantha Lapierre's notable victory at the 2021 Wimbledon Doubles Championship is highlighted as part of her successful career history.",
+            "date": "2023-09-15"
+          }
+        ],
+        "date": "July 2021",
+        "duration": "2 weeks",
+        "budget": "20000000"
+      }
+    ],
+    "MISCELLANEOUS": [],
+    "PERSONS_XML": "<person><created_at>0</created_at><date_of_birth>1993-06-12</date_of_birth><description>Samantha Lapierre is a competitive athlete known for her determination and strategic prowess on the doubles tennis court.</description><education>Bachelor of Science in Kinesiology</education><entity_class>person</entity_class><eye_color>Hazel</eye_color><gender>Female</gender><hair_color>Brunette</hair_color><height>5'9\"</height><history><event>2023-09-15: Samantha Lapierre announced her return to professional tennis after recovering from a shoulder injury, with her comeback scheduled at the Hilda Valley Sports Complex.</event></history><id>PERSON-1</id><last_updated>2023-09-15</last_updated><marital_status>Single</marital_status><name>Samantha Lapierre</name><nationality>Canadian</nationality><political_affiliation>Nonpartisan</political_affiliation><profession>Tennis Player</profession><type>None</type><weight>145 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1975-10-08</date_of_birth><description>Dr. Theodore Frazer is an acclaimed orthopedic surgeon dedicated to advancing sports injury treatments and rehabilitation.</description><education>Doctor of Medicine (MD)</education><entity_class>person</entity_class><eye_color>Blue</eye_color><gender>Male</gender><hair_color>Light Brown</hair_color><height>6'1\"</height><history><event>2023-09-15: Dr. Theodore Frazer is credited with developing a new shoulder rehabilitation technique that aided Samantha Lapierre's recovery and return to tennis.</event></history><id>PERSON-2</id><last_updated>2023-09-15</last_updated><marital_status>Married</marital_status><name>Dr. Theodore Frazer</name><nationality>British</nationality><political_affiliation>Nonpartisan</political_affiliation><profession>Orthopedic Specialist</profession><spouse>Emily Frazer</spouse><type>None</type><weight>180 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1990-11-29</date_of_birth><description>Isabella Torres is a formidable singles player known for her explosive serving and tactical acumen on the tennis court.</description><education>Bachelor of Arts in Sports Management</education><entity_class>person</entity_class><eye_color>Green</eye_color><gender>Female</gender><hair_color>Russet Red</hair_color><height>5'7\"</height><history><event>2023-09-15: Isabella Torres is set to compete against Samantha Lapierre at the Hilda Valley Championships, adding excitement to the event.</event></history><id>PERSON-3</id><last_updated>2023-09-15</last_updated><marital_status>Engaged</marital_status><name>Isabella Torres</name><nationality>Spanish</nationality><political_affiliation>Nonpartisan</political_affiliation><profession>Tennis Player</profession><type>None</type><weight>130 lbs</weight></person>",
+    "ORGANIZATIONS_XML": "<organization><annual_revenue>10000000</annual_revenue><created_at>0</created_at><description>The Premier Sports Medicine Institute is a pioneering institution focused on developing cutting-edge therapies for athletes.</description><entity_class>organization</entity_class><founded>2008</founded><headquarters>Brighton United Kingdom</headquarters><history><event>2023-09-15: The Premier Sports Medicine Institute, where Dr. Theodore Frazer works, is recognized for its role in Samantha Lapierre's successful rehabilitation.</event></history><id>ORGANIZATION-1</id><industry>Sports Medicine</industry><last_updated>2023-09-15</last_updated><mission_statement>To innovate and enhance the recovery and performance of athletes worldwide.</mission_statement><name>Premier Sports Medicine Institute</name><number_of_employees>150</number_of_employees><type>Institution</type></organization>\n<organization><annual_revenue>1500000</annual_revenue><created_at>0</created_at><description>The Empower Tennis Foundation is dedicated to nurturing young tennis talent through financial support and training.</description><entity_class>organization</entity_class><founded>2015</founded><headquarters>Bogot\u00e1 in Colombia</headquarters><history><event>2023-09-15: Samantha Lapierre is participating in a charity event with the Empower Tennis Foundation to support aspiring youth athletes.</event></history><id>ORGANIZATION-2</id><industry>Sports Development</industry><last_updated>2023-09-15</last_updated><mission_statement>To provide opportunities and resources for aspiring young athletes.</mission_statement><name>Empower Tennis Foundation</name><number_of_employees>20</number_of_employees><type>Non-profit</type></organization>",
+    "LOCATIONS_XML": "<location><area>105 square kilometers</area><country>France</country><created_at>0</created_at><description>Paris is a vibrant metropolis renowned for its iconic architecture, lively cultural scene, and status as a global hub for fashion and culinary arts.</description><entity_class>location</entity_class><history><event>2023-09-15: Paris is mentioned as the location where Samantha Lapierre's injury occurred during a Grand Slam event.</event></history><id>LOCATION-1</id><last_updated>2023-09-15</last_updated><name>Paris</name><population>2.2 million</population><type>city</type></location>",
+    "PRODUCTS_XML": "",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "<building><architect>Lisa Montgomery</architect><capacity>10000</capacity><created_at>0</created_at><description>The Hilda Valley Sports Complex is a modern venue designed to host a diverse array of sports and community events.</description><entity_class>building</entity_class><floors>3</floors><height>15 meters</height><history><event>2023-09-15: The Hilda Valley Sports Complex is the venue for Samantha Lapierre's comeback match and has become a local hotspot for sporting events.</event></history><id>BUILDING-1</id><last_updated>2023-09-15</last_updated><material>Recycled Steel and Glass</material><name>Hilda Valley Sports Complex</name><type>Public</type><year_built>2022</year_built></building>",
+    "EVENTS_XML": "<event><budget>500000</budget><created_at>0</created_at><date>September 20 2023</date><description>The Hilda Valley Championships is an annual event that draws competitive tennis players from around the world to its historic venue.</description><duration>5 days</duration><entity_class>event</entity_class><history><event>2023-09-15: The Hilda Valley Championships, set for September 20, 2023, is anticipated to feature Samantha Lapierre's return match against Isabella Torres, drawing significant public interest.</event></history><id>EVENT-1</id><last_updated>2023-09-15</last_updated><name>Hilda Valley Championships</name><number_of_participants>64</number_of_participants><organizer>Chelmsford Tennis Association</organizer><type>Sporting</type></event>\n<event><budget>20000000</budget><created_at>0</created_at><date>July 2021</date><description>The 2021 Wimbledon Doubles Championship was a prestigious part of the grand slam series, celebrated globally for its high-level doubles competition.</description><duration>2 weeks</duration><entity_class>event</entity_class><history><event>2023-09-15: Samantha Lapierre's notable victory at the 2021 Wimbledon Doubles Championship is highlighted as part of her successful career history.</event></history><id>EVENT-2</id><last_updated>2023-09-15</last_updated><name>2021 Wimbledon Doubles Championship</name><type>Sporting</type></event>",
+    "MISCELLANEOUSS_XML": "",
+    "NUM_STORYITEMS": 10,
+    "HISTORY_XML": "<event><date>2023-09-15</date><outline>On September 15, 2023, {Samantha Lapierre|PERSON-1}, a well-known tennis player known for her aggressive doubles play, announced her return to professional tournaments after a two-year hiatus due to a severe shoulder injury. {Samantha Lapierre|PERSON-1}'s injury occurred during a high-stakes match at the Grand Slam event in {Paris|LOCATION-1}, where she was leading her doubles partner by a set. Her comeback is scheduled to take place at the {Hilda Valley Sports Complex|BUILDING-1}, a new venue that opened last year and has become a local hotspot for sporting events. The {Hilda Valley Sports Complex|BUILDING-1} features state-of-the-art facilities, including an indoor tennis court with advanced lighting and seating for 5,000 spectators. Her return is supported by {Dr. Theodore Frazer|PERSON-2} of the {Premier Sports Medicine Institute|ORGANIZATION-1}, who has developed a new shoulder rehabilitation technique credited with {Samantha Lapierre|PERSON-1}\u2019s improved performance. {Dr. Theodore Frazer|PERSON-2}, a renowned orthopedic specialist, has previously worked with several Olympic athletes, enhancing his reputation in sports medicine. Before her injury, {Samantha Lapierre|PERSON-1} had competed in 12 international tournaments, making it to the semifinals in five, thus establishing herself as a force in women's doubles tennis. {Samantha Lapierre|PERSON-1}'s notable victories include a memorable win at the {2021 Wimbledon Doubles Championship|EVENT-2}, where she and her partner defeated top-seeded opponents in a thrilling match. {Samantha Lapierre|PERSON-1} announced her decision to make a comeback on social media, expressing that she felt \"more confident and energized than ever\" thanks to the advancements in sports medicine. {Samantha Lapierre|PERSON-1}'s social media announcement received over 50,000 likes and thousands of supportive comments from fans and fellow athletes within the first 24 hours. Local sports fans anticipate her match against renowned player {Isabella Torres|PERSON-3} at the upcoming {Hilda Valley Championships|EVENT-1}, a key event set to take place later this month. {Isabella Torres|PERSON-3}, known for her powerful serve and strategic gameplay, has been a dominant force in singles tennis, adding to the excitement of their anticipated match. Organizers of the {Hilda Valley Championships|EVENT-1} have witnessed a surge in ticket sales since {Samantha Lapierre|PERSON-1}'s announcement, indicating high public interest in her return. Local businesses near the {Hilda Valley Sports Complex|BUILDING-1} have reported increased foot traffic and sales, attributing the boost to the upcoming tennis event. {Samantha Lapierre|PERSON-1} stated in a recent interview with The Arena Gazette, \"I'm ready to prove that hard work and cutting-edge medical support can make a real difference.\" In the interview, {Samantha Lapierre|PERSON-1} also mentioned her gratitude towards her family and coaching team for their unwavering support throughout her recovery. In addition to her competitive schedule, {Samantha Lapierre|PERSON-1} will be participating in a local charity event, partnering with the {Empower Tennis Foundation|ORGANIZATION-2} to raise funds for aspiring youth athletes in her community. The {Empower Tennis Foundation|ORGANIZATION-2}, established in 2015, has supported over 200 young athletes by providing training equipment and coaching scholarships. The premier match at the {Hilda Valley Championships|EVENT-1} is set to take place on September 20, 2023, with extensive media coverage expected surrounding {Samantha Lapierre|PERSON-1}'s highly anticipated performance. Local television stations and sports networks have scheduled special segments to cover {Samantha Lapierre|PERSON-1}'s journey and her match against {Isabella Torres|PERSON-3}.</outline></event>",
+    "STORY_ITEM": [
+      "On September 15, 2023, {Samantha Lapierre|PERSON-1}, a well-known tennis player known for her aggressive doubles play, announced her return to professional tournaments after a two-year hiatus due to a severe shoulder injury.",
+      "{Samantha Lapierre|PERSON-1}'s injury occurred during a high-stakes match at the Grand Slam event in {Paris|LOCATION-1}, where she was leading her doubles partner by a set.",
+      "Her comeback is scheduled to take place at the {Hilda Valley Sports Complex|BUILDING-1}, a new venue that opened last year and has become a local hotspot for sporting events.",
+      "The {Hilda Valley Sports Complex|BUILDING-1} features state-of-the-art facilities, including an indoor tennis court with advanced lighting and seating for 5,000 spectators.",
+      "Her return is supported by {Dr. Theodore Frazer|PERSON-2} of the {Premier Sports Medicine Institute|ORGANIZATION-1}, who has developed a new shoulder rehabilitation technique credited with {Samantha Lapierre|PERSON-1}\u2019s improved performance.",
+      "{Dr. Theodore Frazer|PERSON-2}, a renowned orthopedic specialist, has previously worked with several Olympic athletes, enhancing his reputation in sports medicine.",
+      "Before her injury, {Samantha Lapierre|PERSON-1} had competed in 12 international tournaments, making it to the semifinals in five, thus establishing herself as a force in women's doubles tennis.",
+      "{Samantha Lapierre|PERSON-1}'s notable victories include a memorable win at the {2021 Wimbledon Doubles Championship|EVENT-2}, where she and her partner defeated top-seeded opponents in a thrilling match.",
+      "{Samantha Lapierre|PERSON-1} announced her decision to make a comeback on social media, expressing that she felt \"more confident and energized than ever\" thanks to the advancements in sports medicine.",
+      "{Samantha Lapierre|PERSON-1}'s social media announcement received over 50,000 likes and thousands of supportive comments from fans and fellow athletes within the first 24 hours.",
+      "Local sports fans anticipate her match against renowned player {Isabella Torres|PERSON-3} at the upcoming {Hilda Valley Championships|EVENT-1}, a key event set to take place later this month.",
+      "{Isabella Torres|PERSON-3}, known for her powerful serve and strategic gameplay, has been a dominant force in singles tennis, adding to the excitement of their anticipated match.",
+      "Organizers of the {Hilda Valley Championships|EVENT-1} have witnessed a surge in ticket sales since {Samantha Lapierre|PERSON-1}'s announcement, indicating high public interest in her return.",
+      "Local businesses near the {Hilda Valley Sports Complex|BUILDING-1} have reported increased foot traffic and sales, attributing the boost to the upcoming tennis event.",
+      "{Samantha Lapierre|PERSON-1} stated in a recent interview with The Arena Gazette, \"I'm ready to prove that hard work and cutting-edge medical support can make a real difference.\"",
+      "In the interview, {Samantha Lapierre|PERSON-1} also mentioned her gratitude towards her family and coaching team for their unwavering support throughout her recovery.",
+      "In addition to her competitive schedule, {Samantha Lapierre|PERSON-1} will be participating in a local charity event, partnering with the {Empower Tennis Foundation|ORGANIZATION-2} to raise funds for aspiring youth athletes in her community.",
+      "The {Empower Tennis Foundation|ORGANIZATION-2}, established in 2015, has supported over 200 young athletes by providing training equipment and coaching scholarships.",
+      "The premier match at the {Hilda Valley Championships|EVENT-1} is set to take place on September 20, 2023, with extensive media coverage expected surrounding {Samantha Lapierre|PERSON-1}'s highly anticipated performance.",
+      "Local television stations and sports networks have scheduled special segments to cover {Samantha Lapierre|PERSON-1}'s journey and her match against {Isabella Torres|PERSON-3}."
+    ],
+    "DATE": "2023-09-15",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 2,
+    "OUTLINE": "On September 15, 2023, {Samantha Lapierre|PERSON-1}, a well-known tennis player known for her aggressive doubles play, announced her return to professional tournaments after a two-year hiatus due to a severe shoulder injury.\n{Samantha Lapierre|PERSON-1}'s injury occurred during a high-stakes match at the Grand Slam event in {Paris|LOCATION-1}, where she was leading her doubles partner by a set.\nHer comeback is scheduled to take place at the {Hilda Valley Sports Complex|BUILDING-1}, a new venue that opened last year and has become a local hotspot for sporting events.\nThe {Hilda Valley Sports Complex|BUILDING-1} features state-of-the-art facilities, including an indoor tennis court with advanced lighting and seating for 5,000 spectators.\nHer return is supported by {Dr. Theodore Frazer|PERSON-2} of the {Premier Sports Medicine Institute|ORGANIZATION-1}, who has developed a new shoulder rehabilitation technique credited with {Samantha Lapierre|PERSON-1}\u2019s improved performance.\n{Dr. Theodore Frazer|PERSON-2}, a renowned orthopedic specialist, has previously worked with several Olympic athletes, enhancing his reputation in sports medicine.\nBefore her injury, {Samantha Lapierre|PERSON-1} had competed in 12 international tournaments, making it to the semifinals in five, thus establishing herself as a force in women's doubles tennis.\n{Samantha Lapierre|PERSON-1}'s notable victories include a memorable win at the {2021 Wimbledon Doubles Championship|EVENT-2}, where she and her partner defeated top-seeded opponents in a thrilling match.\n{Samantha Lapierre|PERSON-1} announced her decision to make a comeback on social media, expressing that she felt \"more confident and energized than ever\" thanks to the advancements in sports medicine.\n{Samantha Lapierre|PERSON-1}'s social media announcement received over 50,000 likes and thousands of supportive comments from fans and fellow athletes within the first 24 hours.\nLocal sports fans anticipate her match against renowned player {Isabella Torres|PERSON-3} at the upcoming {Hilda Valley Championships|EVENT-1}, a key event set to take place later this month.\n{Isabella Torres|PERSON-3}, known for her powerful serve and strategic gameplay, has been a dominant force in singles tennis, adding to the excitement of their anticipated match.\nOrganizers of the {Hilda Valley Championships|EVENT-1} have witnessed a surge in ticket sales since {Samantha Lapierre|PERSON-1}'s announcement, indicating high public interest in her return.\nLocal businesses near the {Hilda Valley Sports Complex|BUILDING-1} have reported increased foot traffic and sales, attributing the boost to the upcoming tennis event.\n{Samantha Lapierre|PERSON-1} stated in a recent interview with The Arena Gazette, \"I'm ready to prove that hard work and cutting-edge medical support can make a real difference.\"\nIn the interview, {Samantha Lapierre|PERSON-1} also mentioned her gratitude towards her family and coaching team for their unwavering support throughout her recovery.\nIn addition to her competitive schedule, {Samantha Lapierre|PERSON-1} will be participating in a local charity event, partnering with the {Empower Tennis Foundation|ORGANIZATION-2} to raise funds for aspiring youth athletes in her community.\nThe {Empower Tennis Foundation|ORGANIZATION-2}, established in 2015, has supported over 200 young athletes by providing training equipment and coaching scholarships.\nThe premier match at the {Hilda Valley Championships|EVENT-1} is set to take place on September 20, 2023, with extensive media coverage expected surrounding {Samantha Lapierre|PERSON-1}'s highly anticipated performance.\nLocal television stations and sports networks have scheduled special segments to cover {Samantha Lapierre|PERSON-1}'s journey and her match against {Isabella Torres|PERSON-3}.",
+    "PRE-CONSISTENCY-NUM-ITEMS": 20,
+    "STORYITEM_XML": "<storyitems>\n<storyitem>On September 15, 2023, Samantha Lapierre, a well-known tennis player known for her aggressive doubles play, announced her return to professional tournaments after a two-year hiatus due to a severe shoulder injury.</storyitem>\n<storyitem>Lapierre's injury occurred during a high-stakes match at the Grand Slam event in Paris, where she was leading her doubles partner by a set.</storyitem>\n<storyitem>Her comeback is scheduled to take place at the Hilda Valley Sports Complex, a new venue that opened last year and has become a local hotspot for sporting events.</storyitem>\n<storyitem>The Hilda Valley Sports Complex features state-of-the-art facilities, including an indoor tennis court with advanced lighting and seating for 5,000 spectators.</storyitem>\n<storyitem>Her return is supported by Dr. Theodore Frazer of the Premier Sports Medicine Institute, who has developed a new shoulder rehabilitation technique credited with Lapierre\u2019s improved performance.</storyitem>\n<storyitem>Dr. Theodore Frazer, a renowned orthopedic specialist, has previously worked with several Olympic athletes, enhancing his reputation in sports medicine.</storyitem>\n<storyitem>Before her injury, Lapierre had competed in 12 international tournaments, making it to the semifinals in five, thus establishing herself as a force in women's doubles tennis.</storyitem>\n<storyitem>Lapierre's notable victories include a memorable win at the 2021 Wimbledon Doubles Championship, where she and her partner defeated top-seeded opponents in a thrilling match.</storyitem>\n<storyitem>Lapierre announced her decision to make a comeback on social media, expressing that she felt \"more confident and energized than ever\" thanks to the advancements in sports medicine.</storyitem>\n<storyitem>Her social media announcement received over 50,000 likes and thousands of supportive comments from fans and fellow athletes within the first 24 hours.</storyitem>\n<storyitem>Local sports fans anticipate her match against renowned player Isabella Torres at the upcoming Hilda Valley Championships, a key event set to take place later this month.</storyitem>\n<storyitem>Isabella Torres, known for her powerful serve and strategic gameplay, has been a dominant force in singles tennis, adding to the excitement of their anticipated match.</storyitem>\n<storyitem>Organizers of the Hilda Valley Championships have witnessed a surge in ticket sales since Lapierre's announcement, indicating high public interest in her return.</storyitem>\n<storyitem>Local businesses near the Hilda Valley Sports Complex have reported increased foot traffic and sales, attributing the boost to the upcoming tennis event.</storyitem>\n<storyitem>Lapierre stated in a recent interview with The Arena Gazette, \"I'm ready to prove that hard work and cutting-edge medical support can make a real difference.\"</storyitem>\n<storyitem>In the interview, Lapierre also mentioned her gratitude towards her family and coaching team for their unwavering support throughout her recovery.</storyitem>\n<storyitem>In addition to her competitive schedule, Lapierre will be participating in a local charity event, partnering with the Empower Tennis Foundation to raise funds for aspiring youth athletes in her community.</storyitem>\n<storyitem>The Empower Tennis Foundation, established in 2015, has supported over 200 young athletes by providing training equipment and coaching scholarships.</storyitem>\n<storyitem>The premier match at the Hilda Valley Championships is set to take place on September 20, 2023, with extensive media coverage expected surrounding Lapierre's highly anticipated performance.</storyitem>\n<storyitem>Local television stations and sports networks have scheduled special segments to cover Lapierre's journey and her match against Isabella Torres.</storyitem>\n<storyitems>",
+    "NEW_PERSON_NAME": [
+      {
+        "name": "Samantha Lapierre",
+        "old_name": "Samantha Lapierre"
+      },
+      {
+        "name": "Dr. Theodore Frazer",
+        "old_name": "Dr. Theodore Frazer"
+      },
+      {
+        "name": "Isabella Torres",
+        "old_name": "Isabella Torres"
+      }
+    ],
+    "NEW_ORGANIZATION_NAME": [
+      {
+        "name": "Premier Sports Medicine Institute",
+        "old_name": "Premier Sports Medicine Institute"
+      },
+      {
+        "name": "Empower Tennis Foundation",
+        "old_name": "Empower Tennis Foundation"
+      }
+    ],
+    "NEW_LOCATION_NAME": [
+      {
+        "name": "Paris",
+        "old_name": "Paris"
+      }
+    ],
+    "NEW_PRODUCT_NAME": [],
+    "NEW_ART_NAME": [],
+    "NEW_BUILDING_NAME": [
+      {
+        "name": "Hilda Valley Sports Complex",
+        "old_name": "Hilda Valley Sports Complex"
+      }
+    ],
+    "NEW_EVENT_NAME": [
+      {
+        "name": "Hilda Valley Championships",
+        "old_name": "Hilda Valley Championships"
+      },
+      {
+        "name": "2021 Wimbledon Doubles Championship",
+        "old_name": "2021 Wimbledon Doubles Championship"
+      }
+    ],
+    "NEW_MISCELLANEOUS_NAME": [],
+    "RESPONSE": "```xml\n<results>\n\n<location>\n    <id>LOCATION-1</id>\n    <name>Paris</name>\n    <type>city</type>\n    <description>Paris is a vibrant metropolis renowned for its iconic architecture, lively cultural scene, and status as a global hub for fashion and culinary arts.</description>\n    <population>2.2 million</population>\n    <area>105 square kilometers</area>\n    <founded>3rd century BC</founded>\n    <climate>Temperate oceanic climate</climate>\n    <country>France</country>\n</location>\n\n<person>\n    <id>PERSON-1</id>\n    <name>Samantha Lapierre</name>\n    <date_of_birth>1993-06-12</date_of_birth>\n    <gender>Female</gender>\n    <profession>Tennis Player</profession>\n    <nationality>Canadian</nationality>\n    <education>Bachelor of Science in Kinesiology</education>\n    <description>Samantha Lapierre is a competitive athlete known for her determination and strategic prowess on the doubles tennis court.</description>\n    <height>5'9\"</height>\n    <weight>145 lbs</weight>\n    <eye_color>Hazel</eye_color>\n    <hair_color>Brunette</hair_color>\n    <political_affiliation>Nonpartisan</political_affiliation>\n    <marital_status>Single</marital_status>\n</person>\n\n<person>\n    <id>PERSON-2</id>\n    <name>Dr. Theodore Frazer</name>\n    <date_of_birth>1975-10-08</date_of_birth>\n    <gender>Male</gender>\n    <profession>Orthopedic Specialist</profession>\n    <nationality>British</nationality>\n    <education>Doctor of Medicine (MD)</education>\n    <description>Dr. Theodore Frazer is an acclaimed orthopedic surgeon dedicated to advancing sports injury treatments and rehabilitation.</description>\n    <height>6'1\"</height>\n    <weight>180 lbs</weight>\n    <eye_color>Blue</eye_color>\n    <hair_color>Light Brown</hair_color>\n    <political_affiliation>Nonpartisan</political_affiliation>\n    <marital_status>Married</marital_status>\n    <spouse>Emily Frazer</spouse>\n</person>\n\n<person>\n    <id>PERSON-3</id>\n    <name>Isabella Torres</name>\n    <date_of_birth>1990-11-29</date_of_birth>\n    <gender>Female</gender>\n    <profession>Tennis Player</profession>\n    <nationality>Spanish</nationality>\n    <education>Bachelor of Arts in Sports Management</education>\n    <description>Isabella Torres is a formidable singles player known for her explosive serving and tactical acumen on the tennis court.</description>\n    <height>5'7\"</height>\n    <weight>130 lbs</weight>\n    <eye_color>Green</eye_color>\n    <hair_color>Russet Red</hair_color>\n    <political_affiliation>Nonpartisan</political_affiliation>\n    <marital_status>Engaged</marital_status>\n</person>\n\n<organization>\n    <id>ORGANIZATION-1</id>\n    <name>Premier Sports Medicine Institute</name>\n    <type>Institution</type>\n    <description>The Premier Sports Medicine Institute is a pioneering institution focused on developing cutting-edge therapies for athletes.</description>\n    <founded>2008</founded>\n    <headquarters>Brighton United Kingdom</headquarters>\n    <industry>Sports Medicine</industry>\n    <mission_statement>To innovate and enhance the recovery and performance of athletes worldwide.</mission_statement>\n    <number_of_employees>150</number_of_employees>\n    <annual_revenue>10000000</annual_revenue>\n</organization>\n\n<organization>\n    <id>ORGANIZATION-2</id>\n    <name>Empower Tennis Foundation</name>\n    <type>Non-profit</type>\n    <description>The Empower Tennis Foundation is dedicated to nurturing young tennis talent through financial support and training.</description>\n    <founded>2015</founded>\n    <headquarters>Bogot\u00e1 in Colombia</headquarters>\n    <industry>Sports Development</industry>\n    <mission_statement>To provide opportunities and resources for aspiring young athletes.</mission_statement>\n    <number_of_employees>20</number_of_employees>\n    <annual_revenue>1500000</annual_revenue>\n</organization>\n\n<building>\n    <id>BUILDING-1</id>\n    <name>Hilda Valley Sports Complex</name>\n    <type>Public</type>\n    <description>The Hilda Valley Sports Complex is a modern venue designed to host a diverse array of sports and community events.</description>\n    <place>Hilda Valley</place>\n    <city>Chelmsford</city>\n    <country>United Kingdom</country>\n    <architect>Lisa Montgomery</architect>\n    <year_built>2022</year_built>\n    <height>15 meters</height>\n    <floors>3</floors>\n    <material>Recycled Steel and Glass</material>\n    <capacity>10000</capacity>\n</building>\n\n<event>\n    <id>EVENT-1</id>\n    <name>Hilda Valley Championships</name>\n    <type>Sporting</type>\n    <description>The Hilda Valley Championships is an annual event that draws competitive tennis players from around the world to its historic venue.</description>\n    <date>September 20 2023</date>\n    <place>Hilda Valley Sports Complex</place>\n    <city>Chelmsford</city>\n    <country>United Kingdom</country>\n    <duration>5 days</duration>\n    <organizer>Chelmsford Tennis Association</organizer>\n    <number_of_participants>64</number_of_participants>\n    <budget>500000</budget>\n</event>\n\n<event>\n    <id>EVENT-2</id>\n    <name>2021 Wimbledon Doubles Championship</name>\n    <type>Sporting</type>\n    <description>The 2021 Wimbledon Doubles Championship was a prestigious part of the grand slam series, celebrated globally for its high-level doubles competition.</description>\n    <date>July 2021</date>\n    <place>Centre Court</place>\n    <city>London</city>\n    <country>United Kingdom</country>\n    <duration>2 weeks</duration>\n    <budget>20000000</budget>\n</event>\n\n</results>\n```",
+    "CORRECTED_PERSON_NAME": [
+      {
+        "name": "Samantha Lapierre",
+        "old_name": "Samantha Lapierre",
+        "id": "PERSON-1"
+      },
+      {
+        "name": "Dr. Theodore Frazer",
+        "old_name": "Dr. Theodore Frazer",
+        "id": "PERSON-2"
+      },
+      {
+        "name": "Isabella Torres",
+        "old_name": "Isabella Torres",
+        "id": "PERSON-3"
+      }
+    ],
+    "CORRECTED_ORGANIZATION_NAME": [
+      {
+        "name": "Premier Sports Medicine Institute",
+        "old_name": "Premier Sports Medicine Institute",
+        "id": "ORGANIZATION-1"
+      },
+      {
+        "name": "Empower Tennis Foundation",
+        "old_name": "Empower Tennis Foundation",
+        "id": "ORGANIZATION-2"
+      }
+    ],
+    "CORRECTED_LOCATION_NAME": [
+      {
+        "name": "Paris",
+        "old_name": "Paris",
+        "id": "LOCATION-1"
+      }
+    ],
+    "CORRECTED_PRODUCT_NAME": [],
+    "CORRECTED_ART_NAME": [],
+    "CORRECTED_BUILDING_NAME": [
+      {
+        "name": "Hilda Valley Sports Complex",
+        "old_name": "Hilda Valley Sports Complex",
+        "id": "BUILDING-1"
+      }
+    ],
+    "CORRECTED_EVENT_NAME": [
+      {
+        "name": "Hilda Valley Championships",
+        "old_name": "Hilda Valley Championships",
+        "id": "EVENT-1"
+      },
+      {
+        "name": "2021 Wimbledon Doubles Championship",
+        "old_name": "2021 Wimbledon Doubles Championship",
+        "id": "EVENT-2"
+      }
+    ],
+    "CORRECTED_MISCELLANEOUS_NAME": [],
+    "CRITIQUE_ERRORS": {
+      "entity-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-person-nationality": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-person-spouse": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization-headquarters": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product-manufacturer": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art-creator": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art-current_location_country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art-current_location_city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art-current_location_place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building-place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building-city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building-architect": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event-place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event-city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event-organizer": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-person-nationality": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-person-spouse": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-organization-headquarters": [
+        {
+          "errors": [
+            {
+              "key": "headquarters",
+              "obj": {
+                "id": "ORGANIZATION-1",
+                "name": "Premier Sports Medicine Institute",
+                "type": "Institution",
+                "description": "The Premier Sports Medicine Institute is a pioneering institution focused on developing cutting-edge therapies for athletes.",
+                "founded": "2008",
+                "headquarters": "Brighton, England",
+                "industry": "Sports Medicine",
+                "mission_statement": "To innovate and enhance the recovery and performance of athletes worldwide.",
+                "number_of_employees": "150",
+                "annual_revenue": "$10 million"
+              },
+              "type": "organization"
+            },
+            {
+              "key": "headquarters",
+              "obj": {
+                "id": "ORGANIZATION-2",
+                "name": "Empower Tennis Foundation",
+                "type": "Non-profit",
+                "description": "The Empower Tennis Foundation is dedicated to nurturing young tennis talent through financial support and training.",
+                "founded": "2015",
+                "headquarters": "Bogot\u00e1, Colombia",
+                "industry": "Sports Development",
+                "mission_statement": "To provide opportunities and resources for aspiring young athletes.",
+                "number_of_employees": "20",
+                "annual_revenue": "$1.5 million"
+              },
+              "type": "organization"
+            }
+          ],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-location-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-product-manufacturer": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-art-creator": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-art-current_location_country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-art-current_location_city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-art-current_location_place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-building-place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-building-city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-building-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-building-architect": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-event-place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-event-city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-event-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-event-organizer": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ]
+    },
+    "ADJUSTED_PERSONS_XML": "<person><id>PERSON-1</id><name>Samantha Lapierre</name><old_name>Samantha Lapierre</old_name></person>\n<person><id>PERSON-2</id><name>Dr. Theodore Frazer</name><old_name>Dr. Theodore Frazer</old_name></person>\n<person><id>PERSON-3</id><name>Isabella Torres</name><old_name>Isabella Torres</old_name></person>",
+    "ADJUSTED_ORGANIZATIONS_XML": "<organization><id>ORGANIZATION-1</id><name>Premier Sports Medicine Institute</name><old_name>Premier Sports Medicine Institute</old_name></organization>\n<organization><id>ORGANIZATION-2</id><name>Empower Tennis Foundation</name><old_name>Empower Tennis Foundation</old_name></organization>",
+    "ADJUSTED_LOCATIONS_XML": "<location><id>LOCATION-1</id><name>Paris</name><old_name>Paris</old_name></location>",
+    "ADJUSTED_PRODUCTS_XML": "",
+    "ADJUSTED_ARTS_XML": "",
+    "ADJUSTED_BUILDINGS_XML": "<building><id>BUILDING-1</id><name>Hilda Valley Sports Complex</name><old_name>Hilda Valley Sports Complex</old_name></building>",
+    "ADJUSTED_EVENTS_XML": "<event><id>EVENT-1</id><name>Hilda Valley Championships</name><old_name>Hilda Valley Championships</old_name></event>\n<event><id>EVENT-2</id><name>2021 Wimbledon Doubles Championship</name><old_name>2021 Wimbledon Doubles Championship</old_name></event>",
+    "ADJUSTED_MISCELLANEOUSS_XML": "",
+    "USED_PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Samantha Lapierre"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Dr. Theodore Frazer"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Isabella Torres"
+      }
+    ],
+    "USED_ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Premier Sports Medicine Institute"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Empower Tennis Foundation"
+      }
+    ],
+    "USED_LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Paris"
+      }
+    ],
+    "USED_PRODUCT": [],
+    "USED_ART": [],
+    "USED_BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Hilda Valley Sports Complex"
+      }
+    ],
+    "USED_EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "Hilda Valley Championships"
+      },
+      {
+        "id": "EVENT-2",
+        "name": "2021 Wimbledon Doubles Championship"
+      }
+    ],
+    "USED_MISCELLANEOUS": [],
+    "USED_PRE-EXISTING-PERSON": [],
+    "USED_NEW-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Samantha Lapierre",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Dr. Theodore Frazer",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Isabella Torres",
+        "category": "person"
+      }
+    ],
+    "ALL_USED_PERSON_XML": "<person><category>person</category><id>PERSON-1</id><name>Samantha Lapierre</name></person>\n<person><category>person</category><id>PERSON-2</id><name>Dr. Theodore Frazer</name></person>\n<person><category>person</category><id>PERSON-3</id><name>Isabella Torres</name></person>",
+    "USED-NAME-AND-ID-FOR-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Samantha Lapierre",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Dr. Theodore Frazer",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Isabella Torres",
+        "category": "person"
+      }
+    ],
+    "USED_PRE-EXISTING-ORGANIZATION": [],
+    "USED_NEW-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Premier Sports Medicine Institute",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Empower Tennis Foundation",
+        "category": "organization"
+      }
+    ],
+    "ALL_USED_ORGANIZATION_XML": "<organization><category>organization</category><id>ORGANIZATION-1</id><name>Premier Sports Medicine Institute</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-2</id><name>Empower Tennis Foundation</name></organization>",
+    "USED-NAME-AND-ID-FOR-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Premier Sports Medicine Institute",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Empower Tennis Foundation",
+        "category": "organization"
+      }
+    ],
+    "USED_PRE-EXISTING-LOCATION": [],
+    "USED_NEW-LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Paris",
+        "category": "location"
+      }
+    ],
+    "ALL_USED_LOCATION_XML": "<location><category>location</category><id>LOCATION-1</id><name>Paris</name></location>",
+    "USED-NAME-AND-ID-FOR-LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Paris",
+        "category": "location"
+      }
+    ],
+    "USED_PRE-EXISTING-PRODUCT": [],
+    "USED_NEW-PRODUCT": [],
+    "ALL_USED_PRODUCT_XML": "",
+    "USED-NAME-AND-ID-FOR-PRODUCT": [],
+    "USED_PRE-EXISTING-ART": [],
+    "USED_NEW-ART": [],
+    "ALL_USED_ART_XML": "",
+    "USED-NAME-AND-ID-FOR-ART": [],
+    "USED_PRE-EXISTING-BUILDING": [],
+    "USED_NEW-BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Hilda Valley Sports Complex",
+        "category": "building"
+      }
+    ],
+    "ALL_USED_BUILDING_XML": "<building><category>building</category><id>BUILDING-1</id><name>Hilda Valley Sports Complex</name></building>",
+    "USED-NAME-AND-ID-FOR-BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Hilda Valley Sports Complex",
+        "category": "building"
+      }
+    ],
+    "USED_PRE-EXISTING-EVENT": [],
+    "USED_NEW-EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "Hilda Valley Championships",
+        "category": "event"
+      },
+      {
+        "id": "EVENT-2",
+        "name": "2021 Wimbledon Doubles Championship",
+        "category": "event"
+      }
+    ],
+    "ALL_USED_EVENT_XML": "<event><category>event</category><id>EVENT-1</id><name>Hilda Valley Championships</name></event>\n<event><category>event</category><id>EVENT-2</id><name>2021 Wimbledon Doubles Championship</name></event>",
+    "USED-NAME-AND-ID-FOR-EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "Hilda Valley Championships",
+        "category": "event"
+      },
+      {
+        "id": "EVENT-2",
+        "name": "2021 Wimbledon Doubles Championship",
+        "category": "event"
+      }
+    ],
+    "USED_PRE-EXISTING-MISCELLANEOUS": [],
+    "USED_NEW-MISCELLANEOUS": [],
+    "ALL_USED_MISCELLANEOUS_XML": "",
+    "USED-NAME-AND-ID-FOR-MISCELLANEOUS": [],
+    "USED_NEW-PERSONS_XML": "<person><category>person</category><id>PERSON-1</id><name>Samantha Lapierre</name></person>\n<person><category>person</category><id>PERSON-2</id><name>Dr. Theodore Frazer</name></person>\n<person><category>person</category><id>PERSON-3</id><name>Isabella Torres</name></person>",
+    "USED_NEW-ORGANIZATIONS_XML": "<organization><category>organization</category><id>ORGANIZATION-1</id><name>Premier Sports Medicine Institute</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-2</id><name>Empower Tennis Foundation</name></organization>",
+    "USED_NEW-LOCATIONS_XML": "<location><category>location</category><id>LOCATION-1</id><name>Paris</name></location>",
+    "USED_NEW-PRODUCTS_XML": "",
+    "USED_NEW-ARTS_XML": "",
+    "USED_NEW-BUILDINGS_XML": "<building><category>building</category><id>BUILDING-1</id><name>Hilda Valley Sports Complex</name></building>",
+    "USED_NEW-EVENTS_XML": "<event><category>event</category><id>EVENT-1</id><name>Hilda Valley Championships</name></event>\n<event><category>event</category><id>EVENT-2</id><name>2021 Wimbledon Doubles Championship</name></event>",
+    "USED_NEW-MISCELLANEOUSS_XML": "",
+    "NEW_PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Samantha Lapierre",
+        "date_of_birth": "1993-06-12",
+        "gender": "Female",
+        "profession": "Tennis Player",
+        "nationality": "Canadian",
+        "education": "Bachelor of Science in Kinesiology",
+        "description": "Samantha Lapierre is a competitive athlete known for her determination and strategic prowess on the doubles tennis court.",
+        "height": "5'9\"",
+        "weight": "145 lbs",
+        "eye_color": "Hazel",
+        "hair_color": "Brunette",
+        "political_affiliation": "Nonpartisan",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Dr. Theodore Frazer",
+        "date_of_birth": "1975-10-08",
+        "gender": "Male",
+        "profession": "Orthopedic Specialist",
+        "nationality": "British",
+        "education": "Doctor of Medicine (MD)",
+        "description": "Dr. Theodore Frazer is an acclaimed orthopedic surgeon dedicated to advancing sports injury treatments and rehabilitation.",
+        "height": "6'1\"",
+        "weight": "180 lbs",
+        "eye_color": "Blue",
+        "hair_color": "Light Brown",
+        "political_affiliation": "Nonpartisan",
+        "marital_status": "Married",
+        "spouse": "Emily Frazer"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Isabella Torres",
+        "date_of_birth": "1990-11-29",
+        "gender": "Female",
+        "profession": "Tennis Player",
+        "nationality": "Spanish",
+        "education": "Bachelor of Arts in Sports Management",
+        "description": "Isabella Torres is a formidable singles player known for her explosive serving and tactical acumen on the tennis court.",
+        "height": "5'7\"",
+        "weight": "130 lbs",
+        "eye_color": "Green",
+        "hair_color": "Russet Red",
+        "political_affiliation": "Nonpartisan",
+        "marital_status": "Engaged"
+      }
+    ],
+    "NEW_ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Premier Sports Medicine Institute",
+        "type": "Institution",
+        "description": "The Premier Sports Medicine Institute is a pioneering institution focused on developing cutting-edge therapies for athletes.",
+        "founded": "2008",
+        "headquarters": "Brighton United Kingdom",
+        "industry": "Sports Medicine",
+        "mission_statement": "To innovate and enhance the recovery and performance of athletes worldwide.",
+        "number_of_employees": "150",
+        "annual_revenue": "10000000"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Empower Tennis Foundation",
+        "type": "Non-profit",
+        "description": "The Empower Tennis Foundation is dedicated to nurturing young tennis talent through financial support and training.",
+        "founded": "2015",
+        "headquarters": "Bogot\u00e1 in Colombia",
+        "industry": "Sports Development",
+        "mission_statement": "To provide opportunities and resources for aspiring young athletes.",
+        "number_of_employees": "20",
+        "annual_revenue": "1500000"
+      }
+    ],
+    "NEW_LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Paris",
+        "type": "city",
+        "description": "Paris is a vibrant metropolis renowned for its iconic architecture, lively cultural scene, and status as a global hub for fashion and culinary arts.",
+        "population": "2.2 million",
+        "area": "105 square kilometers",
+        "founded": "3rd century BC",
+        "climate": "Temperate oceanic climate",
+        "country": "France"
+      }
+    ],
+    "NEW_PRODUCT": [],
+    "NEW_ART": [],
+    "NEW_BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Hilda Valley Sports Complex",
+        "type": "Public",
+        "description": "The Hilda Valley Sports Complex is a modern venue designed to host a diverse array of sports and community events.",
+        "place": "Hilda Valley",
+        "city": "Chelmsford",
+        "country": "United Kingdom",
+        "architect": "Lisa Montgomery",
+        "year_built": "2022",
+        "height": "15 meters",
+        "floors": "3",
+        "material": "Recycled Steel and Glass",
+        "capacity": "10000"
+      }
+    ],
+    "NEW_EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "Hilda Valley Championships",
+        "type": "Sporting",
+        "description": "The Hilda Valley Championships is an annual event that draws competitive tennis players from around the world to its historic venue.",
+        "date": "September 20 2023",
+        "place": "Hilda Valley Sports Complex",
+        "city": "Chelmsford",
+        "country": "United Kingdom",
+        "duration": "5 days",
+        "organizer": "Chelmsford Tennis Association",
+        "number_of_participants": "64",
+        "budget": "500000"
+      },
+      {
+        "id": "EVENT-2",
+        "name": "2021 Wimbledon Doubles Championship",
+        "type": "Sporting",
+        "description": "The 2021 Wimbledon Doubles Championship was a prestigious part of the grand slam series, celebrated globally for its high-level doubles competition.",
+        "date": "July 2021",
+        "place": "Centre Court",
+        "city": "London",
+        "country": "United Kingdom",
+        "duration": "2 weeks",
+        "budget": "20000000"
+      }
+    ],
+    "NEW_MISCELLANEOUS": [],
+    "FICTIONAL_NEW_PERSONS": [
+      {
+        "id": "PERSON-1",
+        "name": "Samantha Lapierre",
+        "entity_class": "person",
+        "description": "Samantha Lapierre is a competitive athlete known for her determination and strategic prowess on the doubles tennis court.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Samantha Lapierre announced her return to professional tennis after recovering from a shoulder injury, with her comeback scheduled at the Hilda Valley Sports Complex.",
+            "date": "2023-09-15"
+          }
+        ],
+        "date_of_birth": "1993-06-12",
+        "gender": "Female",
+        "profession": "Tennis Player",
+        "nationality": "Canadian",
+        "education": "Bachelor of Science in Kinesiology",
+        "height": "5'9\"",
+        "weight": "145 lbs",
+        "eye_color": "Hazel",
+        "hair_color": "Brunette",
+        "political_affiliation": "Nonpartisan",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Dr. Theodore Frazer",
+        "entity_class": "person",
+        "description": "Dr. Theodore Frazer is an acclaimed orthopedic surgeon dedicated to advancing sports injury treatments and rehabilitation.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Dr. Theodore Frazer is credited with developing a new shoulder rehabilitation technique that aided Samantha Lapierre's recovery and return to tennis.",
+            "date": "2023-09-15"
+          }
+        ],
+        "date_of_birth": "1975-10-08",
+        "gender": "Male",
+        "profession": "Orthopedic Specialist",
+        "nationality": "British",
+        "education": "Doctor of Medicine (MD)",
+        "height": "6'1\"",
+        "weight": "180 lbs",
+        "eye_color": "Blue",
+        "hair_color": "Light Brown",
+        "political_affiliation": "Nonpartisan",
+        "marital_status": "Married",
+        "spouse": "Emily Frazer"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Isabella Torres",
+        "entity_class": "person",
+        "description": "Isabella Torres is a formidable singles player known for her explosive serving and tactical acumen on the tennis court.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Isabella Torres is set to compete against Samantha Lapierre at the Hilda Valley Championships, adding excitement to the event.",
+            "date": "2023-09-15"
+          }
+        ],
+        "date_of_birth": "1990-11-29",
+        "gender": "Female",
+        "profession": "Tennis Player",
+        "nationality": "Spanish",
+        "education": "Bachelor of Arts in Sports Management",
+        "height": "5'7\"",
+        "weight": "130 lbs",
+        "eye_color": "Green",
+        "hair_color": "Russet Red",
+        "political_affiliation": "Nonpartisan",
+        "marital_status": "Engaged"
+      }
+    ],
+    "FICTIONAL_NEW_ORGANIZATIONS": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Premier Sports Medicine Institute",
+        "entity_class": "organization",
+        "description": "The Premier Sports Medicine Institute is a pioneering institution focused on developing cutting-edge therapies for athletes.",
+        "type": "Institution",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Premier Sports Medicine Institute, where Dr. Theodore Frazer works, is recognized for its role in Samantha Lapierre's successful rehabilitation.",
+            "date": "2023-09-15"
+          }
+        ],
+        "founded": "2008",
+        "headquarters": "Brighton United Kingdom",
+        "industry": "Sports Medicine",
+        "mission_statement": "To innovate and enhance the recovery and performance of athletes worldwide.",
+        "number_of_employees": "150",
+        "annual_revenue": "10000000"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Empower Tennis Foundation",
+        "entity_class": "organization",
+        "description": "The Empower Tennis Foundation is dedicated to nurturing young tennis talent through financial support and training.",
+        "type": "Non-profit",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Samantha Lapierre is participating in a charity event with the Empower Tennis Foundation to support aspiring youth athletes.",
+            "date": "2023-09-15"
+          }
+        ],
+        "founded": "2015",
+        "headquarters": "Bogot\u00e1 in Colombia",
+        "industry": "Sports Development",
+        "mission_statement": "To provide opportunities and resources for aspiring young athletes.",
+        "number_of_employees": "20",
+        "annual_revenue": "1500000"
+      }
+    ],
+    "FICTIONAL_NEW_LOCATIONS": [
+      {
+        "id": "LOCATION-1",
+        "name": "Paris",
+        "entity_class": "location",
+        "description": "Paris is a vibrant metropolis renowned for its iconic architecture, lively cultural scene, and status as a global hub for fashion and culinary arts.",
+        "type": "city",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Paris is mentioned as the location where Samantha Lapierre's injury occurred during a Grand Slam event.",
+            "date": "2023-09-15"
+          }
+        ],
+        "population": "2.2 million",
+        "area": "105 square kilometers",
+        "country": "France"
+      }
+    ],
+    "FICTIONAL_NEW_PRODUCTS": [],
+    "FICTIONAL_NEW_ARTS": [],
+    "FICTIONAL_NEW_BUILDINGS": [
+      {
+        "id": "BUILDING-1",
+        "name": "Hilda Valley Sports Complex",
+        "entity_class": "building",
+        "description": "The Hilda Valley Sports Complex is a modern venue designed to host a diverse array of sports and community events.",
+        "type": "Public",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Hilda Valley Sports Complex is the venue for Samantha Lapierre's comeback match and has become a local hotspot for sporting events.",
+            "date": "2023-09-15"
+          }
+        ],
+        "architect": "Lisa Montgomery",
+        "year_built": "2022",
+        "height": "15 meters",
+        "floors": "3",
+        "material": "Recycled Steel and Glass",
+        "capacity": "10000"
+      }
+    ],
+    "FICTIONAL_NEW_EVENTS": [
+      {
+        "id": "EVENT-1",
+        "name": "Hilda Valley Championships",
+        "entity_class": "event",
+        "description": "The Hilda Valley Championships is an annual event that draws competitive tennis players from around the world to its historic venue.",
+        "type": "Sporting",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Hilda Valley Championships, set for September 20, 2023, is anticipated to feature Samantha Lapierre's return match against Isabella Torres, drawing significant public interest.",
+            "date": "2023-09-15"
+          }
+        ],
+        "date": "September 20 2023",
+        "duration": "5 days",
+        "organizer": "Chelmsford Tennis Association",
+        "number_of_participants": "64",
+        "budget": "500000"
+      },
+      {
+        "id": "EVENT-2",
+        "name": "2021 Wimbledon Doubles Championship",
+        "entity_class": "event",
+        "description": "The 2021 Wimbledon Doubles Championship was a prestigious part of the grand slam series, celebrated globally for its high-level doubles competition.",
+        "type": "Sporting",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Samantha Lapierre's notable victory at the 2021 Wimbledon Doubles Championship is highlighted as part of her successful career history.",
+            "date": "2023-09-15"
+          }
+        ],
+        "date": "July 2021",
+        "duration": "2 weeks",
+        "budget": "20000000"
+      }
+    ],
+    "FICTIONAL_NEW_MISCELLANEOUSS": [],
+    "USED-ALL-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Samantha Lapierre",
+        "entity_class": "person",
+        "description": "Samantha Lapierre is a competitive athlete known for her determination and strategic prowess on the doubles tennis court.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Samantha Lapierre announced her return to professional tennis after recovering from a shoulder injury, with her comeback scheduled at the Hilda Valley Sports Complex.",
+            "date": "2023-09-15"
+          }
+        ],
+        "date_of_birth": "1993-06-12",
+        "gender": "Female",
+        "profession": "Tennis Player",
+        "nationality": "Canadian",
+        "education": "Bachelor of Science in Kinesiology",
+        "height": "5'9\"",
+        "weight": "145 lbs",
+        "eye_color": "Hazel",
+        "hair_color": "Brunette",
+        "political_affiliation": "Nonpartisan",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Dr. Theodore Frazer",
+        "entity_class": "person",
+        "description": "Dr. Theodore Frazer is an acclaimed orthopedic surgeon dedicated to advancing sports injury treatments and rehabilitation.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Dr. Theodore Frazer is credited with developing a new shoulder rehabilitation technique that aided Samantha Lapierre's recovery and return to tennis.",
+            "date": "2023-09-15"
+          }
+        ],
+        "date_of_birth": "1975-10-08",
+        "gender": "Male",
+        "profession": "Orthopedic Specialist",
+        "nationality": "British",
+        "education": "Doctor of Medicine (MD)",
+        "height": "6'1\"",
+        "weight": "180 lbs",
+        "eye_color": "Blue",
+        "hair_color": "Light Brown",
+        "political_affiliation": "Nonpartisan",
+        "marital_status": "Married",
+        "spouse": "Emily Frazer"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Isabella Torres",
+        "entity_class": "person",
+        "description": "Isabella Torres is a formidable singles player known for her explosive serving and tactical acumen on the tennis court.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Isabella Torres is set to compete against Samantha Lapierre at the Hilda Valley Championships, adding excitement to the event.",
+            "date": "2023-09-15"
+          }
+        ],
+        "date_of_birth": "1990-11-29",
+        "gender": "Female",
+        "profession": "Tennis Player",
+        "nationality": "Spanish",
+        "education": "Bachelor of Arts in Sports Management",
+        "height": "5'7\"",
+        "weight": "130 lbs",
+        "eye_color": "Green",
+        "hair_color": "Russet Red",
+        "political_affiliation": "Nonpartisan",
+        "marital_status": "Engaged"
+      }
+    ],
+    "USED_PERSON_XML": "<person><created_at>0</created_at><date_of_birth>1993-06-12</date_of_birth><description>Samantha Lapierre is a competitive athlete known for her determination and strategic prowess on the doubles tennis court.</description><education>Bachelor of Science in Kinesiology</education><entity_class>person</entity_class><eye_color>Hazel</eye_color><gender>Female</gender><hair_color>Brunette</hair_color><height>5'9\"</height><history></history><id>PERSON-1</id><last_updated>2023-09-15</last_updated><marital_status>Single</marital_status><name>Samantha Lapierre</name><nationality>Canadian</nationality><political_affiliation>Nonpartisan</political_affiliation><profession>Tennis Player</profession><type>None</type><weight>145 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1975-10-08</date_of_birth><description>Dr. Theodore Frazer is an acclaimed orthopedic surgeon dedicated to advancing sports injury treatments and rehabilitation.</description><education>Doctor of Medicine (MD)</education><entity_class>person</entity_class><eye_color>Blue</eye_color><gender>Male</gender><hair_color>Light Brown</hair_color><height>6'1\"</height><history></history><id>PERSON-2</id><last_updated>2023-09-15</last_updated><marital_status>Married</marital_status><name>Dr. Theodore Frazer</name><nationality>British</nationality><political_affiliation>Nonpartisan</political_affiliation><profession>Orthopedic Specialist</profession><spouse>Emily Frazer</spouse><type>None</type><weight>180 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1990-11-29</date_of_birth><description>Isabella Torres is a formidable singles player known for her explosive serving and tactical acumen on the tennis court.</description><education>Bachelor of Arts in Sports Management</education><entity_class>person</entity_class><eye_color>Green</eye_color><gender>Female</gender><hair_color>Russet Red</hair_color><height>5'7\"</height><history></history><id>PERSON-3</id><last_updated>2023-09-15</last_updated><marital_status>Engaged</marital_status><name>Isabella Torres</name><nationality>Spanish</nationality><political_affiliation>Nonpartisan</political_affiliation><profession>Tennis Player</profession><type>None</type><weight>130 lbs</weight></person>",
+    "USED-ALL-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Premier Sports Medicine Institute",
+        "entity_class": "organization",
+        "description": "The Premier Sports Medicine Institute is a pioneering institution focused on developing cutting-edge therapies for athletes.",
+        "type": "Institution",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Premier Sports Medicine Institute, where Dr. Theodore Frazer works, is recognized for its role in Samantha Lapierre's successful rehabilitation.",
+            "date": "2023-09-15"
+          }
+        ],
+        "founded": "2008",
+        "headquarters": "Brighton United Kingdom",
+        "industry": "Sports Medicine",
+        "mission_statement": "To innovate and enhance the recovery and performance of athletes worldwide.",
+        "number_of_employees": "150",
+        "annual_revenue": "10000000"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Empower Tennis Foundation",
+        "entity_class": "organization",
+        "description": "The Empower Tennis Foundation is dedicated to nurturing young tennis talent through financial support and training.",
+        "type": "Non-profit",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Samantha Lapierre is participating in a charity event with the Empower Tennis Foundation to support aspiring youth athletes.",
+            "date": "2023-09-15"
+          }
+        ],
+        "founded": "2015",
+        "headquarters": "Bogot\u00e1 in Colombia",
+        "industry": "Sports Development",
+        "mission_statement": "To provide opportunities and resources for aspiring young athletes.",
+        "number_of_employees": "20",
+        "annual_revenue": "1500000"
+      }
+    ],
+    "USED_ORGANIZATION_XML": "<organization><annual_revenue>10000000</annual_revenue><created_at>0</created_at><description>The Premier Sports Medicine Institute is a pioneering institution focused on developing cutting-edge therapies for athletes.</description><entity_class>organization</entity_class><founded>2008</founded><headquarters>Brighton United Kingdom</headquarters><history></history><id>ORGANIZATION-1</id><industry>Sports Medicine</industry><last_updated>2023-09-15</last_updated><mission_statement>To innovate and enhance the recovery and performance of athletes worldwide.</mission_statement><name>Premier Sports Medicine Institute</name><number_of_employees>150</number_of_employees><type>Institution</type></organization>\n<organization><annual_revenue>1500000</annual_revenue><created_at>0</created_at><description>The Empower Tennis Foundation is dedicated to nurturing young tennis talent through financial support and training.</description><entity_class>organization</entity_class><founded>2015</founded><headquarters>Bogot\u00e1 in Colombia</headquarters><history></history><id>ORGANIZATION-2</id><industry>Sports Development</industry><last_updated>2023-09-15</last_updated><mission_statement>To provide opportunities and resources for aspiring young athletes.</mission_statement><name>Empower Tennis Foundation</name><number_of_employees>20</number_of_employees><type>Non-profit</type></organization>",
+    "USED-ALL-LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Paris",
+        "entity_class": "location",
+        "description": "Paris is a vibrant metropolis renowned for its iconic architecture, lively cultural scene, and status as a global hub for fashion and culinary arts.",
+        "type": "city",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Paris is mentioned as the location where Samantha Lapierre's injury occurred during a Grand Slam event.",
+            "date": "2023-09-15"
+          }
+        ],
+        "population": "2.2 million",
+        "area": "105 square kilometers",
+        "country": "France"
+      }
+    ],
+    "USED_LOCATION_XML": "<location><area>105 square kilometers</area><country>France</country><created_at>0</created_at><description>Paris is a vibrant metropolis renowned for its iconic architecture, lively cultural scene, and status as a global hub for fashion and culinary arts.</description><entity_class>location</entity_class><history></history><id>LOCATION-1</id><last_updated>2023-09-15</last_updated><name>Paris</name><population>2.2 million</population><type>city</type></location>",
+    "USED-ALL-PRODUCT": [],
+    "USED_PRODUCT_XML": "",
+    "USED-ALL-ART": [],
+    "USED_ART_XML": "",
+    "USED-ALL-BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Hilda Valley Sports Complex",
+        "entity_class": "building",
+        "description": "The Hilda Valley Sports Complex is a modern venue designed to host a diverse array of sports and community events.",
+        "type": "Public",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Hilda Valley Sports Complex is the venue for Samantha Lapierre's comeback match and has become a local hotspot for sporting events.",
+            "date": "2023-09-15"
+          }
+        ],
+        "architect": "Lisa Montgomery",
+        "year_built": "2022",
+        "height": "15 meters",
+        "floors": "3",
+        "material": "Recycled Steel and Glass",
+        "capacity": "10000"
+      }
+    ],
+    "USED_BUILDING_XML": "<building><architect>Lisa Montgomery</architect><capacity>10000</capacity><created_at>0</created_at><description>The Hilda Valley Sports Complex is a modern venue designed to host a diverse array of sports and community events.</description><entity_class>building</entity_class><floors>3</floors><height>15 meters</height><history></history><id>BUILDING-1</id><last_updated>2023-09-15</last_updated><material>Recycled Steel and Glass</material><name>Hilda Valley Sports Complex</name><type>Public</type><year_built>2022</year_built></building>",
+    "USED-ALL-EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "Hilda Valley Championships",
+        "entity_class": "event",
+        "description": "The Hilda Valley Championships is an annual event that draws competitive tennis players from around the world to its historic venue.",
+        "type": "Sporting",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Hilda Valley Championships, set for September 20, 2023, is anticipated to feature Samantha Lapierre's return match against Isabella Torres, drawing significant public interest.",
+            "date": "2023-09-15"
+          }
+        ],
+        "date": "September 20 2023",
+        "duration": "5 days",
+        "organizer": "Chelmsford Tennis Association",
+        "number_of_participants": "64",
+        "budget": "500000"
+      },
+      {
+        "id": "EVENT-2",
+        "name": "2021 Wimbledon Doubles Championship",
+        "entity_class": "event",
+        "description": "The 2021 Wimbledon Doubles Championship was a prestigious part of the grand slam series, celebrated globally for its high-level doubles competition.",
+        "type": "Sporting",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Samantha Lapierre's notable victory at the 2021 Wimbledon Doubles Championship is highlighted as part of her successful career history.",
+            "date": "2023-09-15"
+          }
+        ],
+        "date": "July 2021",
+        "duration": "2 weeks",
+        "budget": "20000000"
+      }
+    ],
+    "USED_EVENT_XML": "<event><budget>500000</budget><created_at>0</created_at><date>September 20 2023</date><description>The Hilda Valley Championships is an annual event that draws competitive tennis players from around the world to its historic venue.</description><duration>5 days</duration><entity_class>event</entity_class><history></history><id>EVENT-1</id><last_updated>2023-09-15</last_updated><name>Hilda Valley Championships</name><number_of_participants>64</number_of_participants><organizer>Chelmsford Tennis Association</organizer><type>Sporting</type></event>\n<event><budget>20000000</budget><created_at>0</created_at><date>July 2021</date><description>The 2021 Wimbledon Doubles Championship was a prestigious part of the grand slam series, celebrated globally for its high-level doubles competition.</description><duration>2 weeks</duration><entity_class>event</entity_class><history></history><id>EVENT-2</id><last_updated>2023-09-15</last_updated><name>2021 Wimbledon Doubles Championship</name><type>Sporting</type></event>",
+    "USED-ALL-MISCELLANEOUS": [],
+    "USED_MISCELLANEOUS_XML": "",
+    "USED_ENTITIES": [
+      {
+        "id": "PERSON-1",
+        "name": "Samantha Lapierre",
+        "entity_type": "person",
+        "new": true
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Dr. Theodore Frazer",
+        "entity_type": "person",
+        "new": true
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Isabella Torres",
+        "entity_type": "person",
+        "new": true
+      },
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Premier Sports Medicine Institute",
+        "entity_type": "organization",
+        "new": true
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Empower Tennis Foundation",
+        "entity_type": "organization",
+        "new": true
+      },
+      {
+        "id": "LOCATION-1",
+        "name": "Paris",
+        "entity_type": "location",
+        "new": true
+      },
+      {
+        "id": "BUILDING-1",
+        "name": "Hilda Valley Sports Complex",
+        "entity_type": "building",
+        "new": true
+      },
+      {
+        "id": "EVENT-1",
+        "name": "Hilda Valley Championships",
+        "entity_type": "event",
+        "new": true
+      },
+      {
+        "id": "EVENT-2",
+        "name": "2021 Wimbledon Doubles Championship",
+        "entity_type": "event",
+        "new": true
+      }
+    ],
+    "TMP_PERSON_UPDATES": [
+      {
+        "entity_id": "PERSON-1",
+        "update": "Samantha Lapierre announced her return to professional tennis after recovering from a shoulder injury, with her comeback scheduled at the Hilda Valley Sports Complex.",
+        "last_updated": "2023-09-15"
+      },
+      {
+        "entity_id": "PERSON-2",
+        "update": "Dr. Theodore Frazer is credited with developing a new shoulder rehabilitation technique that aided Samantha Lapierre's recovery and return to tennis."
+      },
+      {
+        "entity_id": "PERSON-3",
+        "update": "Isabella Torres is set to compete against Samantha Lapierre at the Hilda Valley Championships, adding excitement to the event."
+      }
+    ],
+    "TMP_ORGANIZATION_UPDATES": [
+      {
+        "entity_id": "ORGANIZATION-1",
+        "update": "The Premier Sports Medicine Institute, where Dr. Theodore Frazer works, is recognized for its role in Samantha Lapierre's successful rehabilitation."
+      },
+      {
+        "entity_id": "ORGANIZATION-2",
+        "update": "Samantha Lapierre is participating in a charity event with the Empower Tennis Foundation to support aspiring youth athletes."
+      }
+    ],
+    "TMP_LOCATION_UPDATES": [
+      {
+        "entity_id": "LOCATION-1",
+        "update": "Paris is mentioned as the location where Samantha Lapierre's injury occurred during a Grand Slam event."
+      }
+    ],
+    "TMP_PRODUCT_UPDATES": [],
+    "TMP_ART_UPDATES": [],
+    "TMP_BUILDING_UPDATES": [
+      {
+        "entity_id": "BUILDING-1",
+        "update": "The Hilda Valley Sports Complex is the venue for Samantha Lapierre's comeback match and has become a local hotspot for sporting events."
+      }
+    ],
+    "TMP_EVENT_UPDATES": [
+      {
+        "entity_id": "EVENT-1",
+        "update": "The Hilda Valley Championships, set for September 20, 2023, is anticipated to feature Samantha Lapierre's return match against Isabella Torres, drawing significant public interest.",
+        "last_updated": "2023-09-15"
+      },
+      {
+        "entity_id": "EVENT-2",
+        "update": "Samantha Lapierre's notable victory at the 2021 Wimbledon Doubles Championship is highlighted as part of her successful career history."
+      }
+    ],
+    "TMP_MISCELLANEOUS_UPDATES": [],
+    "PERSON_UPDATES": [
+      {
+        "entity_id": "PERSON-1",
+        "last_updated": "2023-09-15"
+      },
+      {
+        "entity_id": "PERSON-2"
+      },
+      {
+        "entity_id": "PERSON-3"
+      }
+    ],
+    "ORGANIZATION_UPDATES": [
+      {
+        "entity_id": "ORGANIZATION-1"
+      },
+      {
+        "entity_id": "ORGANIZATION-2"
+      }
+    ],
+    "LOCATION_UPDATES": [
+      {
+        "entity_id": "LOCATION-1"
+      }
+    ],
+    "PRODUCT_UPDATES": [],
+    "ART_UPDATES": [],
+    "BUILDING_UPDATES": [
+      {
+        "entity_id": "BUILDING-1"
+      }
+    ],
+    "EVENT_UPDATES": [
+      {
+        "entity_id": "EVENT-1",
+        "last_updated": "2023-09-15"
+      },
+      {
+        "entity_id": "EVENT-2"
+      }
+    ],
+    "MISCELLANEOUS_UPDATES": [],
+    "NUMBER_SUMMARIES": 4
+  }
+}

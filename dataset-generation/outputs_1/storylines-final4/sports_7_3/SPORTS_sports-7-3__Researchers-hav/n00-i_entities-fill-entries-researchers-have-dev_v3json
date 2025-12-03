@@ -1,0 +1,595 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "microsoft/phi-4-reasoning-plus",
+    "temperature": 1.0,
+    "max-tokens": 4096
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "```xml\n<results>\n\n<location>\n    <id>LOCATION-1</id>\n    <name>Techville</name>\n    <type>city</type>\n    <description>Techville is a bustling city known for its innovative atmosphere and thriving tech sector.</description>\n    <population>250,000</population>\n    <area>150 square miles</area>\n    <founded>1853</founded>\n    <climate>temperate</climate>\n    <elevation>350 feet</elevation>\n    <country>Federation of Newlandia</country>\n</location>\n\n<person>\n    <id>PERSON-1</id>\n    <name>Sarah Carson</name>\n    <date_of_birth>1985-09-12</date_of_birth>\n    <gender>Female</gender>\n    <profession>Augmented Reality Developer</profession>\n    <nationality>Newlandian</nationality>\n    <education>Ph.D. in Computer Science</education>\n    <description>Sarah is known for her visionary ideas in augmented reality, driven by her passion for transforming user experiences.</description>\n    <height>5'7\"</height>\n    <weight>135 lbs</weight>\n    <eye_color>blue</eye_color>\n    <hair_color>brown</hair_color>\n    <political_affiliation>Independent</political_affiliation>\n    <marital_status>Married</marital_status>\n    <spouse>Mark Carlson</spouse>\n</person>\n\n<person>\n    <id>PERSON-2</id>\n    <name>Jonathan Mills</name>\n    <date_of_birth>1980-04-21</date_of_birth>\n    <gender>Male</gender>\n    <profession>Basketball Analyst</profession>\n    <nationality>Atlantican</nationality>\n    <education>Masters in Sports Management</education>\n    <description>Known for his insightful analysis, Jonathan has made significant contributions to understanding basketball dynamics.</description>\n    <height>6'2\"</height>\n    <weight>190 lbs</weight>\n    <eye_color>green</eye_color>\n    <hair_color>dark brown</hair_color>\n    <political_affiliation>Affiliated with the Progressive Movement</political_affiliation>\n    <marital_status>Divorced</marital_status>\n</person>\n\n<person>\n    <id>PERSON-3</id>\n    <name>Mia Thompson</name>\n    <date_of_birth>1982-11-30</date_of_birth>\n    <gender>Female</gender>\n    <profession>Sports Journalist</profession>\n    <nationality>Terran</nationality>\n    <education>Bachelors in Journalism</education>\n    <description>Mia's engaging and insightful sports journalism has earned her respect in the world of sports media.</description>\n    <height>5'5\"</height>\n    <weight>130 lbs</weight>\n    <eye_color>hazel</eye_color>\n    <hair_color>blonde</hair_color>\n    <political_affiliation>Centrist</political_affiliation>\n    <marital_status>Single</marital_status>\n</person>\n\n<person>\n    <id>PERSON-4</id>\n    <name>Liam Greene</name>\n    <date_of_birth>1979-07-15</date_of_birth>\n    <gender>Male</gender>\n    <profession>Tech Analyst</profession>\n    <nationality>Newlandian</nationality>\n    <education>Masters in Information Systems</education>\n    <description>Liam's critical tech analysis focuses on balancing innovation with user experience, making him a respected voice in tech reviews.</description>\n    <height>6'0\"</height>\n    <weight>170 lbs</weight>\n    <eye_color>grey</eye_color>\n    <hair_color>black</hair_color>\n    <political_affiliation>Republican</political_affiliation>\n    <marital_status>Married</marital_status>\n    <spouse>Hannah Greene</spouse>\n</person>\n\n<organization>\n    <id>ORGANIZATION-1</id>\n    <name>Celerisoft Inc.</name>\n    <type>company</type>\n    <description>Celerisoft Inc. is a leading software development firm, specializing in innovative tech solutions for interactive media.</description>\n    <founded>2005</founded>\n    <headquarters>Techville, Newlandia</headquarters>\n    <industry>Software Development</industry>\n    <mission_statement>To pioneer cutting-edge software innovations that enhance digital experiences globally.</mission_statement>\n    <number_of_employees>350</number_of_employees>\n    <annual_revenue>$42 million</annual_revenue>\n</organization>\n\n<organization>\n    <id>ORGANIZATION-2</id>\n    <name>Sports Innovation Fund</name>\n    <type>non-profit</type>\n    <description>The Sports Innovation Fund aims to advance technological developments in the realm of sports, enhancing fan experiences and athlete performance.</description>\n    <founded>2010</founded>\n    <headquarters>Newlandia City, Newlandia</headquarters>\n    <industry>Non-Profit/Innovation</industry>\n    <mission_statement>Supporting and funding groundbreaking projects that integrate technology into sports.</mission_statement>\n    <number_of_employees>50</number_of_employees>\n    <annual_revenue>$10 million</annual_revenue>\n</organization>\n\n<organization>\n    <id>ORGANIZATION-3</id>\n    <name>Techville Titans</name>\n    <type>organization</type>\n    <description>The Techville Titans are a renowned local basketball team, celebrated for their community engagement and strong performance in regional leagues.</description>\n    <founded>1995</founded>\n    <headquarters>Techville, Newlandia</headquarters>\n    <industry>Sports</industry>\n    <mission_statement>To promote basketball excellence and community support.</mission_statement>\n    <number_of_employees>20 full-time, 15 part-time</number_of_employees>\n</organization>\n\n<organization>\n    <id>ORGANIZATION-4</id>\n    <name>Techville Tigers</name>\n    <type>organization</type>\n    <description>The Techville Tigers are a vibrant youth basketball club that emphasizes skill development and sportsmanship among young athletes.</description>\n    <founded>2000</founded>\n    <headquarters>Techville, Newlandia</headquarters>\n    <industry>Sports</industry>\n    <mission_statement>To nurture young basketball talent in Techville through participation and growth-focused programs.</mission_statement>\n    <number_of_employees>10 full-time coaches</number_of_employees>\n</organization>\n\n<product>\n    <id>PRODUCT-1</id>\n    <name>HoloCourt</name>\n    <type>software</type>\n    <description>HoloCourt is an augmented reality application designed to enhance the home-viewing experience of basketball games with dynamic overlays.</description>\n    <manufacturer>Celerisoft Inc.</manufacturer>\n    <release_date>2025-04-15</release_date>\n    <price>$9.99 (subscription-based)</price>\n    <weight>Not applicable</weight>\n    <warranty>1-year software support</warranty>\n</product>\n\n<building>\n    <id>BUILDING-1</id>\n    <name>Innovator's Hall</name>\n    <type>commercial</type>\n    <description>Innovator's Hall is a state-of-the-art venue in Techville, frequently used for technology unveilings and conferences.</description>\n    <place>southside Techville</place>\n    <city>Techville</city>\n    <country>Newlandia</country>\n    <architect>Elara Designs</architect>\n    <year_built>2020</year_built>\n    <height>40 meters</height>\n    <floors>8</floors>\n    <material>glass and steel</material>\n    <capacity>1,200 attendees</capacity>\n</building>\n\n<building>\n    <id>BUILDING-2</id>\n    <name>City Sports Arena</name>\n    <type>public</type>\n    <description>City Sports Arena is a popular athletic and entertainment venue known for hosting major sports events in Techville.</description>\n    <place>central Techville</place>\n    <city>Techville</city>\n    <country>Newlandia</country>\n    <architect>BuildMaster LLP</architect>\n    <year_built>2010</year_built>\n    <height>50 meters</height>\n    <floors>4</floors>\n    <material>concrete and steel</material>\n    <capacity>10,000 spectators</capacity>\n</building>\n\n</results>\n```"
+  },
+  "response": "```xml\n<results>\n\n<location>\n    <id>LOCATION-1</id>\n    <name>Techville</name>\n    <type>city</type>\n    <description>Techville is a bustling city known for its innovative atmosphere and thriving tech sector.</description>\n    <population>250,000</population>\n    <area>150 square miles</area>\n    <founded>1853</founded>\n    <climate>temperate</climate>\n    <elevation>350 feet</elevation>\n    <country>Federation of Newlandia</country>\n</location>\n\n<person>\n    <id>PERSON-1</id>\n    <name>Sarah Carson</name>\n    <date_of_birth>1985-09-12</date_of_birth>\n    <gender>Female</gender>\n    <profession>Augmented Reality Developer</profession>\n    <nationality>Newlandian</nationality>\n    <education>Ph.D. in Computer Science</education>\n    <description>Sarah is known for her visionary ideas in augmented reality, driven by her passion for transforming user experiences.</description>\n    <height>5'7\"</height>\n    <weight>135 lbs</weight>\n    <eye_color>blue</eye_color>\n    <hair_color>brown</hair_color>\n    <political_affiliation>Independent</political_affiliation>\n    <marital_status>Married</marital_status>\n    <spouse>Mark Carlson</spouse>\n</person>\n\n<person>\n    <id>PERSON-2</id>\n    <name>Jonathan Mills</name>\n    <date_of_birth>1980-04-21</date_of_birth>\n    <gender>Male</gender>\n    <profession>Basketball Analyst</profession>\n    <nationality>Atlantican</nationality>\n    <education>Masters in Sports Management</education>\n    <description>Known for his insightful analysis, Jonathan has made significant contributions to understanding basketball dynamics.</description>\n    <height>6'2\"</height>\n    <weight>190 lbs</weight>\n    <eye_color>green</eye_color>\n    <hair_color>dark brown</hair_color>\n    <political_affiliation>Affiliated with the Progressive Movement</political_affiliation>\n    <marital_status>Divorced</marital_status>\n</person>\n\n<person>\n    <id>PERSON-3</id>\n    <name>Mia Thompson</name>\n    <date_of_birth>1982-11-30</date_of_birth>\n    <gender>Female</gender>\n    <profession>Sports Journalist</profession>\n    <nationality>Terran</nationality>\n    <education>Bachelors in Journalism</education>\n    <description>Mia's engaging and insightful sports journalism has earned her respect in the world of sports media.</description>\n    <height>5'5\"</height>\n    <weight>130 lbs</weight>\n    <eye_color>hazel</eye_color>\n    <hair_color>blonde</hair_color>\n    <political_affiliation>Centrist</political_affiliation>\n    <marital_status>Single</marital_status>\n</person>\n\n<person>\n    <id>PERSON-4</id>\n    <name>Liam Greene</name>\n    <date_of_birth>1979-07-15</date_of_birth>\n    <gender>Male</gender>\n    <profession>Tech Analyst</profession>\n    <nationality>Newlandian</nationality>\n    <education>Masters in Information Systems</education>\n    <description>Liam's critical tech analysis focuses on balancing innovation with user experience, making him a respected voice in tech reviews.</description>\n    <height>6'0\"</height>\n    <weight>170 lbs</weight>\n    <eye_color>grey</eye_color>\n    <hair_color>black</hair_color>\n    <political_affiliation>Republican</political_affiliation>\n    <marital_status>Married</marital_status>\n    <spouse>Hannah Greene</spouse>\n</person>\n\n<organization>\n    <id>ORGANIZATION-1</id>\n    <name>Celerisoft Inc.</name>\n    <type>company</type>\n    <description>Celerisoft Inc. is a leading software development firm, specializing in innovative tech solutions for interactive media.</description>\n    <founded>2005</founded>\n    <headquarters>Techville, Newlandia</headquarters>\n    <industry>Software Development</industry>\n    <mission_statement>To pioneer cutting-edge software innovations that enhance digital experiences globally.</mission_statement>\n    <number_of_employees>350</number_of_employees>\n    <annual_revenue>$42 million</annual_revenue>\n</organization>\n\n<organization>\n    <id>ORGANIZATION-2</id>\n    <name>Sports Innovation Fund</name>\n    <type>non-profit</type>\n    <description>The Sports Innovation Fund aims to advance technological developments in the realm of sports, enhancing fan experiences and athlete performance.</description>\n    <founded>2010</founded>\n    <headquarters>Newlandia City, Newlandia</headquarters>\n    <industry>Non-Profit/Innovation</industry>\n    <mission_statement>Supporting and funding groundbreaking projects that integrate technology into sports.</mission_statement>\n    <number_of_employees>50</number_of_employees>\n    <annual_revenue>$10 million</annual_revenue>\n</organization>\n\n<organization>\n    <id>ORGANIZATION-3</id>\n    <name>Techville Titans</name>\n    <type>organization</type>\n    <description>The Techville Titans are a renowned local basketball team, celebrated for their community engagement and strong performance in regional leagues.</description>\n    <founded>1995</founded>\n    <headquarters>Techville, Newlandia</headquarters>\n    <industry>Sports</industry>\n    <mission_statement>To promote basketball excellence and community support.</mission_statement>\n    <number_of_employees>20 full-time, 15 part-time</number_of_employees>\n</organization>\n\n<organization>\n    <id>ORGANIZATION-4</id>\n    <name>Techville Tigers</name>\n    <type>organization</type>\n    <description>The Techville Tigers are a vibrant youth basketball club that emphasizes skill development and sportsmanship among young athletes.</description>\n    <founded>2000</founded>\n    <headquarters>Techville, Newlandia</headquarters>\n    <industry>Sports</industry>\n    <mission_statement>To nurture young basketball talent in Techville through participation and growth-focused programs.</mission_statement>\n    <number_of_employees>10 full-time coaches</number_of_employees>\n</organization>\n\n<product>\n    <id>PRODUCT-1</id>\n    <name>HoloCourt</name>\n    <type>software</type>\n    <description>HoloCourt is an augmented reality application designed to enhance the home-viewing experience of basketball games with dynamic overlays.</description>\n    <manufacturer>Celerisoft Inc.</manufacturer>\n    <release_date>2025-04-15</release_date>\n    <price>$9.99 (subscription-based)</price>\n    <weight>Not applicable</weight>\n    <warranty>1-year software support</warranty>\n</product>\n\n<building>\n    <id>BUILDING-1</id>\n    <name>Innovator's Hall</name>\n    <type>commercial</type>\n    <description>Innovator's Hall is a state-of-the-art venue in Techville, frequently used for technology unveilings and conferences.</description>\n    <place>southside Techville</place>\n    <city>Techville</city>\n    <country>Newlandia</country>\n    <architect>Elara Designs</architect>\n    <year_built>2020</year_built>\n    <height>40 meters</height>\n    <floors>8</floors>\n    <material>glass and steel</material>\n    <capacity>1,200 attendees</capacity>\n</building>\n\n<building>\n    <id>BUILDING-2</id>\n    <name>City Sports Arena</name>\n    <type>public</type>\n    <description>City Sports Arena is a popular athletic and entertainment venue known for hosting major sports events in Techville.</description>\n    <place>central Techville</place>\n    <city>Techville</city>\n    <country>Newlandia</country>\n    <architect>BuildMaster LLP</architect>\n    <year_built>2010</year_built>\n    <height>50 meters</height>\n    <floors>4</floors>\n    <material>concrete and steel</material>\n    <capacity>10,000 spectators</capacity>\n</building>\n\n</results>\n```",
+  "instructions": "You are an AI assistant tasked with creating fictional entities based on provided information. \nYour goal is to generate detailed, coherent, and realistic descriptions for new locations, persons, organizations, products, art, buildings, events, and miscellaneous entities. \nFollow these instructions carefully:\n\n1. Review the existing entities (if provided):\n\n<existing_entities>\n{{LOCATIONS_XML}}\n{{PERSONS_XML}}\n{{ORGANIZATIONS_XML}}\n{{PRODUCTS_XML}}\n{{ARTS_XML}}\n{{EVENTS_XML}}\n{{BUILDINGS_XML}}\n{{MISCELLANEOUSS_XML}}\n</existing_entities>\n\n2. Review the names of new entities to be created:\n<new_entity_names>\n{{USED_NEW-LOCATIONS_XML}}\n{{USED_NEW-PERSONS_XML}}\n{{USED_NEW-ORGANIZATIONS_XML}}\n{{USED_NEW-PRODUCTS_XML}}\n{{USED_NEW-ARTS_XML}}\n{{USED_NEW-EVENTS_XML}}\n{{USED_NEW-BUILDINGS_XML}}\n{{USED_NEW-MISCELLANEOUSS_XML}}\n</new_entity_names>\n\n3. Carefully read the provided outline:\n\nDate: {{DATE}}\n<outline>\n{{OUTLINE}}\n</outline>\n\nBased on the information provided, create detailed descriptions for each new entity following these guidelines:\n\nGeneral instructions:\n- Ensure all created entities are entirely fictional and not similar to any real or known fictional entities.\n- Maintain realism and coherence with the provided outline and other entities.\n- Create a believable and consistent fictional world that aligns with the context of the outline.\n- For entity descriptions, focus on providing a solid background that remains valid throughout the story, rather than basing it centrally on the outline itself.\n- Develop well-rounded entities with backgrounds and characteristics that can support various potential story developments beyond the specific outline provided.\n- Strictly derive all entities from the outline. Do not invent entities that are not mentioned in the outline.\n- Do not alter the name of the entities.\n- Some properties (e.g., place, city, country, spouse, architect, country, nationality) must be filled with named entities. Make sure to use FICTIONAL named entities ( fictional places, cities, countries, spouse names, architects, countries, nationalities, etc.). Check if you should use one of the existing fictional named entities (from <new_entity_names> and <existing_entities>) or create a fictional name instead. DO NOT say that any of the entities or properties are fictional. It is important that everything seems realistic!\n- Avoid exaggerating the named entities. They can be ordinary and don\u2019t need to be world-class or state-of-the-art.\n- Ensure the details of the named entities are realistic. If global impact isn\u2019t necessary, adjust the details to be more modest and appropriate.\n\nSpecific instructions for each entity type:\n\n1. For each new location:\n   - Use the provided name and ID\n   - Determine an appropriate type (city, village, country, region, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: population, area, founded, climate, elevation, country\n   - Format the output as follows:\n     <location>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[city/village/country/region]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: population, area, founded, climate, elevation, country]\n     </location>\n\n2. For each new person:\n   - Use the provided name and ID\n   - Create fictional details for: date_of_birth, gender, profession, nationality, education\n   - Write a concise single-sentence description that:\n     * Focuses on background, personality, and motivations\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: height, weight, eye_color, hair_color, political_affiliation, marital_status, spouse\n   - Format the output as follows:\n     <person>\n     <id>[Provided ID]</id>\n     <name>[Full name]</name>\n     <date_of_birth>[Date]</date_of_birth>\n     <gender>[Gender]</gender>\n     <profession>[Job title]</profession>\n     <nationality>[Country]</nationality>\n     <education>[Highest level of education]</education>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: height, weight, eye_color, hair_color, political_affiliation, marital_status]\n     </person>\n\n3. For each new organization:\n   - Use the provided name and ID\n   - Determine an appropriate type (company, non-profit, educational institution, government agency, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: founded, headquarters, industry, mission_statement, number_of_employees, annual_revenue\n   - Format the output as follows:\n     <organization>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[company/non-profit/educational institution/government agency]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: founded, headquarters, industry, mission_statement, number_of_employees, annual_revenue]\n     </organization>\n\n4. For each new product:\n   - Use the provided name and ID\n   - Determine an appropriate type (consumer good, software, service, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: manufacturer, release_date, price, weight, warranty\n   - Format the output as follows:\n     <product>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[consumer good/software/service]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: manufacturer, release_date, price, weight, warranty]\n     </product>\n\n5. For each new art piece:\n   - Use the provided name and ID\n   - Determine an appropriate type (painting, sculpture, novel, film, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: creator, year_created, current_location_country, current_location_city, current_location_place\n   - Format the output as follows:\n     <art>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[painting/sculpture/novel/film]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: creator, year_created, current_location_country, current_location_city, current_location_place]\n     </art>\n\n6. For each new building:\n   - Use the provided name and ID\n   - Determine an appropriate type (residential, commercial, public, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: place, city, country, architect, year_built, height, floors, material, capacity\n   - Format the output as follows:\n     <building>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[residential/commercial/public]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: place, city, country, architect, year_built, height, floors, material, capacity]\n     </building>\n\n7. For each new event:\n   - Use the provided name and ID\n   - Determine an appropriate type (historical, cultural, sporting, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: date, place, city, country, duration, organizer, number_of_participants, budget\n   - Format the output as follows:\n     <event>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[historical/cultural/sporting]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: date, place, city, country, duration, organizer, number_of_participants, budget]\n     </event>\n\n8. For each new miscellaneous entity:\n   - Use the provided name and ID\n   - Determine an appropriate type (concept, theory, phenomenon, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Format the output as follows:\n     <miscellaneous>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[concept/theory/phenomenon]</type>\n     <description>[One-sentence concise description]</description>\n     </miscellaneous>\n\nPresent your final output in the following format:\n<results>\n[Insert all created entities here, grouped by type]\n</results>\n\nRemember to create detailed, coherent, and realistic descriptions for each entity while adhering to the guidelines provided. Ensure that all descriptions are single, short, and concise sentences that do not refer to other entities and only discuss background information unrelated to the event described in the outline.",
+  "text_prompt": "You are an AI assistant tasked with creating fictional entities based on provided information. \nYour goal is to generate detailed, coherent, and realistic descriptions for new locations, persons, organizations, products, art, buildings, events, and miscellaneous entities. \nFollow these instructions carefully:\n\n1. Review the existing entities (if provided):\n\n<existing_entities>\n\n\n\n\n\n\n\n\n</existing_entities>\n\n2. Review the names of new entities to be created:\n<new_entity_names>\n<location><category>location</category><id>LOCATION-1</id><name>Techville</name></location>\n<person><category>person</category><id>PERSON-1</id><name>Sarah Carson</name></person>\n<person><category>person</category><id>PERSON-2</id><name>Jonathan Mills</name></person>\n<person><category>person</category><id>PERSON-3</id><name>Mia Thompson</name></person>\n<person><category>person</category><id>PERSON-4</id><name>Liam Greene</name></person>\n<organization><category>organization</category><id>ORGANIZATION-1</id><name>Celerisoft Inc.</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-2</id><name>Sports Innovation Fund</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-3</id><name>Techville Titans</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-4</id><name>Techville Tigers</name></organization>\n<product><category>product</category><id>PRODUCT-1</id><name>HoloCourt</name></product>\n\n\n<building><category>building</category><id>BUILDING-1</id><name>Innovator's Hall</name></building>\n<building><category>building</category><id>BUILDING-2</id><name>City Sports Arena</name></building>\n\n</new_entity_names>\n\n3. Carefully read the provided outline:\n\nDate: 2025-04-15\n<outline>\nOn April 15, 2025, {Celerisoft Inc.|ORGANIZATION-1} unveiled an augmented reality app called \"{HoloCourt|PRODUCT-1}\" during a press conference at the {Innovator's Hall|BUILDING-1} in the city of {Techville|LOCATION-1}.\nThe {Innovator's Hall|BUILDING-1}, known for hosting cutting-edge technology unveilings, was filled with industry experts and media representatives eager to witness the latest innovation.\nThe app, developed by a talented team led by {Sarah Carson|PERSON-1}, an augmented reality expert, is designed to enhance home viewers' experience during basketball games by overlaying real-time statistics and player tracking.\n{Sarah Carson|PERSON-1}, who holds a Ph.D. in Computer Science with a focus on augmented reality, has previously worked on several high-profile projects in the tech industry.\n{HoloCourt|PRODUCT-1} successfully integrates with existing televisions and smart glasses, allowing users to experience dynamic graphics and stats as interactive overlays during live basketball broadcasts.\nThe integration process involves a simple plug-and-play setup, ensuring compatibility with a wide range of television models and popular smart glasses brands.\nDuring its public demonstration, competitor basketball enthusiast {Jonathan Mills|PERSON-2} provided feedback, noting the seamless integration of player movement tracking and statistical overlays.\n{Jonathan Mills|PERSON-2}, a well-known figure in the basketball community, praised the app for its accuracy in tracking player movements and the clarity of the statistical data presented.\nThe app was praised by sports journalist {Mia Thompson|PERSON-3} for its innovative approach to enriching at-home sports viewing, particularly for casual fans who desire a deeper understanding of game dynamics.\n{Mia Thompson|PERSON-3} highlighted that {HoloCourt|PRODUCT-1}'s user-friendly interface makes it accessible even to those who are not tech-savvy, enhancing the overall viewing experience.\n{HoloCourt|PRODUCT-1} also offers customizable features, allowing users to personalize their experience by selecting which statistics and tracking data to display during a game.\nUsers can choose from a variety of data points, such as player speed, shooting accuracy, and defensive metrics, to tailor the information to their preferences.\n{HoloCourt|PRODUCT-1} development received support from the {Sports Innovation Fund|ORGANIZATION-2}, which provided grants to promote technological advancements in sports entertainment.\nThe {Sports Innovation Fund|ORGANIZATION-2}, established to foster innovation in sports technology, has previously supported projects that enhance fan engagement and athlete performance.\nCelebrations held at {Techville|LOCATION-1}'s {City Sports Arena|BUILDING-2} saw local basketball teams utilize {HoloCourt|PRODUCT-1} to analyze upcoming opponents, adding a layer of strategic benefit to the app.\nTeams like the {Techville Titans|ORGANIZATION-3} and the {Techville Tigers|ORGANIZATION-4} used {HoloCourt|PRODUCT-1} to study opponent strategies and player tendencies, gaining insights that could influence game plans.\nDespite initial excitement, some critics, like tech analyst {Liam Greene|PERSON-4}, warned that over-reliance on the app might distract viewers from the live action, urging balanced use during broadcasts.\n{Liam Greene|PERSON-4} suggested that while {HoloCourt|PRODUCT-1} offers valuable insights, viewers should be mindful not to let the digital overlays overshadow the live game experience.\nFollowing the launch, {Celerisoft Inc.|ORGANIZATION-1} announced an upcoming partnership with local sports bars in {Techville|LOCATION-1} to offer live demo experiences, aiming to broaden the app's user base.\nThe partnership includes a series of promotional events where patrons can try {HoloCourt|PRODUCT-1} for free, with the goal of increasing its adoption among sports enthusiasts in the community.\n</outline>\n\nBased on the information provided, create detailed descriptions for each new entity following these guidelines:\n\nGeneral instructions:\n- Ensure all created entities are entirely fictional and not similar to any real or known fictional entities.\n- Maintain realism and coherence with the provided outline and other entities.\n- Create a believable and consistent fictional world that aligns with the context of the outline.\n- For entity descriptions, focus on providing a solid background that remains valid throughout the story, rather than basing it centrally on the outline itself.\n- Develop well-rounded entities with backgrounds and characteristics that can support various potential story developments beyond the specific outline provided.\n- Strictly derive all entities from the outline. Do not invent entities that are not mentioned in the outline.\n- Do not alter the name of the entities.\n- Some properties (e.g., place, city, country, spouse, architect, country, nationality) must be filled with named entities. Make sure to use FICTIONAL named entities ( fictional places, cities, countries, spouse names, architects, countries, nationalities, etc.). Check if you should use one of the existing fictional named entities (from <new_entity_names> and <existing_entities>) or create a fictional name instead. DO NOT say that any of the entities or properties are fictional. It is important that everything seems realistic!\n- Avoid exaggerating the named entities. They can be ordinary and don\u2019t need to be world-class or state-of-the-art.\n- Ensure the details of the named entities are realistic. If global impact isn\u2019t necessary, adjust the details to be more modest and appropriate.\n\nSpecific instructions for each entity type:\n\n1. For each new location:\n   - Use the provided name and ID\n   - Determine an appropriate type (city, village, country, region, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: population, area, founded, climate, elevation, country\n   - Format the output as follows:\n     <location>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[city/village/country/region]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: population, area, founded, climate, elevation, country]\n     </location>\n\n2. For each new person:\n   - Use the provided name and ID\n   - Create fictional details for: date_of_birth, gender, profession, nationality, education\n   - Write a concise single-sentence description that:\n     * Focuses on background, personality, and motivations\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: height, weight, eye_color, hair_color, political_affiliation, marital_status, spouse\n   - Format the output as follows:\n     <person>\n     <id>[Provided ID]</id>\n     <name>[Full name]</name>\n     <date_of_birth>[Date]</date_of_birth>\n     <gender>[Gender]</gender>\n     <profession>[Job title]</profession>\n     <nationality>[Country]</nationality>\n     <education>[Highest level of education]</education>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: height, weight, eye_color, hair_color, political_affiliation, marital_status]\n     </person>\n\n3. For each new organization:\n   - Use the provided name and ID\n   - Determine an appropriate type (company, non-profit, educational institution, government agency, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: founded, headquarters, industry, mission_statement, number_of_employees, annual_revenue\n   - Format the output as follows:\n     <organization>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[company/non-profit/educational institution/government agency]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: founded, headquarters, industry, mission_statement, number_of_employees, annual_revenue]\n     </organization>\n\n4. For each new product:\n   - Use the provided name and ID\n   - Determine an appropriate type (consumer good, software, service, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: manufacturer, release_date, price, weight, warranty\n   - Format the output as follows:\n     <product>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[consumer good/software/service]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: manufacturer, release_date, price, weight, warranty]\n     </product>\n\n5. For each new art piece:\n   - Use the provided name and ID\n   - Determine an appropriate type (painting, sculpture, novel, film, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: creator, year_created, current_location_country, current_location_city, current_location_place\n   - Format the output as follows:\n     <art>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[painting/sculpture/novel/film]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: creator, year_created, current_location_country, current_location_city, current_location_place]\n     </art>\n\n6. For each new building:\n   - Use the provided name and ID\n   - Determine an appropriate type (residential, commercial, public, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: place, city, country, architect, year_built, height, floors, material, capacity\n   - Format the output as follows:\n     <building>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[residential/commercial/public]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: place, city, country, architect, year_built, height, floors, material, capacity]\n     </building>\n\n7. For each new event:\n   - Use the provided name and ID\n   - Determine an appropriate type (historical, cultural, sporting, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: date, place, city, country, duration, organizer, number_of_participants, budget\n   - Format the output as follows:\n     <event>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[historical/cultural/sporting]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: date, place, city, country, duration, organizer, number_of_participants, budget]\n     </event>\n\n8. For each new miscellaneous entity:\n   - Use the provided name and ID\n   - Determine an appropriate type (concept, theory, phenomenon, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Format the output as follows:\n     <miscellaneous>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[concept/theory/phenomenon]</type>\n     <description>[One-sentence concise description]</description>\n     </miscellaneous>\n\nPresent your final output in the following format:\n<results>\n[Insert all created entities here, grouped by type]\n</results>\n\nRemember to create detailed, coherent, and realistic descriptions for each entity while adhering to the guidelines provided. Ensure that all descriptions are single, short, and concise sentences that do not refer to other entities and only discuss background information unrelated to the event described in the outline.",
+  "system-prompt": null,
+  "values": {
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "GENRE": "Sports",
+    "HISTORIES": [],
+    "EVENT_SUMMARY": "Researchers have developed an augmented reality app that enhances home viewing experiences by overlaying real-time statistics and player tracking during basketball games.",
+    "EVENT_SUMMARY_FOR_NAME": "Researchers have dev",
+    "KEYWORDS": "",
+    "CREATED_AT": 0,
+    "NEXT_IDS": {
+      "person": 5,
+      "organization": 5,
+      "location": 2,
+      "product": 2,
+      "art": 1,
+      "building": 3,
+      "event": 1,
+      "miscellaneous": 1
+    },
+    "PROVIDED_DATE": "",
+    "PERSON": [],
+    "ORGANIZATION": [],
+    "LOCATION": [],
+    "PRODUCT": [],
+    "ART": [],
+    "BUILDING": [],
+    "EVENT": [],
+    "MISCELLANEOUS": [],
+    "PERSONS_XML": "",
+    "ORGANIZATIONS_XML": "",
+    "LOCATIONS_XML": "",
+    "PRODUCTS_XML": "",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "",
+    "EVENTS_XML": "",
+    "MISCELLANEOUSS_XML": "",
+    "NUM_STORYITEMS": 10,
+    "HISTORY_XML": "",
+    "STORY_ITEM": [
+      "On April 15, 2025, {Celerisoft Inc.|ORGANIZATION-1} unveiled an augmented reality app called \"{HoloCourt|PRODUCT-1}\" during a press conference at the {Innovator's Hall|BUILDING-1} in the city of {Techville|LOCATION-1}.",
+      "The {Innovator's Hall|BUILDING-1}, known for hosting cutting-edge technology unveilings, was filled with industry experts and media representatives eager to witness the latest innovation.",
+      "The app, developed by a talented team led by {Sarah Carson|PERSON-1}, an augmented reality expert, is designed to enhance home viewers' experience during basketball games by overlaying real-time statistics and player tracking.",
+      "{Sarah Carson|PERSON-1}, who holds a Ph.D. in Computer Science with a focus on augmented reality, has previously worked on several high-profile projects in the tech industry.",
+      "{HoloCourt|PRODUCT-1} successfully integrates with existing televisions and smart glasses, allowing users to experience dynamic graphics and stats as interactive overlays during live basketball broadcasts.",
+      "The integration process involves a simple plug-and-play setup, ensuring compatibility with a wide range of television models and popular smart glasses brands.",
+      "During its public demonstration, competitor basketball enthusiast {Jonathan Mills|PERSON-2} provided feedback, noting the seamless integration of player movement tracking and statistical overlays.",
+      "{Jonathan Mills|PERSON-2}, a well-known figure in the basketball community, praised the app for its accuracy in tracking player movements and the clarity of the statistical data presented.",
+      "The app was praised by sports journalist {Mia Thompson|PERSON-3} for its innovative approach to enriching at-home sports viewing, particularly for casual fans who desire a deeper understanding of game dynamics.",
+      "{Mia Thompson|PERSON-3} highlighted that {HoloCourt|PRODUCT-1}'s user-friendly interface makes it accessible even to those who are not tech-savvy, enhancing the overall viewing experience.",
+      "{HoloCourt|PRODUCT-1} also offers customizable features, allowing users to personalize their experience by selecting which statistics and tracking data to display during a game.",
+      "Users can choose from a variety of data points, such as player speed, shooting accuracy, and defensive metrics, to tailor the information to their preferences.",
+      "{HoloCourt|PRODUCT-1} development received support from the {Sports Innovation Fund|ORGANIZATION-2}, which provided grants to promote technological advancements in sports entertainment.",
+      "The {Sports Innovation Fund|ORGANIZATION-2}, established to foster innovation in sports technology, has previously supported projects that enhance fan engagement and athlete performance.",
+      "Celebrations held at {Techville|LOCATION-1}'s {City Sports Arena|BUILDING-2} saw local basketball teams utilize {HoloCourt|PRODUCT-1} to analyze upcoming opponents, adding a layer of strategic benefit to the app.",
+      "Teams like the {Techville Titans|ORGANIZATION-3} and the {Techville Tigers|ORGANIZATION-4} used {HoloCourt|PRODUCT-1} to study opponent strategies and player tendencies, gaining insights that could influence game plans.",
+      "Despite initial excitement, some critics, like tech analyst {Liam Greene|PERSON-4}, warned that over-reliance on the app might distract viewers from the live action, urging balanced use during broadcasts.",
+      "{Liam Greene|PERSON-4} suggested that while {HoloCourt|PRODUCT-1} offers valuable insights, viewers should be mindful not to let the digital overlays overshadow the live game experience.",
+      "Following the launch, {Celerisoft Inc.|ORGANIZATION-1} announced an upcoming partnership with local sports bars in {Techville|LOCATION-1} to offer live demo experiences, aiming to broaden the app's user base.",
+      "The partnership includes a series of promotional events where patrons can try {HoloCourt|PRODUCT-1} for free, with the goal of increasing its adoption among sports enthusiasts in the community."
+    ],
+    "DATE": "2025-04-15",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 2,
+    "OUTLINE": "On April 15, 2025, {Celerisoft Inc.|ORGANIZATION-1} unveiled an augmented reality app called \"{HoloCourt|PRODUCT-1}\" during a press conference at the {Innovator's Hall|BUILDING-1} in the city of {Techville|LOCATION-1}.\nThe {Innovator's Hall|BUILDING-1}, known for hosting cutting-edge technology unveilings, was filled with industry experts and media representatives eager to witness the latest innovation.\nThe app, developed by a talented team led by {Sarah Carson|PERSON-1}, an augmented reality expert, is designed to enhance home viewers' experience during basketball games by overlaying real-time statistics and player tracking.\n{Sarah Carson|PERSON-1}, who holds a Ph.D. in Computer Science with a focus on augmented reality, has previously worked on several high-profile projects in the tech industry.\n{HoloCourt|PRODUCT-1} successfully integrates with existing televisions and smart glasses, allowing users to experience dynamic graphics and stats as interactive overlays during live basketball broadcasts.\nThe integration process involves a simple plug-and-play setup, ensuring compatibility with a wide range of television models and popular smart glasses brands.\nDuring its public demonstration, competitor basketball enthusiast {Jonathan Mills|PERSON-2} provided feedback, noting the seamless integration of player movement tracking and statistical overlays.\n{Jonathan Mills|PERSON-2}, a well-known figure in the basketball community, praised the app for its accuracy in tracking player movements and the clarity of the statistical data presented.\nThe app was praised by sports journalist {Mia Thompson|PERSON-3} for its innovative approach to enriching at-home sports viewing, particularly for casual fans who desire a deeper understanding of game dynamics.\n{Mia Thompson|PERSON-3} highlighted that {HoloCourt|PRODUCT-1}'s user-friendly interface makes it accessible even to those who are not tech-savvy, enhancing the overall viewing experience.\n{HoloCourt|PRODUCT-1} also offers customizable features, allowing users to personalize their experience by selecting which statistics and tracking data to display during a game.\nUsers can choose from a variety of data points, such as player speed, shooting accuracy, and defensive metrics, to tailor the information to their preferences.\n{HoloCourt|PRODUCT-1} development received support from the {Sports Innovation Fund|ORGANIZATION-2}, which provided grants to promote technological advancements in sports entertainment.\nThe {Sports Innovation Fund|ORGANIZATION-2}, established to foster innovation in sports technology, has previously supported projects that enhance fan engagement and athlete performance.\nCelebrations held at {Techville|LOCATION-1}'s {City Sports Arena|BUILDING-2} saw local basketball teams utilize {HoloCourt|PRODUCT-1} to analyze upcoming opponents, adding a layer of strategic benefit to the app.\nTeams like the {Techville Titans|ORGANIZATION-3} and the {Techville Tigers|ORGANIZATION-4} used {HoloCourt|PRODUCT-1} to study opponent strategies and player tendencies, gaining insights that could influence game plans.\nDespite initial excitement, some critics, like tech analyst {Liam Greene|PERSON-4}, warned that over-reliance on the app might distract viewers from the live action, urging balanced use during broadcasts.\n{Liam Greene|PERSON-4} suggested that while {HoloCourt|PRODUCT-1} offers valuable insights, viewers should be mindful not to let the digital overlays overshadow the live game experience.\nFollowing the launch, {Celerisoft Inc.|ORGANIZATION-1} announced an upcoming partnership with local sports bars in {Techville|LOCATION-1} to offer live demo experiences, aiming to broaden the app's user base.\nThe partnership includes a series of promotional events where patrons can try {HoloCourt|PRODUCT-1} for free, with the goal of increasing its adoption among sports enthusiasts in the community.",
+    "PRE-CONSISTENCY-NUM-ITEMS": 20,
+    "STORYITEM_XML": "<storyitems>\n<storyitem>On April 15, 2025, Celerisoft Inc. unveiled an augmented reality app called \"HoloCourt\" during a press conference at the Innovator's Hall in the city of Techville.</storyitem>\n<storyitem>The Innovator's Hall, known for hosting cutting-edge technology unveilings, was filled with industry experts and media representatives eager to witness the latest innovation.</storyitem>\n<storyitem>The app, developed by a talented team led by Sarah Carson, an augmented reality expert, is designed to enhance home viewers' experience during basketball games by overlaying real-time statistics and player tracking.</storyitem>\n<storyitem>Sarah Carson, who holds a Ph.D. in Computer Science with a focus on augmented reality, has previously worked on several high-profile projects in the tech industry.</storyitem>\n<storyitem>HoloCourt successfully integrates with existing televisions and smart glasses, allowing users to experience dynamic graphics and stats as interactive overlays during live basketball broadcasts.</storyitem>\n<storyitem>The integration process involves a simple plug-and-play setup, ensuring compatibility with a wide range of television models and popular smart glasses brands.</storyitem>\n<storyitem>During its public demonstration, competitor basketball enthusiast Jonathan Mills provided feedback, noting the seamless integration of player movement tracking and statistical overlays.</storyitem>\n<storyitem>Jonathan Mills, a well-known figure in the basketball community, praised the app for its accuracy in tracking player movements and the clarity of the statistical data presented.</storyitem>\n<storyitem>The app was praised by sports journalist Mia Thompson for its innovative approach to enriching at-home sports viewing, particularly for casual fans who desire a deeper understanding of game dynamics.</storyitem>\n<storyitem>Mia Thompson highlighted that HoloCourt's user-friendly interface makes it accessible even to those who are not tech-savvy, enhancing the overall viewing experience.</storyitem>\n<storyitem>HoloCourt also offers customizable features, allowing users to personalize their experience by selecting which statistics and tracking data to display during a game.</storyitem>\n<storyitem>Users can choose from a variety of data points, such as player speed, shooting accuracy, and defensive metrics, to tailor the information to their preferences.</storyitem>\n<storyitem>HoloCourt development received support from the Sports Innovation Fund, which provided grants to promote technological advancements in sports entertainment.</storyitem>\n<storyitem>The Sports Innovation Fund, established to foster innovation in sports technology, has previously supported projects that enhance fan engagement and athlete performance.</storyitem>\n<storyitem>Celebrations held at Techville's City Sports Arena saw local basketball teams utilize HoloCourt to analyze upcoming opponents, adding a layer of strategic benefit to the app.</storyitem>\n<storyitem>Teams like the Techville Titans and the Techville Tigers used HoloCourt to study opponent strategies and player tendencies, gaining insights that could influence game plans.</storyitem>\n<storyitem>Despite initial excitement, some critics, like tech analyst Liam Greene, warned that over-reliance on the app might distract viewers from the live action, urging balanced use during broadcasts.</storyitem>\n<storyitem>Liam Greene suggested that while HoloCourt offers valuable insights, viewers should be mindful not to let the digital overlays overshadow the live game experience.</storyitem>\n<storyitem>Following the launch, Celerisoft Inc. announced an upcoming partnership with local sports bars in Techville to offer live demo experiences, aiming to broaden the app's user base.</storyitem>\n<storyitem>The partnership includes a series of promotional events where patrons can try HoloCourt for free, with the goal of increasing its adoption among sports enthusiasts in the community.</storyitem>\n<storyitems>",
+    "NEW_PERSON_NAME": [
+      {
+        "name": "Sarah Carson",
+        "old_name": "Sarah Carson"
+      },
+      {
+        "name": "Jonathan Mills",
+        "old_name": "Jonathan Mills"
+      },
+      {
+        "name": "Mia Thompson",
+        "old_name": "Mia Thompson"
+      },
+      {
+        "name": "Liam Greene",
+        "old_name": "Liam Greene"
+      }
+    ],
+    "NEW_ORGANIZATION_NAME": [
+      {
+        "name": "Celerisoft Inc.",
+        "old_name": "Celerisoft Inc."
+      },
+      {
+        "name": "Sports Innovation Fund",
+        "old_name": "Sports Innovation Fund"
+      },
+      {
+        "name": "Techville Titans",
+        "old_name": "Techville Titans"
+      },
+      {
+        "name": "Techville Tigers",
+        "old_name": "Techville Tigers"
+      }
+    ],
+    "NEW_LOCATION_NAME": [
+      {
+        "name": "Techville",
+        "old_name": "Techville"
+      }
+    ],
+    "NEW_PRODUCT_NAME": [
+      {
+        "name": "HoloCourt",
+        "old_name": "HoloCourt"
+      }
+    ],
+    "NEW_ART_NAME": [],
+    "NEW_BUILDING_NAME": [
+      {
+        "name": "Innovator's Hall",
+        "old_name": "Innovator's Hall"
+      },
+      {
+        "name": "City Sports Arena",
+        "old_name": "City Sports Arena"
+      }
+    ],
+    "NEW_EVENT_NAME": [],
+    "NEW_MISCELLANEOUS_NAME": [],
+    "CORRECTED_PERSON_NAME": [
+      {
+        "name": "Sarah Carson",
+        "old_name": "Sarah Carson",
+        "id": "PERSON-1"
+      },
+      {
+        "name": "Jonathan Mills",
+        "old_name": "Jonathan Mills",
+        "id": "PERSON-2"
+      },
+      {
+        "name": "Mia Thompson",
+        "old_name": "Mia Thompson",
+        "id": "PERSON-3"
+      },
+      {
+        "name": "Liam Greene",
+        "old_name": "Liam Greene",
+        "id": "PERSON-4"
+      }
+    ],
+    "CORRECTED_ORGANIZATION_NAME": [
+      {
+        "name": "Celerisoft Inc.",
+        "old_name": "Celerisoft Inc.",
+        "id": "ORGANIZATION-1"
+      },
+      {
+        "name": "Sports Innovation Fund",
+        "old_name": "Sports Innovation Fund",
+        "id": "ORGANIZATION-2"
+      },
+      {
+        "name": "Techville Titans",
+        "old_name": "Techville Titans",
+        "id": "ORGANIZATION-3"
+      },
+      {
+        "name": "Techville Tigers",
+        "old_name": "Techville Tigers",
+        "id": "ORGANIZATION-4"
+      }
+    ],
+    "CORRECTED_LOCATION_NAME": [
+      {
+        "name": "Techville",
+        "old_name": "Techville",
+        "id": "LOCATION-1"
+      }
+    ],
+    "CORRECTED_PRODUCT_NAME": [
+      {
+        "name": "HoloCourt",
+        "old_name": "HoloCourt",
+        "id": "PRODUCT-1"
+      }
+    ],
+    "CORRECTED_ART_NAME": [],
+    "CORRECTED_BUILDING_NAME": [
+      {
+        "name": "Innovator's Hall",
+        "old_name": "Innovator's Hall",
+        "id": "BUILDING-1"
+      },
+      {
+        "name": "City Sports Arena",
+        "old_name": "City Sports Arena",
+        "id": "BUILDING-2"
+      }
+    ],
+    "CORRECTED_EVENT_NAME": [],
+    "CORRECTED_MISCELLANEOUS_NAME": [],
+    "CRITIQUE_ERRORS": {
+      "entity-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ]
+    },
+    "ADJUSTED_PERSONS_XML": "<person><id>PERSON-1</id><name>Sarah Carson</name><old_name>Sarah Carson</old_name></person>\n<person><id>PERSON-2</id><name>Jonathan Mills</name><old_name>Jonathan Mills</old_name></person>\n<person><id>PERSON-3</id><name>Mia Thompson</name><old_name>Mia Thompson</old_name></person>\n<person><id>PERSON-4</id><name>Liam Greene</name><old_name>Liam Greene</old_name></person>",
+    "ADJUSTED_ORGANIZATIONS_XML": "<organization><id>ORGANIZATION-1</id><name>Celerisoft Inc.</name><old_name>Celerisoft Inc.</old_name></organization>\n<organization><id>ORGANIZATION-2</id><name>Sports Innovation Fund</name><old_name>Sports Innovation Fund</old_name></organization>\n<organization><id>ORGANIZATION-3</id><name>Techville Titans</name><old_name>Techville Titans</old_name></organization>\n<organization><id>ORGANIZATION-4</id><name>Techville Tigers</name><old_name>Techville Tigers</old_name></organization>",
+    "ADJUSTED_LOCATIONS_XML": "<location><id>LOCATION-1</id><name>Techville</name><old_name>Techville</old_name></location>",
+    "ADJUSTED_PRODUCTS_XML": "<product><id>PRODUCT-1</id><name>HoloCourt</name><old_name>HoloCourt</old_name></product>",
+    "ADJUSTED_ARTS_XML": "",
+    "ADJUSTED_BUILDINGS_XML": "<building><id>BUILDING-1</id><name>Innovator's Hall</name><old_name>Innovator's Hall</old_name></building>\n<building><id>BUILDING-2</id><name>City Sports Arena</name><old_name>City Sports Arena</old_name></building>",
+    "ADJUSTED_EVENTS_XML": "",
+    "ADJUSTED_MISCELLANEOUSS_XML": "",
+    "USED_PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Sarah Carson"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Jonathan Mills"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Mia Thompson"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Liam Greene"
+      }
+    ],
+    "USED_ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Celerisoft Inc."
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Sports Innovation Fund"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Techville Titans"
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "Techville Tigers"
+      }
+    ],
+    "USED_LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Techville"
+      }
+    ],
+    "USED_PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "HoloCourt"
+      }
+    ],
+    "USED_ART": [],
+    "USED_BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Innovator's Hall"
+      },
+      {
+        "id": "BUILDING-2",
+        "name": "City Sports Arena"
+      }
+    ],
+    "USED_EVENT": [],
+    "USED_MISCELLANEOUS": [],
+    "USED_PRE-EXISTING-PERSON": [],
+    "USED_NEW-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Sarah Carson",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Jonathan Mills",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Mia Thompson",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Liam Greene",
+        "category": "person"
+      }
+    ],
+    "ALL_USED_PERSON_XML": "<person><category>person</category><id>PERSON-1</id><name>Sarah Carson</name></person>\n<person><category>person</category><id>PERSON-2</id><name>Jonathan Mills</name></person>\n<person><category>person</category><id>PERSON-3</id><name>Mia Thompson</name></person>\n<person><category>person</category><id>PERSON-4</id><name>Liam Greene</name></person>",
+    "USED-NAME-AND-ID-FOR-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Sarah Carson",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Jonathan Mills",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Mia Thompson",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Liam Greene",
+        "category": "person"
+      }
+    ],
+    "USED_PRE-EXISTING-ORGANIZATION": [],
+    "USED_NEW-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Celerisoft Inc.",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Sports Innovation Fund",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Techville Titans",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "Techville Tigers",
+        "category": "organization"
+      }
+    ],
+    "ALL_USED_ORGANIZATION_XML": "<organization><category>organization</category><id>ORGANIZATION-1</id><name>Celerisoft Inc.</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-2</id><name>Sports Innovation Fund</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-3</id><name>Techville Titans</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-4</id><name>Techville Tigers</name></organization>",
+    "USED-NAME-AND-ID-FOR-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Celerisoft Inc.",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Sports Innovation Fund",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Techville Titans",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "Techville Tigers",
+        "category": "organization"
+      }
+    ],
+    "USED_PRE-EXISTING-LOCATION": [],
+    "USED_NEW-LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Techville",
+        "category": "location"
+      }
+    ],
+    "ALL_USED_LOCATION_XML": "<location><category>location</category><id>LOCATION-1</id><name>Techville</name></location>",
+    "USED-NAME-AND-ID-FOR-LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Techville",
+        "category": "location"
+      }
+    ],
+    "USED_PRE-EXISTING-PRODUCT": [],
+    "USED_NEW-PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "HoloCourt",
+        "category": "product"
+      }
+    ],
+    "ALL_USED_PRODUCT_XML": "<product><category>product</category><id>PRODUCT-1</id><name>HoloCourt</name></product>",
+    "USED-NAME-AND-ID-FOR-PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "HoloCourt",
+        "category": "product"
+      }
+    ],
+    "USED_PRE-EXISTING-ART": [],
+    "USED_NEW-ART": [],
+    "ALL_USED_ART_XML": "",
+    "USED-NAME-AND-ID-FOR-ART": [],
+    "USED_PRE-EXISTING-BUILDING": [],
+    "USED_NEW-BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Innovator's Hall",
+        "category": "building"
+      },
+      {
+        "id": "BUILDING-2",
+        "name": "City Sports Arena",
+        "category": "building"
+      }
+    ],
+    "ALL_USED_BUILDING_XML": "<building><category>building</category><id>BUILDING-1</id><name>Innovator's Hall</name></building>\n<building><category>building</category><id>BUILDING-2</id><name>City Sports Arena</name></building>",
+    "USED-NAME-AND-ID-FOR-BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Innovator's Hall",
+        "category": "building"
+      },
+      {
+        "id": "BUILDING-2",
+        "name": "City Sports Arena",
+        "category": "building"
+      }
+    ],
+    "USED_PRE-EXISTING-EVENT": [],
+    "USED_NEW-EVENT": [],
+    "ALL_USED_EVENT_XML": "",
+    "USED-NAME-AND-ID-FOR-EVENT": [],
+    "USED_PRE-EXISTING-MISCELLANEOUS": [],
+    "USED_NEW-MISCELLANEOUS": [],
+    "ALL_USED_MISCELLANEOUS_XML": "",
+    "USED-NAME-AND-ID-FOR-MISCELLANEOUS": [],
+    "USED_NEW-PERSONS_XML": "<person><category>person</category><id>PERSON-1</id><name>Sarah Carson</name></person>\n<person><category>person</category><id>PERSON-2</id><name>Jonathan Mills</name></person>\n<person><category>person</category><id>PERSON-3</id><name>Mia Thompson</name></person>\n<person><category>person</category><id>PERSON-4</id><name>Liam Greene</name></person>",
+    "USED_NEW-ORGANIZATIONS_XML": "<organization><category>organization</category><id>ORGANIZATION-1</id><name>Celerisoft Inc.</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-2</id><name>Sports Innovation Fund</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-3</id><name>Techville Titans</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-4</id><name>Techville Tigers</name></organization>",
+    "USED_NEW-LOCATIONS_XML": "<location><category>location</category><id>LOCATION-1</id><name>Techville</name></location>",
+    "USED_NEW-PRODUCTS_XML": "<product><category>product</category><id>PRODUCT-1</id><name>HoloCourt</name></product>",
+    "USED_NEW-ARTS_XML": "",
+    "USED_NEW-BUILDINGS_XML": "<building><category>building</category><id>BUILDING-1</id><name>Innovator's Hall</name></building>\n<building><category>building</category><id>BUILDING-2</id><name>City Sports Arena</name></building>",
+    "USED_NEW-EVENTS_XML": "",
+    "USED_NEW-MISCELLANEOUSS_XML": ""
+  },
+  "critiques": [
+    {
+      "critique": "I found problems with your response. Please fix these problems and return the corrected output using the same format as before. The problems I found are:\n\nChange the following properties of these entities, ensuring they do not include these characters: \")\", \"(\", \",\".\nLocations must have a unique name that doesn't rely on their larger context. For example, if 'Auvelais' already exists on Wikipedia and needs to be revised, choose a completely different name. Do NOT disambiguate by adding details like the country (e.g., do NOT use 'Auvelais, Belgaria').\n - [organization; ID=\"ORGANIZATION-1\"] Celerisoft Inc.: The value \"Techville, Newlandia\" of the property \"headquarters\".\n\n - [organization; ID=\"ORGANIZATION-2\"] Sports Innovation Fund: The value \"Newlandia City, Newlandia\" of the property \"headquarters\".\n\n - [organization; ID=\"ORGANIZATION-3\"] Techville Titans: The value \"Techville, Newlandia\" of the property \"headquarters\".\n\n - [organization; ID=\"ORGANIZATION-4\"] Techville Tigers: The value \"Techville, Newlandia\" of the property \"headquarters\".",
+      "response": "```xml\n<results>\n\n<location>\n    <id>LOCATION-1</id>\n    <name>Neoville</name>\n    <type>city</type>\n    <description>Neoville is a burgeoning city renowned for its dynamic tech industry and lively cultural scene.</description>\n    <population>250000</population>\n    <area>150square miles</area>\n    <founded>1853</founded>\n    <climate>temperate</climate>\n    <elevation>350feet</elevation>\n    <country>Federation of Newlandia</country>\n</location>\n\n<person>\n    <id>PERSON-1</id>\n    <name>Sarah Carson</name>\n    <date_of_birth>1985-09-12</date_of_birth>\n    <gender>Female</gender>\n    <profession>Augmented Reality Developer</profession>\n    <nationality>Newlandian</nationality>\n    <education>PhD in Computer Science</education>\n    <description>Sarah is celebrated for her innovative approach to augmented reality, aiming to transform everyday experiences.</description>\n    <height>5'7\"</height>\n    <weight>135 pounds</weight>\n    <eye_color>blue</eye_color>\n    <hair_color>brown</hair_color>\n    <political_affiliation>Independent</political_affiliation>\n    <marital_status>Married</marital_status>\n    <spouse>Mark Carlson</spouse>\n</person>\n\n<person>\n    <id>PERSON-2</id>\n    <name>Jonathan Mills</name>\n    <date_of_birth>1980-04-21</date_of_birth>\n    <gender>Male</gender>\n    <profession>Basketball Analyst</profession>\n    <nationality>Atlantican</nationality>\n    <education>Masters in Sports Management</education>\n    <description>Jonathan is respected in the basketball world for his deep insights into the sport.</description>\n    <height>6'2\"</height>\n    <weight>190 pounds</weight>\n    <eye_color>green</eye_color>\n    <hair_color>dark brown</hair_color>\n    <political_affiliation>Progressive Movement</political_affiliation>\n    <marital_status>Divorced</marital_status>\n</person>\n\n<person>\n    <id>PERSON-3</id>\n    <name>Mia Thompson</name>\n    <date_of_birth>1982-11-30</date_of_birth>\n    <gender>Female</gender>\n    <profession>Sports Journalist</profession>\n    <nationality>Terran</nationality>\n    <education>Bachelors in Journalism</education>\n    <description>Mia's engaging sports reports have garnered a wide following for their depth and enthusiasm.</description>\n    <height>5'5\"</height>\n    <weight>130 pounds</weight>\n    <eye_color>hazel</eye_color>\n    <hair_color>blonde</hair_color>\n    <political_affiliation>Centrist</political_affiliation>\n    <marital_status>Single</marital_status>\n</person>\n\n<person>\n    <id>PERSON-4</id>\n    <name>Liam Greene</name>\n    <date_of_birth>1979-07-15</date_of_birth>\n    <gender>Male</gender>\n    <profession>Tech Analyst</profession>\n    <nationality>Newlandian</nationality>\n    <education>Masters in Information Systems</education>\n    <description>Liam is known for his balanced evaluations of new tech trends, focusing on user-centred design.</description>\n    <height>6'0\"</height>\n    <weight>170 pounds</weight>\n    <eye_color>grey</eye_color>\n    <hair_color>black</hair_color>\n    <political_affiliation>Republican</political_affiliation>\n    <marital_status>Married</marital_status>\n    <spouse>Hannah Greene</spouse>\n</person>\n\n<organization>\n    <id>ORGANIZATION-1</id>\n    <name>Celerisoft Inc.</name>\n    <type>company</type>\n    <description>Celerisoft Inc. is a leader in innovative software development, focusing on interactive and user-friendly tech solutions.</description>\n    <founded>2005</founded>\n    <headquarters>Neoville TechPark</headquarters>\n    <industry>Software Development</industry>\n    <mission_statement>To pioneer groundbreaking software innovations.</mission_statement>\n    <number_of_employees>350</number_of_employees>\n    <annual_revenue>$42 million</annual_revenue>\n</organization>\n\n<organization>\n    <id>ORGANIZATION-2</id>\n    <name>Sports Innovation Fund</name>\n    <type>non-profit</type>\n    <description>The Sports Innovation Fund promotes technological advancements within sports, aiming to enrich fan engagement and athlete performance.</description>\n    <founded>2010</founded>\n    <headquarters>Newlandia Cultural Centre</headquarters>\n    <industry>Non-Profit and Innovation</industry>\n    <mission_statement>Supporting initiatives that marry technology with sports.</mission_statement>\n    <number_of_employees>50</number_of_employees>\n    <annual_revenue>$10 million</annual_revenue>\n</organization>\n\n<organization>\n    <id>ORGANIZATION-3</id>\n    <name>Techville Titans</name>\n    <type>organization</type>\n    <description>Techville Titans is a popular local basketball team known for strong community presence and competitive spirit.</description>\n    <founded>1995</founded>\n    <headquarters>Century Sports Complex</headquarters>\n    <industry>Sports</industry>\n    <mission_statement>To lead the basketball community with excellence and teamwork.</mission_statement>\n    <number_of_employees>20 full-time and 15 part-time</number_of_employees>\n</organization>\n\n<organization>\n    <id>ORGANIZATION-4</id>\n    <name>Techville Tigers</name>\n    <type>organization</type>\n    <description>The Techville Tigers focus on cultivating young basketball talent, emphasizing skill and sportsmanship.</description>\n    <founded>2000</founded>\n    <headquarters>Youth Athletic Centre</headquarters>\n    <industry>Sports</industry>\n    <mission_statement>To foster growth and skill in young athletes.</mission_statement>\n    <number_of_employees>10 full-time coaches</number_of_employees>\n</organization>\n\n<product>\n    <id>PRODUCT-1</id>\n    <name>HoloCourt</name>\n    <type>software</type>\n    <description>HoloCourt is a cutting-edge augmented reality app that transforms how basketball games are experienced at home.</description>\n    <manufacturer>Celerisoft Inc.</manufacturer>\n    <release_date>2025-04-15</release_date>\n    <price>$9.99 subscription-based</price>\n    <weight>Not applicable</weight>\n    <warranty>1 year software support</warranty>\n</product>\n\n<building>\n    <id>BUILDING-1</id>\n    <name>Innovator's Hall</name>\n    <type>commercial</type>\n    <description>Innovator's Hall in Neoville is celebrated for hosting premier technology events and industry conferences.</description>\n    <place>southside Neoville</place>\n    <city>Neoville</city>\n    <country>Newlandia</country>\n    <architect>Elara Designs</architect>\n    <year_built>2020</year_built>\n    <height>40 meters</height>\n    <floors>8</floors>\n    <material>glass steel</material>\n    <capacity>1200 attendees</capacity>\n</building>\n\n<building>\n    <id>BUILDING-2</id>\n    <name>City Sports Arena</name>\n    <type>public</type>\n    <description>City Sports Arena is a key venue for athletes and sports fans in Neoville, hosting numerous large-scale events.</description>\n    <place>central Neoville</place>\n    <city>Neoville</city>\n    <country>Newlandia</country>\n    <architect>BuildMaster LLP</architect>\n    <year_built>2010</year_built>\n    <height>50 meters</height>\n    <floors>4</floors>\n    <material>concrete steel</material>\n    <capacity>10000 spectators</capacity>\n</building>\n\n</results>\n```"
+    },
+    {
+      "critique": "I found problems with your response. Please fix these problems and return the corrected output using the same format as before. The problems I found are:\n\nThe following named entities are missing from your output (You are NOT allowed to change the entity name!). Please provide detailed information for these named entities, following the instructions above:\n - [ID=LOCATION-1] \"Techville\"",
+      "response": "```xml\n<results>\n\n<location>\n    <id>LOCATION-1</id>\n    <name>Techville</name>\n    <type>city</type>\n    <description>Techville is a vibrant city celebrated for its innovative tech community and robust educational institutions.</description>\n    <population>300000</population>\n    <area>200square miles</area>\n    <founded>1845</founded>\n    <climate>temperate</climate>\n    <elevation>400feet</elevation>\n    <country>Federation of Newlandia</country>\n</location>\n\n<person>\n    <id>PERSON-1</id>\n    <name>Sarah Carson</name>\n    <date_of_birth>1985-09-12</date_of_birth>\n    <gender>Female</gender>\n    <profession>Augmented Reality Developer</profession>\n    <nationality>Newlandian</nationality>\n    <education>PhD in Computer Science</education>\n    <description>Sarah is celebrated for her innovative approach to augmented reality, aiming to transform everyday experiences.</description>\n    <height>5'7\"</height>\n    <weight>135 pounds</weight>\n    <eye_color>blue</eye_color>\n    <hair_color>brown</hair_color>\n    <political_affiliation>Independent</political_affiliation>\n    <marital_status>Married</marital_status>\n    <spouse>Mark Carlson</spouse>\n</person>\n\n<person>\n    <id>PERSON-2</id>\n    <name>Jonathan Mills</name>\n    <date_of_birth>1980-04-21</date_of_birth>\n    <gender>Male</gender>\n    <profession>Basketball Analyst</profession>\n    <nationality>Atlantican</nationality>\n    <education>Masters in Sports Management</education>\n    <description>Jonathan is respected in the basketball world for his deep insights into the sport.</description>\n    <height>6'2\"</height>\n    <weight>190 pounds</weight>\n    <eye_color>green</eye_color>\n    <hair_color>dark brown</hair_color>\n    <political_affiliation>Progressive Movement</political_affiliation>\n    <marital_status>Divorced</marital_status>\n</person>\n\n<person>\n    <id>PERSON-3</id>\n    <name>Mia Thompson</name>\n    <date_of_birth>1982-11-30</date_of_birth>\n    <gender>Female</gender>\n    <profession>Sports Journalist</profession>\n    <nationality>Terran</nationality>\n    <education>Bachelors in Journalism</education>\n    <description>Mia's engaging sports reports have garnered a wide following for their depth and enthusiasm.</description>\n    <height>5'5\"</height>\n    <weight>130 pounds</weight>\n    <eye_color>hazel</eye_color>\n    <hair_color>blonde</hair_color>\n    <political_affiliation>Centrist</political_affiliation>\n    <marital_status>Single</marital_status>\n</person>\n\n<person>\n    <id>PERSON-4</id>\n    <name>Liam Greene</name>\n    <date_of_birth>1979-07-15</date_of_birth>\n    <gender>Male</gender>\n    <profession>Tech Analyst</profession>\n    <nationality>Newlandian</nationality>\n    <education>Masters in Information Systems</education>\n    <description>Liam is known for his balanced evaluations of new tech trends, focusing on user-centred design.</description>\n    <height>6'0\"</height>\n    <weight>170 pounds</weight>\n    <eye_color>grey</eye_color>\n    <hair_color>black</hair_color>\n    <political_affiliation>Republican</political_affiliation>\n    <marital_status>Married</marital_status>\n    <spouse>Hannah Greene</spouse>\n</person>\n\n<organization>\n    <id>ORGANIZATION-1</id>\n    <name>Celerisoft Inc.</name>\n    <type>company</type>\n    <description>Celerisoft Inc. is a leader in innovative software development, focusing on interactive and user-friendly tech solutions.</description>\n    <founded>2005</founded>\n    <headquarters>Techville TechPark</headquarters>\n    <industry>Software Development</industry>\n    <mission_statement>To pioneer groundbreaking software innovations.</mission_statement>\n    <number_of_employees>350</number_of_employees>\n    <annual_revenue>$42 million</annual_revenue>\n</organization>\n\n<organization>\n    <id>ORGANIZATION-2</id>\n    <name>Sports Innovation Fund</name>\n    <type>non-profit</type>\n    <description>The Sports Innovation Fund promotes technological advancements within sports, aiming to enrich fan engagement and athlete performance.</description>\n    <founded>2010</founded>\n    <headquarters>Newlandia Innovation Hub</headquarters>\n    <industry>Non-Profit and Innovation</industry>\n    <mission_statement>Supporting initiatives that marry technology with sports.</mission_statement>\n    <number_of_employees>50</number_of_employees>\n    <annual_revenue>$10 million</annual_revenue>\n</organization>\n\n<organization>\n    <id>ORGANIZATION-3</id>\n    <name>Techville Titans</name>\n    <type>organization</type>\n    <description>Techville Titans is a popular local basketball team known for strong community presence and competitive spirit.</description>\n    <founded>1995</founded>\n    <headquarters>Techville Sports Complex</headquarters>\n    <industry>Sports</industry>\n    <mission_statement>To lead the basketball community with excellence and teamwork.</mission_statement>\n    <number_of_employees>20 full-time and 15 part-time</number_of_employees>\n</organization>\n\n<organization>\n    <id>ORGANIZATION-4</id>\n    <name>Techville Tigers</name>\n    <type>organization</type>\n    <description>The Techville Tigers focus on cultivating young basketball talent, emphasizing skill and sportsmanship.</description>\n    <founded>2000</founded>\n    <headquarters>Techville Youth Centre</headquarters>\n    <industry>Sports</industry>\n    <mission_statement>To foster growth and skill in young athletes.</mission_statement>\n    <number_of_employees>10 full-time coaches</number_of_employees>\n</organization>\n\n<product>\n    <id>PRODUCT-1</id>\n    <name>HoloCourt</name>\n    <type>software</type>\n    <description>HoloCourt is a cutting-edge augmented reality app that transforms how basketball games are experienced at home.</description>\n    <manufacturer>Celerisoft Inc.</manufacturer>\n    <release_date>2025-04-15</release_date>\n    <price>$9.99 subscription-based</price>\n    <weight>Not applicable</weight>\n    <warranty>1 year software support</warranty>\n</product>\n\n<building>\n    <id>BUILDING-1</id>\n    <name>Innovator's Hall</name>\n    <type>commercial</type>\n    <description>Innovator's Hall in Techville is celebrated for hosting premier technology events and industry conferences.</description>\n    <place>southside Techville</place>\n    <city>Techville</city>\n    <country>Newlandia</country>\n    <architect>Elara Designs</architect>\n    <year_built>2020</year_built>\n    <height>40 meters</height>\n    <floors>8</floors>\n    <material>glass steel</material>\n    <capacity>1200 attendees</capacity>\n</building>\n\n<building>\n    <id>BUILDING-2</id>\n    <name>City Sports Arena</name>\n    <type>public</type>\n    <description>City Sports Arena in Techville is a key venue for athletes and sports fans, hosting numerous large-scale events.</description>\n    <place>central Techville</place>\n    <city>Techville</city>\n    <country>Newlandia</country>\n    <architect>BuildMaster LLP</architect>\n    <year_built>2010</year_built>\n    <height>50 meters</height>\n    <floors>4</floors>\n    <material>concrete steel</material>\n    <capacity>10000 spectators</capacity>\n</building>\n\n</results>\n```"
+    }
+  ]
+}

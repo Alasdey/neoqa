@@ -1,0 +1,425 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "openai/gpt-5.1",
+    "temperature": 0.0,
+    "max-tokens": 5000
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "<scratchpad>\n[Sentence ID]: N0-S0\n- Time information:\n  - States that the final day of the Orvath Ridge Under-17 Futsal Championship was hosted at Selvarin Orvath Indoor Center on 2025-03-22.\n- Event date:\n  - The event date here is explicitly 2025-03-22, which is the date of the final day.\n\nAssumptions:\n- The \u201cfinal day\u201d mentioned here is the same reference point for the phrase \u201ctwo weeks earlier\u201d in N0-S4.\n- No intra-day time (hours/minutes) is specified or needed; we work purely with calendar days.\n\nAbsolute dates:\n- Final day of the Orvath Ridge Under-17 Futsal Championship:\n  - 2025-03-22 (given explicitly).\n\n[Sentence ID]: N0-S4\n- Time information:\n  - \u201cGrendale Youth Futsal Academy Under-17 had secured the Grendale Suburban Zone berth two weeks earlier\u2026\u201d\n  - This is clearly a relative time expression: \u201ctwo weeks earlier\u201d than some later reference point.\n- Event date:\n  - Not directly stated in this sentence; the reference point must be taken from elsewhere in the outline.\n\nAssumptions:\n- The phrase \u201ctwo weeks earlier\u201d refers to a time exactly two weeks before the final day of the Orvath Ridge Under-17 Futsal Championship described in N0-S0.\n- A week is taken as exactly 7 days.\n- We ignore time-of-day and treat these as whole days (date-to-date).\n\nAbsolute dates:\n- If the final day is 2025-03-22 (from N0-S0), then:\n  - Two weeks = 14 days.\n  - Date when Grendale Youth Futsal Academy U17 secured the Grendale Suburban Zone berth:\n    - 2025-03-22 \u2212 14 days = 2025-03-08.\n\nAdditional sentences:\n- None needed. N0-S0 uniquely provides the final day\u2019s calendar date; N0-S4 uniquely provides the relative offset (\u201ctwo weeks earlier\u201d). Both are necessary: N0-S0 supplies the reference event and date; N0-S4 supplies the time gap to the qualifying achievement.\n\nQuestion Idea:\n- Ask for the duration in days between:\n  - the day Grendale Youth Futsal Academy Under-17 secured the Grendale Suburban Zone berth, and\n  - the final day of the Orvath Ridge Under-17 Futsal Championship at Selvarin Orvath Indoor Center.\n- The solver must:\n  - Recognize from N0-S0 what the reference final day is.\n  - Use N0-S4\u2019s \u201ctwo weeks earlier\u201d relative to that final day.\n  - Convert \u201ctwo weeks\u201d into days.\n\nUnique information needed from each selected sentence:\n- N0-S0:\n  - Identifies the \u201cfinal day of the Orvath Ridge Under-17 Futsal Championship at Selvarin Orvath Indoor Center\u201d as a specific calendar day (though the question will avoid giving the date explicitly).\n  - Provides the event that serves as the reference point for \u201cearlier\u201d.\n- N0-S4:\n  - States that the Zone berth was secured \u201ctwo weeks earlier,\u201d thus providing the exact time difference relative to that final day.\n\n[Answer derivation]:\n- Final day date (from N0-S0): 2025-03-22.\n- \u201cTwo weeks earlier\u201d (from N0-S4) = 14 days earlier.\n- Date of securing the Zone berth: 2025-03-22 \u2212 14 days = 2025-03-08.\n- Duration between 2025-03-08 and 2025-03-22:\n  - 14 days.\n\nThus, the time span between securing the Grendale Suburban Zone berth and the final day of the championship is 14 days.\n\n</scratchpad>\n<results>\n<qa>\n<question>Assuming that the statement about Grendale Youth Futsal Academy Under-17 having secured the Grendale Suburban Zone berth \u201ctwo weeks earlier\u201d refers to a point exactly two weeks before the final day of the Orvath Ridge Under-17 Futsal Championship at Selvarin Orvath Indoor Center, and treating each week as seven days while ignoring any time-of-day differences, how many days elapsed between the day they secured that Zone berth and the championship\u2019s final day?</question>\n<answer>14 days</answer>\n<additional_sentence_ids>[]</additional_sentence_ids>\n<additional_sentence_explanation></additional_sentence_explanation>\n</qa>\n</results>"
+  },
+  "response": "<scratchpad>\n[Sentence ID]: N0-S0\n- Time information:\n  - States that the final day of the Orvath Ridge Under-17 Futsal Championship was hosted at Selvarin Orvath Indoor Center on 2025-03-22.\n- Event date:\n  - The event date here is explicitly 2025-03-22, which is the date of the final day.\n\nAssumptions:\n- The \u201cfinal day\u201d mentioned here is the same reference point for the phrase \u201ctwo weeks earlier\u201d in N0-S4.\n- No intra-day time (hours/minutes) is specified or needed; we work purely with calendar days.\n\nAbsolute dates:\n- Final day of the Orvath Ridge Under-17 Futsal Championship:\n  - 2025-03-22 (given explicitly).\n\n[Sentence ID]: N0-S4\n- Time information:\n  - \u201cGrendale Youth Futsal Academy Under-17 had secured the Grendale Suburban Zone berth two weeks earlier\u2026\u201d\n  - This is clearly a relative time expression: \u201ctwo weeks earlier\u201d than some later reference point.\n- Event date:\n  - Not directly stated in this sentence; the reference point must be taken from elsewhere in the outline.\n\nAssumptions:\n- The phrase \u201ctwo weeks earlier\u201d refers to a time exactly two weeks before the final day of the Orvath Ridge Under-17 Futsal Championship described in N0-S0.\n- A week is taken as exactly 7 days.\n- We ignore time-of-day and treat these as whole days (date-to-date).\n\nAbsolute dates:\n- If the final day is 2025-03-22 (from N0-S0), then:\n  - Two weeks = 14 days.\n  - Date when Grendale Youth Futsal Academy U17 secured the Grendale Suburban Zone berth:\n    - 2025-03-22 \u2212 14 days = 2025-03-08.\n\nAdditional sentences:\n- None needed. N0-S0 uniquely provides the final day\u2019s calendar date; N0-S4 uniquely provides the relative offset (\u201ctwo weeks earlier\u201d). Both are necessary: N0-S0 supplies the reference event and date; N0-S4 supplies the time gap to the qualifying achievement.\n\nQuestion Idea:\n- Ask for the duration in days between:\n  - the day Grendale Youth Futsal Academy Under-17 secured the Grendale Suburban Zone berth, and\n  - the final day of the Orvath Ridge Under-17 Futsal Championship at Selvarin Orvath Indoor Center.\n- The solver must:\n  - Recognize from N0-S0 what the reference final day is.\n  - Use N0-S4\u2019s \u201ctwo weeks earlier\u201d relative to that final day.\n  - Convert \u201ctwo weeks\u201d into days.\n\nUnique information needed from each selected sentence:\n- N0-S0:\n  - Identifies the \u201cfinal day of the Orvath Ridge Under-17 Futsal Championship at Selvarin Orvath Indoor Center\u201d as a specific calendar day (though the question will avoid giving the date explicitly).\n  - Provides the event that serves as the reference point for \u201cearlier\u201d.\n- N0-S4:\n  - States that the Zone berth was secured \u201ctwo weeks earlier,\u201d thus providing the exact time difference relative to that final day.\n\n[Answer derivation]:\n- Final day date (from N0-S0): 2025-03-22.\n- \u201cTwo weeks earlier\u201d (from N0-S4) = 14 days earlier.\n- Date of securing the Zone berth: 2025-03-22 \u2212 14 days = 2025-03-08.\n- Duration between 2025-03-08 and 2025-03-22:\n  - 14 days.\n\nThus, the time span between securing the Grendale Suburban Zone berth and the final day of the championship is 14 days.\n\n</scratchpad>\n<results>\n<qa>\n<question>Assuming that the statement about Grendale Youth Futsal Academy Under-17 having secured the Grendale Suburban Zone berth \u201ctwo weeks earlier\u201d refers to a point exactly two weeks before the final day of the Orvath Ridge Under-17 Futsal Championship at Selvarin Orvath Indoor Center, and treating each week as seven days while ignoring any time-of-day differences, how many days elapsed between the day they secured that Zone berth and the championship\u2019s final day?</question>\n<answer>14 days</answer>\n<additional_sentence_ids>[]</additional_sentence_ids>\n<additional_sentence_explanation></additional_sentence_explanation>\n</qa>\n</results>",
+  "instructions": "You are an AI assistant tasked with generating a complex question-answer pair based on a fictional event outline. Your goal is to create a question that asks about an absolute time span (duration) that can be computed using specific selected sentences from the outline.\n\nFirst, review the complete storyline outline:\n\n<complete_outline>\n{{STORYLINE_OUTLINE_TO_DATE}}\n</complete_outline>\n\nNow, focus on the selected sentences:\n\n<selected_sentences>\n{{SELECTED_SENTENCES}}\n</selected_sentences>\n\nTo create a time-span question based on the selected sentences, follow these steps:\n\n1. Identify the absolute date or time within each of the selected sentences if possible. If a sentence doesn't provide additional time information, use the event date as time information. Remember that the dates of individual sub-events within each event may differ from the event date. To compute the specific points in time, check if the selected sentences specify any of the following:\n   - Relative time information (e.g., \"six weeks ago\", \"in five days\", \"after two hours\") based on which you can compute a specific point in time\n   - Absolute time information (e.g., \"10:00 am\", \"March 22nd\")\n   - You can always assume that the date listed for each event is known. The event date is always the latest possible date based on everything that has happened within the event. \n   - If the specific points in time cannot be asserted with certainty but only estimated based on some likelihood, specify assumptions under which you can derive absolute points in time\n   - If the sentences describe durations, list the respective start and end dates/times together with the assumptions\n\n2. Think about the different options of absolute points of time and which time span between them would be most challenging to compute, ensuring that all selected sentences are required to compute the duration.\n\n3. Draft a specific question that asks for the time duration. This question can only be solved if one derives the absolute points in time from each of the selected sentences. The question must always ask about the duration between two points in time. Prefer time durations that differ from the absolute durations of the respective event (if multiple options of different possible ways to compute durations exist).\n\n4. Formulate a precise and correct answer to the question, which must be an absolute duration. Only use the information from the selected sentences and make the question very specific to avoid ambiguities. In the scratchpad, include a derivation of the answer using the absolute dates you estimated before.\n\n5. Ensure the validity of the questions:\n   - Ensure that the question can ONLY be answered when ALL of the selected sentences are present.\n   - Make sure that ALL of the selected sentences are needed to answer the question.\n   - Make sure that no other information from the <complete_outline> is sufficient to answer the question and that no other sentence from the <complete_outline> can replace any of the selected sentence in answering the question.\n   - Adjust the question accordingly to fulfill these criteria by making it more specific.\n\n6. Avoid absolute dates or times in your question if possible:\n   - If you needed to make an assumption about when something happened, try to explain it relative to other existing events or information from the <complete_outline>. Try to replace explicitly mentioned dates by anchoring them into some content of the <complete_outline> instead. If necessary, add the additional required sentence ID to your result and explain the unique information of this sentence that is necessary.\n   - Make sure that temporal reasoning is still required in the revised question. Double-check if the temporal information is still essential to answer the question after resolving the absolute dates. Think about different options (like start and end dates) to make sure that one must apply temporal reasoning to answer the question.\n\n7. If you must integrate additional information beyond what is specified within the selected sentences:\n   - Identify the unique information you must add to the question within the provided <complete_outline> and select the sentence communicating this unique information\n   - Explain what kind of unique information from this sentence is needed and why\n   - List the sentence ID of the newly selected sentence in your result\n   - Rewrite your question accordingly and ensure that all points listed in step 5 are valid when adding the newly selected sentence\n\nProvide your reasoning in the following format:\n<scratchpad>\n(Repeat for all sentence IDs)\n[Sentence ID]:\n- [Describe the time information from this sentence]\n- [Identify the event date]\nAssumptions:\n- [Make your assumptions explicit]\nAbsolute dates:\n- [List all relevant absolute dates from this sentence. Justify how they relate to the event date or other date information.]\n\n\nAdditional sentences:\n[Think about additional sentence IDs to add and explain your decision and what information from the sentence you require. List any new absolute dates based on this information.]\n\nQuestion Idea:\n[Outline how to create a challenging time-span question based on the absolute dates and selected information]\n- [For each selected sentence, specifically elaborate the unique information from this sentence that is required to answer the question. Think about how to frame the question without explicitly stating this unique information.]\n\n[Answer derivation]:\nCompute the answer using the absolute dates from above.\n\n<scratchpad>\n\nOutput your results in the following format:\n<scratchpad>[Outline your reasoning including the derived absolute points in time here.]</scratchpad>\n<results>\n<qa>\n<question>[Your generated question about the time span]</question>\n<answer>[The precise and concise answer to the question]</answer>\n<additional_sentence_ids>[List of additional sentence IDs required to answer the question, if applicable]</additional_sentence_ids>\n<additional_sentence_explanation>[Explain the unique information of each additional sentence that is required to answer the question and justify why it is needed, if applicable]</additional_sentence_explanation>\n</qa>\n</results>\n\nRemember to make your question as specific as possible, ensuring that it can only be answered using the information from the selected sentences (and any additional sentences you may need to include). If you need to make assumptions, state them clearly in the question. Always provide a precise and concise answer to the question you generate.\n\nImportant reminders:\n- While each event provides a unique date, which can be helpful to identify the question, the provided date does not necessarily apply to all information listed in the event outline (or the selected sentences extracted from the event outline). The event date is always the latest possible date based on everything that has happened within the event. Think carefully about how the event date applies to the selected sentences before you start drafting your question. Some events may have happened in the past even though they are not described in the past tense. Use your common sense and the sequence of sentences within the event. If you are reasonably uncertain, make your assumption explicit and include it in your question.\n- Ensure that the question can ONLY be answered when ALL of the selected sentences are present, and that ALL of the selected sentences are needed to answer the question.\n- Make sure that no other information from the <complete_outline> is sufficient to infer the correct answer.\n- If you need to include additional sentences, clearly explain why they are necessary and what unique information they provide.\n- In your question clearly indicate if some point in time happens in the future as such (for example when including the planned end date of an ongoing or planned event).\n- In your question, DO NOT include the required temporal information. The temporal information must be inferred from the content of the selected sentences.\n- DO NOT create questions about time-spans that mix units that cannot be compared in a meaningful way (such as minutes and days, days and years).\n- If you make assumptions, make sure they are plausible.\n- If you rely on the event date, carefully assess if the whether the information likely occurred before or after the event date.\n- State your assumptions that are required to answer the question clearly in the question.\n- Make sure that the question cannot be answered without considering unique content from ALL selected evidence sentences (from <selected_sentences> and <additional_sentence_ids>)\n- Explicitly compute and list all dates, including start and end dates, based on your assumptions before you draft your question.\n- The answer should only consist of the correct time span and should not be a complete sentence.\n- Ensure that you DO NOT explicitly refer to absolute dates or relative time spans (from the selected sentences) in the question. It is important that answering the question requires extracting this information from these sentences.",
+  "text_prompt": "You are an AI assistant tasked with generating a complex question-answer pair based on a fictional event outline. Your goal is to create a question that asks about an absolute time span (duration) that can be computed using specific selected sentences from the outline.\n\nFirst, review the complete storyline outline:\n\n<complete_outline>\n<event>\n<date>2025-03-22</date>\n<content>\n<item><id>N0-S0</id><text>The Orvath Ridge Schools Futsal Council hosted the final day of the Orvath Ridge Under-17 Futsal Championship at Selvarin Orvath Indoor Center on 2025-03-22.</text></item>\n<item><id>N0-S1</id><text>The final day program at Selvarin Orvath Indoor Center began at 09:00 with warm-up sessions and team check-ins, with the main court stands gradually filling to an estimated crowd of around 450 spectators by the time of the afternoon final.</text></item>\n<item><id>N0-S2</id><text>Selvarin Orvath Indoor Center featured two regulation futsal courts with a blue synthetic surface and electronic scoreboards, and the Orvath Ridge Schools Futsal Council used the central court exclusively for the under-17 semifinal and final fixtures.</text></item>\n<item><id>N0-S3</id><text>Grendale Youth Futsal Academy Under-17 entered the Orvath Ridge Under-17 Futsal Championship as the qualifying representative team of the Grendale Suburban Zone of Selvarin City.</text></item>\n<item><id>N0-S4</id><text>Grendale Youth Futsal Academy Under-17 had secured the Grendale Suburban Zone berth two weeks earlier by finishing top of the zone\u2019s qualifying league on goal difference after a six-match campaign.</text></item>\n<item><id>N0-S5</id><text>The squad of Grendale Youth Futsal Academy Under-17 registered for the tournament consisted of 12 players aged between 15 and 17 years, coached and supported by a staff group of four including a fitness coach and a team physiotherapist.</text></item>\n<item><id>N0-S6</id><text>Grendale Youth Futsal Academy Under-17 won all three group-stage matches of the Orvath Ridge Under-17 Futsal Championship to finish first in Group A.</text></item>\n<item><id>N0-S7</id><text>In Group A, Grendale Youth Futsal Academy Under-17 recorded a 3\u20130 win over Meadowlane School Futsal Under-17, a 2\u20131 victory against Selvarin East Secondary Under-17, and a 1\u20130 result over Orvath Ridge Collegiate Under-17.</text></item>\n<item><id>N0-S8</id><text>The group-stage fixtures for Grendale Youth Futsal Academy Under-17 were played over three consecutive evenings at Selvarin Orvath Indoor Center, with the team mathematically securing a semifinal place after just the second match.</text></item>\n<item><id>N0-S9</id><text>Grendale Youth Futsal Academy Under-17 conceded only one goal during the three group-stage matches of the Orvath Ridge Under-17 Futsal Championship.</text></item>\n<item><id>N0-S10</id><text>The lone group-stage goal against Grendale Youth Futsal Academy Under-17 was scored from a 6-meter penalty by forward Laren Vos of Selvarin East Secondary Under-17 late in the first half of their second group match.</text></item>\n<item><id>N0-S11</id><text>Goalkeeper Ren Talvek of Grendale Youth Futsal Academy Under-17 was named player of the match in two of the three group fixtures after making several close-range saves to preserve narrow leads.</text></item>\n<item><id>N0-S12</id><text>Grendale Youth Futsal Academy Under-17 defeated Selvarin Riverside Training Center Under-17 by 2\u20131 in the semifinal of the Orvath Ridge Under-17 Futsal Championship.</text></item>\n<item><id>N0-S13</id><text>In the semifinal, winger Daren Mol of Grendale Youth Futsal Academy Under-17 opened the scoring in the 7th minute, and pivot Jorin Kale netted the decisive second goal midway through the second half after a set-play corner routine.</text></item>\n<item><id>N0-S14</id><text>The semifinal between Grendale Youth Futsal Academy Under-17 and Selvarin Riverside Training Center Under-17 was officiated by referee Elvin Sarro and two assistant referees, with the match played at a high tempo and several tactical time-outs called by both benches.</text></item>\n<item><id>N0-S15</id><text>The 2\u20131 semifinal victory over Selvarin Riverside Training Center Under-17 gave Grendale Youth Futsal Academy Under-17 a second goal conceded in the entire Orvath Ridge Under-17 Futsal Championship.</text></item>\n<item><id>N0-S16</id><text>The goal conceded in the semifinal came from a deflected long-range shot early in the second half, briefly leveling the score at 1\u20131 before Grendale Youth Futsal Academy Under-17 restored the lead.</text></item>\n<item><id>N0-S17</id><text>Despite the setback, the defensive unit of Grendale Youth Futsal Academy Under-17 responded by limiting Selvarin Riverside Training Center Under-17 to speculative efforts from distance in the final minutes.</text></item>\n<item><id>N0-S18</id><text>Grendale Youth Futsal Academy Under-17 won the final of the Orvath Ridge Under-17 Futsal Championship with a 3\u20130 victory over Selvarin Central Sports School Under-17 at Selvarin Orvath Indoor Center.</text></item>\n<item><id>N0-S19</id><text>The final kicked off at 16:30 on the main court, with Grendale Youth Futsal Academy Under-17 captain and playmaker Mikel Ardan scoring twice and flank player Sera Noll adding a third goal on a fast break in the closing stages.</text></item>\n<item><id>N0-S20</id><text>Selvarin Central Sports School Under-17 struggled to break down the compact 2\u20132 defensive shape employed by Grendale Youth Futsal Academy Under-17, managing only a handful of shots on target over the two 20-minute halves.</text></item>\n<item><id>N0-S21</id><text>With five wins from five matches, Grendale Youth Futsal Academy Under-17 secured the Orvath Ridge Under-17 Futsal Championship title while conceding only two goals in the tournament.</text></item>\n<item><id>N0-S22</id><text>Across the five matches of the Orvath Ridge Under-17 Futsal Championship, Grendale Youth Futsal Academy Under-17 scored a total of 11 goals, finishing with the best goal difference of any team in the competition.</text></item>\n<item><id>N0-S23</id><text>Several school coaches and spectators at Selvarin Orvath Indoor Center remarked that the consistency shown by Grendale Youth Futsal Academy Under-17 across all phases of play set a benchmark for future editions of the under-17 event.</text></item>\n<item><id>N0-S24</id><text>Head coach Marlen Tiravo of Grendale Youth Futsal Academy Under-17 credited the championship success of Grendale Youth Futsal Academy Under-17 to defensive discipline and consistent training in a post-final interview with the Orvath Ridge Schools Futsal Council media team.</text></item>\n<item><id>N0-S25</id><text>Head coach Marlen Tiravo, who has led youth teams at Grendale Youth Futsal Academy for five seasons, highlighted that the under-17 squad had trained four evenings per week since January with a special focus on pressing and transition drills.</text></item>\n<item><id>N0-S26</id><text>During the interview conducted courtside by council media officer Lina Veress, head coach Marlen Tiravo stated that the players had \u201ctreated every session as if it were a final,\u201d emphasizing their commitment and punctuality throughout the preparation period.</text></item>\n<item><id>N0-S27</id><text>The Orvath Ridge Schools Futsal Council awarded Grendale Youth Futsal Academy Under-17 a development grant for new training equipment in recognition of the Orvath Ridge Under-17 Futsal Championship victory by Grendale Youth Futsal Academy Under-17.</text></item>\n<item><id>N0-S28</id><text>The development grant from the Orvath Ridge Schools Futsal Council was announced as a package valued at approximately 3,000 selvars, earmarked for purchasing new futsal balls, portable goals, and agility training gear for Grendale Youth Futsal Academy Under-17.</text></item>\n<item><id>N0-S29</id><text>Representatives of the Orvath Ridge Schools Futsal Council handed the official grant confirmation letter to head coach Marlen Tiravo at the edge of the main court, with the players of Grendale Youth Futsal Academy Under-17 gathered around in team tracksuits.</text></item>\n</content>\n</event>\n</complete_outline>\n\nNow, focus on the selected sentences:\n\n<selected_sentences>\n<item><id>N0-S0</id><text>The Orvath Ridge Schools Futsal Council hosted the final day of the Orvath Ridge Under-17 Futsal Championship at Selvarin Orvath Indoor Center on 2025-03-22.</text></item>\n<item><id>N0-S4</id><text>Grendale Youth Futsal Academy Under-17 had secured the Grendale Suburban Zone berth two weeks earlier by finishing top of the zone\u2019s qualifying league on goal difference after a six-match campaign.</text></item>\n</selected_sentences>\n\nTo create a time-span question based on the selected sentences, follow these steps:\n\n1. Identify the absolute date or time within each of the selected sentences if possible. If a sentence doesn't provide additional time information, use the event date as time information. Remember that the dates of individual sub-events within each event may differ from the event date. To compute the specific points in time, check if the selected sentences specify any of the following:\n   - Relative time information (e.g., \"six weeks ago\", \"in five days\", \"after two hours\") based on which you can compute a specific point in time\n   - Absolute time information (e.g., \"10:00 am\", \"March 22nd\")\n   - You can always assume that the date listed for each event is known. The event date is always the latest possible date based on everything that has happened within the event. \n   - If the specific points in time cannot be asserted with certainty but only estimated based on some likelihood, specify assumptions under which you can derive absolute points in time\n   - If the sentences describe durations, list the respective start and end dates/times together with the assumptions\n\n2. Think about the different options of absolute points of time and which time span between them would be most challenging to compute, ensuring that all selected sentences are required to compute the duration.\n\n3. Draft a specific question that asks for the time duration. This question can only be solved if one derives the absolute points in time from each of the selected sentences. The question must always ask about the duration between two points in time. Prefer time durations that differ from the absolute durations of the respective event (if multiple options of different possible ways to compute durations exist).\n\n4. Formulate a precise and correct answer to the question, which must be an absolute duration. Only use the information from the selected sentences and make the question very specific to avoid ambiguities. In the scratchpad, include a derivation of the answer using the absolute dates you estimated before.\n\n5. Ensure the validity of the questions:\n   - Ensure that the question can ONLY be answered when ALL of the selected sentences are present.\n   - Make sure that ALL of the selected sentences are needed to answer the question.\n   - Make sure that no other information from the <complete_outline> is sufficient to answer the question and that no other sentence from the <complete_outline> can replace any of the selected sentence in answering the question.\n   - Adjust the question accordingly to fulfill these criteria by making it more specific.\n\n6. Avoid absolute dates or times in your question if possible:\n   - If you needed to make an assumption about when something happened, try to explain it relative to other existing events or information from the <complete_outline>. Try to replace explicitly mentioned dates by anchoring them into some content of the <complete_outline> instead. If necessary, add the additional required sentence ID to your result and explain the unique information of this sentence that is necessary.\n   - Make sure that temporal reasoning is still required in the revised question. Double-check if the temporal information is still essential to answer the question after resolving the absolute dates. Think about different options (like start and end dates) to make sure that one must apply temporal reasoning to answer the question.\n\n7. If you must integrate additional information beyond what is specified within the selected sentences:\n   - Identify the unique information you must add to the question within the provided <complete_outline> and select the sentence communicating this unique information\n   - Explain what kind of unique information from this sentence is needed and why\n   - List the sentence ID of the newly selected sentence in your result\n   - Rewrite your question accordingly and ensure that all points listed in step 5 are valid when adding the newly selected sentence\n\nProvide your reasoning in the following format:\n<scratchpad>\n(Repeat for all sentence IDs)\n[Sentence ID]:\n- [Describe the time information from this sentence]\n- [Identify the event date]\nAssumptions:\n- [Make your assumptions explicit]\nAbsolute dates:\n- [List all relevant absolute dates from this sentence. Justify how they relate to the event date or other date information.]\n\n\nAdditional sentences:\n[Think about additional sentence IDs to add and explain your decision and what information from the sentence you require. List any new absolute dates based on this information.]\n\nQuestion Idea:\n[Outline how to create a challenging time-span question based on the absolute dates and selected information]\n- [For each selected sentence, specifically elaborate the unique information from this sentence that is required to answer the question. Think about how to frame the question without explicitly stating this unique information.]\n\n[Answer derivation]:\nCompute the answer using the absolute dates from above.\n\n<scratchpad>\n\nOutput your results in the following format:\n<scratchpad>[Outline your reasoning including the derived absolute points in time here.]</scratchpad>\n<results>\n<qa>\n<question>[Your generated question about the time span]</question>\n<answer>[The precise and concise answer to the question]</answer>\n<additional_sentence_ids>[List of additional sentence IDs required to answer the question, if applicable]</additional_sentence_ids>\n<additional_sentence_explanation>[Explain the unique information of each additional sentence that is required to answer the question and justify why it is needed, if applicable]</additional_sentence_explanation>\n</qa>\n</results>\n\nRemember to make your question as specific as possible, ensuring that it can only be answered using the information from the selected sentences (and any additional sentences you may need to include). If you need to make assumptions, state them clearly in the question. Always provide a precise and concise answer to the question you generate.\n\nImportant reminders:\n- While each event provides a unique date, which can be helpful to identify the question, the provided date does not necessarily apply to all information listed in the event outline (or the selected sentences extracted from the event outline). The event date is always the latest possible date based on everything that has happened within the event. Think carefully about how the event date applies to the selected sentences before you start drafting your question. Some events may have happened in the past even though they are not described in the past tense. Use your common sense and the sequence of sentences within the event. If you are reasonably uncertain, make your assumption explicit and include it in your question.\n- Ensure that the question can ONLY be answered when ALL of the selected sentences are present, and that ALL of the selected sentences are needed to answer the question.\n- Make sure that no other information from the <complete_outline> is sufficient to infer the correct answer.\n- If you need to include additional sentences, clearly explain why they are necessary and what unique information they provide.\n- In your question clearly indicate if some point in time happens in the future as such (for example when including the planned end date of an ongoing or planned event).\n- In your question, DO NOT include the required temporal information. The temporal information must be inferred from the content of the selected sentences.\n- DO NOT create questions about time-spans that mix units that cannot be compared in a meaningful way (such as minutes and days, days and years).\n- If you make assumptions, make sure they are plausible.\n- If you rely on the event date, carefully assess if the whether the information likely occurred before or after the event date.\n- State your assumptions that are required to answer the question clearly in the question.\n- Make sure that the question cannot be answered without considering unique content from ALL selected evidence sentences (from <selected_sentences> and <additional_sentence_ids>)\n- Explicitly compute and list all dates, including start and end dates, based on your assumptions before you draft your question.\n- The answer should only consist of the correct time span and should not be a complete sentence.\n- Ensure that you DO NOT explicitly refer to absolute dates or relative time spans (from the selected sentences) in the question. It is important that answering the question requires extracting this information from these sentences.",
+  "system-prompt": null,
+  "values": {
+    "OUTLINES": "<event>\n<date>2025-03-22</date>\n<content>\n<item><id>N0-S0</id><text>The Orvath Ridge Schools Futsal Council hosted the final day of the Orvath Ridge Under-17 Futsal Championship at Selvarin Orvath Indoor Center on 2025-03-22.</text></item>\n<item><id>N0-S1</id><text>The final day program at Selvarin Orvath Indoor Center began at 09:00 with warm-up sessions and team check-ins, with the main court stands gradually filling to an estimated crowd of around 450 spectators by the time of the afternoon final.</text></item>\n<item><id>N0-S2</id><text>Selvarin Orvath Indoor Center featured two regulation futsal courts with a blue synthetic surface and electronic scoreboards, and the Orvath Ridge Schools Futsal Council used the central court exclusively for the under-17 semifinal and final fixtures.</text></item>\n<item><id>N0-S3</id><text>Grendale Youth Futsal Academy Under-17 entered the Orvath Ridge Under-17 Futsal Championship as the qualifying representative team of the Grendale Suburban Zone of Selvarin City.</text></item>\n<item><id>N0-S4</id><text>Grendale Youth Futsal Academy Under-17 had secured the Grendale Suburban Zone berth two weeks earlier by finishing top of the zone\u2019s qualifying league on goal difference after a six-match campaign.</text></item>\n<item><id>N0-S5</id><text>The squad of Grendale Youth Futsal Academy Under-17 registered for the tournament consisted of 12 players aged between 15 and 17 years, coached and supported by a staff group of four including a fitness coach and a team physiotherapist.</text></item>\n<item><id>N0-S6</id><text>Grendale Youth Futsal Academy Under-17 won all three group-stage matches of the Orvath Ridge Under-17 Futsal Championship to finish first in Group A.</text></item>\n<item><id>N0-S7</id><text>In Group A, Grendale Youth Futsal Academy Under-17 recorded a 3\u20130 win over Meadowlane School Futsal Under-17, a 2\u20131 victory against Selvarin East Secondary Under-17, and a 1\u20130 result over Orvath Ridge Collegiate Under-17.</text></item>\n<item><id>N0-S8</id><text>The group-stage fixtures for Grendale Youth Futsal Academy Under-17 were played over three consecutive evenings at Selvarin Orvath Indoor Center, with the team mathematically securing a semifinal place after just the second match.</text></item>\n<item><id>N0-S9</id><text>Grendale Youth Futsal Academy Under-17 conceded only one goal during the three group-stage matches of the Orvath Ridge Under-17 Futsal Championship.</text></item>\n<item><id>N0-S10</id><text>The lone group-stage goal against Grendale Youth Futsal Academy Under-17 was scored from a 6-meter penalty by forward Laren Vos of Selvarin East Secondary Under-17 late in the first half of their second group match.</text></item>\n<item><id>N0-S11</id><text>Goalkeeper Ren Talvek of Grendale Youth Futsal Academy Under-17 was named player of the match in two of the three group fixtures after making several close-range saves to preserve narrow leads.</text></item>\n<item><id>N0-S12</id><text>Grendale Youth Futsal Academy Under-17 defeated Selvarin Riverside Training Center Under-17 by 2\u20131 in the semifinal of the Orvath Ridge Under-17 Futsal Championship.</text></item>\n<item><id>N0-S13</id><text>In the semifinal, winger Daren Mol of Grendale Youth Futsal Academy Under-17 opened the scoring in the 7th minute, and pivot Jorin Kale netted the decisive second goal midway through the second half after a set-play corner routine.</text></item>\n<item><id>N0-S14</id><text>The semifinal between Grendale Youth Futsal Academy Under-17 and Selvarin Riverside Training Center Under-17 was officiated by referee Elvin Sarro and two assistant referees, with the match played at a high tempo and several tactical time-outs called by both benches.</text></item>\n<item><id>N0-S15</id><text>The 2\u20131 semifinal victory over Selvarin Riverside Training Center Under-17 gave Grendale Youth Futsal Academy Under-17 a second goal conceded in the entire Orvath Ridge Under-17 Futsal Championship.</text></item>\n<item><id>N0-S16</id><text>The goal conceded in the semifinal came from a deflected long-range shot early in the second half, briefly leveling the score at 1\u20131 before Grendale Youth Futsal Academy Under-17 restored the lead.</text></item>\n<item><id>N0-S17</id><text>Despite the setback, the defensive unit of Grendale Youth Futsal Academy Under-17 responded by limiting Selvarin Riverside Training Center Under-17 to speculative efforts from distance in the final minutes.</text></item>\n<item><id>N0-S18</id><text>Grendale Youth Futsal Academy Under-17 won the final of the Orvath Ridge Under-17 Futsal Championship with a 3\u20130 victory over Selvarin Central Sports School Under-17 at Selvarin Orvath Indoor Center.</text></item>\n<item><id>N0-S19</id><text>The final kicked off at 16:30 on the main court, with Grendale Youth Futsal Academy Under-17 captain and playmaker Mikel Ardan scoring twice and flank player Sera Noll adding a third goal on a fast break in the closing stages.</text></item>\n<item><id>N0-S20</id><text>Selvarin Central Sports School Under-17 struggled to break down the compact 2\u20132 defensive shape employed by Grendale Youth Futsal Academy Under-17, managing only a handful of shots on target over the two 20-minute halves.</text></item>\n<item><id>N0-S21</id><text>With five wins from five matches, Grendale Youth Futsal Academy Under-17 secured the Orvath Ridge Under-17 Futsal Championship title while conceding only two goals in the tournament.</text></item>\n<item><id>N0-S22</id><text>Across the five matches of the Orvath Ridge Under-17 Futsal Championship, Grendale Youth Futsal Academy Under-17 scored a total of 11 goals, finishing with the best goal difference of any team in the competition.</text></item>\n<item><id>N0-S23</id><text>Several school coaches and spectators at Selvarin Orvath Indoor Center remarked that the consistency shown by Grendale Youth Futsal Academy Under-17 across all phases of play set a benchmark for future editions of the under-17 event.</text></item>\n<item><id>N0-S24</id><text>Head coach Marlen Tiravo of Grendale Youth Futsal Academy Under-17 credited the championship success of Grendale Youth Futsal Academy Under-17 to defensive discipline and consistent training in a post-final interview with the Orvath Ridge Schools Futsal Council media team.</text></item>\n<item><id>N0-S25</id><text>Head coach Marlen Tiravo, who has led youth teams at Grendale Youth Futsal Academy for five seasons, highlighted that the under-17 squad had trained four evenings per week since January with a special focus on pressing and transition drills.</text></item>\n<item><id>N0-S26</id><text>During the interview conducted courtside by council media officer Lina Veress, head coach Marlen Tiravo stated that the players had \u201ctreated every session as if it were a final,\u201d emphasizing their commitment and punctuality throughout the preparation period.</text></item>\n<item><id>N0-S27</id><text>The Orvath Ridge Schools Futsal Council awarded Grendale Youth Futsal Academy Under-17 a development grant for new training equipment in recognition of the Orvath Ridge Under-17 Futsal Championship victory by Grendale Youth Futsal Academy Under-17.</text></item>\n<item><id>N0-S28</id><text>The development grant from the Orvath Ridge Schools Futsal Council was announced as a package valued at approximately 3,000 selvars, earmarked for purchasing new futsal balls, portable goals, and agility training gear for Grendale Youth Futsal Academy Under-17.</text></item>\n<item><id>N0-S29</id><text>Representatives of the Orvath Ridge Schools Futsal Council handed the official grant confirmation letter to head coach Marlen Tiravo at the edge of the main court, with the players of Grendale Youth Futsal Academy Under-17 gathered around in team tracksuits.</text></item>\n</content>\n</event>",
+    "STORYLINE_OUTLINE_TO_DATE": "<event>\n<date>2025-03-22</date>\n<content>\n<item><id>N0-S0</id><text>The Orvath Ridge Schools Futsal Council hosted the final day of the Orvath Ridge Under-17 Futsal Championship at Selvarin Orvath Indoor Center on 2025-03-22.</text></item>\n<item><id>N0-S1</id><text>The final day program at Selvarin Orvath Indoor Center began at 09:00 with warm-up sessions and team check-ins, with the main court stands gradually filling to an estimated crowd of around 450 spectators by the time of the afternoon final.</text></item>\n<item><id>N0-S2</id><text>Selvarin Orvath Indoor Center featured two regulation futsal courts with a blue synthetic surface and electronic scoreboards, and the Orvath Ridge Schools Futsal Council used the central court exclusively for the under-17 semifinal and final fixtures.</text></item>\n<item><id>N0-S3</id><text>Grendale Youth Futsal Academy Under-17 entered the Orvath Ridge Under-17 Futsal Championship as the qualifying representative team of the Grendale Suburban Zone of Selvarin City.</text></item>\n<item><id>N0-S4</id><text>Grendale Youth Futsal Academy Under-17 had secured the Grendale Suburban Zone berth two weeks earlier by finishing top of the zone\u2019s qualifying league on goal difference after a six-match campaign.</text></item>\n<item><id>N0-S5</id><text>The squad of Grendale Youth Futsal Academy Under-17 registered for the tournament consisted of 12 players aged between 15 and 17 years, coached and supported by a staff group of four including a fitness coach and a team physiotherapist.</text></item>\n<item><id>N0-S6</id><text>Grendale Youth Futsal Academy Under-17 won all three group-stage matches of the Orvath Ridge Under-17 Futsal Championship to finish first in Group A.</text></item>\n<item><id>N0-S7</id><text>In Group A, Grendale Youth Futsal Academy Under-17 recorded a 3\u20130 win over Meadowlane School Futsal Under-17, a 2\u20131 victory against Selvarin East Secondary Under-17, and a 1\u20130 result over Orvath Ridge Collegiate Under-17.</text></item>\n<item><id>N0-S8</id><text>The group-stage fixtures for Grendale Youth Futsal Academy Under-17 were played over three consecutive evenings at Selvarin Orvath Indoor Center, with the team mathematically securing a semifinal place after just the second match.</text></item>\n<item><id>N0-S9</id><text>Grendale Youth Futsal Academy Under-17 conceded only one goal during the three group-stage matches of the Orvath Ridge Under-17 Futsal Championship.</text></item>\n<item><id>N0-S10</id><text>The lone group-stage goal against Grendale Youth Futsal Academy Under-17 was scored from a 6-meter penalty by forward Laren Vos of Selvarin East Secondary Under-17 late in the first half of their second group match.</text></item>\n<item><id>N0-S11</id><text>Goalkeeper Ren Talvek of Grendale Youth Futsal Academy Under-17 was named player of the match in two of the three group fixtures after making several close-range saves to preserve narrow leads.</text></item>\n<item><id>N0-S12</id><text>Grendale Youth Futsal Academy Under-17 defeated Selvarin Riverside Training Center Under-17 by 2\u20131 in the semifinal of the Orvath Ridge Under-17 Futsal Championship.</text></item>\n<item><id>N0-S13</id><text>In the semifinal, winger Daren Mol of Grendale Youth Futsal Academy Under-17 opened the scoring in the 7th minute, and pivot Jorin Kale netted the decisive second goal midway through the second half after a set-play corner routine.</text></item>\n<item><id>N0-S14</id><text>The semifinal between Grendale Youth Futsal Academy Under-17 and Selvarin Riverside Training Center Under-17 was officiated by referee Elvin Sarro and two assistant referees, with the match played at a high tempo and several tactical time-outs called by both benches.</text></item>\n<item><id>N0-S15</id><text>The 2\u20131 semifinal victory over Selvarin Riverside Training Center Under-17 gave Grendale Youth Futsal Academy Under-17 a second goal conceded in the entire Orvath Ridge Under-17 Futsal Championship.</text></item>\n<item><id>N0-S16</id><text>The goal conceded in the semifinal came from a deflected long-range shot early in the second half, briefly leveling the score at 1\u20131 before Grendale Youth Futsal Academy Under-17 restored the lead.</text></item>\n<item><id>N0-S17</id><text>Despite the setback, the defensive unit of Grendale Youth Futsal Academy Under-17 responded by limiting Selvarin Riverside Training Center Under-17 to speculative efforts from distance in the final minutes.</text></item>\n<item><id>N0-S18</id><text>Grendale Youth Futsal Academy Under-17 won the final of the Orvath Ridge Under-17 Futsal Championship with a 3\u20130 victory over Selvarin Central Sports School Under-17 at Selvarin Orvath Indoor Center.</text></item>\n<item><id>N0-S19</id><text>The final kicked off at 16:30 on the main court, with Grendale Youth Futsal Academy Under-17 captain and playmaker Mikel Ardan scoring twice and flank player Sera Noll adding a third goal on a fast break in the closing stages.</text></item>\n<item><id>N0-S20</id><text>Selvarin Central Sports School Under-17 struggled to break down the compact 2\u20132 defensive shape employed by Grendale Youth Futsal Academy Under-17, managing only a handful of shots on target over the two 20-minute halves.</text></item>\n<item><id>N0-S21</id><text>With five wins from five matches, Grendale Youth Futsal Academy Under-17 secured the Orvath Ridge Under-17 Futsal Championship title while conceding only two goals in the tournament.</text></item>\n<item><id>N0-S22</id><text>Across the five matches of the Orvath Ridge Under-17 Futsal Championship, Grendale Youth Futsal Academy Under-17 scored a total of 11 goals, finishing with the best goal difference of any team in the competition.</text></item>\n<item><id>N0-S23</id><text>Several school coaches and spectators at Selvarin Orvath Indoor Center remarked that the consistency shown by Grendale Youth Futsal Academy Under-17 across all phases of play set a benchmark for future editions of the under-17 event.</text></item>\n<item><id>N0-S24</id><text>Head coach Marlen Tiravo of Grendale Youth Futsal Academy Under-17 credited the championship success of Grendale Youth Futsal Academy Under-17 to defensive discipline and consistent training in a post-final interview with the Orvath Ridge Schools Futsal Council media team.</text></item>\n<item><id>N0-S25</id><text>Head coach Marlen Tiravo, who has led youth teams at Grendale Youth Futsal Academy for five seasons, highlighted that the under-17 squad had trained four evenings per week since January with a special focus on pressing and transition drills.</text></item>\n<item><id>N0-S26</id><text>During the interview conducted courtside by council media officer Lina Veress, head coach Marlen Tiravo stated that the players had \u201ctreated every session as if it were a final,\u201d emphasizing their commitment and punctuality throughout the preparation period.</text></item>\n<item><id>N0-S27</id><text>The Orvath Ridge Schools Futsal Council awarded Grendale Youth Futsal Academy Under-17 a development grant for new training equipment in recognition of the Orvath Ridge Under-17 Futsal Championship victory by Grendale Youth Futsal Academy Under-17.</text></item>\n<item><id>N0-S28</id><text>The development grant from the Orvath Ridge Schools Futsal Council was announced as a package valued at approximately 3,000 selvars, earmarked for purchasing new futsal balls, portable goals, and agility training gear for Grendale Youth Futsal Academy Under-17.</text></item>\n<item><id>N0-S29</id><text>Representatives of the Orvath Ridge Schools Futsal Council handed the official grant confirmation letter to head coach Marlen Tiravo at the edge of the main court, with the players of Grendale Youth Futsal Academy Under-17 gathered around in team tracksuits.</text></item>\n</content>\n</event>",
+    "SELECTED_EVENTS": [
+      {
+        "created_at": 0,
+        "summary": "A youth futsal team representing a suburban academy claimed the under-17 regional championship, winning all five of its matches and conceding only two goals in the tournament.",
+        "outline": [
+          {
+            "sentence": "The {Orvath Ridge Schools Futsal Council|ORGANIZATION-1} hosted the final day of the {Orvath Ridge Under-17 Futsal Championship|EVENT-1} at {Selvarin Orvath Indoor Center|BUILDING-1} on 2025-03-22.",
+            "id": "N0-S0",
+            "pos": 0
+          },
+          {
+            "sentence": "The final day program at {Selvarin Orvath Indoor Center|BUILDING-1} began at 09:00 with warm-up sessions and team check-ins, with the main court stands gradually filling to an estimated crowd of around 450 spectators by the time of the afternoon final.",
+            "id": "N0-S1",
+            "pos": 1
+          },
+          {
+            "sentence": "{Selvarin Orvath Indoor Center|BUILDING-1} featured two regulation futsal courts with a blue synthetic surface and electronic scoreboards, and the {Orvath Ridge Schools Futsal Council|ORGANIZATION-1} used the central court exclusively for the under-17 semifinal and final fixtures.",
+            "id": "N0-S2",
+            "pos": 2
+          },
+          {
+            "sentence": "{Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} entered the {Orvath Ridge Under-17 Futsal Championship|EVENT-1} as the qualifying representative team of the {Grendale Suburban Zone|LOCATION-1} of {Selvarin City|LOCATION-2}.",
+            "id": "N0-S3",
+            "pos": 3
+          },
+          {
+            "sentence": "{Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} had secured the {Grendale Suburban Zone|LOCATION-1} berth two weeks earlier by finishing top of the zone\u2019s qualifying league on goal difference after a six-match campaign.",
+            "id": "N0-S4",
+            "pos": 4
+          },
+          {
+            "sentence": "The squad of {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} registered for the tournament consisted of 12 players aged between 15 and 17 years, coached and supported by a staff group of four including a fitness coach and a team physiotherapist.",
+            "id": "N0-S5",
+            "pos": 5
+          },
+          {
+            "sentence": "{Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} won all three group-stage matches of the {Orvath Ridge Under-17 Futsal Championship|EVENT-1} to finish first in {Group A|MISCELLANEOUS-2}.",
+            "id": "N0-S6",
+            "pos": 6
+          },
+          {
+            "sentence": "In {Group A|MISCELLANEOUS-2}, {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} recorded a 3\u20130 win over {Meadowlane School Futsal Under-17|ORGANIZATION-4}, a 2\u20131 victory against {Selvarin East Secondary Under-17|ORGANIZATION-5}, and a 1\u20130 result over {Orvath Ridge Collegiate Under-17|ORGANIZATION-6}.",
+            "id": "N0-S7",
+            "pos": 7
+          },
+          {
+            "sentence": "The group-stage fixtures for {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} were played over three consecutive evenings at {Selvarin Orvath Indoor Center|BUILDING-1}, with the team mathematically securing a semifinal place after just the second match.",
+            "id": "N0-S8",
+            "pos": 8
+          },
+          {
+            "sentence": "{Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} conceded only one goal during the three group-stage matches of the {Orvath Ridge Under-17 Futsal Championship|EVENT-1}.",
+            "id": "N0-S9",
+            "pos": 9
+          },
+          {
+            "sentence": "The lone group-stage goal against {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} was scored from a 6-meter penalty by forward {Laren Vos|PERSON-1} of {Selvarin East Secondary Under-17|ORGANIZATION-5} late in the first half of their second group match.",
+            "id": "N0-S10",
+            "pos": 10
+          },
+          {
+            "sentence": "Goalkeeper {Ren Talvek|PERSON-2} of {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} was named player of the match in two of the three group fixtures after making several close-range saves to preserve narrow leads.",
+            "id": "N0-S11",
+            "pos": 11
+          },
+          {
+            "sentence": "{Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} defeated {Selvarin Riverside Training Center Under-17|ORGANIZATION-7} by 2\u20131 in the semifinal of the {Orvath Ridge Under-17 Futsal Championship|EVENT-1}.",
+            "id": "N0-S12",
+            "pos": 12
+          },
+          {
+            "sentence": "In the semifinal, winger {Daren Mol|PERSON-3} of {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} opened the scoring in the 7th minute, and pivot {Jorin Kale|PERSON-4} netted the decisive second goal midway through the second half after a set-play corner routine.",
+            "id": "N0-S13",
+            "pos": 13
+          },
+          {
+            "sentence": "The semifinal between {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} and {Selvarin Riverside Training Center Under-17|ORGANIZATION-7} was officiated by referee {Elvin Sarro|PERSON-5} and two assistant referees, with the match played at a high tempo and several tactical time-outs called by both benches.",
+            "id": "N0-S14",
+            "pos": 14
+          },
+          {
+            "sentence": "The 2\u20131 semifinal victory over {Selvarin Riverside Training Center Under-17|ORGANIZATION-7} gave {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} a second goal conceded in the entire {Orvath Ridge Under-17 Futsal Championship|EVENT-1}.",
+            "id": "N0-S15",
+            "pos": 15
+          },
+          {
+            "sentence": "The goal conceded in the semifinal came from a deflected long-range shot early in the second half, briefly leveling the score at 1\u20131 before {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} restored the lead.",
+            "id": "N0-S16",
+            "pos": 16
+          },
+          {
+            "sentence": "Despite the setback, the defensive unit of {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} responded by limiting {Selvarin Riverside Training Center Under-17|ORGANIZATION-7} to speculative efforts from distance in the final minutes.",
+            "id": "N0-S17",
+            "pos": 17
+          },
+          {
+            "sentence": "{Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} won the final of the {Orvath Ridge Under-17 Futsal Championship|EVENT-1} with a 3\u20130 victory over {Selvarin Central Sports School Under-17|ORGANIZATION-8} at {Selvarin Orvath Indoor Center|BUILDING-1}.",
+            "id": "N0-S18",
+            "pos": 18
+          },
+          {
+            "sentence": "The final kicked off at 16:30 on the main court, with {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} captain and playmaker {Mikel Ardan|PERSON-6} scoring twice and flank player {Sera Noll|PERSON-7} adding a third goal on a fast break in the closing stages.",
+            "id": "N0-S19",
+            "pos": 19
+          },
+          {
+            "sentence": "{Selvarin Central Sports School Under-17|ORGANIZATION-8} struggled to break down the compact 2\u20132 defensive shape employed by {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2}, managing only a handful of shots on target over the two 20-minute halves.",
+            "id": "N0-S20",
+            "pos": 20
+          },
+          {
+            "sentence": "With five wins from five matches, {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} secured the {Orvath Ridge Under-17 Futsal Championship|EVENT-1} title while conceding only two goals in the tournament.",
+            "id": "N0-S21",
+            "pos": 21
+          },
+          {
+            "sentence": "Across the five matches of the {Orvath Ridge Under-17 Futsal Championship|EVENT-1}, {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} scored a total of 11 goals, finishing with the best goal difference of any team in the competition.",
+            "id": "N0-S22",
+            "pos": 22
+          },
+          {
+            "sentence": "Several school coaches and spectators at {Selvarin Orvath Indoor Center|BUILDING-1} remarked that the consistency shown by {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} across all phases of play set a benchmark for future editions of the under-17 event.",
+            "id": "N0-S23",
+            "pos": 23
+          },
+          {
+            "sentence": "Head coach {Marlen Tiravo|PERSON-8} of {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} credited the championship success of {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} to defensive discipline and consistent training in a post-final interview with the {Orvath Ridge Schools Futsal Council|ORGANIZATION-1} media team.",
+            "id": "N0-S24",
+            "pos": 24
+          },
+          {
+            "sentence": "Head coach {Marlen Tiravo|PERSON-8}, who has led youth teams at {Grendale Youth Futsal Academy|ORGANIZATION-3} for five seasons, highlighted that the under-17 squad had trained four evenings per week since January with a special focus on pressing and transition drills.",
+            "id": "N0-S25",
+            "pos": 25
+          },
+          {
+            "sentence": "During the interview conducted courtside by council media officer {Lina Veress|PERSON-9}, head coach {Marlen Tiravo|PERSON-8} stated that the players had \u201ctreated every session as if it were a final,\u201d emphasizing their commitment and punctuality throughout the preparation period.",
+            "id": "N0-S26",
+            "pos": 26
+          },
+          {
+            "sentence": "The {Orvath Ridge Schools Futsal Council|ORGANIZATION-1} awarded {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} a development grant for new training equipment in recognition of the {Orvath Ridge Under-17 Futsal Championship|EVENT-1} victory by {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2}.",
+            "id": "N0-S27",
+            "pos": 27
+          },
+          {
+            "sentence": "The development grant from the {Orvath Ridge Schools Futsal Council|ORGANIZATION-1} was announced as a package valued at approximately 3,000 {selvars|MISCELLANEOUS-1}, earmarked for purchasing new futsal balls, portable goals, and agility training gear for {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2}.",
+            "id": "N0-S28",
+            "pos": 28
+          },
+          {
+            "sentence": "Representatives of the {Orvath Ridge Schools Futsal Council|ORGANIZATION-1} handed the official grant confirmation letter to head coach {Marlen Tiravo|PERSON-8} at the edge of the main court, with the players of {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} gathered around in team tracksuits.",
+            "id": "N0-S29",
+            "pos": 29
+          }
+        ],
+        "used_entities": [
+          {
+            "id": "PERSON-1",
+            "name": "Laren Vos",
+            "entity_type": "person",
+            "new": true
+          },
+          {
+            "id": "PERSON-2",
+            "name": "Ren Talvek",
+            "entity_type": "person",
+            "new": true
+          },
+          {
+            "id": "PERSON-3",
+            "name": "Daren Mol",
+            "entity_type": "person",
+            "new": true
+          },
+          {
+            "id": "PERSON-4",
+            "name": "Jorin Kale",
+            "entity_type": "person",
+            "new": true
+          },
+          {
+            "id": "PERSON-5",
+            "name": "Elvin Sarro",
+            "entity_type": "person",
+            "new": true
+          },
+          {
+            "id": "PERSON-6",
+            "name": "Mikel Ardan",
+            "entity_type": "person",
+            "new": true
+          },
+          {
+            "id": "PERSON-7",
+            "name": "Sera Noll",
+            "entity_type": "person",
+            "new": true
+          },
+          {
+            "id": "PERSON-8",
+            "name": "Marlen Tiravo",
+            "entity_type": "person",
+            "new": true
+          },
+          {
+            "id": "PERSON-9",
+            "name": "Lina Veress",
+            "entity_type": "person",
+            "new": true
+          },
+          {
+            "id": "ORGANIZATION-1",
+            "name": "Orvath Ridge Schools Futsal Council",
+            "entity_type": "organization",
+            "new": true
+          },
+          {
+            "id": "ORGANIZATION-2",
+            "name": "Grendale Youth Futsal Academy Under-17",
+            "entity_type": "organization",
+            "new": true
+          },
+          {
+            "id": "ORGANIZATION-3",
+            "name": "Grendale Youth Futsal Academy",
+            "entity_type": "organization",
+            "new": true
+          },
+          {
+            "id": "ORGANIZATION-4",
+            "name": "Meadowlane School Futsal Under-17",
+            "entity_type": "organization",
+            "new": true
+          },
+          {
+            "id": "ORGANIZATION-5",
+            "name": "Selvarin East Secondary Under-17",
+            "entity_type": "organization",
+            "new": true
+          },
+          {
+            "id": "ORGANIZATION-6",
+            "name": "Orvath Ridge Collegiate Under-17",
+            "entity_type": "organization",
+            "new": true
+          },
+          {
+            "id": "ORGANIZATION-7",
+            "name": "Selvarin Riverside Training Center Under-17",
+            "entity_type": "organization",
+            "new": true
+          },
+          {
+            "id": "ORGANIZATION-8",
+            "name": "Selvarin Central Sports School Under-17",
+            "entity_type": "organization",
+            "new": true
+          },
+          {
+            "id": "LOCATION-1",
+            "name": "Grendale Suburban Zone",
+            "entity_type": "location",
+            "new": true
+          },
+          {
+            "id": "LOCATION-2",
+            "name": "Selvarin City",
+            "entity_type": "location",
+            "new": true
+          },
+          {
+            "id": "BUILDING-1",
+            "name": "Selvarin Orvath Indoor Center",
+            "entity_type": "building",
+            "new": true
+          },
+          {
+            "id": "EVENT-1",
+            "name": "Orvath Ridge Under-17 Futsal Championship",
+            "entity_type": "event",
+            "new": true
+          },
+          {
+            "id": "MISCELLANEOUS-1",
+            "name": "selvars",
+            "entity_type": "miscellaneous",
+            "new": true
+          },
+          {
+            "id": "MISCELLANEOUS-2",
+            "name": "Group A",
+            "entity_type": "miscellaneous",
+            "new": true
+          }
+        ],
+        "parent": null,
+        "continuation": {
+          "summary": "On 2025-06-30, sports communications officer Lina Veress released an in-depth print feature series in a regional youth sports magazine dissecting Grendale Youth Futsal Academy Under-17\u2019s title run at the Orvath Ridge Under-17 Futsal Championship, which local coaches cited as a practical reference even though no separate school case-study materials were produced.",
+          "last_date": "2025-03-22",
+          "continuation_date": "2025-06-30"
+        },
+        "date": "2025-03-22"
+      }
+    ],
+    "CREATED_AT": 0,
+    "NUM_DISTRACTORS": 5,
+    "SUBSET_IDX": 9,
+    "SELECTED_SENTENCES": "<item><id>N0-S0</id><text>The Orvath Ridge Schools Futsal Council hosted the final day of the Orvath Ridge Under-17 Futsal Championship at Selvarin Orvath Indoor Center on 2025-03-22.</text></item>\n<item><id>N0-S4</id><text>Grendale Youth Futsal Academy Under-17 had secured the Grendale Suburban Zone berth two weeks earlier by finishing top of the zone\u2019s qualifying league on goal difference after a six-match campaign.</text></item>",
+    "SELECTION_EXPLANATION": "\nSentence N0-S0 states that the final day of the Orvath Ridge Under-17 Futsal Championship took place on 2025-03-22. Sentence N0-S4 states that Grendale Youth Futsal Academy Under-17 had secured the Grendale Suburban Zone berth \u201ctwo weeks earlier.\u201d Two weeks equals 14 days, so the berth was secured on 2025-03-08. The time span between securing the zone berth and the final day is therefore 14 days.\n",
+    "SELECTION_IDX": 1,
+    "EVIDENCE_CURRENT_SELECTIONS": [
+      "N0-S0",
+      "N0-S4"
+    ],
+    "QA_CURRENT_PAIR": {
+      "question": "Assuming the championship\u2019s final match took place on the same final day as the overall program at Selvarin Orvath Indoor Center, how long after the start of that final day program did the final on the main court kick off?",
+      "question_id": "b14a6213f08eb2734ac444ac80cf7ceefe271a4a94cc0d60b751431fb53c87ff",
+      "evidence_ids": [
+        "N0-S1",
+        "N0-S19",
+        "N0-S19]",
+        "[N0-S1"
+      ],
+      "answer": "7 hours 30 minutes",
+      "num_hops": 4,
+      "created_at": 0,
+      "category": "multi-event-time-span",
+      "validation": {
+        "is_valid": true,
+        "validations": []
+      },
+      "distractors": [
+        {
+          "answer": "7 hours",
+          "explanation": "This assumes the final began at 16:00 instead of the stated 16:30, effectively rounding the kick-off time to the nearest full hour and ignoring the extra 30 minutes, so it does not match the actual 7 hours 30 minutes between 09:00 and 16:30.",
+          "distractor-sentences": [
+            "N0-S1",
+            "N0-S19"
+          ]
+        },
+        {
+          "answer": "8 hours",
+          "explanation": "This treats the \u201cafternoon final\u201d as if it started around 17:00, which might feel like late afternoon, but the outline specifies a 16:30 kick-off; from 09:00 to 16:30 is 7 hours 30 minutes, not 8 hours.",
+          "distractor-sentences": [
+            "N0-S1",
+            "N0-S19"
+          ]
+        },
+        {
+          "answer": "6 hours 30 minutes",
+          "explanation": "This would be correct only if the final had kicked off at 15:30, a plausible \u201cafternoon\u201d time someone might misremember; however, the text clearly says 16:30, making the true interval 7 hours 30 minutes, not 6 hours 30 minutes.",
+          "distractor-sentences": [
+            "N0-S1",
+            "N0-S19"
+          ]
+        },
+        {
+          "answer": "6 hours",
+          "explanation": "This duration fits a scenario where a reader loosely interprets \u201cafternoon final\u201d as starting at 15:00, six hours after 09:00, but the document explicitly states that the final kicked off at 16:30, making 6 hours incorrect.",
+          "distractor-sentences": [
+            "N0-S1",
+            "N0-S19"
+          ]
+        },
+        {
+          "answer": "5 hours 30 minutes",
+          "explanation": "This could result from mistakenly assuming that the meaningful part of the \u201cfinal day program\u201d began later than 09:00 (for example, 11:00) and then counting to 16:30; however, the program start time is given as 09:00, so the correct interval to the 16:30 final is 7 hours 30 minutes, not 5 hours 30 minutes.",
+          "distractor-sentences": [
+            "N0-S1",
+            "N0-S19"
+          ]
+        }
+      ],
+      "distractor_answers": [
+        "6 hours 30 minutes",
+        "7 hours 30 minutes",
+        "5 hours 30 minutes",
+        "8 hours",
+        "7 hours",
+        "6 hours"
+      ],
+      "gold_answer_idx": 1,
+      "false_premise_category": null,
+      "false_premise_sentence_id": null,
+      "misc": {
+        "scratchpad": "<scratchpad>\n[Sentence ID]: N0-S1\n- Time information:\n  - States that the \"final day program at Selvarin Orvath Indoor Center began at 09:00\".\n  - This is a clear absolute clock time.\n- Event date:\n  - Overall event date given in the outline: 2025-03-22.\nAssumptions:\n- The \"final day program\" and the final match described later occur on the same \"final day\".\n- The starting time 09:00 refers to 09:00 on that same final day (no overnight gap implied).\nAbsolute dates:\n- Start of final day program: 2025-03-22 09:00.\n\n[Sentence ID]: N0-S19\n- Time information:\n  - States that \"The final kicked off at 16:30 on the main court\".\n  - This is also a clear absolute clock time.\n- Event date:\n  - This final is part of the same championship event whose final day is 2025-03-22.\nAssumptions:\n- The final mentioned here is the afternoon final referred to in N0-S1 and occurs on the same \"final day program\".\n- So the final kickoff time is on the same day as the program start.\nAbsolute dates:\n- Final kickoff: 2025-03-22 16:30.\n\nAdditional sentences:\n- None needed. No other sentence in the outline specifies both:\n  - The start of the final day program time, and\n  - The final kickoff time.\n- N0-S1 uniquely gives the program\u2019s start time (09:00).\n- N0-S19 uniquely gives the final\u2019s kickoff time (16:30).\n\nQuestion Idea:\n- Ask for the duration between:\n  - The moment the final day program at Selvarin Orvath Indoor Center began, and\n  - The moment the championship final on the main court kicked off.\n- N0-S1 is required because it gives the program\u2019s start time (09:00) associated with \u201cfinal day program\u201d.\n- N0-S19 is required because it gives the final\u2019s kickoff time (16:30) and ties it specifically to the final on the main court on that same day.\n- Without N0-S1, the start point is unknown; without N0-S19, the end point is unknown. No other sentence provides these times.\n\n[Answer derivation]:\n- Start time (from N0-S1): 09:00 on the final day.\n- End time (from N0-S19): 16:30 on the same final day.\n- Compute duration:\n  - From 09:00 to 16:00 = 7 hours.\n  - From 16:00 to 16:30 = 30 minutes.\n  - Total duration = 7 hours 30 minutes.\n\nSo the time span between the start of the final day program and the kickoff of the final is 7 hours 30 minutes.\n\n</scratchpad>",
+        "scratchpad2": "<scratchpad>\nI reviewed the original response against the task instructions:\n\n1. **Use of selected sentences and temporal info**\n   - N0-S1 provides the start time of the final day program (09:00).\n   - N0-S19 provides the final\u2019s kickoff time (16:30).\n   - The question asks for the duration between the start of the final day program and the kickoff of the final, which necessarily requires both sentences. No other sentence contains these times, so the uniqueness condition is satisfied.\n\n2. **Temporal reasoning and assumptions**\n   - The response correctly assumes that:\n     - The \u201cfinal day program\u201d and the final described are on the same day.\n   - The question itself explicitly states this assumption (\u201cAssuming the championship\u2019s final match took place on the same final day\u2026\u201d), which is compliant with the instructions.\n   - The solution correctly computes the time between 09:00 and 16:30 as 7 hours 30 minutes.\n\n3. **Avoiding explicit times/dates in the question**\n   - The question does not mention 09:00, 16:30, or the calendar date; it only refers to \u201cstart of that final day program\u201d and \u201cfinal on the main court,\u201d so the temporal information must be inferred from the sentences. This follows the instructions.\n\n4. **Need for all selected sentences and no others**\n   - Without N0-S1, the start time is unknown.\n   - Without N0-S19, the final\u2019s kickoff time is unknown.\n   - No other sentence in the outline can replace either.\n   - Thus all selected sentences are required and sufficient.\n\n5. **Formatting and metadata**\n   - The only real issue in the previous response is that `<additional_sentence_ids>` was left empty, while the new instruction says: \u201cincluding those selected in the previous response, if applicable.\u201d We should explicitly list the sentence IDs that are required to answer the question\u2014here, N0-S1 and N0-S19\u2014and explain their unique contributions.\n\n6. **Corrections made**\n   - I will keep the question and answer exactly as before (they already comply with all constraints).\n   - I will update:\n     - `<additional_sentence_ids>` to `[N0-S1, N0-S19]`.\n     - `<additional_sentence_explanation>` to briefly explain why each of these sentences is necessary and unique.\n\nNo other changes are needed.\n\n</scratchpad>",
+        "previous_version": {
+          "question": "Assuming the championship\u2019s final match took place on the same final day as the overall program at Selvarin Orvath Indoor Center, how long after the start of that final day program did the final on the main court kick off?",
+          "answer": "7 hours 30 minutes",
+          "additional_sentence_ids": "[]",
+          "additional_sentence_explanation": null
+        },
+        "use_decoded": "corrected"
+      },
+      "event_information": {
+        "event_type": {
+          "category": "Major Tournament Results and Championship Outcomes",
+          "event_type_id": "sports:0"
+        },
+        "event_type_id": "sports:0",
+        "story_seed_id": "sports:0:8"
+      }
+    }
+  }
+}

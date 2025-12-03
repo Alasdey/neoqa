@@ -1,0 +1,297 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "microsoft/phi-4-reasoning-plus",
+    "temperature": 0.0,
+    "max-tokens": 4096
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "To identify the named entities explicitly mentioned in the outline, I will go through each entity in the provided list and check if it is directly referred to by name in the outline. Here is the analysis:\n\n1. **Richmond Meadows**:\n   - Mentioned in the outline: \"the Zenith Athletics Institute unveiled its new state-of-the-art training center in Richmond Meadows...\"\n   - Entity type: `<location>`\n\n2. **Alex Varner**:\n   - Mentioned in the outline: \"...including prominent runners like Alex Varner...\"\n   - Entity type: `<person>`\n\n3. **Alicia Wilton**:\n   - Mentioned in the outline: \"...and gymnast Alicia Wilton, who both expressed excitement...\"\n   - Entity type: `<person>`\n\n4. **Kevin Stratton**:\n   - Mentioned in the outline: \"During the event, Institute Director Kevin Stratton highlighted...\"\n   - Entity type: `<person>`\n\n5. **Chloe Mercer**:\n   - Mentioned in the outline: \"Sprinter Chloe Mercer noted, 'The instant feedback on my running form has been invaluable...\"\n   - Entity type: `<person>`\n\n6. **Zenith Athletics Institute**:\n   - Mentioned in the outline: \"On September 15, 2023, the Zenith Athletics Institute unveiled its new state-of-the-art training center...\"\n   - Entity type: `<organization>`\n\n7. **BioTrack Innovations**:\n   - Mentioned in the outline: \"...in collaboration with tech firm BioTrack Innovations, developed the unique biometric system...\"\n   - Entity type: `<organization>`\n\nAll the entities listed are explicitly mentioned by name in the outline. Here is the final output:\n\n```xml\n<results>\n<entities>\n<location><id>LOCATION-1</id><name>Richmond Meadows</name></location>\n<person><id>PERSON-1</id><name>Alex Varner</name></person>\n<person><id>PERSON-2</id><name>Alicia Wilton</name></person>\n<person><id>PERSON-3</id><name>Kevin Stratton</name></person>\n<person><id>PERSON-4</id><name>Chloe Mercer</name></person>\n<organization><id>ORGANIZATION-1</id><name>Zenith Athletics Institute</name></organization>\n<organization><id>ORGANIZATION-2</id><name>BioTrack Innovations</name></organization>\n</entities>\n</results>\n```"
+  },
+  "response": "To identify the named entities explicitly mentioned in the outline, I will go through each entity in the provided list and check if it is directly referred to by name in the outline. Here is the analysis:\n\n1. **Richmond Meadows**:\n   - Mentioned in the outline: \"the Zenith Athletics Institute unveiled its new state-of-the-art training center in Richmond Meadows...\"\n   - Entity type: `<location>`\n\n2. **Alex Varner**:\n   - Mentioned in the outline: \"...including prominent runners like Alex Varner...\"\n   - Entity type: `<person>`\n\n3. **Alicia Wilton**:\n   - Mentioned in the outline: \"...and gymnast Alicia Wilton, who both expressed excitement...\"\n   - Entity type: `<person>`\n\n4. **Kevin Stratton**:\n   - Mentioned in the outline: \"During the event, Institute Director Kevin Stratton highlighted...\"\n   - Entity type: `<person>`\n\n5. **Chloe Mercer**:\n   - Mentioned in the outline: \"Sprinter Chloe Mercer noted, 'The instant feedback on my running form has been invaluable...\"\n   - Entity type: `<person>`\n\n6. **Zenith Athletics Institute**:\n   - Mentioned in the outline: \"On September 15, 2023, the Zenith Athletics Institute unveiled its new state-of-the-art training center...\"\n   - Entity type: `<organization>`\n\n7. **BioTrack Innovations**:\n   - Mentioned in the outline: \"...in collaboration with tech firm BioTrack Innovations, developed the unique biometric system...\"\n   - Entity type: `<organization>`\n\nAll the entities listed are explicitly mentioned by name in the outline. Here is the final output:\n\n```xml\n<results>\n<entities>\n<location><id>LOCATION-1</id><name>Richmond Meadows</name></location>\n<person><id>PERSON-1</id><name>Alex Varner</name></person>\n<person><id>PERSON-2</id><name>Alicia Wilton</name></person>\n<person><id>PERSON-3</id><name>Kevin Stratton</name></person>\n<person><id>PERSON-4</id><name>Chloe Mercer</name></person>\n<organization><id>ORGANIZATION-1</id><name>Zenith Athletics Institute</name></organization>\n<organization><id>ORGANIZATION-2</id><name>BioTrack Innovations</name></organization>\n</entities>\n</results>\n```",
+  "instructions": "You are an AI assistant tasked with identifying which of the provided entities are explicitly named within the provided outline. Follow these instructions carefully:\n\n1. The date for this fictional event outline is:\n<date>{{DATE}}</date>\n\n2. Here is the outline you need to analyze:\n<outline>\n{{OUTLINE}}\n</outline>\n\n3. Here is the list of known (fictional) named entities:\n<entities>\n{{LOCATIONS_XML}}\n{{PERSONS_XML}}\n{{ORGANIZATIONS_XML}}\n{{PRODUCTS_XML}}\n{{ARTS_XML}}\n{{EVENTS_XML}}\n{{BUILDINGS_XML}}\n{{MISCELLANEOUSS_XML}}\n\n{{ADJUSTED_LOCATIONS_XML}}\n{{ADJUSTED_PERSONS_XML}}\n{{ADJUSTED_ORGANIZATIONS_XML}}\n{{ADJUSTED_PRODUCTS_XML}}\n{{ADJUSTED_ARTS_XML}}\n{{ADJUSTED_BUILDINGS_XML}}\n{{ADJUSTED_EVENTS_XML}}\n{{ADJUSTED_MISCELLANEOUSS_XML}}\n</entities>\n\n4. Your task is to go through all of the named entities in the provided list. For each named entity, check if it is explicitly referred to by name in the outline. If a named entity is explicitly mentioned by name, include it in your results.\n\n5. For each entity you identify, list them using the following format:\n<[entity_type]><id>[id of the entity]</id><name>[full name of the entity]</name></[entity_type]>\n\n6. Present your final output within a single <results> root node, structured as follows:\n\n<results>\n<entities>\n[List all identified entities here as described in step 5]\n</entities>\n</results>\n\n7. Double-check your work: For each entity that you have identified, make sure to find the sentence within the outline that explicitly refers to this identified entity by name. If you cannot find that the entity is mentioned explicitly by name in the outline, do not include it in your results.\n\n8. You can use a <scratchpad> for your thinking process. Do not include any XML tags within your scratchpad.\n\n9. Make sure that you have not missed any named entity from the outline that was also provided to you in the list of named entities.\n\nRemember, only include entities that are explicitly mentioned by name in the outline. Do not infer or assume the presence of entities that are not directly named.",
+  "text_prompt": "You are an AI assistant tasked with identifying which of the provided entities are explicitly named within the provided outline. Follow these instructions carefully:\n\n1. The date for this fictional event outline is:\n<date>2023-09-15</date>\n\n2. Here is the outline you need to analyze:\n<outline>\nOn September 15, 2023, the Zenith Athletics Institute unveiled its new state-of-the-art training center in Richmond Meadows, a scenic area known for its lush greenery and proximity to local sports clubs.\nThe new facility, designed with an open-concept layout, features large glass windows that allow natural light to flood the indoor track and weight rooms.\nThis institute was specifically designed to cater to the training needs of regional athletes, focusing on sports such as track and field, gymnastics, and swimming.\nThe new facility, equipped with advanced biometric monitoring technology, was inaugurated with a formal ceremony attended by the known athletes of the institute, including prominent runners like Alex Varner and gymnast Alicia Wilton, who both expressed excitement about the new opportunities for training.\nThe Zenith Athletics Institute, in collaboration with tech firm BioTrack Innovations, developed the unique biometric system to provide athletes with personalized performance analytics, integrating sensors that track heart rate, muscle activity, and movement patterns.\nDuring the event, Institute Director Kevin Stratton highlighted, \"This facility represents a leap forward in training technology for athletes, especially those specializing in high-risk sports,\" emphasizing the potential for injury prevention and performance enhancement.\nThe systems installed use sensors to gather real-time data, which is then analyzed to help athletes optimize their performance and reduce injury risks, with data being accessible through a secure mobile app.\nFirst to test the new biometric system were a group of young sprinters, who were fascinated by the real-time feedback they received during drills, noting improvements in their stride and posture.\nSprinter Chloe Mercer noted, \"The instant feedback on my running form has been invaluable. It\u2019s like having a coach at every moment,\" and mentioned how the system helped her identify areas for improvement that were previously unnoticed.\nSome concerns were voiced regarding the privacy of personal health data collected by the systems, prompting Director Stratton to assure attendees of strict adherence to data protection regulations, including encryption and limited access to sensitive information.\nThe facility contains a medium-sized field adjacent to an indoor track and several weight rooms, designed to support various sports such as track and field, gymnastics, and swimming, with each area equipped with specialized equipment for different training needs.\nOngoing educational workshops about the benefits and usage of biometric technology are planned to be held at the Zenith Athletics Institute, with sessions led by experts from BioTrack Innovations and experienced coaches.\n</outline>\n\n3. Here is the list of known (fictional) named entities:\n<entities>\n\n\n\n\n\n\n\n\n\n<location><id>LOCATION-1</id><name>Richmond Meadows</name><old_name>Richmond Meadows</old_name></location>\n<person><id>PERSON-1</id><name>Alex Varner</name><old_name>Alex Varner</old_name></person>\n<person><id>PERSON-2</id><name>Alicia Wilton</name><old_name>Alicia Wilton</old_name></person>\n<person><id>PERSON-3</id><name>Kevin Stratton</name><old_name>Kevin Stratton</old_name></person>\n<person><id>PERSON-4</id><name>Chloe Mercer</name><old_name>Chloe Mercer</old_name></person>\n<organization><id>ORGANIZATION-1</id><name>Zenith Athletics Institute</name><old_name>Zenith Athletics Institute</old_name></organization>\n<organization><id>ORGANIZATION-2</id><name>BioTrack Innovations</name><old_name>BioTrack Innovations</old_name></organization>\n\n\n\n\n\n</entities>\n\n4. Your task is to go through all of the named entities in the provided list. For each named entity, check if it is explicitly referred to by name in the outline. If a named entity is explicitly mentioned by name, include it in your results.\n\n5. For each entity you identify, list them using the following format:\n<[entity_type]><id>[id of the entity]</id><name>[full name of the entity]</name></[entity_type]>\n\n6. Present your final output within a single <results> root node, structured as follows:\n\n<results>\n<entities>\n[List all identified entities here as described in step 5]\n</entities>\n</results>\n\n7. Double-check your work: For each entity that you have identified, make sure to find the sentence within the outline that explicitly refers to this identified entity by name. If you cannot find that the entity is mentioned explicitly by name in the outline, do not include it in your results.\n\n8. You can use a <scratchpad> for your thinking process. Do not include any XML tags within your scratchpad.\n\n9. Make sure that you have not missed any named entity from the outline that was also provided to you in the list of named entities.\n\nRemember, only include entities that are explicitly mentioned by name in the outline. Do not infer or assume the presence of entities that are not directly named.",
+  "system-prompt": null,
+  "values": {
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "GENRE": "Sports",
+    "HISTORIES": [],
+    "EVENT_SUMMARY": "A new training facility equipped with state-of-the-art biometric technology has opened for athletes, offering personalized data analysis to optimize performance and prevent injuries.",
+    "EVENT_SUMMARY_FOR_NAME": "A new training facil",
+    "KEYWORDS": "",
+    "CREATED_AT": 0,
+    "NEXT_IDS": {
+      "person": 5,
+      "organization": 3,
+      "location": 2,
+      "product": 1,
+      "art": 1,
+      "building": 1,
+      "event": 1,
+      "miscellaneous": 1
+    },
+    "PROVIDED_DATE": "",
+    "PERSON": [],
+    "ORGANIZATION": [],
+    "LOCATION": [],
+    "PRODUCT": [],
+    "ART": [],
+    "BUILDING": [],
+    "EVENT": [],
+    "MISCELLANEOUS": [],
+    "PERSONS_XML": "",
+    "ORGANIZATIONS_XML": "",
+    "LOCATIONS_XML": "",
+    "PRODUCTS_XML": "",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "",
+    "EVENTS_XML": "",
+    "MISCELLANEOUSS_XML": "",
+    "NUM_STORYITEMS": 10,
+    "HISTORY_XML": "",
+    "STORY_ITEM": [
+      "On September 15, 2023, the Zenith Athletics Institute unveiled its new state-of-the-art training center in Richmond Meadows, a scenic area known for its lush greenery and proximity to local sports clubs.",
+      "The new facility, designed with an open-concept layout, features large glass windows that allow natural light to flood the indoor track and weight rooms.",
+      "This institute was specifically designed to cater to the training needs of regional athletes, focusing on sports such as track and field, gymnastics, and swimming.",
+      "The new facility, equipped with advanced biometric monitoring technology, was inaugurated with a formal ceremony attended by the known athletes of the institute, including prominent runners like Alex Varner and gymnast Alicia Wilton, who both expressed excitement about the new opportunities for training.",
+      "The Zenith Athletics Institute, in collaboration with tech firm BioTrack Innovations, developed the unique biometric system to provide athletes with personalized performance analytics, integrating sensors that track heart rate, muscle activity, and movement patterns.",
+      "During the event, Institute Director Kevin Stratton highlighted, \"This facility represents a leap forward in training technology for athletes, especially those specializing in high-risk sports,\" emphasizing the potential for injury prevention and performance enhancement.",
+      "The systems installed use sensors to gather real-time data, which is then analyzed to help athletes optimize their performance and reduce injury risks, with data being accessible through a secure mobile app.",
+      "First to test the new biometric system were a group of young sprinters, who were fascinated by the real-time feedback they received during drills, noting improvements in their stride and posture.",
+      "Sprinter Chloe Mercer noted, \"The instant feedback on my running form has been invaluable. It\u2019s like having a coach at every moment,\" and mentioned how the system helped her identify areas for improvement that were previously unnoticed.",
+      "Some concerns were voiced regarding the privacy of personal health data collected by the systems, prompting Director Stratton to assure attendees of strict adherence to data protection regulations, including encryption and limited access to sensitive information.",
+      "The facility contains a medium-sized field adjacent to an indoor track and several weight rooms, designed to support various sports such as track and field, gymnastics, and swimming, with each area equipped with specialized equipment for different training needs.",
+      "Ongoing educational workshops about the benefits and usage of biometric technology are planned to be held at the Zenith Athletics Institute, with sessions led by experts from BioTrack Innovations and experienced coaches."
+    ],
+    "DATE": "2023-09-15",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 2,
+    "OUTLINE": "On September 15, 2023, the Zenith Athletics Institute unveiled its new state-of-the-art training center in Richmond Meadows, a scenic area known for its lush greenery and proximity to local sports clubs.\nThe new facility, designed with an open-concept layout, features large glass windows that allow natural light to flood the indoor track and weight rooms.\nThis institute was specifically designed to cater to the training needs of regional athletes, focusing on sports such as track and field, gymnastics, and swimming.\nThe new facility, equipped with advanced biometric monitoring technology, was inaugurated with a formal ceremony attended by the known athletes of the institute, including prominent runners like Alex Varner and gymnast Alicia Wilton, who both expressed excitement about the new opportunities for training.\nThe Zenith Athletics Institute, in collaboration with tech firm BioTrack Innovations, developed the unique biometric system to provide athletes with personalized performance analytics, integrating sensors that track heart rate, muscle activity, and movement patterns.\nDuring the event, Institute Director Kevin Stratton highlighted, \"This facility represents a leap forward in training technology for athletes, especially those specializing in high-risk sports,\" emphasizing the potential for injury prevention and performance enhancement.\nThe systems installed use sensors to gather real-time data, which is then analyzed to help athletes optimize their performance and reduce injury risks, with data being accessible through a secure mobile app.\nFirst to test the new biometric system were a group of young sprinters, who were fascinated by the real-time feedback they received during drills, noting improvements in their stride and posture.\nSprinter Chloe Mercer noted, \"The instant feedback on my running form has been invaluable. It\u2019s like having a coach at every moment,\" and mentioned how the system helped her identify areas for improvement that were previously unnoticed.\nSome concerns were voiced regarding the privacy of personal health data collected by the systems, prompting Director Stratton to assure attendees of strict adherence to data protection regulations, including encryption and limited access to sensitive information.\nThe facility contains a medium-sized field adjacent to an indoor track and several weight rooms, designed to support various sports such as track and field, gymnastics, and swimming, with each area equipped with specialized equipment for different training needs.\nOngoing educational workshops about the benefits and usage of biometric technology are planned to be held at the Zenith Athletics Institute, with sessions led by experts from BioTrack Innovations and experienced coaches.",
+    "PRE-CONSISTENCY-NUM-ITEMS": 12,
+    "STORYITEM_XML": "<storyitems>\n<storyitem>On September 15, 2023, the Zenith Athletics Institute unveiled its new state-of-the-art training center in Richmond Meadows, a scenic area known for its lush greenery and proximity to local sports clubs.</storyitem>\n<storyitem>The new facility, designed with an open-concept layout, features large glass windows that allow natural light to flood the indoor track and weight rooms.</storyitem>\n<storyitem>This institute was specifically designed to cater to the training needs of regional athletes, focusing on sports such as track and field, gymnastics, and swimming.</storyitem>\n<storyitem>The new facility, equipped with advanced biometric monitoring technology, was inaugurated with a formal ceremony attended by the known athletes of the institute, including prominent runners like Alex Varner and gymnast Alicia Wilton, who both expressed excitement about the new opportunities for training.</storyitem>\n<storyitem>The Zenith Athletics Institute, in collaboration with tech firm BioTrack Innovations, developed the unique biometric system to provide athletes with personalized performance analytics, integrating sensors that track heart rate, muscle activity, and movement patterns.</storyitem>\n<storyitem>During the event, Institute Director Kevin Stratton highlighted, \"This facility represents a leap forward in training technology for athletes, especially those specializing in high-risk sports,\" emphasizing the potential for injury prevention and performance enhancement.</storyitem>\n<storyitem>The systems installed use sensors to gather real-time data, which is then analyzed to help athletes optimize their performance and reduce injury risks, with data being accessible through a secure mobile app.</storyitem>\n<storyitem>First to test the new biometric system were a group of young sprinters, who were fascinated by the real-time feedback they received during drills, noting improvements in their stride and posture.</storyitem>\n<storyitem>Sprinter Chloe Mercer noted, \"The instant feedback on my running form has been invaluable. It\u2019s like having a coach at every moment,\" and mentioned how the system helped her identify areas for improvement that were previously unnoticed.</storyitem>\n<storyitem>Some concerns were voiced regarding the privacy of personal health data collected by the systems, prompting Director Stratton to assure attendees of strict adherence to data protection regulations, including encryption and limited access to sensitive information.</storyitem>\n<storyitem>The facility contains a medium-sized field adjacent to an indoor track and several weight rooms, designed to support various sports such as track and field, gymnastics, and swimming, with each area equipped with specialized equipment for different training needs.</storyitem>\n<storyitem>Ongoing educational workshops about the benefits and usage of biometric technology are planned to be held at the Zenith Athletics Institute, with sessions led by experts from BioTrack Innovations and experienced coaches.</storyitem>\n<storyitems>",
+    "NEW_PERSON_NAME": [
+      {
+        "name": "Alex Varner",
+        "old_name": "Alex Varner"
+      },
+      {
+        "name": "Alicia Wilton",
+        "old_name": "Alicia Wilton"
+      },
+      {
+        "name": "Kevin Stratton",
+        "old_name": "Kevin Stratton"
+      },
+      {
+        "name": "Chloe Mercer",
+        "old_name": "Chloe Mercer"
+      }
+    ],
+    "NEW_ORGANIZATION_NAME": [
+      {
+        "name": "Zenith Athletics Institute",
+        "old_name": "Zenith Athletics Institute"
+      },
+      {
+        "name": "BioTrack Innovations",
+        "old_name": "BioTrack Innovations"
+      }
+    ],
+    "NEW_LOCATION_NAME": [
+      {
+        "name": "Richmond Meadows",
+        "old_name": "Richmond Meadows"
+      }
+    ],
+    "NEW_PRODUCT_NAME": [],
+    "NEW_ART_NAME": [],
+    "NEW_BUILDING_NAME": [],
+    "NEW_EVENT_NAME": [],
+    "NEW_MISCELLANEOUS_NAME": [],
+    "CORRECTED_PERSON_NAME": [
+      {
+        "name": "Alex Varner",
+        "old_name": "Alex Varner",
+        "id": "PERSON-1"
+      },
+      {
+        "name": "Alicia Wilton",
+        "old_name": "Alicia Wilton",
+        "id": "PERSON-2"
+      },
+      {
+        "name": "Kevin Stratton",
+        "old_name": "Kevin Stratton",
+        "id": "PERSON-3"
+      },
+      {
+        "name": "Chloe Mercer",
+        "old_name": "Chloe Mercer",
+        "id": "PERSON-4"
+      }
+    ],
+    "CORRECTED_ORGANIZATION_NAME": [
+      {
+        "name": "Zenith Athletics Institute",
+        "old_name": "Zenith Athletics Institute",
+        "id": "ORGANIZATION-1"
+      },
+      {
+        "name": "BioTrack Innovations",
+        "old_name": "BioTrack Innovations",
+        "id": "ORGANIZATION-2"
+      }
+    ],
+    "CORRECTED_LOCATION_NAME": [
+      {
+        "name": "Richmond Meadows",
+        "old_name": "Richmond Meadows",
+        "id": "LOCATION-1"
+      }
+    ],
+    "CORRECTED_PRODUCT_NAME": [],
+    "CORRECTED_ART_NAME": [],
+    "CORRECTED_BUILDING_NAME": [],
+    "CORRECTED_EVENT_NAME": [],
+    "CORRECTED_MISCELLANEOUS_NAME": [],
+    "CRITIQUE_ERRORS": {
+      "entity-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ]
+    },
+    "ADJUSTED_PERSONS_XML": "<person><id>PERSON-1</id><name>Alex Varner</name><old_name>Alex Varner</old_name></person>\n<person><id>PERSON-2</id><name>Alicia Wilton</name><old_name>Alicia Wilton</old_name></person>\n<person><id>PERSON-3</id><name>Kevin Stratton</name><old_name>Kevin Stratton</old_name></person>\n<person><id>PERSON-4</id><name>Chloe Mercer</name><old_name>Chloe Mercer</old_name></person>",
+    "ADJUSTED_ORGANIZATIONS_XML": "<organization><id>ORGANIZATION-1</id><name>Zenith Athletics Institute</name><old_name>Zenith Athletics Institute</old_name></organization>\n<organization><id>ORGANIZATION-2</id><name>BioTrack Innovations</name><old_name>BioTrack Innovations</old_name></organization>",
+    "ADJUSTED_LOCATIONS_XML": "<location><id>LOCATION-1</id><name>Richmond Meadows</name><old_name>Richmond Meadows</old_name></location>",
+    "ADJUSTED_PRODUCTS_XML": "",
+    "ADJUSTED_ARTS_XML": "",
+    "ADJUSTED_BUILDINGS_XML": "",
+    "ADJUSTED_EVENTS_XML": "",
+    "ADJUSTED_MISCELLANEOUSS_XML": ""
+  }
+}

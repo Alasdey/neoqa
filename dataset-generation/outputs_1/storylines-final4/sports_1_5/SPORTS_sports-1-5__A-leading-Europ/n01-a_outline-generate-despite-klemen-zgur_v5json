@@ -1,0 +1,437 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "deepcogito/cogito-v2-preview-llama-70b",
+    "temperature": 1.0,
+    "max-tokens": 4096
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "<results>\n<date>2024-04-15</date>\n<outline>\n<storyitem>{Seoul Metro Lions|ORGANIZATION-2}'s debut game against {Busan Thunderbolt|ORGANIZATION-5} opened with {Klemen \u017dgur|PERSON-1} receiving a warm welcome from the home crowd at the Lions Arena.</storyitem>\n<storyitem>{Klemen \u017dgur|PERSON-1} demonstrated his playmaking skills early, dishing out 4 assists in the first quarter, including a precise behind-the-back pass to {Kim Tae-young|PERSON-6} for an easy layup.</storyitem>\n<storyitem>{Busan Thunderbolt|ORGANIZATION-5}'s aggressive defense forced {Seoul Metro Lions|ORGANIZATION-2} into 8 turnovers in the second quarter, leading to a 12-point deficit at halftime.</storyitem>\n<storyitem>{Klemen \u017dgur|PERSON-1} scored 8 of his 12 total points in the third quarter, sparking a comeback that brought {Seoul Metro Lions|ORGANIZATION-2} within 4 points with 2 minutes remaining.</storyitem>\n<storyitem>{Park Min-ho|PERSON-2}, General Manager of {Seoul Metro Lions|ORGANIZATION-2}, praised {Klemen \u017dgur|PERSON-1}'s court vision but acknowledged the team's need to \"finish plays\" in crucial moments.</storyitem>\n<storyitem>{Busan Thunderbolt|ORGANIZATION-5} secured the win 82-78 after {Seoul Metro Lions|ORGANIZATION-2}'s shooters missed three wide-open three-point attempts in the final minute.</storyitem>\n<storyitem>{Klemen \u017dgur|PERSON-1}'s teammate {Kim Tae-young|PERSON-6} struggled with his shooting, converting only 2 of 7 field goal attempts despite receiving quality passes from {Klemen \u017dgur|PERSON-1}.</storyitem>\n<storyitem>{VBK \u017daladar|ORGANIZATION-1}'s Sporting Director {David Cimerman|PERSON-3} contacted {Seoul Metro Lions|ORGANIZATION-2}'s coaching staff to discuss {Klemen \u017dgur|PERSON-1}'s integration into the team's offense.</storyitem>\n<storyitem>{Lee Dong-hyun|PERSON-4}, {Seoul Metro Lions|ORGANIZATION-2}'s former star player, praised {Klemen \u017dgur|PERSON-1}'s composure in his debut, noting that \"he'll only get better with more experience.\"</storyitem>\n<storyitem>{Seoul Metro Lions|ORGANIZATION-2} announced a post-game analysis session where {Klemen \u017dgur|PERSON-1} and {Kim Tae-young|PERSON-6} will work on refining their chemistry in pick-and-roll situations.</storyitem>\n</outline>\n</results>"
+  },
+  "response": "<results>\n<date>2024-04-15</date>\n<outline>\n<storyitem>{Seoul Metro Lions|ORGANIZATION-2}'s debut game against {Busan Thunderbolt|ORGANIZATION-5} opened with {Klemen \u017dgur|PERSON-1} receiving a warm welcome from the home crowd at the Lions Arena.</storyitem>\n<storyitem>{Klemen \u017dgur|PERSON-1} demonstrated his playmaking skills early, dishing out 4 assists in the first quarter, including a precise behind-the-back pass to {Kim Tae-young|PERSON-6} for an easy layup.</storyitem>\n<storyitem>{Busan Thunderbolt|ORGANIZATION-5}'s aggressive defense forced {Seoul Metro Lions|ORGANIZATION-2} into 8 turnovers in the second quarter, leading to a 12-point deficit at halftime.</storyitem>\n<storyitem>{Klemen \u017dgur|PERSON-1} scored 8 of his 12 total points in the third quarter, sparking a comeback that brought {Seoul Metro Lions|ORGANIZATION-2} within 4 points with 2 minutes remaining.</storyitem>\n<storyitem>{Park Min-ho|PERSON-2}, General Manager of {Seoul Metro Lions|ORGANIZATION-2}, praised {Klemen \u017dgur|PERSON-1}'s court vision but acknowledged the team's need to \"finish plays\" in crucial moments.</storyitem>\n<storyitem>{Busan Thunderbolt|ORGANIZATION-5} secured the win 82-78 after {Seoul Metro Lions|ORGANIZATION-2}'s shooters missed three wide-open three-point attempts in the final minute.</storyitem>\n<storyitem>{Klemen \u017dgur|PERSON-1}'s teammate {Kim Tae-young|PERSON-6} struggled with his shooting, converting only 2 of 7 field goal attempts despite receiving quality passes from {Klemen \u017dgur|PERSON-1}.</storyitem>\n<storyitem>{VBK \u017daladar|ORGANIZATION-1}'s Sporting Director {David Cimerman|PERSON-3} contacted {Seoul Metro Lions|ORGANIZATION-2}'s coaching staff to discuss {Klemen \u017dgur|PERSON-1}'s integration into the team's offense.</storyitem>\n<storyitem>{Lee Dong-hyun|PERSON-4}, {Seoul Metro Lions|ORGANIZATION-2}'s former star player, praised {Klemen \u017dgur|PERSON-1}'s composure in his debut, noting that \"he'll only get better with more experience.\"</storyitem>\n<storyitem>{Seoul Metro Lions|ORGANIZATION-2} announced a post-game analysis session where {Klemen \u017dgur|PERSON-1} and {Kim Tae-young|PERSON-6} will work on refining their chemistry in pick-and-roll situations.</storyitem>\n</outline>\n</results>",
+  "instructions": "You are an AI assistant tasked with generating an outline for a fictional event. Your goal is to create a realistic, entirely fictional event that does not overlap with real-world named entities or known fictional named entities. Follow these instructions carefully:\n\nFirst, review the list of already known fictional named entities of this fictional world:\n\n<known_entities>\n<LOCATIONS>\n{{LOCATIONS_XML}}\n</LOCATIONS>\n\n<PERSONS>\n{{PERSONS_XML}}\n</PERSONS>\n\n<ORGANIZATIONS>\n{{ORGANIZATIONS_XML}}\n</ORGANIZATIONS>\n\n<PRODUCTS>\n{{PRODUCTS_XML}}\n</PRODUCTS>\n\n<ARTS>\n{{ARTS_XML}}\n</ARTS>\n\n<EVENTS>\n{{EVENTS_XML}}\n</EVENTS>\n\n<BUILDINGS>\n{{BUILDINGS_XML}}\n</BUILDINGS>\n\n<MISCELLANEOUS>\n{{MISCELLANEOUSS_XML}}\n</MISCELLANEOUS>\n</known_entities>\nNext, review the outline of previous events that have occurred in this fictional world:\n\n<history>\n{{HISTORY_XML}}\n</history>\n\nNow, consider the following information about the new event you need to generate as a continuation of the past events:\n\nDate: {{PROVIDED_DATE}}\n\nEvent Summary: {{EVENT_SUMMARY}}\n\nGenre: {{GENRE}}\n\nFollow these guidelines to generate the event outline:\n\n1. Create an entirely fictional event based on the given genre, event summary, and history of previous events. The event must be realistic but must not reference any existing real-world or known fictional named entities.\n2. Invent new named entities as needed, ensuring they don't exist in the real world or in existing works of fiction. When creating names, use unique combinations unlikely to match real named entities.\n3. Construct the outline using short, concise, factual, and objective statements. Each statement must discuss only one fact or sub-event, structured sequentially in a logical temporal order when applicable.\n4. Ensure all statements form a coherent outline.\n5. Output each statement within a <storyitem> tag.\n6. Generate exactly {{NUM_STORYITEMS}} distinct story items.\n7. Ensure logical progression, with each statement following chronologically when applicable. Include a mix of main events, reactions, consequences, and contextual information.\n8. Make storyitems as atomic as possible, communicating only a single piece of relevant information per item. Do not merge multiple pieces of information into one storyitem.\n9. Ensure the story sounds realistic without explicitly stating it's fictional.\n10. Maintain consistency with the provided <history> that discusses past events fictional events. The outline must logically follow chronological events described in the history.\n11. Incorporate some or all of the provided named entities in your outline. Ensure that any mention of these entities is consistent with the information you have about the named entity. You may introduce additional fictional entities as needed, but they must not conflict with the existing ones.\n12. When referencing any named entities from the provided inputs, maintain consistency in their descriptions and roles within the story.\n13. If no date is provided: Generate a complete date for the event, including the year. The date should be formatted as \"year-month-day\" (e.g., \"2024-12-03\" or \"2025-06-13\"). This date should be consistent with the timeline established in the <history>.\n14. If a date is provided: Use the provided date.\n15. The outline can include quotes from the named entities where applicable.\n16. Do not repeat the information from the previous events from the <history>.\n17. Refer to all named entities (the new named entities and the known named entities) by their full \"name\" property. DO NOT refer to the named entities using the ID.\n18. Make sure that you refer to all named entities within each storyitem per full name at least once. DO NOT use pronouns to refer to a named entity from the previous story item.\n19. Think about the content that is appropriate for the event summary given the genre, provided history: Think about which dimensions align with all of those, and sound like a realistic event.\n\nYour output should be formatted as follows:\n<scratchpad>[Your thoughts go here]</scratchpad>\n<results>\n<date>year-month-day</date>\n<outline>\n<storyitem>First story item</storyitem>\n<storyitem>Second story item</storyitem>\n<storyitem>Third story item</storyitem>\n...\n</outline>\n</results>\n\nIMPORTANT:\n- The event must be entirely realistic, even though it is fictional. Do not include any science fiction or fantasy elements. The story should read like a plausible current event.\n- Do not use any galactic events. The fictional world should be similar to our world but not about galaxies or outer space.\n- Each story item must only discuss one fact or subevent. Ensure that each story item is specific, concise, and focused on a single piece of information.\n- Begin your response with <results> and end it with </results>. Do not include any text outside of these tags.\n- Do not exaggerate the outline. Avoid using words like \"groundbreaking\", \"worldwide\", \"global\". Keep the outline and the scope and influence of the event realistic.\n- Do not create outlines with global or national impact unless the genre specifically requires it. Instead, focus on smaller or local developments.\n- Do not focus on technological discoveries or topics like AI tools, virtual reality, augmented reality, 3D-modelling, quantum computing, etc. You may include such topics only if they are HIGHLY relevant to the genre {{GENRE}} AND the provided history of events.\n- Focus on realistic, meaningful outlines with specific details and events that align with typical, realistic scenarios of the genre {{GENRE}}.\n\nRemember:\nThe outline should center on a fictional but realistic event, keeping its scale aligned with the event summary and provided <history> without exaggerating its impact. Rather than overstating the event's significance, the outline should stay within the scope appropriate to the genre, provided history, and provided summary. When in doubt, focus on detailed, localized developments instead of amplifying global effects.\n\nEnsure that the outline is coherent, follows a logical sequence, and offers a unique perspective on the given event while maintaining consistency with the provided background information.",
+  "text_prompt": "You are an AI assistant tasked with generating an outline for a fictional event. Your goal is to create a realistic, entirely fictional event that does not overlap with real-world named entities or known fictional named entities. Follow these instructions carefully:\n\nFirst, review the list of already known fictional named entities of this fictional world:\n\n<known_entities>\n<LOCATIONS>\n<location><area>20273 km\u00b2</area><created_at>0</created_at><description>A mountainous country in Central Europe known for its diverse landscapes and rich cultural heritage.</description><elevation>average: 557 meters</elevation><entity_class>location</entity_class><history><event>2024-03-15: Slovenia's basketball development program received international recognition through the transfer of Klemen \u017dgur to the Korean Basketball League, marking a significant milestone in the country's sports diplomacy.</event></history><id>LOCATION-1</id><last_updated>2024-03-15</last_updated><name>Slovenia</name><population>2.1 million</population><type>country</type></location>\n<location><area>100363 km\u00b2</area><created_at>0</created_at><description>A peninsula country in East Asia with a rich history and modern technological advancement.</description><elevation>average: 282 meters</elevation><entity_class>location</entity_class><history><event>2024-03-15: Korea's basketball market expanded with the addition of Slovenian prospect Klemen \u017dgur to the Seoul Metro Lions, strengthening international player exchange.</event></history><id>LOCATION-2</id><last_updated>2024-03-15</last_updated><name>Korea</name><population>51 million</population><type>country</type></location>\n<location><area>44500000 km\u00b2</area><created_at>0</created_at><description>The largest and most populous continent on Earth, diverse in culture, geography, and climate.</description><elevation>average: 960 meters</elevation><entity_class>location</entity_class><history><event>2024-03-15: Asia's basketball market continued to grow with the transfer of Klemen \u017dgur to the Korean Basketball League, highlighting the region's increasing appeal to international talent.</event></history><id>LOCATION-3</id><last_updated>2024-03-15</last_updated><name>Asia</name><population>4.7 billion</population><type>continent</type></location>\n<location><area>377975 km\u00b2</area><created_at>0</created_at><description>An island nation in East Asia known for its unique culture, technology, and natural beauty.</description><elevation>average: 438 meters</elevation><entity_class>location</entity_class><history><event>2024-03-15: Japan's basketball academy participated in a cultural exchange program with VBK \u017daladar, fostering international youth development opportunities.</event></history><id>LOCATION-4</id><last_updated>2024-03-15</last_updated><name>Japan</name><population>125 million</population><type>country</type></location>\n<location><area>275 km\u00b2</area><created_at>0</created_at><description>The capital city of Slovenia, situated along the Ljubljanica River and known for its historic architecture.</description><elevation>295 meters</elevation><entity_class>location</entity_class><history><event>2024-03-15: Ljubljana will host an exhibition game between VBK \u017daladar and Seoul Metro Lions at Arena Sto\u017eice in September 2024, celebrating the partnership between the clubs.</event></history><id>LOCATION-5</id><last_updated>2024-03-15</last_updated><name>Ljubljana</name><population>293000</population><type>city</type></location>\n</LOCATIONS>\n\n<PERSONS>\n<person><created_at>0</created_at><date_of_birth>20050315</date_of_birth><description>A talented young basketball player with a strong work ethic and determination to succeed at the highest level.</description><education>high school graduate</education><entity_class>person</entity_class><eye_color>brown</eye_color><gender>male</gender><hair_color>blond</hair_color><height>201 cm</height><history><event>2024-03-15: Klemen \u017dgur transferred to Seoul Metro Lions, becoming the first Slovenian player to join the Korean Basketball League, with a buy-back clause after two seasons.</event></history><id>PERSON-1</id><last_updated>2024-03-15</last_updated><marital_status>single</marital_status><name>Klemen \u017dgur</name><nationality>Slovenian</nationality><profession>basketball player</profession><type>None</type><weight>89 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>19750822</date_of_birth><description>An experienced sports executive known for his ability to identify talent.</description><education>graduate degree in Sports Management</education><entity_class>person</entity_class><eye_color>black</eye_color><gender>male</gender><hair_color>black</hair_color><height>183 cm</height><history><event>2024-03-15: Park Min-ho, as General Manager of Seoul Metro Lions, successfully acquired Klemen \u017dgur, addressing the team's need for a skilled playmaker.</event></history><id>PERSON-2</id><last_updated>2024-03-15</last_updated><marital_status>married</marital_status><name>Park Min-ho</name><nationality>Korean</nationality><profession>basketball team general manager</profession><type>None</type><weight>82 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>19800612</date_of_birth><description>A professional sports administrator with expertise in basketball operations.</description><education>Master's in Sports Science</education><entity_class>person</entity_class><eye_color>hazel</eye_color><gender>male</gender><hair_color>dark brown</hair_color><height>188 cm</height><history><event>2024-03-15: David Cimerman, Sporting Director of VBK \u017daladar, negotiated a transfer deal for Klemen \u017dgur that included a buy-back clause and performance-based bonuses.</event></history><id>PERSON-3</id><last_updated>2024-03-15</last_updated><marital_status>married</marital_status><name>David Cimerman</name><nationality>Slovenian</nationality><profession>sporting director</profession><type>None</type><weight>78 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>19900530</date_of_birth><description>A former professional basketball player who made significant contributions to the sport.</description><education>graduate degree in Business</education><entity_class>person</entity_class><eye_color>dark brown</eye_color><gender>male</gender><hair_color>black</hair_color><height>185 cm</height><history><event>2024-03-15: Lee Dong-hyun's legacy jersey number 7 was passed on to Klemen \u017dgur, marking a new chapter for the Seoul Metro Lions.</event></history><id>PERSON-4</id><last_updated>2024-03-15</last_updated><marital_status>married</marital_status><name>Lee Dong-hyun</name><nationality>Korean</nationality><profession>retired basketball player</profession><type>None</type><weight>75 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>19851104</date_of_birth><description>An expert in youth development with a focus on holistic player growth.</description><education>Ph.D. in Sports Psychology</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>female</gender><hair_color>brown</hair_color><height>170 cm</height><history><event>2024-03-15: Ana Novak identified two promising prospects for potential future transfers to Asian leagues, demonstrating VBK \u017daladar's commitment to international development.</event></history><id>PERSON-5</id><last_updated>2024-03-15</last_updated><marital_status>single</marital_status><name>Ana Novak</name><nationality>Slovenian</nationality><profession>youth academy director</profession><type>None</type><weight>63 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>19920928</date_of_birth><description>A veteran point guard known for exceptional court vision and leadership.</description><education>college graduate</education><entity_class>person</entity_class><eye_color>dark brown</eye_color><gender>male</gender><hair_color>black</hair_color><height>185 cm</height><history><event>2024-03-15: Kim Tae-young's workload is expected to decrease with the addition of Klemen \u017dgur to the Seoul Metro Lions roster.</event></history><id>PERSON-6</id><last_updated>2024-03-15</last_updated><marital_status>married</marital_status><name>Kim Tae-young</name><nationality>Korean</nationality><profession>professional basketball player</profession><type>None</type><weight>80 kg</weight></person>\n</PERSONS>\n\n<ORGANIZATIONS>\n<organization><annual_revenue>2500000</annual_revenue><created_at>0</created_at><description>A professional basketball club focusing on youth development and community engagement.</description><entity_class>organization</entity_class><founded>1991</founded><headquarters>Ljubljana</headquarters><history><event>2024-03-15: VBK \u017daladar established a groundbreaking partnership with Seoul Metro Lions through the transfer of Klemen \u017dgur, creating new pathways for Slovenian players in Asia.</event></history><id>ORGANIZATION-1</id><industry>professional sports</industry><last_updated>2024-03-15</last_updated><name>VBK \u017daladar</name><number_of_employees>25</number_of_employees><type>sports club</type></organization>\n<organization><annual_revenue>8000000</annual_revenue><created_at>0</created_at><description>A professional basketball team with a passionate fan base and competitive spirit.</description><entity_class>organization</entity_class><founded>2005</founded><headquarters>Korea</headquarters><history><event>2024-03-15: Seoul Metro Lions strengthened their roster with the acquisition of Klemen \u017dgur, addressing their need for a skilled playmaker and improving their playoff prospects.</event></history><id>ORGANIZATION-2</id><industry>sports entertainment</industry><last_updated>2024-03-15</last_updated><name>Seoul Metro Lions</name><number_of_employees>45</number_of_employees><type>professional sports team</type></organization>\n<organization><annual_revenue>15000000</annual_revenue><created_at>0</created_at><description>The premier professional basketball league featuring ten teams competing annually.</description><entity_class>organization</entity_class><founded>1997</founded><headquarters>Korea</headquarters><history><event>2024-03-15: The Korean Basketball League welcomed its first Slovenian player, Klemen \u017dgur, marking a significant step in international player development.</event></history><id>ORGANIZATION-3</id><industry>sports management</industry><last_updated>2024-03-15</last_updated><name>Korean Basketball League</name><number_of_employees>50</number_of_employees><type>professional sports league</type></organization>\n<organization><annual_revenue>3500000</annual_revenue><created_at>0</created_at><description>The national governing body responsible for promoting and developing basketball throughout Slovenia.</description><entity_class>organization</entity_class><founded>1948</founded><headquarters>Ljubljana</headquarters><history><event>2024-03-15: The Slovenian Basketball Federation praised VBK \u017daladar's innovative approach to player development and initiated discussions with other Asian leagues for similar partnerships.</event></history><id>ORGANIZATION-4</id><industry>sports administration</industry><last_updated>2024-03-15</last_updated><name>Slovenian Basketball Federation</name><number_of_employees>20</number_of_employees><type>governing body</type></organization>\n<organization><annual_revenue>6000000</annual_revenue><created_at>0</created_at><description>A professional basketball team with a high-energy playing style and strong home court advantage.</description><entity_class>organization</entity_class><founded>2006</founded><headquarters>Korea</headquarters><history><event>2024-03-15: Busan Thunderbolt will face Klemen \u017dgur in his debut game with Seoul Metro Lions in March 2024.</event></history><id>ORGANIZATION-5</id><industry>sports entertainment</industry><last_updated>2024-03-15</last_updated><name>Busan Thunderbolt</name><number_of_employees>35</number_of_employees><type>professional sports team</type></organization>\n</ORGANIZATIONS>\n\n<PRODUCTS>\n\n</PRODUCTS>\n\n<ARTS>\n\n</ARTS>\n\n<EVENTS>\n\n</EVENTS>\n\n<BUILDINGS>\n<building><architect>Studio INN</architect><capacity>5000</capacity><created_at>0</created_at><description>A modern sports and entertainment venue hosting various events throughout the year.</description><entity_class>building</entity_class><height>38 meters</height><history><event>2024-03-15: Arena Sto\u017eice will host an exhibition game between VBK \u017daladar and Seoul Metro Lions in September 2024, expected to sell out its 5,000-seat capacity.</event></history><id>BUILDING-1</id><last_updated>2024-03-15</last_updated><name>Arena Sto\u017eice</name><type>public multi-purpose arena</type><year_built>2010</year_built></building>\n</BUILDINGS>\n\n<MISCELLANEOUS>\n\n</MISCELLANEOUS>\n</known_entities>\nNext, review the outline of previous events that have occurred in this fictional world:\n\n<history>\n<event><date>2024-03-15</date><outline>VBK \u017daladar {VBK \u017daladar|ORGANIZATION-1} of {Slovenia|LOCATION-1} announced the transfer of 18-year-old prospect {Klemen \u017dgur|PERSON-1} to {Seoul Metro Lions|ORGANIZATION-2} of the {Korean Basketball League|ORGANIZATION-3} for an undisclosed fee. The transfer fee is reported to be in the range of \u20ac200,000 to \u20ac300,000, with potential bonuses tied to {Klemen \u017dgur|PERSON-1}'s performance milestones. {Klemen \u017dgur|PERSON-1}, who averaged 12.5 points per game in {VBK \u017daladar|ORGANIZATION-1}'s developmental league, expressed excitement about the opportunity to compete in {Asia|LOCATION-3}'s fastest-growing basketball market. {\u017dgur|PERSON-1}'s impressive 3-point shooting percentage of 38% and his ability to play both guard positions made him a standout prospect in the Slovenian youth system. {Seoul Metro Lions|ORGANIZATION-2}' General Manager {Park Min-ho|PERSON-2} stated that {Klemen \u017dgur|PERSON-1}'s exceptional ball-handling skills and 6'7\" frame made him an ideal addition to the team's roster. The Lions, currently sitting in fourth place in the {KBL|ORGANIZATION-3} standings, have been seeking a reliable playmaker to complement their strong frontcourt. {VBK \u017daladar|ORGANIZATION-1}'s Sporting Director, {David Cimerman|PERSON-3}, confirmed that the transfer includes a buy-back clause after two seasons, allowing the club to monitor {Klemen \u017dgur|PERSON-1}'s development in the Asian league. The buy-back clause is set at \u20ac500,000 and includes performance-based escalators if {Klemen \u017dgur|PERSON-1} achieves certain statistical benchmarks in the {KBL|ORGANIZATION-3}. The {Slovenian Basketball Federation|ORGANIZATION-4} praised {VBK \u017daladar|ORGANIZATION-1} for creating innovative pathways for young players, citing the transfer as a milestone for the country's basketball development program. The federation has already initiated discussions with other Asian leagues to establish similar development pathways for Slovenian prospects. Korean sports media reported that {Klemen \u017dgur|PERSON-1} will wear jersey number 7 for {Seoul Metro Lions|ORGANIZATION-2} and is expected to make his debut against {Busan Thunderbolt|ORGANIZATION-5} in March 2024. The number 7 jersey was previously worn by the team's most popular player, {Lee Dong-hyun|PERSON-4}, who retired last season. {VBK \u017daladar|ORGANIZATION-1}'s youth academy director, {Ana Novak|PERSON-5}, revealed that the club has already identified two more promising prospects for potential future transfers to Asian leagues. Both prospects, aged 16 and 17, are currently participating in a cultural exchange program with a {Japan|LOCATION-4}ese basketball academy to prepare them for potential moves to {Asia|LOCATION-3}. {Seoul Metro Lions|ORGANIZATION-2} announced a special pre-season exhibition game against {VBK \u017daladar|ORGANIZATION-1} in {Slovenia|LOCATION-1}, scheduled for September 2024, to celebrate the partnership between the clubs. The exhibition game will be played at the 5,000-seat {Arena Sto\u017eice|BUILDING-1} in {Ljubljana|LOCATION-5}, with tickets expected to sell out within days of release. Korean basketball analysts noted that {Klemen \u017dgur|PERSON-1}'s arrival could help {Seoul Metro Lions|ORGANIZATION-2} address their need for a skilled playmaker ahead of their {KBL|ORGANIZATION-3} playoff push. {\u017dgur|PERSON-1}'s addition is expected to reduce the workload of veteran point guard {Kim Tae-young|PERSON-6}, who has been averaging 35 minutes per game this season. The transfer marks the first significant player exchange between Slovenian and {Korea|LOCATION-2}n basketball leagues, potentially opening doors for future collaborations between the two national basketball associations. The two basketball associations have already scheduled a joint coaching clinic for June 2024, focusing on youth development and tactical strategies.</outline></event>\n</history>\n\nNow, consider the following information about the new event you need to generate as a continuation of the past events:\n\nDate: 2024-04-15\n\nEvent Summary: Despite Klemen \u017dgur's solid debut with 12 points and 7 assists, Seoul Metro Lions suffer a narrow loss to Busan Thunderbolt as teammates fail to capitalize on his quality passes in the final minutes.\n\nGenre: Sports\n\nFollow these guidelines to generate the event outline:\n\n1. Create an entirely fictional event based on the given genre, event summary, and history of previous events. The event must be realistic but must not reference any existing real-world or known fictional named entities.\n2. Invent new named entities as needed, ensuring they don't exist in the real world or in existing works of fiction. When creating names, use unique combinations unlikely to match real named entities.\n3. Construct the outline using short, concise, factual, and objective statements. Each statement must discuss only one fact or sub-event, structured sequentially in a logical temporal order when applicable.\n4. Ensure all statements form a coherent outline.\n5. Output each statement within a <storyitem> tag.\n6. Generate exactly 10 distinct story items.\n7. Ensure logical progression, with each statement following chronologically when applicable. Include a mix of main events, reactions, consequences, and contextual information.\n8. Make storyitems as atomic as possible, communicating only a single piece of relevant information per item. Do not merge multiple pieces of information into one storyitem.\n9. Ensure the story sounds realistic without explicitly stating it's fictional.\n10. Maintain consistency with the provided <history> that discusses past events fictional events. The outline must logically follow chronological events described in the history.\n11. Incorporate some or all of the provided named entities in your outline. Ensure that any mention of these entities is consistent with the information you have about the named entity. You may introduce additional fictional entities as needed, but they must not conflict with the existing ones.\n12. When referencing any named entities from the provided inputs, maintain consistency in their descriptions and roles within the story.\n13. If no date is provided: Generate a complete date for the event, including the year. The date should be formatted as \"year-month-day\" (e.g., \"2024-12-03\" or \"2025-06-13\"). This date should be consistent with the timeline established in the <history>.\n14. If a date is provided: Use the provided date.\n15. The outline can include quotes from the named entities where applicable.\n16. Do not repeat the information from the previous events from the <history>.\n17. Refer to all named entities (the new named entities and the known named entities) by their full \"name\" property. DO NOT refer to the named entities using the ID.\n18. Make sure that you refer to all named entities within each storyitem per full name at least once. DO NOT use pronouns to refer to a named entity from the previous story item.\n19. Think about the content that is appropriate for the event summary given the genre, provided history: Think about which dimensions align with all of those, and sound like a realistic event.\n\nYour output should be formatted as follows:\n<scratchpad>[Your thoughts go here]</scratchpad>\n<results>\n<date>year-month-day</date>\n<outline>\n<storyitem>First story item</storyitem>\n<storyitem>Second story item</storyitem>\n<storyitem>Third story item</storyitem>\n...\n</outline>\n</results>\n\nIMPORTANT:\n- The event must be entirely realistic, even though it is fictional. Do not include any science fiction or fantasy elements. The story should read like a plausible current event.\n- Do not use any galactic events. The fictional world should be similar to our world but not about galaxies or outer space.\n- Each story item must only discuss one fact or subevent. Ensure that each story item is specific, concise, and focused on a single piece of information.\n- Begin your response with <results> and end it with </results>. Do not include any text outside of these tags.\n- Do not exaggerate the outline. Avoid using words like \"groundbreaking\", \"worldwide\", \"global\". Keep the outline and the scope and influence of the event realistic.\n- Do not create outlines with global or national impact unless the genre specifically requires it. Instead, focus on smaller or local developments.\n- Do not focus on technological discoveries or topics like AI tools, virtual reality, augmented reality, 3D-modelling, quantum computing, etc. You may include such topics only if they are HIGHLY relevant to the genre Sports AND the provided history of events.\n- Focus on realistic, meaningful outlines with specific details and events that align with typical, realistic scenarios of the genre Sports.\n\nRemember:\nThe outline should center on a fictional but realistic event, keeping its scale aligned with the event summary and provided <history> without exaggerating its impact. Rather than overstating the event's significance, the outline should stay within the scope appropriate to the genre, provided history, and provided summary. When in doubt, focus on detailed, localized developments instead of amplifying global effects.\n\nEnsure that the outline is coherent, follows a logical sequence, and offers a unique perspective on the given event while maintaining consistency with the provided background information.",
+  "system-prompt": null,
+  "values": {
+    "GENRE": "Sports",
+    "EVENT_SUMMARY": "Despite Klemen \u017dgur's solid debut with 12 points and 7 assists, Seoul Metro Lions suffer a narrow loss to Busan Thunderbolt as teammates fail to capitalize on his quality passes in the final minutes.",
+    "EVENT_SUMMARY_FOR_NAME": "Despite Klemen \u017dgur'",
+    "INIT_SUMMARY": "A leading European basketball club has transferred a young prospect to an Asian league, seeking to capitalize on the player's potential and expand its global brand presence.",
+    "KEYWORDS": "",
+    "CREATED_AT": 1,
+    "HISTORIES": [
+      "<event><date>2024-03-15</date><outline>VBK \u017daladar {VBK \u017daladar|ORGANIZATION-1} of {Slovenia|LOCATION-1} announced the transfer of 18-year-old prospect {Klemen \u017dgur|PERSON-1} to {Seoul Metro Lions|ORGANIZATION-2} of the {Korean Basketball League|ORGANIZATION-3} for an undisclosed fee. The transfer fee is reported to be in the range of \u20ac200,000 to \u20ac300,000, with potential bonuses tied to {Klemen \u017dgur|PERSON-1}'s performance milestones. {Klemen \u017dgur|PERSON-1}, who averaged 12.5 points per game in {VBK \u017daladar|ORGANIZATION-1}'s developmental league, expressed excitement about the opportunity to compete in {Asia|LOCATION-3}'s fastest-growing basketball market. {\u017dgur|PERSON-1}'s impressive 3-point shooting percentage of 38% and his ability to play both guard positions made him a standout prospect in the Slovenian youth system. {Seoul Metro Lions|ORGANIZATION-2}' General Manager {Park Min-ho|PERSON-2} stated that {Klemen \u017dgur|PERSON-1}'s exceptional ball-handling skills and 6'7\" frame made him an ideal addition to the team's roster. The Lions, currently sitting in fourth place in the {KBL|ORGANIZATION-3} standings, have been seeking a reliable playmaker to complement their strong frontcourt. {VBK \u017daladar|ORGANIZATION-1}'s Sporting Director, {David Cimerman|PERSON-3}, confirmed that the transfer includes a buy-back clause after two seasons, allowing the club to monitor {Klemen \u017dgur|PERSON-1}'s development in the Asian league. The buy-back clause is set at \u20ac500,000 and includes performance-based escalators if {Klemen \u017dgur|PERSON-1} achieves certain statistical benchmarks in the {KBL|ORGANIZATION-3}. The {Slovenian Basketball Federation|ORGANIZATION-4} praised {VBK \u017daladar|ORGANIZATION-1} for creating innovative pathways for young players, citing the transfer as a milestone for the country's basketball development program. The federation has already initiated discussions with other Asian leagues to establish similar development pathways for Slovenian prospects. Korean sports media reported that {Klemen \u017dgur|PERSON-1} will wear jersey number 7 for {Seoul Metro Lions|ORGANIZATION-2} and is expected to make his debut against {Busan Thunderbolt|ORGANIZATION-5} in March 2024. The number 7 jersey was previously worn by the team's most popular player, {Lee Dong-hyun|PERSON-4}, who retired last season. {VBK \u017daladar|ORGANIZATION-1}'s youth academy director, {Ana Novak|PERSON-5}, revealed that the club has already identified two more promising prospects for potential future transfers to Asian leagues. Both prospects, aged 16 and 17, are currently participating in a cultural exchange program with a {Japan|LOCATION-4}ese basketball academy to prepare them for potential moves to {Asia|LOCATION-3}. {Seoul Metro Lions|ORGANIZATION-2} announced a special pre-season exhibition game against {VBK \u017daladar|ORGANIZATION-1} in {Slovenia|LOCATION-1}, scheduled for September 2024, to celebrate the partnership between the clubs. The exhibition game will be played at the 5,000-seat {Arena Sto\u017eice|BUILDING-1} in {Ljubljana|LOCATION-5}, with tickets expected to sell out within days of release. Korean basketball analysts noted that {Klemen \u017dgur|PERSON-1}'s arrival could help {Seoul Metro Lions|ORGANIZATION-2} address their need for a skilled playmaker ahead of their {KBL|ORGANIZATION-3} playoff push. {\u017dgur|PERSON-1}'s addition is expected to reduce the workload of veteran point guard {Kim Tae-young|PERSON-6}, who has been averaging 35 minutes per game this season. The transfer marks the first significant player exchange between Slovenian and {Korea|LOCATION-2}n basketball leagues, potentially opening doors for future collaborations between the two national basketball associations. The two basketball associations have already scheduled a joint coaching clinic for June 2024, focusing on youth development and tactical strategies.</outline></event>"
+    ],
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "NEXT_IDS": {
+      "person": 7,
+      "organization": 6,
+      "location": 6,
+      "product": 1,
+      "art": 1,
+      "building": 2,
+      "event": 1,
+      "miscellaneous": 1
+    },
+    "PROVIDED_DATE": "2024-04-15",
+    "PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Klemen \u017dgur",
+        "entity_class": "person",
+        "description": "A talented young basketball player with a strong work ethic and determination to succeed at the highest level.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2024-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Klemen \u017dgur transferred to Seoul Metro Lions, becoming the first Slovenian player to join the Korean Basketball League, with a buy-back clause after two seasons.",
+            "date": "2024-03-15"
+          }
+        ],
+        "date_of_birth": "20050315",
+        "gender": "male",
+        "profession": "basketball player",
+        "nationality": "Slovenian",
+        "education": "high school graduate",
+        "height": "201 cm",
+        "weight": "89 kg",
+        "eye_color": "brown",
+        "hair_color": "blond",
+        "marital_status": "single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Park Min-ho",
+        "entity_class": "person",
+        "description": "An experienced sports executive known for his ability to identify talent.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2024-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Park Min-ho, as General Manager of Seoul Metro Lions, successfully acquired Klemen \u017dgur, addressing the team's need for a skilled playmaker.",
+            "date": "2024-03-15"
+          }
+        ],
+        "date_of_birth": "19750822",
+        "gender": "male",
+        "profession": "basketball team general manager",
+        "nationality": "Korean",
+        "education": "graduate degree in Sports Management",
+        "height": "183 cm",
+        "weight": "82 kg",
+        "eye_color": "black",
+        "hair_color": "black",
+        "marital_status": "married"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "David Cimerman",
+        "entity_class": "person",
+        "description": "A professional sports administrator with expertise in basketball operations.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2024-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "David Cimerman, Sporting Director of VBK \u017daladar, negotiated a transfer deal for Klemen \u017dgur that included a buy-back clause and performance-based bonuses.",
+            "date": "2024-03-15"
+          }
+        ],
+        "date_of_birth": "19800612",
+        "gender": "male",
+        "profession": "sporting director",
+        "nationality": "Slovenian",
+        "education": "Master's in Sports Science",
+        "height": "188 cm",
+        "weight": "78 kg",
+        "eye_color": "hazel",
+        "hair_color": "dark brown",
+        "marital_status": "married"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Lee Dong-hyun",
+        "entity_class": "person",
+        "description": "A former professional basketball player who made significant contributions to the sport.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2024-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Lee Dong-hyun's legacy jersey number 7 was passed on to Klemen \u017dgur, marking a new chapter for the Seoul Metro Lions.",
+            "date": "2024-03-15"
+          }
+        ],
+        "date_of_birth": "19900530",
+        "gender": "male",
+        "profession": "retired basketball player",
+        "nationality": "Korean",
+        "education": "graduate degree in Business",
+        "height": "185 cm",
+        "weight": "75 kg",
+        "eye_color": "dark brown",
+        "hair_color": "black",
+        "marital_status": "married"
+      },
+      {
+        "id": "PERSON-5",
+        "name": "Ana Novak",
+        "entity_class": "person",
+        "description": "An expert in youth development with a focus on holistic player growth.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2024-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Ana Novak identified two promising prospects for potential future transfers to Asian leagues, demonstrating VBK \u017daladar's commitment to international development.",
+            "date": "2024-03-15"
+          }
+        ],
+        "date_of_birth": "19851104",
+        "gender": "female",
+        "profession": "youth academy director",
+        "nationality": "Slovenian",
+        "education": "Ph.D. in Sports Psychology",
+        "height": "170 cm",
+        "weight": "63 kg",
+        "eye_color": "blue",
+        "hair_color": "brown",
+        "marital_status": "single"
+      },
+      {
+        "id": "PERSON-6",
+        "name": "Kim Tae-young",
+        "entity_class": "person",
+        "description": "A veteran point guard known for exceptional court vision and leadership.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2024-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Kim Tae-young's workload is expected to decrease with the addition of Klemen \u017dgur to the Seoul Metro Lions roster.",
+            "date": "2024-03-15"
+          }
+        ],
+        "date_of_birth": "19920928",
+        "gender": "male",
+        "profession": "professional basketball player",
+        "nationality": "Korean",
+        "education": "college graduate",
+        "height": "185 cm",
+        "weight": "80 kg",
+        "eye_color": "dark brown",
+        "hair_color": "black",
+        "marital_status": "married"
+      }
+    ],
+    "ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "VBK \u017daladar",
+        "entity_class": "organization",
+        "description": "A professional basketball club focusing on youth development and community engagement.",
+        "type": "sports club",
+        "created_at": 0,
+        "last_updated": "2024-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "VBK \u017daladar established a groundbreaking partnership with Seoul Metro Lions through the transfer of Klemen \u017dgur, creating new pathways for Slovenian players in Asia.",
+            "date": "2024-03-15"
+          }
+        ],
+        "founded": "1991",
+        "headquarters": "Ljubljana",
+        "number_of_employees": "25",
+        "annual_revenue": "2500000",
+        "industry": "professional sports"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Seoul Metro Lions",
+        "entity_class": "organization",
+        "description": "A professional basketball team with a passionate fan base and competitive spirit.",
+        "type": "professional sports team",
+        "created_at": 0,
+        "last_updated": "2024-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Seoul Metro Lions strengthened their roster with the acquisition of Klemen \u017dgur, addressing their need for a skilled playmaker and improving their playoff prospects.",
+            "date": "2024-03-15"
+          }
+        ],
+        "founded": "2005",
+        "headquarters": "Korea",
+        "number_of_employees": "45",
+        "annual_revenue": "8000000",
+        "industry": "sports entertainment"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Korean Basketball League",
+        "entity_class": "organization",
+        "description": "The premier professional basketball league featuring ten teams competing annually.",
+        "type": "professional sports league",
+        "created_at": 0,
+        "last_updated": "2024-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Korean Basketball League welcomed its first Slovenian player, Klemen \u017dgur, marking a significant step in international player development.",
+            "date": "2024-03-15"
+          }
+        ],
+        "founded": "1997",
+        "headquarters": "Korea",
+        "number_of_employees": "50",
+        "annual_revenue": "15000000",
+        "industry": "sports management"
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "Slovenian Basketball Federation",
+        "entity_class": "organization",
+        "description": "The national governing body responsible for promoting and developing basketball throughout Slovenia.",
+        "type": "governing body",
+        "created_at": 0,
+        "last_updated": "2024-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Slovenian Basketball Federation praised VBK \u017daladar's innovative approach to player development and initiated discussions with other Asian leagues for similar partnerships.",
+            "date": "2024-03-15"
+          }
+        ],
+        "founded": "1948",
+        "headquarters": "Ljubljana",
+        "number_of_employees": "20",
+        "annual_revenue": "3500000",
+        "industry": "sports administration"
+      },
+      {
+        "id": "ORGANIZATION-5",
+        "name": "Busan Thunderbolt",
+        "entity_class": "organization",
+        "description": "A professional basketball team with a high-energy playing style and strong home court advantage.",
+        "type": "professional sports team",
+        "created_at": 0,
+        "last_updated": "2024-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Busan Thunderbolt will face Klemen \u017dgur in his debut game with Seoul Metro Lions in March 2024.",
+            "date": "2024-03-15"
+          }
+        ],
+        "founded": "2006",
+        "headquarters": "Korea",
+        "number_of_employees": "35",
+        "annual_revenue": "6000000",
+        "industry": "sports entertainment"
+      }
+    ],
+    "LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Slovenia",
+        "entity_class": "location",
+        "description": "A mountainous country in Central Europe known for its diverse landscapes and rich cultural heritage.",
+        "type": "country",
+        "created_at": 0,
+        "last_updated": "2024-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Slovenia's basketball development program received international recognition through the transfer of Klemen \u017dgur to the Korean Basketball League, marking a significant milestone in the country's sports diplomacy.",
+            "date": "2024-03-15"
+          }
+        ],
+        "population": "2.1 million",
+        "area": "20273 km\u00b2",
+        "elevation": "average: 557 meters"
+      },
+      {
+        "id": "LOCATION-2",
+        "name": "Korea",
+        "entity_class": "location",
+        "description": "A peninsula country in East Asia with a rich history and modern technological advancement.",
+        "type": "country",
+        "created_at": 0,
+        "last_updated": "2024-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Korea's basketball market expanded with the addition of Slovenian prospect Klemen \u017dgur to the Seoul Metro Lions, strengthening international player exchange.",
+            "date": "2024-03-15"
+          }
+        ],
+        "population": "51 million",
+        "area": "100363 km\u00b2",
+        "elevation": "average: 282 meters"
+      },
+      {
+        "id": "LOCATION-3",
+        "name": "Asia",
+        "entity_class": "location",
+        "description": "The largest and most populous continent on Earth, diverse in culture, geography, and climate.",
+        "type": "continent",
+        "created_at": 0,
+        "last_updated": "2024-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Asia's basketball market continued to grow with the transfer of Klemen \u017dgur to the Korean Basketball League, highlighting the region's increasing appeal to international talent.",
+            "date": "2024-03-15"
+          }
+        ],
+        "area": "44500000 km\u00b2",
+        "population": "4.7 billion",
+        "elevation": "average: 960 meters"
+      },
+      {
+        "id": "LOCATION-4",
+        "name": "Japan",
+        "entity_class": "location",
+        "description": "An island nation in East Asia known for its unique culture, technology, and natural beauty.",
+        "type": "country",
+        "created_at": 0,
+        "last_updated": "2024-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Japan's basketball academy participated in a cultural exchange program with VBK \u017daladar, fostering international youth development opportunities.",
+            "date": "2024-03-15"
+          }
+        ],
+        "population": "125 million",
+        "area": "377975 km\u00b2",
+        "elevation": "average: 438 meters"
+      },
+      {
+        "id": "LOCATION-5",
+        "name": "Ljubljana",
+        "entity_class": "location",
+        "description": "The capital city of Slovenia, situated along the Ljubljanica River and known for its historic architecture.",
+        "type": "city",
+        "created_at": 0,
+        "last_updated": "2024-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Ljubljana will host an exhibition game between VBK \u017daladar and Seoul Metro Lions at Arena Sto\u017eice in September 2024, celebrating the partnership between the clubs.",
+            "date": "2024-03-15"
+          }
+        ],
+        "population": "293000",
+        "area": "275 km\u00b2",
+        "elevation": "295 meters"
+      }
+    ],
+    "PRODUCT": [],
+    "ART": [],
+    "BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Arena Sto\u017eice",
+        "entity_class": "building",
+        "description": "A modern sports and entertainment venue hosting various events throughout the year.",
+        "type": "public multi-purpose arena",
+        "created_at": 0,
+        "last_updated": "2024-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Arena Sto\u017eice will host an exhibition game between VBK \u017daladar and Seoul Metro Lions in September 2024, expected to sell out its 5,000-seat capacity.",
+            "date": "2024-03-15"
+          }
+        ],
+        "architect": "Studio INN",
+        "year_built": "2010",
+        "height": "38 meters",
+        "capacity": "5000"
+      }
+    ],
+    "EVENT": [],
+    "MISCELLANEOUS": [],
+    "PERSONS_XML": "<person><created_at>0</created_at><date_of_birth>20050315</date_of_birth><description>A talented young basketball player with a strong work ethic and determination to succeed at the highest level.</description><education>high school graduate</education><entity_class>person</entity_class><eye_color>brown</eye_color><gender>male</gender><hair_color>blond</hair_color><height>201 cm</height><history><event>2024-03-15: Klemen \u017dgur transferred to Seoul Metro Lions, becoming the first Slovenian player to join the Korean Basketball League, with a buy-back clause after two seasons.</event></history><id>PERSON-1</id><last_updated>2024-03-15</last_updated><marital_status>single</marital_status><name>Klemen \u017dgur</name><nationality>Slovenian</nationality><profession>basketball player</profession><type>None</type><weight>89 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>19750822</date_of_birth><description>An experienced sports executive known for his ability to identify talent.</description><education>graduate degree in Sports Management</education><entity_class>person</entity_class><eye_color>black</eye_color><gender>male</gender><hair_color>black</hair_color><height>183 cm</height><history><event>2024-03-15: Park Min-ho, as General Manager of Seoul Metro Lions, successfully acquired Klemen \u017dgur, addressing the team's need for a skilled playmaker.</event></history><id>PERSON-2</id><last_updated>2024-03-15</last_updated><marital_status>married</marital_status><name>Park Min-ho</name><nationality>Korean</nationality><profession>basketball team general manager</profession><type>None</type><weight>82 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>19800612</date_of_birth><description>A professional sports administrator with expertise in basketball operations.</description><education>Master's in Sports Science</education><entity_class>person</entity_class><eye_color>hazel</eye_color><gender>male</gender><hair_color>dark brown</hair_color><height>188 cm</height><history><event>2024-03-15: David Cimerman, Sporting Director of VBK \u017daladar, negotiated a transfer deal for Klemen \u017dgur that included a buy-back clause and performance-based bonuses.</event></history><id>PERSON-3</id><last_updated>2024-03-15</last_updated><marital_status>married</marital_status><name>David Cimerman</name><nationality>Slovenian</nationality><profession>sporting director</profession><type>None</type><weight>78 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>19900530</date_of_birth><description>A former professional basketball player who made significant contributions to the sport.</description><education>graduate degree in Business</education><entity_class>person</entity_class><eye_color>dark brown</eye_color><gender>male</gender><hair_color>black</hair_color><height>185 cm</height><history><event>2024-03-15: Lee Dong-hyun's legacy jersey number 7 was passed on to Klemen \u017dgur, marking a new chapter for the Seoul Metro Lions.</event></history><id>PERSON-4</id><last_updated>2024-03-15</last_updated><marital_status>married</marital_status><name>Lee Dong-hyun</name><nationality>Korean</nationality><profession>retired basketball player</profession><type>None</type><weight>75 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>19851104</date_of_birth><description>An expert in youth development with a focus on holistic player growth.</description><education>Ph.D. in Sports Psychology</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>female</gender><hair_color>brown</hair_color><height>170 cm</height><history><event>2024-03-15: Ana Novak identified two promising prospects for potential future transfers to Asian leagues, demonstrating VBK \u017daladar's commitment to international development.</event></history><id>PERSON-5</id><last_updated>2024-03-15</last_updated><marital_status>single</marital_status><name>Ana Novak</name><nationality>Slovenian</nationality><profession>youth academy director</profession><type>None</type><weight>63 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>19920928</date_of_birth><description>A veteran point guard known for exceptional court vision and leadership.</description><education>college graduate</education><entity_class>person</entity_class><eye_color>dark brown</eye_color><gender>male</gender><hair_color>black</hair_color><height>185 cm</height><history><event>2024-03-15: Kim Tae-young's workload is expected to decrease with the addition of Klemen \u017dgur to the Seoul Metro Lions roster.</event></history><id>PERSON-6</id><last_updated>2024-03-15</last_updated><marital_status>married</marital_status><name>Kim Tae-young</name><nationality>Korean</nationality><profession>professional basketball player</profession><type>None</type><weight>80 kg</weight></person>",
+    "ORGANIZATIONS_XML": "<organization><annual_revenue>2500000</annual_revenue><created_at>0</created_at><description>A professional basketball club focusing on youth development and community engagement.</description><entity_class>organization</entity_class><founded>1991</founded><headquarters>Ljubljana</headquarters><history><event>2024-03-15: VBK \u017daladar established a groundbreaking partnership with Seoul Metro Lions through the transfer of Klemen \u017dgur, creating new pathways for Slovenian players in Asia.</event></history><id>ORGANIZATION-1</id><industry>professional sports</industry><last_updated>2024-03-15</last_updated><name>VBK \u017daladar</name><number_of_employees>25</number_of_employees><type>sports club</type></organization>\n<organization><annual_revenue>8000000</annual_revenue><created_at>0</created_at><description>A professional basketball team with a passionate fan base and competitive spirit.</description><entity_class>organization</entity_class><founded>2005</founded><headquarters>Korea</headquarters><history><event>2024-03-15: Seoul Metro Lions strengthened their roster with the acquisition of Klemen \u017dgur, addressing their need for a skilled playmaker and improving their playoff prospects.</event></history><id>ORGANIZATION-2</id><industry>sports entertainment</industry><last_updated>2024-03-15</last_updated><name>Seoul Metro Lions</name><number_of_employees>45</number_of_employees><type>professional sports team</type></organization>\n<organization><annual_revenue>15000000</annual_revenue><created_at>0</created_at><description>The premier professional basketball league featuring ten teams competing annually.</description><entity_class>organization</entity_class><founded>1997</founded><headquarters>Korea</headquarters><history><event>2024-03-15: The Korean Basketball League welcomed its first Slovenian player, Klemen \u017dgur, marking a significant step in international player development.</event></history><id>ORGANIZATION-3</id><industry>sports management</industry><last_updated>2024-03-15</last_updated><name>Korean Basketball League</name><number_of_employees>50</number_of_employees><type>professional sports league</type></organization>\n<organization><annual_revenue>3500000</annual_revenue><created_at>0</created_at><description>The national governing body responsible for promoting and developing basketball throughout Slovenia.</description><entity_class>organization</entity_class><founded>1948</founded><headquarters>Ljubljana</headquarters><history><event>2024-03-15: The Slovenian Basketball Federation praised VBK \u017daladar's innovative approach to player development and initiated discussions with other Asian leagues for similar partnerships.</event></history><id>ORGANIZATION-4</id><industry>sports administration</industry><last_updated>2024-03-15</last_updated><name>Slovenian Basketball Federation</name><number_of_employees>20</number_of_employees><type>governing body</type></organization>\n<organization><annual_revenue>6000000</annual_revenue><created_at>0</created_at><description>A professional basketball team with a high-energy playing style and strong home court advantage.</description><entity_class>organization</entity_class><founded>2006</founded><headquarters>Korea</headquarters><history><event>2024-03-15: Busan Thunderbolt will face Klemen \u017dgur in his debut game with Seoul Metro Lions in March 2024.</event></history><id>ORGANIZATION-5</id><industry>sports entertainment</industry><last_updated>2024-03-15</last_updated><name>Busan Thunderbolt</name><number_of_employees>35</number_of_employees><type>professional sports team</type></organization>",
+    "LOCATIONS_XML": "<location><area>20273 km\u00b2</area><created_at>0</created_at><description>A mountainous country in Central Europe known for its diverse landscapes and rich cultural heritage.</description><elevation>average: 557 meters</elevation><entity_class>location</entity_class><history><event>2024-03-15: Slovenia's basketball development program received international recognition through the transfer of Klemen \u017dgur to the Korean Basketball League, marking a significant milestone in the country's sports diplomacy.</event></history><id>LOCATION-1</id><last_updated>2024-03-15</last_updated><name>Slovenia</name><population>2.1 million</population><type>country</type></location>\n<location><area>100363 km\u00b2</area><created_at>0</created_at><description>A peninsula country in East Asia with a rich history and modern technological advancement.</description><elevation>average: 282 meters</elevation><entity_class>location</entity_class><history><event>2024-03-15: Korea's basketball market expanded with the addition of Slovenian prospect Klemen \u017dgur to the Seoul Metro Lions, strengthening international player exchange.</event></history><id>LOCATION-2</id><last_updated>2024-03-15</last_updated><name>Korea</name><population>51 million</population><type>country</type></location>\n<location><area>44500000 km\u00b2</area><created_at>0</created_at><description>The largest and most populous continent on Earth, diverse in culture, geography, and climate.</description><elevation>average: 960 meters</elevation><entity_class>location</entity_class><history><event>2024-03-15: Asia's basketball market continued to grow with the transfer of Klemen \u017dgur to the Korean Basketball League, highlighting the region's increasing appeal to international talent.</event></history><id>LOCATION-3</id><last_updated>2024-03-15</last_updated><name>Asia</name><population>4.7 billion</population><type>continent</type></location>\n<location><area>377975 km\u00b2</area><created_at>0</created_at><description>An island nation in East Asia known for its unique culture, technology, and natural beauty.</description><elevation>average: 438 meters</elevation><entity_class>location</entity_class><history><event>2024-03-15: Japan's basketball academy participated in a cultural exchange program with VBK \u017daladar, fostering international youth development opportunities.</event></history><id>LOCATION-4</id><last_updated>2024-03-15</last_updated><name>Japan</name><population>125 million</population><type>country</type></location>\n<location><area>275 km\u00b2</area><created_at>0</created_at><description>The capital city of Slovenia, situated along the Ljubljanica River and known for its historic architecture.</description><elevation>295 meters</elevation><entity_class>location</entity_class><history><event>2024-03-15: Ljubljana will host an exhibition game between VBK \u017daladar and Seoul Metro Lions at Arena Sto\u017eice in September 2024, celebrating the partnership between the clubs.</event></history><id>LOCATION-5</id><last_updated>2024-03-15</last_updated><name>Ljubljana</name><population>293000</population><type>city</type></location>",
+    "PRODUCTS_XML": "",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "<building><architect>Studio INN</architect><capacity>5000</capacity><created_at>0</created_at><description>A modern sports and entertainment venue hosting various events throughout the year.</description><entity_class>building</entity_class><height>38 meters</height><history><event>2024-03-15: Arena Sto\u017eice will host an exhibition game between VBK \u017daladar and Seoul Metro Lions in September 2024, expected to sell out its 5,000-seat capacity.</event></history><id>BUILDING-1</id><last_updated>2024-03-15</last_updated><name>Arena Sto\u017eice</name><type>public multi-purpose arena</type><year_built>2010</year_built></building>",
+    "EVENTS_XML": "",
+    "MISCELLANEOUSS_XML": "",
+    "NUM_STORYITEMS": 10,
+    "HISTORY_XML": "<event><date>2024-03-15</date><outline>VBK \u017daladar {VBK \u017daladar|ORGANIZATION-1} of {Slovenia|LOCATION-1} announced the transfer of 18-year-old prospect {Klemen \u017dgur|PERSON-1} to {Seoul Metro Lions|ORGANIZATION-2} of the {Korean Basketball League|ORGANIZATION-3} for an undisclosed fee. The transfer fee is reported to be in the range of \u20ac200,000 to \u20ac300,000, with potential bonuses tied to {Klemen \u017dgur|PERSON-1}'s performance milestones. {Klemen \u017dgur|PERSON-1}, who averaged 12.5 points per game in {VBK \u017daladar|ORGANIZATION-1}'s developmental league, expressed excitement about the opportunity to compete in {Asia|LOCATION-3}'s fastest-growing basketball market. {\u017dgur|PERSON-1}'s impressive 3-point shooting percentage of 38% and his ability to play both guard positions made him a standout prospect in the Slovenian youth system. {Seoul Metro Lions|ORGANIZATION-2}' General Manager {Park Min-ho|PERSON-2} stated that {Klemen \u017dgur|PERSON-1}'s exceptional ball-handling skills and 6'7\" frame made him an ideal addition to the team's roster. The Lions, currently sitting in fourth place in the {KBL|ORGANIZATION-3} standings, have been seeking a reliable playmaker to complement their strong frontcourt. {VBK \u017daladar|ORGANIZATION-1}'s Sporting Director, {David Cimerman|PERSON-3}, confirmed that the transfer includes a buy-back clause after two seasons, allowing the club to monitor {Klemen \u017dgur|PERSON-1}'s development in the Asian league. The buy-back clause is set at \u20ac500,000 and includes performance-based escalators if {Klemen \u017dgur|PERSON-1} achieves certain statistical benchmarks in the {KBL|ORGANIZATION-3}. The {Slovenian Basketball Federation|ORGANIZATION-4} praised {VBK \u017daladar|ORGANIZATION-1} for creating innovative pathways for young players, citing the transfer as a milestone for the country's basketball development program. The federation has already initiated discussions with other Asian leagues to establish similar development pathways for Slovenian prospects. Korean sports media reported that {Klemen \u017dgur|PERSON-1} will wear jersey number 7 for {Seoul Metro Lions|ORGANIZATION-2} and is expected to make his debut against {Busan Thunderbolt|ORGANIZATION-5} in March 2024. The number 7 jersey was previously worn by the team's most popular player, {Lee Dong-hyun|PERSON-4}, who retired last season. {VBK \u017daladar|ORGANIZATION-1}'s youth academy director, {Ana Novak|PERSON-5}, revealed that the club has already identified two more promising prospects for potential future transfers to Asian leagues. Both prospects, aged 16 and 17, are currently participating in a cultural exchange program with a {Japan|LOCATION-4}ese basketball academy to prepare them for potential moves to {Asia|LOCATION-3}. {Seoul Metro Lions|ORGANIZATION-2} announced a special pre-season exhibition game against {VBK \u017daladar|ORGANIZATION-1} in {Slovenia|LOCATION-1}, scheduled for September 2024, to celebrate the partnership between the clubs. The exhibition game will be played at the 5,000-seat {Arena Sto\u017eice|BUILDING-1} in {Ljubljana|LOCATION-5}, with tickets expected to sell out within days of release. Korean basketball analysts noted that {Klemen \u017dgur|PERSON-1}'s arrival could help {Seoul Metro Lions|ORGANIZATION-2} address their need for a skilled playmaker ahead of their {KBL|ORGANIZATION-3} playoff push. {\u017dgur|PERSON-1}'s addition is expected to reduce the workload of veteran point guard {Kim Tae-young|PERSON-6}, who has been averaging 35 minutes per game this season. The transfer marks the first significant player exchange between Slovenian and {Korea|LOCATION-2}n basketball leagues, potentially opening doors for future collaborations between the two national basketball associations. The two basketball associations have already scheduled a joint coaching clinic for June 2024, focusing on youth development and tactical strategies.</outline></event>"
+  }
+}

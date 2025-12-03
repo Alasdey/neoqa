@@ -1,0 +1,351 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "openai/gpt-5.1",
+    "temperature": 0.0,
+    "max-tokens": 5000
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "<scratchpad>\nGoal: 5 incorrect day-count options different from 14, but numerically and contextually plausible.\n\nKey facts:\n- Final day: 2025-03-22 (N0-S0)\n- Zone berth secured \u201ctwo weeks earlier\u201d (N0-S4)\n- \u201cTwo weeks\u201d with a standard week = 14 days \u2192 correct answer.\n\nIdeas for distractors:\n- Off-by-one / inclusive counting: 13 days, 15 days\n- Halving / multiplying weeks: 7 days (one week), 21 days (three weeks)\n- Numbers tied to other outline details:\n  - 6 (six\u2011match campaign, N0-S4)\n  - 12 (12 players, N0-S5)\n  - 20 (two 20\u2011minute halves, N0-S20)\n  - 11 (11 goals, N0-S22)\n  - 5 (five wins / five matches, N0-S21, N0-S22)\n\nNeed 5 total, reasonably varied and tied to text where possible.\n\nFinal selection:\n1) 7 days \u2013 \u201cone week\u201d confusion, ties to idea of weeks (N0-S4, N0-S25).\n2) 15 days \u2013 inclusive counting error (N0-S0, N0-S4).\n3) 6 days \u2013 from six\u2011match campaign (N0-S4).\n4) 12 days \u2013 from 12\u2011player squad (N0-S5).\n5) 21 days \u2013 \u201cthree weeks\u201d misread from league duration idea (N0-S4).\n\nEach explanation will briefly note: actually \u201ctwo weeks\u201d = 14 days, so these are wrong, but show how someone might be misled by wording or nearby numbers.\n</scratchpad>\n\n<distractors>\n<distractor>\n<answer>7 days</answer>\n<explanation>This is incorrect because \u201ctwo weeks earlier\u201d with a standard week means 14 days, not 7. It is plausible if someone mistakenly treats \u201ctwo weeks earlier\u201d as \u201cwithin the last two weeks\u201d and then assumes a gap of only one week between securing the Zone berth and the final, especially given the repeated references to weekly training.</explanation>\n<distractor-sentences>N0-S4,N0-S25</distractor-sentences>\n</distractor>\n\n<distractor>\n<answer>15 days</answer>\n<explanation>This is incorrect because the phrase \u201ctwo weeks earlier\u201d corresponds to 14 whole calendar days before 2025\u201103\u201122, not 15. It could seem plausible if someone counts both the day the berth was secured and the final day themselves as full days, leading to an inclusive count of 15 days instead of the correct 14.</explanation>\n<distractor-sentences>N0-S0,N0-S4</distractor-sentences>\n</distractor>\n\n<distractor>\n<answer>6 days</answer>\n<explanation>This is incorrect because the timing is explicitly \u201ctwo weeks earlier,\u201d i.e., 14 days, not 6. It may appear plausible if someone fixates on the six\u2011match qualifying campaign and incorrectly assumes one match took place on each of the six days immediately preceding the championship\u2019s final day.</explanation>\n<distractor-sentences>N0-S4</distractor-sentences>\n</distractor>\n\n<distractor>\n<answer>12 days</answer>\n<explanation>This is incorrect because two weeks equal 14 days. It might look believable if a reader confuses the 12\u2011player registered squad size with the time gap, loosely assuming the qualification was \u201croughly a dozen days\u201d before the final instead of precisely two weeks.</explanation>\n<distractor-sentences>N0-S4,N0-S5</distractor-sentences>\n</distractor>\n\n<distractor>\n<answer>21 days</answer>\n<explanation>This is incorrect because \u201ctwo weeks earlier\u201d specifies 14 days, not 21. It could seem plausible if someone imagines the six\u2011match qualifying league spread across three weekends and mistakenly interprets that as the berth being secured about three weeks (21 days) before the final.</explanation>\n<distractor-sentences>N0-S4</distractor-sentences>\n</distractor>\n</distractors>"
+  },
+  "response": "<scratchpad>\nGoal: 5 incorrect day-count options different from 14, but numerically and contextually plausible.\n\nKey facts:\n- Final day: 2025-03-22 (N0-S0)\n- Zone berth secured \u201ctwo weeks earlier\u201d (N0-S4)\n- \u201cTwo weeks\u201d with a standard week = 14 days \u2192 correct answer.\n\nIdeas for distractors:\n- Off-by-one / inclusive counting: 13 days, 15 days\n- Halving / multiplying weeks: 7 days (one week), 21 days (three weeks)\n- Numbers tied to other outline details:\n  - 6 (six\u2011match campaign, N0-S4)\n  - 12 (12 players, N0-S5)\n  - 20 (two 20\u2011minute halves, N0-S20)\n  - 11 (11 goals, N0-S22)\n  - 5 (five wins / five matches, N0-S21, N0-S22)\n\nNeed 5 total, reasonably varied and tied to text where possible.\n\nFinal selection:\n1) 7 days \u2013 \u201cone week\u201d confusion, ties to idea of weeks (N0-S4, N0-S25).\n2) 15 days \u2013 inclusive counting error (N0-S0, N0-S4).\n3) 6 days \u2013 from six\u2011match campaign (N0-S4).\n4) 12 days \u2013 from 12\u2011player squad (N0-S5).\n5) 21 days \u2013 \u201cthree weeks\u201d misread from league duration idea (N0-S4).\n\nEach explanation will briefly note: actually \u201ctwo weeks\u201d = 14 days, so these are wrong, but show how someone might be misled by wording or nearby numbers.\n</scratchpad>\n\n<distractors>\n<distractor>\n<answer>7 days</answer>\n<explanation>This is incorrect because \u201ctwo weeks earlier\u201d with a standard week means 14 days, not 7. It is plausible if someone mistakenly treats \u201ctwo weeks earlier\u201d as \u201cwithin the last two weeks\u201d and then assumes a gap of only one week between securing the Zone berth and the final, especially given the repeated references to weekly training.</explanation>\n<distractor-sentences>N0-S4,N0-S25</distractor-sentences>\n</distractor>\n\n<distractor>\n<answer>15 days</answer>\n<explanation>This is incorrect because the phrase \u201ctwo weeks earlier\u201d corresponds to 14 whole calendar days before 2025\u201103\u201122, not 15. It could seem plausible if someone counts both the day the berth was secured and the final day themselves as full days, leading to an inclusive count of 15 days instead of the correct 14.</explanation>\n<distractor-sentences>N0-S0,N0-S4</distractor-sentences>\n</distractor>\n\n<distractor>\n<answer>6 days</answer>\n<explanation>This is incorrect because the timing is explicitly \u201ctwo weeks earlier,\u201d i.e., 14 days, not 6. It may appear plausible if someone fixates on the six\u2011match qualifying campaign and incorrectly assumes one match took place on each of the six days immediately preceding the championship\u2019s final day.</explanation>\n<distractor-sentences>N0-S4</distractor-sentences>\n</distractor>\n\n<distractor>\n<answer>12 days</answer>\n<explanation>This is incorrect because two weeks equal 14 days. It might look believable if a reader confuses the 12\u2011player registered squad size with the time gap, loosely assuming the qualification was \u201croughly a dozen days\u201d before the final instead of precisely two weeks.</explanation>\n<distractor-sentences>N0-S4,N0-S5</distractor-sentences>\n</distractor>\n\n<distractor>\n<answer>21 days</answer>\n<explanation>This is incorrect because \u201ctwo weeks earlier\u201d specifies 14 days, not 21. It could seem plausible if someone imagines the six\u2011match qualifying league spread across three weekends and mistakenly interprets that as the berth being secured about three weeks (21 days) before the final.</explanation>\n<distractor-sentences>N0-S4</distractor-sentences>\n</distractor>\n</distractors>",
+  "instructions": "You are an AI assistant tasked with creating challenging multiple-choice distractor options for a question based on a fictional event outline. Your goal is to create plausible but incorrect answer choices that will test the reader's understanding of the given information.\n\nFirst, carefully read and analyze the following fictional event outline:\n\n<outline>\n{{STORYLINE_OUTLINE_TO_DATE}}\n</outline>\n\nNow, consider the following question:\n\n<question>\n{{CURRENT_TIMESPAN_QUESTION}}\n</question>\n\nThe correct answer to this question is:\n\n<correct_answer>\n{{CORRECT_TIMESPAN_ANSWER}}\n</correct_answer>\n\nTo correctly answer this question, these sentences from the outline are required:\n\n<selected-sentences>\n{{SELECTED_SENTENCES}}\n</selected-sentences>\n\nYour task is to create {{NUM_DISTRACTORS}} plausible but incorrect multiple-choice distractor options for this question. These distractors should be challenging and appear realistic, but must not be valid answers to the question.\n\nFollow these guidelines when creating effective distractors:\n1. Ensure each distractor is clearly incorrect when compared to the correct answer.\n2. Use information from the fictional event outline to make distractors sound plausible.\n3. If possible, incorporate specific values or details from the outline to increase believability.\n4. Align distractors with non-answer text from the outline to make them more challenging.\n5. Vary the type and structure of distractors to avoid patterns.\n6. Ensure distractors are distinct from each other and the correct answer.\n7. Make sure that the distractor is not by accident a valid answer based on different information from the outline.\n8. Make sure all distractor options are plausible.\n\nPresent your {{NUM_DISTRACTORS}} distractor options in the following format:\n\n<distractors>\n<distractor>\n<answer>[The incorrect answer]</answer>\n<explanation>[A brief explanation why it is incorrect]</explanation>\n<distractor-sentences>[Comma separated sentence IDs of the sentences that make the distractor sound plausible]</distractor-sentences>\n</distractor>\n\n[Repeat the above structure for each distractor]\n</distractors>\n\nAfter each distractor, provide a brief explanation of why it's incorrect but plausible, and list all sentence IDs (as a comma-separated list) from the outline that make the distractor sound plausible. Leave the list of sentence IDs empty if none other sentence from the outline increases the plausibility for this distractor. Both should be included within the respective distractor tags.\n\nRemember, your goal is to create challenging distractors that will test the reader's understanding of the fictional event outline while ensuring they are definitively incorrect. Use your knowledge and creativity to craft distractors that are both believable and clearly distinguishable from the correct answer.\n\nBefore presenting your final distractors, use a <scratchpad> to brainstorm and refine your ideas. Consider different aspects of the outline that could be misinterpreted or confused, and how you can use these to create compelling distractors.\n\nOnce you have finalized your distractors, present them in the format specified above, ensuring that each one is unique, challenging, and clearly incorrect when compared to the correct answer.",
+  "text_prompt": "You are an AI assistant tasked with creating challenging multiple-choice distractor options for a question based on a fictional event outline. Your goal is to create plausible but incorrect answer choices that will test the reader's understanding of the given information.\n\nFirst, carefully read and analyze the following fictional event outline:\n\n<outline>\n<event>\n<date>2025-03-22</date>\n<content>\n<item><id>N0-S0</id><text>The Orvath Ridge Schools Futsal Council hosted the final day of the Orvath Ridge Under-17 Futsal Championship at Selvarin Orvath Indoor Center on 2025-03-22.</text></item>\n<item><id>N0-S1</id><text>The final day program at Selvarin Orvath Indoor Center began at 09:00 with warm-up sessions and team check-ins, with the main court stands gradually filling to an estimated crowd of around 450 spectators by the time of the afternoon final.</text></item>\n<item><id>N0-S2</id><text>Selvarin Orvath Indoor Center featured two regulation futsal courts with a blue synthetic surface and electronic scoreboards, and the Orvath Ridge Schools Futsal Council used the central court exclusively for the under-17 semifinal and final fixtures.</text></item>\n<item><id>N0-S3</id><text>Grendale Youth Futsal Academy Under-17 entered the Orvath Ridge Under-17 Futsal Championship as the qualifying representative team of the Grendale Suburban Zone of Selvarin City.</text></item>\n<item><id>N0-S4</id><text>Grendale Youth Futsal Academy Under-17 had secured the Grendale Suburban Zone berth two weeks earlier by finishing top of the zone\u2019s qualifying league on goal difference after a six-match campaign.</text></item>\n<item><id>N0-S5</id><text>The squad of Grendale Youth Futsal Academy Under-17 registered for the tournament consisted of 12 players aged between 15 and 17 years, coached and supported by a staff group of four including a fitness coach and a team physiotherapist.</text></item>\n<item><id>N0-S6</id><text>Grendale Youth Futsal Academy Under-17 won all three group-stage matches of the Orvath Ridge Under-17 Futsal Championship to finish first in Group A.</text></item>\n<item><id>N0-S7</id><text>In Group A, Grendale Youth Futsal Academy Under-17 recorded a 3\u20130 win over Meadowlane School Futsal Under-17, a 2\u20131 victory against Selvarin East Secondary Under-17, and a 1\u20130 result over Orvath Ridge Collegiate Under-17.</text></item>\n<item><id>N0-S8</id><text>The group-stage fixtures for Grendale Youth Futsal Academy Under-17 were played over three consecutive evenings at Selvarin Orvath Indoor Center, with the team mathematically securing a semifinal place after just the second match.</text></item>\n<item><id>N0-S9</id><text>Grendale Youth Futsal Academy Under-17 conceded only one goal during the three group-stage matches of the Orvath Ridge Under-17 Futsal Championship.</text></item>\n<item><id>N0-S10</id><text>The lone group-stage goal against Grendale Youth Futsal Academy Under-17 was scored from a 6-meter penalty by forward Laren Vos of Selvarin East Secondary Under-17 late in the first half of their second group match.</text></item>\n<item><id>N0-S11</id><text>Goalkeeper Ren Talvek of Grendale Youth Futsal Academy Under-17 was named player of the match in two of the three group fixtures after making several close-range saves to preserve narrow leads.</text></item>\n<item><id>N0-S12</id><text>Grendale Youth Futsal Academy Under-17 defeated Selvarin Riverside Training Center Under-17 by 2\u20131 in the semifinal of the Orvath Ridge Under-17 Futsal Championship.</text></item>\n<item><id>N0-S13</id><text>In the semifinal, winger Daren Mol of Grendale Youth Futsal Academy Under-17 opened the scoring in the 7th minute, and pivot Jorin Kale netted the decisive second goal midway through the second half after a set-play corner routine.</text></item>\n<item><id>N0-S14</id><text>The semifinal between Grendale Youth Futsal Academy Under-17 and Selvarin Riverside Training Center Under-17 was officiated by referee Elvin Sarro and two assistant referees, with the match played at a high tempo and several tactical time-outs called by both benches.</text></item>\n<item><id>N0-S15</id><text>The 2\u20131 semifinal victory over Selvarin Riverside Training Center Under-17 gave Grendale Youth Futsal Academy Under-17 a second goal conceded in the entire Orvath Ridge Under-17 Futsal Championship.</text></item>\n<item><id>N0-S16</id><text>The goal conceded in the semifinal came from a deflected long-range shot early in the second half, briefly leveling the score at 1\u20131 before Grendale Youth Futsal Academy Under-17 restored the lead.</text></item>\n<item><id>N0-S17</id><text>Despite the setback, the defensive unit of Grendale Youth Futsal Academy Under-17 responded by limiting Selvarin Riverside Training Center Under-17 to speculative efforts from distance in the final minutes.</text></item>\n<item><id>N0-S18</id><text>Grendale Youth Futsal Academy Under-17 won the final of the Orvath Ridge Under-17 Futsal Championship with a 3\u20130 victory over Selvarin Central Sports School Under-17 at Selvarin Orvath Indoor Center.</text></item>\n<item><id>N0-S19</id><text>The final kicked off at 16:30 on the main court, with Grendale Youth Futsal Academy Under-17 captain and playmaker Mikel Ardan scoring twice and flank player Sera Noll adding a third goal on a fast break in the closing stages.</text></item>\n<item><id>N0-S20</id><text>Selvarin Central Sports School Under-17 struggled to break down the compact 2\u20132 defensive shape employed by Grendale Youth Futsal Academy Under-17, managing only a handful of shots on target over the two 20-minute halves.</text></item>\n<item><id>N0-S21</id><text>With five wins from five matches, Grendale Youth Futsal Academy Under-17 secured the Orvath Ridge Under-17 Futsal Championship title while conceding only two goals in the tournament.</text></item>\n<item><id>N0-S22</id><text>Across the five matches of the Orvath Ridge Under-17 Futsal Championship, Grendale Youth Futsal Academy Under-17 scored a total of 11 goals, finishing with the best goal difference of any team in the competition.</text></item>\n<item><id>N0-S23</id><text>Several school coaches and spectators at Selvarin Orvath Indoor Center remarked that the consistency shown by Grendale Youth Futsal Academy Under-17 across all phases of play set a benchmark for future editions of the under-17 event.</text></item>\n<item><id>N0-S24</id><text>Head coach Marlen Tiravo of Grendale Youth Futsal Academy Under-17 credited the championship success of Grendale Youth Futsal Academy Under-17 to defensive discipline and consistent training in a post-final interview with the Orvath Ridge Schools Futsal Council media team.</text></item>\n<item><id>N0-S25</id><text>Head coach Marlen Tiravo, who has led youth teams at Grendale Youth Futsal Academy for five seasons, highlighted that the under-17 squad had trained four evenings per week since January with a special focus on pressing and transition drills.</text></item>\n<item><id>N0-S26</id><text>During the interview conducted courtside by council media officer Lina Veress, head coach Marlen Tiravo stated that the players had \u201ctreated every session as if it were a final,\u201d emphasizing their commitment and punctuality throughout the preparation period.</text></item>\n<item><id>N0-S27</id><text>The Orvath Ridge Schools Futsal Council awarded Grendale Youth Futsal Academy Under-17 a development grant for new training equipment in recognition of the Orvath Ridge Under-17 Futsal Championship victory by Grendale Youth Futsal Academy Under-17.</text></item>\n<item><id>N0-S28</id><text>The development grant from the Orvath Ridge Schools Futsal Council was announced as a package valued at approximately 3,000 selvars, earmarked for purchasing new futsal balls, portable goals, and agility training gear for Grendale Youth Futsal Academy Under-17.</text></item>\n<item><id>N0-S29</id><text>Representatives of the Orvath Ridge Schools Futsal Council handed the official grant confirmation letter to head coach Marlen Tiravo at the edge of the main court, with the players of Grendale Youth Futsal Academy Under-17 gathered around in team tracksuits.</text></item>\n</content>\n</event>\n</outline>\n\nNow, consider the following question:\n\n<question>\nAssume that the timing mentioned in the outline for when Grendale Youth Futsal Academy Under-17 secured the Grendale Suburban Zone berth is interpreted as being exactly that many whole calendar days before the final day of the Orvath Ridge Under-17 Futsal Championship at Selvarin Orvath Indoor Center, that a week has its standard length, and that any time-of-day differences are ignored. Based on this, how many days elapsed between the day they secured that Zone berth and the championship\u2019s final day?\n</question>\n\nThe correct answer to this question is:\n\n<correct_answer>\n14 days\n</correct_answer>\n\nTo correctly answer this question, these sentences from the outline are required:\n\n<selected-sentences>\n<item><id>N0-S0</id><text>The Orvath Ridge Schools Futsal Council hosted the final day of the Orvath Ridge Under-17 Futsal Championship at Selvarin Orvath Indoor Center on 2025-03-22.</text></item>\n<item><id>N0-S4</id><text>Grendale Youth Futsal Academy Under-17 had secured the Grendale Suburban Zone berth two weeks earlier by finishing top of the zone\u2019s qualifying league on goal difference after a six-match campaign.</text></item>\n</selected-sentences>\n\nYour task is to create 5 plausible but incorrect multiple-choice distractor options for this question. These distractors should be challenging and appear realistic, but must not be valid answers to the question.\n\nFollow these guidelines when creating effective distractors:\n1. Ensure each distractor is clearly incorrect when compared to the correct answer.\n2. Use information from the fictional event outline to make distractors sound plausible.\n3. If possible, incorporate specific values or details from the outline to increase believability.\n4. Align distractors with non-answer text from the outline to make them more challenging.\n5. Vary the type and structure of distractors to avoid patterns.\n6. Ensure distractors are distinct from each other and the correct answer.\n7. Make sure that the distractor is not by accident a valid answer based on different information from the outline.\n8. Make sure all distractor options are plausible.\n\nPresent your 5 distractor options in the following format:\n\n<distractors>\n<distractor>\n<answer>[The incorrect answer]</answer>\n<explanation>[A brief explanation why it is incorrect]</explanation>\n<distractor-sentences>[Comma separated sentence IDs of the sentences that make the distractor sound plausible]</distractor-sentences>\n</distractor>\n\n[Repeat the above structure for each distractor]\n</distractors>\n\nAfter each distractor, provide a brief explanation of why it's incorrect but plausible, and list all sentence IDs (as a comma-separated list) from the outline that make the distractor sound plausible. Leave the list of sentence IDs empty if none other sentence from the outline increases the plausibility for this distractor. Both should be included within the respective distractor tags.\n\nRemember, your goal is to create challenging distractors that will test the reader's understanding of the fictional event outline while ensuring they are definitively incorrect. Use your knowledge and creativity to craft distractors that are both believable and clearly distinguishable from the correct answer.\n\nBefore presenting your final distractors, use a <scratchpad> to brainstorm and refine your ideas. Consider different aspects of the outline that could be misinterpreted or confused, and how you can use these to create compelling distractors.\n\nOnce you have finalized your distractors, present them in the format specified above, ensuring that each one is unique, challenging, and clearly incorrect when compared to the correct answer.",
+  "system-prompt": null,
+  "values": {
+    "OUTLINES": "<event>\n<date>2025-03-22</date>\n<content>\n<item><id>N0-S0</id><text>The Orvath Ridge Schools Futsal Council hosted the final day of the Orvath Ridge Under-17 Futsal Championship at Selvarin Orvath Indoor Center on 2025-03-22.</text></item>\n<item><id>N0-S1</id><text>The final day program at Selvarin Orvath Indoor Center began at 09:00 with warm-up sessions and team check-ins, with the main court stands gradually filling to an estimated crowd of around 450 spectators by the time of the afternoon final.</text></item>\n<item><id>N0-S2</id><text>Selvarin Orvath Indoor Center featured two regulation futsal courts with a blue synthetic surface and electronic scoreboards, and the Orvath Ridge Schools Futsal Council used the central court exclusively for the under-17 semifinal and final fixtures.</text></item>\n<item><id>N0-S3</id><text>Grendale Youth Futsal Academy Under-17 entered the Orvath Ridge Under-17 Futsal Championship as the qualifying representative team of the Grendale Suburban Zone of Selvarin City.</text></item>\n<item><id>N0-S4</id><text>Grendale Youth Futsal Academy Under-17 had secured the Grendale Suburban Zone berth two weeks earlier by finishing top of the zone\u2019s qualifying league on goal difference after a six-match campaign.</text></item>\n<item><id>N0-S5</id><text>The squad of Grendale Youth Futsal Academy Under-17 registered for the tournament consisted of 12 players aged between 15 and 17 years, coached and supported by a staff group of four including a fitness coach and a team physiotherapist.</text></item>\n<item><id>N0-S6</id><text>Grendale Youth Futsal Academy Under-17 won all three group-stage matches of the Orvath Ridge Under-17 Futsal Championship to finish first in Group A.</text></item>\n<item><id>N0-S7</id><text>In Group A, Grendale Youth Futsal Academy Under-17 recorded a 3\u20130 win over Meadowlane School Futsal Under-17, a 2\u20131 victory against Selvarin East Secondary Under-17, and a 1\u20130 result over Orvath Ridge Collegiate Under-17.</text></item>\n<item><id>N0-S8</id><text>The group-stage fixtures for Grendale Youth Futsal Academy Under-17 were played over three consecutive evenings at Selvarin Orvath Indoor Center, with the team mathematically securing a semifinal place after just the second match.</text></item>\n<item><id>N0-S9</id><text>Grendale Youth Futsal Academy Under-17 conceded only one goal during the three group-stage matches of the Orvath Ridge Under-17 Futsal Championship.</text></item>\n<item><id>N0-S10</id><text>The lone group-stage goal against Grendale Youth Futsal Academy Under-17 was scored from a 6-meter penalty by forward Laren Vos of Selvarin East Secondary Under-17 late in the first half of their second group match.</text></item>\n<item><id>N0-S11</id><text>Goalkeeper Ren Talvek of Grendale Youth Futsal Academy Under-17 was named player of the match in two of the three group fixtures after making several close-range saves to preserve narrow leads.</text></item>\n<item><id>N0-S12</id><text>Grendale Youth Futsal Academy Under-17 defeated Selvarin Riverside Training Center Under-17 by 2\u20131 in the semifinal of the Orvath Ridge Under-17 Futsal Championship.</text></item>\n<item><id>N0-S13</id><text>In the semifinal, winger Daren Mol of Grendale Youth Futsal Academy Under-17 opened the scoring in the 7th minute, and pivot Jorin Kale netted the decisive second goal midway through the second half after a set-play corner routine.</text></item>\n<item><id>N0-S14</id><text>The semifinal between Grendale Youth Futsal Academy Under-17 and Selvarin Riverside Training Center Under-17 was officiated by referee Elvin Sarro and two assistant referees, with the match played at a high tempo and several tactical time-outs called by both benches.</text></item>\n<item><id>N0-S15</id><text>The 2\u20131 semifinal victory over Selvarin Riverside Training Center Under-17 gave Grendale Youth Futsal Academy Under-17 a second goal conceded in the entire Orvath Ridge Under-17 Futsal Championship.</text></item>\n<item><id>N0-S16</id><text>The goal conceded in the semifinal came from a deflected long-range shot early in the second half, briefly leveling the score at 1\u20131 before Grendale Youth Futsal Academy Under-17 restored the lead.</text></item>\n<item><id>N0-S17</id><text>Despite the setback, the defensive unit of Grendale Youth Futsal Academy Under-17 responded by limiting Selvarin Riverside Training Center Under-17 to speculative efforts from distance in the final minutes.</text></item>\n<item><id>N0-S18</id><text>Grendale Youth Futsal Academy Under-17 won the final of the Orvath Ridge Under-17 Futsal Championship with a 3\u20130 victory over Selvarin Central Sports School Under-17 at Selvarin Orvath Indoor Center.</text></item>\n<item><id>N0-S19</id><text>The final kicked off at 16:30 on the main court, with Grendale Youth Futsal Academy Under-17 captain and playmaker Mikel Ardan scoring twice and flank player Sera Noll adding a third goal on a fast break in the closing stages.</text></item>\n<item><id>N0-S20</id><text>Selvarin Central Sports School Under-17 struggled to break down the compact 2\u20132 defensive shape employed by Grendale Youth Futsal Academy Under-17, managing only a handful of shots on target over the two 20-minute halves.</text></item>\n<item><id>N0-S21</id><text>With five wins from five matches, Grendale Youth Futsal Academy Under-17 secured the Orvath Ridge Under-17 Futsal Championship title while conceding only two goals in the tournament.</text></item>\n<item><id>N0-S22</id><text>Across the five matches of the Orvath Ridge Under-17 Futsal Championship, Grendale Youth Futsal Academy Under-17 scored a total of 11 goals, finishing with the best goal difference of any team in the competition.</text></item>\n<item><id>N0-S23</id><text>Several school coaches and spectators at Selvarin Orvath Indoor Center remarked that the consistency shown by Grendale Youth Futsal Academy Under-17 across all phases of play set a benchmark for future editions of the under-17 event.</text></item>\n<item><id>N0-S24</id><text>Head coach Marlen Tiravo of Grendale Youth Futsal Academy Under-17 credited the championship success of Grendale Youth Futsal Academy Under-17 to defensive discipline and consistent training in a post-final interview with the Orvath Ridge Schools Futsal Council media team.</text></item>\n<item><id>N0-S25</id><text>Head coach Marlen Tiravo, who has led youth teams at Grendale Youth Futsal Academy for five seasons, highlighted that the under-17 squad had trained four evenings per week since January with a special focus on pressing and transition drills.</text></item>\n<item><id>N0-S26</id><text>During the interview conducted courtside by council media officer Lina Veress, head coach Marlen Tiravo stated that the players had \u201ctreated every session as if it were a final,\u201d emphasizing their commitment and punctuality throughout the preparation period.</text></item>\n<item><id>N0-S27</id><text>The Orvath Ridge Schools Futsal Council awarded Grendale Youth Futsal Academy Under-17 a development grant for new training equipment in recognition of the Orvath Ridge Under-17 Futsal Championship victory by Grendale Youth Futsal Academy Under-17.</text></item>\n<item><id>N0-S28</id><text>The development grant from the Orvath Ridge Schools Futsal Council was announced as a package valued at approximately 3,000 selvars, earmarked for purchasing new futsal balls, portable goals, and agility training gear for Grendale Youth Futsal Academy Under-17.</text></item>\n<item><id>N0-S29</id><text>Representatives of the Orvath Ridge Schools Futsal Council handed the official grant confirmation letter to head coach Marlen Tiravo at the edge of the main court, with the players of Grendale Youth Futsal Academy Under-17 gathered around in team tracksuits.</text></item>\n</content>\n</event>",
+    "STORYLINE_OUTLINE_TO_DATE": "<event>\n<date>2025-03-22</date>\n<content>\n<item><id>N0-S0</id><text>The Orvath Ridge Schools Futsal Council hosted the final day of the Orvath Ridge Under-17 Futsal Championship at Selvarin Orvath Indoor Center on 2025-03-22.</text></item>\n<item><id>N0-S1</id><text>The final day program at Selvarin Orvath Indoor Center began at 09:00 with warm-up sessions and team check-ins, with the main court stands gradually filling to an estimated crowd of around 450 spectators by the time of the afternoon final.</text></item>\n<item><id>N0-S2</id><text>Selvarin Orvath Indoor Center featured two regulation futsal courts with a blue synthetic surface and electronic scoreboards, and the Orvath Ridge Schools Futsal Council used the central court exclusively for the under-17 semifinal and final fixtures.</text></item>\n<item><id>N0-S3</id><text>Grendale Youth Futsal Academy Under-17 entered the Orvath Ridge Under-17 Futsal Championship as the qualifying representative team of the Grendale Suburban Zone of Selvarin City.</text></item>\n<item><id>N0-S4</id><text>Grendale Youth Futsal Academy Under-17 had secured the Grendale Suburban Zone berth two weeks earlier by finishing top of the zone\u2019s qualifying league on goal difference after a six-match campaign.</text></item>\n<item><id>N0-S5</id><text>The squad of Grendale Youth Futsal Academy Under-17 registered for the tournament consisted of 12 players aged between 15 and 17 years, coached and supported by a staff group of four including a fitness coach and a team physiotherapist.</text></item>\n<item><id>N0-S6</id><text>Grendale Youth Futsal Academy Under-17 won all three group-stage matches of the Orvath Ridge Under-17 Futsal Championship to finish first in Group A.</text></item>\n<item><id>N0-S7</id><text>In Group A, Grendale Youth Futsal Academy Under-17 recorded a 3\u20130 win over Meadowlane School Futsal Under-17, a 2\u20131 victory against Selvarin East Secondary Under-17, and a 1\u20130 result over Orvath Ridge Collegiate Under-17.</text></item>\n<item><id>N0-S8</id><text>The group-stage fixtures for Grendale Youth Futsal Academy Under-17 were played over three consecutive evenings at Selvarin Orvath Indoor Center, with the team mathematically securing a semifinal place after just the second match.</text></item>\n<item><id>N0-S9</id><text>Grendale Youth Futsal Academy Under-17 conceded only one goal during the three group-stage matches of the Orvath Ridge Under-17 Futsal Championship.</text></item>\n<item><id>N0-S10</id><text>The lone group-stage goal against Grendale Youth Futsal Academy Under-17 was scored from a 6-meter penalty by forward Laren Vos of Selvarin East Secondary Under-17 late in the first half of their second group match.</text></item>\n<item><id>N0-S11</id><text>Goalkeeper Ren Talvek of Grendale Youth Futsal Academy Under-17 was named player of the match in two of the three group fixtures after making several close-range saves to preserve narrow leads.</text></item>\n<item><id>N0-S12</id><text>Grendale Youth Futsal Academy Under-17 defeated Selvarin Riverside Training Center Under-17 by 2\u20131 in the semifinal of the Orvath Ridge Under-17 Futsal Championship.</text></item>\n<item><id>N0-S13</id><text>In the semifinal, winger Daren Mol of Grendale Youth Futsal Academy Under-17 opened the scoring in the 7th minute, and pivot Jorin Kale netted the decisive second goal midway through the second half after a set-play corner routine.</text></item>\n<item><id>N0-S14</id><text>The semifinal between Grendale Youth Futsal Academy Under-17 and Selvarin Riverside Training Center Under-17 was officiated by referee Elvin Sarro and two assistant referees, with the match played at a high tempo and several tactical time-outs called by both benches.</text></item>\n<item><id>N0-S15</id><text>The 2\u20131 semifinal victory over Selvarin Riverside Training Center Under-17 gave Grendale Youth Futsal Academy Under-17 a second goal conceded in the entire Orvath Ridge Under-17 Futsal Championship.</text></item>\n<item><id>N0-S16</id><text>The goal conceded in the semifinal came from a deflected long-range shot early in the second half, briefly leveling the score at 1\u20131 before Grendale Youth Futsal Academy Under-17 restored the lead.</text></item>\n<item><id>N0-S17</id><text>Despite the setback, the defensive unit of Grendale Youth Futsal Academy Under-17 responded by limiting Selvarin Riverside Training Center Under-17 to speculative efforts from distance in the final minutes.</text></item>\n<item><id>N0-S18</id><text>Grendale Youth Futsal Academy Under-17 won the final of the Orvath Ridge Under-17 Futsal Championship with a 3\u20130 victory over Selvarin Central Sports School Under-17 at Selvarin Orvath Indoor Center.</text></item>\n<item><id>N0-S19</id><text>The final kicked off at 16:30 on the main court, with Grendale Youth Futsal Academy Under-17 captain and playmaker Mikel Ardan scoring twice and flank player Sera Noll adding a third goal on a fast break in the closing stages.</text></item>\n<item><id>N0-S20</id><text>Selvarin Central Sports School Under-17 struggled to break down the compact 2\u20132 defensive shape employed by Grendale Youth Futsal Academy Under-17, managing only a handful of shots on target over the two 20-minute halves.</text></item>\n<item><id>N0-S21</id><text>With five wins from five matches, Grendale Youth Futsal Academy Under-17 secured the Orvath Ridge Under-17 Futsal Championship title while conceding only two goals in the tournament.</text></item>\n<item><id>N0-S22</id><text>Across the five matches of the Orvath Ridge Under-17 Futsal Championship, Grendale Youth Futsal Academy Under-17 scored a total of 11 goals, finishing with the best goal difference of any team in the competition.</text></item>\n<item><id>N0-S23</id><text>Several school coaches and spectators at Selvarin Orvath Indoor Center remarked that the consistency shown by Grendale Youth Futsal Academy Under-17 across all phases of play set a benchmark for future editions of the under-17 event.</text></item>\n<item><id>N0-S24</id><text>Head coach Marlen Tiravo of Grendale Youth Futsal Academy Under-17 credited the championship success of Grendale Youth Futsal Academy Under-17 to defensive discipline and consistent training in a post-final interview with the Orvath Ridge Schools Futsal Council media team.</text></item>\n<item><id>N0-S25</id><text>Head coach Marlen Tiravo, who has led youth teams at Grendale Youth Futsal Academy for five seasons, highlighted that the under-17 squad had trained four evenings per week since January with a special focus on pressing and transition drills.</text></item>\n<item><id>N0-S26</id><text>During the interview conducted courtside by council media officer Lina Veress, head coach Marlen Tiravo stated that the players had \u201ctreated every session as if it were a final,\u201d emphasizing their commitment and punctuality throughout the preparation period.</text></item>\n<item><id>N0-S27</id><text>The Orvath Ridge Schools Futsal Council awarded Grendale Youth Futsal Academy Under-17 a development grant for new training equipment in recognition of the Orvath Ridge Under-17 Futsal Championship victory by Grendale Youth Futsal Academy Under-17.</text></item>\n<item><id>N0-S28</id><text>The development grant from the Orvath Ridge Schools Futsal Council was announced as a package valued at approximately 3,000 selvars, earmarked for purchasing new futsal balls, portable goals, and agility training gear for Grendale Youth Futsal Academy Under-17.</text></item>\n<item><id>N0-S29</id><text>Representatives of the Orvath Ridge Schools Futsal Council handed the official grant confirmation letter to head coach Marlen Tiravo at the edge of the main court, with the players of Grendale Youth Futsal Academy Under-17 gathered around in team tracksuits.</text></item>\n</content>\n</event>",
+    "SELECTED_EVENTS": [
+      {
+        "created_at": 0,
+        "summary": "A youth futsal team representing a suburban academy claimed the under-17 regional championship, winning all five of its matches and conceding only two goals in the tournament.",
+        "outline": [
+          {
+            "sentence": "The {Orvath Ridge Schools Futsal Council|ORGANIZATION-1} hosted the final day of the {Orvath Ridge Under-17 Futsal Championship|EVENT-1} at {Selvarin Orvath Indoor Center|BUILDING-1} on 2025-03-22.",
+            "id": "N0-S0",
+            "pos": 0
+          },
+          {
+            "sentence": "The final day program at {Selvarin Orvath Indoor Center|BUILDING-1} began at 09:00 with warm-up sessions and team check-ins, with the main court stands gradually filling to an estimated crowd of around 450 spectators by the time of the afternoon final.",
+            "id": "N0-S1",
+            "pos": 1
+          },
+          {
+            "sentence": "{Selvarin Orvath Indoor Center|BUILDING-1} featured two regulation futsal courts with a blue synthetic surface and electronic scoreboards, and the {Orvath Ridge Schools Futsal Council|ORGANIZATION-1} used the central court exclusively for the under-17 semifinal and final fixtures.",
+            "id": "N0-S2",
+            "pos": 2
+          },
+          {
+            "sentence": "{Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} entered the {Orvath Ridge Under-17 Futsal Championship|EVENT-1} as the qualifying representative team of the {Grendale Suburban Zone|LOCATION-1} of {Selvarin City|LOCATION-2}.",
+            "id": "N0-S3",
+            "pos": 3
+          },
+          {
+            "sentence": "{Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} had secured the {Grendale Suburban Zone|LOCATION-1} berth two weeks earlier by finishing top of the zone\u2019s qualifying league on goal difference after a six-match campaign.",
+            "id": "N0-S4",
+            "pos": 4
+          },
+          {
+            "sentence": "The squad of {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} registered for the tournament consisted of 12 players aged between 15 and 17 years, coached and supported by a staff group of four including a fitness coach and a team physiotherapist.",
+            "id": "N0-S5",
+            "pos": 5
+          },
+          {
+            "sentence": "{Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} won all three group-stage matches of the {Orvath Ridge Under-17 Futsal Championship|EVENT-1} to finish first in {Group A|MISCELLANEOUS-2}.",
+            "id": "N0-S6",
+            "pos": 6
+          },
+          {
+            "sentence": "In {Group A|MISCELLANEOUS-2}, {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} recorded a 3\u20130 win over {Meadowlane School Futsal Under-17|ORGANIZATION-4}, a 2\u20131 victory against {Selvarin East Secondary Under-17|ORGANIZATION-5}, and a 1\u20130 result over {Orvath Ridge Collegiate Under-17|ORGANIZATION-6}.",
+            "id": "N0-S7",
+            "pos": 7
+          },
+          {
+            "sentence": "The group-stage fixtures for {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} were played over three consecutive evenings at {Selvarin Orvath Indoor Center|BUILDING-1}, with the team mathematically securing a semifinal place after just the second match.",
+            "id": "N0-S8",
+            "pos": 8
+          },
+          {
+            "sentence": "{Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} conceded only one goal during the three group-stage matches of the {Orvath Ridge Under-17 Futsal Championship|EVENT-1}.",
+            "id": "N0-S9",
+            "pos": 9
+          },
+          {
+            "sentence": "The lone group-stage goal against {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} was scored from a 6-meter penalty by forward {Laren Vos|PERSON-1} of {Selvarin East Secondary Under-17|ORGANIZATION-5} late in the first half of their second group match.",
+            "id": "N0-S10",
+            "pos": 10
+          },
+          {
+            "sentence": "Goalkeeper {Ren Talvek|PERSON-2} of {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} was named player of the match in two of the three group fixtures after making several close-range saves to preserve narrow leads.",
+            "id": "N0-S11",
+            "pos": 11
+          },
+          {
+            "sentence": "{Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} defeated {Selvarin Riverside Training Center Under-17|ORGANIZATION-7} by 2\u20131 in the semifinal of the {Orvath Ridge Under-17 Futsal Championship|EVENT-1}.",
+            "id": "N0-S12",
+            "pos": 12
+          },
+          {
+            "sentence": "In the semifinal, winger {Daren Mol|PERSON-3} of {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} opened the scoring in the 7th minute, and pivot {Jorin Kale|PERSON-4} netted the decisive second goal midway through the second half after a set-play corner routine.",
+            "id": "N0-S13",
+            "pos": 13
+          },
+          {
+            "sentence": "The semifinal between {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} and {Selvarin Riverside Training Center Under-17|ORGANIZATION-7} was officiated by referee {Elvin Sarro|PERSON-5} and two assistant referees, with the match played at a high tempo and several tactical time-outs called by both benches.",
+            "id": "N0-S14",
+            "pos": 14
+          },
+          {
+            "sentence": "The 2\u20131 semifinal victory over {Selvarin Riverside Training Center Under-17|ORGANIZATION-7} gave {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} a second goal conceded in the entire {Orvath Ridge Under-17 Futsal Championship|EVENT-1}.",
+            "id": "N0-S15",
+            "pos": 15
+          },
+          {
+            "sentence": "The goal conceded in the semifinal came from a deflected long-range shot early in the second half, briefly leveling the score at 1\u20131 before {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} restored the lead.",
+            "id": "N0-S16",
+            "pos": 16
+          },
+          {
+            "sentence": "Despite the setback, the defensive unit of {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} responded by limiting {Selvarin Riverside Training Center Under-17|ORGANIZATION-7} to speculative efforts from distance in the final minutes.",
+            "id": "N0-S17",
+            "pos": 17
+          },
+          {
+            "sentence": "{Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} won the final of the {Orvath Ridge Under-17 Futsal Championship|EVENT-1} with a 3\u20130 victory over {Selvarin Central Sports School Under-17|ORGANIZATION-8} at {Selvarin Orvath Indoor Center|BUILDING-1}.",
+            "id": "N0-S18",
+            "pos": 18
+          },
+          {
+            "sentence": "The final kicked off at 16:30 on the main court, with {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} captain and playmaker {Mikel Ardan|PERSON-6} scoring twice and flank player {Sera Noll|PERSON-7} adding a third goal on a fast break in the closing stages.",
+            "id": "N0-S19",
+            "pos": 19
+          },
+          {
+            "sentence": "{Selvarin Central Sports School Under-17|ORGANIZATION-8} struggled to break down the compact 2\u20132 defensive shape employed by {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2}, managing only a handful of shots on target over the two 20-minute halves.",
+            "id": "N0-S20",
+            "pos": 20
+          },
+          {
+            "sentence": "With five wins from five matches, {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} secured the {Orvath Ridge Under-17 Futsal Championship|EVENT-1} title while conceding only two goals in the tournament.",
+            "id": "N0-S21",
+            "pos": 21
+          },
+          {
+            "sentence": "Across the five matches of the {Orvath Ridge Under-17 Futsal Championship|EVENT-1}, {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} scored a total of 11 goals, finishing with the best goal difference of any team in the competition.",
+            "id": "N0-S22",
+            "pos": 22
+          },
+          {
+            "sentence": "Several school coaches and spectators at {Selvarin Orvath Indoor Center|BUILDING-1} remarked that the consistency shown by {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} across all phases of play set a benchmark for future editions of the under-17 event.",
+            "id": "N0-S23",
+            "pos": 23
+          },
+          {
+            "sentence": "Head coach {Marlen Tiravo|PERSON-8} of {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} credited the championship success of {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} to defensive discipline and consistent training in a post-final interview with the {Orvath Ridge Schools Futsal Council|ORGANIZATION-1} media team.",
+            "id": "N0-S24",
+            "pos": 24
+          },
+          {
+            "sentence": "Head coach {Marlen Tiravo|PERSON-8}, who has led youth teams at {Grendale Youth Futsal Academy|ORGANIZATION-3} for five seasons, highlighted that the under-17 squad had trained four evenings per week since January with a special focus on pressing and transition drills.",
+            "id": "N0-S25",
+            "pos": 25
+          },
+          {
+            "sentence": "During the interview conducted courtside by council media officer {Lina Veress|PERSON-9}, head coach {Marlen Tiravo|PERSON-8} stated that the players had \u201ctreated every session as if it were a final,\u201d emphasizing their commitment and punctuality throughout the preparation period.",
+            "id": "N0-S26",
+            "pos": 26
+          },
+          {
+            "sentence": "The {Orvath Ridge Schools Futsal Council|ORGANIZATION-1} awarded {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} a development grant for new training equipment in recognition of the {Orvath Ridge Under-17 Futsal Championship|EVENT-1} victory by {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2}.",
+            "id": "N0-S27",
+            "pos": 27
+          },
+          {
+            "sentence": "The development grant from the {Orvath Ridge Schools Futsal Council|ORGANIZATION-1} was announced as a package valued at approximately 3,000 {selvars|MISCELLANEOUS-1}, earmarked for purchasing new futsal balls, portable goals, and agility training gear for {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2}.",
+            "id": "N0-S28",
+            "pos": 28
+          },
+          {
+            "sentence": "Representatives of the {Orvath Ridge Schools Futsal Council|ORGANIZATION-1} handed the official grant confirmation letter to head coach {Marlen Tiravo|PERSON-8} at the edge of the main court, with the players of {Grendale Youth Futsal Academy Under-17|ORGANIZATION-2} gathered around in team tracksuits.",
+            "id": "N0-S29",
+            "pos": 29
+          }
+        ],
+        "used_entities": [
+          {
+            "id": "PERSON-1",
+            "name": "Laren Vos",
+            "entity_type": "person",
+            "new": true
+          },
+          {
+            "id": "PERSON-2",
+            "name": "Ren Talvek",
+            "entity_type": "person",
+            "new": true
+          },
+          {
+            "id": "PERSON-3",
+            "name": "Daren Mol",
+            "entity_type": "person",
+            "new": true
+          },
+          {
+            "id": "PERSON-4",
+            "name": "Jorin Kale",
+            "entity_type": "person",
+            "new": true
+          },
+          {
+            "id": "PERSON-5",
+            "name": "Elvin Sarro",
+            "entity_type": "person",
+            "new": true
+          },
+          {
+            "id": "PERSON-6",
+            "name": "Mikel Ardan",
+            "entity_type": "person",
+            "new": true
+          },
+          {
+            "id": "PERSON-7",
+            "name": "Sera Noll",
+            "entity_type": "person",
+            "new": true
+          },
+          {
+            "id": "PERSON-8",
+            "name": "Marlen Tiravo",
+            "entity_type": "person",
+            "new": true
+          },
+          {
+            "id": "PERSON-9",
+            "name": "Lina Veress",
+            "entity_type": "person",
+            "new": true
+          },
+          {
+            "id": "ORGANIZATION-1",
+            "name": "Orvath Ridge Schools Futsal Council",
+            "entity_type": "organization",
+            "new": true
+          },
+          {
+            "id": "ORGANIZATION-2",
+            "name": "Grendale Youth Futsal Academy Under-17",
+            "entity_type": "organization",
+            "new": true
+          },
+          {
+            "id": "ORGANIZATION-3",
+            "name": "Grendale Youth Futsal Academy",
+            "entity_type": "organization",
+            "new": true
+          },
+          {
+            "id": "ORGANIZATION-4",
+            "name": "Meadowlane School Futsal Under-17",
+            "entity_type": "organization",
+            "new": true
+          },
+          {
+            "id": "ORGANIZATION-5",
+            "name": "Selvarin East Secondary Under-17",
+            "entity_type": "organization",
+            "new": true
+          },
+          {
+            "id": "ORGANIZATION-6",
+            "name": "Orvath Ridge Collegiate Under-17",
+            "entity_type": "organization",
+            "new": true
+          },
+          {
+            "id": "ORGANIZATION-7",
+            "name": "Selvarin Riverside Training Center Under-17",
+            "entity_type": "organization",
+            "new": true
+          },
+          {
+            "id": "ORGANIZATION-8",
+            "name": "Selvarin Central Sports School Under-17",
+            "entity_type": "organization",
+            "new": true
+          },
+          {
+            "id": "LOCATION-1",
+            "name": "Grendale Suburban Zone",
+            "entity_type": "location",
+            "new": true
+          },
+          {
+            "id": "LOCATION-2",
+            "name": "Selvarin City",
+            "entity_type": "location",
+            "new": true
+          },
+          {
+            "id": "BUILDING-1",
+            "name": "Selvarin Orvath Indoor Center",
+            "entity_type": "building",
+            "new": true
+          },
+          {
+            "id": "EVENT-1",
+            "name": "Orvath Ridge Under-17 Futsal Championship",
+            "entity_type": "event",
+            "new": true
+          },
+          {
+            "id": "MISCELLANEOUS-1",
+            "name": "selvars",
+            "entity_type": "miscellaneous",
+            "new": true
+          },
+          {
+            "id": "MISCELLANEOUS-2",
+            "name": "Group A",
+            "entity_type": "miscellaneous",
+            "new": true
+          }
+        ],
+        "parent": null,
+        "continuation": {
+          "summary": "On 2025-06-30, sports communications officer Lina Veress released an in-depth print feature series in a regional youth sports magazine dissecting Grendale Youth Futsal Academy Under-17\u2019s title run at the Orvath Ridge Under-17 Futsal Championship, which local coaches cited as a practical reference even though no separate school case-study materials were produced.",
+          "last_date": "2025-03-22",
+          "continuation_date": "2025-06-30"
+        },
+        "date": "2025-03-22"
+      }
+    ],
+    "CREATED_AT": 0,
+    "NUM_DISTRACTORS": 5,
+    "SUBSET_IDX": 9,
+    "SELECTED_SENTENCES": "<item><id>N0-S0</id><text>The Orvath Ridge Schools Futsal Council hosted the final day of the Orvath Ridge Under-17 Futsal Championship at Selvarin Orvath Indoor Center on 2025-03-22.</text></item>\n<item><id>N0-S4</id><text>Grendale Youth Futsal Academy Under-17 had secured the Grendale Suburban Zone berth two weeks earlier by finishing top of the zone\u2019s qualifying league on goal difference after a six-match campaign.</text></item>",
+    "SELECTION_EXPLANATION": "\nSentence N0-S0 states that the final day of the Orvath Ridge Under-17 Futsal Championship took place on 2025-03-22. Sentence N0-S4 states that Grendale Youth Futsal Academy Under-17 had secured the Grendale Suburban Zone berth \u201ctwo weeks earlier.\u201d Two weeks equals 14 days, so the berth was secured on 2025-03-08. The time span between securing the zone berth and the final day is therefore 14 days.\n",
+    "SELECTION_IDX": 1,
+    "EVIDENCE_CURRENT_SELECTIONS": [
+      "N0-S0",
+      "N0-S4"
+    ],
+    "QA_CURRENT_PAIR": {
+      "TIMESPAN_QUESTION": "Assume that the timing mentioned in the outline for when Grendale Youth Futsal Academy Under-17 secured the Grendale Suburban Zone berth is interpreted as being exactly that many whole calendar days before the final day of the Orvath Ridge Under-17 Futsal Championship at Selvarin Orvath Indoor Center, that a week has its standard length, and that any time-of-day differences are ignored. Based on this, how many days elapsed between the day they secured that Zone berth and the championship\u2019s final day?",
+      "TIMESPAN_ANSWER": "14 days",
+      "ADDITIONAL_SENTENCE_IDS": [],
+      "ADDITIONAL_SENTENCE_IDS_EXPLANATION": null,
+      "scratchpad": "<scratchpad>\n[Sentence ID]: N0-S0\n- Time information:\n  - States that the final day of the Orvath Ridge Under-17 Futsal Championship was hosted at Selvarin Orvath Indoor Center on 2025-03-22.\n- Event date:\n  - The event date here is explicitly 2025-03-22, which is the date of the final day.\n\nAssumptions:\n- The \u201cfinal day\u201d mentioned here is the same reference point for the phrase \u201ctwo weeks earlier\u201d in N0-S4.\n- No intra-day time (hours/minutes) is specified or needed; we work purely with calendar days.\n\nAbsolute dates:\n- Final day of the Orvath Ridge Under-17 Futsal Championship:\n  - 2025-03-22 (given explicitly).\n\n[Sentence ID]: N0-S4\n- Time information:\n  - \u201cGrendale Youth Futsal Academy Under-17 had secured the Grendale Suburban Zone berth two weeks earlier\u2026\u201d\n  - This is clearly a relative time expression: \u201ctwo weeks earlier\u201d than some later reference point.\n- Event date:\n  - Not directly stated in this sentence; the reference point must be taken from elsewhere in the outline.\n\nAssumptions:\n- The phrase \u201ctwo weeks earlier\u201d refers to a time exactly two weeks before the final day of the Orvath Ridge Under-17 Futsal Championship described in N0-S0.\n- A week is taken as exactly 7 days.\n- We ignore time-of-day and treat these as whole days (date-to-date).\n\nAbsolute dates:\n- If the final day is 2025-03-22 (from N0-S0), then:\n  - Two weeks = 14 days.\n  - Date when Grendale Youth Futsal Academy U17 secured the Grendale Suburban Zone berth:\n    - 2025-03-22 \u2212 14 days = 2025-03-08.\n\nAdditional sentences:\n- None needed. N0-S0 uniquely provides the final day\u2019s calendar date; N0-S4 uniquely provides the relative offset (\u201ctwo weeks earlier\u201d). Both are necessary: N0-S0 supplies the reference event and date; N0-S4 supplies the time gap to the qualifying achievement.\n\nQuestion Idea:\n- Ask for the duration in days between:\n  - the day Grendale Youth Futsal Academy Under-17 secured the Grendale Suburban Zone berth, and\n  - the final day of the Orvath Ridge Under-17 Futsal Championship at Selvarin Orvath Indoor Center.\n- The solver must:\n  - Recognize from N0-S0 what the reference final day is.\n  - Use N0-S4\u2019s \u201ctwo weeks earlier\u201d relative to that final day.\n  - Convert \u201ctwo weeks\u201d into days.\n\nUnique information needed from each selected sentence:\n- N0-S0:\n  - Identifies the \u201cfinal day of the Orvath Ridge Under-17 Futsal Championship at Selvarin Orvath Indoor Center\u201d as a specific calendar day (though the question will avoid giving the date explicitly).\n  - Provides the event that serves as the reference point for \u201cearlier\u201d.\n- N0-S4:\n  - States that the Zone berth was secured \u201ctwo weeks earlier,\u201d thus providing the exact time difference relative to that final day.\n\n[Answer derivation]:\n- Final day date (from N0-S0): 2025-03-22.\n- \u201cTwo weeks earlier\u201d (from N0-S4) = 14 days earlier.\n- Date of securing the Zone berth: 2025-03-22 \u2212 14 days = 2025-03-08.\n- Duration between 2025-03-08 and 2025-03-22:\n  - 14 days.\n\nThus, the time span between securing the Grendale Suburban Zone berth and the final day of the championship is 14 days.\n\n</scratchpad>",
+      "scratchpad2": "<scratchpad>\nI reviewed the previous response against the task instructions.\n\nMain checks:\n\n1. **Use of selected sentences and temporal reasoning**\n   - The solution correctly used:\n     - N0-S0: to identify the final day of the championship.\n     - N0-S4: to identify that the Zone berth was secured a fixed time before that final day.\n   - The calculation of the time span (14 days) was correct.\n\n2. **Requirement that all selected sentences are necessary and sufficient**\n   - N0-S0 is necessary: it uniquely identifies the specific final day event.\n   - N0-S4 is necessary: it uniquely specifies the temporal relationship between the final day and the securing of the Zone berth.\n   - No other sentences provide this combination of \u201cfinal day\u201d + \u201ctime gap to securing the berth\u201d, so the criteria are satisfied.\n\n3. **Key issue: forbidden temporal information in the question**\n   - The instructions state:\n     - \u201cIn your question, DO NOT include the required temporal information. The temporal information must be inferred from the content of the selected sentences.\u201d\n   - The previous question explicitly said:\n     - \u201c...having secured the Grendale Suburban Zone berth \u2018two weeks earlier\u2019...\u201d\n   - This reproduces the exact relative temporal phrase from N0-S4 in the question itself, which violates the requirement that the temporal information must be inferred from the outline, not restated in the question.\n\n4. **Assumptions requirement**\n   - The instructions also say:\n     - \u201cIf you make assumptions, make sure they are plausible. \u2026 State your assumptions that are required to answer the question clearly in the question.\u201d\n   - The prior question correctly stated assumptions about ignoring time-of-day differences and interpreting \u201ctwo weeks\u201d as exact weeks of seven days, but it did so by explicitly repeating \u201ctwo weeks earlier,\u201d which is not allowed.\n\n5. **Correction approach**\n   - Keep the logical structure and the computed answer (14 days).\n   - Modify the question so that:\n     - It does not explicitly state \u201ctwo weeks earlier\u201d or any numeric temporal span that comes from N0-S4.\n     - It still clearly states the assumptions (week length, ignoring time-of-day) in a generic way, without giving away the specific temporal value from the outline.\n   - A compliant phrasing:\n     - Refer to \u201cthe timing described in the outline\u201d or \u201cthe earlier time mentioned for when they secured the Zone berth\u201d without quoting or specifying the \u201ctwo weeks\u201d phrase.\n     - Example: \u201cAssume that the \u2018earlier\u2019 timing mentioned for securing the Grendale Suburban Zone berth is interpreted as exactly that many calendar days before the final day\u2026\u201d \u2013 this forces the solver to read N0-S4 to see what \u201cthat many\u201d means.\n\n6. **Other criteria**\n   - No explicit calendar dates in the question: already satisfied and kept.\n   - Answer format: a concise time span, not a sentence: \u201c14 days\u201d is correct.\n   - No extra, unnecessary sentences: additional_sentence_ids remains empty.\n\nTherefore, the only required change is to rephrase the question to remove the explicit \u201ctwo weeks earlier\u201d phrase while still stating assumptions in a generic way.\n\n</scratchpad>",
+      "current_qa_pair1": {
+        "question": "Assuming that the statement about Grendale Youth Futsal Academy Under-17 having secured the Grendale Suburban Zone berth \u201ctwo weeks earlier\u201d refers to a point exactly two weeks before the final day of the Orvath Ridge Under-17 Futsal Championship at Selvarin Orvath Indoor Center, and treating each week as seven days while ignoring any time-of-day differences, how many days elapsed between the day they secured that Zone berth and the championship\u2019s final day?",
+        "answer": "14 days",
+        "additional_sentence_ids": "[]",
+        "additional_sentence_explanation": null
+      }
+    },
+    "CURRENT_TIMESPAN_QUESTION": "Assume that the timing mentioned in the outline for when Grendale Youth Futsal Academy Under-17 secured the Grendale Suburban Zone berth is interpreted as being exactly that many whole calendar days before the final day of the Orvath Ridge Under-17 Futsal Championship at Selvarin Orvath Indoor Center, that a week has its standard length, and that any time-of-day differences are ignored. Based on this, how many days elapsed between the day they secured that Zone berth and the championship\u2019s final day?",
+    "CORRECT_TIMESPAN_ANSWER": "14 days"
+  }
+}

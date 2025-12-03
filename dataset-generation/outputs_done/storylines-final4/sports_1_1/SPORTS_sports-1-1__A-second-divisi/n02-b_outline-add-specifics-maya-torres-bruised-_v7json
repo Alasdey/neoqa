@@ -1,0 +1,425 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "openai/gpt-oss-120b",
+    "temperature": 0.0,
+    "max-tokens": 10000
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "<scratchpad>[I reviewed each original sentence and identified areas where more concrete information could be added without altering the events. For the first sentence I can specify the opponent, the quarter and the score when the injury occurred. For the medical evaluation I can name the team physician, mention the diagnostic tool used, and note any immediate treatment. For the minutes limitation I can clarify the total minutes per game and the monitoring method. For the decision about Leila Kade I can give her position, recent performance stats, and her status on the roster. For the club\u2019s statement I can add a direct quote from the communications director and reference the use of jersey\u2011sale proceeds for her rehab. Each added detail is a single, self\u2011contained sentence placed directly after its corresponding original sentence.]</scratchpad>\n\n<results>\n<storyitems>\n<storyitem>On 2025-10-04, during the Rivergate Rivets Women\u2019s Basketball Club\u2019s second league game at Rivergate Sports Complex, Maya Torres suffered a bruised left ankle after landing awkwardly following a defensive rebound.</storyitem>\n<storyitem>The injury occurred in the second quarter with 3:12 remaining on the clock, as Rivergate Rivets trailed the Midland Mavericks 34\u201128.</storyitem>\n\n<storyitem>Medical staff at Rivergate Sports Complex evaluated Maya Torres\u2019s ankle and diagnosed a grade\u2011I contusion, prescribing rest and limited court time for a minimum of two weeks.</storyitem>\n<storyitem>Team physician Dr. Lina Ortiz performed a bedside ultrasound that confirmed no ligament tear and applied an ice compress and compression wrap before sending Maya Torres to the on\u2011site physiotherapy suite.</storyitem>\n\n<storyitem>Coach Dana Loris of Rivergate Rivets Women\u2019s Basketball Club announced that Maya Torres will have playing minutes limited to twelve per quarter for the remainder of the season\u2019s opening month.</storyitem>\n<storyitem>The twelve\u2011minute cap per quarter translates to a maximum of 48 minutes per game, and the coaching staff will track Maya Torres\u2019s workload using the club\u2019s wearable GPS and heart\u2011rate monitors.</storyitem>\n\n<storyitem>Coach Dana Loris decided not to activate rookie reserve Leila Kade, a recent graduate of Rivergate Academy of Sports, keeping Leila Kade on the bench despite the reduced minutes for Maya Torres.</storyitem>\n<storyitem>Leila Kade, a 5\u2011foot\u20119 point guard who averaged 4.2 points and 2.1 assists in her final academy season, remains on the active roster and will continue to practice with the first\u2011team unit while awaiting a potential debut.</storyitem>\n\n<storyitem>Rivergate Rivets Women\u2019s Basketball Club issued an official statement confirming the injury protocol for Maya Torres, emphasizing player health and the team\u2019s commitment to compete at full strength once Maya Torres recovers.</storyitem>\n<storyitem>Communications Director Sofia Marquez said, \u201cMaya\u2019s health is our top priority, and we will use the net proceeds from the Rise Together jersey campaign to support her rehabilitation program.\u201d</storyitem>\n</storyitems>\n</results>"
+  },
+  "response": "<scratchpad>[I reviewed each original sentence and identified areas where more concrete information could be added without altering the events. For the first sentence I can specify the opponent, the quarter and the score when the injury occurred. For the medical evaluation I can name the team physician, mention the diagnostic tool used, and note any immediate treatment. For the minutes limitation I can clarify the total minutes per game and the monitoring method. For the decision about Leila Kade I can give her position, recent performance stats, and her status on the roster. For the club\u2019s statement I can add a direct quote from the communications director and reference the use of jersey\u2011sale proceeds for her rehab. Each added detail is a single, self\u2011contained sentence placed directly after its corresponding original sentence.]</scratchpad>\n\n<results>\n<storyitems>\n<storyitem>On 2025-10-04, during the Rivergate Rivets Women\u2019s Basketball Club\u2019s second league game at Rivergate Sports Complex, Maya Torres suffered a bruised left ankle after landing awkwardly following a defensive rebound.</storyitem>\n<storyitem>The injury occurred in the second quarter with 3:12 remaining on the clock, as Rivergate Rivets trailed the Midland Mavericks 34\u201128.</storyitem>\n\n<storyitem>Medical staff at Rivergate Sports Complex evaluated Maya Torres\u2019s ankle and diagnosed a grade\u2011I contusion, prescribing rest and limited court time for a minimum of two weeks.</storyitem>\n<storyitem>Team physician Dr. Lina Ortiz performed a bedside ultrasound that confirmed no ligament tear and applied an ice compress and compression wrap before sending Maya Torres to the on\u2011site physiotherapy suite.</storyitem>\n\n<storyitem>Coach Dana Loris of Rivergate Rivets Women\u2019s Basketball Club announced that Maya Torres will have playing minutes limited to twelve per quarter for the remainder of the season\u2019s opening month.</storyitem>\n<storyitem>The twelve\u2011minute cap per quarter translates to a maximum of 48 minutes per game, and the coaching staff will track Maya Torres\u2019s workload using the club\u2019s wearable GPS and heart\u2011rate monitors.</storyitem>\n\n<storyitem>Coach Dana Loris decided not to activate rookie reserve Leila Kade, a recent graduate of Rivergate Academy of Sports, keeping Leila Kade on the bench despite the reduced minutes for Maya Torres.</storyitem>\n<storyitem>Leila Kade, a 5\u2011foot\u20119 point guard who averaged 4.2 points and 2.1 assists in her final academy season, remains on the active roster and will continue to practice with the first\u2011team unit while awaiting a potential debut.</storyitem>\n\n<storyitem>Rivergate Rivets Women\u2019s Basketball Club issued an official statement confirming the injury protocol for Maya Torres, emphasizing player health and the team\u2019s commitment to compete at full strength once Maya Torres recovers.</storyitem>\n<storyitem>Communications Director Sofia Marquez said, \u201cMaya\u2019s health is our top priority, and we will use the net proceeds from the Rise Together jersey campaign to support her rehabilitation program.\u201d</storyitem>\n</storyitems>\n</results>",
+  "instructions": "You are an AI assistant tasked with analyzing a fictional event summary and its corresponding outline to enrich it with additional NEW specific details. Follow these instructions carefully:\n\n1. Read the provided fictional event summary of the genre {{GENRE}}:\n\n<event_summary>\n{{EVENT_SUMMARY}}\n</event_summary>\n\n2. These are the fictional known entities:\n<known_entities>\n<LOCATIONS>\n{{LOCATIONS_XML}}\n</LOCATIONS>\n\n<PERSONS>\n{{PERSONS_XML}}\n</PERSONS>\n\n<ORGANIZATIONS>\n{{ORGANIZATIONS_XML}}\n</ORGANIZATIONS>\n\n<PRODUCTS>\n{{PRODUCTS_XML}}\n</PRODUCTS>\n\n<ARTS>\n{{ARTS_XML}}\n</ARTS>\n\n<EVENTS>\n{{EVENTS_XML}}\n</EVENTS>\n\n<BUILDINGS>\n{{BUILDINGS_XML}}\n</BUILDINGS>\n\n<MISCELLANEOUS>\n{{MISCELLANEOUSS_XML}}\n</MISCELLANEOUS>\n</known_entities>\n\n3. Review the outline of previous events that have occurred in this fictional world:\n\n<history>\n{{HISTORY_XML}}\n</history>\n\n4. Review the date and outline of the event:\n\nDate: {{DATE}}\n<outline>\n{{OUTLINE}}\n</outline>\n\n5. Your task is to enrich this outline with additional details. The enhanced outline must discuss the same events as before and must not extend the events that happened in the outline. It must only provide supplementary details about these events in the outline.\n\n6. Follow these rules for enrichment:\n   a. Examine each sentence in the provided outline.\n   b. For each sentence, identify information that is unspecific or can be elaborated with more detail.\n   c. Consider the outline to be all information that is provided to a reporter about this fictional event and only include additional specific details that could also be known to the reporter at this point in time:\n      - Some events may still be ongoing and some information may not be available at this point in time.\n      - Do not include information that would likely not be known at this point in time.\n      - Consider the perspective of what is currently known about this fictional event when adding details.\n   d. When you find something unspecific, add a new sentence with supplementary specific details:\n      - Place the new sentence directly after the original sentence in the outline.\n      - Ensure the new sentence does not repeat content from the previous sentence.\n      - Focus solely on providing supplementary specific details in the new sentence.\n      - Make the new sentence self-contained and coherent on its own (do not refer to previously mentioned named entities by pronoun. Instead, directly refer to them via the name).\n   e. For each original sentence generate up to {{NUM_SPECIFIC_SENTS}} novel sentences that introduce supplementary details.\n\n7. Additional guidelines:\n   - Do not modify the existing sentences. Only add new sentences for supplementary details.\n   - Ensure added sentences focus exclusively on new, specific information without repeating existing content.\n   - Maintain consistency with the original outline in all additional specifics.\n   - Do not introduce new subevents. Only provide more details about the events already mentioned.\n   - Make sure the additional details provided are new and do not reiterate details known from the fictional history or the list of fictional known entities.\n   - Make sure that the new details are not contradictory to the history (<history>) and known entities (<known_entities>).\n   - Do not exaggerate the outline. Avoid using words like \"groundbreaking\", \"worldwide\", \"global\". Keep the outline and the scope and influence of the event realistic.\n   - Do not create outlines with global or national impact unless the genre specifically requires it. Instead, focus on smaller or local developments.\n   - Do not focus on technological discoveries or topics like AI tools, virtual reality, augmented reality, 3D-modelling, quantum computing, etc. You may include such topics only if they are HIGHLY relevant to the genre {{GENRE}} AND the provided history of events.\n   - Focus on realistic, meaningful outlines with specific details and events that align with typical, realistic scenarios of the genre {{GENRE}}.\n\n8. Present your enriched outline in the following format:\n   - Make sure that the sentences with the additional specific details are listed as separate <storyitem> and placed at the correct position within the outline.\n   - Treat each new sentence you have created as a separate <storyitem>.\n   - Each sentence provided to you in the outline forms one <storyitem> and must not be changed.\n   - Each new sentence you have written that provides additional specific details forms one <storyitem> and must be listed separately.\n\nImportant:\nBefore you start writing the new sentences with specific details, think about various dimensions that could be extended that align well with the genre, history, provided event summary and existing outline. Think about specific directions that could be of interest within the current genre ({{GENRE}}) and brainstorm how you could deepen the outline with new specific details on these interesting dimensions. Carefully decide when it is reasonable to provide technical details, when it make more sense to provide quotes, visions, etc., when to provide background information. Think about information that are of interest to a reader of a newspaper with the genre {{GENRE}}. Be in particular careful before introducing technological details and first examine if these details are appropriate for the genre or not.\nDouble-check that each detail is compatible with all the existing information you are provided with.\n\nUse this structure:\n<scratchpad>[Your thoughts go here.]</scratchpad>\n<results>\n<storyitems>\n<storyitem>[Insert first storyitem here]</storyitem>\n<storyitem>[Insert second storyitem here]</storyitem>\n<storyitem>[Continue with additional storyitems as needed]</storyitem>\n</storyitems>\n</results>\n\nMaintain the chronological order and logical flow of the original outline while adding your supplementary details. Each <storyitem> should contain one sentence from the original outline or one new sentence with additional specific details.",
+  "text_prompt": "You are an AI assistant tasked with analyzing a fictional event summary and its corresponding outline to enrich it with additional NEW specific details. Follow these instructions carefully:\n\n1. Read the provided fictional event summary of the genre Sports:\n\n<event_summary>\nMaya Torres bruised her ankle in the Rivets\u2019 second game on 4\u202fOctober\u202f2025, limiting her effectiveness and leading Coach Loris to cut her minutes rather than call up a rookie reserve.\n</event_summary>\n\n2. These are the fictional known entities:\n<known_entities>\n<LOCATIONS>\n<location><area>120 km\u00b2</area><country>Valoria</country><created_at>1</created_at><description>Sunvale is a midsized industrial\u2011commercial hub known for its balanced economy and riverfront parks.</description><elevation>210 m</elevation><entity_class>location</entity_class><history><event>2025-04-05: Sunvale served as the launch site for the limited\u2011edition Rise Together jersey, with 1,820 units sold at its flagship store on April\u202f5\u202f2025.</event></history><id>LOCATION-1</id><last_updated>2025-04-05</last_updated><name>Sunvale</name><population>82000</population><type>city</type></location>\n<location><area>65 km\u00b2</area><country>Valoria</country><created_at>1</created_at><description>Rivergate is a coastal town celebrated for its community sports facilities and modest fishing fleet.</description><elevation>15 m</elevation><entity_class>location</entity_class><history><event>2025-04-05: Rivergate will host a free community basketball clinic in June\u202f2025 funded by the net proceeds from the Rise Together jersey sales.</event></history><id>LOCATION-2</id><last_updated>2025-04-05</last_updated><name>Rivergate</name><population>34500</population><type>town</type></location>\n</LOCATIONS>\n\n<PERSONS>\n<person><created_at>0</created_at><date_of_birth>1996-04-12</date_of_birth><description>Elara Finch is a disciplined and resilient athlete known for her sharp court vision and dedication to community outreach.</description><education>Bachelor\u2019s degree in Sports Management Valoria State University</education><entity_class>person</entity_class><eye_color>Hazel</eye_color><gender>Female</gender><hair_color>Chestnut</hair_color><height>178 cm</height><history><event>2025-03-15: Elara Finch signed a one\u2011year contract extension with the Rivergate Rivets, setting her base salary at $45,000 for the 2025\u201126 season and adding performance incentives.</event><event>2025-04-05: Elara Finch was featured on the Rise Together jersey, issued a public statement praising the product, and confirmed she will lead a shooting\u2011drills workshop at the June\u202f12 community clinic.</event></history><id>PERSON-1</id><last_updated>2025-03-15</last_updated><marital_status>Single</marital_status><name>Elara Finch</name><nationality>Valoria</nationality><profession>Professional basketball player</profession><type>None</type><weight>70 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>1982-09-23</date_of_birth><description>Dana Loris is a strategic thinker who emphasizes player development and team cohesion above all.</description><education>Master\u2019s in Athletic Coaching Meridian Institute of Sports</education><entity_class>person</entity_class><eye_color>Blue</eye_color><gender>Male</gender><hair_color>Dark Brown</hair_color><height>185 cm</height><history><event>2025-03-15: Coach Dana Loris discussed Finch\u2019s extension and the incentive clause at a press conference held in the Rivergate Sports Complex.</event><event>2025-04-05: Coach Dana Loris attended the April\u202f5 launch ceremony for the Rise Together jersey at Sundara Sportswear\u2019s flagship store.</event></history><id>PERSON-2</id><last_updated>2025-03-15</last_updated><marital_status>Married</marital_status><name>Dana Loris</name><nationality>Valoria</nationality><political_affiliation>Independent</political_affiliation><profession>Basketball head coach</profession><type>None</type></person>\n<person><created_at>0</created_at><date_of_birth>1990-02-05</date_of_birth><description>Maya Torres brings veteran leadership and a clutch shooting ability cultivated over a decade of professional play.</description><education>High School Diploma Lakeside Regional High</education><entity_class>person</entity_class><eye_color>Green</eye_color><gender>Female</gender><hair_color>Black</hair_color><height>175 cm</height><history><event>2025-03-15: Veteran guard Maya Torres was signed by the Rivergate Rivets from the Lakeside Lynx, using the cap space freed by Finch\u2019s reduced salary.</event></history><id>PERSON-3</id><last_updated>2025-03-15</last_updated><name>Maya Torres</name><nationality>Valoria</nationality><profession>Veteran shooting guard, Rivergate Rivets</profession><spouse>Javier Torres</spouse><type>None</type><weight>68 kg</weight></person>\n</PERSONS>\n\n<ORGANIZATIONS>\n<organization><annual_revenue>$1.2 million</annual_revenue><created_at>0</created_at><description>The Rivergate Rivets are a community\u2011focused women\u2019s basketball team competing in the national league.</description><entity_class>organization</entity_class><founded>2013</founded><headquarters>Rivergate</headquarters><history><event>2025-03-15: The Rivergate Rivets finalized Finch\u2019s contract extension and allocated the resulting cap savings to acquire Maya Torres before the season opener.</event><event>2025-04-05: The Rivergate Rivets Women\u2019s Basketball Club announced that all net proceeds from the Rise Together jersey sales will fund a free community basketball clinic in Rivergate in June\u202f2025.</event></history><id>ORGANIZATION-1</id><industry>Sports entertainment</industry><last_updated>2025-03-15</last_updated><mission_statement>Promote women\u2019s athletics through competitive excellence and local engagement.</mission_statement><name>Rivergate Rivets Women's Basketball Club</name><number_of_employees>48</number_of_employees><type>sports club</type></organization>\n<organization><annual_revenue>$850000</annual_revenue><created_at>0</created_at><description>The Midland League governs women\u2019s basketball competition across the central region of Valoria.</description><entity_class>organization</entity_class><founded>2008</founded><headquarters>Midland</headquarters><history><event>2025-03-15: The Midland Women\u2019s Basketball League recorded and registered Finch\u2019s contract extension under registration number MWBL\u20112025\u2011RIV\u2011EF before the March\u202f20 transfer deadline.</event></history><id>ORGANIZATION-2</id><industry>Sports governance</industry><last_updated>2025-03-15</last_updated><mission_statement>Provide fair organized competition and development pathways for women\u2019s basketball.</mission_statement><name>Midland Women's Basketball League</name><number_of_employees>27</number_of_employees><type>non\u2011profit league</type></organization>\n<organization><annual_revenue>$22 million</annual_revenue><created_at>0</created_at><description>Sundara Sportswear designs and manufactures performance apparel for athletes and casual wearers.</description><entity_class>organization</entity_class><founded>2001</founded><headquarters>Sunvale</headquarters><history><event>2025-03-15: Sundara Sportswear announced that Finch will feature in its upcoming \u201cRise Together\u201d winter apparel campaign, including a limited\u2011edition jersey released on April\u202f5.</event><event>2025-04-05: Sundara Sportswear launched the limited\u2011edition Rise Together jersey on April\u202f5\u202f2025, featuring Elara Finch, and announced a supplemental production run of 2,000 additional jerseys to be manufactured at its Greenfield eco\u2011factory and shipped on May\u202f3\u202f2025.</event></history><id>ORGANIZATION-3</id><industry>Apparel manufacturing</industry><last_updated>2025-03-15</last_updated><mission_statement>Blend innovative fabrics with sustainable practices to empower active lifestyles.</mission_statement><name>Sundara Sportswear</name><number_of_employees>312</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>$950000</annual_revenue><created_at>0</created_at><description>The Lakeside Lynx are a competitive women\u2019s basketball team known for a fast\u2011paced playing style.</description><entity_class>organization</entity_class><founded>2010</founded><headquarters>Lakeside</headquarters><history><event>2025-03-15: The Lakeside Lynx agreed to transfer veteran guard Maya Torres to the Rivergate Rivets as part of the Rivets\u2019 roster\u2011building moves.</event></history><id>ORGANIZATION-4</id><industry>Sports entertainment</industry><last_updated>2025-03-15</last_updated><mission_statement>Foster regional pride through high\u2011energy basketball and youth mentorship.</mission_statement><name>Lakeside Lynx</name><number_of_employees>38</number_of_employees><type>sports club</type></organization>\n</ORGANIZATIONS>\n\n<PRODUCTS>\n<product><created_at>1</created_at><description>A limited\u2011edition performance basketball jersey featuring a moisture\u2011wicking interior and the Rise Together motif.</description><entity_class>product</entity_class><history><event>2025-04-05: The Rise Together jersey, a limited\u2011edition performance basketball jersey priced at $119, was released on April\u202f5\u202f2025 and later saw a supplemental production run of 2,000 units.</event></history><id>PRODUCT-1</id><last_updated>2025-04-05</last_updated><manufacturer>Sundara Sportswear</manufacturer><name>Rise Together jersey</name><price>$119</price><release_date>2025-04-05</release_date><type>consumer good</type><warranty>1 year</warranty><weight>0.28 kg</weight></product>\n</PRODUCTS>\n\n<ARTS>\n\n</ARTS>\n\n<EVENTS>\n\n</EVENTS>\n\n<BUILDINGS>\n<building><architect>Lysander Kou</architect><capacity>3200 spectators</capacity><created_at>0</created_at><description>The Rivergate Sports Complex is a multi\u2011purpose arena hosting indoor sporting events and community activities.</description><entity_class>building</entity_class><floors>2</floors><height>28 m</height><history><event>2025-03-15: The Rivergate Sports Complex hosted Coach Loris\u2019s press conference where the details of Finch\u2019s extension and the incentive clause were presented.</event></history><id>BUILDING-1</id><last_updated>2025-03-15</last_updated><material>Reinforced concrete with glass fa\u00e7ade</material><name>Rivergate Sports Complex</name><type>public</type><year_built>2015</year_built></building>\n<building><architect>Mira Kellan</architect><capacity>250 persons</capacity><created_at>1</created_at><description>The Rivergate Community Center provides multipurpose indoor courts, meeting rooms, and event spaces for local residents.</description><entity_class>building</entity_class><floors>2</floors><height>12 m</height><history><event>2025-04-05: The Rivergate Community Center will host the free two\u2011day basketball clinic funded by the jersey\u2019s net proceeds in June\u202f2025.</event></history><id>BUILDING-2</id><last_updated>2025-04-05</last_updated><material>brick and reinforced steel</material><name>Rivergate Community Center</name><type>public</type><year_built>2018</year_built></building>\n<building><architect>Jonas Vale</architect><capacity>5,000 sqm production floor</capacity><created_at>1</created_at><description>Greenfield eco\u2011factory is a sustainably designed manufacturing plant that utilizes solar power and recycled materials.</description><entity_class>building</entity_class><floors>1</floors><height>15 m</height><history><event>2025-04-05: The Greenfield eco\u2011factory will produce the supplemental 2,000 Rise Together jerseys, with shipment scheduled for May\u202f3\u202f2025.</event></history><id>BUILDING-3</id><last_updated>2025-04-05</last_updated><material>recycled steel frame with photovoltaic cladding</material><name>Greenfield eco\u2011factory</name><type>commercial</type><year_built>2022</year_built></building>\n</BUILDINGS>\n\n<MISCELLANEOUS>\n<miscellaneous><created_at>0</created_at><description>MWBL\u20112025\u2011RIV\u2011EF is a standardized registration code used by the Midland Women\u2019s Basketball League for official player contracts.</description><entity_class>miscellaneous</entity_class><history><event>2025-03-15: The registration code MWBL\u20112025\u2011RIV\u2011EF was used by the Midland League to file Finch\u2019s contract extension, confirming compliance with the March\u202f20 deadline.</event></history><id>MISCELLANEOUS-1</id><last_updated>2025-03-15</last_updated><name>MWBL\u20112025\u2011RIV\u2011EF</name><type>identifier</type></miscellaneous>\n<miscellaneous><created_at>0</created_at><description>Rise Together is a seasonal marketing theme emphasizing unity and perseverance across athletic apparel lines.</description><entity_class>miscellaneous</entity_class><history><event>2025-03-15: Rise Together is the campaign concept behind Sundara Sportswear\u2019s winter apparel line that will showcase Elara Finch.</event><event>2025-04-05: The Rise Together campaign concept underpins Sundara Sportswear\u2019s limited\u2011edition jersey release and the associated community\u2011fundraising initiative.</event></history><id>MISCELLANEOUS-2</id><last_updated>2025-03-15</last_updated><name>Rise Together</name><type>campaign concept</type></miscellaneous>\n</MISCELLANEOUS>\n</known_entities>\n\n3. Review the outline of previous events that have occurred in this fictional world:\n\n<history>\n<event><date>2025-03-15</date><outline>{Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} signs {Elara Finch|PERSON-1} to a one\u2011year contract extension with a reduced base salary and performance incentives based on games played after {Elara Finch|PERSON-1}'s previous season's injury layoff. The extension sets {Elara Finch|PERSON-1}'s base salary at $45,000 for the 2025\u201126 season, with an additional $2,500 per game played beyond the first ten appearances. {Midland Women's Basketball League|ORGANIZATION-2} officially records the registration of {Elara Finch|PERSON-1}'s extension with {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} before the domestic transfer deadline of 2025-03-20. The league filed the contract under registration number {MWBL\u20112025\u2011RIV\u2011EF|MISCELLANEOUS-1}, confirming compliance with the transfer deadline on March 20. Coach {Dana Loris|PERSON-2} of {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} states that the terms of {Elara Finch|PERSON-1}'s extension provide roster stability while rewarding {Elara Finch|PERSON-1}'s availability post\u2011injury. Coach {Dana Loris|PERSON-2} added in a press conference at the {Rivergate Sports Complex|BUILDING-1} that the incentive clause will activate only after {Elara Finch|PERSON-1} logs a minimum of 500 minutes on the court. {Sundara Sportswear|ORGANIZATION-3}, the primary kit sponsor of {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1}, releases a statement supporting the club's decision and notes that {Elara Finch|PERSON-1}'s marketability will be highlighted in upcoming promotional campaigns. {Sundara Sportswear|ORGANIZATION-3} announced that {Elara Finch|PERSON-1} will appear in the upcoming \u201c{Rise Together|MISCELLANEOUS-2}\u201d winter apparel campaign, featuring a limited\u2011edition jersey released on April 5. {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} announces that the reduced salary allocation from {Elara Finch|PERSON-1}'s extension frees cap space to sign a backup shooting guard before the season opener. The freed cap space, estimated at $12,000, will be allocated to sign veteran guard {Maya Torres|PERSON-3} from the neighboring {Lakeside Lynx|ORGANIZATION-4} before the season opener on October 2.</outline></event>\n<event><date>2025-04-05</date><outline>{Sundara Sportswear|ORGANIZATION-3} released the limited\u2011edition {Rise Together|MISCELLANEOUS-2} {Rise Together jersey|PRODUCT-1} featuring {Elara Finch|PERSON-1} on 2025-04-05 at the {Sundara Sportswear|ORGANIZATION-3} flagship store in {Sunvale|LOCATION-1}. The jersey, crafted from 85% recycled polyester with a moisture\u2011wicking interior, was priced at $119 and the launch ceremony was attended by coach {Dana Loris|PERSON-2}, {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} mayoral representative, and local media. The limited\u2011edition {Rise Together|MISCELLANEOUS-2} {Rise Together jersey|PRODUCT-1} sold out its initial allocation of 3,000 units within 48 hours at {Sundara Sportswear|ORGANIZATION-3} retail locations and the {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} online store. Sales data show 1,820 units were purchased at the {Sunvale|LOCATION-1} flagship, 620 through the online store, and 560 at regional {Sundara Sportswear|ORGANIZATION-3} outlets, with 2,500 units sold in the first 24 hours. {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} announced that all net proceeds from the limited\u2011edition {Rise Together|MISCELLANEOUS-2} {Rise Together jersey|PRODUCT-1} sales will be allocated to fund a free community basketball clinic in {Rivergate|LOCATION-2} scheduled for June 2025. The club estimates net proceeds of approximately $180,000, which will fund a two\u2011day clinic at the {Rivergate Community Center|BUILDING-2} for up to 150 local youth, featuring coaching staff from the {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} and guest trainers. {Elara Finch|PERSON-1} issued a public statement praising the limited\u2011edition {Rise Together|MISCELLANEOUS-2} {Rise Together jersey|PRODUCT-1} and confirming her participation in the upcoming community basketball clinic organized by {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1}. In her statement, {Elara Finch|PERSON-1} said, \u201cWearing this jersey reminds me of the fans who lift us every game, and I can\u2019t wait to share skills and stories at the June 12 clinic,\u201d confirming she will lead a shooting\u2011drills workshop. {Sundara Sportswear|ORGANIZATION-3} confirmed a supplemental production run of 2,000 limited\u2011edition {Rise Together|MISCELLANEOUS-2} {Rise Together jersey|PRODUCT-1} jerseys to meet continued demand, with delivery planned for early May 2025. The additional 2,000 jerseys will be manufactured at {Sundara Sportswear|ORGANIZATION-3}\u2019s {Greenfield eco\u2011factory|BUILDING-3} and are scheduled to ship on May\u202f3, 2025, to be stocked at the same retail locations and the online store.</outline></event>\n</history>\n\n4. Review the date and outline of the event:\n\nDate: 2025-10-04\n<outline>\nOn 2025-10-04, during the Rivergate Rivets Women\u2019s Basketball Club\u2019s second league game at Rivergate Sports Complex, Maya Torres suffered a bruised left ankle after landing awkwardly following a defensive rebound.\nMedical staff at Rivergate Sports Complex evaluated Maya Torres\u2019s ankle and diagnosed a grade\u2011I contusion, prescribing rest and limited court time for a minimum of two weeks.\nCoach Dana Loris of Rivergate Rivets Women\u2019s Basketball Club announced that Maya Torres will have playing minutes limited to twelve per quarter for the remainder of the season\u2019s opening month.\nCoach Dana Loris decided not to activate rookie reserve Leila Kade, a recent graduate of Rivergate Academy of Sports, keeping Leila Kade on the bench despite the reduced minutes for Maya Torres.\nRivergate Rivets Women\u2019s Basketball Club issued an official statement confirming the injury protocol for Maya Torres, emphasizing player health and the team\u2019s commitment to compete at full strength once Maya Torres recovers.\n</outline>\n\n5. Your task is to enrich this outline with additional details. The enhanced outline must discuss the same events as before and must not extend the events that happened in the outline. It must only provide supplementary details about these events in the outline.\n\n6. Follow these rules for enrichment:\n   a. Examine each sentence in the provided outline.\n   b. For each sentence, identify information that is unspecific or can be elaborated with more detail.\n   c. Consider the outline to be all information that is provided to a reporter about this fictional event and only include additional specific details that could also be known to the reporter at this point in time:\n      - Some events may still be ongoing and some information may not be available at this point in time.\n      - Do not include information that would likely not be known at this point in time.\n      - Consider the perspective of what is currently known about this fictional event when adding details.\n   d. When you find something unspecific, add a new sentence with supplementary specific details:\n      - Place the new sentence directly after the original sentence in the outline.\n      - Ensure the new sentence does not repeat content from the previous sentence.\n      - Focus solely on providing supplementary specific details in the new sentence.\n      - Make the new sentence self-contained and coherent on its own (do not refer to previously mentioned named entities by pronoun. Instead, directly refer to them via the name).\n   e. For each original sentence generate up to 1 novel sentences that introduce supplementary details.\n\n7. Additional guidelines:\n   - Do not modify the existing sentences. Only add new sentences for supplementary details.\n   - Ensure added sentences focus exclusively on new, specific information without repeating existing content.\n   - Maintain consistency with the original outline in all additional specifics.\n   - Do not introduce new subevents. Only provide more details about the events already mentioned.\n   - Make sure the additional details provided are new and do not reiterate details known from the fictional history or the list of fictional known entities.\n   - Make sure that the new details are not contradictory to the history (<history>) and known entities (<known_entities>).\n   - Do not exaggerate the outline. Avoid using words like \"groundbreaking\", \"worldwide\", \"global\". Keep the outline and the scope and influence of the event realistic.\n   - Do not create outlines with global or national impact unless the genre specifically requires it. Instead, focus on smaller or local developments.\n   - Do not focus on technological discoveries or topics like AI tools, virtual reality, augmented reality, 3D-modelling, quantum computing, etc. You may include such topics only if they are HIGHLY relevant to the genre Sports AND the provided history of events.\n   - Focus on realistic, meaningful outlines with specific details and events that align with typical, realistic scenarios of the genre Sports.\n\n8. Present your enriched outline in the following format:\n   - Make sure that the sentences with the additional specific details are listed as separate <storyitem> and placed at the correct position within the outline.\n   - Treat each new sentence you have created as a separate <storyitem>.\n   - Each sentence provided to you in the outline forms one <storyitem> and must not be changed.\n   - Each new sentence you have written that provides additional specific details forms one <storyitem> and must be listed separately.\n\nImportant:\nBefore you start writing the new sentences with specific details, think about various dimensions that could be extended that align well with the genre, history, provided event summary and existing outline. Think about specific directions that could be of interest within the current genre (Sports) and brainstorm how you could deepen the outline with new specific details on these interesting dimensions. Carefully decide when it is reasonable to provide technical details, when it make more sense to provide quotes, visions, etc., when to provide background information. Think about information that are of interest to a reader of a newspaper with the genre Sports. Be in particular careful before introducing technological details and first examine if these details are appropriate for the genre or not.\nDouble-check that each detail is compatible with all the existing information you are provided with.\n\nUse this structure:\n<scratchpad>[Your thoughts go here.]</scratchpad>\n<results>\n<storyitems>\n<storyitem>[Insert first storyitem here]</storyitem>\n<storyitem>[Insert second storyitem here]</storyitem>\n<storyitem>[Continue with additional storyitems as needed]</storyitem>\n</storyitems>\n</results>\n\nMaintain the chronological order and logical flow of the original outline while adding your supplementary details. Each <storyitem> should contain one sentence from the original outline or one new sentence with additional specific details.",
+  "system-prompt": null,
+  "values": {
+    "GENRE": "Sports",
+    "EVENT_SUMMARY": "Maya Torres bruised her ankle in the Rivets\u2019 second game on 4\u202fOctober\u202f2025, limiting her effectiveness and leading Coach Loris to cut her minutes rather than call up a rookie reserve.",
+    "EVENT_SUMMARY_FOR_NAME": "Maya Torres bruised ",
+    "INIT_SUMMARY": "A second-division women\u2019s basketball team has filled its final roster spot before the domestic transfer deadline by signing its veteran point guard to a one-year extension with a reduced salary and incentives tied to games played following last season\u2019s injury layoff.",
+    "KEYWORDS": "",
+    "CREATED_AT": 2,
+    "HISTORIES": [
+      "<event><date>2025-03-15</date><outline>{Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} signs {Elara Finch|PERSON-1} to a one\u2011year contract extension with a reduced base salary and performance incentives based on games played after {Elara Finch|PERSON-1}'s previous season's injury layoff. The extension sets {Elara Finch|PERSON-1}'s base salary at $45,000 for the 2025\u201126 season, with an additional $2,500 per game played beyond the first ten appearances. {Midland Women's Basketball League|ORGANIZATION-2} officially records the registration of {Elara Finch|PERSON-1}'s extension with {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} before the domestic transfer deadline of 2025-03-20. The league filed the contract under registration number {MWBL\u20112025\u2011RIV\u2011EF|MISCELLANEOUS-1}, confirming compliance with the transfer deadline on March 20. Coach {Dana Loris|PERSON-2} of {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} states that the terms of {Elara Finch|PERSON-1}'s extension provide roster stability while rewarding {Elara Finch|PERSON-1}'s availability post\u2011injury. Coach {Dana Loris|PERSON-2} added in a press conference at the {Rivergate Sports Complex|BUILDING-1} that the incentive clause will activate only after {Elara Finch|PERSON-1} logs a minimum of 500 minutes on the court. {Sundara Sportswear|ORGANIZATION-3}, the primary kit sponsor of {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1}, releases a statement supporting the club's decision and notes that {Elara Finch|PERSON-1}'s marketability will be highlighted in upcoming promotional campaigns. {Sundara Sportswear|ORGANIZATION-3} announced that {Elara Finch|PERSON-1} will appear in the upcoming \u201c{Rise Together|MISCELLANEOUS-2}\u201d winter apparel campaign, featuring a limited\u2011edition jersey released on April 5. {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} announces that the reduced salary allocation from {Elara Finch|PERSON-1}'s extension frees cap space to sign a backup shooting guard before the season opener. The freed cap space, estimated at $12,000, will be allocated to sign veteran guard {Maya Torres|PERSON-3} from the neighboring {Lakeside Lynx|ORGANIZATION-4} before the season opener on October 2.</outline></event>",
+      "<event><date>2025-04-05</date><outline>{Sundara Sportswear|ORGANIZATION-3} released the limited\u2011edition {Rise Together|MISCELLANEOUS-2} {Rise Together jersey|PRODUCT-1} featuring {Elara Finch|PERSON-1} on 2025-04-05 at the {Sundara Sportswear|ORGANIZATION-3} flagship store in {Sunvale|LOCATION-1}. The jersey, crafted from 85% recycled polyester with a moisture\u2011wicking interior, was priced at $119 and the launch ceremony was attended by coach {Dana Loris|PERSON-2}, {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} mayoral representative, and local media. The limited\u2011edition {Rise Together|MISCELLANEOUS-2} {Rise Together jersey|PRODUCT-1} sold out its initial allocation of 3,000 units within 48 hours at {Sundara Sportswear|ORGANIZATION-3} retail locations and the {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} online store. Sales data show 1,820 units were purchased at the {Sunvale|LOCATION-1} flagship, 620 through the online store, and 560 at regional {Sundara Sportswear|ORGANIZATION-3} outlets, with 2,500 units sold in the first 24 hours. {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} announced that all net proceeds from the limited\u2011edition {Rise Together|MISCELLANEOUS-2} {Rise Together jersey|PRODUCT-1} sales will be allocated to fund a free community basketball clinic in {Rivergate|LOCATION-2} scheduled for June 2025. The club estimates net proceeds of approximately $180,000, which will fund a two\u2011day clinic at the {Rivergate Community Center|BUILDING-2} for up to 150 local youth, featuring coaching staff from the {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} and guest trainers. {Elara Finch|PERSON-1} issued a public statement praising the limited\u2011edition {Rise Together|MISCELLANEOUS-2} {Rise Together jersey|PRODUCT-1} and confirming her participation in the upcoming community basketball clinic organized by {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1}. In her statement, {Elara Finch|PERSON-1} said, \u201cWearing this jersey reminds me of the fans who lift us every game, and I can\u2019t wait to share skills and stories at the June 12 clinic,\u201d confirming she will lead a shooting\u2011drills workshop. {Sundara Sportswear|ORGANIZATION-3} confirmed a supplemental production run of 2,000 limited\u2011edition {Rise Together|MISCELLANEOUS-2} {Rise Together jersey|PRODUCT-1} jerseys to meet continued demand, with delivery planned for early May 2025. The additional 2,000 jerseys will be manufactured at {Sundara Sportswear|ORGANIZATION-3}\u2019s {Greenfield eco\u2011factory|BUILDING-3} and are scheduled to ship on May\u202f3, 2025, to be stocked at the same retail locations and the online store.</outline></event>"
+    ],
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "NEXT_IDS": {
+      "person": 4,
+      "organization": 5,
+      "location": 3,
+      "product": 2,
+      "art": 1,
+      "building": 4,
+      "event": 1,
+      "miscellaneous": 3
+    },
+    "PROVIDED_DATE": "2025-10-04",
+    "PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Elara Finch",
+        "entity_class": "person",
+        "description": "Elara Finch is a disciplined and resilient athlete known for her sharp court vision and dedication to community outreach.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Elara Finch signed a one\u2011year contract extension with the Rivergate Rivets, setting her base salary at $45,000 for the 2025\u201126 season and adding performance incentives.",
+            "date": "2025-03-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Elara Finch was featured on the Rise Together jersey, issued a public statement praising the product, and confirmed she will lead a shooting\u2011drills workshop at the June\u202f12 community clinic.",
+            "date": "2025-04-05"
+          }
+        ],
+        "date_of_birth": "1996-04-12",
+        "gender": "Female",
+        "profession": "Professional basketball player",
+        "nationality": "Valoria",
+        "education": "Bachelor\u2019s degree in Sports Management Valoria State University",
+        "height": "178 cm",
+        "weight": "70 kg",
+        "eye_color": "Hazel",
+        "hair_color": "Chestnut",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Dana Loris",
+        "entity_class": "person",
+        "description": "Dana Loris is a strategic thinker who emphasizes player development and team cohesion above all.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Coach Dana Loris discussed Finch\u2019s extension and the incentive clause at a press conference held in the Rivergate Sports Complex.",
+            "date": "2025-03-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Coach Dana Loris attended the April\u202f5 launch ceremony for the Rise Together jersey at Sundara Sportswear\u2019s flagship store.",
+            "date": "2025-04-05"
+          }
+        ],
+        "date_of_birth": "1982-09-23",
+        "gender": "Male",
+        "profession": "Basketball head coach",
+        "nationality": "Valoria",
+        "education": "Master\u2019s in Athletic Coaching Meridian Institute of Sports",
+        "height": "185 cm",
+        "eye_color": "Blue",
+        "hair_color": "Dark Brown",
+        "political_affiliation": "Independent",
+        "marital_status": "Married"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Maya Torres",
+        "entity_class": "person",
+        "description": "Maya Torres brings veteran leadership and a clutch shooting ability cultivated over a decade of professional play.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Veteran guard Maya Torres was signed by the Rivergate Rivets from the Lakeside Lynx, using the cap space freed by Finch\u2019s reduced salary.",
+            "date": "2025-03-15"
+          }
+        ],
+        "date_of_birth": "1990-02-05",
+        "gender": "Female",
+        "profession": "Veteran shooting guard, Rivergate Rivets",
+        "nationality": "Valoria",
+        "education": "High School Diploma Lakeside Regional High",
+        "height": "175 cm",
+        "weight": "68 kg",
+        "eye_color": "Green",
+        "hair_color": "Black",
+        "spouse": "Javier Torres"
+      }
+    ],
+    "ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Rivergate Rivets Women's Basketball Club",
+        "entity_class": "organization",
+        "description": "The Rivergate Rivets are a community\u2011focused women\u2019s basketball team competing in the national league.",
+        "type": "sports club",
+        "created_at": 0,
+        "last_updated": "2025-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Rivergate Rivets finalized Finch\u2019s contract extension and allocated the resulting cap savings to acquire Maya Torres before the season opener.",
+            "date": "2025-03-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "The Rivergate Rivets Women\u2019s Basketball Club announced that all net proceeds from the Rise Together jersey sales will fund a free community basketball clinic in Rivergate in June\u202f2025.",
+            "date": "2025-04-05"
+          }
+        ],
+        "founded": "2013",
+        "headquarters": "Rivergate",
+        "industry": "Sports entertainment",
+        "mission_statement": "Promote women\u2019s athletics through competitive excellence and local engagement.",
+        "number_of_employees": "48",
+        "annual_revenue": "$1.2 million"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Midland Women's Basketball League",
+        "entity_class": "organization",
+        "description": "The Midland League governs women\u2019s basketball competition across the central region of Valoria.",
+        "type": "non\u2011profit league",
+        "created_at": 0,
+        "last_updated": "2025-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Midland Women\u2019s Basketball League recorded and registered Finch\u2019s contract extension under registration number MWBL\u20112025\u2011RIV\u2011EF before the March\u202f20 transfer deadline.",
+            "date": "2025-03-15"
+          }
+        ],
+        "founded": "2008",
+        "headquarters": "Midland",
+        "industry": "Sports governance",
+        "mission_statement": "Provide fair organized competition and development pathways for women\u2019s basketball.",
+        "number_of_employees": "27",
+        "annual_revenue": "$850000"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Sundara Sportswear",
+        "entity_class": "organization",
+        "description": "Sundara Sportswear designs and manufactures performance apparel for athletes and casual wearers.",
+        "type": "company",
+        "created_at": 0,
+        "last_updated": "2025-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Sundara Sportswear announced that Finch will feature in its upcoming \u201cRise Together\u201d winter apparel campaign, including a limited\u2011edition jersey released on April\u202f5.",
+            "date": "2025-03-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Sundara Sportswear launched the limited\u2011edition Rise Together jersey on April\u202f5\u202f2025, featuring Elara Finch, and announced a supplemental production run of 2,000 additional jerseys to be manufactured at its Greenfield eco\u2011factory and shipped on May\u202f3\u202f2025.",
+            "date": "2025-04-05"
+          }
+        ],
+        "founded": "2001",
+        "headquarters": "Sunvale",
+        "industry": "Apparel manufacturing",
+        "mission_statement": "Blend innovative fabrics with sustainable practices to empower active lifestyles.",
+        "number_of_employees": "312",
+        "annual_revenue": "$22 million"
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "Lakeside Lynx",
+        "entity_class": "organization",
+        "description": "The Lakeside Lynx are a competitive women\u2019s basketball team known for a fast\u2011paced playing style.",
+        "type": "sports club",
+        "created_at": 0,
+        "last_updated": "2025-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Lakeside Lynx agreed to transfer veteran guard Maya Torres to the Rivergate Rivets as part of the Rivets\u2019 roster\u2011building moves.",
+            "date": "2025-03-15"
+          }
+        ],
+        "founded": "2010",
+        "headquarters": "Lakeside",
+        "industry": "Sports entertainment",
+        "mission_statement": "Foster regional pride through high\u2011energy basketball and youth mentorship.",
+        "number_of_employees": "38",
+        "annual_revenue": "$950000"
+      }
+    ],
+    "LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Sunvale",
+        "entity_class": "location",
+        "description": "Sunvale is a midsized industrial\u2011commercial hub known for its balanced economy and riverfront parks.",
+        "type": "city",
+        "created_at": 1,
+        "last_updated": "2025-04-05",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "Sunvale served as the launch site for the limited\u2011edition Rise Together jersey, with 1,820 units sold at its flagship store on April\u202f5\u202f2025.",
+            "date": "2025-04-05"
+          }
+        ],
+        "population": "82000",
+        "area": "120 km\u00b2",
+        "elevation": "210 m",
+        "country": "Valoria"
+      },
+      {
+        "id": "LOCATION-2",
+        "name": "Rivergate",
+        "entity_class": "location",
+        "description": "Rivergate is a coastal town celebrated for its community sports facilities and modest fishing fleet.",
+        "type": "town",
+        "created_at": 1,
+        "last_updated": "2025-04-05",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "Rivergate will host a free community basketball clinic in June\u202f2025 funded by the net proceeds from the Rise Together jersey sales.",
+            "date": "2025-04-05"
+          }
+        ],
+        "population": "34500",
+        "area": "65 km\u00b2",
+        "elevation": "15 m",
+        "country": "Valoria"
+      }
+    ],
+    "PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "Rise Together jersey",
+        "entity_class": "product",
+        "description": "A limited\u2011edition performance basketball jersey featuring a moisture\u2011wicking interior and the Rise Together motif.",
+        "type": "consumer good",
+        "created_at": 1,
+        "last_updated": "2025-04-05",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "The Rise Together jersey, a limited\u2011edition performance basketball jersey priced at $119, was released on April\u202f5\u202f2025 and later saw a supplemental production run of 2,000 units.",
+            "date": "2025-04-05"
+          }
+        ],
+        "manufacturer": "Sundara Sportswear",
+        "release_date": "2025-04-05",
+        "price": "$119",
+        "weight": "0.28 kg",
+        "warranty": "1 year"
+      }
+    ],
+    "ART": [],
+    "BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Rivergate Sports Complex",
+        "entity_class": "building",
+        "description": "The Rivergate Sports Complex is a multi\u2011purpose arena hosting indoor sporting events and community activities.",
+        "type": "public",
+        "created_at": 0,
+        "last_updated": "2025-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Rivergate Sports Complex hosted Coach Loris\u2019s press conference where the details of Finch\u2019s extension and the incentive clause were presented.",
+            "date": "2025-03-15"
+          }
+        ],
+        "architect": "Lysander Kou",
+        "year_built": "2015",
+        "height": "28 m",
+        "floors": "2",
+        "material": "Reinforced concrete with glass fa\u00e7ade",
+        "capacity": "3200 spectators"
+      },
+      {
+        "id": "BUILDING-2",
+        "name": "Rivergate Community Center",
+        "entity_class": "building",
+        "description": "The Rivergate Community Center provides multipurpose indoor courts, meeting rooms, and event spaces for local residents.",
+        "type": "public",
+        "created_at": 1,
+        "last_updated": "2025-04-05",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "The Rivergate Community Center will host the free two\u2011day basketball clinic funded by the jersey\u2019s net proceeds in June\u202f2025.",
+            "date": "2025-04-05"
+          }
+        ],
+        "architect": "Mira Kellan",
+        "year_built": "2018",
+        "height": "12 m",
+        "floors": "2",
+        "material": "brick and reinforced steel",
+        "capacity": "250 persons"
+      },
+      {
+        "id": "BUILDING-3",
+        "name": "Greenfield eco\u2011factory",
+        "entity_class": "building",
+        "description": "Greenfield eco\u2011factory is a sustainably designed manufacturing plant that utilizes solar power and recycled materials.",
+        "type": "commercial",
+        "created_at": 1,
+        "last_updated": "2025-04-05",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "The Greenfield eco\u2011factory will produce the supplemental 2,000 Rise Together jerseys, with shipment scheduled for May\u202f3\u202f2025.",
+            "date": "2025-04-05"
+          }
+        ],
+        "architect": "Jonas Vale",
+        "year_built": "2022",
+        "height": "15 m",
+        "floors": "1",
+        "material": "recycled steel frame with photovoltaic cladding",
+        "capacity": "5,000 sqm production floor"
+      }
+    ],
+    "EVENT": [],
+    "MISCELLANEOUS": [
+      {
+        "id": "MISCELLANEOUS-1",
+        "name": "MWBL\u20112025\u2011RIV\u2011EF",
+        "entity_class": "miscellaneous",
+        "description": "MWBL\u20112025\u2011RIV\u2011EF is a standardized registration code used by the Midland Women\u2019s Basketball League for official player contracts.",
+        "type": "identifier",
+        "created_at": 0,
+        "last_updated": "2025-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The registration code MWBL\u20112025\u2011RIV\u2011EF was used by the Midland League to file Finch\u2019s contract extension, confirming compliance with the March\u202f20 deadline.",
+            "date": "2025-03-15"
+          }
+        ]
+      },
+      {
+        "id": "MISCELLANEOUS-2",
+        "name": "Rise Together",
+        "entity_class": "miscellaneous",
+        "description": "Rise Together is a seasonal marketing theme emphasizing unity and perseverance across athletic apparel lines.",
+        "type": "campaign concept",
+        "created_at": 0,
+        "last_updated": "2025-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Rise Together is the campaign concept behind Sundara Sportswear\u2019s winter apparel line that will showcase Elara Finch.",
+            "date": "2025-03-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "The Rise Together campaign concept underpins Sundara Sportswear\u2019s limited\u2011edition jersey release and the associated community\u2011fundraising initiative.",
+            "date": "2025-04-05"
+          }
+        ]
+      }
+    ],
+    "PERSONS_XML": "<person><created_at>0</created_at><date_of_birth>1996-04-12</date_of_birth><description>Elara Finch is a disciplined and resilient athlete known for her sharp court vision and dedication to community outreach.</description><education>Bachelor\u2019s degree in Sports Management Valoria State University</education><entity_class>person</entity_class><eye_color>Hazel</eye_color><gender>Female</gender><hair_color>Chestnut</hair_color><height>178 cm</height><history><event>2025-03-15: Elara Finch signed a one\u2011year contract extension with the Rivergate Rivets, setting her base salary at $45,000 for the 2025\u201126 season and adding performance incentives.</event><event>2025-04-05: Elara Finch was featured on the Rise Together jersey, issued a public statement praising the product, and confirmed she will lead a shooting\u2011drills workshop at the June\u202f12 community clinic.</event></history><id>PERSON-1</id><last_updated>2025-03-15</last_updated><marital_status>Single</marital_status><name>Elara Finch</name><nationality>Valoria</nationality><profession>Professional basketball player</profession><type>None</type><weight>70 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>1982-09-23</date_of_birth><description>Dana Loris is a strategic thinker who emphasizes player development and team cohesion above all.</description><education>Master\u2019s in Athletic Coaching Meridian Institute of Sports</education><entity_class>person</entity_class><eye_color>Blue</eye_color><gender>Male</gender><hair_color>Dark Brown</hair_color><height>185 cm</height><history><event>2025-03-15: Coach Dana Loris discussed Finch\u2019s extension and the incentive clause at a press conference held in the Rivergate Sports Complex.</event><event>2025-04-05: Coach Dana Loris attended the April\u202f5 launch ceremony for the Rise Together jersey at Sundara Sportswear\u2019s flagship store.</event></history><id>PERSON-2</id><last_updated>2025-03-15</last_updated><marital_status>Married</marital_status><name>Dana Loris</name><nationality>Valoria</nationality><political_affiliation>Independent</political_affiliation><profession>Basketball head coach</profession><type>None</type></person>\n<person><created_at>0</created_at><date_of_birth>1990-02-05</date_of_birth><description>Maya Torres brings veteran leadership and a clutch shooting ability cultivated over a decade of professional play.</description><education>High School Diploma Lakeside Regional High</education><entity_class>person</entity_class><eye_color>Green</eye_color><gender>Female</gender><hair_color>Black</hair_color><height>175 cm</height><history><event>2025-03-15: Veteran guard Maya Torres was signed by the Rivergate Rivets from the Lakeside Lynx, using the cap space freed by Finch\u2019s reduced salary.</event></history><id>PERSON-3</id><last_updated>2025-03-15</last_updated><name>Maya Torres</name><nationality>Valoria</nationality><profession>Veteran shooting guard, Rivergate Rivets</profession><spouse>Javier Torres</spouse><type>None</type><weight>68 kg</weight></person>",
+    "ORGANIZATIONS_XML": "<organization><annual_revenue>$1.2 million</annual_revenue><created_at>0</created_at><description>The Rivergate Rivets are a community\u2011focused women\u2019s basketball team competing in the national league.</description><entity_class>organization</entity_class><founded>2013</founded><headquarters>Rivergate</headquarters><history><event>2025-03-15: The Rivergate Rivets finalized Finch\u2019s contract extension and allocated the resulting cap savings to acquire Maya Torres before the season opener.</event><event>2025-04-05: The Rivergate Rivets Women\u2019s Basketball Club announced that all net proceeds from the Rise Together jersey sales will fund a free community basketball clinic in Rivergate in June\u202f2025.</event></history><id>ORGANIZATION-1</id><industry>Sports entertainment</industry><last_updated>2025-03-15</last_updated><mission_statement>Promote women\u2019s athletics through competitive excellence and local engagement.</mission_statement><name>Rivergate Rivets Women's Basketball Club</name><number_of_employees>48</number_of_employees><type>sports club</type></organization>\n<organization><annual_revenue>$850000</annual_revenue><created_at>0</created_at><description>The Midland League governs women\u2019s basketball competition across the central region of Valoria.</description><entity_class>organization</entity_class><founded>2008</founded><headquarters>Midland</headquarters><history><event>2025-03-15: The Midland Women\u2019s Basketball League recorded and registered Finch\u2019s contract extension under registration number MWBL\u20112025\u2011RIV\u2011EF before the March\u202f20 transfer deadline.</event></history><id>ORGANIZATION-2</id><industry>Sports governance</industry><last_updated>2025-03-15</last_updated><mission_statement>Provide fair organized competition and development pathways for women\u2019s basketball.</mission_statement><name>Midland Women's Basketball League</name><number_of_employees>27</number_of_employees><type>non\u2011profit league</type></organization>\n<organization><annual_revenue>$22 million</annual_revenue><created_at>0</created_at><description>Sundara Sportswear designs and manufactures performance apparel for athletes and casual wearers.</description><entity_class>organization</entity_class><founded>2001</founded><headquarters>Sunvale</headquarters><history><event>2025-03-15: Sundara Sportswear announced that Finch will feature in its upcoming \u201cRise Together\u201d winter apparel campaign, including a limited\u2011edition jersey released on April\u202f5.</event><event>2025-04-05: Sundara Sportswear launched the limited\u2011edition Rise Together jersey on April\u202f5\u202f2025, featuring Elara Finch, and announced a supplemental production run of 2,000 additional jerseys to be manufactured at its Greenfield eco\u2011factory and shipped on May\u202f3\u202f2025.</event></history><id>ORGANIZATION-3</id><industry>Apparel manufacturing</industry><last_updated>2025-03-15</last_updated><mission_statement>Blend innovative fabrics with sustainable practices to empower active lifestyles.</mission_statement><name>Sundara Sportswear</name><number_of_employees>312</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>$950000</annual_revenue><created_at>0</created_at><description>The Lakeside Lynx are a competitive women\u2019s basketball team known for a fast\u2011paced playing style.</description><entity_class>organization</entity_class><founded>2010</founded><headquarters>Lakeside</headquarters><history><event>2025-03-15: The Lakeside Lynx agreed to transfer veteran guard Maya Torres to the Rivergate Rivets as part of the Rivets\u2019 roster\u2011building moves.</event></history><id>ORGANIZATION-4</id><industry>Sports entertainment</industry><last_updated>2025-03-15</last_updated><mission_statement>Foster regional pride through high\u2011energy basketball and youth mentorship.</mission_statement><name>Lakeside Lynx</name><number_of_employees>38</number_of_employees><type>sports club</type></organization>",
+    "LOCATIONS_XML": "<location><area>120 km\u00b2</area><country>Valoria</country><created_at>1</created_at><description>Sunvale is a midsized industrial\u2011commercial hub known for its balanced economy and riverfront parks.</description><elevation>210 m</elevation><entity_class>location</entity_class><history><event>2025-04-05: Sunvale served as the launch site for the limited\u2011edition Rise Together jersey, with 1,820 units sold at its flagship store on April\u202f5\u202f2025.</event></history><id>LOCATION-1</id><last_updated>2025-04-05</last_updated><name>Sunvale</name><population>82000</population><type>city</type></location>\n<location><area>65 km\u00b2</area><country>Valoria</country><created_at>1</created_at><description>Rivergate is a coastal town celebrated for its community sports facilities and modest fishing fleet.</description><elevation>15 m</elevation><entity_class>location</entity_class><history><event>2025-04-05: Rivergate will host a free community basketball clinic in June\u202f2025 funded by the net proceeds from the Rise Together jersey sales.</event></history><id>LOCATION-2</id><last_updated>2025-04-05</last_updated><name>Rivergate</name><population>34500</population><type>town</type></location>",
+    "PRODUCTS_XML": "<product><created_at>1</created_at><description>A limited\u2011edition performance basketball jersey featuring a moisture\u2011wicking interior and the Rise Together motif.</description><entity_class>product</entity_class><history><event>2025-04-05: The Rise Together jersey, a limited\u2011edition performance basketball jersey priced at $119, was released on April\u202f5\u202f2025 and later saw a supplemental production run of 2,000 units.</event></history><id>PRODUCT-1</id><last_updated>2025-04-05</last_updated><manufacturer>Sundara Sportswear</manufacturer><name>Rise Together jersey</name><price>$119</price><release_date>2025-04-05</release_date><type>consumer good</type><warranty>1 year</warranty><weight>0.28 kg</weight></product>",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "<building><architect>Lysander Kou</architect><capacity>3200 spectators</capacity><created_at>0</created_at><description>The Rivergate Sports Complex is a multi\u2011purpose arena hosting indoor sporting events and community activities.</description><entity_class>building</entity_class><floors>2</floors><height>28 m</height><history><event>2025-03-15: The Rivergate Sports Complex hosted Coach Loris\u2019s press conference where the details of Finch\u2019s extension and the incentive clause were presented.</event></history><id>BUILDING-1</id><last_updated>2025-03-15</last_updated><material>Reinforced concrete with glass fa\u00e7ade</material><name>Rivergate Sports Complex</name><type>public</type><year_built>2015</year_built></building>\n<building><architect>Mira Kellan</architect><capacity>250 persons</capacity><created_at>1</created_at><description>The Rivergate Community Center provides multipurpose indoor courts, meeting rooms, and event spaces for local residents.</description><entity_class>building</entity_class><floors>2</floors><height>12 m</height><history><event>2025-04-05: The Rivergate Community Center will host the free two\u2011day basketball clinic funded by the jersey\u2019s net proceeds in June\u202f2025.</event></history><id>BUILDING-2</id><last_updated>2025-04-05</last_updated><material>brick and reinforced steel</material><name>Rivergate Community Center</name><type>public</type><year_built>2018</year_built></building>\n<building><architect>Jonas Vale</architect><capacity>5,000 sqm production floor</capacity><created_at>1</created_at><description>Greenfield eco\u2011factory is a sustainably designed manufacturing plant that utilizes solar power and recycled materials.</description><entity_class>building</entity_class><floors>1</floors><height>15 m</height><history><event>2025-04-05: The Greenfield eco\u2011factory will produce the supplemental 2,000 Rise Together jerseys, with shipment scheduled for May\u202f3\u202f2025.</event></history><id>BUILDING-3</id><last_updated>2025-04-05</last_updated><material>recycled steel frame with photovoltaic cladding</material><name>Greenfield eco\u2011factory</name><type>commercial</type><year_built>2022</year_built></building>",
+    "EVENTS_XML": "",
+    "MISCELLANEOUSS_XML": "<miscellaneous><created_at>0</created_at><description>MWBL\u20112025\u2011RIV\u2011EF is a standardized registration code used by the Midland Women\u2019s Basketball League for official player contracts.</description><entity_class>miscellaneous</entity_class><history><event>2025-03-15: The registration code MWBL\u20112025\u2011RIV\u2011EF was used by the Midland League to file Finch\u2019s contract extension, confirming compliance with the March\u202f20 deadline.</event></history><id>MISCELLANEOUS-1</id><last_updated>2025-03-15</last_updated><name>MWBL\u20112025\u2011RIV\u2011EF</name><type>identifier</type></miscellaneous>\n<miscellaneous><created_at>0</created_at><description>Rise Together is a seasonal marketing theme emphasizing unity and perseverance across athletic apparel lines.</description><entity_class>miscellaneous</entity_class><history><event>2025-03-15: Rise Together is the campaign concept behind Sundara Sportswear\u2019s winter apparel line that will showcase Elara Finch.</event><event>2025-04-05: The Rise Together campaign concept underpins Sundara Sportswear\u2019s limited\u2011edition jersey release and the associated community\u2011fundraising initiative.</event></history><id>MISCELLANEOUS-2</id><last_updated>2025-03-15</last_updated><name>Rise Together</name><type>campaign concept</type></miscellaneous>",
+    "NUM_STORYITEMS": 5,
+    "HISTORY_XML": "<event><date>2025-03-15</date><outline>{Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} signs {Elara Finch|PERSON-1} to a one\u2011year contract extension with a reduced base salary and performance incentives based on games played after {Elara Finch|PERSON-1}'s previous season's injury layoff. The extension sets {Elara Finch|PERSON-1}'s base salary at $45,000 for the 2025\u201126 season, with an additional $2,500 per game played beyond the first ten appearances. {Midland Women's Basketball League|ORGANIZATION-2} officially records the registration of {Elara Finch|PERSON-1}'s extension with {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} before the domestic transfer deadline of 2025-03-20. The league filed the contract under registration number {MWBL\u20112025\u2011RIV\u2011EF|MISCELLANEOUS-1}, confirming compliance with the transfer deadline on March 20. Coach {Dana Loris|PERSON-2} of {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} states that the terms of {Elara Finch|PERSON-1}'s extension provide roster stability while rewarding {Elara Finch|PERSON-1}'s availability post\u2011injury. Coach {Dana Loris|PERSON-2} added in a press conference at the {Rivergate Sports Complex|BUILDING-1} that the incentive clause will activate only after {Elara Finch|PERSON-1} logs a minimum of 500 minutes on the court. {Sundara Sportswear|ORGANIZATION-3}, the primary kit sponsor of {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1}, releases a statement supporting the club's decision and notes that {Elara Finch|PERSON-1}'s marketability will be highlighted in upcoming promotional campaigns. {Sundara Sportswear|ORGANIZATION-3} announced that {Elara Finch|PERSON-1} will appear in the upcoming \u201c{Rise Together|MISCELLANEOUS-2}\u201d winter apparel campaign, featuring a limited\u2011edition jersey released on April 5. {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} announces that the reduced salary allocation from {Elara Finch|PERSON-1}'s extension frees cap space to sign a backup shooting guard before the season opener. The freed cap space, estimated at $12,000, will be allocated to sign veteran guard {Maya Torres|PERSON-3} from the neighboring {Lakeside Lynx|ORGANIZATION-4} before the season opener on October 2.</outline></event>\n<event><date>2025-04-05</date><outline>{Sundara Sportswear|ORGANIZATION-3} released the limited\u2011edition {Rise Together|MISCELLANEOUS-2} {Rise Together jersey|PRODUCT-1} featuring {Elara Finch|PERSON-1} on 2025-04-05 at the {Sundara Sportswear|ORGANIZATION-3} flagship store in {Sunvale|LOCATION-1}. The jersey, crafted from 85% recycled polyester with a moisture\u2011wicking interior, was priced at $119 and the launch ceremony was attended by coach {Dana Loris|PERSON-2}, {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} mayoral representative, and local media. The limited\u2011edition {Rise Together|MISCELLANEOUS-2} {Rise Together jersey|PRODUCT-1} sold out its initial allocation of 3,000 units within 48 hours at {Sundara Sportswear|ORGANIZATION-3} retail locations and the {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} online store. Sales data show 1,820 units were purchased at the {Sunvale|LOCATION-1} flagship, 620 through the online store, and 560 at regional {Sundara Sportswear|ORGANIZATION-3} outlets, with 2,500 units sold in the first 24 hours. {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} announced that all net proceeds from the limited\u2011edition {Rise Together|MISCELLANEOUS-2} {Rise Together jersey|PRODUCT-1} sales will be allocated to fund a free community basketball clinic in {Rivergate|LOCATION-2} scheduled for June 2025. The club estimates net proceeds of approximately $180,000, which will fund a two\u2011day clinic at the {Rivergate Community Center|BUILDING-2} for up to 150 local youth, featuring coaching staff from the {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} and guest trainers. {Elara Finch|PERSON-1} issued a public statement praising the limited\u2011edition {Rise Together|MISCELLANEOUS-2} {Rise Together jersey|PRODUCT-1} and confirming her participation in the upcoming community basketball clinic organized by {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1}. In her statement, {Elara Finch|PERSON-1} said, \u201cWearing this jersey reminds me of the fans who lift us every game, and I can\u2019t wait to share skills and stories at the June 12 clinic,\u201d confirming she will lead a shooting\u2011drills workshop. {Sundara Sportswear|ORGANIZATION-3} confirmed a supplemental production run of 2,000 limited\u2011edition {Rise Together|MISCELLANEOUS-2} {Rise Together jersey|PRODUCT-1} jerseys to meet continued demand, with delivery planned for early May 2025. The additional 2,000 jerseys will be manufactured at {Sundara Sportswear|ORGANIZATION-3}\u2019s {Greenfield eco\u2011factory|BUILDING-3} and are scheduled to ship on May\u202f3, 2025, to be stocked at the same retail locations and the online store.</outline></event>",
+    "STORY_ITEM": [
+      "On 2025-10-04, during the Rivergate Rivets Women\u2019s Basketball Club\u2019s second league game at Rivergate Sports Complex, Maya Torres suffered a bruised left ankle after landing awkwardly following a defensive rebound.",
+      "Medical staff at Rivergate Sports Complex evaluated Maya Torres\u2019s ankle and diagnosed a grade\u2011I contusion, prescribing rest and limited court time for a minimum of two weeks.",
+      "Coach Dana Loris of Rivergate Rivets Women\u2019s Basketball Club announced that Maya Torres will have playing minutes limited to twelve per quarter for the remainder of the season\u2019s opening month.",
+      "Coach Dana Loris decided not to activate rookie reserve Leila Kade, a recent graduate of Rivergate Academy of Sports, keeping Leila Kade on the bench despite the reduced minutes for Maya Torres.",
+      "Rivergate Rivets Women\u2019s Basketball Club issued an official statement confirming the injury protocol for Maya Torres, emphasizing player health and the team\u2019s commitment to compete at full strength once Maya Torres recovers."
+    ],
+    "DATE": "2025-10-04",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 1,
+    "OUTLINE": "On 2025-10-04, during the Rivergate Rivets Women\u2019s Basketball Club\u2019s second league game at Rivergate Sports Complex, Maya Torres suffered a bruised left ankle after landing awkwardly following a defensive rebound.\nMedical staff at Rivergate Sports Complex evaluated Maya Torres\u2019s ankle and diagnosed a grade\u2011I contusion, prescribing rest and limited court time for a minimum of two weeks.\nCoach Dana Loris of Rivergate Rivets Women\u2019s Basketball Club announced that Maya Torres will have playing minutes limited to twelve per quarter for the remainder of the season\u2019s opening month.\nCoach Dana Loris decided not to activate rookie reserve Leila Kade, a recent graduate of Rivergate Academy of Sports, keeping Leila Kade on the bench despite the reduced minutes for Maya Torres.\nRivergate Rivets Women\u2019s Basketball Club issued an official statement confirming the injury protocol for Maya Torres, emphasizing player health and the team\u2019s commitment to compete at full strength once Maya Torres recovers."
+  }
+}

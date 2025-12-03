@@ -1,0 +1,465 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "openai/gpt-oss-120b",
+    "temperature": 1.0,
+    "max-tokens": 10000
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "<results>\n<date>2025-06-15</date>\n<outline>\n<storyitem>The Alveron Cycling Federation announced on 2025-06-15 that the Renewed Talent initiative will be broadened by launching a pilot research program focused on altitude\u2011training studies.</storyitem>\n<storyitem>The pilot research program will select Marcellus Vane and two veteran cyclists to participate in the altitude\u2011training studies.</storyitem>\n<storyitem>The veteran cyclists chosen for the program are Victor Haines, former leader of Aurora Hill Riders, and Elena Korova, retired sprinter from Sapphire Sprint Squad.</storyitem>\n<storyitem>The altitude\u2011training studies will be conducted at Summit Altitude Research Facility, a laboratory situated at 1,400\u202fmeters in the Valebrook mountain region.</storyitem>\n<storyitem>The Alveron Cycling Federation partnered with Riven Vale Cycling Center to provide coaching staff for the pilot research program.</storyitem>\n<storyitem>Dr. Mira Patel from Riven Vale Cycling Center will oversee physiological testing for Marcellus Vane, Victor Haines, and Elena Korova during the program.</storyitem>\n<storyitem>Helix AeroTech will supply its AeroBlade carbon\u2011fiber frames for use by Marcellus Vane, Victor Haines, and Elena Korova throughout the altitude\u2011training sessions.</storyitem>\n<storyitem>The pilot research program specifies that no monetary mentorship grants will be awarded; participants will receive detailed performance data and co\u2011authorship on academic publications.</storyitem>\n<storyitem>The Alveron Cycling Federation scheduled a presentation of the pilot program results at its quarterly symposium on 2025-09-10.</storyitem>\n<storyitem>The Alveron Cycling Federation stated that findings from the pilot program may guide future extensions of the Renewed Talent initiative for veteran athletes.</storyitem>\n</outline>\n</results>"
+  },
+  "response": "<results>\n<date>2025-06-15</date>\n<outline>\n<storyitem>The Alveron Cycling Federation announced on 2025-06-15 that the Renewed Talent initiative will be broadened by launching a pilot research program focused on altitude\u2011training studies.</storyitem>\n<storyitem>The pilot research program will select Marcellus Vane and two veteran cyclists to participate in the altitude\u2011training studies.</storyitem>\n<storyitem>The veteran cyclists chosen for the program are Victor Haines, former leader of Aurora Hill Riders, and Elena Korova, retired sprinter from Sapphire Sprint Squad.</storyitem>\n<storyitem>The altitude\u2011training studies will be conducted at Summit Altitude Research Facility, a laboratory situated at 1,400\u202fmeters in the Valebrook mountain region.</storyitem>\n<storyitem>The Alveron Cycling Federation partnered with Riven Vale Cycling Center to provide coaching staff for the pilot research program.</storyitem>\n<storyitem>Dr. Mira Patel from Riven Vale Cycling Center will oversee physiological testing for Marcellus Vane, Victor Haines, and Elena Korova during the program.</storyitem>\n<storyitem>Helix AeroTech will supply its AeroBlade carbon\u2011fiber frames for use by Marcellus Vane, Victor Haines, and Elena Korova throughout the altitude\u2011training sessions.</storyitem>\n<storyitem>The pilot research program specifies that no monetary mentorship grants will be awarded; participants will receive detailed performance data and co\u2011authorship on academic publications.</storyitem>\n<storyitem>The Alveron Cycling Federation scheduled a presentation of the pilot program results at its quarterly symposium on 2025-09-10.</storyitem>\n<storyitem>The Alveron Cycling Federation stated that findings from the pilot program may guide future extensions of the Renewed Talent initiative for veteran athletes.</storyitem>\n</outline>\n</results>",
+  "instructions": "You are an AI assistant tasked with generating an outline for a fictional event. Your goal is to create a realistic, entirely fictional event that does not overlap with real-world named entities or known fictional named entities. Follow these instructions carefully:\n\nFirst, review the list of already known fictional named entities of this fictional world:\n\n<known_entities>\n<LOCATIONS>\n{{LOCATIONS_XML}}\n</LOCATIONS>\n\n<PERSONS>\n{{PERSONS_XML}}\n</PERSONS>\n\n<ORGANIZATIONS>\n{{ORGANIZATIONS_XML}}\n</ORGANIZATIONS>\n\n<PRODUCTS>\n{{PRODUCTS_XML}}\n</PRODUCTS>\n\n<ARTS>\n{{ARTS_XML}}\n</ARTS>\n\n<EVENTS>\n{{EVENTS_XML}}\n</EVENTS>\n\n<BUILDINGS>\n{{BUILDINGS_XML}}\n</BUILDINGS>\n\n<MISCELLANEOUS>\n{{MISCELLANEOUSS_XML}}\n</MISCELLANEOUS>\n</known_entities>\nNext, review the outline of previous events that have occurred in this fictional world:\n\n<history>\n{{HISTORY_XML}}\n</history>\n\nNow, consider the following information about the new event you need to generate as a continuation of the past events:\n\nDate: {{PROVIDED_DATE}}\n\nEvent Summary: {{EVENT_SUMMARY}}\n\nGenre: {{GENRE}}\n\nFollow these guidelines to generate the event outline:\n\n1. Create an entirely fictional event based on the given genre, event summary, and history of previous events. The event must be realistic but must not reference any existing real-world or known fictional named entities.\n2. Invent new named entities as needed, ensuring they don't exist in the real world or in existing works of fiction. When creating names, use unique combinations unlikely to match real named entities.\n3. Construct the outline using short, concise, factual, and objective statements. Each statement must discuss only one fact or sub-event, structured sequentially in a logical temporal order when applicable.\n4. Ensure all statements form a coherent outline.\n5. Output each statement within a <storyitem> tag.\n6. Generate exactly {{NUM_STORYITEMS}} distinct story items.\n7. Ensure logical progression, with each statement following chronologically when applicable. Include a mix of main events, reactions, consequences, and contextual information.\n8. Make storyitems as atomic as possible, communicating only a single piece of relevant information per item. Do not merge multiple pieces of information into one storyitem.\n9. Ensure the story sounds realistic without explicitly stating it's fictional.\n10. Maintain consistency with the provided <history> that discusses past events fictional events. The outline must logically follow chronological events described in the history.\n11. Incorporate some or all of the provided named entities in your outline. Ensure that any mention of these entities is consistent with the information you have about the named entity. You may introduce additional fictional entities as needed, but they must not conflict with the existing ones.\n12. When referencing any named entities from the provided inputs, maintain consistency in their descriptions and roles within the story.\n13. If no date is provided: Generate a complete date for the event, including the year. The date should be formatted as \"year-month-day\" (e.g., \"2024-12-03\" or \"2025-06-13\"). This date should be consistent with the timeline established in the <history>.\n14. If a date is provided: Use the provided date.\n15. The outline can include quotes from the named entities where applicable.\n16. Do not repeat the information from the previous events from the <history>.\n17. Refer to all named entities (the new named entities and the known named entities) by their full \"name\" property. DO NOT refer to the named entities using the ID.\n18. Make sure that you refer to all named entities within each storyitem per full name at least once. DO NOT use pronouns to refer to a named entity from the previous story item.\n19. Think about the content that is appropriate for the event summary given the genre, provided history: Think about which dimensions align with all of those, and sound like a realistic event.\n\nYour output should be formatted as follows:\n<scratchpad>[Your thoughts go here]</scratchpad>\n<results>\n<date>year-month-day</date>\n<outline>\n<storyitem>First story item</storyitem>\n<storyitem>Second story item</storyitem>\n<storyitem>Third story item</storyitem>\n...\n</outline>\n</results>\n\nIMPORTANT:\n- The event must be entirely realistic, even though it is fictional. Do not include any science fiction or fantasy elements. The story should read like a plausible current event.\n- Do not use any galactic events. The fictional world should be similar to our world but not about galaxies or outer space.\n- Each story item must only discuss one fact or subevent. Ensure that each story item is specific, concise, and focused on a single piece of information.\n- Begin your response with <results> and end it with </results>. Do not include any text outside of these tags.\n- Do not exaggerate the outline. Avoid using words like \"groundbreaking\", \"worldwide\", \"global\". Keep the outline and the scope and influence of the event realistic.\n- Do not create outlines with global or national impact unless the genre specifically requires it. Instead, focus on smaller or local developments.\n- Do not focus on technological discoveries or topics like AI tools, virtual reality, augmented reality, 3D-modelling, quantum computing, etc. You may include such topics only if they are HIGHLY relevant to the genre {{GENRE}} AND the provided history of events.\n- Focus on realistic, meaningful outlines with specific details and events that align with typical, realistic scenarios of the genre {{GENRE}}.\n\nRemember:\nThe outline should center on a fictional but realistic event, keeping its scale aligned with the event summary and provided <history> without exaggerating its impact. Rather than overstating the event's significance, the outline should stay within the scope appropriate to the genre, provided history, and provided summary. When in doubt, focus on detailed, localized developments instead of amplifying global effects.\n\nEnsure that the outline is coherent, follows a logical sequence, and offers a unique perspective on the given event while maintaining consistency with the provided background information.",
+  "text_prompt": "You are an AI assistant tasked with generating an outline for a fictional event. Your goal is to create a realistic, entirely fictional event that does not overlap with real-world named entities or known fictional named entities. Follow these instructions carefully:\n\nFirst, review the list of already known fictional named entities of this fictional world:\n\n<known_entities>\n<LOCATIONS>\n<location><area>112 km\u00b2</area><country>Valoria</country><created_at>0</created_at><description>A midsized riverfront city known for its blend of historic brick warehouses and modern tech parks.</description><elevation>210 m</elevation><entity_class>location</entity_class><history><event>2025-04-02: Brookfield served as the location of the live webcast where Marcellus Vane announced his return to Crestford Velocity Pro Cycling.</event></history><id>LOCATION-1</id><last_updated>2025-04-02</last_updated><name>Brookfield</name><population>87542</population><type>city</type></location>\n</LOCATIONS>\n\n<PERSONS>\n<person><created_at>0</created_at><date_of_birth>1990-06-15</date_of_birth><description>A determined former Grand Tour podium finisher who values mentorship and strategic teamwork.</description><education>Bachelor of Sports Science Valoria University</education><entity_class>person</entity_class><eye_color>steel gray</eye_color><gender>male</gender><hair_color>dark brown</hair_color><height>1.84 m</height><history><event>2025-04-02: Marcellus Vane announced his comeback to professional cycling by signing a two\u2011year contract with Crestford Velocity Pro Cycling, becoming the team\u2019s road captain.</event></history><id>PERSON-1</id><last_updated>2025-04-02</last_updated><marital_status>single</marital_status><name>Marcellus Vane</name><nationality>Valoria</nationality><political_affiliation>Independent</political_affiliation><profession>professional cyclist (road captain)</profession><type>None</type><weight>72 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>1985-03-22</date_of_birth><description>A pragmatic leader known for her data\u2011driven approach to race tactics and athlete development.</description><education>MBA in Sports Management Caledonian Institute of Business</education><entity_class>person</entity_class><eye_color>hazel</eye_color><gender>female</gender><hair_color>auburn</hair_color><height>1.68 m</height><history><event>2025-04-02: Lena Roques, the manager of Crestford Velocity Pro Cycling, confirmed Vane\u2019s signing and highlighted his role in strengthening the squad for the Northvale Tour.</event></history><id>PERSON-2</id><last_updated>2025-04-02</last_updated><marital_status>married</marital_status><name>Lena Roques</name><nationality>Caledonia</nationality><political_affiliation>Progressive Alliance</political_affiliation><profession>team manager</profession><spouse>Eric Dalmont</spouse><type>None</type><weight>58 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>1994-11-08</date_of_birth><description>A fast\u2011twitch sprinter whose aggressive style makes him a constant threat in flat finishes.</description><education>Diploma in Exercise Physiology Eastoria Technical College</education><entity_class>person</entity_class><eye_color>green</eye_color><gender>male</gender><hair_color>light blond</hair_color><height>1.78 m</height><history><event>2025-04-02: Jacek Novak is slated to be mentored by Marcellus Vane during the mountainous stages of the Northvale Tour.</event></history><id>PERSON-3</id><last_updated>2025-04-02</last_updated><marital_status>engaged</marital_status><name>Jacek Novak</name><nationality>Eastoria</nationality><political_affiliation>Centrist Union</political_affiliation><profession>sprinter professional cyclist</profession><spouse>Anna Kowalska</spouse><type>None</type><weight>68 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>1979-02-14</date_of_birth><description>A meticulous researcher specializing in altitude training adaptations and metabolic efficiency.</description><education>PhD in Human Performance Silvaria Institute of Sports Science</education><entity_class>person</entity_class><eye_color>brown</eye_color><gender>female</gender><hair_color>black</hair_color><height>1.63 m</height><history><event>2025-04-02: Dr. Mira Patel oversaw the altitude training sessions for Marcellus Vane at the Riven Vale Cycling Center.</event></history><id>PERSON-4</id><last_updated>2025-04-02</last_updated><marital_status>married</marital_status><name>Dr. Mira Patel</name><nationality>Silvaria</nationality><political_affiliation>Green Initiative</political_affiliation><profession>sports scientist</profession><spouse>Rohan Patel</spouse><type>None</type><weight>55 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>1992-09-30</date_of_birth><description>A precision\u2011focused rider who excels in solo efforts against the clock.</description><education>Bachelor of Mechanical Engineering Marintia University</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>male</gender><hair_color>dark brown</hair_color><height>1.80 m</height><history><event>2025-04-02: Luis Ortega was named to the Crestford roster for Stage\u202f1 of the Northvale Tour alongside Marcellus Vane.</event></history><id>PERSON-5</id><last_updated>2025-04-02</last_updated><marital_status>single</marital_status><name>Luis Ortega</name><nationality>Marintia</nationality><political_affiliation>Libertarian Front</political_affiliation><profession>time\u2011trial specialist professional cyclist</profession><type>None</type><weight>70 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>1996-07-19</date_of_birth><description>A reliable team player praised for her tireless work on the front of the peloton.</description><education>Associate Degree in Sports Coaching Brookfield Community College</education><entity_class>person</entity_class><eye_color>amber</eye_color><gender>female</gender><hair_color>auburn</hair_color><height>1.71 m</height><history><event>2025-04-02: Sofia Martel joined the Crestford lineup for Stage\u202f1 of the Northvale Tour, wearing the new teal\u2011white kit.</event></history><id>PERSON-6</id><last_updated>2025-04-02</last_updated><marital_status>single</marital_status><name>Sofia Martel</name><nationality>Valoria</nationality><political_affiliation>Social Democratic Party</political_affiliation><profession>domestique professional cyclist</profession><type>None</type><weight>60 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>1991-12-03</date_of_birth><description>A versatile rider known for his consistency across varied terrain and strong tactical sense.</description><education>Master of Sports Management Portara Academy</education><entity_class>person</entity_class><eye_color>gray</eye_color><gender>male</gender><hair_color>dark black</hair_color><height>1.82 m</height><history><event>2025-04-02: Marco Silva finished just behind Marcellus Vane in Stage\u202f1 of the Northvale Tour.</event></history><id>PERSON-7</id><last_updated>2025-04-02</last_updated><marital_status>married</marital_status><name>Marco Silva</name><nationality>Portara</nationality><political_affiliation>Centrist Alliance</political_affiliation><profession>all\u2011rounder professional cyclist</profession><spouse>Clara Mendes</spouse><type>None</type><weight>71 kg</weight></person>\n</PERSONS>\n\n<ORGANIZATIONS>\n<organization><annual_revenue>USD 12.4 million</annual_revenue><created_at>0</created_at><description>A professional road\u2011cycling team competing in WorldTour events.</description><entity_class>organization</entity_class><founded>2010</founded><headquarters>Crestford</headquarters><history><event>2025-04-02: Crestford Velocity Pro Cycling announced the signing of Marcellus Vane, a new sponsorship with Helix AeroTech supplying AeroBlade frames and aero helmets, and debuted a teal\u2011white kit for the Northvale Tour.</event></history><id>ORGANIZATION-1</id><industry>sports & entertainment</industry><last_updated>2025-04-02</last_updated><mission_statement>To combine athletic excellence with innovative technology to inspire the next generation of cyclists.</mission_statement><name>Crestford Velocity Pro Cycling</name><number_of_employees>78</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>USD 9.8 million</annual_revenue><created_at>0</created_at><description>A former WorldTour squad known for its aggressive racing style.</description><entity_class>organization</entity_class><founded>2005</founded><headquarters>Rivetton</headquarters><history><event>2025-04-02: Apex Rivet Squad is noted as Marcellus Vane\u2019s former team before his 2022 retirement.</event></history><id>ORGANIZATION-2</id><industry>sports & entertainment</industry><last_updated>2025-04-02</last_updated><mission_statement>To push the limits of performance through relentless competition and teamwork.</mission_statement><name>Apex Rivet Squad</name><number_of_employees>64</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>USD 23.1 million</annual_revenue><created_at>0</created_at><description>A mid\u2011size engineering firm specializing in aerodynamic components for high\u2011performance sports equipment.</description><entity_class>organization</entity_class><founded>2014</founded><headquarters>Helix City</headquarters><history><event>2025-04-02: Helix AeroTech secured a sponsorship agreement with Crestford Velocity Pro Cycling, providing the new AeroBlade carbon\u2011fiber frames and telemetry\u2011integrated helmets for the 2025 season.</event></history><id>ORGANIZATION-3</id><industry>advanced manufacturing</industry><last_updated>2025-04-02</last_updated><mission_statement>To revolutionize athletic performance through cutting\u2011edge aerodynamics and materials science.</mission_statement><name>Helix AeroTech</name><number_of_employees>112</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>USD 1.4 million</annual_revenue><created_at>0</created_at><description>A high\u2011altitude training facility providing coaching and scientific support to elite cyclists.</description><entity_class>organization</entity_class><founded>2018</founded><headquarters>Valebrook</headquarters><history><event>2025-04-02: Riven Vale Cycling Center hosted Marcellus Vane\u2019s pre\u2011season altitude training camp starting 20\u202fMarch\u202f2025, with daily sessions led by Dr. Mira Patel.</event></history><id>ORGANIZATION-4</id><industry>sports training & development</industry><last_updated>2025-04-02</last_updated><mission_statement>To enhance athlete performance through science\u2011based altitude training programs.</mission_statement><name>Riven Vale Cycling Center</name><number_of_employees>27</number_of_employees><type>non-profit</type></organization>\n<organization><annual_revenue>USD 6.3 million</annual_revenue><created_at>0</created_at><description>The national governing body overseeing competitive cycling and rider development.</description><entity_class>organization</entity_class><founded>1992</founded><headquarters>Alveron</headquarters><history><event>2025-04-02: Alveron Cycling Federation issued a statement supporting Marcellus Vane\u2019s return, aligning with its Renewed Talent initiative.</event></history><id>ORGANIZATION-5</id><industry>sports governance</industry><last_updated>2025-04-02</last_updated><mission_statement>To promote fair safe and inclusive cycling across all levels of competition.</mission_statement><name>Alveron Cycling Federation</name><number_of_employees>85</number_of_employees><type>government agency</type></organization>\n</ORGANIZATIONS>\n\n<PRODUCTS>\n<product><created_at>0</created_at><description>A lightweight carbon\u2011fiber road bike frame engineered for optimal aerodynamic efficiency.</description><entity_class>product</entity_class><history><event>2025-04-02: The AeroBlade carbon\u2011fiber frame is being supplied to Crestford Velocity Pro Cycling for the 2025 season under the new sponsorship.</event></history><id>PRODUCT-1</id><last_updated>2025-04-02</last_updated><manufacturer>Helix AeroTech</manufacturer><name>AeroBlade</name><price>USD 4200</price><release_date>2024-09-01</release_date><type>consumer good</type><warranty>5 years</warranty><weight>850 g</weight></product>\n</PRODUCTS>\n\n<ARTS>\n\n</ARTS>\n\n<EVENTS>\n<event><budget>USD 750000</budget><created_at>0</created_at><date>2023-09-12</date><description>An annual one\u2011day mountain race that covers challenging alpine passes.</description><duration>6 hours</duration><entity_class>event</entity_class><history><event>2025-04-02: The Alpine Classic was the site of Marcellus Vane\u2019s season\u2011ending crash in 2022 that led to his retirement.</event></history><id>EVENT-1</id><last_updated>2025-04-02</last_updated><name>Alpine Classic</name><number_of_participants>115</number_of_participants><organizer>Alpine Sports Association</organizer><type>sporting</type></event>\n<event><budget>USD 2.3 million</budget><created_at>0</created_at><date>2025-05-03 to 2025-05-09</date><description>A week\u2011long stage race across the rolling hills and coastal roads of Northvale.</description><duration>7 days</duration><entity_class>event</entity_class><history><event>2025-04-02: The Northvale Tour featured Marcellus Vane as team leader for Crestford in Stage\u202f1, where he finished fourth, 12 seconds behind the winner.</event></history><id>EVENT-2</id><last_updated>2025-04-02</last_updated><name>Northvale Tour</name><number_of_participants>22 teams</number_of_participants><organizer>Valoria Cycling Committee</organizer><type>sporting</type></event>\n</EVENTS>\n\n<BUILDINGS>\n\n</BUILDINGS>\n\n<MISCELLANEOUS>\n<miscellaneous><created_at>0</created_at><description>An initiative encouraging retired athletes to return to professional competition.</description><entity_class>miscellaneous</entity_class><history><event>2025-04-02: Renewed Talent is the initiative cited by the Alveron Cycling Federation in supporting veteran riders like Marcellus Vane returning to competition.</event></history><id>MISCELLANEOUS-1</id><last_updated>2025-04-02</last_updated><name>Renewed Talent</name><type>concept</type></miscellaneous>\n</MISCELLANEOUS>\n</known_entities>\nNext, review the outline of previous events that have occurred in this fictional world:\n\n<history>\n<event><date>2025-04-02</date><outline>{Marcellus Vane|PERSON-1} announced on 2025-04-01 that he will join {Crestford Velocity Pro Cycling|ORGANIZATION-1} under manager {Lena Roques|PERSON-2}. The announcement was made during a live webcast from {Crestford Velocity Pro Cycling|ORGANIZATION-1}\u2019s headquarters in {Brookfield|LOCATION-1}, and a press release highlighted {Marcellus Vane|PERSON-1}\u2019s three Grand Tour podiums. {Marcellus Vane|PERSON-1} retired from professional cycling in 2022 after competing for {Apex Rivet Squad|ORGANIZATION-2}. {Marcellus Vane|PERSON-1}\u2019s 2022 retirement followed a season\u2011ending crash at the {Alpine Classic|EVENT-1}, after which he completed a year\u2011long rehabilitation. {Marcellus Vane|PERSON-1} cited improved team dynamics at {Crestford Velocity Pro Cycling|ORGANIZATION-1} as a primary reason for his return. He specifically praised the team\u2019s collaborative race\u2011strategy meetings and the integration of data\u2011driven performance analytics. {Lena Roques|PERSON-2} said that {Marcellus Vane|PERSON-1}\u2019s addition strengthens {Crestford Velocity Pro Cycling|ORGANIZATION-1}\u2019s depth for the upcoming {Northvale Tour|EVENT-2}. {Lena Roques|PERSON-2} added that {Marcellus Vane|PERSON-1}\u2019s experience will mentor younger riders, particularly sprinter {Jacek Novak|PERSON-3}, during the tour\u2019s mountainous stages. {Marcellus Vane|PERSON-1} signed a two\u2011year contract with {Crestford Velocity Pro Cycling|ORGANIZATION-1} that designates him as road captain. The contract includes a performance bonus tied to achieving a top\u201110 finish in any WorldTour event during the 2025 season. {Crestford Velocity Pro Cycling|ORGANIZATION-1} announced a sponsorship agreement with {Helix AeroTech|ORGANIZATION-3} that will provide upgraded bicycles and gear for the 2025 season. {Helix AeroTech|ORGANIZATION-3} will supply the team with its new \u201c{AeroBlade|PRODUCT-1}\u201d carbon\u2011fiber frames and custom\u2011fitted aero helmets featuring integrated telemetry. {Marcellus Vane|PERSON-1} began a pre\u2011season training camp at {Riven Vale Cycling Center|ORGANIZATION-4} on 2025-03-20. The {Riven Vale Cycling Center|ORGANIZATION-4}\u2019s altitude of 1,200 meters was chosen to enhance {Marcellus Vane|PERSON-1}\u2019s VO\u2082 max, and the camp featured daily sessions with sports scientist {Dr. Mira Patel|PERSON-4}. {Alveron Cycling Federation|ORGANIZATION-5} issued a statement supporting {Marcellus Vane|PERSON-1}\u2019s return to competition with {Crestford Velocity Pro Cycling|ORGANIZATION-1}. The federation\u2019s statement emphasized that {Marcellus Vane|PERSON-1}\u2019s return aligns with its \u201c{Renewed Talent|MISCELLANEOUS-1}\u201d initiative aimed at encouraging veteran athletes to re\u2011enter competition. {Crestford Velocity Pro Cycling|ORGANIZATION-1} entered the {Northvale Tour|EVENT-2} with {Marcellus Vane|PERSON-1} listed as the team leader for Stage\u202f1. The team\u2019s roster for Stage\u202f1 also includes time\u2011trial specialist {Luis Ortega|PERSON-5} and domestique {Sofia Martel|PERSON-6}, all wearing the new teal\u2011white kit. {Marcellus Vane|PERSON-1} finished fourth in Stage\u202f1 of the {Northvale Tour|EVENT-2}, showing immediate competitiveness. {Marcellus Vane|PERSON-1} finished 12 seconds behind the stage winner, with a strong sprint finish that placed him ahead of former teammate {Marco Silva|PERSON-7}.</outline></event>\n</history>\n\nNow, consider the following information about the new event you need to generate as a continuation of the past events:\n\nDate: 2025-06-15\n\nEvent Summary: The Alveron Cycling Federation broadened the Renewed Talent initiative on 2025\u201106\u201115 by launching a pilot research program that selects Marcellus Vane and two veteran cyclists to participate in altitude\u2011training studies, with no monetary mentorship grants awarded.\n\nGenre: Sports\n\nFollow these guidelines to generate the event outline:\n\n1. Create an entirely fictional event based on the given genre, event summary, and history of previous events. The event must be realistic but must not reference any existing real-world or known fictional named entities.\n2. Invent new named entities as needed, ensuring they don't exist in the real world or in existing works of fiction. When creating names, use unique combinations unlikely to match real named entities.\n3. Construct the outline using short, concise, factual, and objective statements. Each statement must discuss only one fact or sub-event, structured sequentially in a logical temporal order when applicable.\n4. Ensure all statements form a coherent outline.\n5. Output each statement within a <storyitem> tag.\n6. Generate exactly 10 distinct story items.\n7. Ensure logical progression, with each statement following chronologically when applicable. Include a mix of main events, reactions, consequences, and contextual information.\n8. Make storyitems as atomic as possible, communicating only a single piece of relevant information per item. Do not merge multiple pieces of information into one storyitem.\n9. Ensure the story sounds realistic without explicitly stating it's fictional.\n10. Maintain consistency with the provided <history> that discusses past events fictional events. The outline must logically follow chronological events described in the history.\n11. Incorporate some or all of the provided named entities in your outline. Ensure that any mention of these entities is consistent with the information you have about the named entity. You may introduce additional fictional entities as needed, but they must not conflict with the existing ones.\n12. When referencing any named entities from the provided inputs, maintain consistency in their descriptions and roles within the story.\n13. If no date is provided: Generate a complete date for the event, including the year. The date should be formatted as \"year-month-day\" (e.g., \"2024-12-03\" or \"2025-06-13\"). This date should be consistent with the timeline established in the <history>.\n14. If a date is provided: Use the provided date.\n15. The outline can include quotes from the named entities where applicable.\n16. Do not repeat the information from the previous events from the <history>.\n17. Refer to all named entities (the new named entities and the known named entities) by their full \"name\" property. DO NOT refer to the named entities using the ID.\n18. Make sure that you refer to all named entities within each storyitem per full name at least once. DO NOT use pronouns to refer to a named entity from the previous story item.\n19. Think about the content that is appropriate for the event summary given the genre, provided history: Think about which dimensions align with all of those, and sound like a realistic event.\n\nYour output should be formatted as follows:\n<scratchpad>[Your thoughts go here]</scratchpad>\n<results>\n<date>year-month-day</date>\n<outline>\n<storyitem>First story item</storyitem>\n<storyitem>Second story item</storyitem>\n<storyitem>Third story item</storyitem>\n...\n</outline>\n</results>\n\nIMPORTANT:\n- The event must be entirely realistic, even though it is fictional. Do not include any science fiction or fantasy elements. The story should read like a plausible current event.\n- Do not use any galactic events. The fictional world should be similar to our world but not about galaxies or outer space.\n- Each story item must only discuss one fact or subevent. Ensure that each story item is specific, concise, and focused on a single piece of information.\n- Begin your response with <results> and end it with </results>. Do not include any text outside of these tags.\n- Do not exaggerate the outline. Avoid using words like \"groundbreaking\", \"worldwide\", \"global\". Keep the outline and the scope and influence of the event realistic.\n- Do not create outlines with global or national impact unless the genre specifically requires it. Instead, focus on smaller or local developments.\n- Do not focus on technological discoveries or topics like AI tools, virtual reality, augmented reality, 3D-modelling, quantum computing, etc. You may include such topics only if they are HIGHLY relevant to the genre Sports AND the provided history of events.\n- Focus on realistic, meaningful outlines with specific details and events that align with typical, realistic scenarios of the genre Sports.\n\nRemember:\nThe outline should center on a fictional but realistic event, keeping its scale aligned with the event summary and provided <history> without exaggerating its impact. Rather than overstating the event's significance, the outline should stay within the scope appropriate to the genre, provided history, and provided summary. When in doubt, focus on detailed, localized developments instead of amplifying global effects.\n\nEnsure that the outline is coherent, follows a logical sequence, and offers a unique perspective on the given event while maintaining consistency with the provided background information.",
+  "system-prompt": null,
+  "values": {
+    "GENRE": "Sports",
+    "EVENT_SUMMARY": "The Alveron Cycling Federation broadened the Renewed Talent initiative on 2025\u201106\u201115 by launching a pilot research program that selects Marcellus Vane and two veteran cyclists to participate in altitude\u2011training studies, with no monetary mentorship grants awarded.",
+    "EVENT_SUMMARY_FOR_NAME": "The Alveron Cycling ",
+    "INIT_SUMMARY": "In a surprising move, a once-retired cyclist has joined a new professional team, citing improved team dynamics and competitive spirit as key motivators for his return.",
+    "KEYWORDS": "",
+    "CREATED_AT": 1,
+    "HISTORIES": [
+      "<event><date>2025-04-02</date><outline>{Marcellus Vane|PERSON-1} announced on 2025-04-01 that he will join {Crestford Velocity Pro Cycling|ORGANIZATION-1} under manager {Lena Roques|PERSON-2}. The announcement was made during a live webcast from {Crestford Velocity Pro Cycling|ORGANIZATION-1}\u2019s headquarters in {Brookfield|LOCATION-1}, and a press release highlighted {Marcellus Vane|PERSON-1}\u2019s three Grand Tour podiums. {Marcellus Vane|PERSON-1} retired from professional cycling in 2022 after competing for {Apex Rivet Squad|ORGANIZATION-2}. {Marcellus Vane|PERSON-1}\u2019s 2022 retirement followed a season\u2011ending crash at the {Alpine Classic|EVENT-1}, after which he completed a year\u2011long rehabilitation. {Marcellus Vane|PERSON-1} cited improved team dynamics at {Crestford Velocity Pro Cycling|ORGANIZATION-1} as a primary reason for his return. He specifically praised the team\u2019s collaborative race\u2011strategy meetings and the integration of data\u2011driven performance analytics. {Lena Roques|PERSON-2} said that {Marcellus Vane|PERSON-1}\u2019s addition strengthens {Crestford Velocity Pro Cycling|ORGANIZATION-1}\u2019s depth for the upcoming {Northvale Tour|EVENT-2}. {Lena Roques|PERSON-2} added that {Marcellus Vane|PERSON-1}\u2019s experience will mentor younger riders, particularly sprinter {Jacek Novak|PERSON-3}, during the tour\u2019s mountainous stages. {Marcellus Vane|PERSON-1} signed a two\u2011year contract with {Crestford Velocity Pro Cycling|ORGANIZATION-1} that designates him as road captain. The contract includes a performance bonus tied to achieving a top\u201110 finish in any WorldTour event during the 2025 season. {Crestford Velocity Pro Cycling|ORGANIZATION-1} announced a sponsorship agreement with {Helix AeroTech|ORGANIZATION-3} that will provide upgraded bicycles and gear for the 2025 season. {Helix AeroTech|ORGANIZATION-3} will supply the team with its new \u201c{AeroBlade|PRODUCT-1}\u201d carbon\u2011fiber frames and custom\u2011fitted aero helmets featuring integrated telemetry. {Marcellus Vane|PERSON-1} began a pre\u2011season training camp at {Riven Vale Cycling Center|ORGANIZATION-4} on 2025-03-20. The {Riven Vale Cycling Center|ORGANIZATION-4}\u2019s altitude of 1,200 meters was chosen to enhance {Marcellus Vane|PERSON-1}\u2019s VO\u2082 max, and the camp featured daily sessions with sports scientist {Dr. Mira Patel|PERSON-4}. {Alveron Cycling Federation|ORGANIZATION-5} issued a statement supporting {Marcellus Vane|PERSON-1}\u2019s return to competition with {Crestford Velocity Pro Cycling|ORGANIZATION-1}. The federation\u2019s statement emphasized that {Marcellus Vane|PERSON-1}\u2019s return aligns with its \u201c{Renewed Talent|MISCELLANEOUS-1}\u201d initiative aimed at encouraging veteran athletes to re\u2011enter competition. {Crestford Velocity Pro Cycling|ORGANIZATION-1} entered the {Northvale Tour|EVENT-2} with {Marcellus Vane|PERSON-1} listed as the team leader for Stage\u202f1. The team\u2019s roster for Stage\u202f1 also includes time\u2011trial specialist {Luis Ortega|PERSON-5} and domestique {Sofia Martel|PERSON-6}, all wearing the new teal\u2011white kit. {Marcellus Vane|PERSON-1} finished fourth in Stage\u202f1 of the {Northvale Tour|EVENT-2}, showing immediate competitiveness. {Marcellus Vane|PERSON-1} finished 12 seconds behind the stage winner, with a strong sprint finish that placed him ahead of former teammate {Marco Silva|PERSON-7}.</outline></event>"
+    ],
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "NEXT_IDS": {
+      "person": 8,
+      "organization": 6,
+      "location": 2,
+      "product": 2,
+      "art": 1,
+      "building": 1,
+      "event": 3,
+      "miscellaneous": 2
+    },
+    "PROVIDED_DATE": "2025-06-15",
+    "PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Marcellus Vane",
+        "entity_class": "person",
+        "description": "A determined former Grand Tour podium finisher who values mentorship and strategic teamwork.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-04-02",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Marcellus Vane announced his comeback to professional cycling by signing a two\u2011year contract with Crestford Velocity Pro Cycling, becoming the team\u2019s road captain.",
+            "date": "2025-04-02"
+          }
+        ],
+        "date_of_birth": "1990-06-15",
+        "gender": "male",
+        "profession": "professional cyclist (road captain)",
+        "nationality": "Valoria",
+        "education": "Bachelor of Sports Science Valoria University",
+        "height": "1.84 m",
+        "weight": "72 kg",
+        "eye_color": "steel gray",
+        "hair_color": "dark brown",
+        "marital_status": "single",
+        "political_affiliation": "Independent"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Lena Roques",
+        "entity_class": "person",
+        "description": "A pragmatic leader known for her data\u2011driven approach to race tactics and athlete development.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-04-02",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Lena Roques, the manager of Crestford Velocity Pro Cycling, confirmed Vane\u2019s signing and highlighted his role in strengthening the squad for the Northvale Tour.",
+            "date": "2025-04-02"
+          }
+        ],
+        "date_of_birth": "1985-03-22",
+        "gender": "female",
+        "profession": "team manager",
+        "nationality": "Caledonia",
+        "education": "MBA in Sports Management Caledonian Institute of Business",
+        "height": "1.68 m",
+        "weight": "58 kg",
+        "eye_color": "hazel",
+        "hair_color": "auburn",
+        "marital_status": "married",
+        "spouse": "Eric Dalmont",
+        "political_affiliation": "Progressive Alliance"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Jacek Novak",
+        "entity_class": "person",
+        "description": "A fast\u2011twitch sprinter whose aggressive style makes him a constant threat in flat finishes.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-04-02",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Jacek Novak is slated to be mentored by Marcellus Vane during the mountainous stages of the Northvale Tour.",
+            "date": "2025-04-02"
+          }
+        ],
+        "date_of_birth": "1994-11-08",
+        "gender": "male",
+        "profession": "sprinter professional cyclist",
+        "nationality": "Eastoria",
+        "education": "Diploma in Exercise Physiology Eastoria Technical College",
+        "height": "1.78 m",
+        "weight": "68 kg",
+        "eye_color": "green",
+        "hair_color": "light blond",
+        "marital_status": "engaged",
+        "spouse": "Anna Kowalska",
+        "political_affiliation": "Centrist Union"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Dr. Mira Patel",
+        "entity_class": "person",
+        "description": "A meticulous researcher specializing in altitude training adaptations and metabolic efficiency.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-04-02",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Dr. Mira Patel oversaw the altitude training sessions for Marcellus Vane at the Riven Vale Cycling Center.",
+            "date": "2025-04-02"
+          }
+        ],
+        "date_of_birth": "1979-02-14",
+        "gender": "female",
+        "profession": "sports scientist",
+        "nationality": "Silvaria",
+        "education": "PhD in Human Performance Silvaria Institute of Sports Science",
+        "height": "1.63 m",
+        "weight": "55 kg",
+        "eye_color": "brown",
+        "hair_color": "black",
+        "marital_status": "married",
+        "spouse": "Rohan Patel",
+        "political_affiliation": "Green Initiative"
+      },
+      {
+        "id": "PERSON-5",
+        "name": "Luis Ortega",
+        "entity_class": "person",
+        "description": "A precision\u2011focused rider who excels in solo efforts against the clock.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-04-02",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Luis Ortega was named to the Crestford roster for Stage\u202f1 of the Northvale Tour alongside Marcellus Vane.",
+            "date": "2025-04-02"
+          }
+        ],
+        "date_of_birth": "1992-09-30",
+        "gender": "male",
+        "profession": "time\u2011trial specialist professional cyclist",
+        "nationality": "Marintia",
+        "education": "Bachelor of Mechanical Engineering Marintia University",
+        "height": "1.80 m",
+        "weight": "70 kg",
+        "eye_color": "blue",
+        "hair_color": "dark brown",
+        "marital_status": "single",
+        "political_affiliation": "Libertarian Front"
+      },
+      {
+        "id": "PERSON-6",
+        "name": "Sofia Martel",
+        "entity_class": "person",
+        "description": "A reliable team player praised for her tireless work on the front of the peloton.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-04-02",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Sofia Martel joined the Crestford lineup for Stage\u202f1 of the Northvale Tour, wearing the new teal\u2011white kit.",
+            "date": "2025-04-02"
+          }
+        ],
+        "date_of_birth": "1996-07-19",
+        "gender": "female",
+        "profession": "domestique professional cyclist",
+        "nationality": "Valoria",
+        "education": "Associate Degree in Sports Coaching Brookfield Community College",
+        "height": "1.71 m",
+        "weight": "60 kg",
+        "eye_color": "amber",
+        "hair_color": "auburn",
+        "marital_status": "single",
+        "political_affiliation": "Social Democratic Party"
+      },
+      {
+        "id": "PERSON-7",
+        "name": "Marco Silva",
+        "entity_class": "person",
+        "description": "A versatile rider known for his consistency across varied terrain and strong tactical sense.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-04-02",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Marco Silva finished just behind Marcellus Vane in Stage\u202f1 of the Northvale Tour.",
+            "date": "2025-04-02"
+          }
+        ],
+        "date_of_birth": "1991-12-03",
+        "gender": "male",
+        "profession": "all\u2011rounder professional cyclist",
+        "nationality": "Portara",
+        "education": "Master of Sports Management Portara Academy",
+        "height": "1.82 m",
+        "weight": "71 kg",
+        "eye_color": "gray",
+        "hair_color": "dark black",
+        "marital_status": "married",
+        "spouse": "Clara Mendes",
+        "political_affiliation": "Centrist Alliance"
+      }
+    ],
+    "ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Crestford Velocity Pro Cycling",
+        "entity_class": "organization",
+        "description": "A professional road\u2011cycling team competing in WorldTour events.",
+        "type": "company",
+        "created_at": 0,
+        "last_updated": "2025-04-02",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Crestford Velocity Pro Cycling announced the signing of Marcellus Vane, a new sponsorship with Helix AeroTech supplying AeroBlade frames and aero helmets, and debuted a teal\u2011white kit for the Northvale Tour.",
+            "date": "2025-04-02"
+          }
+        ],
+        "founded": "2010",
+        "headquarters": "Crestford",
+        "industry": "sports & entertainment",
+        "mission_statement": "To combine athletic excellence with innovative technology to inspire the next generation of cyclists.",
+        "number_of_employees": "78",
+        "annual_revenue": "USD 12.4 million"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Apex Rivet Squad",
+        "entity_class": "organization",
+        "description": "A former WorldTour squad known for its aggressive racing style.",
+        "type": "company",
+        "created_at": 0,
+        "last_updated": "2025-04-02",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Apex Rivet Squad is noted as Marcellus Vane\u2019s former team before his 2022 retirement.",
+            "date": "2025-04-02"
+          }
+        ],
+        "founded": "2005",
+        "headquarters": "Rivetton",
+        "industry": "sports & entertainment",
+        "mission_statement": "To push the limits of performance through relentless competition and teamwork.",
+        "number_of_employees": "64",
+        "annual_revenue": "USD 9.8 million"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Helix AeroTech",
+        "entity_class": "organization",
+        "description": "A mid\u2011size engineering firm specializing in aerodynamic components for high\u2011performance sports equipment.",
+        "type": "company",
+        "created_at": 0,
+        "last_updated": "2025-04-02",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Helix AeroTech secured a sponsorship agreement with Crestford Velocity Pro Cycling, providing the new AeroBlade carbon\u2011fiber frames and telemetry\u2011integrated helmets for the 2025 season.",
+            "date": "2025-04-02"
+          }
+        ],
+        "founded": "2014",
+        "headquarters": "Helix City",
+        "industry": "advanced manufacturing",
+        "mission_statement": "To revolutionize athletic performance through cutting\u2011edge aerodynamics and materials science.",
+        "number_of_employees": "112",
+        "annual_revenue": "USD 23.1 million"
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "Riven Vale Cycling Center",
+        "entity_class": "organization",
+        "description": "A high\u2011altitude training facility providing coaching and scientific support to elite cyclists.",
+        "type": "non-profit",
+        "created_at": 0,
+        "last_updated": "2025-04-02",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Riven Vale Cycling Center hosted Marcellus Vane\u2019s pre\u2011season altitude training camp starting 20\u202fMarch\u202f2025, with daily sessions led by Dr. Mira Patel.",
+            "date": "2025-04-02"
+          }
+        ],
+        "founded": "2018",
+        "headquarters": "Valebrook",
+        "industry": "sports training & development",
+        "mission_statement": "To enhance athlete performance through science\u2011based altitude training programs.",
+        "number_of_employees": "27",
+        "annual_revenue": "USD 1.4 million"
+      },
+      {
+        "id": "ORGANIZATION-5",
+        "name": "Alveron Cycling Federation",
+        "entity_class": "organization",
+        "description": "The national governing body overseeing competitive cycling and rider development.",
+        "type": "government agency",
+        "created_at": 0,
+        "last_updated": "2025-04-02",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Alveron Cycling Federation issued a statement supporting Marcellus Vane\u2019s return, aligning with its Renewed Talent initiative.",
+            "date": "2025-04-02"
+          }
+        ],
+        "founded": "1992",
+        "headquarters": "Alveron",
+        "industry": "sports governance",
+        "mission_statement": "To promote fair safe and inclusive cycling across all levels of competition.",
+        "number_of_employees": "85",
+        "annual_revenue": "USD 6.3 million"
+      }
+    ],
+    "LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Brookfield",
+        "entity_class": "location",
+        "description": "A midsized riverfront city known for its blend of historic brick warehouses and modern tech parks.",
+        "type": "city",
+        "created_at": 0,
+        "last_updated": "2025-04-02",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Brookfield served as the location of the live webcast where Marcellus Vane announced his return to Crestford Velocity Pro Cycling.",
+            "date": "2025-04-02"
+          }
+        ],
+        "population": "87542",
+        "area": "112 km\u00b2",
+        "elevation": "210 m",
+        "country": "Valoria"
+      }
+    ],
+    "PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "AeroBlade",
+        "entity_class": "product",
+        "description": "A lightweight carbon\u2011fiber road bike frame engineered for optimal aerodynamic efficiency.",
+        "type": "consumer good",
+        "created_at": 0,
+        "last_updated": "2025-04-02",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The AeroBlade carbon\u2011fiber frame is being supplied to Crestford Velocity Pro Cycling for the 2025 season under the new sponsorship.",
+            "date": "2025-04-02"
+          }
+        ],
+        "manufacturer": "Helix AeroTech",
+        "release_date": "2024-09-01",
+        "price": "USD 4200",
+        "weight": "850 g",
+        "warranty": "5 years"
+      }
+    ],
+    "ART": [],
+    "BUILDING": [],
+    "EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "Alpine Classic",
+        "entity_class": "event",
+        "description": "An annual one\u2011day mountain race that covers challenging alpine passes.",
+        "type": "sporting",
+        "created_at": 0,
+        "last_updated": "2025-04-02",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Alpine Classic was the site of Marcellus Vane\u2019s season\u2011ending crash in 2022 that led to his retirement.",
+            "date": "2025-04-02"
+          }
+        ],
+        "date": "2023-09-12",
+        "duration": "6 hours",
+        "organizer": "Alpine Sports Association",
+        "number_of_participants": "115",
+        "budget": "USD 750000"
+      },
+      {
+        "id": "EVENT-2",
+        "name": "Northvale Tour",
+        "entity_class": "event",
+        "description": "A week\u2011long stage race across the rolling hills and coastal roads of Northvale.",
+        "type": "sporting",
+        "created_at": 0,
+        "last_updated": "2025-04-02",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Northvale Tour featured Marcellus Vane as team leader for Crestford in Stage\u202f1, where he finished fourth, 12 seconds behind the winner.",
+            "date": "2025-04-02"
+          }
+        ],
+        "date": "2025-05-03 to 2025-05-09",
+        "duration": "7 days",
+        "organizer": "Valoria Cycling Committee",
+        "number_of_participants": "22 teams",
+        "budget": "USD 2.3 million"
+      }
+    ],
+    "MISCELLANEOUS": [
+      {
+        "id": "MISCELLANEOUS-1",
+        "name": "Renewed Talent",
+        "entity_class": "miscellaneous",
+        "description": "An initiative encouraging retired athletes to return to professional competition.",
+        "type": "concept",
+        "created_at": 0,
+        "last_updated": "2025-04-02",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Renewed Talent is the initiative cited by the Alveron Cycling Federation in supporting veteran riders like Marcellus Vane returning to competition.",
+            "date": "2025-04-02"
+          }
+        ]
+      }
+    ],
+    "PERSONS_XML": "<person><created_at>0</created_at><date_of_birth>1990-06-15</date_of_birth><description>A determined former Grand Tour podium finisher who values mentorship and strategic teamwork.</description><education>Bachelor of Sports Science Valoria University</education><entity_class>person</entity_class><eye_color>steel gray</eye_color><gender>male</gender><hair_color>dark brown</hair_color><height>1.84 m</height><history><event>2025-04-02: Marcellus Vane announced his comeback to professional cycling by signing a two\u2011year contract with Crestford Velocity Pro Cycling, becoming the team\u2019s road captain.</event></history><id>PERSON-1</id><last_updated>2025-04-02</last_updated><marital_status>single</marital_status><name>Marcellus Vane</name><nationality>Valoria</nationality><political_affiliation>Independent</political_affiliation><profession>professional cyclist (road captain)</profession><type>None</type><weight>72 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>1985-03-22</date_of_birth><description>A pragmatic leader known for her data\u2011driven approach to race tactics and athlete development.</description><education>MBA in Sports Management Caledonian Institute of Business</education><entity_class>person</entity_class><eye_color>hazel</eye_color><gender>female</gender><hair_color>auburn</hair_color><height>1.68 m</height><history><event>2025-04-02: Lena Roques, the manager of Crestford Velocity Pro Cycling, confirmed Vane\u2019s signing and highlighted his role in strengthening the squad for the Northvale Tour.</event></history><id>PERSON-2</id><last_updated>2025-04-02</last_updated><marital_status>married</marital_status><name>Lena Roques</name><nationality>Caledonia</nationality><political_affiliation>Progressive Alliance</political_affiliation><profession>team manager</profession><spouse>Eric Dalmont</spouse><type>None</type><weight>58 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>1994-11-08</date_of_birth><description>A fast\u2011twitch sprinter whose aggressive style makes him a constant threat in flat finishes.</description><education>Diploma in Exercise Physiology Eastoria Technical College</education><entity_class>person</entity_class><eye_color>green</eye_color><gender>male</gender><hair_color>light blond</hair_color><height>1.78 m</height><history><event>2025-04-02: Jacek Novak is slated to be mentored by Marcellus Vane during the mountainous stages of the Northvale Tour.</event></history><id>PERSON-3</id><last_updated>2025-04-02</last_updated><marital_status>engaged</marital_status><name>Jacek Novak</name><nationality>Eastoria</nationality><political_affiliation>Centrist Union</political_affiliation><profession>sprinter professional cyclist</profession><spouse>Anna Kowalska</spouse><type>None</type><weight>68 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>1979-02-14</date_of_birth><description>A meticulous researcher specializing in altitude training adaptations and metabolic efficiency.</description><education>PhD in Human Performance Silvaria Institute of Sports Science</education><entity_class>person</entity_class><eye_color>brown</eye_color><gender>female</gender><hair_color>black</hair_color><height>1.63 m</height><history><event>2025-04-02: Dr. Mira Patel oversaw the altitude training sessions for Marcellus Vane at the Riven Vale Cycling Center.</event></history><id>PERSON-4</id><last_updated>2025-04-02</last_updated><marital_status>married</marital_status><name>Dr. Mira Patel</name><nationality>Silvaria</nationality><political_affiliation>Green Initiative</political_affiliation><profession>sports scientist</profession><spouse>Rohan Patel</spouse><type>None</type><weight>55 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>1992-09-30</date_of_birth><description>A precision\u2011focused rider who excels in solo efforts against the clock.</description><education>Bachelor of Mechanical Engineering Marintia University</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>male</gender><hair_color>dark brown</hair_color><height>1.80 m</height><history><event>2025-04-02: Luis Ortega was named to the Crestford roster for Stage\u202f1 of the Northvale Tour alongside Marcellus Vane.</event></history><id>PERSON-5</id><last_updated>2025-04-02</last_updated><marital_status>single</marital_status><name>Luis Ortega</name><nationality>Marintia</nationality><political_affiliation>Libertarian Front</political_affiliation><profession>time\u2011trial specialist professional cyclist</profession><type>None</type><weight>70 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>1996-07-19</date_of_birth><description>A reliable team player praised for her tireless work on the front of the peloton.</description><education>Associate Degree in Sports Coaching Brookfield Community College</education><entity_class>person</entity_class><eye_color>amber</eye_color><gender>female</gender><hair_color>auburn</hair_color><height>1.71 m</height><history><event>2025-04-02: Sofia Martel joined the Crestford lineup for Stage\u202f1 of the Northvale Tour, wearing the new teal\u2011white kit.</event></history><id>PERSON-6</id><last_updated>2025-04-02</last_updated><marital_status>single</marital_status><name>Sofia Martel</name><nationality>Valoria</nationality><political_affiliation>Social Democratic Party</political_affiliation><profession>domestique professional cyclist</profession><type>None</type><weight>60 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>1991-12-03</date_of_birth><description>A versatile rider known for his consistency across varied terrain and strong tactical sense.</description><education>Master of Sports Management Portara Academy</education><entity_class>person</entity_class><eye_color>gray</eye_color><gender>male</gender><hair_color>dark black</hair_color><height>1.82 m</height><history><event>2025-04-02: Marco Silva finished just behind Marcellus Vane in Stage\u202f1 of the Northvale Tour.</event></history><id>PERSON-7</id><last_updated>2025-04-02</last_updated><marital_status>married</marital_status><name>Marco Silva</name><nationality>Portara</nationality><political_affiliation>Centrist Alliance</political_affiliation><profession>all\u2011rounder professional cyclist</profession><spouse>Clara Mendes</spouse><type>None</type><weight>71 kg</weight></person>",
+    "ORGANIZATIONS_XML": "<organization><annual_revenue>USD 12.4 million</annual_revenue><created_at>0</created_at><description>A professional road\u2011cycling team competing in WorldTour events.</description><entity_class>organization</entity_class><founded>2010</founded><headquarters>Crestford</headquarters><history><event>2025-04-02: Crestford Velocity Pro Cycling announced the signing of Marcellus Vane, a new sponsorship with Helix AeroTech supplying AeroBlade frames and aero helmets, and debuted a teal\u2011white kit for the Northvale Tour.</event></history><id>ORGANIZATION-1</id><industry>sports & entertainment</industry><last_updated>2025-04-02</last_updated><mission_statement>To combine athletic excellence with innovative technology to inspire the next generation of cyclists.</mission_statement><name>Crestford Velocity Pro Cycling</name><number_of_employees>78</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>USD 9.8 million</annual_revenue><created_at>0</created_at><description>A former WorldTour squad known for its aggressive racing style.</description><entity_class>organization</entity_class><founded>2005</founded><headquarters>Rivetton</headquarters><history><event>2025-04-02: Apex Rivet Squad is noted as Marcellus Vane\u2019s former team before his 2022 retirement.</event></history><id>ORGANIZATION-2</id><industry>sports & entertainment</industry><last_updated>2025-04-02</last_updated><mission_statement>To push the limits of performance through relentless competition and teamwork.</mission_statement><name>Apex Rivet Squad</name><number_of_employees>64</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>USD 23.1 million</annual_revenue><created_at>0</created_at><description>A mid\u2011size engineering firm specializing in aerodynamic components for high\u2011performance sports equipment.</description><entity_class>organization</entity_class><founded>2014</founded><headquarters>Helix City</headquarters><history><event>2025-04-02: Helix AeroTech secured a sponsorship agreement with Crestford Velocity Pro Cycling, providing the new AeroBlade carbon\u2011fiber frames and telemetry\u2011integrated helmets for the 2025 season.</event></history><id>ORGANIZATION-3</id><industry>advanced manufacturing</industry><last_updated>2025-04-02</last_updated><mission_statement>To revolutionize athletic performance through cutting\u2011edge aerodynamics and materials science.</mission_statement><name>Helix AeroTech</name><number_of_employees>112</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>USD 1.4 million</annual_revenue><created_at>0</created_at><description>A high\u2011altitude training facility providing coaching and scientific support to elite cyclists.</description><entity_class>organization</entity_class><founded>2018</founded><headquarters>Valebrook</headquarters><history><event>2025-04-02: Riven Vale Cycling Center hosted Marcellus Vane\u2019s pre\u2011season altitude training camp starting 20\u202fMarch\u202f2025, with daily sessions led by Dr. Mira Patel.</event></history><id>ORGANIZATION-4</id><industry>sports training & development</industry><last_updated>2025-04-02</last_updated><mission_statement>To enhance athlete performance through science\u2011based altitude training programs.</mission_statement><name>Riven Vale Cycling Center</name><number_of_employees>27</number_of_employees><type>non-profit</type></organization>\n<organization><annual_revenue>USD 6.3 million</annual_revenue><created_at>0</created_at><description>The national governing body overseeing competitive cycling and rider development.</description><entity_class>organization</entity_class><founded>1992</founded><headquarters>Alveron</headquarters><history><event>2025-04-02: Alveron Cycling Federation issued a statement supporting Marcellus Vane\u2019s return, aligning with its Renewed Talent initiative.</event></history><id>ORGANIZATION-5</id><industry>sports governance</industry><last_updated>2025-04-02</last_updated><mission_statement>To promote fair safe and inclusive cycling across all levels of competition.</mission_statement><name>Alveron Cycling Federation</name><number_of_employees>85</number_of_employees><type>government agency</type></organization>",
+    "LOCATIONS_XML": "<location><area>112 km\u00b2</area><country>Valoria</country><created_at>0</created_at><description>A midsized riverfront city known for its blend of historic brick warehouses and modern tech parks.</description><elevation>210 m</elevation><entity_class>location</entity_class><history><event>2025-04-02: Brookfield served as the location of the live webcast where Marcellus Vane announced his return to Crestford Velocity Pro Cycling.</event></history><id>LOCATION-1</id><last_updated>2025-04-02</last_updated><name>Brookfield</name><population>87542</population><type>city</type></location>",
+    "PRODUCTS_XML": "<product><created_at>0</created_at><description>A lightweight carbon\u2011fiber road bike frame engineered for optimal aerodynamic efficiency.</description><entity_class>product</entity_class><history><event>2025-04-02: The AeroBlade carbon\u2011fiber frame is being supplied to Crestford Velocity Pro Cycling for the 2025 season under the new sponsorship.</event></history><id>PRODUCT-1</id><last_updated>2025-04-02</last_updated><manufacturer>Helix AeroTech</manufacturer><name>AeroBlade</name><price>USD 4200</price><release_date>2024-09-01</release_date><type>consumer good</type><warranty>5 years</warranty><weight>850 g</weight></product>",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "",
+    "EVENTS_XML": "<event><budget>USD 750000</budget><created_at>0</created_at><date>2023-09-12</date><description>An annual one\u2011day mountain race that covers challenging alpine passes.</description><duration>6 hours</duration><entity_class>event</entity_class><history><event>2025-04-02: The Alpine Classic was the site of Marcellus Vane\u2019s season\u2011ending crash in 2022 that led to his retirement.</event></history><id>EVENT-1</id><last_updated>2025-04-02</last_updated><name>Alpine Classic</name><number_of_participants>115</number_of_participants><organizer>Alpine Sports Association</organizer><type>sporting</type></event>\n<event><budget>USD 2.3 million</budget><created_at>0</created_at><date>2025-05-03 to 2025-05-09</date><description>A week\u2011long stage race across the rolling hills and coastal roads of Northvale.</description><duration>7 days</duration><entity_class>event</entity_class><history><event>2025-04-02: The Northvale Tour featured Marcellus Vane as team leader for Crestford in Stage\u202f1, where he finished fourth, 12 seconds behind the winner.</event></history><id>EVENT-2</id><last_updated>2025-04-02</last_updated><name>Northvale Tour</name><number_of_participants>22 teams</number_of_participants><organizer>Valoria Cycling Committee</organizer><type>sporting</type></event>",
+    "MISCELLANEOUSS_XML": "<miscellaneous><created_at>0</created_at><description>An initiative encouraging retired athletes to return to professional competition.</description><entity_class>miscellaneous</entity_class><history><event>2025-04-02: Renewed Talent is the initiative cited by the Alveron Cycling Federation in supporting veteran riders like Marcellus Vane returning to competition.</event></history><id>MISCELLANEOUS-1</id><last_updated>2025-04-02</last_updated><name>Renewed Talent</name><type>concept</type></miscellaneous>",
+    "NUM_STORYITEMS": 10,
+    "HISTORY_XML": "<event><date>2025-04-02</date><outline>{Marcellus Vane|PERSON-1} announced on 2025-04-01 that he will join {Crestford Velocity Pro Cycling|ORGANIZATION-1} under manager {Lena Roques|PERSON-2}. The announcement was made during a live webcast from {Crestford Velocity Pro Cycling|ORGANIZATION-1}\u2019s headquarters in {Brookfield|LOCATION-1}, and a press release highlighted {Marcellus Vane|PERSON-1}\u2019s three Grand Tour podiums. {Marcellus Vane|PERSON-1} retired from professional cycling in 2022 after competing for {Apex Rivet Squad|ORGANIZATION-2}. {Marcellus Vane|PERSON-1}\u2019s 2022 retirement followed a season\u2011ending crash at the {Alpine Classic|EVENT-1}, after which he completed a year\u2011long rehabilitation. {Marcellus Vane|PERSON-1} cited improved team dynamics at {Crestford Velocity Pro Cycling|ORGANIZATION-1} as a primary reason for his return. He specifically praised the team\u2019s collaborative race\u2011strategy meetings and the integration of data\u2011driven performance analytics. {Lena Roques|PERSON-2} said that {Marcellus Vane|PERSON-1}\u2019s addition strengthens {Crestford Velocity Pro Cycling|ORGANIZATION-1}\u2019s depth for the upcoming {Northvale Tour|EVENT-2}. {Lena Roques|PERSON-2} added that {Marcellus Vane|PERSON-1}\u2019s experience will mentor younger riders, particularly sprinter {Jacek Novak|PERSON-3}, during the tour\u2019s mountainous stages. {Marcellus Vane|PERSON-1} signed a two\u2011year contract with {Crestford Velocity Pro Cycling|ORGANIZATION-1} that designates him as road captain. The contract includes a performance bonus tied to achieving a top\u201110 finish in any WorldTour event during the 2025 season. {Crestford Velocity Pro Cycling|ORGANIZATION-1} announced a sponsorship agreement with {Helix AeroTech|ORGANIZATION-3} that will provide upgraded bicycles and gear for the 2025 season. {Helix AeroTech|ORGANIZATION-3} will supply the team with its new \u201c{AeroBlade|PRODUCT-1}\u201d carbon\u2011fiber frames and custom\u2011fitted aero helmets featuring integrated telemetry. {Marcellus Vane|PERSON-1} began a pre\u2011season training camp at {Riven Vale Cycling Center|ORGANIZATION-4} on 2025-03-20. The {Riven Vale Cycling Center|ORGANIZATION-4}\u2019s altitude of 1,200 meters was chosen to enhance {Marcellus Vane|PERSON-1}\u2019s VO\u2082 max, and the camp featured daily sessions with sports scientist {Dr. Mira Patel|PERSON-4}. {Alveron Cycling Federation|ORGANIZATION-5} issued a statement supporting {Marcellus Vane|PERSON-1}\u2019s return to competition with {Crestford Velocity Pro Cycling|ORGANIZATION-1}. The federation\u2019s statement emphasized that {Marcellus Vane|PERSON-1}\u2019s return aligns with its \u201c{Renewed Talent|MISCELLANEOUS-1}\u201d initiative aimed at encouraging veteran athletes to re\u2011enter competition. {Crestford Velocity Pro Cycling|ORGANIZATION-1} entered the {Northvale Tour|EVENT-2} with {Marcellus Vane|PERSON-1} listed as the team leader for Stage\u202f1. The team\u2019s roster for Stage\u202f1 also includes time\u2011trial specialist {Luis Ortega|PERSON-5} and domestique {Sofia Martel|PERSON-6}, all wearing the new teal\u2011white kit. {Marcellus Vane|PERSON-1} finished fourth in Stage\u202f1 of the {Northvale Tour|EVENT-2}, showing immediate competitiveness. {Marcellus Vane|PERSON-1} finished 12 seconds behind the stage winner, with a strong sprint finish that placed him ahead of former teammate {Marco Silva|PERSON-7}.</outline></event>"
+  }
+}

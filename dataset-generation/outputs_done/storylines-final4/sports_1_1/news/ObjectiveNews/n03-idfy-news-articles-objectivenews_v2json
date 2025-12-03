@@ -1,0 +1,323 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "openai/gpt-oss-120b",
+    "temperature": 0.0,
+    "max-tokens": 8000
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "<results>\n<news>\n<passage>Dr. {Lina Ortiz|PERSON-4}, the sports\u2011medicine physician who works with the {Rivergate Rivets Women\u2019s Basketball Club|ORGANIZATION-1}, announced at the {Rivergate Sports Complex|BUILDING-1} on October\u202f25, 2025, that veteran shooting guard {Maya Torres|PERSON-3} has successfully completed a three\u2011week ankle rehabilitation program. The protocol combined aquatic therapy, proprioceptive drills, and weekly ultrasound assessments, all detailed in a medical report presented by Dr. {Ortiz|PERSON-4} during the press conference.</passage>\n<passage>Following the medical clearance, Coach {Dana Loris|PERSON-2} held a press conference at the same venue, confirming {Torres|PERSON-3} is medically cleared, is expected to play full minutes, and will start in the upcoming season opener on November\u202f5, 2025. \u201c{Maya Torres|PERSON-3}\u2019s conditioning metrics are back to pre\u2011injury levels, and we anticipate she will log at least 30 minutes in the game while the team executes our high\u2011tempo offense,\u201d {Loris|PERSON-2} said, citing the latest GPS and heart\u2011rate data. The {Rivets|ORGANIZATION-1} have updated their roster to list {Torres|PERSON-3} in the starting lineup, ticket sales have already reached 2,800 of the arena\u2019s 3,200 capacity, and the matchup will be broadcast live on {Valoria Sports Network|ORGANIZATION-7} with a pre\u2011game analysis segment focusing on her return.</passage>\n<passage>Communications Director {Sofia Marquez|PERSON-6} also announced a fan meet\u2011and\u2011greet with {Torres|PERSON-3} at the {Rivergate Community Center|BUILDING-2} on November\u202f3. Attendees will have the opportunity to purchase a limited\u2011edition Rise Together jersey bearing {Torres|PERSON-3}\u2019s signature, further energizing the community ahead of the highly anticipated opening game.</passage>\n</news>\n</results>"
+  },
+  "response": "<results>\n<news>\n<passage>Dr. {Lina Ortiz|PERSON-4}, the sports\u2011medicine physician who works with the {Rivergate Rivets Women\u2019s Basketball Club|ORGANIZATION-1}, announced at the {Rivergate Sports Complex|BUILDING-1} on October\u202f25, 2025, that veteran shooting guard {Maya Torres|PERSON-3} has successfully completed a three\u2011week ankle rehabilitation program. The protocol combined aquatic therapy, proprioceptive drills, and weekly ultrasound assessments, all detailed in a medical report presented by Dr. {Ortiz|PERSON-4} during the press conference.</passage>\n<passage>Following the medical clearance, Coach {Dana Loris|PERSON-2} held a press conference at the same venue, confirming {Torres|PERSON-3} is medically cleared, is expected to play full minutes, and will start in the upcoming season opener on November\u202f5, 2025. \u201c{Maya Torres|PERSON-3}\u2019s conditioning metrics are back to pre\u2011injury levels, and we anticipate she will log at least 30 minutes in the game while the team executes our high\u2011tempo offense,\u201d {Loris|PERSON-2} said, citing the latest GPS and heart\u2011rate data. The {Rivets|ORGANIZATION-1} have updated their roster to list {Torres|PERSON-3} in the starting lineup, ticket sales have already reached 2,800 of the arena\u2019s 3,200 capacity, and the matchup will be broadcast live on {Valoria Sports Network|ORGANIZATION-7} with a pre\u2011game analysis segment focusing on her return.</passage>\n<passage>Communications Director {Sofia Marquez|PERSON-6} also announced a fan meet\u2011and\u2011greet with {Torres|PERSON-3} at the {Rivergate Community Center|BUILDING-2} on November\u202f3. Attendees will have the opportunity to purchase a limited\u2011edition Rise Together jersey bearing {Torres|PERSON-3}\u2019s signature, further energizing the community ahead of the highly anticipated opening game.</passage>\n</news>\n</results>",
+  "instructions": "You are an AI assistant tasked with processing news passages by identifying and marking named entities. Follow these instructions carefully:\n\nFirst, review the list of fictional named entities provided below:\n\n<entities>\n<LOCATIONS>\n{{USED_LOCATIONS_XML}}\n</LOCATIONS>\n\n<PERSONS>\n{{USED_PERSONS_XML}}\n</PERSONS>\n\n<ORGANIZATIONS>\n{{USED_ORGANIZATIONS_XML}}\n</ORGANIZATIONS>\n\n<PRODUCTS>\n{{USED_PRODUCTS_XML}}\n</PRODUCTS>\n\n<ARTS>\n{{USED_ARTS_XML}}\n</ARTS>\n\n<EVENTS>\n{{USED_EVENTS_XML}}\n</EVENTS>\n\n<BUILDINGS>\n{{USED_BUILDINGS_XML}}\n</BUILDINGS>\n\n<MISCELLANEOUS>\n{{USED_MISCELLANEOUSS_XML}}\n</MISCELLANEOUS>\n</entities>\n\nNext, you will process the following news article passages:\n\n<passages>\n{{PASSAGES_XML}}\n</passages>\n\nYour task is to process these passages by following these steps:\n\n1. Carefully review the list of entities provided in the <entities> section. Each entity will have an associated ID.\n\n2. Search the passages for all occurrences of each entity in the list.\n\n3. For each occurrence found, replace it with the format: {phrase|ID}\n   Where \"phrase\" is exactly how the entity appears in the text (maintaining any abbreviations or variations), and \"ID\" is the entity's identifier from the entities list.\n\n4. Maintain the original structure and formatting of the passages, only changing the entities as described.\n\n5. After processing all entities, review the entire passage to ensure all occurrences have been properly marked and no entities were missed.\n\n6. Output the processed passages, maintaining its original structure but with all entity occurrences replaced as instructed.\n\nImportant points to remember:\n- Be thorough in your search for entities, including variations or partial mentions.\n- Preserve the original text exactly as it appears, only adding the entity markup.\n- Keep the COMPLETE ORIGINAL phrase that you are replacing with {phrase|ID}. The sentence should be identical to how it was before, except for the added markup.\n- If an entity is referred to by full name, the \"phrase\" is the full name.\n- If an entity is referred to by an abbreviation, the \"phrase\" is the used abbreviation.\n- If an entity is referred to using parts of the full name, then the \"phrase\" would be the same parts of the full name.\n\nExamples:\n1. \"Renowned novelist Elara Vance and celebrated philanthropist Rohan Kapoor exchanged vows.\" \n   Should be replaced with:\n   \"Renowned novelist {Elara Vance|PERSON-1} and celebrated philanthropist {Rohan Kapoor|PERSON-2} exchanged vows.\"\n   (When Elara Vance has ID PERSON-1 and Rohan Kapoor has ID PERSON-2)\n\n2. \"Renowned novelist Elara and celebrated philanthropist R. Kapoor exchanged vows.\" \n   Should be replaced with:\n   \"Renowned novelist {Elara|PERSON-1} and celebrated philanthropist {R. Kapoor|PERSON-2} exchanged vows.\"\n\n3. \"Anna Peters told Tim that he should stop talking.\"\n   should be written as:\n   \"{Anna Peters|PERSON-3} told {Tim|PERSON-4} that {he|PERSON-4} should stop talking.\"\n   (When Anna Peters has ID PERSON-3 and Tim Laurens has ID PERSON-4 and is referred to here)\n\nIf multiple entities are referred to by the same word, use this format:\n\"{Both|PERSON-3,PERSON-4} liked the chocolate.\"\n\nFormat your output as follows:\n- Enclose the entire processed news within <news> tags.\n- Place each passage of the outline within separate <passage> tags.\n\nProvide your final output without any additional commentary or explanations. Focus solely on processing the outline as instructed.\n\nProvide all output in an overall <results> root node.",
+  "text_prompt": "You are an AI assistant tasked with processing news passages by identifying and marking named entities. Follow these instructions carefully:\n\nFirst, review the list of fictional named entities provided below:\n\n<entities>\n<LOCATIONS>\n\n</LOCATIONS>\n\n<PERSONS>\n<person><created_at>0</created_at><date_of_birth>1982-09-23</date_of_birth><description>Dana Loris is a strategic thinker who emphasizes player development and team cohesion above all.</description><education>Master\u2019s in Athletic Coaching Meridian Institute of Sports</education><entity_class>person</entity_class><eye_color>Blue</eye_color><gender>Male</gender><hair_color>Dark Brown</hair_color><height>185 cm</height><history>[{'created_at': 0, 'event_update': 'Coach Dana Loris discussed Finch\u2019s extension and the incentive clause at a press conference held in the Rivergate Sports Complex.', 'date': '2025-03-15'}, {'created_at': 1, 'event_update': 'Coach Dana Loris attended the April\\u202f5 launch ceremony for the Rise Together jersey at Sundara Sportswear\u2019s flagship store.', 'date': '2025-04-05'}, {'created_at': 2, 'event_update': 'Coach Dana Loris decided not to activate rookie reserve Leila Kade, keeping her on the bench despite reduced minutes for Maya Torres.', 'date': '2025-10-04'}, {'created_at': 3, 'event_update': 'Coach Dana Loris stated at a press conference in the Rivergate Sports Complex that Maya Torres is medically cleared and will be in the starting lineup for the season opener.', 'date': '2025-10-25'}]</history><id>PERSON-2</id><last_updated>2025-03-15</last_updated><marital_status>Married</marital_status><name>Dana Loris</name><nationality>Valoria</nationality><political_affiliation>Independent</political_affiliation><profession>Basketball head coach</profession><type>None</type></person>\n<person><created_at>0</created_at><date_of_birth>1990-02-05</date_of_birth><description>Maya Torres brings veteran leadership and a clutch shooting ability cultivated over a decade of professional play.</description><education>High School Diploma Lakeside Regional High</education><entity_class>person</entity_class><eye_color>Green</eye_color><gender>Female</gender><hair_color>Black</hair_color><height>175 cm</height><history>[{'created_at': 0, 'event_update': 'Veteran guard Maya Torres was signed by the Rivergate Rivets from the Lakeside Lynx, using the cap space freed by Finch\u2019s reduced salary.', 'date': '2025-03-15'}, {'created_at': 2, 'event_update': 'Maya Torres suffered a bruised left ankle during the game, was diagnosed with a grade\u2011I contusion, and will have her playing minutes limited to twelve per quarter for the remainder of the opening month.', 'date': '2025-10-04'}, {'created_at': 3, 'event_update': 'Maya Torres completed her ankle rehabilitation program on 2025-10-25 and was confirmed in the starting lineup for the season opener on 2025-11-05, with a fan meet\u2011and\u2011greet scheduled for 2025-11-03.', 'date': '2025-10-25'}]</history><id>PERSON-3</id><last_updated>2025-03-15</last_updated><name>Maya Torres</name><nationality>Valoria</nationality><profession>Veteran shooting guard, Rivergate Rivets</profession><spouse>Javier Torres</spouse><type>None</type><weight>68 kg</weight></person>\n<person><created_at>2</created_at><date_of_birth>1988-07-14</date_of_birth><description>Lina Ortiz is a meticulous physician known for her data\u2011driven approach to injury prevention and athlete recovery.</description><education>MD in Sports Medicine, Valoria University of Health Sciences</education><entity_class>person</entity_class><eye_color>Brown</eye_color><gender>Female</gender><hair_color>Black</hair_color><height>167 cm</height><history>[{'created_at': 2, 'event_update': 'Team physician Dr. Lina Ortiz performed a bedside ultrasound confirming no ligament tear and administered initial treatment to Maya Torres.', 'date': '2025-10-04'}, {'created_at': 3, 'event_update': 'Dr. Lina Ortiz announced Maya Torres\u2019s successful completion of her ankle rehabilitation program on 2025-10-25 and presented the detailed medical report at the Rivergate Sports Complex.', 'date': '2025-10-25'}]</history><id>PERSON-4</id><last_updated>2025-10-04</last_updated><marital_status>Married</marital_status><name>Lina Ortiz</name><nationality>Valoria</nationality><profession>Sports Medicine Physician</profession><spouse>Carlos Ortiz</spouse><type>None</type><weight>60 kg</weight></person>\n<person><created_at>2</created_at><date_of_birth>1990-11-05</date_of_birth><description>Sofia Marquez is a strategic communicator celebrated for her clarity, empathy, and ability to rally community support.</description><education>Master\u2019s in Public Relations, Sunvale Institute of Media</education><entity_class>person</entity_class><eye_color>Green</eye_color><gender>Female</gender><hair_color>Auburn</hair_color><height>162 cm</height><history>[{'created_at': 2, 'event_update': 'Communications Director Sofia Marquez announced that a portion of the net proceeds from the Rise Together jersey campaign will be allocated to support Maya Torres\u2019s rehabilitation program.', 'date': '2025-10-04'}, {'created_at': 3, 'event_update': 'Communications Director Sofia Marquez issued a media release confirming Maya Torres\u2019s inclusion in the starting lineup and announced a fan meet\u2011and\u2011greet at the Rivergate Community Center on 2025-11-03 featuring a limited\u2011edition Rise Together jersey.', 'date': '2025-10-25'}]</history><id>PERSON-6</id><last_updated>2025-10-04</last_updated><marital_status>Single</marital_status><name>Sofia Marquez</name><nationality>Valoria</nationality><profession>Communications Director</profession><type>None</type><weight>58 kg</weight></person>\n</PERSONS>\n\n<ORGANIZATIONS>\n<organization><annual_revenue>$1.2 million</annual_revenue><created_at>0</created_at><description>The Rivergate Rivets are a community\u2011focused women\u2019s basketball team competing in the national league.</description><entity_class>organization</entity_class><founded>2013</founded><headquarters>Rivergate</headquarters><history>[{'created_at': 0, 'event_update': 'The Rivergate Rivets finalized Finch\u2019s contract extension and allocated the resulting cap savings to acquire Maya Torres before the season opener.', 'date': '2025-03-15'}, {'created_at': 1, 'event_update': 'The Rivergate Rivets Women\u2019s Basketball Club announced that all net proceeds from the Rise Together jersey sales will fund a free community basketball clinic in Rivergate in June\\u202f2025.', 'date': '2025-04-05'}, {'created_at': 2, 'event_update': 'The Rivergate Rivets Women\u2019s Basketball Club issued an official statement confirming the injury protocol for Maya Torres and highlighted the jersey\u2011sale proceeds supporting her recovery.', 'date': '2025-10-04'}, {'created_at': 3, 'event_update': 'The Rivergate Rivets Women\u2019s Basketball Club released an official roster update confirming Maya Torres will start in the season opener and promoted the upcoming fan meet\u2011and\u2011greet and Rise Together jersey.', 'date': '2025-10-25'}]</history><id>ORGANIZATION-1</id><industry>Sports entertainment</industry><last_updated>2025-03-15</last_updated><mission_statement>Promote women\u2019s athletics through competitive excellence and local engagement.</mission_statement><name>Rivergate Rivets Women's Basketball Club</name><number_of_employees>48</number_of_employees><type>sports club</type></organization>\n<organization><annual_revenue>$12 million</annual_revenue><created_at>3</created_at><description>A regional broadcast network delivering live and recorded sports programming to viewers across Valoria.</description><entity_class>organization</entity_class><founded>2010</founded><headquarters>Eldor</headquarters><history>[{'created_at': 3, 'event_update': 'Valoria Sports Network will broadcast the season opener live, featuring a pre\u2011game analysis segment on Maya Torres\u2019s return.', 'date': '2025-10-25'}]</history><id>ORGANIZATION-7</id><industry>Broadcasting</industry><last_updated>2025-10-25</last_updated><mission_statement>Provide comprehensive high\u2011quality sports coverage that inspires and unites fans throughout the nation.</mission_statement><name>Valoria Sports Network</name><number_of_employees>85</number_of_employees><type>company</type></organization>\n</ORGANIZATIONS>\n\n<PRODUCTS>\n\n</PRODUCTS>\n\n<ARTS>\n\n</ARTS>\n\n<EVENTS>\n\n</EVENTS>\n\n<BUILDINGS>\n<building><architect>Lysander Kou</architect><capacity>3200 spectators</capacity><created_at>0</created_at><description>The Rivergate Sports Complex is a multi\u2011purpose arena hosting indoor sporting events and community activities.</description><entity_class>building</entity_class><floors>2</floors><height>28 m</height><history>[{'created_at': 0, 'event_update': 'The Rivergate Sports Complex hosted Coach Loris\u2019s press conference where the details of Finch\u2019s extension and the incentive clause were presented.', 'date': '2025-03-15'}, {'created_at': 2, 'event_update': 'The Rivergate Sports Complex hosted the game where Maya Torres was injured and served as the site for her medical evaluation and treatment.', 'date': '2025-10-04'}, {'created_at': 3, 'event_update': 'The Rivergate Sports Complex hosted Dr. Lina Ortiz\u2019s announcement of Maya Torres\u2019s rehab completion, Coach Dana Loris\u2019s press conference, and the season opener on 2025-11-05.', 'date': '2025-10-25'}]</history><id>BUILDING-1</id><last_updated>2025-03-15</last_updated><material>Reinforced concrete with glass fa\u00e7ade</material><name>Rivergate Sports Complex</name><type>public</type><year_built>2015</year_built></building>\n<building><architect>Mira Kellan</architect><capacity>250 persons</capacity><created_at>1</created_at><description>The Rivergate Community Center provides multipurpose indoor courts, meeting rooms, and event spaces for local residents.</description><entity_class>building</entity_class><floors>2</floors><height>12 m</height><history>[{'created_at': 1, 'event_update': 'The Rivergate Community Center will host the free two\u2011day basketball clinic funded by the jersey\u2019s net proceeds in June\\u202f2025.', 'date': '2025-04-05'}, {'created_at': 3, 'event_update': 'The Rivergate Community Center will host a fan meet\u2011and\u2011greet with Maya Torres on 2025-11-03, featuring the limited\u2011edition Rise Together jersey.', 'date': '2025-10-25'}]</history><id>BUILDING-2</id><last_updated>2025-04-05</last_updated><material>brick and reinforced steel</material><name>Rivergate Community Center</name><type>public</type><year_built>2018</year_built></building>\n</BUILDINGS>\n\n<MISCELLANEOUS>\n\n</MISCELLANEOUS>\n</entities>\n\nNext, you will process the following news article passages:\n\n<passages>\n<passage>Dr. Lina Ortiz, the sports\u2011medicine physician who works with the Rivergate Rivets Women\u2019s Basketball Club, announced at the Rivergate Sports Complex on October\u202f25, 2025, that veteran shooting guard Maya Torres has successfully completed a three\u2011week ankle rehabilitation program. The protocol combined aquatic therapy, proprioceptive drills, and weekly ultrasound assessments, all detailed in a medical report presented by Dr. Ortiz during the press conference.</passage>\n<passage>Following the medical clearance, Coach Dana Loris held a press conference at the same venue, confirming Torres is medically cleared, is expected to play full minutes, and will start in the upcoming season opener on November\u202f5, 2025. \u201cMaya Torres\u2019s conditioning metrics are back to pre\u2011injury levels, and we anticipate she will log at least 30 minutes in the game while the team executes our high\u2011tempo offense,\u201d Loris said, citing the latest GPS and heart\u2011rate data. The Rivets have updated their roster to list Torres in the starting lineup, ticket sales have already reached 2,800 of the arena\u2019s 3,200 capacity, and the matchup will be broadcast live on Valoria Sports Network with a pre\u2011game analysis segment focusing on her return.</passage>\n<passage>Communications Director Sofia Marquez also announced a fan meet\u2011and\u2011greet with Torres at the Rivergate Community Center on November\u202f3. Attendees will have the opportunity to purchase a limited\u2011edition Rise Together jersey bearing Torres\u2019s signature, further energizing the community ahead of the highly anticipated opening game.</passage>\n</passages>\n\nYour task is to process these passages by following these steps:\n\n1. Carefully review the list of entities provided in the <entities> section. Each entity will have an associated ID.\n\n2. Search the passages for all occurrences of each entity in the list.\n\n3. For each occurrence found, replace it with the format: {phrase|ID}\n   Where \"phrase\" is exactly how the entity appears in the text (maintaining any abbreviations or variations), and \"ID\" is the entity's identifier from the entities list.\n\n4. Maintain the original structure and formatting of the passages, only changing the entities as described.\n\n5. After processing all entities, review the entire passage to ensure all occurrences have been properly marked and no entities were missed.\n\n6. Output the processed passages, maintaining its original structure but with all entity occurrences replaced as instructed.\n\nImportant points to remember:\n- Be thorough in your search for entities, including variations or partial mentions.\n- Preserve the original text exactly as it appears, only adding the entity markup.\n- Keep the COMPLETE ORIGINAL phrase that you are replacing with {phrase|ID}. The sentence should be identical to how it was before, except for the added markup.\n- If an entity is referred to by full name, the \"phrase\" is the full name.\n- If an entity is referred to by an abbreviation, the \"phrase\" is the used abbreviation.\n- If an entity is referred to using parts of the full name, then the \"phrase\" would be the same parts of the full name.\n\nExamples:\n1. \"Renowned novelist Elara Vance and celebrated philanthropist Rohan Kapoor exchanged vows.\" \n   Should be replaced with:\n   \"Renowned novelist {Elara Vance|PERSON-1} and celebrated philanthropist {Rohan Kapoor|PERSON-2} exchanged vows.\"\n   (When Elara Vance has ID PERSON-1 and Rohan Kapoor has ID PERSON-2)\n\n2. \"Renowned novelist Elara and celebrated philanthropist R. Kapoor exchanged vows.\" \n   Should be replaced with:\n   \"Renowned novelist {Elara|PERSON-1} and celebrated philanthropist {R. Kapoor|PERSON-2} exchanged vows.\"\n\n3. \"Anna Peters told Tim that he should stop talking.\"\n   should be written as:\n   \"{Anna Peters|PERSON-3} told {Tim|PERSON-4} that {he|PERSON-4} should stop talking.\"\n   (When Anna Peters has ID PERSON-3 and Tim Laurens has ID PERSON-4 and is referred to here)\n\nIf multiple entities are referred to by the same word, use this format:\n\"{Both|PERSON-3,PERSON-4} liked the chocolate.\"\n\nFormat your output as follows:\n- Enclose the entire processed news within <news> tags.\n- Place each passage of the outline within separate <passage> tags.\n\nProvide your final output without any additional commentary or explanations. Focus solely on processing the outline as instructed.\n\nProvide all output in an overall <results> root node.",
+  "system-prompt": null,
+  "values": {
+    "NEWSPAPER_PROFILE": "ObjectiveNews",
+    "SUBSET_IDX": 0,
+    "EVENT_INFO": "<date>2025-10-25</date>\n<content>\n<sentence>Dr. Lina Ortiz announced at Rivergate Sports Complex that Maya Torres had completed her ankle rehabilitation program on 2025-10-25.</sentence>\n<sentence>The three\u2011week rehabilitation protocol, which combined aquatic therapy, proprioceptive drills, and weekly ultrasound assessments, was documented in a detailed medical report presented by Dr. Lina Ortiz during the announcement.</sentence>\n<sentence>Rivergate Rivets Women's Basketball Club released an official roster update confirming Maya Torres will be listed in the starting lineup for the season opener on 2025-11-05.</sentence>\n<sentence>Coach Dana Loris stated in a press conference at Rivergate Sports Complex that Maya Torres is medically cleared and expected to play full minutes in the opening game.</sentence>\n<sentence>Coach Dana Loris added, \u201cMaya Torres\u2019s conditioning metrics are back to pre\u2011injury levels, and we anticipate she will log at least 30 minutes in the game while the team executes our high\u2011tempo offense,\u201d citing the latest GPS and heart\u2011rate data.</sentence>\n<sentence>Sofia Marquez\u2019s release also announced a fan meet\u2011and\u2011greet with Maya Torres at the Rivergate Community Center on November\u202f3, where a limited\u2011edition {[Rise Together][MISCELLANEOUS-2]} {[Rise Together jersey][PRODUCT-1]} featuring her signature will be available for purchase.</sentence>\n<sentence>Ticket sales have already reached 2,800 of the arena\u2019s 3,200 capacity, and the game will be broadcast live on Valoria Sports Network with a pre\u2011game analysis segment focusing on Maya Torres\u2019s return.</sentence>\n</content>",
+    "CREATED_AT": 3,
+    "EVENT_DATE": "2025-10-25",
+    "PERSONS_XML": "<created_at>0</created_at><date_of_birth>1982-09-23</date_of_birth><description>Dana Loris is a strategic thinker who emphasizes player development and team cohesion above all.</description><education>Master\u2019s in Athletic Coaching Meridian Institute of Sports</education><entity_class>person</entity_class><eye_color>Blue</eye_color><gender>Male</gender><hair_color>Dark Brown</hair_color><height>185 cm</height><id>PERSON-2</id><last_updated>2025-03-15</last_updated><marital_status>Married</marital_status><name>Dana Loris</name><nationality>Valoria</nationality><political_affiliation>Independent</political_affiliation><profession>Basketball head coach</profession><type>None</type>\n<created_at>0</created_at><date_of_birth>1990-02-05</date_of_birth><description>Maya Torres brings veteran leadership and a clutch shooting ability cultivated over a decade of professional play.</description><education>High School Diploma Lakeside Regional High</education><entity_class>person</entity_class><eye_color>Green</eye_color><gender>Female</gender><hair_color>Black</hair_color><height>175 cm</height><id>PERSON-3</id><last_updated>2025-03-15</last_updated><name>Maya Torres</name><nationality>Valoria</nationality><profession>Veteran shooting guard, Rivergate Rivets</profession><spouse>Javier Torres</spouse><type>None</type><weight>68 kg</weight>\n<created_at>2</created_at><date_of_birth>1988-07-14</date_of_birth><description>Lina Ortiz is a meticulous physician known for her data\u2011driven approach to injury prevention and athlete recovery.</description><education>MD in Sports Medicine, Valoria University of Health Sciences</education><entity_class>person</entity_class><eye_color>Brown</eye_color><gender>Female</gender><hair_color>Black</hair_color><height>167 cm</height><id>PERSON-4</id><last_updated>2025-10-04</last_updated><marital_status>Married</marital_status><name>Lina Ortiz</name><nationality>Valoria</nationality><profession>Sports Medicine Physician</profession><spouse>Carlos Ortiz</spouse><type>None</type><weight>60 kg</weight>\n<created_at>2</created_at><date_of_birth>1990-11-05</date_of_birth><description>Sofia Marquez is a strategic communicator celebrated for her clarity, empathy, and ability to rally community support.</description><education>Master\u2019s in Public Relations, Sunvale Institute of Media</education><entity_class>person</entity_class><eye_color>Green</eye_color><gender>Female</gender><hair_color>Auburn</hair_color><height>162 cm</height><id>PERSON-6</id><last_updated>2025-10-04</last_updated><marital_status>Single</marital_status><name>Sofia Marquez</name><nationality>Valoria</nationality><profession>Communications Director</profession><type>None</type><weight>58 kg</weight>",
+    "ORGANIZATIONS_XML": "<annual_revenue>$1.2 million</annual_revenue><created_at>0</created_at><description>The Rivergate Rivets are a community\u2011focused women\u2019s basketball team competing in the national league.</description><entity_class>organization</entity_class><founded>2013</founded><headquarters>Rivergate</headquarters><id>ORGANIZATION-1</id><industry>Sports entertainment</industry><last_updated>2025-03-15</last_updated><mission_statement>Promote women\u2019s athletics through competitive excellence and local engagement.</mission_statement><name>Rivergate Rivets Women's Basketball Club</name><number_of_employees>48</number_of_employees><type>sports club</type>\n<annual_revenue>$850,000</annual_revenue><created_at>2</created_at><description>The Midland Mavericks are a competitive women\u2019s basketball team known for a fast\u2011paced offense and strong fan engagement.</description><entity_class>organization</entity_class><founded>2020</founded><headquarters>Midland</headquarters><id>ORGANIZATION-5</id><industry>Sports entertainment</industry><last_updated>2025-10-04</last_updated><mission_statement>Compete at the highest level while fostering community involvement and youth mentorship.</mission_statement><name>Midland Mavericks</name><number_of_employees>30</number_of_employees><type>sports club</type>",
+    "LOCATIONS_XML": "",
+    "PRODUCTS_XML": "",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "<architect>Lysander Kou</architect><capacity>3200 spectators</capacity><created_at>0</created_at><description>The Rivergate Sports Complex is a multi\u2011purpose arena hosting indoor sporting events and community activities.</description><entity_class>building</entity_class><floors>2</floors><height>28 m</height><id>BUILDING-1</id><last_updated>2025-03-15</last_updated><material>Reinforced concrete with glass fa\u00e7ade</material><name>Rivergate Sports Complex</name><type>public</type><year_built>2015</year_built>\n<architect>Mira Kellan</architect><capacity>250 persons</capacity><created_at>1</created_at><description>The Rivergate Community Center provides multipurpose indoor courts, meeting rooms, and event spaces for local residents.</description><entity_class>building</entity_class><floors>2</floors><height>12 m</height><id>BUILDING-2</id><last_updated>2025-04-05</last_updated><material>brick and reinforced steel</material><name>Rivergate Community Center</name><type>public</type><year_built>2018</year_built>",
+    "EVENTS_XML": "",
+    "MISCELLANEOUSS_XML": "",
+    "USED_PERSON": [
+      {
+        "id": "PERSON-2",
+        "name": "Dana Loris",
+        "entity_class": "person",
+        "description": "Dana Loris is a strategic thinker who emphasizes player development and team cohesion above all.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Coach Dana Loris discussed Finch\u2019s extension and the incentive clause at a press conference held in the Rivergate Sports Complex.",
+            "date": "2025-03-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Coach Dana Loris attended the April\u202f5 launch ceremony for the Rise Together jersey at Sundara Sportswear\u2019s flagship store.",
+            "date": "2025-04-05"
+          },
+          {
+            "created_at": 2,
+            "event_update": "Coach Dana Loris decided not to activate rookie reserve Leila Kade, keeping her on the bench despite reduced minutes for Maya Torres.",
+            "date": "2025-10-04"
+          },
+          {
+            "created_at": 3,
+            "event_update": "Coach Dana Loris stated at a press conference in the Rivergate Sports Complex that Maya Torres is medically cleared and will be in the starting lineup for the season opener.",
+            "date": "2025-10-25"
+          }
+        ],
+        "date_of_birth": "1982-09-23",
+        "gender": "Male",
+        "profession": "Basketball head coach",
+        "nationality": "Valoria",
+        "education": "Master\u2019s in Athletic Coaching Meridian Institute of Sports",
+        "height": "185 cm",
+        "eye_color": "Blue",
+        "hair_color": "Dark Brown",
+        "political_affiliation": "Independent",
+        "marital_status": "Married"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Maya Torres",
+        "entity_class": "person",
+        "description": "Maya Torres brings veteran leadership and a clutch shooting ability cultivated over a decade of professional play.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Veteran guard Maya Torres was signed by the Rivergate Rivets from the Lakeside Lynx, using the cap space freed by Finch\u2019s reduced salary.",
+            "date": "2025-03-15"
+          },
+          {
+            "created_at": 2,
+            "event_update": "Maya Torres suffered a bruised left ankle during the game, was diagnosed with a grade\u2011I contusion, and will have her playing minutes limited to twelve per quarter for the remainder of the opening month.",
+            "date": "2025-10-04"
+          },
+          {
+            "created_at": 3,
+            "event_update": "Maya Torres completed her ankle rehabilitation program on 2025-10-25 and was confirmed in the starting lineup for the season opener on 2025-11-05, with a fan meet\u2011and\u2011greet scheduled for 2025-11-03.",
+            "date": "2025-10-25"
+          }
+        ],
+        "date_of_birth": "1990-02-05",
+        "gender": "Female",
+        "profession": "Veteran shooting guard, Rivergate Rivets",
+        "nationality": "Valoria",
+        "education": "High School Diploma Lakeside Regional High",
+        "height": "175 cm",
+        "weight": "68 kg",
+        "eye_color": "Green",
+        "hair_color": "Black",
+        "spouse": "Javier Torres"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Lina Ortiz",
+        "entity_class": "person",
+        "description": "Lina Ortiz is a meticulous physician known for her data\u2011driven approach to injury prevention and athlete recovery.",
+        "type": null,
+        "created_at": 2,
+        "last_updated": "2025-10-04",
+        "history": [
+          {
+            "created_at": 2,
+            "event_update": "Team physician Dr. Lina Ortiz performed a bedside ultrasound confirming no ligament tear and administered initial treatment to Maya Torres.",
+            "date": "2025-10-04"
+          },
+          {
+            "created_at": 3,
+            "event_update": "Dr. Lina Ortiz announced Maya Torres\u2019s successful completion of her ankle rehabilitation program on 2025-10-25 and presented the detailed medical report at the Rivergate Sports Complex.",
+            "date": "2025-10-25"
+          }
+        ],
+        "date_of_birth": "1988-07-14",
+        "gender": "Female",
+        "profession": "Sports Medicine Physician",
+        "nationality": "Valoria",
+        "education": "MD in Sports Medicine, Valoria University of Health Sciences",
+        "height": "167 cm",
+        "weight": "60 kg",
+        "eye_color": "Brown",
+        "hair_color": "Black",
+        "marital_status": "Married",
+        "spouse": "Carlos Ortiz"
+      },
+      {
+        "id": "PERSON-6",
+        "name": "Sofia Marquez",
+        "entity_class": "person",
+        "description": "Sofia Marquez is a strategic communicator celebrated for her clarity, empathy, and ability to rally community support.",
+        "type": null,
+        "created_at": 2,
+        "last_updated": "2025-10-04",
+        "history": [
+          {
+            "created_at": 2,
+            "event_update": "Communications Director Sofia Marquez announced that a portion of the net proceeds from the Rise Together jersey campaign will be allocated to support Maya Torres\u2019s rehabilitation program.",
+            "date": "2025-10-04"
+          },
+          {
+            "created_at": 3,
+            "event_update": "Communications Director Sofia Marquez issued a media release confirming Maya Torres\u2019s inclusion in the starting lineup and announced a fan meet\u2011and\u2011greet at the Rivergate Community Center on 2025-11-03 featuring a limited\u2011edition Rise Together jersey.",
+            "date": "2025-10-25"
+          }
+        ],
+        "date_of_birth": "1990-11-05",
+        "gender": "Female",
+        "profession": "Communications Director",
+        "nationality": "Valoria",
+        "education": "Master\u2019s in Public Relations, Sunvale Institute of Media",
+        "height": "162 cm",
+        "weight": "58 kg",
+        "eye_color": "Green",
+        "hair_color": "Auburn",
+        "marital_status": "Single"
+      }
+    ],
+    "USED_ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Rivergate Rivets Women's Basketball Club",
+        "entity_class": "organization",
+        "description": "The Rivergate Rivets are a community\u2011focused women\u2019s basketball team competing in the national league.",
+        "type": "sports club",
+        "created_at": 0,
+        "last_updated": "2025-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Rivergate Rivets finalized Finch\u2019s contract extension and allocated the resulting cap savings to acquire Maya Torres before the season opener.",
+            "date": "2025-03-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "The Rivergate Rivets Women\u2019s Basketball Club announced that all net proceeds from the Rise Together jersey sales will fund a free community basketball clinic in Rivergate in June\u202f2025.",
+            "date": "2025-04-05"
+          },
+          {
+            "created_at": 2,
+            "event_update": "The Rivergate Rivets Women\u2019s Basketball Club issued an official statement confirming the injury protocol for Maya Torres and highlighted the jersey\u2011sale proceeds supporting her recovery.",
+            "date": "2025-10-04"
+          },
+          {
+            "created_at": 3,
+            "event_update": "The Rivergate Rivets Women\u2019s Basketball Club released an official roster update confirming Maya Torres will start in the season opener and promoted the upcoming fan meet\u2011and\u2011greet and Rise Together jersey.",
+            "date": "2025-10-25"
+          }
+        ],
+        "founded": "2013",
+        "headquarters": "Rivergate",
+        "industry": "Sports entertainment",
+        "mission_statement": "Promote women\u2019s athletics through competitive excellence and local engagement.",
+        "number_of_employees": "48",
+        "annual_revenue": "$1.2 million"
+      },
+      {
+        "id": "ORGANIZATION-7",
+        "name": "Valoria Sports Network",
+        "entity_class": "organization",
+        "description": "A regional broadcast network delivering live and recorded sports programming to viewers across Valoria.",
+        "type": "company",
+        "created_at": 3,
+        "last_updated": "2025-10-25",
+        "history": [
+          {
+            "created_at": 3,
+            "event_update": "Valoria Sports Network will broadcast the season opener live, featuring a pre\u2011game analysis segment on Maya Torres\u2019s return.",
+            "date": "2025-10-25"
+          }
+        ],
+        "founded": "2010",
+        "headquarters": "Eldor",
+        "industry": "Broadcasting",
+        "mission_statement": "Provide comprehensive high\u2011quality sports coverage that inspires and unites fans throughout the nation.",
+        "number_of_employees": "85",
+        "annual_revenue": "$12 million"
+      }
+    ],
+    "USED_LOCATION": [],
+    "USED_PRODUCT": [],
+    "USED_ART": [],
+    "USED_BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Rivergate Sports Complex",
+        "entity_class": "building",
+        "description": "The Rivergate Sports Complex is a multi\u2011purpose arena hosting indoor sporting events and community activities.",
+        "type": "public",
+        "created_at": 0,
+        "last_updated": "2025-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Rivergate Sports Complex hosted Coach Loris\u2019s press conference where the details of Finch\u2019s extension and the incentive clause were presented.",
+            "date": "2025-03-15"
+          },
+          {
+            "created_at": 2,
+            "event_update": "The Rivergate Sports Complex hosted the game where Maya Torres was injured and served as the site for her medical evaluation and treatment.",
+            "date": "2025-10-04"
+          },
+          {
+            "created_at": 3,
+            "event_update": "The Rivergate Sports Complex hosted Dr. Lina Ortiz\u2019s announcement of Maya Torres\u2019s rehab completion, Coach Dana Loris\u2019s press conference, and the season opener on 2025-11-05.",
+            "date": "2025-10-25"
+          }
+        ],
+        "architect": "Lysander Kou",
+        "year_built": "2015",
+        "height": "28 m",
+        "floors": "2",
+        "material": "Reinforced concrete with glass fa\u00e7ade",
+        "capacity": "3200 spectators"
+      },
+      {
+        "id": "BUILDING-2",
+        "name": "Rivergate Community Center",
+        "entity_class": "building",
+        "description": "The Rivergate Community Center provides multipurpose indoor courts, meeting rooms, and event spaces for local residents.",
+        "type": "public",
+        "created_at": 1,
+        "last_updated": "2025-04-05",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "The Rivergate Community Center will host the free two\u2011day basketball clinic funded by the jersey\u2019s net proceeds in June\u202f2025.",
+            "date": "2025-04-05"
+          },
+          {
+            "created_at": 3,
+            "event_update": "The Rivergate Community Center will host a fan meet\u2011and\u2011greet with Maya Torres on 2025-11-03, featuring the limited\u2011edition Rise Together jersey.",
+            "date": "2025-10-25"
+          }
+        ],
+        "architect": "Mira Kellan",
+        "year_built": "2018",
+        "height": "12 m",
+        "floors": "2",
+        "material": "brick and reinforced steel",
+        "capacity": "250 persons"
+      }
+    ],
+    "USED_EVENT": [],
+    "USED_MISCELLANEOUS": [],
+    "HEADLINE": "Maya Torres Cleared to Return: Rivets Set to Feature Star Guard in Season Opener",
+    "PARAGRAPHS": [
+      {
+        "text": "Dr. Lina Ortiz, the sports\u2011medicine physician who works with the Rivergate Rivets Women\u2019s Basketball Club, announced at the Rivergate Sports Complex on October\u202f25, 2025, that veteran shooting guard Maya Torres has successfully completed a three\u2011week ankle rehabilitation program. The protocol combined aquatic therapy, proprioceptive drills, and weekly ultrasound assessments, all detailed in a medical report presented by Dr. Ortiz during the press conference."
+      },
+      {
+        "text": "Following the medical clearance, Coach Dana Loris held a press conference at the same venue, confirming Torres is medically cleared, is expected to play full minutes, and will start in the upcoming season opener on November\u202f5, 2025. \u201cMaya Torres\u2019s conditioning metrics are back to pre\u2011injury levels, and we anticipate she will log at least 30 minutes in the game while the team executes our high\u2011tempo offense,\u201d Loris said, citing the latest GPS and heart\u2011rate data. The Rivets have updated their roster to list Torres in the starting lineup, ticket sales have already reached 2,800 of the arena\u2019s 3,200 capacity, and the matchup will be broadcast live on Valoria Sports Network with a pre\u2011game analysis segment focusing on her return."
+      },
+      {
+        "text": "Communications Director Sofia Marquez also announced a fan meet\u2011and\u2011greet with Torres at the Rivergate Community Center on November\u202f3. Attendees will have the opportunity to purchase a limited\u2011edition Rise Together jersey bearing Torres\u2019s signature, further energizing the community ahead of the highly anticipated opening game."
+      }
+    ],
+    "IS_VALID": true,
+    "CURRENT_NEWS_ARTICLE_XML": "<date>2025-10-25</date>\n<headline>Maya Torres Cleared to Return: Rivets Set to Feature Star Guard in Season Opener</headline>\n<paragraph>Dr. Lina Ortiz, the sports\u2011medicine physician who works with the Rivergate Rivets Women\u2019s Basketball Club, announced at the Rivergate Sports Complex on October\u202f25, 2025, that veteran shooting guard Maya Torres has successfully completed a three\u2011week ankle rehabilitation program. The protocol combined aquatic therapy, proprioceptive drills, and weekly ultrasound assessments, all detailed in a medical report presented by Dr. Ortiz during the press conference.</paragraph>\n<paragraph>Following the medical clearance, Coach Dana Loris held a press conference at the same venue, confirming Torres is medically cleared and will start in the upcoming season opener on November\u202f5, 2025. \u201cMaya Torres\u2019s conditioning metrics are back to pre\u2011injury levels, and we anticipate she will log at least 30 minutes in the game while the team executes our high\u2011tempo offense,\u201d Loris said, citing the latest GPS and heart\u2011rate data. The Rivets have updated their roster to list Torres in the starting lineup, ticket sales have already reached 2,800 of the arena\u2019s 3,200 capacity, and the matchup will be broadcast live on Valoria Sports Network with a pre\u2011game analysis segment focusing on her return.</paragraph>\n<paragraph>Communications Director Sofia Marquez also announced a fan meet\u2011and\u2011greet with Torres at the Rivergate Community Center on November\u202f3. Attendees will have the opportunity to purchase a limited\u2011edition Rise Together jersey bearing Torres\u2019s signature, further energizing the community ahead of the highly anticipated opening game.</paragraph>",
+    "USED_PERSONS_XML": "<person><created_at>0</created_at><date_of_birth>1982-09-23</date_of_birth><description>Dana Loris is a strategic thinker who emphasizes player development and team cohesion above all.</description><education>Master\u2019s in Athletic Coaching Meridian Institute of Sports</education><entity_class>person</entity_class><eye_color>Blue</eye_color><gender>Male</gender><hair_color>Dark Brown</hair_color><height>185 cm</height><history>[{'created_at': 0, 'event_update': 'Coach Dana Loris discussed Finch\u2019s extension and the incentive clause at a press conference held in the Rivergate Sports Complex.', 'date': '2025-03-15'}, {'created_at': 1, 'event_update': 'Coach Dana Loris attended the April\\u202f5 launch ceremony for the Rise Together jersey at Sundara Sportswear\u2019s flagship store.', 'date': '2025-04-05'}, {'created_at': 2, 'event_update': 'Coach Dana Loris decided not to activate rookie reserve Leila Kade, keeping her on the bench despite reduced minutes for Maya Torres.', 'date': '2025-10-04'}, {'created_at': 3, 'event_update': 'Coach Dana Loris stated at a press conference in the Rivergate Sports Complex that Maya Torres is medically cleared and will be in the starting lineup for the season opener.', 'date': '2025-10-25'}]</history><id>PERSON-2</id><last_updated>2025-03-15</last_updated><marital_status>Married</marital_status><name>Dana Loris</name><nationality>Valoria</nationality><political_affiliation>Independent</political_affiliation><profession>Basketball head coach</profession><type>None</type></person>\n<person><created_at>0</created_at><date_of_birth>1990-02-05</date_of_birth><description>Maya Torres brings veteran leadership and a clutch shooting ability cultivated over a decade of professional play.</description><education>High School Diploma Lakeside Regional High</education><entity_class>person</entity_class><eye_color>Green</eye_color><gender>Female</gender><hair_color>Black</hair_color><height>175 cm</height><history>[{'created_at': 0, 'event_update': 'Veteran guard Maya Torres was signed by the Rivergate Rivets from the Lakeside Lynx, using the cap space freed by Finch\u2019s reduced salary.', 'date': '2025-03-15'}, {'created_at': 2, 'event_update': 'Maya Torres suffered a bruised left ankle during the game, was diagnosed with a grade\u2011I contusion, and will have her playing minutes limited to twelve per quarter for the remainder of the opening month.', 'date': '2025-10-04'}, {'created_at': 3, 'event_update': 'Maya Torres completed her ankle rehabilitation program on 2025-10-25 and was confirmed in the starting lineup for the season opener on 2025-11-05, with a fan meet\u2011and\u2011greet scheduled for 2025-11-03.', 'date': '2025-10-25'}]</history><id>PERSON-3</id><last_updated>2025-03-15</last_updated><name>Maya Torres</name><nationality>Valoria</nationality><profession>Veteran shooting guard, Rivergate Rivets</profession><spouse>Javier Torres</spouse><type>None</type><weight>68 kg</weight></person>\n<person><created_at>2</created_at><date_of_birth>1988-07-14</date_of_birth><description>Lina Ortiz is a meticulous physician known for her data\u2011driven approach to injury prevention and athlete recovery.</description><education>MD in Sports Medicine, Valoria University of Health Sciences</education><entity_class>person</entity_class><eye_color>Brown</eye_color><gender>Female</gender><hair_color>Black</hair_color><height>167 cm</height><history>[{'created_at': 2, 'event_update': 'Team physician Dr. Lina Ortiz performed a bedside ultrasound confirming no ligament tear and administered initial treatment to Maya Torres.', 'date': '2025-10-04'}, {'created_at': 3, 'event_update': 'Dr. Lina Ortiz announced Maya Torres\u2019s successful completion of her ankle rehabilitation program on 2025-10-25 and presented the detailed medical report at the Rivergate Sports Complex.', 'date': '2025-10-25'}]</history><id>PERSON-4</id><last_updated>2025-10-04</last_updated><marital_status>Married</marital_status><name>Lina Ortiz</name><nationality>Valoria</nationality><profession>Sports Medicine Physician</profession><spouse>Carlos Ortiz</spouse><type>None</type><weight>60 kg</weight></person>\n<person><created_at>2</created_at><date_of_birth>1990-11-05</date_of_birth><description>Sofia Marquez is a strategic communicator celebrated for her clarity, empathy, and ability to rally community support.</description><education>Master\u2019s in Public Relations, Sunvale Institute of Media</education><entity_class>person</entity_class><eye_color>Green</eye_color><gender>Female</gender><hair_color>Auburn</hair_color><height>162 cm</height><history>[{'created_at': 2, 'event_update': 'Communications Director Sofia Marquez announced that a portion of the net proceeds from the Rise Together jersey campaign will be allocated to support Maya Torres\u2019s rehabilitation program.', 'date': '2025-10-04'}, {'created_at': 3, 'event_update': 'Communications Director Sofia Marquez issued a media release confirming Maya Torres\u2019s inclusion in the starting lineup and announced a fan meet\u2011and\u2011greet at the Rivergate Community Center on 2025-11-03 featuring a limited\u2011edition Rise Together jersey.', 'date': '2025-10-25'}]</history><id>PERSON-6</id><last_updated>2025-10-04</last_updated><marital_status>Single</marital_status><name>Sofia Marquez</name><nationality>Valoria</nationality><profession>Communications Director</profession><type>None</type><weight>58 kg</weight></person>",
+    "USED_ORGANIZATIONS_XML": "<organization><annual_revenue>$1.2 million</annual_revenue><created_at>0</created_at><description>The Rivergate Rivets are a community\u2011focused women\u2019s basketball team competing in the national league.</description><entity_class>organization</entity_class><founded>2013</founded><headquarters>Rivergate</headquarters><history>[{'created_at': 0, 'event_update': 'The Rivergate Rivets finalized Finch\u2019s contract extension and allocated the resulting cap savings to acquire Maya Torres before the season opener.', 'date': '2025-03-15'}, {'created_at': 1, 'event_update': 'The Rivergate Rivets Women\u2019s Basketball Club announced that all net proceeds from the Rise Together jersey sales will fund a free community basketball clinic in Rivergate in June\\u202f2025.', 'date': '2025-04-05'}, {'created_at': 2, 'event_update': 'The Rivergate Rivets Women\u2019s Basketball Club issued an official statement confirming the injury protocol for Maya Torres and highlighted the jersey\u2011sale proceeds supporting her recovery.', 'date': '2025-10-04'}, {'created_at': 3, 'event_update': 'The Rivergate Rivets Women\u2019s Basketball Club released an official roster update confirming Maya Torres will start in the season opener and promoted the upcoming fan meet\u2011and\u2011greet and Rise Together jersey.', 'date': '2025-10-25'}]</history><id>ORGANIZATION-1</id><industry>Sports entertainment</industry><last_updated>2025-03-15</last_updated><mission_statement>Promote women\u2019s athletics through competitive excellence and local engagement.</mission_statement><name>Rivergate Rivets Women's Basketball Club</name><number_of_employees>48</number_of_employees><type>sports club</type></organization>\n<organization><annual_revenue>$12 million</annual_revenue><created_at>3</created_at><description>A regional broadcast network delivering live and recorded sports programming to viewers across Valoria.</description><entity_class>organization</entity_class><founded>2010</founded><headquarters>Eldor</headquarters><history>[{'created_at': 3, 'event_update': 'Valoria Sports Network will broadcast the season opener live, featuring a pre\u2011game analysis segment on Maya Torres\u2019s return.', 'date': '2025-10-25'}]</history><id>ORGANIZATION-7</id><industry>Broadcasting</industry><last_updated>2025-10-25</last_updated><mission_statement>Provide comprehensive high\u2011quality sports coverage that inspires and unites fans throughout the nation.</mission_statement><name>Valoria Sports Network</name><number_of_employees>85</number_of_employees><type>company</type></organization>",
+    "USED_LOCATIONS_XML": "",
+    "USED_PRODUCTS_XML": "",
+    "USED_ARTS_XML": "",
+    "USED_BUILDINGS_XML": "<building><architect>Lysander Kou</architect><capacity>3200 spectators</capacity><created_at>0</created_at><description>The Rivergate Sports Complex is a multi\u2011purpose arena hosting indoor sporting events and community activities.</description><entity_class>building</entity_class><floors>2</floors><height>28 m</height><history>[{'created_at': 0, 'event_update': 'The Rivergate Sports Complex hosted Coach Loris\u2019s press conference where the details of Finch\u2019s extension and the incentive clause were presented.', 'date': '2025-03-15'}, {'created_at': 2, 'event_update': 'The Rivergate Sports Complex hosted the game where Maya Torres was injured and served as the site for her medical evaluation and treatment.', 'date': '2025-10-04'}, {'created_at': 3, 'event_update': 'The Rivergate Sports Complex hosted Dr. Lina Ortiz\u2019s announcement of Maya Torres\u2019s rehab completion, Coach Dana Loris\u2019s press conference, and the season opener on 2025-11-05.', 'date': '2025-10-25'}]</history><id>BUILDING-1</id><last_updated>2025-03-15</last_updated><material>Reinforced concrete with glass fa\u00e7ade</material><name>Rivergate Sports Complex</name><type>public</type><year_built>2015</year_built></building>\n<building><architect>Mira Kellan</architect><capacity>250 persons</capacity><created_at>1</created_at><description>The Rivergate Community Center provides multipurpose indoor courts, meeting rooms, and event spaces for local residents.</description><entity_class>building</entity_class><floors>2</floors><height>12 m</height><history>[{'created_at': 1, 'event_update': 'The Rivergate Community Center will host the free two\u2011day basketball clinic funded by the jersey\u2019s net proceeds in June\\u202f2025.', 'date': '2025-04-05'}, {'created_at': 3, 'event_update': 'The Rivergate Community Center will host a fan meet\u2011and\u2011greet with Maya Torres on 2025-11-03, featuring the limited\u2011edition Rise Together jersey.', 'date': '2025-10-25'}]</history><id>BUILDING-2</id><last_updated>2025-04-05</last_updated><material>brick and reinforced steel</material><name>Rivergate Community Center</name><type>public</type><year_built>2018</year_built></building>",
+    "USED_EVENTS_XML": "",
+    "USED_MISCELLANEOUSS_XML": "",
+    "PASSAGES_XML": "<passage>Dr. Lina Ortiz, the sports\u2011medicine physician who works with the Rivergate Rivets Women\u2019s Basketball Club, announced at the Rivergate Sports Complex on October\u202f25, 2025, that veteran shooting guard Maya Torres has successfully completed a three\u2011week ankle rehabilitation program. The protocol combined aquatic therapy, proprioceptive drills, and weekly ultrasound assessments, all detailed in a medical report presented by Dr. Ortiz during the press conference.</passage>\n<passage>Following the medical clearance, Coach Dana Loris held a press conference at the same venue, confirming Torres is medically cleared, is expected to play full minutes, and will start in the upcoming season opener on November\u202f5, 2025. \u201cMaya Torres\u2019s conditioning metrics are back to pre\u2011injury levels, and we anticipate she will log at least 30 minutes in the game while the team executes our high\u2011tempo offense,\u201d Loris said, citing the latest GPS and heart\u2011rate data. The Rivets have updated their roster to list Torres in the starting lineup, ticket sales have already reached 2,800 of the arena\u2019s 3,200 capacity, and the matchup will be broadcast live on Valoria Sports Network with a pre\u2011game analysis segment focusing on her return.</passage>\n<passage>Communications Director Sofia Marquez also announced a fan meet\u2011and\u2011greet with Torres at the Rivergate Community Center on November\u202f3. Attendees will have the opportunity to purchase a limited\u2011edition Rise Together jersey bearing Torres\u2019s signature, further energizing the community ahead of the highly anticipated opening game.</passage>"
+  }
+}

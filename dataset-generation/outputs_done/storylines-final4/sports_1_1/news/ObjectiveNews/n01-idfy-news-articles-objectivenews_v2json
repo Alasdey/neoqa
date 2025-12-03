@@ -1,0 +1,257 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "openai/gpt-oss-120b",
+    "temperature": 0.0,
+    "max-tokens": 8000
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "<results>\n<news>\n<passage>On April\u202f5,\u202f2025, {Sundara Sportswear|ORGANIZATION-3} released a limited\u2011edition \u201c{Rise Together|MISCELLANEOUS-2} {Rise Together|PRODUCT-1}\u201d jersey featuring Valoria basketball star {Elara Finch|PERSON-1} at the {Sundara Sportswear|ORGANIZATION-3} flagship store in {Sunvale|LOCATION-1}. The jersey, part of {Sundara\u2019s|ORGANIZATION-3} seasonal \u201c{Rise Together|MISCELLANEOUS-2}\u201d campaign that emphasizes unity and perseverance, showcases {Finch\u2019s|PERSON-1} image and will be sold exclusively at the store.</passage>\n<passage>{Rivergate Rivets Women\u2019s Basketball Club|ORGANIZATION-1} announced that 100\u202fpercent of net proceeds from the jersey sales\u2014estimated at roughly $180,000\u2014will be directed to a free community basketball clinic in {Rivergate|LOCATION-2} scheduled for June\u202f2025. The two\u2011day event at the {Rivergate Community Center|BUILDING-2} will serve up to 150 local youth and will be staffed by the {Rivets\u2019|ORGANIZATION-1} coaching team together with guest trainers.</passage>\n<passage>{Finch|PERSON-1} issued a public statement praising the limited\u2011edition jersey and confirming her participation in the clinic. \u201cWearing this jersey reminds me of the fans who lift us every game, and I can\u2019t wait to share skills and stories at the June\u202f12 clinic,\u201d she said, adding that she will lead a shooting\u2011drills workshop for the attendees.</passage>\n</news>\n</results>"
+  },
+  "response": "<results>\n<news>\n<passage>On April\u202f5,\u202f2025, {Sundara Sportswear|ORGANIZATION-3} released a limited\u2011edition \u201c{Rise Together|MISCELLANEOUS-2} {Rise Together|PRODUCT-1}\u201d jersey featuring Valoria basketball star {Elara Finch|PERSON-1} at the {Sundara Sportswear|ORGANIZATION-3} flagship store in {Sunvale|LOCATION-1}. The jersey, part of {Sundara\u2019s|ORGANIZATION-3} seasonal \u201c{Rise Together|MISCELLANEOUS-2}\u201d campaign that emphasizes unity and perseverance, showcases {Finch\u2019s|PERSON-1} image and will be sold exclusively at the store.</passage>\n<passage>{Rivergate Rivets Women\u2019s Basketball Club|ORGANIZATION-1} announced that 100\u202fpercent of net proceeds from the jersey sales\u2014estimated at roughly $180,000\u2014will be directed to a free community basketball clinic in {Rivergate|LOCATION-2} scheduled for June\u202f2025. The two\u2011day event at the {Rivergate Community Center|BUILDING-2} will serve up to 150 local youth and will be staffed by the {Rivets\u2019|ORGANIZATION-1} coaching team together with guest trainers.</passage>\n<passage>{Finch|PERSON-1} issued a public statement praising the limited\u2011edition jersey and confirming her participation in the clinic. \u201cWearing this jersey reminds me of the fans who lift us every game, and I can\u2019t wait to share skills and stories at the June\u202f12 clinic,\u201d she said, adding that she will lead a shooting\u2011drills workshop for the attendees.</passage>\n</news>\n</results>",
+  "instructions": "You are an AI assistant tasked with processing news passages by identifying and marking named entities. Follow these instructions carefully:\n\nFirst, review the list of fictional named entities provided below:\n\n<entities>\n<LOCATIONS>\n{{USED_LOCATIONS_XML}}\n</LOCATIONS>\n\n<PERSONS>\n{{USED_PERSONS_XML}}\n</PERSONS>\n\n<ORGANIZATIONS>\n{{USED_ORGANIZATIONS_XML}}\n</ORGANIZATIONS>\n\n<PRODUCTS>\n{{USED_PRODUCTS_XML}}\n</PRODUCTS>\n\n<ARTS>\n{{USED_ARTS_XML}}\n</ARTS>\n\n<EVENTS>\n{{USED_EVENTS_XML}}\n</EVENTS>\n\n<BUILDINGS>\n{{USED_BUILDINGS_XML}}\n</BUILDINGS>\n\n<MISCELLANEOUS>\n{{USED_MISCELLANEOUSS_XML}}\n</MISCELLANEOUS>\n</entities>\n\nNext, you will process the following news article passages:\n\n<passages>\n{{PASSAGES_XML}}\n</passages>\n\nYour task is to process these passages by following these steps:\n\n1. Carefully review the list of entities provided in the <entities> section. Each entity will have an associated ID.\n\n2. Search the passages for all occurrences of each entity in the list.\n\n3. For each occurrence found, replace it with the format: {phrase|ID}\n   Where \"phrase\" is exactly how the entity appears in the text (maintaining any abbreviations or variations), and \"ID\" is the entity's identifier from the entities list.\n\n4. Maintain the original structure and formatting of the passages, only changing the entities as described.\n\n5. After processing all entities, review the entire passage to ensure all occurrences have been properly marked and no entities were missed.\n\n6. Output the processed passages, maintaining its original structure but with all entity occurrences replaced as instructed.\n\nImportant points to remember:\n- Be thorough in your search for entities, including variations or partial mentions.\n- Preserve the original text exactly as it appears, only adding the entity markup.\n- Keep the COMPLETE ORIGINAL phrase that you are replacing with {phrase|ID}. The sentence should be identical to how it was before, except for the added markup.\n- If an entity is referred to by full name, the \"phrase\" is the full name.\n- If an entity is referred to by an abbreviation, the \"phrase\" is the used abbreviation.\n- If an entity is referred to using parts of the full name, then the \"phrase\" would be the same parts of the full name.\n\nExamples:\n1. \"Renowned novelist Elara Vance and celebrated philanthropist Rohan Kapoor exchanged vows.\" \n   Should be replaced with:\n   \"Renowned novelist {Elara Vance|PERSON-1} and celebrated philanthropist {Rohan Kapoor|PERSON-2} exchanged vows.\"\n   (When Elara Vance has ID PERSON-1 and Rohan Kapoor has ID PERSON-2)\n\n2. \"Renowned novelist Elara and celebrated philanthropist R. Kapoor exchanged vows.\" \n   Should be replaced with:\n   \"Renowned novelist {Elara|PERSON-1} and celebrated philanthropist {R. Kapoor|PERSON-2} exchanged vows.\"\n\n3. \"Anna Peters told Tim that he should stop talking.\"\n   should be written as:\n   \"{Anna Peters|PERSON-3} told {Tim|PERSON-4} that {he|PERSON-4} should stop talking.\"\n   (When Anna Peters has ID PERSON-3 and Tim Laurens has ID PERSON-4 and is referred to here)\n\nIf multiple entities are referred to by the same word, use this format:\n\"{Both|PERSON-3,PERSON-4} liked the chocolate.\"\n\nFormat your output as follows:\n- Enclose the entire processed news within <news> tags.\n- Place each passage of the outline within separate <passage> tags.\n\nProvide your final output without any additional commentary or explanations. Focus solely on processing the outline as instructed.\n\nProvide all output in an overall <results> root node.",
+  "text_prompt": "You are an AI assistant tasked with processing news passages by identifying and marking named entities. Follow these instructions carefully:\n\nFirst, review the list of fictional named entities provided below:\n\n<entities>\n<LOCATIONS>\n<location><area>120 km\u00b2</area><country>Valoria</country><created_at>1</created_at><description>Sunvale is a midsized industrial\u2011commercial hub known for its balanced economy and riverfront parks.</description><elevation>210 m</elevation><entity_class>location</entity_class><history>[{'created_at': 1, 'event_update': 'Sunvale served as the launch site for the limited\u2011edition Rise Together jersey, with 1,820 units sold at its flagship store on April\\u202f5\\u202f2025.', 'date': '2025-04-05'}]</history><id>LOCATION-1</id><last_updated>2025-04-05</last_updated><name>Sunvale</name><population>82000</population><type>city</type></location>\n<location><area>65 km\u00b2</area><country>Valoria</country><created_at>1</created_at><description>Rivergate is a coastal town celebrated for its community sports facilities and modest fishing fleet.</description><elevation>15 m</elevation><entity_class>location</entity_class><history>[{'created_at': 1, 'event_update': 'Rivergate will host a free community basketball clinic in June\\u202f2025 funded by the net proceeds from the Rise Together jersey sales.', 'date': '2025-04-05'}]</history><id>LOCATION-2</id><last_updated>2025-04-05</last_updated><name>Rivergate</name><population>34500</population><type>town</type></location>\n</LOCATIONS>\n\n<PERSONS>\n<person><created_at>0</created_at><date_of_birth>1996-04-12</date_of_birth><description>Elara Finch is a disciplined and resilient athlete known for her sharp court vision and dedication to community outreach.</description><education>Bachelor\u2019s degree in Sports Management Valoria State University</education><entity_class>person</entity_class><eye_color>Hazel</eye_color><gender>Female</gender><hair_color>Chestnut</hair_color><height>178 cm</height><history>[{'created_at': 0, 'event_update': 'Elara Finch signed a one\u2011year contract extension with the Rivergate Rivets, setting her base salary at $45,000 for the 2025\u201126 season and adding performance incentives.', 'date': '2025-03-15'}, {'created_at': 1, 'event_update': 'Elara Finch was featured on the Rise Together jersey, issued a public statement praising the product, and confirmed she will lead a shooting\u2011drills workshop at the June\\u202f12 community clinic.', 'date': '2025-04-05'}]</history><id>PERSON-1</id><last_updated>2025-03-15</last_updated><marital_status>Single</marital_status><name>Elara Finch</name><nationality>Valoria</nationality><profession>Professional basketball player</profession><type>None</type><weight>70 kg</weight></person>\n</PERSONS>\n\n<ORGANIZATIONS>\n<organization><annual_revenue>$1.2 million</annual_revenue><created_at>0</created_at><description>The Rivergate Rivets are a community\u2011focused women\u2019s basketball team competing in the national league.</description><entity_class>organization</entity_class><founded>2013</founded><headquarters>Rivergate</headquarters><history>[{'created_at': 0, 'event_update': 'The Rivergate Rivets finalized Finch\u2019s contract extension and allocated the resulting cap savings to acquire Maya Torres before the season opener.', 'date': '2025-03-15'}, {'created_at': 1, 'event_update': 'The Rivergate Rivets Women\u2019s Basketball Club announced that all net proceeds from the Rise Together jersey sales will fund a free community basketball clinic in Rivergate in June\\u202f2025.', 'date': '2025-04-05'}]</history><id>ORGANIZATION-1</id><industry>Sports entertainment</industry><last_updated>2025-03-15</last_updated><mission_statement>Promote women\u2019s athletics through competitive excellence and local engagement.</mission_statement><name>Rivergate Rivets Women's Basketball Club</name><number_of_employees>48</number_of_employees><type>sports club</type></organization>\n<organization><annual_revenue>$22 million</annual_revenue><created_at>0</created_at><description>Sundara Sportswear designs and manufactures performance apparel for athletes and casual wearers.</description><entity_class>organization</entity_class><founded>2001</founded><headquarters>Sunvale</headquarters><history>[{'created_at': 0, 'event_update': 'Sundara Sportswear announced that Finch will feature in its upcoming \u201cRise Together\u201d winter apparel campaign, including a limited\u2011edition jersey released on April\\u202f5.', 'date': '2025-03-15'}, {'created_at': 1, 'event_update': 'Sundara Sportswear launched the limited\u2011edition Rise Together jersey on April\\u202f5\\u202f2025, featuring Elara Finch, and announced a supplemental production run of 2,000 additional jerseys to be manufactured at its Greenfield eco\u2011factory and shipped on May\\u202f3\\u202f2025.', 'date': '2025-04-05'}]</history><id>ORGANIZATION-3</id><industry>Apparel manufacturing</industry><last_updated>2025-03-15</last_updated><mission_statement>Blend innovative fabrics with sustainable practices to empower active lifestyles.</mission_statement><name>Sundara Sportswear</name><number_of_employees>312</number_of_employees><type>company</type></organization>\n</ORGANIZATIONS>\n\n<PRODUCTS>\n<product><created_at>1</created_at><description>A limited\u2011edition performance basketball jersey featuring a moisture\u2011wicking interior and the Rise Together motif.</description><entity_class>product</entity_class><history>[{'created_at': 1, 'event_update': 'The Rise Together jersey, a limited\u2011edition performance basketball jersey priced at $119, was released on April\\u202f5\\u202f2025 and later saw a supplemental production run of 2,000 units.', 'date': '2025-04-05'}]</history><id>PRODUCT-1</id><last_updated>2025-04-05</last_updated><manufacturer>Sundara Sportswear</manufacturer><name>Rise Together jersey</name><price>$119</price><release_date>2025-04-05</release_date><type>consumer good</type><warranty>1 year</warranty><weight>0.28 kg</weight></product>\n</PRODUCTS>\n\n<ARTS>\n\n</ARTS>\n\n<EVENTS>\n\n</EVENTS>\n\n<BUILDINGS>\n<building><architect>Mira Kellan</architect><capacity>250 persons</capacity><created_at>1</created_at><description>The Rivergate Community Center provides multipurpose indoor courts, meeting rooms, and event spaces for local residents.</description><entity_class>building</entity_class><floors>2</floors><height>12 m</height><history>[{'created_at': 1, 'event_update': 'The Rivergate Community Center will host the free two\u2011day basketball clinic funded by the jersey\u2019s net proceeds in June\\u202f2025.', 'date': '2025-04-05'}]</history><id>BUILDING-2</id><last_updated>2025-04-05</last_updated><material>brick and reinforced steel</material><name>Rivergate Community Center</name><type>public</type><year_built>2018</year_built></building>\n</BUILDINGS>\n\n<MISCELLANEOUS>\n<miscellaneous><created_at>0</created_at><description>Rise Together is a seasonal marketing theme emphasizing unity and perseverance across athletic apparel lines.</description><entity_class>miscellaneous</entity_class><history>[{'created_at': 0, 'event_update': 'Rise Together is the campaign concept behind Sundara Sportswear\u2019s winter apparel line that will showcase Elara Finch.', 'date': '2025-03-15'}, {'created_at': 1, 'event_update': 'The Rise Together campaign concept underpins Sundara Sportswear\u2019s limited\u2011edition jersey release and the associated community\u2011fundraising initiative.', 'date': '2025-04-05'}]</history><id>MISCELLANEOUS-2</id><last_updated>2025-03-15</last_updated><name>Rise Together</name><type>campaign concept</type></miscellaneous>\n</MISCELLANEOUS>\n</entities>\n\nNext, you will process the following news article passages:\n\n<passages>\n<passage>On April\u202f5,\u202f2025, Sundara Sportswear released a limited\u2011edition \u201cRise Together Rise Together\u201d jersey featuring Valoria basketball star Elara\u202fFinch at the Sundara Sportswear flagship store in Sunvale. The jersey, part of Sundara\u2019s seasonal \u201cRise Together\u201d campaign that emphasizes unity and perseverance, showcases Finch\u2019s image and will be sold exclusively at the store.</passage>\n<passage>The Rivergate Rivets Women\u2019s Basketball Club announced that 100\u202fpercent of net proceeds from the jersey sales\u2014estimated at roughly $180,000\u2014will be directed to a free community basketball clinic in Rivergate scheduled for June\u202f2025. The two\u2011day event at the Rivergate Community Center will serve up to 150 local youth and will be staffed by the Rivets\u2019 coaching team together with guest trainers.</passage>\n<passage>Finch issued a public statement praising the limited\u2011edition jersey and confirming her participation in the clinic. \u201cWearing this jersey reminds me of the fans who lift us every game, and I can\u2019t wait to share skills and stories at the June\u202f12 clinic,\u201d she said, adding that she will lead a shooting\u2011drills workshop for the attendees.</passage>\n</passages>\n\nYour task is to process these passages by following these steps:\n\n1. Carefully review the list of entities provided in the <entities> section. Each entity will have an associated ID.\n\n2. Search the passages for all occurrences of each entity in the list.\n\n3. For each occurrence found, replace it with the format: {phrase|ID}\n   Where \"phrase\" is exactly how the entity appears in the text (maintaining any abbreviations or variations), and \"ID\" is the entity's identifier from the entities list.\n\n4. Maintain the original structure and formatting of the passages, only changing the entities as described.\n\n5. After processing all entities, review the entire passage to ensure all occurrences have been properly marked and no entities were missed.\n\n6. Output the processed passages, maintaining its original structure but with all entity occurrences replaced as instructed.\n\nImportant points to remember:\n- Be thorough in your search for entities, including variations or partial mentions.\n- Preserve the original text exactly as it appears, only adding the entity markup.\n- Keep the COMPLETE ORIGINAL phrase that you are replacing with {phrase|ID}. The sentence should be identical to how it was before, except for the added markup.\n- If an entity is referred to by full name, the \"phrase\" is the full name.\n- If an entity is referred to by an abbreviation, the \"phrase\" is the used abbreviation.\n- If an entity is referred to using parts of the full name, then the \"phrase\" would be the same parts of the full name.\n\nExamples:\n1. \"Renowned novelist Elara Vance and celebrated philanthropist Rohan Kapoor exchanged vows.\" \n   Should be replaced with:\n   \"Renowned novelist {Elara Vance|PERSON-1} and celebrated philanthropist {Rohan Kapoor|PERSON-2} exchanged vows.\"\n   (When Elara Vance has ID PERSON-1 and Rohan Kapoor has ID PERSON-2)\n\n2. \"Renowned novelist Elara and celebrated philanthropist R. Kapoor exchanged vows.\" \n   Should be replaced with:\n   \"Renowned novelist {Elara|PERSON-1} and celebrated philanthropist {R. Kapoor|PERSON-2} exchanged vows.\"\n\n3. \"Anna Peters told Tim that he should stop talking.\"\n   should be written as:\n   \"{Anna Peters|PERSON-3} told {Tim|PERSON-4} that {he|PERSON-4} should stop talking.\"\n   (When Anna Peters has ID PERSON-3 and Tim Laurens has ID PERSON-4 and is referred to here)\n\nIf multiple entities are referred to by the same word, use this format:\n\"{Both|PERSON-3,PERSON-4} liked the chocolate.\"\n\nFormat your output as follows:\n- Enclose the entire processed news within <news> tags.\n- Place each passage of the outline within separate <passage> tags.\n\nProvide your final output without any additional commentary or explanations. Focus solely on processing the outline as instructed.\n\nProvide all output in an overall <results> root node.",
+  "system-prompt": null,
+  "values": {
+    "NEWSPAPER_PROFILE": "ObjectiveNews",
+    "SUBSET_IDX": 0,
+    "EVENT_INFO": "<date>2025-04-05</date>\n<content>\n<sentence>Sundara Sportswear released the limited\u2011edition Rise Together Rise Together jersey featuring Elara Finch on 2025-04-05 at the Sundara Sportswear flagship store in Sunvale.</sentence>\n<sentence>Rivergate Rivets Women's Basketball Club announced that all net proceeds from the limited\u2011edition Rise Together Rise Together jersey sales will be allocated to fund a free community basketball clinic in Rivergate scheduled for June 2025.</sentence>\n<sentence>The club estimates net proceeds of approximately $180,000, which will fund a two\u2011day clinic at the Rivergate Community Center for up to 150 local youth, featuring coaching staff from the Rivergate Rivets Women's Basketball Club and guest trainers.</sentence>\n<sentence>Elara Finch issued a public statement praising the limited\u2011edition Rise Together Rise Together jersey and confirming her participation in the upcoming community basketball clinic organized by Rivergate Rivets Women's Basketball Club.</sentence>\n<sentence>In her statement, Elara Finch said, \u201cWearing this jersey reminds me of the fans who lift us every game, and I can\u2019t wait to share skills and stories at the June 12 clinic,\u201d confirming she will lead a shooting\u2011drills workshop.</sentence>\n</content>",
+    "CREATED_AT": 1,
+    "EVENT_DATE": "2025-04-05",
+    "PERSONS_XML": "<created_at>0</created_at><date_of_birth>1996-04-12</date_of_birth><description>Elara Finch is a disciplined and resilient athlete known for her sharp court vision and dedication to community outreach.</description><education>Bachelor\u2019s degree in Sports Management Valoria State University</education><entity_class>person</entity_class><eye_color>Hazel</eye_color><gender>Female</gender><hair_color>Chestnut</hair_color><height>178 cm</height><id>PERSON-1</id><last_updated>2025-03-15</last_updated><marital_status>Single</marital_status><name>Elara Finch</name><nationality>Valoria</nationality><profession>Professional basketball player</profession><type>None</type><weight>70 kg</weight>\n<created_at>0</created_at><date_of_birth>1982-09-23</date_of_birth><description>Dana Loris is a strategic thinker who emphasizes player development and team cohesion above all.</description><education>Master\u2019s in Athletic Coaching Meridian Institute of Sports</education><entity_class>person</entity_class><eye_color>Blue</eye_color><gender>Male</gender><hair_color>Dark Brown</hair_color><height>185 cm</height><id>PERSON-2</id><last_updated>2025-03-15</last_updated><marital_status>Married</marital_status><name>Dana Loris</name><nationality>Valoria</nationality><political_affiliation>Independent</political_affiliation><profession>Basketball head coach</profession><type>None</type>",
+    "ORGANIZATIONS_XML": "<annual_revenue>$1.2 million</annual_revenue><created_at>0</created_at><description>The Rivergate Rivets are a community\u2011focused women\u2019s basketball team competing in the national league.</description><entity_class>organization</entity_class><founded>2013</founded><headquarters>Rivergate</headquarters><id>ORGANIZATION-1</id><industry>Sports entertainment</industry><last_updated>2025-03-15</last_updated><mission_statement>Promote women\u2019s athletics through competitive excellence and local engagement.</mission_statement><name>Rivergate Rivets Women's Basketball Club</name><number_of_employees>48</number_of_employees><type>sports club</type>\n<annual_revenue>$22 million</annual_revenue><created_at>0</created_at><description>Sundara Sportswear designs and manufactures performance apparel for athletes and casual wearers.</description><entity_class>organization</entity_class><founded>2001</founded><headquarters>Sunvale</headquarters><id>ORGANIZATION-3</id><industry>Apparel manufacturing</industry><last_updated>2025-03-15</last_updated><mission_statement>Blend innovative fabrics with sustainable practices to empower active lifestyles.</mission_statement><name>Sundara Sportswear</name><number_of_employees>312</number_of_employees><type>company</type>",
+    "LOCATIONS_XML": "",
+    "PRODUCTS_XML": "",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "",
+    "EVENTS_XML": "",
+    "MISCELLANEOUSS_XML": "<created_at>0</created_at><description>Rise Together is a seasonal marketing theme emphasizing unity and perseverance across athletic apparel lines.</description><entity_class>miscellaneous</entity_class><id>MISCELLANEOUS-2</id><last_updated>2025-03-15</last_updated><name>Rise Together</name><type>campaign concept</type>",
+    "USED_PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Elara Finch",
+        "entity_class": "person",
+        "description": "Elara Finch is a disciplined and resilient athlete known for her sharp court vision and dedication to community outreach.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Elara Finch signed a one\u2011year contract extension with the Rivergate Rivets, setting her base salary at $45,000 for the 2025\u201126 season and adding performance incentives.",
+            "date": "2025-03-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Elara Finch was featured on the Rise Together jersey, issued a public statement praising the product, and confirmed she will lead a shooting\u2011drills workshop at the June\u202f12 community clinic.",
+            "date": "2025-04-05"
+          }
+        ],
+        "date_of_birth": "1996-04-12",
+        "gender": "Female",
+        "profession": "Professional basketball player",
+        "nationality": "Valoria",
+        "education": "Bachelor\u2019s degree in Sports Management Valoria State University",
+        "height": "178 cm",
+        "weight": "70 kg",
+        "eye_color": "Hazel",
+        "hair_color": "Chestnut",
+        "marital_status": "Single"
+      }
+    ],
+    "USED_ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Rivergate Rivets Women's Basketball Club",
+        "entity_class": "organization",
+        "description": "The Rivergate Rivets are a community\u2011focused women\u2019s basketball team competing in the national league.",
+        "type": "sports club",
+        "created_at": 0,
+        "last_updated": "2025-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Rivergate Rivets finalized Finch\u2019s contract extension and allocated the resulting cap savings to acquire Maya Torres before the season opener.",
+            "date": "2025-03-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "The Rivergate Rivets Women\u2019s Basketball Club announced that all net proceeds from the Rise Together jersey sales will fund a free community basketball clinic in Rivergate in June\u202f2025.",
+            "date": "2025-04-05"
+          }
+        ],
+        "founded": "2013",
+        "headquarters": "Rivergate",
+        "industry": "Sports entertainment",
+        "mission_statement": "Promote women\u2019s athletics through competitive excellence and local engagement.",
+        "number_of_employees": "48",
+        "annual_revenue": "$1.2 million"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Sundara Sportswear",
+        "entity_class": "organization",
+        "description": "Sundara Sportswear designs and manufactures performance apparel for athletes and casual wearers.",
+        "type": "company",
+        "created_at": 0,
+        "last_updated": "2025-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Sundara Sportswear announced that Finch will feature in its upcoming \u201cRise Together\u201d winter apparel campaign, including a limited\u2011edition jersey released on April\u202f5.",
+            "date": "2025-03-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Sundara Sportswear launched the limited\u2011edition Rise Together jersey on April\u202f5\u202f2025, featuring Elara Finch, and announced a supplemental production run of 2,000 additional jerseys to be manufactured at its Greenfield eco\u2011factory and shipped on May\u202f3\u202f2025.",
+            "date": "2025-04-05"
+          }
+        ],
+        "founded": "2001",
+        "headquarters": "Sunvale",
+        "industry": "Apparel manufacturing",
+        "mission_statement": "Blend innovative fabrics with sustainable practices to empower active lifestyles.",
+        "number_of_employees": "312",
+        "annual_revenue": "$22 million"
+      }
+    ],
+    "USED_LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Sunvale",
+        "entity_class": "location",
+        "description": "Sunvale is a midsized industrial\u2011commercial hub known for its balanced economy and riverfront parks.",
+        "type": "city",
+        "created_at": 1,
+        "last_updated": "2025-04-05",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "Sunvale served as the launch site for the limited\u2011edition Rise Together jersey, with 1,820 units sold at its flagship store on April\u202f5\u202f2025.",
+            "date": "2025-04-05"
+          }
+        ],
+        "population": "82000",
+        "area": "120 km\u00b2",
+        "elevation": "210 m",
+        "country": "Valoria"
+      },
+      {
+        "id": "LOCATION-2",
+        "name": "Rivergate",
+        "entity_class": "location",
+        "description": "Rivergate is a coastal town celebrated for its community sports facilities and modest fishing fleet.",
+        "type": "town",
+        "created_at": 1,
+        "last_updated": "2025-04-05",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "Rivergate will host a free community basketball clinic in June\u202f2025 funded by the net proceeds from the Rise Together jersey sales.",
+            "date": "2025-04-05"
+          }
+        ],
+        "population": "34500",
+        "area": "65 km\u00b2",
+        "elevation": "15 m",
+        "country": "Valoria"
+      }
+    ],
+    "USED_PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "Rise Together jersey",
+        "entity_class": "product",
+        "description": "A limited\u2011edition performance basketball jersey featuring a moisture\u2011wicking interior and the Rise Together motif.",
+        "type": "consumer good",
+        "created_at": 1,
+        "last_updated": "2025-04-05",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "The Rise Together jersey, a limited\u2011edition performance basketball jersey priced at $119, was released on April\u202f5\u202f2025 and later saw a supplemental production run of 2,000 units.",
+            "date": "2025-04-05"
+          }
+        ],
+        "manufacturer": "Sundara Sportswear",
+        "release_date": "2025-04-05",
+        "price": "$119",
+        "weight": "0.28 kg",
+        "warranty": "1 year"
+      }
+    ],
+    "USED_ART": [],
+    "USED_BUILDING": [
+      {
+        "id": "BUILDING-2",
+        "name": "Rivergate Community Center",
+        "entity_class": "building",
+        "description": "The Rivergate Community Center provides multipurpose indoor courts, meeting rooms, and event spaces for local residents.",
+        "type": "public",
+        "created_at": 1,
+        "last_updated": "2025-04-05",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "The Rivergate Community Center will host the free two\u2011day basketball clinic funded by the jersey\u2019s net proceeds in June\u202f2025.",
+            "date": "2025-04-05"
+          }
+        ],
+        "architect": "Mira Kellan",
+        "year_built": "2018",
+        "height": "12 m",
+        "floors": "2",
+        "material": "brick and reinforced steel",
+        "capacity": "250 persons"
+      }
+    ],
+    "USED_EVENT": [],
+    "USED_MISCELLANEOUS": [
+      {
+        "id": "MISCELLANEOUS-2",
+        "name": "Rise Together",
+        "entity_class": "miscellaneous",
+        "description": "Rise Together is a seasonal marketing theme emphasizing unity and perseverance across athletic apparel lines.",
+        "type": "campaign concept",
+        "created_at": 0,
+        "last_updated": "2025-03-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Rise Together is the campaign concept behind Sundara Sportswear\u2019s winter apparel line that will showcase Elara Finch.",
+            "date": "2025-03-15"
+          },
+          {
+            "created_at": 1,
+            "event_update": "The Rise Together campaign concept underpins Sundara Sportswear\u2019s limited\u2011edition jersey release and the associated community\u2011fundraising initiative.",
+            "date": "2025-04-05"
+          }
+        ]
+      }
+    ],
+    "HEADLINE": "Sundara Sportswear Unveils Limited\u2011Edition \u201cRise Together Rise Together\u201d Jersey, Funding $180K Youth Clinic in Rivergate",
+    "PARAGRAPHS": [
+      {
+        "text": "On April\u202f5,\u202f2025, Sundara Sportswear released a limited\u2011edition \u201cRise Together Rise Together\u201d jersey featuring Valoria basketball star Elara\u202fFinch at the Sundara Sportswear flagship store in Sunvale. The jersey, part of Sundara\u2019s seasonal \u201cRise Together\u201d campaign that emphasizes unity and perseverance, showcases Finch\u2019s image and will be sold exclusively at the store."
+      },
+      {
+        "text": "The Rivergate Rivets Women\u2019s Basketball Club announced that 100\u202fpercent of net proceeds from the jersey sales\u2014estimated at roughly $180,000\u2014will be directed to a free community basketball clinic in Rivergate scheduled for June\u202f2025. The two\u2011day event at the Rivergate Community Center will serve up to 150 local youth and will be staffed by the Rivets\u2019 coaching team together with guest trainers."
+      },
+      {
+        "text": "Finch issued a public statement praising the limited\u2011edition jersey and confirming her participation in the clinic. \u201cWearing this jersey reminds me of the fans who lift us every game, and I can\u2019t wait to share skills and stories at the June\u202f12 clinic,\u201d she said, adding that she will lead a shooting\u2011drills workshop for the attendees."
+      }
+    ],
+    "IS_VALID": true,
+    "CURRENT_NEWS_ARTICLE_XML": "<date>2025-04-05</date>\n<headline>Sundara Sportswear Unveils Limited\u2011Edition \u201cRise Together Rise Together\u201d Jersey, Funding $180K Youth Clinic in Rivergate</headline>\n<paragraph>On April\u202f5, 2025, Sundara Sportswear launched a limited\u2011edition \u201cRise Together Rise Together\u201d jersey featuring Valoria basketball star Elara\u202fFinch at the company\u2019s flagship store in Sunvale. The jersey, part of Sundara\u2019s seasonal \u201cRise Together\u201d campaign promoting unity and perseverance, showcases Finch\u2019s image and will be sold at the store.</paragraph>\n<paragraph>The Rivergate Rivets Women\u2019s Basketball Club confirmed that 100\u202fpercent of net proceeds from the jersey sales\u2014estimated at roughly $180,000\u2014will be directed to a free community basketball clinic in Rivergate scheduled for June\u202f2025. The two\u2011day event at the Rivergate Community Center will serve up to 150 local youth and will be staffed by the Rivets\u2019 coaching team along with guest trainers.</paragraph>\n<paragraph>Finch issued a public statement praising the limited\u2011edition jersey and confirming her participation in the clinic. \u201cWearing this jersey reminds me of the fans who lift us every game, and I can\u2019t wait to share skills and stories at the June\u202f12 clinic,\u201d she said, adding that she will lead a shooting\u2011drills workshop for the attendees.</paragraph>",
+    "USED_PERSONS_XML": "<person><created_at>0</created_at><date_of_birth>1996-04-12</date_of_birth><description>Elara Finch is a disciplined and resilient athlete known for her sharp court vision and dedication to community outreach.</description><education>Bachelor\u2019s degree in Sports Management Valoria State University</education><entity_class>person</entity_class><eye_color>Hazel</eye_color><gender>Female</gender><hair_color>Chestnut</hair_color><height>178 cm</height><history>[{'created_at': 0, 'event_update': 'Elara Finch signed a one\u2011year contract extension with the Rivergate Rivets, setting her base salary at $45,000 for the 2025\u201126 season and adding performance incentives.', 'date': '2025-03-15'}, {'created_at': 1, 'event_update': 'Elara Finch was featured on the Rise Together jersey, issued a public statement praising the product, and confirmed she will lead a shooting\u2011drills workshop at the June\\u202f12 community clinic.', 'date': '2025-04-05'}]</history><id>PERSON-1</id><last_updated>2025-03-15</last_updated><marital_status>Single</marital_status><name>Elara Finch</name><nationality>Valoria</nationality><profession>Professional basketball player</profession><type>None</type><weight>70 kg</weight></person>",
+    "USED_ORGANIZATIONS_XML": "<organization><annual_revenue>$1.2 million</annual_revenue><created_at>0</created_at><description>The Rivergate Rivets are a community\u2011focused women\u2019s basketball team competing in the national league.</description><entity_class>organization</entity_class><founded>2013</founded><headquarters>Rivergate</headquarters><history>[{'created_at': 0, 'event_update': 'The Rivergate Rivets finalized Finch\u2019s contract extension and allocated the resulting cap savings to acquire Maya Torres before the season opener.', 'date': '2025-03-15'}, {'created_at': 1, 'event_update': 'The Rivergate Rivets Women\u2019s Basketball Club announced that all net proceeds from the Rise Together jersey sales will fund a free community basketball clinic in Rivergate in June\\u202f2025.', 'date': '2025-04-05'}]</history><id>ORGANIZATION-1</id><industry>Sports entertainment</industry><last_updated>2025-03-15</last_updated><mission_statement>Promote women\u2019s athletics through competitive excellence and local engagement.</mission_statement><name>Rivergate Rivets Women's Basketball Club</name><number_of_employees>48</number_of_employees><type>sports club</type></organization>\n<organization><annual_revenue>$22 million</annual_revenue><created_at>0</created_at><description>Sundara Sportswear designs and manufactures performance apparel for athletes and casual wearers.</description><entity_class>organization</entity_class><founded>2001</founded><headquarters>Sunvale</headquarters><history>[{'created_at': 0, 'event_update': 'Sundara Sportswear announced that Finch will feature in its upcoming \u201cRise Together\u201d winter apparel campaign, including a limited\u2011edition jersey released on April\\u202f5.', 'date': '2025-03-15'}, {'created_at': 1, 'event_update': 'Sundara Sportswear launched the limited\u2011edition Rise Together jersey on April\\u202f5\\u202f2025, featuring Elara Finch, and announced a supplemental production run of 2,000 additional jerseys to be manufactured at its Greenfield eco\u2011factory and shipped on May\\u202f3\\u202f2025.', 'date': '2025-04-05'}]</history><id>ORGANIZATION-3</id><industry>Apparel manufacturing</industry><last_updated>2025-03-15</last_updated><mission_statement>Blend innovative fabrics with sustainable practices to empower active lifestyles.</mission_statement><name>Sundara Sportswear</name><number_of_employees>312</number_of_employees><type>company</type></organization>",
+    "USED_LOCATIONS_XML": "<location><area>120 km\u00b2</area><country>Valoria</country><created_at>1</created_at><description>Sunvale is a midsized industrial\u2011commercial hub known for its balanced economy and riverfront parks.</description><elevation>210 m</elevation><entity_class>location</entity_class><history>[{'created_at': 1, 'event_update': 'Sunvale served as the launch site for the limited\u2011edition Rise Together jersey, with 1,820 units sold at its flagship store on April\\u202f5\\u202f2025.', 'date': '2025-04-05'}]</history><id>LOCATION-1</id><last_updated>2025-04-05</last_updated><name>Sunvale</name><population>82000</population><type>city</type></location>\n<location><area>65 km\u00b2</area><country>Valoria</country><created_at>1</created_at><description>Rivergate is a coastal town celebrated for its community sports facilities and modest fishing fleet.</description><elevation>15 m</elevation><entity_class>location</entity_class><history>[{'created_at': 1, 'event_update': 'Rivergate will host a free community basketball clinic in June\\u202f2025 funded by the net proceeds from the Rise Together jersey sales.', 'date': '2025-04-05'}]</history><id>LOCATION-2</id><last_updated>2025-04-05</last_updated><name>Rivergate</name><population>34500</population><type>town</type></location>",
+    "USED_PRODUCTS_XML": "<product><created_at>1</created_at><description>A limited\u2011edition performance basketball jersey featuring a moisture\u2011wicking interior and the Rise Together motif.</description><entity_class>product</entity_class><history>[{'created_at': 1, 'event_update': 'The Rise Together jersey, a limited\u2011edition performance basketball jersey priced at $119, was released on April\\u202f5\\u202f2025 and later saw a supplemental production run of 2,000 units.', 'date': '2025-04-05'}]</history><id>PRODUCT-1</id><last_updated>2025-04-05</last_updated><manufacturer>Sundara Sportswear</manufacturer><name>Rise Together jersey</name><price>$119</price><release_date>2025-04-05</release_date><type>consumer good</type><warranty>1 year</warranty><weight>0.28 kg</weight></product>",
+    "USED_ARTS_XML": "",
+    "USED_BUILDINGS_XML": "<building><architect>Mira Kellan</architect><capacity>250 persons</capacity><created_at>1</created_at><description>The Rivergate Community Center provides multipurpose indoor courts, meeting rooms, and event spaces for local residents.</description><entity_class>building</entity_class><floors>2</floors><height>12 m</height><history>[{'created_at': 1, 'event_update': 'The Rivergate Community Center will host the free two\u2011day basketball clinic funded by the jersey\u2019s net proceeds in June\\u202f2025.', 'date': '2025-04-05'}]</history><id>BUILDING-2</id><last_updated>2025-04-05</last_updated><material>brick and reinforced steel</material><name>Rivergate Community Center</name><type>public</type><year_built>2018</year_built></building>",
+    "USED_EVENTS_XML": "",
+    "USED_MISCELLANEOUSS_XML": "<miscellaneous><created_at>0</created_at><description>Rise Together is a seasonal marketing theme emphasizing unity and perseverance across athletic apparel lines.</description><entity_class>miscellaneous</entity_class><history>[{'created_at': 0, 'event_update': 'Rise Together is the campaign concept behind Sundara Sportswear\u2019s winter apparel line that will showcase Elara Finch.', 'date': '2025-03-15'}, {'created_at': 1, 'event_update': 'The Rise Together campaign concept underpins Sundara Sportswear\u2019s limited\u2011edition jersey release and the associated community\u2011fundraising initiative.', 'date': '2025-04-05'}]</history><id>MISCELLANEOUS-2</id><last_updated>2025-03-15</last_updated><name>Rise Together</name><type>campaign concept</type></miscellaneous>",
+    "PASSAGES_XML": "<passage>On April\u202f5,\u202f2025, Sundara Sportswear released a limited\u2011edition \u201cRise Together Rise Together\u201d jersey featuring Valoria basketball star Elara\u202fFinch at the Sundara Sportswear flagship store in Sunvale. The jersey, part of Sundara\u2019s seasonal \u201cRise Together\u201d campaign that emphasizes unity and perseverance, showcases Finch\u2019s image and will be sold exclusively at the store.</passage>\n<passage>The Rivergate Rivets Women\u2019s Basketball Club announced that 100\u202fpercent of net proceeds from the jersey sales\u2014estimated at roughly $180,000\u2014will be directed to a free community basketball clinic in Rivergate scheduled for June\u202f2025. The two\u2011day event at the Rivergate Community Center will serve up to 150 local youth and will be staffed by the Rivets\u2019 coaching team together with guest trainers.</passage>\n<passage>Finch issued a public statement praising the limited\u2011edition jersey and confirming her participation in the clinic. \u201cWearing this jersey reminds me of the fans who lift us every game, and I can\u2019t wait to share skills and stories at the June\u202f12 clinic,\u201d she said, adding that she will lead a shooting\u2011drills workshop for the attendees.</passage>"
+  }
+}

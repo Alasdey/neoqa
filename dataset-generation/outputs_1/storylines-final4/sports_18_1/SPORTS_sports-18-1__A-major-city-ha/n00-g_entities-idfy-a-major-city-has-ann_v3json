@@ -1,0 +1,318 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "microsoft/phi-4-reasoning-plus",
+    "temperature": 0.0,
+    "max-tokens": 4096
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "To identify the named entities explicitly mentioned in the outline, I will go through each entity in the provided list and check if it is directly referred to by name in the outline. Here is the analysis:\n\n1. **Jordan Riverton** (PERSON-1) is mentioned as \"Eldridge Mayor Jordan Riverton\" in the outline.\n2. **Alicia Trevino** (PERSON-2) is mentioned as \"Nexus Innovators CEO Alicia Trevino\" in the outline.\n3. **Thomas Kane** (PERSON-3) is mentioned as \"Project manager, Thomas Kane from Aegis Events\" in the outline.\n4. **Nexus Innovators** (ORGANIZATION-1) is mentioned multiple times, such as \"the tech company Nexus Innovators\" and \"Officials from Nexus Innovators.\"\n5. **Aegis Events** (ORGANIZATION-2) is mentioned as \"Aegis Events, a local event management firm\" and \"Aegis Events has a strong track record.\"\n6. **Nexus Vision VR system** (PRODUCT-1) is mentioned as \"the Nexus Vision VR system\" in the outline.\n7. **Eldridge Dome** (BUILDING-1) is mentioned multiple times, such as \"Eldridge Dome\" and \"the dome.\"\n8. **Eldridge City Cricket League** (EVENT-1) is mentioned as \"the opening match of the Eldridge City Cricket League.\"\n\nAll these entities are explicitly mentioned by name in the outline. Here is the final output:\n\n```xml\n<results>\n<entities>\n<person><id>PERSON-1</id><name>Jordan Riverton</name></person>\n<person><id>PERSON-2</id><name>Alicia Trevino</name></person>\n<person><id>PERSON-3</id><name>Thomas Kane</name></person>\n<organization><id>ORGANIZATION-1</id><name>Nexus Innovators</name></organization>\n<organization><id>ORGANIZATION-2</id><name>Aegis Events</name></organization>\n<product><id>PRODUCT-1</id><name>Nexus Vision VR system</name></product>\n<building><id>BUILDING-1</id><name>Eldridge Dome</name></building>\n<event><id>EVENT-1</id><name>Eldridge City Cricket League</name></event>\n</entities>\n</results>\n```"
+  },
+  "response": "To identify the named entities explicitly mentioned in the outline, I will go through each entity in the provided list and check if it is directly referred to by name in the outline. Here is the analysis:\n\n1. **Jordan Riverton** (PERSON-1) is mentioned as \"Eldridge Mayor Jordan Riverton\" in the outline.\n2. **Alicia Trevino** (PERSON-2) is mentioned as \"Nexus Innovators CEO Alicia Trevino\" in the outline.\n3. **Thomas Kane** (PERSON-3) is mentioned as \"Project manager, Thomas Kane from Aegis Events\" in the outline.\n4. **Nexus Innovators** (ORGANIZATION-1) is mentioned multiple times, such as \"the tech company Nexus Innovators\" and \"Officials from Nexus Innovators.\"\n5. **Aegis Events** (ORGANIZATION-2) is mentioned as \"Aegis Events, a local event management firm\" and \"Aegis Events has a strong track record.\"\n6. **Nexus Vision VR system** (PRODUCT-1) is mentioned as \"the Nexus Vision VR system\" in the outline.\n7. **Eldridge Dome** (BUILDING-1) is mentioned multiple times, such as \"Eldridge Dome\" and \"the dome.\"\n8. **Eldridge City Cricket League** (EVENT-1) is mentioned as \"the opening match of the Eldridge City Cricket League.\"\n\nAll these entities are explicitly mentioned by name in the outline. Here is the final output:\n\n```xml\n<results>\n<entities>\n<person><id>PERSON-1</id><name>Jordan Riverton</name></person>\n<person><id>PERSON-2</id><name>Alicia Trevino</name></person>\n<person><id>PERSON-3</id><name>Thomas Kane</name></person>\n<organization><id>ORGANIZATION-1</id><name>Nexus Innovators</name></organization>\n<organization><id>ORGANIZATION-2</id><name>Aegis Events</name></organization>\n<product><id>PRODUCT-1</id><name>Nexus Vision VR system</name></product>\n<building><id>BUILDING-1</id><name>Eldridge Dome</name></building>\n<event><id>EVENT-1</id><name>Eldridge City Cricket League</name></event>\n</entities>\n</results>\n```",
+  "instructions": "You are an AI assistant tasked with identifying which of the provided entities are explicitly named within the provided outline. Follow these instructions carefully:\n\n1. The date for this fictional event outline is:\n<date>{{DATE}}</date>\n\n2. Here is the outline you need to analyze:\n<outline>\n{{OUTLINE}}\n</outline>\n\n3. Here is the list of known (fictional) named entities:\n<entities>\n{{LOCATIONS_XML}}\n{{PERSONS_XML}}\n{{ORGANIZATIONS_XML}}\n{{PRODUCTS_XML}}\n{{ARTS_XML}}\n{{EVENTS_XML}}\n{{BUILDINGS_XML}}\n{{MISCELLANEOUSS_XML}}\n\n{{ADJUSTED_LOCATIONS_XML}}\n{{ADJUSTED_PERSONS_XML}}\n{{ADJUSTED_ORGANIZATIONS_XML}}\n{{ADJUSTED_PRODUCTS_XML}}\n{{ADJUSTED_ARTS_XML}}\n{{ADJUSTED_BUILDINGS_XML}}\n{{ADJUSTED_EVENTS_XML}}\n{{ADJUSTED_MISCELLANEOUSS_XML}}\n</entities>\n\n4. Your task is to go through all of the named entities in the provided list. For each named entity, check if it is explicitly referred to by name in the outline. If a named entity is explicitly mentioned by name, include it in your results.\n\n5. For each entity you identify, list them using the following format:\n<[entity_type]><id>[id of the entity]</id><name>[full name of the entity]</name></[entity_type]>\n\n6. Present your final output within a single <results> root node, structured as follows:\n\n<results>\n<entities>\n[List all identified entities here as described in step 5]\n</entities>\n</results>\n\n7. Double-check your work: For each entity that you have identified, make sure to find the sentence within the outline that explicitly refers to this identified entity by name. If you cannot find that the entity is mentioned explicitly by name in the outline, do not include it in your results.\n\n8. You can use a <scratchpad> for your thinking process. Do not include any XML tags within your scratchpad.\n\n9. Make sure that you have not missed any named entity from the outline that was also provided to you in the list of named entities.\n\nRemember, only include entities that are explicitly mentioned by name in the outline. Do not infer or assume the presence of entities that are not directly named.",
+  "text_prompt": "You are an AI assistant tasked with identifying which of the provided entities are explicitly named within the provided outline. Follow these instructions carefully:\n\n1. The date for this fictional event outline is:\n<date>2025-06-09</date>\n\n2. Here is the outline you need to analyze:\n<outline>\nThe city of Eldridge announces a partnership agreement with the tech company Nexus Innovators to integrate cutting-edge virtual reality experiences into the newly renovated Eldridge Dome.\nEldridge Dome, a state-of-the-art sports facility, has been a central hub for community events and sports activities since its opening in 2010.\nEldridge Dome, located in the heart of Eldridge city, recently undertook a significant renovation funded through a combination of public and private investments.\nThe renovation included the installation of advanced LED lighting and eco-friendly materials, enhancing both the aesthetic and environmental sustainability of the stadium.\nNexus Innovators plans to install the Nexus Vision VR system, providing fans with immersive experiences during live sports events at the dome.\nThe Nexus Vision VR system will feature high-definition 360-degree views and real-time interactive features, allowing fans to experience games from multiple perspectives.\nThe city council held a meeting where Eldridge Mayor Jordan Riverton emphasized the goal of enhancing resident engagement through this technological advancement.\nMayor Riverton highlighted that the VR integration aims to attract younger audiences and tech-savvy fans to the stadium, boosting overall attendance.\nOfficials from Nexus Innovators reveal that the VR system is designed to offer interactive replays, personalized content, and virtual meet-and-greets with athletes.\nThe personalized content will include player statistics, historical game highlights, and exclusive interviews, tailored to individual fan preferences.\nLocal businesses near Eldridge Dome express optimism, anticipating a rise in foot traffic and increased patronage during game days due to the enhanced fan experience.\nRestaurants and retail shops in the vicinity have already started planning special promotions and events to coincide with game days.\nFor its initial trial, the VR technology will be integrated during the opening match of the Eldridge City Cricket League, scheduled for June 15, 2025.\nThe opening match will feature a special halftime show with a live demonstration of the VR capabilities, showcasing the technology to fans.\nNexus Innovators CEO Alicia Trevino introduces a promotional campaign offering free VR headset trials to the first 500 fans at the door on the opening day.\nThe promotional campaign also includes a social media contest where fans can win season passes by sharing their VR experiences online.\nThe partnership project is managed by Aegis Events, a local event management firm responsible for coordinating the implementation of the VR setup within the stadium.\nAegis Events has a strong track record in managing large-scale events in Eldridge, having successfully organized the annual Eldridge Music Festival for the past five years.\nProject manager, Thomas Kane from Aegis Events, outlines a phased approach to roll out the full VR experience over the next sports season, ensuring a smooth integration with existing fan services.\nThe phased approach includes initial testing during select games, followed by full deployment and continuous feedback collection to refine the VR experience.\n</outline>\n\n3. Here is the list of known (fictional) named entities:\n<entities>\n\n\n\n\n\n\n\n\n\n\n<person><id>PERSON-1</id><name>Jordan Riverton</name><old_name>Jordan Riverton</old_name></person>\n<person><id>PERSON-2</id><name>Alicia Trevino</name><old_name>Alicia Trevino</old_name></person>\n<person><id>PERSON-3</id><name>Thomas Kane</name><old_name>Thomas Kane</old_name></person>\n<organization><id>ORGANIZATION-1</id><name>Nexus Innovators</name><old_name>Nexus Innovators</old_name></organization>\n<organization><id>ORGANIZATION-2</id><name>Aegis Events</name><old_name>Aegis Events</old_name></organization>\n<product><id>PRODUCT-1</id><name>Nexus Vision VR system</name><old_name>Nexus Vision VR system</old_name></product>\n\n<building><id>BUILDING-1</id><name>Eldridge Dome</name><old_name>Eldridge Dome</old_name></building>\n<event><id>EVENT-1</id><name>Eldridge City Cricket League</name><old_name>Eldridge City Cricket League</old_name></event>\n\n</entities>\n\n4. Your task is to go through all of the named entities in the provided list. For each named entity, check if it is explicitly referred to by name in the outline. If a named entity is explicitly mentioned by name, include it in your results.\n\n5. For each entity you identify, list them using the following format:\n<[entity_type]><id>[id of the entity]</id><name>[full name of the entity]</name></[entity_type]>\n\n6. Present your final output within a single <results> root node, structured as follows:\n\n<results>\n<entities>\n[List all identified entities here as described in step 5]\n</entities>\n</results>\n\n7. Double-check your work: For each entity that you have identified, make sure to find the sentence within the outline that explicitly refers to this identified entity by name. If you cannot find that the entity is mentioned explicitly by name in the outline, do not include it in your results.\n\n8. You can use a <scratchpad> for your thinking process. Do not include any XML tags within your scratchpad.\n\n9. Make sure that you have not missed any named entity from the outline that was also provided to you in the list of named entities.\n\nRemember, only include entities that are explicitly mentioned by name in the outline. Do not infer or assume the presence of entities that are not directly named.",
+  "system-prompt": null,
+  "values": {
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "GENRE": "Sports",
+    "HISTORIES": [],
+    "EVENT_SUMMARY": "A major city has announced a partnership with a leading technology firm to integrate virtual reality experiences into its renovated stadium, enhancing fan engagement during live events.",
+    "EVENT_SUMMARY_FOR_NAME": "A major city has ann",
+    "KEYWORDS": "",
+    "CREATED_AT": 0,
+    "NEXT_IDS": {
+      "person": 4,
+      "organization": 3,
+      "location": 1,
+      "product": 2,
+      "art": 1,
+      "building": 2,
+      "event": 2,
+      "miscellaneous": 1
+    },
+    "PROVIDED_DATE": "",
+    "PERSON": [],
+    "ORGANIZATION": [],
+    "LOCATION": [],
+    "PRODUCT": [],
+    "ART": [],
+    "BUILDING": [],
+    "EVENT": [],
+    "MISCELLANEOUS": [],
+    "PERSONS_XML": "",
+    "ORGANIZATIONS_XML": "",
+    "LOCATIONS_XML": "",
+    "PRODUCTS_XML": "",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "",
+    "EVENTS_XML": "",
+    "MISCELLANEOUSS_XML": "",
+    "NUM_STORYITEMS": 10,
+    "HISTORY_XML": "",
+    "STORY_ITEM": [
+      "The city of Eldridge announces a partnership agreement with the tech company Nexus Innovators to integrate cutting-edge virtual reality experiences into the newly renovated Eldridge Dome.",
+      "Eldridge Dome, a state-of-the-art sports facility, has been a central hub for community events and sports activities since its opening in 2010.",
+      "Eldridge Dome, located in the heart of Eldridge city, recently undertook a significant renovation funded through a combination of public and private investments.",
+      "The renovation included the installation of advanced LED lighting and eco-friendly materials, enhancing both the aesthetic and environmental sustainability of the stadium.",
+      "Nexus Innovators plans to install the Nexus Vision VR system, providing fans with immersive experiences during live sports events at the dome.",
+      "The Nexus Vision VR system will feature high-definition 360-degree views and real-time interactive features, allowing fans to experience games from multiple perspectives.",
+      "The city council held a meeting where Eldridge Mayor Jordan Riverton emphasized the goal of enhancing resident engagement through this technological advancement.",
+      "Mayor Riverton highlighted that the VR integration aims to attract younger audiences and tech-savvy fans to the stadium, boosting overall attendance.",
+      "Officials from Nexus Innovators reveal that the VR system is designed to offer interactive replays, personalized content, and virtual meet-and-greets with athletes.",
+      "The personalized content will include player statistics, historical game highlights, and exclusive interviews, tailored to individual fan preferences.",
+      "Local businesses near Eldridge Dome express optimism, anticipating a rise in foot traffic and increased patronage during game days due to the enhanced fan experience.",
+      "Restaurants and retail shops in the vicinity have already started planning special promotions and events to coincide with game days.",
+      "For its initial trial, the VR technology will be integrated during the opening match of the Eldridge City Cricket League, scheduled for June 15, 2025.",
+      "The opening match will feature a special halftime show with a live demonstration of the VR capabilities, showcasing the technology to fans.",
+      "Nexus Innovators CEO Alicia Trevino introduces a promotional campaign offering free VR headset trials to the first 500 fans at the door on the opening day.",
+      "The promotional campaign also includes a social media contest where fans can win season passes by sharing their VR experiences online.",
+      "The partnership project is managed by Aegis Events, a local event management firm responsible for coordinating the implementation of the VR setup within the stadium.",
+      "Aegis Events has a strong track record in managing large-scale events in Eldridge, having successfully organized the annual Eldridge Music Festival for the past five years.",
+      "Project manager, Thomas Kane from Aegis Events, outlines a phased approach to roll out the full VR experience over the next sports season, ensuring a smooth integration with existing fan services.",
+      "The phased approach includes initial testing during select games, followed by full deployment and continuous feedback collection to refine the VR experience."
+    ],
+    "DATE": "2025-06-09",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 2,
+    "OUTLINE": "The city of Eldridge announces a partnership agreement with the tech company Nexus Innovators to integrate cutting-edge virtual reality experiences into the newly renovated Eldridge Dome.\nEldridge Dome, a state-of-the-art sports facility, has been a central hub for community events and sports activities since its opening in 2010.\nEldridge Dome, located in the heart of Eldridge city, recently undertook a significant renovation funded through a combination of public and private investments.\nThe renovation included the installation of advanced LED lighting and eco-friendly materials, enhancing both the aesthetic and environmental sustainability of the stadium.\nNexus Innovators plans to install the Nexus Vision VR system, providing fans with immersive experiences during live sports events at the dome.\nThe Nexus Vision VR system will feature high-definition 360-degree views and real-time interactive features, allowing fans to experience games from multiple perspectives.\nThe city council held a meeting where Eldridge Mayor Jordan Riverton emphasized the goal of enhancing resident engagement through this technological advancement.\nMayor Riverton highlighted that the VR integration aims to attract younger audiences and tech-savvy fans to the stadium, boosting overall attendance.\nOfficials from Nexus Innovators reveal that the VR system is designed to offer interactive replays, personalized content, and virtual meet-and-greets with athletes.\nThe personalized content will include player statistics, historical game highlights, and exclusive interviews, tailored to individual fan preferences.\nLocal businesses near Eldridge Dome express optimism, anticipating a rise in foot traffic and increased patronage during game days due to the enhanced fan experience.\nRestaurants and retail shops in the vicinity have already started planning special promotions and events to coincide with game days.\nFor its initial trial, the VR technology will be integrated during the opening match of the Eldridge City Cricket League, scheduled for June 15, 2025.\nThe opening match will feature a special halftime show with a live demonstration of the VR capabilities, showcasing the technology to fans.\nNexus Innovators CEO Alicia Trevino introduces a promotional campaign offering free VR headset trials to the first 500 fans at the door on the opening day.\nThe promotional campaign also includes a social media contest where fans can win season passes by sharing their VR experiences online.\nThe partnership project is managed by Aegis Events, a local event management firm responsible for coordinating the implementation of the VR setup within the stadium.\nAegis Events has a strong track record in managing large-scale events in Eldridge, having successfully organized the annual Eldridge Music Festival for the past five years.\nProject manager, Thomas Kane from Aegis Events, outlines a phased approach to roll out the full VR experience over the next sports season, ensuring a smooth integration with existing fan services.\nThe phased approach includes initial testing during select games, followed by full deployment and continuous feedback collection to refine the VR experience.",
+    "PRE-CONSISTENCY-NUM-ITEMS": 20,
+    "STORYITEM_XML": "<storyitems>\n<storyitem>The city of Eldridge announces a partnership agreement with the tech company Nexus Innovators to integrate cutting-edge virtual reality experiences into the newly renovated Eldridge Dome.</storyitem>\n<storyitem>Eldridge Dome, a state-of-the-art sports facility, has been a central hub for community events and sports activities since its opening in 2010.</storyitem>\n<storyitem>Eldridge Dome, located in the heart of Eldridge city, recently undertook a significant renovation funded through a combination of public and private investments.</storyitem>\n<storyitem>The renovation included the installation of advanced LED lighting and eco-friendly materials, enhancing both the aesthetic and environmental sustainability of the stadium.</storyitem>\n<storyitem>Nexus Innovators plans to install the Nexus Vision VR system, providing fans with immersive experiences during live sports events at the dome.</storyitem>\n<storyitem>The Nexus Vision VR system will feature high-definition 360-degree views and real-time interactive features, allowing fans to experience games from multiple perspectives.</storyitem>\n<storyitem>The city council held a meeting where Eldridge Mayor Jordan Riverton emphasized the goal of enhancing resident engagement through this technological advancement.</storyitem>\n<storyitem>Mayor Riverton highlighted that the VR integration aims to attract younger audiences and tech-savvy fans to the stadium, boosting overall attendance.</storyitem>\n<storyitem>Officials from Nexus Innovators reveal that the VR system is designed to offer interactive replays, personalized content, and virtual meet-and-greets with athletes.</storyitem>\n<storyitem>The personalized content will include player statistics, historical game highlights, and exclusive interviews, tailored to individual fan preferences.</storyitem>\n<storyitem>Local businesses near Eldridge Dome express optimism, anticipating a rise in foot traffic and increased patronage during game days due to the enhanced fan experience.</storyitem>\n<storyitem>Restaurants and retail shops in the vicinity have already started planning special promotions and events to coincide with game days.</storyitem>\n<storyitem>For its initial trial, the VR technology will be integrated during the opening match of the Eldridge City Cricket League, scheduled for June 15, 2025.</storyitem>\n<storyitem>The opening match will feature a special halftime show with a live demonstration of the VR capabilities, showcasing the technology to fans.</storyitem>\n<storyitem>Nexus Innovators CEO Alicia Trevino introduces a promotional campaign offering free VR headset trials to the first 500 fans at the door on the opening day.</storyitem>\n<storyitem>The promotional campaign also includes a social media contest where fans can win season passes by sharing their VR experiences online.</storyitem>\n<storyitem>The partnership project is managed by Aegis Events, a local event management firm responsible for coordinating the implementation of the VR setup within the stadium.</storyitem>\n<storyitem>Aegis Events has a strong track record in managing large-scale events in Eldridge, having successfully organized the annual Eldridge Music Festival for the past five years.</storyitem>\n<storyitem>Project manager, Thomas Kane from Aegis Events, outlines a phased approach to roll out the full VR experience over the next sports season, ensuring a smooth integration with existing fan services.</storyitem>\n<storyitem>The phased approach includes initial testing during select games, followed by full deployment and continuous feedback collection to refine the VR experience.</storyitem>\n<storyitems>",
+    "NEW_PERSON_NAME": [
+      {
+        "name": "Jordan Riverton",
+        "old_name": "Jordan Riverton"
+      },
+      {
+        "name": "Alicia Trevino",
+        "old_name": "Alicia Trevino"
+      },
+      {
+        "name": "Thomas Kane",
+        "old_name": "Thomas Kane"
+      }
+    ],
+    "NEW_ORGANIZATION_NAME": [
+      {
+        "name": "Nexus Innovators",
+        "old_name": "Nexus Innovators"
+      },
+      {
+        "name": "Aegis Events",
+        "old_name": "Aegis Events"
+      }
+    ],
+    "NEW_LOCATION_NAME": [],
+    "NEW_PRODUCT_NAME": [
+      {
+        "name": "Nexus Vision VR system",
+        "old_name": "Nexus Vision VR system"
+      }
+    ],
+    "NEW_ART_NAME": [],
+    "NEW_BUILDING_NAME": [
+      {
+        "name": "Eldridge Dome",
+        "old_name": "Eldridge Dome"
+      }
+    ],
+    "NEW_EVENT_NAME": [
+      {
+        "name": "Eldridge City Cricket League",
+        "old_name": "Eldridge City Cricket League"
+      }
+    ],
+    "NEW_MISCELLANEOUS_NAME": [],
+    "CORRECTED_PERSON_NAME": [
+      {
+        "name": "Jordan Riverton",
+        "old_name": "Jordan Riverton",
+        "id": "PERSON-1"
+      },
+      {
+        "name": "Alicia Trevino",
+        "old_name": "Alicia Trevino",
+        "id": "PERSON-2"
+      },
+      {
+        "name": "Thomas Kane",
+        "old_name": "Thomas Kane",
+        "id": "PERSON-3"
+      }
+    ],
+    "CORRECTED_ORGANIZATION_NAME": [
+      {
+        "name": "Nexus Innovators",
+        "old_name": "Nexus Innovators",
+        "id": "ORGANIZATION-1"
+      },
+      {
+        "name": "Aegis Events",
+        "old_name": "Aegis Events",
+        "id": "ORGANIZATION-2"
+      }
+    ],
+    "CORRECTED_LOCATION_NAME": [],
+    "CORRECTED_PRODUCT_NAME": [
+      {
+        "name": "Nexus Vision VR system",
+        "old_name": "Nexus Vision VR system",
+        "id": "PRODUCT-1"
+      }
+    ],
+    "CORRECTED_ART_NAME": [],
+    "CORRECTED_BUILDING_NAME": [
+      {
+        "name": "Eldridge Dome",
+        "old_name": "Eldridge Dome",
+        "id": "BUILDING-1"
+      }
+    ],
+    "CORRECTED_EVENT_NAME": [
+      {
+        "name": "Eldridge City Cricket League",
+        "old_name": "Eldridge City Cricket League",
+        "id": "EVENT-1"
+      }
+    ],
+    "CORRECTED_MISCELLANEOUS_NAME": [],
+    "CRITIQUE_ERRORS": {
+      "entity-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ]
+    },
+    "ADJUSTED_PERSONS_XML": "<person><id>PERSON-1</id><name>Jordan Riverton</name><old_name>Jordan Riverton</old_name></person>\n<person><id>PERSON-2</id><name>Alicia Trevino</name><old_name>Alicia Trevino</old_name></person>\n<person><id>PERSON-3</id><name>Thomas Kane</name><old_name>Thomas Kane</old_name></person>",
+    "ADJUSTED_ORGANIZATIONS_XML": "<organization><id>ORGANIZATION-1</id><name>Nexus Innovators</name><old_name>Nexus Innovators</old_name></organization>\n<organization><id>ORGANIZATION-2</id><name>Aegis Events</name><old_name>Aegis Events</old_name></organization>",
+    "ADJUSTED_LOCATIONS_XML": "",
+    "ADJUSTED_PRODUCTS_XML": "<product><id>PRODUCT-1</id><name>Nexus Vision VR system</name><old_name>Nexus Vision VR system</old_name></product>",
+    "ADJUSTED_ARTS_XML": "",
+    "ADJUSTED_BUILDINGS_XML": "<building><id>BUILDING-1</id><name>Eldridge Dome</name><old_name>Eldridge Dome</old_name></building>",
+    "ADJUSTED_EVENTS_XML": "<event><id>EVENT-1</id><name>Eldridge City Cricket League</name><old_name>Eldridge City Cricket League</old_name></event>",
+    "ADJUSTED_MISCELLANEOUSS_XML": ""
+  }
+}

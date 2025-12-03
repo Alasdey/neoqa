@@ -1,0 +1,191 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "openai/gpt-5-mini",
+    "temperature": 0.0,
+    "max-tokens": 8000
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "<result>\n<scratchpad>\nPlan:\n- Keep the original headline unchanged.\n- Maintain the article's concise, factual news tone and sentence structure.\n- Ensure every detail from the ground-truth outline appears in the paragraphs:\n  - First paragraph: clearance time/date, Dr. Elias Verran, Maya Cortes, 10\u201312 minute cap, definition as total in-game time, delivered in no more than two stints, coaching to minimise prolonged high-intensity defensive minutes.\n  - Second paragraph: imaging findings \u2014 small anechoic suprapatellar effusion ~7\u20139 mm depth, intact patellar and quadriceps tendon continuity, no focal Doppler hyperemia suggestive of active tendinopathy; clinical exam \u2014 active knee extension 0\u00b0 and flexion 135\u00b0 bilaterally, resting VAS 1/10 rising to 2/10 with single-leg squat, stable anterior drawer and Lachman, no joint-line tenderness.\n  - Third paragraph: physiotherapist measures (pre/post 0\u201310 pain score, brief patellar girth, 30-second single-leg balance, any analgesic use), upload to club medical portal within two hours of each check, one-week functional review at 09:00 on 2025-09-06 at Harborfen Diagnostic Centre with repeat targeted ultrasound, standardized isokinetic quadriceps/hamstring strength testing and a monitored five-minute on-court conditioning set to determine criteria for incremental minutes increases.\n- Make only minimal wording tweaks for clarity and flow while preserving style.\n</scratchpad>\n<headline>\nMaya Cortes Cleared for Limited Return After Knee Scan; 10\u201312 Minute Cap Set by Team Doctor\n</headline>\n<article>\n<paragraph>\n<text>At 08:35 on 2025-08-30 Dr. Elias Verran cleared Rivermark Lynx point guard Maya Cortes for match selection with a conservative initial minutes cap of 10\u201312 minutes. The cap is defined as total in-game time per match for the immediate fixtures, to be delivered in no more than two separate stints, with coaching specifically instructed to minimise prolonged high-intensity defensive minutes during each appearance.</text>\n</paragraph>\n<paragraph>\n<text>On targeted imaging, Dr. Verran recorded a small anechoic suprapatellar effusion measuring approximately 7\u20139 mm in depth, noted intact patellar and quadriceps tendon continuity, and observed no focal Doppler hyperemia to suggest active tendinopathy. Clinical assessment documented active knee extension of 0\u00b0 and flexion to 135\u00b0 bilaterally, a resting visual analogue pain score of 1/10 rising to 2/10 with single-leg squat provocation, and stable anterior drawer and Lachman tests with no joint-line tenderness.</text>\n</paragraph>\n<paragraph>\n<text>Dr. Verran asked the Rivermark Lynx physiotherapist to record a pre- and post-activity 0\u201310 pain score, a brief patellar girth measure, a 30-second single-leg balance assessment, and any analgesic use, and to upload these entries to the club medical portal within two hours of each check. A one-week functional review is booked for 09:00 on 2025-09-06 at Harborfen Diagnostic Centre and will include repeat targeted ultrasound, standardized isokinetic quadriceps/hamstring strength testing and a monitored five-minute on-court conditioning set to determine criteria for incremental minutes increases.</text>\n</paragraph>\n</article>\n</result>"
+  },
+  "response": "<result>\n<scratchpad>\nPlan:\n- Keep the original headline unchanged.\n- Maintain the article's concise, factual news tone and sentence structure.\n- Ensure every detail from the ground-truth outline appears in the paragraphs:\n  - First paragraph: clearance time/date, Dr. Elias Verran, Maya Cortes, 10\u201312 minute cap, definition as total in-game time, delivered in no more than two stints, coaching to minimise prolonged high-intensity defensive minutes.\n  - Second paragraph: imaging findings \u2014 small anechoic suprapatellar effusion ~7\u20139 mm depth, intact patellar and quadriceps tendon continuity, no focal Doppler hyperemia suggestive of active tendinopathy; clinical exam \u2014 active knee extension 0\u00b0 and flexion 135\u00b0 bilaterally, resting VAS 1/10 rising to 2/10 with single-leg squat, stable anterior drawer and Lachman, no joint-line tenderness.\n  - Third paragraph: physiotherapist measures (pre/post 0\u201310 pain score, brief patellar girth, 30-second single-leg balance, any analgesic use), upload to club medical portal within two hours of each check, one-week functional review at 09:00 on 2025-09-06 at Harborfen Diagnostic Centre with repeat targeted ultrasound, standardized isokinetic quadriceps/hamstring strength testing and a monitored five-minute on-court conditioning set to determine criteria for incremental minutes increases.\n- Make only minimal wording tweaks for clarity and flow while preserving style.\n</scratchpad>\n<headline>\nMaya Cortes Cleared for Limited Return After Knee Scan; 10\u201312 Minute Cap Set by Team Doctor\n</headline>\n<article>\n<paragraph>\n<text>At 08:35 on 2025-08-30 Dr. Elias Verran cleared Rivermark Lynx point guard Maya Cortes for match selection with a conservative initial minutes cap of 10\u201312 minutes. The cap is defined as total in-game time per match for the immediate fixtures, to be delivered in no more than two separate stints, with coaching specifically instructed to minimise prolonged high-intensity defensive minutes during each appearance.</text>\n</paragraph>\n<paragraph>\n<text>On targeted imaging, Dr. Verran recorded a small anechoic suprapatellar effusion measuring approximately 7\u20139 mm in depth, noted intact patellar and quadriceps tendon continuity, and observed no focal Doppler hyperemia to suggest active tendinopathy. Clinical assessment documented active knee extension of 0\u00b0 and flexion to 135\u00b0 bilaterally, a resting visual analogue pain score of 1/10 rising to 2/10 with single-leg squat provocation, and stable anterior drawer and Lachman tests with no joint-line tenderness.</text>\n</paragraph>\n<paragraph>\n<text>Dr. Verran asked the Rivermark Lynx physiotherapist to record a pre- and post-activity 0\u201310 pain score, a brief patellar girth measure, a 30-second single-leg balance assessment, and any analgesic use, and to upload these entries to the club medical portal within two hours of each check. A one-week functional review is booked for 09:00 on 2025-09-06 at Harborfen Diagnostic Centre and will include repeat targeted ultrasound, standardized isokinetic quadriceps/hamstring strength testing and a monitored five-minute on-court conditioning set to determine criteria for incremental minutes increases.</text>\n</paragraph>\n</article>\n</result>",
+  "instructions": "You are an AI assistant tasked with improving a news article about a fictional event. Your goal is to ensure the article contains all specific details and information from a provided ground-truth outline of the fictional event. Follow these instructions carefully:\n\n1. First, review the list of fictional named entities as background information:\n\n<entities>\n<LOCATIONS>\n{{LOCATIONS_XML}}\n</LOCATIONS>\n\n<PERSONS>\n{{PERSONS_XML}}\n</PERSONS>\n\n<ORGANIZATIONS>\n{{ORGANIZATIONS_XML}}\n</ORGANIZATIONS>\n\n<PRODUCTS>\n{{PRODUCTS_XML}}\n</PRODUCTS>\n\n<ARTS>\n{{ARTS_XML}}\n</ARTS>\n\n<EVENTS>\n{{EVENTS_XML}}\n</EVENTS>\n\n<BUILDINGS>\n{{BUILDINGS_XML}}\n</BUILDINGS>\n\n<MISCELLANEOUS>\n{{MISCELLANEOUSS_XML}}\n</MISCELLANEOUS>\n</entities>\n\n2. Next, review the ground truth outline of the fictional event, including all details that must be communicated in the news article:\n\n<event_info>\n{{EVENT_INFO}}\n</event_info>\n\n3. Now, read the generated news article that needs to be revised:\n\n<news-article>\n{{CURRENT_NEWS_ARTICLE_XML}}\n</news-article>\n\n4. To revise the news article, follow these steps. Only revise the content of the article paragraphs. Do not revise the article title:\na) Analyze the style of the original news article. Pay attention to tone, vocabulary, and sentence structure. Any changes you make should maintain this style.\nb) Go over each individual sentence from the ground truth outline.\nc) Each sentence contains many details. Make sure that each of the details is communicated within the news article.\n   - The details do not need to be communicated verbatim. It is okay if the same content is communicated in different terms.\n   - Focus on all details from the sentence of the ground truth outline (numbers, dates, relations, relevant attributes and adjectives, etc). Consider every specific detail you can find.\nd) Make subtle adjustments to the news article for each detail that is not yet communicated:\n   - Add the information with minimal edits\n   - Do not revise additional information from the news article such as speculations, rumors etc. Focus only on the missing information that must be integrated in the article.\ne) Make any necessary adjustments to improve the flow and coherence of the article after your revisions.\n\n5. Output the revised news article in the following format:\n\n<result>\n<scratchpad>\n[Plan your approach here, outlining the main changes you intend to make]\n</scratchpad>\n<headline>\n[Write a revised headline that accurately reflects the content of the article]\n</headline>\n<article>\n<paragraph>\n<text>[First paragraph text]</text>\n</paragraph>\n<paragraph>\n<text>[Second paragraph text]</text>\n</paragraph>\n<paragraph>\n<text>[Third paragraph text (if needed)]</text>\n</paragraph>\n[Add more paragraphs as necessary, following the same format]\n</article>\n</result>\n\nRemember to maintain the original style of the article while ensuring all factual statements are accurate according to the provided ground truth information.",
+  "text_prompt": "You are an AI assistant tasked with improving a news article about a fictional event. Your goal is to ensure the article contains all specific details and information from a provided ground-truth outline of the fictional event. Follow these instructions carefully:\n\n1. First, review the list of fictional named entities as background information:\n\n<entities>\n<LOCATIONS>\n\n</LOCATIONS>\n\n<PERSONS>\n<created_at>0</created_at><date_of_birth>1991-03-14</date_of_birth><description>A driven and disciplined veteran athlete known for leadership meticulous preparation and a strong commitment to mentoring younger players while pursuing personal performance goals.</description><education>Bachelor of Science in Kinesiology from Northshore University</education><entity_class>person</entity_class><eye_color>Brown</eye_color><gender>Female</gender><hair_color>Dark brown</hair_color><height>1.70 m</height><id>PERSON-1</id><last_updated>2025-08-29</last_updated><marital_status>Single</marital_status><name>Maya Cortes</name><nationality>Valoria</nationality><profession>Professional basketball player and point guard</profession><type>None</type><weight>68 kg</weight>\n<created_at>2</created_at><date_of_birth>1979-11-02</date_of_birth><description>A meticulous clinician who prioritizes practical diagnostics, patient education, and conservative, function-focused treatment plans for active adults.</description><education>Doctor of Medicine (MD); Fellowship in Sports Medicine, Harborfen Medical College</education><entity_class>person</entity_class><eye_color>Gray</eye_color><gender>Male</gender><hair_color>Salt-and-pepper</hair_color><height>1.82 m</height><id>PERSON-2</id><last_updated>2025-08-29</last_updated><marital_status>Married</marital_status><name>Dr. Elias Verran</name><nationality>Valorian</nationality><profession>Consultant Sports Medicine Physician</profession><type>None</type><weight>82 kg</weight>\n</PERSONS>\n\n<ORGANIZATIONS>\n<annual_revenue>2.1 million Valorian credits</annual_revenue><created_at>0</created_at><description>A mid-sized professional basketball club focused on sustainable operations and regional talent development within its domestic league.</description><entity_class>organization</entity_class><founded>2007-06-15</founded><headquarters>Harborfen</headquarters><id>ORGANIZATION-1</id><industry>professional sports</industry><last_updated>2025-08-29</last_updated><mission_statement>To cultivate competitive teams and community engagement through youth programs coaching development and accessible match-day experiences.</mission_statement><name>Rivermark Lynx</name><number_of_employees>72</number_of_employees><type>company</type>\n<annual_revenue>1.3 million Valorian credits</annual_revenue><created_at>2</created_at><description>An outpatient imaging clinic providing focused diagnostic services and rapid-access scans for community healthcare providers.</description><entity_class>organization</entity_class><founded>2014-04-02</founded><headquarters>Harborfen</headquarters><id>ORGANIZATION-2</id><industry>medical diagnostics</industry><last_updated>2025-08-29</last_updated><mission_statement>To deliver accurate, timely imaging services that support effective clinical decision-making in the region.</mission_statement><name>Harborfen Diagnostic Centre</name><number_of_employees>34</number_of_employees><type>company</type>\n</ORGANIZATIONS>\n\n<PRODUCTS>\n\n</PRODUCTS>\n\n<ARTS>\n\n</ARTS>\n\n<EVENTS>\n\n</EVENTS>\n\n<BUILDINGS>\n\n</BUILDINGS>\n\n<MISCELLANEOUS>\n\n</MISCELLANEOUS>\n</entities>\n\n2. Next, review the ground truth outline of the fictional event, including all details that must be communicated in the news article:\n\n<event_info>\n<date>2025-08-30</date>\n<content>\n<sentence>Dr. Elias Verran recorded a small anechoic suprapatellar effusion on the images measuring approximately 7\u20139 mm in depth, noted intact patellar and quadriceps tendon continuity, and observed no focal Doppler hyperemia suggestive of active tendinopathy.</sentence>\n<sentence>Dr. Elias Verran documented active knee extension of 0\u00b0 and flexion to 135\u00b0 bilaterally, a resting visual analogue pain score of 1/10 rising to 2/10 with single-leg squat provocation, and stable anterior drawer and Lachman tests with no joint-line tenderness.</sentence>\n<sentence>At 08:35 on 2025-08-30 Dr. Elias Verran cleared Maya Cortes for match selection with an initial conservative minutes cap of 10\u201312 minutes.</sentence>\n<sentence>The minutes cap was defined as total in-game time per match for the immediate fixtures, to be delivered in no more than two separate stints and with coaching instructed to minimise prolonged high-intensity defensive minutes during each appearance.</sentence>\n<sentence>Dr. Elias Verran asked the Rivermark Lynx physiotherapist to record a pre- and post-activity 0\u201310 pain score, a brief patellar girth measure, a 30-second single-leg balance assessment, and any analgesic use, and to upload these entries to the club medical portal within two hours of each check.</sentence>\n<sentence>The one-week functional review was booked for 09:00 on 2025-09-06 at Harborfen Diagnostic Centre and will include repeat targeted ultrasound, standardized isokinetic quadriceps/hamstring strength testing and a monitored five-minute on-court conditioning set to determine criteria for incremental minutes increases.</sentence>\n</content>\n</event_info>\n\n3. Now, read the generated news article that needs to be revised:\n\n<news-article>\n<date>2025-08-30</date>\n<headline>Maya Cortes Cleared for Limited Return After Knee Scan; 10\u201312 Minute Cap Set by Team Doctor</headline>\n<paragraph>At 08:35 on 2025-08-30 Dr. Elias Verran cleared Rivermark Lynx point guard Maya Cortes for match selection with a conservative initial minutes cap of 10\u201312 minutes. The cap was defined as total in-game time per match for the immediate fixtures, to be delivered in no more than two separate stints, with coaching specifically instructed to minimise prolonged high-intensity defensive minutes during each appearance.</paragraph>\n<paragraph>On targeted imaging, Dr. Verran recorded a small anechoic suprapatellar effusion measuring approximately 7\u20139 mm in depth, noted intact patellar and quadriceps tendon continuity, and observed no focal Doppler hyperemia to suggest active tendinopathy. Clinical assessment documented active knee extension of 0\u00b0 and flexion to 135\u00b0 bilaterally, a resting visual analogue pain score of 1/10 rising to 2/10 with single-leg squat provocation, and stable anterior drawer and Lachman tests with no joint-line tenderness.</paragraph>\n<paragraph>Dr. Verran asked the Rivermark Lynx physiotherapist to record a pre- and post-activity 0\u201310 pain score, a brief patellar girth measure, a 30-second single-leg balance assessment, and any analgesic use, and to upload these entries to the club medical portal within two hours of each check. A one-week functional review is booked for 09:00 on 2025-09-06 at Harborfen Diagnostic Centre and will include repeat targeted ultrasound, standardized isokinetic quadriceps/hamstring strength testing and a monitored five-minute on-court conditioning set to determine criteria for incremental minutes increases.</paragraph>\n</news-article>\n\n4. To revise the news article, follow these steps. Only revise the content of the article paragraphs. Do not revise the article title:\na) Analyze the style of the original news article. Pay attention to tone, vocabulary, and sentence structure. Any changes you make should maintain this style.\nb) Go over each individual sentence from the ground truth outline.\nc) Each sentence contains many details. Make sure that each of the details is communicated within the news article.\n   - The details do not need to be communicated verbatim. It is okay if the same content is communicated in different terms.\n   - Focus on all details from the sentence of the ground truth outline (numbers, dates, relations, relevant attributes and adjectives, etc). Consider every specific detail you can find.\nd) Make subtle adjustments to the news article for each detail that is not yet communicated:\n   - Add the information with minimal edits\n   - Do not revise additional information from the news article such as speculations, rumors etc. Focus only on the missing information that must be integrated in the article.\ne) Make any necessary adjustments to improve the flow and coherence of the article after your revisions.\n\n5. Output the revised news article in the following format:\n\n<result>\n<scratchpad>\n[Plan your approach here, outlining the main changes you intend to make]\n</scratchpad>\n<headline>\n[Write a revised headline that accurately reflects the content of the article]\n</headline>\n<article>\n<paragraph>\n<text>[First paragraph text]</text>\n</paragraph>\n<paragraph>\n<text>[Second paragraph text]</text>\n</paragraph>\n<paragraph>\n<text>[Third paragraph text (if needed)]</text>\n</paragraph>\n[Add more paragraphs as necessary, following the same format]\n</article>\n</result>\n\nRemember to maintain the original style of the article while ensuring all factual statements are accurate according to the provided ground truth information.",
+  "system-prompt": null,
+  "values": {
+    "NEWSPAPER_PROFILE": "ConservativeNews",
+    "SUBSET_IDX": 0,
+    "EVENT_INFO": "<date>2025-08-30</date>\n<content>\n<sentence>Dr. Elias Verran recorded a small anechoic suprapatellar effusion on the images measuring approximately 7\u20139 mm in depth, noted intact patellar and quadriceps tendon continuity, and observed no focal Doppler hyperemia suggestive of active tendinopathy.</sentence>\n<sentence>Dr. Elias Verran documented active knee extension of 0\u00b0 and flexion to 135\u00b0 bilaterally, a resting visual analogue pain score of 1/10 rising to 2/10 with single-leg squat provocation, and stable anterior drawer and Lachman tests with no joint-line tenderness.</sentence>\n<sentence>At 08:35 on 2025-08-30 Dr. Elias Verran cleared Maya Cortes for match selection with an initial conservative minutes cap of 10\u201312 minutes.</sentence>\n<sentence>The minutes cap was defined as total in-game time per match for the immediate fixtures, to be delivered in no more than two separate stints and with coaching instructed to minimise prolonged high-intensity defensive minutes during each appearance.</sentence>\n<sentence>Dr. Elias Verran asked the Rivermark Lynx physiotherapist to record a pre- and post-activity 0\u201310 pain score, a brief patellar girth measure, a 30-second single-leg balance assessment, and any analgesic use, and to upload these entries to the club medical portal within two hours of each check.</sentence>\n<sentence>The one-week functional review was booked for 09:00 on 2025-09-06 at Harborfen Diagnostic Centre and will include repeat targeted ultrasound, standardized isokinetic quadriceps/hamstring strength testing and a monitored five-minute on-court conditioning set to determine criteria for incremental minutes increases.</sentence>\n</content>",
+    "CREATED_AT": 3,
+    "EVENT_DATE": "2025-08-30",
+    "PERSONS_XML": "<created_at>0</created_at><date_of_birth>1991-03-14</date_of_birth><description>A driven and disciplined veteran athlete known for leadership meticulous preparation and a strong commitment to mentoring younger players while pursuing personal performance goals.</description><education>Bachelor of Science in Kinesiology from Northshore University</education><entity_class>person</entity_class><eye_color>Brown</eye_color><gender>Female</gender><hair_color>Dark brown</hair_color><height>1.70 m</height><id>PERSON-1</id><last_updated>2025-08-29</last_updated><marital_status>Single</marital_status><name>Maya Cortes</name><nationality>Valoria</nationality><profession>Professional basketball player and point guard</profession><type>None</type><weight>68 kg</weight>\n<created_at>2</created_at><date_of_birth>1979-11-02</date_of_birth><description>A meticulous clinician who prioritizes practical diagnostics, patient education, and conservative, function-focused treatment plans for active adults.</description><education>Doctor of Medicine (MD); Fellowship in Sports Medicine, Harborfen Medical College</education><entity_class>person</entity_class><eye_color>Gray</eye_color><gender>Male</gender><hair_color>Salt-and-pepper</hair_color><height>1.82 m</height><id>PERSON-2</id><last_updated>2025-08-29</last_updated><marital_status>Married</marital_status><name>Dr. Elias Verran</name><nationality>Valorian</nationality><profession>Consultant Sports Medicine Physician</profession><type>None</type><weight>82 kg</weight>",
+    "ORGANIZATIONS_XML": "<annual_revenue>2.1 million Valorian credits</annual_revenue><created_at>0</created_at><description>A mid-sized professional basketball club focused on sustainable operations and regional talent development within its domestic league.</description><entity_class>organization</entity_class><founded>2007-06-15</founded><headquarters>Harborfen</headquarters><id>ORGANIZATION-1</id><industry>professional sports</industry><last_updated>2025-08-29</last_updated><mission_statement>To cultivate competitive teams and community engagement through youth programs coaching development and accessible match-day experiences.</mission_statement><name>Rivermark Lynx</name><number_of_employees>72</number_of_employees><type>company</type>\n<annual_revenue>1.3 million Valorian credits</annual_revenue><created_at>2</created_at><description>An outpatient imaging clinic providing focused diagnostic services and rapid-access scans for community healthcare providers.</description><entity_class>organization</entity_class><founded>2014-04-02</founded><headquarters>Harborfen</headquarters><id>ORGANIZATION-2</id><industry>medical diagnostics</industry><last_updated>2025-08-29</last_updated><mission_statement>To deliver accurate, timely imaging services that support effective clinical decision-making in the region.</mission_statement><name>Harborfen Diagnostic Centre</name><number_of_employees>34</number_of_employees><type>company</type>",
+    "LOCATIONS_XML": "",
+    "PRODUCTS_XML": "",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "",
+    "EVENTS_XML": "",
+    "MISCELLANEOUSS_XML": "",
+    "USED_PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Maya Cortes",
+        "entity_class": "person",
+        "description": "A driven and disciplined veteran athlete known for leadership meticulous preparation and a strong commitment to mentoring younger players while pursuing personal performance goals.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-08-29",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Maya Cortes signed a one-year contract extension with the Rivermark Lynx, completed a club medical assessment and monitored return-to-play program, was cleared to progress into full-team contact training, and issued a statement committing to earn playing time and meet the incentives in her new contract.",
+            "date": "2025-08-29"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Maya Cortes completed a supervised full-contact training session on 2025-08-29 with no reported pain or functional limitations, met post-session functional testing benchmarks, was placed on the Rivermark Lynx available-for-selection list under a minutes-management plan limiting her to under 20 minutes initially, was named on the club's match-day availability notice to league administrators, and spoke to media saying she is ready to contribute under the minutes plan.",
+            "date": "2025-08-29"
+          },
+          {
+            "created_at": 2,
+            "event_update": "Maya Cortes was assessed by Rivermark Lynx medical staff on 2025-08-29 who documented mild right-knee swelling (mid-patellar girth ~+1.4 cm compared with the left and a small suprapatellar fluid wave noted at ~17:10); she was withdrawn from the finalized match-day roster that day, given a single 400 mg oral dose of ibuprofen and an ice-compression protocol while awaiting a same-day focused musculoskeletal ultrasound at Harborfen Diagnostic Centre (18:00), and was scheduled for an 08:00 re-evaluation with Dr. Elias Verran the following morning to determine short-term availability and minutes-management recommendations.",
+            "date": "2025-08-29"
+          },
+          {
+            "created_at": 3,
+            "event_update": "Maya Cortes underwent focused musculoskeletal ultrasound review and a repeat clinical re-evaluation on 2025-08-30; a small anechoic suprapatellar effusion (\u22487\u20139 mm) was documented with intact patellar and quadriceps tendons, standardized ROM and symptom scores were recorded (0\u00b0 extension, 135\u00b0 flexion bilaterally, VAS 1/10 at rest rising to 2/10 with single-leg squat), she was cleared for match selection with an initial 10\u201312 minute per-match minutes cap, daily pre/post activity symptom checks were requested, and a one-week functional review at Harborfen Diagnostic Centre was scheduled for 09:00 on 2025-09-06.",
+            "date": "2025-08-30"
+          }
+        ],
+        "date_of_birth": "1991-03-14",
+        "gender": "Female",
+        "profession": "Professional basketball player and point guard",
+        "nationality": "Valoria",
+        "education": "Bachelor of Science in Kinesiology from Northshore University",
+        "height": "1.70 m",
+        "weight": "68 kg",
+        "eye_color": "Brown",
+        "hair_color": "Dark brown",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Dr. Elias Verran",
+        "entity_class": "person",
+        "description": "A meticulous clinician who prioritizes practical diagnostics, patient education, and conservative, function-focused treatment plans for active adults.",
+        "type": null,
+        "created_at": 2,
+        "last_updated": "2025-08-29",
+        "history": [
+          {
+            "created_at": 2,
+            "event_update": "Dr. Elias Verran was scheduled to perform an 08:00 re-evaluation on the morning following 2025-08-29 that would include a repeat clinical examination, review of the ultrasound images, standardized knee range-of-motion measurements, and a documented minutes-management recommendation for Maya Cortes.",
+            "date": "2025-08-29"
+          },
+          {
+            "created_at": 3,
+            "event_update": "Dr. Elias Verran reviewed the Harborfen Diagnostic Centre ultrasound images at 08:00 on 2025-08-30, documented the small suprapatellar effusion and lack of focal Doppler hyperemia, performed a repeat clinical exam and standardized ROM/symptom scoring, cleared Maya Cortes for match selection with a 10\u201312 minute cap at 08:35, instructed the Rivermark Lynx medical and coaching staff on daily symptom checks and physiotherapy data collection, and scheduled a one-week functional review at Harborfen Diagnostic Centre for 09:00 on 2025-09-06.",
+            "date": "2025-08-30"
+          }
+        ],
+        "date_of_birth": "1979-11-02",
+        "gender": "Male",
+        "profession": "Consultant Sports Medicine Physician",
+        "nationality": "Valorian",
+        "education": "Doctor of Medicine (MD); Fellowship in Sports Medicine, Harborfen Medical College",
+        "height": "1.82 m",
+        "weight": "82 kg",
+        "eye_color": "Gray",
+        "hair_color": "Salt-and-pepper",
+        "marital_status": "Married"
+      }
+    ],
+    "USED_ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Rivermark Lynx",
+        "entity_class": "organization",
+        "description": "A mid-sized professional basketball club focused on sustainable operations and regional talent development within its domestic league.",
+        "type": "company",
+        "created_at": 0,
+        "last_updated": "2025-08-29",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Rivermark Lynx announced and published the one-year contract extension for Maya Cortes, completed the contract paperwork at the team's training facility with the head coach and general manager present, and filed the finalized roster with league administrators ahead of the domestic transfer deadline, receiving confirmation of registration.",
+            "date": "2025-08-29"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Rivermark Lynx medical and coaching staff observed Maya Cortes' supervised full-contact training session on 2025-08-29, reported no acute pain or functional limitations in post-session assessments, placed her on the available-for-selection list contingent on a minutes-management plan (initial rotations under 20 minutes), and submitted a match-day availability notice through the league portal receiving automated confirmation.",
+            "date": "2025-08-29"
+          },
+          {
+            "created_at": 2,
+            "event_update": "Rivermark Lynx medical staff recorded mild right-knee swelling in Maya Cortes during the 2025-08-29 pre-match assessment, withdrew her from the finalized match-day roster (formal withdrawal submitted via the league portal at 17:25 with arena officials informed shortly thereafter), administered an oral anti-inflammatory dose and ice-compression, arranged same-day diagnostic ultrasound at Harborfen Diagnostic Centre (18:00), and scheduled an overnight re-evaluation with Dr. Elias Verran for 08:00 the next morning.",
+            "date": "2025-08-29"
+          },
+          {
+            "created_at": 3,
+            "event_update": "Rivermark Lynx received Dr. Verran's minutes-management recommendation and instructions to perform daily pre- and post-activity symptom checks, to have the physiotherapist record pain scores, patellar girth, a 30-second single-leg balance test and any analgesic use (with uploads to the club portal within two hours), were notified of the one-week functional review booking, and were advised to limit Maya Cortes' in-match minutes to 10\u201312 minutes across no more than two stints.",
+            "date": "2025-08-30"
+          }
+        ],
+        "founded": "2007-06-15",
+        "headquarters": "Harborfen",
+        "industry": "professional sports",
+        "mission_statement": "To cultivate competitive teams and community engagement through youth programs coaching development and accessible match-day experiences.",
+        "number_of_employees": "72",
+        "annual_revenue": "2.1 million Valorian credits"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Harborfen Diagnostic Centre",
+        "entity_class": "organization",
+        "description": "An outpatient imaging clinic providing focused diagnostic services and rapid-access scans for community healthcare providers.",
+        "type": "company",
+        "created_at": 2,
+        "last_updated": "2025-08-29",
+        "history": [
+          {
+            "created_at": 2,
+            "event_update": "Harborfen Diagnostic Centre was booked to perform a focused musculoskeletal ultrasound of the patellofemoral region for Maya Cortes at 18:00 on 2025-08-29 (including longitudinal and transverse views plus Doppler to evaluate for effusion or tendon pathology) and was the planned site for the 08:00 re-evaluation with Dr. Elias Verran the following morning.",
+            "date": "2025-08-29"
+          },
+          {
+            "created_at": 3,
+            "event_update": "Harborfen Diagnostic Centre supplied the focused musculoskeletal ultrasound images reviewed on 2025-08-30 and is the booked site for the one-week functional review for Maya Cortes at 09:00 on 2025-09-06, which will include repeat targeted ultrasound, isokinetic strength testing, and a monitored five-minute on-court conditioning set.",
+            "date": "2025-08-30"
+          }
+        ],
+        "founded": "2014-04-02",
+        "headquarters": "Harborfen",
+        "industry": "medical diagnostics",
+        "mission_statement": "To deliver accurate, timely imaging services that support effective clinical decision-making in the region.",
+        "number_of_employees": "34",
+        "annual_revenue": "1.3 million Valorian credits"
+      }
+    ],
+    "USED_LOCATION": [],
+    "USED_PRODUCT": [],
+    "USED_ART": [],
+    "USED_BUILDING": [],
+    "USED_EVENT": [],
+    "USED_MISCELLANEOUS": [],
+    "HEADLINE": "Maya Cortes Cleared for Limited Return After Knee Scan; 10\u201312 Minute Cap Set by Team Doctor",
+    "PARAGRAPHS": [
+      {
+        "text": "At 08:35 on 2025-08-30 Dr. Elias Verran cleared Rivermark Lynx point guard Maya Cortes for match selection with a conservative initial minutes cap of 10\u201312 minutes. The cap was defined as total in-game time per match for the immediate fixtures, to be delivered in no more than two separate stints, with coaching specifically instructed to minimise prolonged high-intensity defensive minutes during each appearance."
+      },
+      {
+        "text": "On targeted imaging, Dr. Verran recorded a small anechoic suprapatellar effusion measuring approximately 7\u20139 mm in depth, noted intact patellar and quadriceps tendon continuity, and observed no focal Doppler hyperemia to suggest active tendinopathy. Clinical assessment documented active knee extension of 0\u00b0 and flexion to 135\u00b0 bilaterally, a resting visual analogue pain score of 1/10 rising to 2/10 with single-leg squat provocation, and stable anterior drawer and Lachman tests with no joint-line tenderness."
+      },
+      {
+        "text": "Dr. Verran asked the Rivermark Lynx physiotherapist to record a pre- and post-activity 0\u201310 pain score, a brief patellar girth measure, a 30-second single-leg balance assessment, and any analgesic use, and to upload these entries to the club medical portal within two hours of each check. A one-week functional review is booked for 09:00 on 2025-09-06 at Harborfen Diagnostic Centre and will include repeat targeted ultrasound, standardized isokinetic quadriceps/hamstring strength testing and a monitored five-minute on-court conditioning set to determine criteria for incremental minutes increases."
+      }
+    ],
+    "IS_VALID": true,
+    "CURRENT_NEWS_ARTICLE_XML": "<date>2025-08-30</date>\n<headline>Maya Cortes Cleared for Limited Return After Knee Scan; 10\u201312 Minute Cap Set by Team Doctor</headline>\n<paragraph>At 08:35 on 2025-08-30 Dr. Elias Verran cleared Rivermark Lynx point guard Maya Cortes for match selection with a conservative initial minutes cap of 10\u201312 minutes. The cap was defined as total in-game time per match for the immediate fixtures, to be delivered in no more than two separate stints, with coaching specifically instructed to minimise prolonged high-intensity defensive minutes during each appearance.</paragraph>\n<paragraph>On targeted imaging, Dr. Verran recorded a small anechoic suprapatellar effusion measuring approximately 7\u20139 mm in depth, noted intact patellar and quadriceps tendon continuity, and observed no focal Doppler hyperemia to suggest active tendinopathy. Clinical assessment documented active knee extension of 0\u00b0 and flexion to 135\u00b0 bilaterally, a resting visual analogue pain score of 1/10 rising to 2/10 with single-leg squat provocation, and stable anterior drawer and Lachman tests with no joint-line tenderness.</paragraph>\n<paragraph>Dr. Verran asked the Rivermark Lynx physiotherapist to record a pre- and post-activity 0\u201310 pain score, a brief patellar girth measure, a 30-second single-leg balance assessment, and any analgesic use, and to upload these entries to the club medical portal within two hours of each check. A one-week functional review is booked for 09:00 on 2025-09-06 at Harborfen Diagnostic Centre and will include repeat targeted ultrasound, standardized isokinetic quadriceps/hamstring strength testing and a monitored five-minute on-court conditioning set to determine criteria for incremental minutes increases.</paragraph>"
+  }
+}

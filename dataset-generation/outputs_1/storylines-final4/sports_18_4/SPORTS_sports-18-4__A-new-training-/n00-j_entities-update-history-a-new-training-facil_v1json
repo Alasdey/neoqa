@@ -1,0 +1,1611 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "microsoft/phi-4-reasoning-plus",
+    "temperature": 0.0,
+    "max-tokens": 4096
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "```xml\n<results>\n<location>\n<entity_id>LOCATION-1</entity_id>\n<update>The Zenith Athletics Institute unveiled its new training center in Richmond Meadows, highlighting the area's scenic beauty and proximity to sports clubs.</update>\n</location>\n\n<person>\n<entity_id>PERSON-1</entity_id>\n<update>Alex Varner, a prominent runner at the Zenith Athletics Institute, expressed excitement about the new training opportunities at the institute's state-of-the-art facility.</update>\n</person>\n\n<person>\n<entity_id>PERSON-2</entity_id>\n<update>Alicia Wilton, a gymnast at the Zenith Athletics Institute, shared her enthusiasm for the new training center and its potential to enhance athletic performance.</update>\n</person>\n\n<person>\n<entity_id>PERSON-3</entity_id>\n<update>Kevin Stratton, the Institute Director, emphasized the facility's advanced technology for injury prevention and performance enhancement during the inauguration ceremony.</update>\n</person>\n\n<person>\n<entity_id>PERSON-4</entity_id>\n<update>Chloe Mercer, an amateur sprinter, praised the biometric system for providing valuable real-time feedback on her running form, aiding in her performance improvement.</update>\n</person>\n\n<organization>\n<entity_id>ORGANIZATION-1</entity_id>\n<update>The Zenith Athletics Institute unveiled a new training center in Richmond Meadows, featuring advanced biometric monitoring technology developed in collaboration with BioTrack Innovations.</update>\n</organization>\n\n<organization>\n<entity_id>ORGANIZATION-2</entity_id>\n<update>BioTrack Innovations collaborated with the Zenith Athletics Institute to develop a unique biometric system for personalized athlete performance analytics.</update>\n</organization>\n</results>\n```"
+  },
+  "response": "```xml\n<results>\n<location>\n<entity_id>LOCATION-1</entity_id>\n<update>The Zenith Athletics Institute unveiled its new training center in Richmond Meadows, highlighting the area's scenic beauty and proximity to sports clubs.</update>\n</location>\n\n<person>\n<entity_id>PERSON-1</entity_id>\n<update>Alex Varner, a prominent runner at the Zenith Athletics Institute, expressed excitement about the new training opportunities at the institute's state-of-the-art facility.</update>\n</person>\n\n<person>\n<entity_id>PERSON-2</entity_id>\n<update>Alicia Wilton, a gymnast at the Zenith Athletics Institute, shared her enthusiasm for the new training center and its potential to enhance athletic performance.</update>\n</person>\n\n<person>\n<entity_id>PERSON-3</entity_id>\n<update>Kevin Stratton, the Institute Director, emphasized the facility's advanced technology for injury prevention and performance enhancement during the inauguration ceremony.</update>\n</person>\n\n<person>\n<entity_id>PERSON-4</entity_id>\n<update>Chloe Mercer, an amateur sprinter, praised the biometric system for providing valuable real-time feedback on her running form, aiding in her performance improvement.</update>\n</person>\n\n<organization>\n<entity_id>ORGANIZATION-1</entity_id>\n<update>The Zenith Athletics Institute unveiled a new training center in Richmond Meadows, featuring advanced biometric monitoring technology developed in collaboration with BioTrack Innovations.</update>\n</organization>\n\n<organization>\n<entity_id>ORGANIZATION-2</entity_id>\n<update>BioTrack Innovations collaborated with the Zenith Athletics Institute to develop a unique biometric system for personalized athlete performance analytics.</update>\n</organization>\n</results>\n```",
+  "instructions": "You are an AI assistant tasked with updating a list of fictional entities based on an outline of events. Follow these instructions carefully to complete the task:\n\n1. First, read the outline of the fictional event:\n<outline>\n{{OUTLINE}}\n</outline>\n\n2. Next, review the list of fictional entities:\n<entities>\n{{USED_LOCATION_XML}}\n{{USED_PERSON_XML}}\n{{USED_ORGANIZATION_XML}}\n{{USED_PRODUCT_XML}}\n{{USED_ART_XML}}\n{{USED_EVENT_XML}}\n{{USED_BUILDING_XML}}\n{{USED_MISCELLANEOUS_XML}}\n</entities>\n\n3. For each entity in the list, follow these steps:\n   a. Identify the entity's role in the outline. Create an update sentence describing how the entity was affected by or involved in the events described in the outline.\n   b. Review all properties of the entity EXCEPT for \"id\", \"created_at\", \"history\", and \"entity_class\".\n   c. For each property:\n      - If the property does not need to be updated based on the outline, leave it as-is.\n      - If the events or the time difference since the last update (last_updated) indicate that the value has changed, update it accordingly.\n      - Ensure the new value is consistent with the outline, other entities, and plausible given the time difference.\n   d. Do not alter the \"description\" field unless the current description is no longer valid after the events in the outline.\n\n4. Output your results for each entity in the following format:\n<results>\n<[entity_type]>\n<entity_id>[Insert entity id here]</entity_id>\n<update>[Insert your update sentence here]</update>\n[List any properties that were changed, with their new values, using the format:]\n<[property_name]>[new value]</[property_name]>\n</[entity_type]>\n[Repeat for each entity]\n</results>\n\n5. Important reminders:\n   - Stick to the information provided in the outline and entities list. Do not invent new details or events.\n   - Ensure all updates and changes are consistent with the outline and with each other.\n   - Be concise in your updates, focusing only on relevant changes.\n   - If no properties need to be changed for an entity, do not include any property tags.\n   - Process each entity in the order they are presented in the list.\n   - Use the appropriate entity type tag (e.g., <location>, <person>, etc.) instead of <entity_update>.\n   - Begin your response with the first entity update immediately, without any preamble.\n\nAll actual results should be listed in <location>, <organization>, <person>, <product>, <art>, <building>, <event>, or <miscellaneous> nodes within the <results> node.\nDo not include any content outside of the <results> tags in your response.\n\nStart processing the entities now, following the instructions and format provided above.",
+  "text_prompt": "You are an AI assistant tasked with updating a list of fictional entities based on an outline of events. Follow these instructions carefully to complete the task:\n\n1. First, read the outline of the fictional event:\n<outline>\nOn September 15, 2023, the {Zenith Athletics Institute|ORGANIZATION-1} unveiled its new state-of-the-art training center in {Richmond Meadows|LOCATION-1}, a scenic area known for its lush greenery and proximity to local sports clubs.\nThe new facility, designed with an open-concept layout, features large glass windows that allow natural light to flood the indoor track and weight rooms.\nThis institute was specifically designed to cater to the training needs of regional athletes, focusing on sports such as track and field, gymnastics, and swimming.\nThe new facility, equipped with advanced biometric monitoring technology, was inaugurated with a formal ceremony attended by the known athletes of the institute, including prominent runners like {Alex Varner|PERSON-1} and gymnast {Alicia Wilton|PERSON-2}, who both expressed excitement about the new opportunities for training.\nThe {Zenith Athletics Institute|ORGANIZATION-1}, in collaboration with tech firm {BioTrack Innovations|ORGANIZATION-2}, developed the unique biometric system to provide athletes with personalized performance analytics, integrating sensors that track heart rate, muscle activity, and movement patterns.\nDuring the event, Institute Director {Kevin Stratton|PERSON-3} highlighted, \"This facility represents a leap forward in training technology for athletes, especially those specializing in high-risk sports,\" emphasizing the potential for injury prevention and performance enhancement.\nThe systems installed use sensors to gather real-time data, which is then analyzed to help athletes optimize their performance and reduce injury risks, with data being accessible through a secure mobile app.\nFirst to test the new biometric system were a group of young sprinters, who were fascinated by the real-time feedback they received during drills, noting improvements in their stride and posture.\nSprinter {Chloe Mercer|PERSON-4} noted, \"The instant feedback on my running form has been invaluable. It\u2019s like having a coach at every moment,\" and mentioned how the system helped her identify areas for improvement that were previously unnoticed.\nSome concerns were voiced regarding the privacy of personal health data collected by the systems, prompting Director {Kevin Stratton|PERSON-3} to assure attendees of strict adherence to data protection regulations, including encryption and limited access to sensitive information.\nThe facility contains a medium-sized field adjacent to an indoor track and several weight rooms, designed to support various sports such as track and field, gymnastics, and swimming, with each area equipped with specialized equipment for different training needs.\nOngoing educational workshops about the benefits and usage of biometric technology are planned to be held at the {Zenith Athletics Institute|ORGANIZATION-1}, with sessions led by experts from {BioTrack Innovations|ORGANIZATION-2} and experienced coaches.\n</outline>\n\n2. Next, review the list of fictional entities:\n<entities>\n<location><area>52 square miles</area><created_at>0</created_at><description>A picturesque region notable for its expansive meadows and vibrant seasons, making it a prime location for outdoor activities.</description><elevation>320 meters</elevation><entity_class>location</entity_class><history></history><id>LOCATION-1</id><last_updated>2023-09-15</last_updated><name>Richmond Meadows</name><population>42,000</population><type>region</type></location>\n<person><created_at>0</created_at><date_of_birth>1995-04-12</date_of_birth><description>A resilient athlete known for his dedication, Alex dreams of breaking regional records and promoting sports education in local communities.</description><education>Bachelor's in Sports Science from Oxford University</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>Male</gender><hair_color>brown</hair_color><height>6'1\"</height><history></history><id>PERSON-1</id><last_updated>2023-09-15</last_updated><marital_status>Single</marital_status><name>Alex Varner</name><nationality>British</nationality><political_affiliation>None</political_affiliation><profession>Professional Middle-distance Runner</profession><type>None</type><weight>160 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1997-11-30</date_of_birth><description>An elegant gymnast with a passion for graceful performance, Alicia aspires to inspire young girls through her achievements and community workshops.</description><education>Bachelor's in Kinesiology from Stanford University</education><entity_class>person</entity_class><eye_color>green</eye_color><gender>Female</gender><hair_color>blonde</hair_color><height>5'6\"</height><history></history><id>PERSON-2</id><last_updated>2023-09-15</last_updated><marital_status>Single</marital_status><name>Alicia Wilton</name><nationality>American</nationality><political_affiliation>None</political_affiliation><profession>Professional Gymnast</profession><type>None</type><weight>115 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1972-08-23</date_of_birth><description>With over two decades of experience in sports administration, Kevin is committed to advancing athlete support systems through innovative facilities.</description><education>Masters in Sports Management from the University of British Columbia</education><entity_class>person</entity_class><eye_color>hazel</eye_color><gender>Male</gender><hair_color>grey</hair_color><height>5'11\"</height><history></history><id>PERSON-3</id><last_updated>2023-09-15</last_updated><marital_status>Married</marital_status><name>Kevin Stratton</name><nationality>Canadian</nationality><political_affiliation>None</political_affiliation><profession>Institute Director</profession><spouse>Evelyn Stratton</spouse><type>None</type><weight>185 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>2001-03-15</date_of_birth><description>Chloe's relentless determination and curiosity about performance analytics drive her running career and her interest in biometric systems.</description><education>Honours in Sports Technology from the University of Melbourne</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>Female</gender><hair_color>red</hair_color><height>5'8\"</height><history></history><id>PERSON-4</id><last_updated>2023-09-15</last_updated><marital_status>Single</marital_status><name>Chloe Mercer</name><nationality>Australian</nationality><political_affiliation>None</political_affiliation><profession>Amateur Sprinter</profession><type>None</type><weight>130 lbs</weight></person>\n<organization><annual_revenue>4 million AUD</annual_revenue><created_at>0</created_at><description>Established to nurture regional athletic talent through comprehensive training programs and state-of-the-art facilities.</description><entity_class>organization</entity_class><founded>2015</founded><headquarters>72 Willow Lane - Lakeside - Melbourne</headquarters><history></history><id>ORGANIZATION-1</id><industry>Sports Education</industry><last_updated>2023-09-15</last_updated><mission_statement>To empower athletes with knowledge, skills, and resources to excel in their chosen sports disciplines.</mission_statement><name>Zenith Athletics Institute</name><number_of_employees>150</number_of_employees><type>educational institution</type></organization>\n<organization><annual_revenue>7 million USD</annual_revenue><created_at>0</created_at><description>A pioneering tech firm specializing in biometric systems and performance analytics for athletes and sports professionals worldwide.</description><entity_class>organization</entity_class><founded>2018</founded><headquarters>350 Innovation Drive in Silicon Valley California</headquarters><history></history><id>ORGANIZATION-2</id><industry>Biometric Technology</industry><last_updated>2023-09-15</last_updated><mission_statement>To revolutionize sports performance through cutting-edge technology offering precise analytics for improved outcomes.</mission_statement><name>BioTrack Innovations</name><number_of_employees>75</number_of_employees><type>company</type></organization>\n\n\n\n\n\n</entities>\n\n3. For each entity in the list, follow these steps:\n   a. Identify the entity's role in the outline. Create an update sentence describing how the entity was affected by or involved in the events described in the outline.\n   b. Review all properties of the entity EXCEPT for \"id\", \"created_at\", \"history\", and \"entity_class\".\n   c. For each property:\n      - If the property does not need to be updated based on the outline, leave it as-is.\n      - If the events or the time difference since the last update (last_updated) indicate that the value has changed, update it accordingly.\n      - Ensure the new value is consistent with the outline, other entities, and plausible given the time difference.\n   d. Do not alter the \"description\" field unless the current description is no longer valid after the events in the outline.\n\n4. Output your results for each entity in the following format:\n<results>\n<[entity_type]>\n<entity_id>[Insert entity id here]</entity_id>\n<update>[Insert your update sentence here]</update>\n[List any properties that were changed, with their new values, using the format:]\n<[property_name]>[new value]</[property_name]>\n</[entity_type]>\n[Repeat for each entity]\n</results>\n\n5. Important reminders:\n   - Stick to the information provided in the outline and entities list. Do not invent new details or events.\n   - Ensure all updates and changes are consistent with the outline and with each other.\n   - Be concise in your updates, focusing only on relevant changes.\n   - If no properties need to be changed for an entity, do not include any property tags.\n   - Process each entity in the order they are presented in the list.\n   - Use the appropriate entity type tag (e.g., <location>, <person>, etc.) instead of <entity_update>.\n   - Begin your response with the first entity update immediately, without any preamble.\n\nAll actual results should be listed in <location>, <organization>, <person>, <product>, <art>, <building>, <event>, or <miscellaneous> nodes within the <results> node.\nDo not include any content outside of the <results> tags in your response.\n\nStart processing the entities now, following the instructions and format provided above.",
+  "system-prompt": null,
+  "values": {
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "GENRE": "Sports",
+    "HISTORIES": [],
+    "EVENT_SUMMARY": "A new training facility equipped with state-of-the-art biometric technology has opened for athletes, offering personalized data analysis to optimize performance and prevent injuries.",
+    "EVENT_SUMMARY_FOR_NAME": "A new training facil",
+    "KEYWORDS": "",
+    "CREATED_AT": 0,
+    "NEXT_IDS": {
+      "person": 5,
+      "organization": 3,
+      "location": 2,
+      "product": 1,
+      "art": 1,
+      "building": 1,
+      "event": 1,
+      "miscellaneous": 1
+    },
+    "PROVIDED_DATE": "",
+    "PERSON": [],
+    "ORGANIZATION": [],
+    "LOCATION": [],
+    "PRODUCT": [],
+    "ART": [],
+    "BUILDING": [],
+    "EVENT": [],
+    "MISCELLANEOUS": [],
+    "PERSONS_XML": "",
+    "ORGANIZATIONS_XML": "",
+    "LOCATIONS_XML": "",
+    "PRODUCTS_XML": "",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "",
+    "EVENTS_XML": "",
+    "MISCELLANEOUSS_XML": "",
+    "NUM_STORYITEMS": 10,
+    "HISTORY_XML": "",
+    "STORY_ITEM": [
+      "On September 15, 2023, the {Zenith Athletics Institute|ORGANIZATION-1} unveiled its new state-of-the-art training center in {Richmond Meadows|LOCATION-1}, a scenic area known for its lush greenery and proximity to local sports clubs.",
+      "The new facility, designed with an open-concept layout, features large glass windows that allow natural light to flood the indoor track and weight rooms.",
+      "This institute was specifically designed to cater to the training needs of regional athletes, focusing on sports such as track and field, gymnastics, and swimming.",
+      "The new facility, equipped with advanced biometric monitoring technology, was inaugurated with a formal ceremony attended by the known athletes of the institute, including prominent runners like {Alex Varner|PERSON-1} and gymnast {Alicia Wilton|PERSON-2}, who both expressed excitement about the new opportunities for training.",
+      "The {Zenith Athletics Institute|ORGANIZATION-1}, in collaboration with tech firm {BioTrack Innovations|ORGANIZATION-2}, developed the unique biometric system to provide athletes with personalized performance analytics, integrating sensors that track heart rate, muscle activity, and movement patterns.",
+      "During the event, Institute Director {Kevin Stratton|PERSON-3} highlighted, \"This facility represents a leap forward in training technology for athletes, especially those specializing in high-risk sports,\" emphasizing the potential for injury prevention and performance enhancement.",
+      "The systems installed use sensors to gather real-time data, which is then analyzed to help athletes optimize their performance and reduce injury risks, with data being accessible through a secure mobile app.",
+      "First to test the new biometric system were a group of young sprinters, who were fascinated by the real-time feedback they received during drills, noting improvements in their stride and posture.",
+      "Sprinter {Chloe Mercer|PERSON-4} noted, \"The instant feedback on my running form has been invaluable. It\u2019s like having a coach at every moment,\" and mentioned how the system helped her identify areas for improvement that were previously unnoticed.",
+      "Some concerns were voiced regarding the privacy of personal health data collected by the systems, prompting Director {Kevin Stratton|PERSON-3} to assure attendees of strict adherence to data protection regulations, including encryption and limited access to sensitive information.",
+      "The facility contains a medium-sized field adjacent to an indoor track and several weight rooms, designed to support various sports such as track and field, gymnastics, and swimming, with each area equipped with specialized equipment for different training needs.",
+      "Ongoing educational workshops about the benefits and usage of biometric technology are planned to be held at the {Zenith Athletics Institute|ORGANIZATION-1}, with sessions led by experts from {BioTrack Innovations|ORGANIZATION-2} and experienced coaches."
+    ],
+    "DATE": "2023-09-15",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 2,
+    "OUTLINE": "On September 15, 2023, the {Zenith Athletics Institute|ORGANIZATION-1} unveiled its new state-of-the-art training center in {Richmond Meadows|LOCATION-1}, a scenic area known for its lush greenery and proximity to local sports clubs.\nThe new facility, designed with an open-concept layout, features large glass windows that allow natural light to flood the indoor track and weight rooms.\nThis institute was specifically designed to cater to the training needs of regional athletes, focusing on sports such as track and field, gymnastics, and swimming.\nThe new facility, equipped with advanced biometric monitoring technology, was inaugurated with a formal ceremony attended by the known athletes of the institute, including prominent runners like {Alex Varner|PERSON-1} and gymnast {Alicia Wilton|PERSON-2}, who both expressed excitement about the new opportunities for training.\nThe {Zenith Athletics Institute|ORGANIZATION-1}, in collaboration with tech firm {BioTrack Innovations|ORGANIZATION-2}, developed the unique biometric system to provide athletes with personalized performance analytics, integrating sensors that track heart rate, muscle activity, and movement patterns.\nDuring the event, Institute Director {Kevin Stratton|PERSON-3} highlighted, \"This facility represents a leap forward in training technology for athletes, especially those specializing in high-risk sports,\" emphasizing the potential for injury prevention and performance enhancement.\nThe systems installed use sensors to gather real-time data, which is then analyzed to help athletes optimize their performance and reduce injury risks, with data being accessible through a secure mobile app.\nFirst to test the new biometric system were a group of young sprinters, who were fascinated by the real-time feedback they received during drills, noting improvements in their stride and posture.\nSprinter {Chloe Mercer|PERSON-4} noted, \"The instant feedback on my running form has been invaluable. It\u2019s like having a coach at every moment,\" and mentioned how the system helped her identify areas for improvement that were previously unnoticed.\nSome concerns were voiced regarding the privacy of personal health data collected by the systems, prompting Director {Kevin Stratton|PERSON-3} to assure attendees of strict adherence to data protection regulations, including encryption and limited access to sensitive information.\nThe facility contains a medium-sized field adjacent to an indoor track and several weight rooms, designed to support various sports such as track and field, gymnastics, and swimming, with each area equipped with specialized equipment for different training needs.\nOngoing educational workshops about the benefits and usage of biometric technology are planned to be held at the {Zenith Athletics Institute|ORGANIZATION-1}, with sessions led by experts from {BioTrack Innovations|ORGANIZATION-2} and experienced coaches.",
+    "PRE-CONSISTENCY-NUM-ITEMS": 12,
+    "STORYITEM_XML": "<storyitems>\n<storyitem>On September 15, 2023, the Zenith Athletics Institute unveiled its new state-of-the-art training center in Richmond Meadows, a scenic area known for its lush greenery and proximity to local sports clubs.</storyitem>\n<storyitem>The new facility, designed with an open-concept layout, features large glass windows that allow natural light to flood the indoor track and weight rooms.</storyitem>\n<storyitem>This institute was specifically designed to cater to the training needs of regional athletes, focusing on sports such as track and field, gymnastics, and swimming.</storyitem>\n<storyitem>The new facility, equipped with advanced biometric monitoring technology, was inaugurated with a formal ceremony attended by the known athletes of the institute, including prominent runners like Alex Varner and gymnast Alicia Wilton, who both expressed excitement about the new opportunities for training.</storyitem>\n<storyitem>The Zenith Athletics Institute, in collaboration with tech firm BioTrack Innovations, developed the unique biometric system to provide athletes with personalized performance analytics, integrating sensors that track heart rate, muscle activity, and movement patterns.</storyitem>\n<storyitem>During the event, Institute Director Kevin Stratton highlighted, \"This facility represents a leap forward in training technology for athletes, especially those specializing in high-risk sports,\" emphasizing the potential for injury prevention and performance enhancement.</storyitem>\n<storyitem>The systems installed use sensors to gather real-time data, which is then analyzed to help athletes optimize their performance and reduce injury risks, with data being accessible through a secure mobile app.</storyitem>\n<storyitem>First to test the new biometric system were a group of young sprinters, who were fascinated by the real-time feedback they received during drills, noting improvements in their stride and posture.</storyitem>\n<storyitem>Sprinter Chloe Mercer noted, \"The instant feedback on my running form has been invaluable. It\u2019s like having a coach at every moment,\" and mentioned how the system helped her identify areas for improvement that were previously unnoticed.</storyitem>\n<storyitem>Some concerns were voiced regarding the privacy of personal health data collected by the systems, prompting Director Stratton to assure attendees of strict adherence to data protection regulations, including encryption and limited access to sensitive information.</storyitem>\n<storyitem>The facility contains a medium-sized field adjacent to an indoor track and several weight rooms, designed to support various sports such as track and field, gymnastics, and swimming, with each area equipped with specialized equipment for different training needs.</storyitem>\n<storyitem>Ongoing educational workshops about the benefits and usage of biometric technology are planned to be held at the Zenith Athletics Institute, with sessions led by experts from BioTrack Innovations and experienced coaches.</storyitem>\n<storyitems>",
+    "NEW_PERSON_NAME": [
+      {
+        "name": "Alex Varner",
+        "old_name": "Alex Varner"
+      },
+      {
+        "name": "Alicia Wilton",
+        "old_name": "Alicia Wilton"
+      },
+      {
+        "name": "Kevin Stratton",
+        "old_name": "Kevin Stratton"
+      },
+      {
+        "name": "Chloe Mercer",
+        "old_name": "Chloe Mercer"
+      }
+    ],
+    "NEW_ORGANIZATION_NAME": [
+      {
+        "name": "Zenith Athletics Institute",
+        "old_name": "Zenith Athletics Institute"
+      },
+      {
+        "name": "BioTrack Innovations",
+        "old_name": "BioTrack Innovations"
+      }
+    ],
+    "NEW_LOCATION_NAME": [
+      {
+        "name": "Richmond Meadows",
+        "old_name": "Richmond Meadows"
+      }
+    ],
+    "NEW_PRODUCT_NAME": [],
+    "NEW_ART_NAME": [],
+    "NEW_BUILDING_NAME": [],
+    "NEW_EVENT_NAME": [],
+    "NEW_MISCELLANEOUS_NAME": [],
+    "CORRECTED_PERSON_NAME": [
+      {
+        "name": "Alex Varner",
+        "old_name": "Alex Varner",
+        "id": "PERSON-1"
+      },
+      {
+        "name": "Alicia Wilton",
+        "old_name": "Alicia Wilton",
+        "id": "PERSON-2"
+      },
+      {
+        "name": "Kevin Stratton",
+        "old_name": "Kevin Stratton",
+        "id": "PERSON-3"
+      },
+      {
+        "name": "Chloe Mercer",
+        "old_name": "Chloe Mercer",
+        "id": "PERSON-4"
+      }
+    ],
+    "CORRECTED_ORGANIZATION_NAME": [
+      {
+        "name": "Zenith Athletics Institute",
+        "old_name": "Zenith Athletics Institute",
+        "id": "ORGANIZATION-1"
+      },
+      {
+        "name": "BioTrack Innovations",
+        "old_name": "BioTrack Innovations",
+        "id": "ORGANIZATION-2"
+      }
+    ],
+    "CORRECTED_LOCATION_NAME": [
+      {
+        "name": "Richmond Meadows",
+        "old_name": "Richmond Meadows",
+        "id": "LOCATION-1"
+      }
+    ],
+    "CORRECTED_PRODUCT_NAME": [],
+    "CORRECTED_ART_NAME": [],
+    "CORRECTED_BUILDING_NAME": [],
+    "CORRECTED_EVENT_NAME": [],
+    "CORRECTED_MISCELLANEOUS_NAME": [],
+    "CRITIQUE_ERRORS": {
+      "entity-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-person-nationality": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-person-spouse": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization-headquarters": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product-manufacturer": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art-creator": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art-current_location_country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art-current_location_city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art-current_location_place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building-place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building-city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building-architect": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event-place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event-city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event-organizer": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-person-nationality": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-person-spouse": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-organization-headquarters": [
+        {
+          "errors": [
+            {
+              "key": "headquarters",
+              "obj": {
+                "id": "ORGANIZATION-1",
+                "name": "Zenith Athletics Institute",
+                "type": "educational institution",
+                "description": "Established to nurture regional athletic talent through comprehensive training programs and facilities.",
+                "founded": "2015",
+                "headquarters": "72 Willow Lane, Lakeside, Melbourne",
+                "industry": "Sports Education",
+                "mission_statement": "\"To empower athletes with knowledge, skills, and resources to excel in their chosen sports disciplines.\"",
+                "number_of_employees": "150",
+                "annual_revenue": "4 million AUD"
+              },
+              "type": "organization"
+            },
+            {
+              "key": "headquarters",
+              "obj": {
+                "id": "ORGANIZATION-2",
+                "name": "BioTrack Innovations",
+                "type": "company",
+                "description": "A pioneering tech firm specializing in biometric systems and performance analytics for athletes and sports professionals worldwide.",
+                "founded": "2018",
+                "headquarters": "350 Innovation Drive, Silicon Valley, California",
+                "industry": "Biometric Technology",
+                "mission_statement": "\"To revolutionize sports performance through cutting-edge technology, offering precise analytics for improved outcomes.\"",
+                "number_of_employees": "75",
+                "annual_revenue": "7 million USD"
+              },
+              "type": "organization"
+            }
+          ],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-location-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-product-manufacturer": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-art-creator": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-art-current_location_country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-art-current_location_city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-art-current_location_place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-building-place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-building-city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-building-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-building-architect": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-event-place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-event-city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-event-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-event-organizer": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ]
+    },
+    "ADJUSTED_PERSONS_XML": "<person><id>PERSON-1</id><name>Alex Varner</name><old_name>Alex Varner</old_name></person>\n<person><id>PERSON-2</id><name>Alicia Wilton</name><old_name>Alicia Wilton</old_name></person>\n<person><id>PERSON-3</id><name>Kevin Stratton</name><old_name>Kevin Stratton</old_name></person>\n<person><id>PERSON-4</id><name>Chloe Mercer</name><old_name>Chloe Mercer</old_name></person>",
+    "ADJUSTED_ORGANIZATIONS_XML": "<organization><id>ORGANIZATION-1</id><name>Zenith Athletics Institute</name><old_name>Zenith Athletics Institute</old_name></organization>\n<organization><id>ORGANIZATION-2</id><name>BioTrack Innovations</name><old_name>BioTrack Innovations</old_name></organization>",
+    "ADJUSTED_LOCATIONS_XML": "<location><id>LOCATION-1</id><name>Richmond Meadows</name><old_name>Richmond Meadows</old_name></location>",
+    "ADJUSTED_PRODUCTS_XML": "",
+    "ADJUSTED_ARTS_XML": "",
+    "ADJUSTED_BUILDINGS_XML": "",
+    "ADJUSTED_EVENTS_XML": "",
+    "ADJUSTED_MISCELLANEOUSS_XML": "",
+    "USED_PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Alex Varner"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Alicia Wilton"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Kevin Stratton"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Chloe Mercer"
+      }
+    ],
+    "USED_ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Zenith Athletics Institute"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "BioTrack Innovations"
+      }
+    ],
+    "USED_LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Richmond Meadows"
+      }
+    ],
+    "USED_PRODUCT": [],
+    "USED_ART": [],
+    "USED_BUILDING": [],
+    "USED_EVENT": [],
+    "USED_MISCELLANEOUS": [],
+    "USED_PRE-EXISTING-PERSON": [],
+    "USED_NEW-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Alex Varner",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Alicia Wilton",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Kevin Stratton",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Chloe Mercer",
+        "category": "person"
+      }
+    ],
+    "ALL_USED_PERSON_XML": "<person><category>person</category><id>PERSON-1</id><name>Alex Varner</name></person>\n<person><category>person</category><id>PERSON-2</id><name>Alicia Wilton</name></person>\n<person><category>person</category><id>PERSON-3</id><name>Kevin Stratton</name></person>\n<person><category>person</category><id>PERSON-4</id><name>Chloe Mercer</name></person>",
+    "USED-NAME-AND-ID-FOR-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Alex Varner",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Alicia Wilton",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Kevin Stratton",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Chloe Mercer",
+        "category": "person"
+      }
+    ],
+    "USED_PRE-EXISTING-ORGANIZATION": [],
+    "USED_NEW-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Zenith Athletics Institute",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "BioTrack Innovations",
+        "category": "organization"
+      }
+    ],
+    "ALL_USED_ORGANIZATION_XML": "<organization><category>organization</category><id>ORGANIZATION-1</id><name>Zenith Athletics Institute</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-2</id><name>BioTrack Innovations</name></organization>",
+    "USED-NAME-AND-ID-FOR-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Zenith Athletics Institute",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "BioTrack Innovations",
+        "category": "organization"
+      }
+    ],
+    "USED_PRE-EXISTING-LOCATION": [],
+    "USED_NEW-LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Richmond Meadows",
+        "category": "location"
+      }
+    ],
+    "ALL_USED_LOCATION_XML": "<location><category>location</category><id>LOCATION-1</id><name>Richmond Meadows</name></location>",
+    "USED-NAME-AND-ID-FOR-LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Richmond Meadows",
+        "category": "location"
+      }
+    ],
+    "USED_PRE-EXISTING-PRODUCT": [],
+    "USED_NEW-PRODUCT": [],
+    "ALL_USED_PRODUCT_XML": "",
+    "USED-NAME-AND-ID-FOR-PRODUCT": [],
+    "USED_PRE-EXISTING-ART": [],
+    "USED_NEW-ART": [],
+    "ALL_USED_ART_XML": "",
+    "USED-NAME-AND-ID-FOR-ART": [],
+    "USED_PRE-EXISTING-BUILDING": [],
+    "USED_NEW-BUILDING": [],
+    "ALL_USED_BUILDING_XML": "",
+    "USED-NAME-AND-ID-FOR-BUILDING": [],
+    "USED_PRE-EXISTING-EVENT": [],
+    "USED_NEW-EVENT": [],
+    "ALL_USED_EVENT_XML": "",
+    "USED-NAME-AND-ID-FOR-EVENT": [],
+    "USED_PRE-EXISTING-MISCELLANEOUS": [],
+    "USED_NEW-MISCELLANEOUS": [],
+    "ALL_USED_MISCELLANEOUS_XML": "",
+    "USED-NAME-AND-ID-FOR-MISCELLANEOUS": [],
+    "USED_NEW-PERSONS_XML": "<person><category>person</category><id>PERSON-1</id><name>Alex Varner</name></person>\n<person><category>person</category><id>PERSON-2</id><name>Alicia Wilton</name></person>\n<person><category>person</category><id>PERSON-3</id><name>Kevin Stratton</name></person>\n<person><category>person</category><id>PERSON-4</id><name>Chloe Mercer</name></person>",
+    "USED_NEW-ORGANIZATIONS_XML": "<organization><category>organization</category><id>ORGANIZATION-1</id><name>Zenith Athletics Institute</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-2</id><name>BioTrack Innovations</name></organization>",
+    "USED_NEW-LOCATIONS_XML": "<location><category>location</category><id>LOCATION-1</id><name>Richmond Meadows</name></location>",
+    "USED_NEW-PRODUCTS_XML": "",
+    "USED_NEW-ARTS_XML": "",
+    "USED_NEW-BUILDINGS_XML": "",
+    "USED_NEW-EVENTS_XML": "",
+    "USED_NEW-MISCELLANEOUSS_XML": "",
+    "NEW_PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Alex Varner",
+        "date_of_birth": "1995-04-12",
+        "gender": "Male",
+        "profession": "Professional Middle-distance Runner",
+        "nationality": "British",
+        "education": "Bachelor's in Sports Science from Oxford University",
+        "description": "A resilient athlete known for his dedication, Alex dreams of breaking regional records and promoting sports education in local communities.",
+        "height": "6'1\"",
+        "weight": "160 lbs",
+        "eye_color": "blue",
+        "hair_color": "brown",
+        "political_affiliation": "None",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Alicia Wilton",
+        "date_of_birth": "1997-11-30",
+        "gender": "Female",
+        "profession": "Professional Gymnast",
+        "nationality": "American",
+        "education": "Bachelor's in Kinesiology from Stanford University",
+        "description": "An elegant gymnast with a passion for graceful performance, Alicia aspires to inspire young girls through her achievements and community workshops.",
+        "height": "5'6\"",
+        "weight": "115 lbs",
+        "eye_color": "green",
+        "hair_color": "blonde",
+        "political_affiliation": "None",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Kevin Stratton",
+        "date_of_birth": "1972-08-23",
+        "gender": "Male",
+        "profession": "Institute Director",
+        "nationality": "Canadian",
+        "education": "Masters in Sports Management from the University of British Columbia",
+        "description": "With over two decades of experience in sports administration, Kevin is committed to advancing athlete support systems through innovative facilities.",
+        "height": "5'11\"",
+        "weight": "185 lbs",
+        "eye_color": "hazel",
+        "hair_color": "grey",
+        "political_affiliation": "None",
+        "marital_status": "Married",
+        "spouse": "Evelyn Stratton"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Chloe Mercer",
+        "date_of_birth": "2001-03-15",
+        "gender": "Female",
+        "profession": "Amateur Sprinter",
+        "nationality": "Australian",
+        "education": "Honours in Sports Technology from the University of Melbourne",
+        "description": "Chloe's relentless determination and curiosity about performance analytics drive her running career and her interest in biometric systems.",
+        "height": "5'8\"",
+        "weight": "130 lbs",
+        "eye_color": "blue",
+        "hair_color": "red",
+        "political_affiliation": "None",
+        "marital_status": "Single"
+      }
+    ],
+    "NEW_ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Zenith Athletics Institute",
+        "type": "educational institution",
+        "description": "Established to nurture regional athletic talent through comprehensive training programs and state-of-the-art facilities.",
+        "founded": "2015",
+        "headquarters": "72 Willow Lane - Lakeside - Melbourne",
+        "industry": "Sports Education",
+        "mission_statement": "To empower athletes with knowledge, skills, and resources to excel in their chosen sports disciplines.",
+        "number_of_employees": "150",
+        "annual_revenue": "4 million AUD"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "BioTrack Innovations",
+        "type": "company",
+        "description": "A pioneering tech firm specializing in biometric systems and performance analytics for athletes and sports professionals worldwide.",
+        "founded": "2018",
+        "headquarters": "350 Innovation Drive in Silicon Valley California",
+        "industry": "Biometric Technology",
+        "mission_statement": "To revolutionize sports performance through cutting-edge technology offering precise analytics for improved outcomes.",
+        "number_of_employees": "75",
+        "annual_revenue": "7 million USD"
+      }
+    ],
+    "NEW_LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Richmond Meadows",
+        "type": "region",
+        "description": "A picturesque region notable for its expansive meadows and vibrant seasons, making it a prime location for outdoor activities.",
+        "population": "42,000",
+        "area": "52 square miles",
+        "founded": "1820",
+        "climate": "temperate",
+        "elevation": "320 meters"
+      }
+    ],
+    "NEW_PRODUCT": [],
+    "NEW_ART": [],
+    "NEW_BUILDING": [],
+    "NEW_EVENT": [],
+    "NEW_MISCELLANEOUS": [],
+    "FICTIONAL_NEW_PERSONS": [
+      {
+        "id": "PERSON-1",
+        "name": "Alex Varner",
+        "entity_class": "person",
+        "description": "A resilient athlete known for his dedication, Alex dreams of breaking regional records and promoting sports education in local communities.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [],
+        "date_of_birth": "1995-04-12",
+        "gender": "Male",
+        "profession": "Professional Middle-distance Runner",
+        "nationality": "British",
+        "education": "Bachelor's in Sports Science from Oxford University",
+        "height": "6'1\"",
+        "weight": "160 lbs",
+        "eye_color": "blue",
+        "hair_color": "brown",
+        "political_affiliation": "None",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Alicia Wilton",
+        "entity_class": "person",
+        "description": "An elegant gymnast with a passion for graceful performance, Alicia aspires to inspire young girls through her achievements and community workshops.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [],
+        "date_of_birth": "1997-11-30",
+        "gender": "Female",
+        "profession": "Professional Gymnast",
+        "nationality": "American",
+        "education": "Bachelor's in Kinesiology from Stanford University",
+        "height": "5'6\"",
+        "weight": "115 lbs",
+        "eye_color": "green",
+        "hair_color": "blonde",
+        "political_affiliation": "None",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Kevin Stratton",
+        "entity_class": "person",
+        "description": "With over two decades of experience in sports administration, Kevin is committed to advancing athlete support systems through innovative facilities.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [],
+        "date_of_birth": "1972-08-23",
+        "gender": "Male",
+        "profession": "Institute Director",
+        "nationality": "Canadian",
+        "education": "Masters in Sports Management from the University of British Columbia",
+        "height": "5'11\"",
+        "weight": "185 lbs",
+        "eye_color": "hazel",
+        "hair_color": "grey",
+        "political_affiliation": "None",
+        "marital_status": "Married",
+        "spouse": "Evelyn Stratton"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Chloe Mercer",
+        "entity_class": "person",
+        "description": "Chloe's relentless determination and curiosity about performance analytics drive her running career and her interest in biometric systems.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [],
+        "date_of_birth": "2001-03-15",
+        "gender": "Female",
+        "profession": "Amateur Sprinter",
+        "nationality": "Australian",
+        "education": "Honours in Sports Technology from the University of Melbourne",
+        "height": "5'8\"",
+        "weight": "130 lbs",
+        "eye_color": "blue",
+        "hair_color": "red",
+        "political_affiliation": "None",
+        "marital_status": "Single"
+      }
+    ],
+    "FICTIONAL_NEW_ORGANIZATIONS": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Zenith Athletics Institute",
+        "entity_class": "organization",
+        "description": "Established to nurture regional athletic talent through comprehensive training programs and state-of-the-art facilities.",
+        "type": "educational institution",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [],
+        "founded": "2015",
+        "headquarters": "72 Willow Lane - Lakeside - Melbourne",
+        "industry": "Sports Education",
+        "mission_statement": "To empower athletes with knowledge, skills, and resources to excel in their chosen sports disciplines.",
+        "number_of_employees": "150",
+        "annual_revenue": "4 million AUD"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "BioTrack Innovations",
+        "entity_class": "organization",
+        "description": "A pioneering tech firm specializing in biometric systems and performance analytics for athletes and sports professionals worldwide.",
+        "type": "company",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [],
+        "founded": "2018",
+        "headquarters": "350 Innovation Drive in Silicon Valley California",
+        "industry": "Biometric Technology",
+        "mission_statement": "To revolutionize sports performance through cutting-edge technology offering precise analytics for improved outcomes.",
+        "number_of_employees": "75",
+        "annual_revenue": "7 million USD"
+      }
+    ],
+    "FICTIONAL_NEW_LOCATIONS": [
+      {
+        "id": "LOCATION-1",
+        "name": "Richmond Meadows",
+        "entity_class": "location",
+        "description": "A picturesque region notable for its expansive meadows and vibrant seasons, making it a prime location for outdoor activities.",
+        "type": "region",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [],
+        "population": "42,000",
+        "area": "52 square miles",
+        "elevation": "320 meters"
+      }
+    ],
+    "FICTIONAL_NEW_PRODUCTS": [],
+    "FICTIONAL_NEW_ARTS": [],
+    "FICTIONAL_NEW_BUILDINGS": [],
+    "FICTIONAL_NEW_EVENTS": [],
+    "FICTIONAL_NEW_MISCELLANEOUSS": [],
+    "RESPONSE": "```xml\n<results>\n\n<location>\n  <id>LOCATION-1</id>\n  <name>Richmond Meadows</name>\n  <type>region</type>\n  <description>A picturesque region notable for its expansive meadows and vibrant seasons, making it a prime location for outdoor activities.</description>\n  <population>42,000</population>\n  <area>52 square miles</area>\n  <founded>1820</founded>\n  <climate>temperate</climate>\n  <elevation>320 meters</elevation>\n</location>\n\n<person>\n  <id>PERSON-1</id>\n  <name>Alex Varner</name>\n  <date_of_birth>1995-04-12</date_of_birth>\n  <gender>Male</gender>\n  <profession>Professional Middle-distance Runner</profession>\n  <nationality>British</nationality>\n  <education>Bachelor's in Sports Science from Oxford University</education>\n  <description>A resilient athlete known for his dedication, Alex dreams of breaking regional records and promoting sports education in local communities.</description>\n  <height>6'1\"</height>\n  <weight>160 lbs</weight>\n  <eye_color>blue</eye_color>\n  <hair_color>brown</hair_color>\n  <political_affiliation>None</political_affiliation>\n  <marital_status>Single</marital_status>\n</person>\n\n<person>\n  <id>PERSON-2</id>\n  <name>Alicia Wilton</name>\n  <date_of_birth>1997-11-30</date_of_birth>\n  <gender>Female</gender>\n  <profession>Professional Gymnast</profession>\n  <nationality>American</nationality>\n  <education>Bachelor's in Kinesiology from Stanford University</education>\n  <description>An elegant gymnast with a passion for graceful performance, Alicia aspires to inspire young girls through her achievements and community workshops.</description>\n  <height>5'6\"</height>\n  <weight>115 lbs</weight>\n  <eye_color>green</eye_color>\n  <hair_color>blonde</hair_color>\n  <political_affiliation>None</political_affiliation>\n  <marital_status>Single</marital_status>\n</person>\n\n<person>\n  <id>PERSON-3</id>\n  <name>Kevin Stratton</name>\n  <date_of_birth>1972-08-23</date_of_birth>\n  <gender>Male</gender>\n  <profession>Institute Director</profession>\n  <nationality>Canadian</nationality>\n  <education>Masters in Sports Management from the University of British Columbia</education>\n  <description>With over two decades of experience in sports administration, Kevin is committed to advancing athlete support systems through innovative facilities.</description>\n  <height>5'11\"</height>\n  <weight>185 lbs</weight>\n  <eye_color>hazel</eye_color>\n  <hair_color>grey</hair_color>\n  <political_affiliation>None</political_affiliation>\n  <marital_status>Married</marital_status>\n  <spouse>Evelyn Stratton</spouse>\n</person>\n\n<person>\n  <id>PERSON-4</id>\n  <name>Chloe Mercer</name>\n  <date_of_birth>2001-03-15</date_of_birth>\n  <gender>Female</gender>\n  <profession>Amateur Sprinter</profession>\n  <nationality>Australian</nationality>\n  <education>Honours in Sports Technology from the University of Melbourne</education>\n  <description>Chloe's relentless determination and curiosity about performance analytics drive her running career and her interest in biometric systems.</description>\n  <height>5'8\"</height>\n  <weight>130 lbs</weight>\n  <eye_color>blue</eye_color>\n  <hair_color>red</hair_color>\n  <political_affiliation>None</political_affiliation>\n  <marital_status>Single</marital_status>\n</person>\n\n<organization>\n  <id>ORGANIZATION-1</id>\n  <name>Zenith Athletics Institute</name>\n  <type>educational institution</type>\n  <description>Established to nurture regional athletic talent through comprehensive training programs and state-of-the-art facilities.</description>\n  <founded>2015</founded>\n  <headquarters>72 Willow Lane - Lakeside - Melbourne</headquarters>\n  <industry>Sports Education</industry>\n  <mission_statement>To empower athletes with knowledge, skills, and resources to excel in their chosen sports disciplines.</mission_statement>\n  <number_of_employees>150</number_of_employees>\n  <annual_revenue>4 million AUD</annual_revenue>\n</organization>\n\n<organization>\n  <id>ORGANIZATION-2</id>\n  <name>BioTrack Innovations</name>\n  <type>company</type>\n  <description>A pioneering tech firm specializing in biometric systems and performance analytics for athletes and sports professionals worldwide.</description>\n  <founded>2018</founded>\n  <headquarters>350 Innovation Drive in Silicon Valley California</headquarters>\n  <industry>Biometric Technology</industry>\n  <mission_statement>To revolutionize sports performance through cutting-edge technology offering precise analytics for improved outcomes.</mission_statement>\n  <number_of_employees>75</number_of_employees>\n  <annual_revenue>7 million USD</annual_revenue>\n</organization>\n\n</results>\n```",
+    "USED-ALL-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Alex Varner",
+        "entity_class": "person",
+        "description": "A resilient athlete known for his dedication, Alex dreams of breaking regional records and promoting sports education in local communities.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [],
+        "date_of_birth": "1995-04-12",
+        "gender": "Male",
+        "profession": "Professional Middle-distance Runner",
+        "nationality": "British",
+        "education": "Bachelor's in Sports Science from Oxford University",
+        "height": "6'1\"",
+        "weight": "160 lbs",
+        "eye_color": "blue",
+        "hair_color": "brown",
+        "political_affiliation": "None",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Alicia Wilton",
+        "entity_class": "person",
+        "description": "An elegant gymnast with a passion for graceful performance, Alicia aspires to inspire young girls through her achievements and community workshops.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [],
+        "date_of_birth": "1997-11-30",
+        "gender": "Female",
+        "profession": "Professional Gymnast",
+        "nationality": "American",
+        "education": "Bachelor's in Kinesiology from Stanford University",
+        "height": "5'6\"",
+        "weight": "115 lbs",
+        "eye_color": "green",
+        "hair_color": "blonde",
+        "political_affiliation": "None",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Kevin Stratton",
+        "entity_class": "person",
+        "description": "With over two decades of experience in sports administration, Kevin is committed to advancing athlete support systems through innovative facilities.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [],
+        "date_of_birth": "1972-08-23",
+        "gender": "Male",
+        "profession": "Institute Director",
+        "nationality": "Canadian",
+        "education": "Masters in Sports Management from the University of British Columbia",
+        "height": "5'11\"",
+        "weight": "185 lbs",
+        "eye_color": "hazel",
+        "hair_color": "grey",
+        "political_affiliation": "None",
+        "marital_status": "Married",
+        "spouse": "Evelyn Stratton"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Chloe Mercer",
+        "entity_class": "person",
+        "description": "Chloe's relentless determination and curiosity about performance analytics drive her running career and her interest in biometric systems.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [],
+        "date_of_birth": "2001-03-15",
+        "gender": "Female",
+        "profession": "Amateur Sprinter",
+        "nationality": "Australian",
+        "education": "Honours in Sports Technology from the University of Melbourne",
+        "height": "5'8\"",
+        "weight": "130 lbs",
+        "eye_color": "blue",
+        "hair_color": "red",
+        "political_affiliation": "None",
+        "marital_status": "Single"
+      }
+    ],
+    "USED_PERSON_XML": "<person><created_at>0</created_at><date_of_birth>1995-04-12</date_of_birth><description>A resilient athlete known for his dedication, Alex dreams of breaking regional records and promoting sports education in local communities.</description><education>Bachelor's in Sports Science from Oxford University</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>Male</gender><hair_color>brown</hair_color><height>6'1\"</height><history></history><id>PERSON-1</id><last_updated>2023-09-15</last_updated><marital_status>Single</marital_status><name>Alex Varner</name><nationality>British</nationality><political_affiliation>None</political_affiliation><profession>Professional Middle-distance Runner</profession><type>None</type><weight>160 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1997-11-30</date_of_birth><description>An elegant gymnast with a passion for graceful performance, Alicia aspires to inspire young girls through her achievements and community workshops.</description><education>Bachelor's in Kinesiology from Stanford University</education><entity_class>person</entity_class><eye_color>green</eye_color><gender>Female</gender><hair_color>blonde</hair_color><height>5'6\"</height><history></history><id>PERSON-2</id><last_updated>2023-09-15</last_updated><marital_status>Single</marital_status><name>Alicia Wilton</name><nationality>American</nationality><political_affiliation>None</political_affiliation><profession>Professional Gymnast</profession><type>None</type><weight>115 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1972-08-23</date_of_birth><description>With over two decades of experience in sports administration, Kevin is committed to advancing athlete support systems through innovative facilities.</description><education>Masters in Sports Management from the University of British Columbia</education><entity_class>person</entity_class><eye_color>hazel</eye_color><gender>Male</gender><hair_color>grey</hair_color><height>5'11\"</height><history></history><id>PERSON-3</id><last_updated>2023-09-15</last_updated><marital_status>Married</marital_status><name>Kevin Stratton</name><nationality>Canadian</nationality><political_affiliation>None</political_affiliation><profession>Institute Director</profession><spouse>Evelyn Stratton</spouse><type>None</type><weight>185 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>2001-03-15</date_of_birth><description>Chloe's relentless determination and curiosity about performance analytics drive her running career and her interest in biometric systems.</description><education>Honours in Sports Technology from the University of Melbourne</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>Female</gender><hair_color>red</hair_color><height>5'8\"</height><history></history><id>PERSON-4</id><last_updated>2023-09-15</last_updated><marital_status>Single</marital_status><name>Chloe Mercer</name><nationality>Australian</nationality><political_affiliation>None</political_affiliation><profession>Amateur Sprinter</profession><type>None</type><weight>130 lbs</weight></person>",
+    "USED-ALL-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Zenith Athletics Institute",
+        "entity_class": "organization",
+        "description": "Established to nurture regional athletic talent through comprehensive training programs and state-of-the-art facilities.",
+        "type": "educational institution",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [],
+        "founded": "2015",
+        "headquarters": "72 Willow Lane - Lakeside - Melbourne",
+        "industry": "Sports Education",
+        "mission_statement": "To empower athletes with knowledge, skills, and resources to excel in their chosen sports disciplines.",
+        "number_of_employees": "150",
+        "annual_revenue": "4 million AUD"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "BioTrack Innovations",
+        "entity_class": "organization",
+        "description": "A pioneering tech firm specializing in biometric systems and performance analytics for athletes and sports professionals worldwide.",
+        "type": "company",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [],
+        "founded": "2018",
+        "headquarters": "350 Innovation Drive in Silicon Valley California",
+        "industry": "Biometric Technology",
+        "mission_statement": "To revolutionize sports performance through cutting-edge technology offering precise analytics for improved outcomes.",
+        "number_of_employees": "75",
+        "annual_revenue": "7 million USD"
+      }
+    ],
+    "USED_ORGANIZATION_XML": "<organization><annual_revenue>4 million AUD</annual_revenue><created_at>0</created_at><description>Established to nurture regional athletic talent through comprehensive training programs and state-of-the-art facilities.</description><entity_class>organization</entity_class><founded>2015</founded><headquarters>72 Willow Lane - Lakeside - Melbourne</headquarters><history></history><id>ORGANIZATION-1</id><industry>Sports Education</industry><last_updated>2023-09-15</last_updated><mission_statement>To empower athletes with knowledge, skills, and resources to excel in their chosen sports disciplines.</mission_statement><name>Zenith Athletics Institute</name><number_of_employees>150</number_of_employees><type>educational institution</type></organization>\n<organization><annual_revenue>7 million USD</annual_revenue><created_at>0</created_at><description>A pioneering tech firm specializing in biometric systems and performance analytics for athletes and sports professionals worldwide.</description><entity_class>organization</entity_class><founded>2018</founded><headquarters>350 Innovation Drive in Silicon Valley California</headquarters><history></history><id>ORGANIZATION-2</id><industry>Biometric Technology</industry><last_updated>2023-09-15</last_updated><mission_statement>To revolutionize sports performance through cutting-edge technology offering precise analytics for improved outcomes.</mission_statement><name>BioTrack Innovations</name><number_of_employees>75</number_of_employees><type>company</type></organization>",
+    "USED-ALL-LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Richmond Meadows",
+        "entity_class": "location",
+        "description": "A picturesque region notable for its expansive meadows and vibrant seasons, making it a prime location for outdoor activities.",
+        "type": "region",
+        "created_at": 0,
+        "last_updated": "2023-09-15",
+        "history": [],
+        "population": "42,000",
+        "area": "52 square miles",
+        "elevation": "320 meters"
+      }
+    ],
+    "USED_LOCATION_XML": "<location><area>52 square miles</area><created_at>0</created_at><description>A picturesque region notable for its expansive meadows and vibrant seasons, making it a prime location for outdoor activities.</description><elevation>320 meters</elevation><entity_class>location</entity_class><history></history><id>LOCATION-1</id><last_updated>2023-09-15</last_updated><name>Richmond Meadows</name><population>42,000</population><type>region</type></location>",
+    "USED-ALL-PRODUCT": [],
+    "USED_PRODUCT_XML": "",
+    "USED-ALL-ART": [],
+    "USED_ART_XML": "",
+    "USED-ALL-BUILDING": [],
+    "USED_BUILDING_XML": "",
+    "USED-ALL-EVENT": [],
+    "USED_EVENT_XML": "",
+    "USED-ALL-MISCELLANEOUS": [],
+    "USED_MISCELLANEOUS_XML": "",
+    "USED_ENTITIES": [
+      {
+        "id": "PERSON-1",
+        "name": "Alex Varner",
+        "entity_type": "person",
+        "new": true
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Alicia Wilton",
+        "entity_type": "person",
+        "new": true
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Kevin Stratton",
+        "entity_type": "person",
+        "new": true
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Chloe Mercer",
+        "entity_type": "person",
+        "new": true
+      },
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Zenith Athletics Institute",
+        "entity_type": "organization",
+        "new": true
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "BioTrack Innovations",
+        "entity_type": "organization",
+        "new": true
+      },
+      {
+        "id": "LOCATION-1",
+        "name": "Richmond Meadows",
+        "entity_type": "location",
+        "new": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,2470 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "microsoft/phi-4-reasoning-plus",
+    "temperature": 1.0,
+    "max-tokens": 4096
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "```xml\n<results>\n  <thought_process>\n    To begin, note that there are no specific follow-up event dates mentioned in the existing history, although plans are mentioned for tryouts with {BlazeChiefs|ORGANIZATION-2} scheduled in the following month, after September 15, 2025. This implies tryouts are likely set for around October 2025. All summaries must adhere to this timeline where applicable. \n\n    1. **First Summary**: Discusses the tryouts with {BlazeChiefs|ORGANIZATION-2}, focusing on the emergence of new talent.\n    2. **Second Summary**: Looks at {GammWell's|ORGANIZATION-1} collaboration with local schools, reinforcing community engagement.\n    3. **Third Summary**: Highlights {Pixel Cafe|ORGANIZATION-3} hosting another event, elaborating on its community role.\n    4. **Fourth Summary**: Considers post-tournament reflections from an individual participant, possibly including {Jamie Lee|PERSON-4}.\n\n    These summaries consider both positive and challenging developments and engage different key entities such as organizations, individuals, and community settings.\n  </thought_process>\n\n  <summaries>\n    <summary>\n      <text>\n        Several standout players, including {Jamie Lee|PERSON-4}, passed the tryouts hosted by {BlazeChiefs|ORGANIZATION-2}, advancing to a week-long training camp with the team.\n      </text>\n      <date>2025-10-20</date>\n    </summary>\n\n    <summary>\n      <text>\n        {GammWell|ORGANIZATION-1} launched its first esports workshop in partnership with local schools, initiating a pilot program to educate and train young gamers.\n      </text>\n      <date>2025-11-05</date>\n    </summary>\n\n    <summary>\n      <text>\n        {Pixel Cafe|ORGANIZATION-3} hosted a mobile gaming day, attracting increased community participation and sponsoring local esports players for the upcoming tournament.\n      </text>\n      <date>2025-11-12</date>\n    </summary>\n\n    <summary>\n      <text>\n        {Jamie Lee|PERSON-4} expressed mixed feelings about the intense competition at the tryouts, citing both growth and pressure as they continue to pursue professional gaming.\n      </text>\n      <date>2025-10-25</date>\n    </summary>\n  </summaries>\n</results>\n```"
+  },
+  "response": "```xml\n<results>\n  <thought_process>\n    To begin, note that there are no specific follow-up event dates mentioned in the existing history, although plans are mentioned for tryouts with {BlazeChiefs|ORGANIZATION-2} scheduled in the following month, after September 15, 2025. This implies tryouts are likely set for around October 2025. All summaries must adhere to this timeline where applicable. \n\n    1. **First Summary**: Discusses the tryouts with {BlazeChiefs|ORGANIZATION-2}, focusing on the emergence of new talent.\n    2. **Second Summary**: Looks at {GammWell's|ORGANIZATION-1} collaboration with local schools, reinforcing community engagement.\n    3. **Third Summary**: Highlights {Pixel Cafe|ORGANIZATION-3} hosting another event, elaborating on its community role.\n    4. **Fourth Summary**: Considers post-tournament reflections from an individual participant, possibly including {Jamie Lee|PERSON-4}.\n\n    These summaries consider both positive and challenging developments and engage different key entities such as organizations, individuals, and community settings.\n  </thought_process>\n\n  <summaries>\n    <summary>\n      <text>\n        Several standout players, including {Jamie Lee|PERSON-4}, passed the tryouts hosted by {BlazeChiefs|ORGANIZATION-2}, advancing to a week-long training camp with the team.\n      </text>\n      <date>2025-10-20</date>\n    </summary>\n\n    <summary>\n      <text>\n        {GammWell|ORGANIZATION-1} launched its first esports workshop in partnership with local schools, initiating a pilot program to educate and train young gamers.\n      </text>\n      <date>2025-11-05</date>\n    </summary>\n\n    <summary>\n      <text>\n        {Pixel Cafe|ORGANIZATION-3} hosted a mobile gaming day, attracting increased community participation and sponsoring local esports players for the upcoming tournament.\n      </text>\n      <date>2025-11-12</date>\n    </summary>\n\n    <summary>\n      <text>\n        {Jamie Lee|PERSON-4} expressed mixed feelings about the intense competition at the tryouts, citing both growth and pressure as they continue to pursue professional gaming.\n      </text>\n      <date>2025-10-25</date>\n    </summary>\n  </summaries>\n</results>\n```",
+  "instructions": "You are an AI tasked with creating fictional future news summaries based on provided information. Your goal is to generate plausible continuations of an existing narrative. Follow these instructions carefully:\n\n1. First, you will be given known entities in this fictional world. These will be provided in the following format:\n<known_entities>\n{{LOCATIONS_XML}}\n{{PERSONS_XML}}\n{{ORGANIZATIONS_XML}}\n{{PRODUCTS_XML}}\n{{ARTS_XML}}\n{{EVENTS_XML}}\n{{BUILDINGS_XML}}\n{{MISCELLANEOUSS_XML}}\n</known_entities>\n\n2. Next, you will be provided with the history of events that have already occurred in this fictional world:\n\n<history>\n{{HISTORY_XML}}\n</history>\n\n3. Your task is to create {{NUMBER_SUMMARIES}} new summaries that describe future fictional events following the last event from the <history>. These new summaries should be consistent with the existing story and represent plausible continuations or developments of the original narrative.\n\n4. For each summary, create:\n   a. A summary text (a single concise sentence)\n   b. The date on which this fictional next event happens\n\n5. Before starting, check if the history of events indicates specific dates for followup events. Ensure your continuations are consistent with these expected followup events. All your summaries must either concern this event, or happen before this event.\n\n6. Make sure that each summary you generate focuses on at least one of the main named entities from the history of events.\n\n7. Follow these guidelines when creating your summaries:\n   a. Ensure all summaries are fictional and not based on real events or real people.\n   b. Make the summaries sound realistic and plausible as follow-up stories to the previous outlines. \n   c. Think about plausible next events based on the fictional named entities, the history of the past fictional events and the genre {{GENRE}}. \n   d. Create summaries that are unbiased and objective in tone.\n   e. Each summary MUST BE ONLY A SINGLE concise sentence.\n   f. Summaries may focus on different personas or organizations from the provided lists.\n   g. Ensure a balance of positive and negative news stories, developments, and alternative scenarios.\n   h. Consider various dimensions or personas that could be varied when generating diverse summaries.\n\nTry to be diverse in the summaries you generate. Consider different plausible substories and vary:\n- between impact: Try to create various low-impact next events, but you may also at times mix in an event with a slightly higher impact.\n- between directions: Vary between positive and negative story developments. Think about how stories in the {{GENRE}} genre progress in the real-world, NOT in a novel. Provide various realistic alternatives for how the story may progress in either direction.\n- between different key named entities of the fictional story.\n\n8. Output format:\n   - Enclose each summary in <summary> tags.\n   - Each summary must have two child properties:\n     <text>[The generated summary]</text>\n     <date>[The date for the next event]</date>\n   - Before each summary, explain your thought process in <thought_process> tags. Make sure to identify all known followup events based on the provided history first, and verify that your continuations are consistent with these known followup events regarding the date.\n   - Output everything within a <results> root node.\n\n9. Special instructions:\n   - The history and entities have special formatting. They sometimes include statements like {[PHRASE]|[ID]}. Read it as [PHRASE], while the [ID] specifies the ID of the linked entity.\n   - Example: \"I met {Boris Bowman|PERSON-1} yesterday.\" Read as: \"I met Boris Bowman yesterday.\" (The ID of Boris Bowman is PERSON-1).\n   - DO NOT use the {[PHRASE]|[ID]} formulation when generating new summaries.\n   - Do not exaggerate the summaries. Avoid using words like \"groundbreaking\", \"worldwide\", \"global\". Keep the summaries realistic.\n   - Do not create summaries with global or national impact unless the genre specifically requires it. Instead, focus on smaller or local developments.\n   - Do not focus on technological discoveries or topics like AI tools, virtual reality, augmented reality, 3D-modelling, quantum computing, etc. You may include such topics only if they are HIGHLY relevant to the genre {{GENRE}} AND the provided history of events.\n   - Focus on realistic, meaningful summaries with specific details and developments that align with typical, realistic scenarios of the genre {{GENRE}}.\n\n10. Final reminders:\n   - Repeat this process for all {{NUMBER_SUMMARIES}} summaries.\n   - Ensure that each summary explores a different aspect or potential next step of the fictional situation presented in the HISTORY.\n   - Each summary text MUST BE ONLY A SINGLE concise sentence.\n   - The continuations should be diverse in terms of high (at most one), medium and low impact, positive and negative story developments, etc., and can cover different alternatives of how the future event can play out.\n   - Do not enumerate over the summaries.\n   - When brainstorming future event summaries, carefully consider whether each continuation aligns with the provided history of events, provided named entities, and the genre {{GENRE}}. Before creating summaries with global or large-scale impact, double-check if such developments seem plausible based on how real-world events of this type would typically unfold. Focus on what fits the genre and provided history, ensuring that every dimension feels realistic and consistent with the context.\n\nRemember to maintain the desired format and brevity of the event summaries while creating plausible and engaging continuations of the narrative.\n\nHere's an example of the desired output format:\n\n<results>\n<thought_process>\n[This includes the thought process for all summaries.]\n</thought_process>\n\n<summaries>\n<summary>\n<text>[Your first summary text here]</text>\n<date>[Date for the first summary]</date>\n</summary>\n\n<summary>\n<text>[Your second summary text here]</text>\n<date>[Date for the second summary]</date>\n</summary>\n\n[... continue for all summaries ...]\n</summaries>\n</results>",
+  "text_prompt": "You are an AI tasked with creating fictional future news summaries based on provided information. Your goal is to generate plausible continuations of an existing narrative. Follow these instructions carefully:\n\n1. First, you will be given known entities in this fictional world. These will be provided in the following format:\n<known_entities>\n\n<person><created_at>0</created_at><date_of_birth>1988-05-17</date_of_birth><description>Elena Voss, an enthusiastic and dynamic coordinator, is driven by a lifelong passion for gaming and community building.</description><education>B.A. in Event Management</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>female</gender><hair_color>brown</hair_color><height>5'7\"</height><history><event>2025-09-15: Elena Voss coordinated the Rural Nexus Gaming Tournament, leveraging her experience as an amateur esports player and community organizer.</event></history><id>PERSON-1</id><last_updated>2025-09-15</last_updated><marital_status>Single</marital_status><name>Elena Voss, an enthusiastic and dynamic coordinator, is driven by a lifelong passion for gaming and community building.</name><nationality>Valeran</nationality><political_affiliation>Independent</political_affiliation><profession>Event Coordinator</profession><type>None</type><weight>135 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1990-03-22</date_of_birth><description>Marcus Reed, an insightful gaming journalist, has dedicated his career to exploring the cultural impacts of esports.</description><education>M.A. in Journalism</education><entity_class>person</entity_class><eye_color>green</eye_color><gender>male</gender><hair_color>dark blonde</hair_color><height>6'0\"</height><history><event>2025-09-15: Marcus Reed coordinated the Rural Nexus Gaming Tournament and hosted a panel discussion on the growth of esports in rural areas.</event></history><id>PERSON-2</id><last_updated>2025-09-15</last_updated><marital_status>Married</marital_status><name>Marcus Reed, an insightful gaming journalist, has dedicated his career to exploring the cultural impacts of esports.</name><nationality>Valeran</nationality><political_affiliation>Independent</political_affiliation><profession>Gaming Journalist</profession><type>None</type><weight>170 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1978-09-10</date_of_birth><description>Alex Turner, known for his strategic prowess and mentorship, is dedicated to nurturing esports talent and fostering teamwork.</description><education>B.Sc. in Sports Psychology</education><entity_class>person</entity_class><eye_color>brown</eye_color><gender>male</gender><hair_color>gray</hair_color><height>6'2\"</height><history><event>2025-09-15: Alex Turner, head coach of BlazeChiefs, attended the Rural Nexus Gaming Tournament to scout for talent and engage with the local gaming community.</event></history><id>PERSON-3</id><last_updated>2025-09-15</last_updated><marital_status>Divorced</marital_status><name>Alex Turner, known for his strategic prowess and mentorship, is dedicated to nurturing esports talent and fostering teamwork.</name><nationality>Valeran</nationality><political_affiliation>Non-affiliated</political_affiliation><profession>Esports Coach</profession><type>None</type><weight>185 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>2004-07-05</date_of_birth><description>Jamie Lee, a spirited and adaptable individual, thrives in the ever-evolving world of competitive esports competition.</description><education>High School Student</education><entity_class>person</entity_class><eye_color>hazel</eye_color><gender>non-binary</gender><hair_color>black</hair_color><height>5'6\"</height><history><event>2025-09-15: Jamie Lee participated in the Rural Nexus Gaming Tournament, gaining valuable experience and expressing gratitude for the opportunity to connect with the gaming community.</event></history><id>PERSON-4</id><last_updated>2025-09-15</last_updated><marital_status>Single</marital_status><name>Jamie Lee, a spirited and adaptable individual, thrives in the ever-evolving world of competitive esports competition.</name><nationality>Valeran</nationality><political_affiliation>Non-affiliated</political_affiliation><profession>Student and Esports Player</profession><type>None</type><weight>130 lbs</weight></person>\n<organization><annual_revenue>$50,000</annual_revenue><created_at>0</created_at><description>GammWell is a community-driven non-profit organization aiming to enrich the local gaming landscape and inspire new talent.</description><entity_class>organization</entity_class><founded>2025</founded><headquarters>Valeran</headquarters><history><event>2025-09-15: GammWell successfully organized the Rural Nexus Gaming Tournament, marking a significant step in their mission to promote local esports.</event></history><id>ORGANIZATION-1</id><industry>Community Empowerment and Esports</industry><last_updated>2025-09-15</last_updated><mission_statement>To provide a platform for local gamers to showcase their talents and connect with the broader esports community.</mission_statement><name>GammWell</name><number_of_employees>8</number_of_employees><type>non-profit</type></organization>\n<organization><annual_revenue>$3 million</annual_revenue><created_at>0</created_at><description>BlazeChiefs, an emerging esports team, is recognized for its commitment to excellence and strategic prowess on the competitive gaming stage.</description><entity_class>organization</entity_class><founded>2024</founded><headquarters>Gamville</headquarters><history><event>2025-09-15: BlazeChiefs attended the Rural Nexus Gaming Tournament to scout for new talent and engage with the local gaming community.</event></history><id>ORGANIZATION-2</id><industry>Professional Esports</industry><last_updated>2025-09-15</last_updated><mission_statement>To be at the forefront of the esports world by identifying and nurturing top strategic and skilled players.</mission_statement><name>BlazeChiefs</name><number_of_employees>20</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>$1.2 million</annual_revenue><created_at>0</created_at><description>Pixle Cafe is a cozy local establishment known for its vibrant ambiance and dedication to the gaming community.</description><entity_class>organization</entity_class><founded>2018</founded><headquarters>Townsville</headquarters><history><event>2025-09-15: Pixel Cafe sponsored the Rural Nexus Gaming Tournament, providing refreshments and hosting a mini-tournament to boost community involvement.</event></history><id>ORGANIZATION-3</id><industry>Caf\u00e9 and Gaming Hub</industry><last_updated>2025-09-15</last_updated><mission_statement>To create a welcoming environment for gamers and non-gamers alike with innovative menu offerings and community events.</mission_statement><name>Pixel Cafe</name><number_of_employees>15</number_of_employees><type>company</type></organization>\n<product><created_at>0</created_at><description>StarCraft II is a strategic real-time multiplayer game that has captivated esports enthusiasts worldwide with its intricate gameplay and competitive scene.</description><entity_class>product</entity_class><history><event>2025-09-15: StarCraft II was one of the featured games at the Rural Nexus Gaming Tournament, attracting strategy game enthusiasts.</event></history><id>PRODUCT-1</id><last_updated>2025-09-15</last_updated><manufacturer>Blizzard Entertainment Corp</manufacturer><name>StarCraft II is a strategic real-time multiplayer game that has captivated esports enthusiasts worldwide with its intricate gameplay and competitive scene.</name><price>$39.99</price><release_date>2010-07-27</release_date><type>software</type><warranty>14-day money-back guarantee</warranty><weight>N/A</weight></product>\n<product><created_at>0</created_at><description>Counter-Strike: Global Offensive, an iconic first-person shooter, is famed for its intense multiplayer battles and extensive modding community.</description><entity_class>product</entity_class><history><event>2025-09-15: Counter-Strike: Global Offensive was one of the featured games at the Rural Nexus Gaming Tournament, drawing FPS enthusiasts.</event></history><id>PRODUCT-2</id><last_updated>2025-09-15</last_updated><manufacturer>Valve Corp</manufacturer><name>Counter-Strike: Global Offensive, an iconic first-person shooter, is famed for its intense multiplayer battles and extensive modding community.</name><price>$14.99</price><release_date>2012-08-21</release_date><type>software</type><warranty>30-day return policy</warranty><weight>N/A</weight></product>\n<product><created_at>0</created_at><description>League of Legends, a trailblazing multiplayer online battle arena game, consistently draws millions of players into its vividly varied character-driven gameplay.</description><entity_class>product</entity_class><history><event>2025-09-15: League of Legends was one of the featured games at the Rural Nexus Gaming Tournament, attracting MOBA enthusiasts.</event></history><id>PRODUCT-3</id><last_updated>2025-09-15</last_updated><manufacturer>Riot Games</manufacturer><name>League of Legends, a trailblazing multiplayer online battle arena game, consistently draws millions of players into its vividly varied character-driven gameplay.</name><price>Free-to-play</price><release_date>2009-10-27</release_date><type>software</type><warranty>Restricted to account-based terms</warranty><weight>N/A</weight></product>\n\n<event><budget>$30,000</budget><created_at>0</created_at><date>2025-09-15</date><description>The Rural Nexus Gaming Tournament is an annual event that celebrates the skills and sportsmanship of amateur gamers through a variety of competitive games.</description><duration>3 days</duration><entity_class>event</entity_class><history><event>2025-09-15: The Rural Nexus Gaming Tournament was successfully held at Solace Community Center, organized by GammWell, featuring over 50 participants and attracting local businesses and esports professionals.</event></history><id>EVENT-1</id><last_updated>2025-09-15</last_updated><name>The Rural Nexus Gaming Tournament is an annual event that celebrates the skills and sportsmanship of amateur gamers through a variety of competitive games.</name><number_of_participants>50</number_of_participants><organizer>GammWell</organizer><type>sporting</type></event>\n<building><created_at>0</created_at><description>Solace Community Center, a cornerstone of cultural and social gatherings, has been serving the town's residents for nearly three decades.</description><entity_class>building</entity_class><history><event>2025-09-15: Solace Community Center hosted the debut of the Rural Nexus Gaming Tournament, reinforcing its role as a hub for local gatherings.</event></history><id>BUILDING-1</id><last_updated>2025-09-15</last_updated><name>Solace Community Center, a cornerstone of cultural and social gatherings, has been serving the town's residents for nearly three decades.</name><type>public</type></building>\n\n</known_entities>\n\n2. Next, you will be provided with the history of events that have already occurred in this fictional world:\n\n<history>\n<event><date>2025-09-15</date><outline>On September 15, 2025, the \"{Rural Nexus Gaming Tournament|EVENT-1}\" debuted at the {Solace Community Center|BUILDING-1}, a well-known venue in the town that has hosted various community events over the years. The {Solace Community Center|BUILDING-1}, located in the heart of the town, has been a hub for local gatherings and activities, making it an ideal location for the tournament. The tournament was organized by {GammWell|ORGANIZATION-1}, a newly-formed local group of gaming enthusiasts focused on promoting amateur esports, which was founded by a group of friends passionate about gaming and community engagement. {GammWell|ORGANIZATION-1} was established in early 2025 with the mission to provide a platform for local gamers to showcase their talents and connect with the broader esports community. On the opening day, over 50 amateur gamers registered to compete in various genres, including strategy, FPS, and MOBA, with games like {StarCraft II|PRODUCT-1}, {Counter-Strike: Global Offensive|PRODUCT-2}, and {League of Legends|PRODUCT-3} being featured prominently. The registration process was streamlined through an online portal, allowing participants to easily sign up and select their preferred game genres. Event coordinators included {Elena Voss|PERSON-1}, an amateur esports player turned organizer, who had previously competed in regional tournaments and was known for her strategic gameplay in MOBA games. {Elena Voss|PERSON-1}, who had been an active member of the local gaming community for over a decade, brought her experience and passion to the role of event coordinator. Also coordinating the event was {Marcus Reed|PERSON-2}, a local gaming journalist known for his insightful articles on the rise of esports in rural areas. {Marcus Reed|PERSON-2}, who had been covering the local gaming scene for several years, used his platform to highlight the importance of grassroots tournaments. Professional esports team \"{BlazeChiefs|ORGANIZATION-2}\" attended the event to scout for potential recruits and engage with the local gaming community, bringing along their head coach, {Alex Turner|PERSON-3}, who was known for his keen eye for talent. The {BlazeChiefs|ORGANIZATION-2} team set up a booth where they interacted with participants, offering tips and insights into professional gaming careers. The third day featured a panel discussion hosted by {Marcus Reed|PERSON-2}, focusing on the growth of esports in rural areas, with panelists including local business owners and gaming enthusiasts. The panel discussion attracted a diverse audience, including students, parents, and local entrepreneurs, all interested in the potential of esports to boost community engagement. Local businesses, like {Pixel Cafe|ORGANIZATION-3}, provided refreshments and sponsored prizes for participants, increasing community involvement, with {Pixel Cafe|ORGANIZATION-3} offering a special \"Gamer's Delight\" menu for the event. {Pixel Cafe|ORGANIZATION-3}, a popular spot among gamers, also hosted a mini-tournament of its own, further encouraging participation and community spirit. On the closing day, {Elena Voss|PERSON-1} announced that five standout players would receive invitations to tryout with {BlazeChiefs|ORGANIZATION-2}, highlighting their exceptional skills and sportsmanship during the tournament. The tryouts with {BlazeChiefs|ORGANIZATION-2} were scheduled to take place in the following month, giving the selected players a chance to train and potentially join the professional team. One participant, {Jamie Lee|PERSON-4}, commented, \"This tournament gave me a chance to compete at a higher level and feel part of a larger community,\" expressing gratitude for the opportunity to connect with fellow gamers. {Jamie Lee|PERSON-4}, who had been playing competitively for only a year, found the experience both challenging and rewarding, inspiring them to pursue esports more seriously. After the event, organizers from {GammWell|ORGANIZATION-1} began planning future tournaments to continue fostering local esports talent, aiming to expand the event to include more game genres and participants. {GammWell|ORGANIZATION-1}'s future plans include collaborating with local schools to introduce esports programs and workshops, further nurturing the next generation of gamers.</outline></event>\n</history>\n\n3. Your task is to create 4 new summaries that describe future fictional events following the last event from the <history>. These new summaries should be consistent with the existing story and represent plausible continuations or developments of the original narrative.\n\n4. For each summary, create:\n   a. A summary text (a single concise sentence)\n   b. The date on which this fictional next event happens\n\n5. Before starting, check if the history of events indicates specific dates for followup events. Ensure your continuations are consistent with these expected followup events. All your summaries must either concern this event, or happen before this event.\n\n6. Make sure that each summary you generate focuses on at least one of the main named entities from the history of events.\n\n7. Follow these guidelines when creating your summaries:\n   a. Ensure all summaries are fictional and not based on real events or real people.\n   b. Make the summaries sound realistic and plausible as follow-up stories to the previous outlines. \n   c. Think about plausible next events based on the fictional named entities, the history of the past fictional events and the genre Sports. \n   d. Create summaries that are unbiased and objective in tone.\n   e. Each summary MUST BE ONLY A SINGLE concise sentence.\n   f. Summaries may focus on different personas or organizations from the provided lists.\n   g. Ensure a balance of positive and negative news stories, developments, and alternative scenarios.\n   h. Consider various dimensions or personas that could be varied when generating diverse summaries.\n\nTry to be diverse in the summaries you generate. Consider different plausible substories and vary:\n- between impact: Try to create various low-impact next events, but you may also at times mix in an event with a slightly higher impact.\n- between directions: Vary between positive and negative story developments. Think about how stories in the Sports genre progress in the real-world, NOT in a novel. Provide various realistic alternatives for how the story may progress in either direction.\n- between different key named entities of the fictional story.\n\n8. Output format:\n   - Enclose each summary in <summary> tags.\n   - Each summary must have two child properties:\n     <text>[The generated summary]</text>\n     <date>[The date for the next event]</date>\n   - Before each summary, explain your thought process in <thought_process> tags. Make sure to identify all known followup events based on the provided history first, and verify that your continuations are consistent with these known followup events regarding the date.\n   - Output everything within a <results> root node.\n\n9. Special instructions:\n   - The history and entities have special formatting. They sometimes include statements like {[PHRASE]|[ID]}. Read it as [PHRASE], while the [ID] specifies the ID of the linked entity.\n   - Example: \"I met {Boris Bowman|PERSON-1} yesterday.\" Read as: \"I met Boris Bowman yesterday.\" (The ID of Boris Bowman is PERSON-1).\n   - DO NOT use the {[PHRASE]|[ID]} formulation when generating new summaries.\n   - Do not exaggerate the summaries. Avoid using words like \"groundbreaking\", \"worldwide\", \"global\". Keep the summaries realistic.\n   - Do not create summaries with global or national impact unless the genre specifically requires it. Instead, focus on smaller or local developments.\n   - Do not focus on technological discoveries or topics like AI tools, virtual reality, augmented reality, 3D-modelling, quantum computing, etc. You may include such topics only if they are HIGHLY relevant to the genre Sports AND the provided history of events.\n   - Focus on realistic, meaningful summaries with specific details and developments that align with typical, realistic scenarios of the genre Sports.\n\n10. Final reminders:\n   - Repeat this process for all 4 summaries.\n   - Ensure that each summary explores a different aspect or potential next step of the fictional situation presented in the HISTORY.\n   - Each summary text MUST BE ONLY A SINGLE concise sentence.\n   - The continuations should be diverse in terms of high (at most one), medium and low impact, positive and negative story developments, etc., and can cover different alternatives of how the future event can play out.\n   - Do not enumerate over the summaries.\n   - When brainstorming future event summaries, carefully consider whether each continuation aligns with the provided history of events, provided named entities, and the genre Sports. Before creating summaries with global or large-scale impact, double-check if such developments seem plausible based on how real-world events of this type would typically unfold. Focus on what fits the genre and provided history, ensuring that every dimension feels realistic and consistent with the context.\n\nRemember to maintain the desired format and brevity of the event summaries while creating plausible and engaging continuations of the narrative.\n\nHere's an example of the desired output format:\n\n<results>\n<thought_process>\n[This includes the thought process for all summaries.]\n</thought_process>\n\n<summaries>\n<summary>\n<text>[Your first summary text here]</text>\n<date>[Date for the first summary]</date>\n</summary>\n\n<summary>\n<text>[Your second summary text here]</text>\n<date>[Date for the second summary]</date>\n</summary>\n\n[... continue for all summaries ...]\n</summaries>\n</results>",
+  "system-prompt": null,
+  "values": {
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "GENRE": "Sports",
+    "HISTORIES": [
+      "<event><date>2025-09-15</date><outline>On September 15, 2025, the \"{Rural Nexus Gaming Tournament|EVENT-1}\" debuted at the {Solace Community Center|BUILDING-1}, a well-known venue in the town that has hosted various community events over the years. The {Solace Community Center|BUILDING-1}, located in the heart of the town, has been a hub for local gatherings and activities, making it an ideal location for the tournament. The tournament was organized by {GammWell|ORGANIZATION-1}, a newly-formed local group of gaming enthusiasts focused on promoting amateur esports, which was founded by a group of friends passionate about gaming and community engagement. {GammWell|ORGANIZATION-1} was established in early 2025 with the mission to provide a platform for local gamers to showcase their talents and connect with the broader esports community. On the opening day, over 50 amateur gamers registered to compete in various genres, including strategy, FPS, and MOBA, with games like {StarCraft II|PRODUCT-1}, {Counter-Strike: Global Offensive|PRODUCT-2}, and {League of Legends|PRODUCT-3} being featured prominently. The registration process was streamlined through an online portal, allowing participants to easily sign up and select their preferred game genres. Event coordinators included {Elena Voss|PERSON-1}, an amateur esports player turned organizer, who had previously competed in regional tournaments and was known for her strategic gameplay in MOBA games. {Elena Voss|PERSON-1}, who had been an active member of the local gaming community for over a decade, brought her experience and passion to the role of event coordinator. Also coordinating the event was {Marcus Reed|PERSON-2}, a local gaming journalist known for his insightful articles on the rise of esports in rural areas. {Marcus Reed|PERSON-2}, who had been covering the local gaming scene for several years, used his platform to highlight the importance of grassroots tournaments. Professional esports team \"{BlazeChiefs|ORGANIZATION-2}\" attended the event to scout for potential recruits and engage with the local gaming community, bringing along their head coach, {Alex Turner|PERSON-3}, who was known for his keen eye for talent. The {BlazeChiefs|ORGANIZATION-2} team set up a booth where they interacted with participants, offering tips and insights into professional gaming careers. The third day featured a panel discussion hosted by {Marcus Reed|PERSON-2}, focusing on the growth of esports in rural areas, with panelists including local business owners and gaming enthusiasts. The panel discussion attracted a diverse audience, including students, parents, and local entrepreneurs, all interested in the potential of esports to boost community engagement. Local businesses, like {Pixel Cafe|ORGANIZATION-3}, provided refreshments and sponsored prizes for participants, increasing community involvement, with {Pixel Cafe|ORGANIZATION-3} offering a special \"Gamer's Delight\" menu for the event. {Pixel Cafe|ORGANIZATION-3}, a popular spot among gamers, also hosted a mini-tournament of its own, further encouraging participation and community spirit. On the closing day, {Elena Voss|PERSON-1} announced that five standout players would receive invitations to tryout with {BlazeChiefs|ORGANIZATION-2}, highlighting their exceptional skills and sportsmanship during the tournament. The tryouts with {BlazeChiefs|ORGANIZATION-2} were scheduled to take place in the following month, giving the selected players a chance to train and potentially join the professional team. One participant, {Jamie Lee|PERSON-4}, commented, \"This tournament gave me a chance to compete at a higher level and feel part of a larger community,\" expressing gratitude for the opportunity to connect with fellow gamers. {Jamie Lee|PERSON-4}, who had been playing competitively for only a year, found the experience both challenging and rewarding, inspiring them to pursue esports more seriously. After the event, organizers from {GammWell|ORGANIZATION-1} began planning future tournaments to continue fostering local esports talent, aiming to expand the event to include more game genres and participants. {GammWell|ORGANIZATION-1}'s future plans include collaborating with local schools to introduce esports programs and workshops, further nurturing the next generation of gamers.</outline></event>"
+    ],
+    "EVENT_SUMMARY": "A grassroots esports tournament in a local community center has provided amateur gamers with a platform to showcase their skills and gain recognition from professional teams.",
+    "EVENT_SUMMARY_FOR_NAME": "A grassroots esports",
+    "KEYWORDS": "",
+    "CREATED_AT": 0,
+    "NEXT_IDS": {
+      "person": 5,
+      "organization": 4,
+      "location": 1,
+      "product": 4,
+      "art": 1,
+      "building": 2,
+      "event": 2,
+      "miscellaneous": 1
+    },
+    "PROVIDED_DATE": "",
+    "PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Elena Voss, an enthusiastic and dynamic coordinator, is driven by a lifelong passion for gaming and community building.",
+        "entity_class": "person",
+        "description": "Elena Voss, an enthusiastic and dynamic coordinator, is driven by a lifelong passion for gaming and community building.",
+        "type": "None",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Elena Voss coordinated the Rural Nexus Gaming Tournament, leveraging her experience as an amateur esports player and community organizer.",
+            "date": "2025-09-15"
+          }
+        ],
+        "date_of_birth": "1988-05-17",
+        "gender": "female",
+        "profession": "Event Coordinator",
+        "nationality": "Valeran",
+        "education": "B.A. in Event Management",
+        "height": "5'7\"",
+        "weight": "135 lbs",
+        "eye_color": "blue",
+        "hair_color": "brown",
+        "political_affiliation": "Independent",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Marcus Reed, an insightful gaming journalist, has dedicated his career to exploring the cultural impacts of esports.",
+        "entity_class": "person",
+        "description": "Marcus Reed, an insightful gaming journalist, has dedicated his career to exploring the cultural impacts of esports.",
+        "type": "None",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Marcus Reed coordinated the Rural Nexus Gaming Tournament and hosted a panel discussion on the growth of esports in rural areas.",
+            "date": "2025-09-15"
+          }
+        ],
+        "date_of_birth": "1990-03-22",
+        "gender": "male",
+        "profession": "Gaming Journalist",
+        "nationality": "Valeran",
+        "education": "M.A. in Journalism",
+        "height": "6'0\"",
+        "weight": "170 lbs",
+        "eye_color": "green",
+        "hair_color": "dark blonde",
+        "political_affiliation": "Independent",
+        "marital_status": "Married"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Alex Turner, known for his strategic prowess and mentorship, is dedicated to nurturing esports talent and fostering teamwork.",
+        "entity_class": "person",
+        "description": "Alex Turner, known for his strategic prowess and mentorship, is dedicated to nurturing esports talent and fostering teamwork.",
+        "type": "None",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Alex Turner, head coach of BlazeChiefs, attended the Rural Nexus Gaming Tournament to scout for talent and engage with the local gaming community.",
+            "date": "2025-09-15"
+          }
+        ],
+        "date_of_birth": "1978-09-10",
+        "gender": "male",
+        "profession": "Esports Coach",
+        "nationality": "Valeran",
+        "education": "B.Sc. in Sports Psychology",
+        "height": "6'2\"",
+        "weight": "185 lbs",
+        "eye_color": "brown",
+        "hair_color": "gray",
+        "political_affiliation": "Non-affiliated",
+        "marital_status": "Divorced"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Jamie Lee, a spirited and adaptable individual, thrives in the ever-evolving world of competitive esports competition.",
+        "entity_class": "person",
+        "description": "Jamie Lee, a spirited and adaptable individual, thrives in the ever-evolving world of competitive esports competition.",
+        "type": "None",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Jamie Lee participated in the Rural Nexus Gaming Tournament, gaining valuable experience and expressing gratitude for the opportunity to connect with the gaming community.",
+            "date": "2025-09-15"
+          }
+        ],
+        "date_of_birth": "2004-07-05",
+        "gender": "non-binary",
+        "profession": "Student and Esports Player",
+        "nationality": "Valeran",
+        "education": "High School Student",
+        "height": "5'6\"",
+        "weight": "130 lbs",
+        "eye_color": "hazel",
+        "hair_color": "black",
+        "political_affiliation": "Non-affiliated",
+        "marital_status": "Single"
+      }
+    ],
+    "ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "GammWell",
+        "entity_class": "organization",
+        "description": "GammWell is a community-driven non-profit organization aiming to enrich the local gaming landscape and inspire new talent.",
+        "type": "non-profit",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "GammWell successfully organized the Rural Nexus Gaming Tournament, marking a significant step in their mission to promote local esports.",
+            "date": "2025-09-15"
+          }
+        ],
+        "founded": "2025",
+        "headquarters": "Valeran",
+        "industry": "Community Empowerment and Esports",
+        "mission_statement": "To provide a platform for local gamers to showcase their talents and connect with the broader esports community.",
+        "number_of_employees": "8",
+        "annual_revenue": "$50,000"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "BlazeChiefs",
+        "entity_class": "organization",
+        "description": "BlazeChiefs, an emerging esports team, is recognized for its commitment to excellence and strategic prowess on the competitive gaming stage.",
+        "type": "company",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "BlazeChiefs attended the Rural Nexus Gaming Tournament to scout for new talent and engage with the local gaming community.",
+            "date": "2025-09-15"
+          }
+        ],
+        "founded": "2024",
+        "headquarters": "Gamville",
+        "industry": "Professional Esports",
+        "mission_statement": "To be at the forefront of the esports world by identifying and nurturing top strategic and skilled players.",
+        "number_of_employees": "20",
+        "annual_revenue": "$3 million"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Pixel Cafe",
+        "entity_class": "organization",
+        "description": "Pixle Cafe is a cozy local establishment known for its vibrant ambiance and dedication to the gaming community.",
+        "type": "company",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Pixel Cafe sponsored the Rural Nexus Gaming Tournament, providing refreshments and hosting a mini-tournament to boost community involvement.",
+            "date": "2025-09-15"
+          }
+        ],
+        "founded": "2018",
+        "headquarters": "Townsville",
+        "industry": "Caf\u00e9 and Gaming Hub",
+        "mission_statement": "To create a welcoming environment for gamers and non-gamers alike with innovative menu offerings and community events.",
+        "number_of_employees": "15",
+        "annual_revenue": "$1.2 million"
+      }
+    ],
+    "LOCATION": [],
+    "PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "StarCraft II is a strategic real-time multiplayer game that has captivated esports enthusiasts worldwide with its intricate gameplay and competitive scene.",
+        "entity_class": "product",
+        "description": "StarCraft II is a strategic real-time multiplayer game that has captivated esports enthusiasts worldwide with its intricate gameplay and competitive scene.",
+        "type": "software",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "StarCraft II was one of the featured games at the Rural Nexus Gaming Tournament, attracting strategy game enthusiasts.",
+            "date": "2025-09-15"
+          }
+        ],
+        "manufacturer": "Blizzard Entertainment Corp",
+        "release_date": "2010-07-27",
+        "price": "$39.99",
+        "weight": "N/A",
+        "warranty": "14-day money-back guarantee"
+      },
+      {
+        "id": "PRODUCT-2",
+        "name": "Counter-Strike: Global Offensive, an iconic first-person shooter, is famed for its intense multiplayer battles and extensive modding community.",
+        "entity_class": "product",
+        "description": "Counter-Strike: Global Offensive, an iconic first-person shooter, is famed for its intense multiplayer battles and extensive modding community.",
+        "type": "software",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Counter-Strike: Global Offensive was one of the featured games at the Rural Nexus Gaming Tournament, drawing FPS enthusiasts.",
+            "date": "2025-09-15"
+          }
+        ],
+        "manufacturer": "Valve Corp",
+        "release_date": "2012-08-21",
+        "price": "$14.99",
+        "weight": "N/A",
+        "warranty": "30-day return policy"
+      },
+      {
+        "id": "PRODUCT-3",
+        "name": "League of Legends, a trailblazing multiplayer online battle arena game, consistently draws millions of players into its vividly varied character-driven gameplay.",
+        "entity_class": "product",
+        "description": "League of Legends, a trailblazing multiplayer online battle arena game, consistently draws millions of players into its vividly varied character-driven gameplay.",
+        "type": "software",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "League of Legends was one of the featured games at the Rural Nexus Gaming Tournament, attracting MOBA enthusiasts.",
+            "date": "2025-09-15"
+          }
+        ],
+        "manufacturer": "Riot Games",
+        "release_date": "2009-10-27",
+        "price": "Free-to-play",
+        "weight": "N/A",
+        "warranty": "Restricted to account-based terms"
+      }
+    ],
+    "ART": [],
+    "BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Solace Community Center, a cornerstone of cultural and social gatherings, has been serving the town's residents for nearly three decades.",
+        "entity_class": "building",
+        "description": "Solace Community Center, a cornerstone of cultural and social gatherings, has been serving the town's residents for nearly three decades.",
+        "type": "public",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Solace Community Center hosted the debut of the Rural Nexus Gaming Tournament, reinforcing its role as a hub for local gatherings.",
+            "date": "2025-09-15"
+          }
+        ]
+      }
+    ],
+    "EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "The Rural Nexus Gaming Tournament is an annual event that celebrates the skills and sportsmanship of amateur gamers through a variety of competitive games.",
+        "entity_class": "event",
+        "description": "The Rural Nexus Gaming Tournament is an annual event that celebrates the skills and sportsmanship of amateur gamers through a variety of competitive games.",
+        "type": "sporting",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Rural Nexus Gaming Tournament was successfully held at Solace Community Center, organized by GammWell, featuring over 50 participants and attracting local businesses and esports professionals.",
+            "date": "2025-09-15"
+          }
+        ],
+        "date": "2025-09-15",
+        "duration": "3 days",
+        "organizer": "GammWell",
+        "number_of_participants": "50",
+        "budget": "$30,000"
+      }
+    ],
+    "MISCELLANEOUS": [],
+    "PERSONS_XML": "<person><created_at>0</created_at><date_of_birth>1988-05-17</date_of_birth><description>Elena Voss, an enthusiastic and dynamic coordinator, is driven by a lifelong passion for gaming and community building.</description><education>B.A. in Event Management</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>female</gender><hair_color>brown</hair_color><height>5'7\"</height><history><event>2025-09-15: Elena Voss coordinated the Rural Nexus Gaming Tournament, leveraging her experience as an amateur esports player and community organizer.</event></history><id>PERSON-1</id><last_updated>2025-09-15</last_updated><marital_status>Single</marital_status><name>Elena Voss, an enthusiastic and dynamic coordinator, is driven by a lifelong passion for gaming and community building.</name><nationality>Valeran</nationality><political_affiliation>Independent</political_affiliation><profession>Event Coordinator</profession><type>None</type><weight>135 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1990-03-22</date_of_birth><description>Marcus Reed, an insightful gaming journalist, has dedicated his career to exploring the cultural impacts of esports.</description><education>M.A. in Journalism</education><entity_class>person</entity_class><eye_color>green</eye_color><gender>male</gender><hair_color>dark blonde</hair_color><height>6'0\"</height><history><event>2025-09-15: Marcus Reed coordinated the Rural Nexus Gaming Tournament and hosted a panel discussion on the growth of esports in rural areas.</event></history><id>PERSON-2</id><last_updated>2025-09-15</last_updated><marital_status>Married</marital_status><name>Marcus Reed, an insightful gaming journalist, has dedicated his career to exploring the cultural impacts of esports.</name><nationality>Valeran</nationality><political_affiliation>Independent</political_affiliation><profession>Gaming Journalist</profession><type>None</type><weight>170 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1978-09-10</date_of_birth><description>Alex Turner, known for his strategic prowess and mentorship, is dedicated to nurturing esports talent and fostering teamwork.</description><education>B.Sc. in Sports Psychology</education><entity_class>person</entity_class><eye_color>brown</eye_color><gender>male</gender><hair_color>gray</hair_color><height>6'2\"</height><history><event>2025-09-15: Alex Turner, head coach of BlazeChiefs, attended the Rural Nexus Gaming Tournament to scout for talent and engage with the local gaming community.</event></history><id>PERSON-3</id><last_updated>2025-09-15</last_updated><marital_status>Divorced</marital_status><name>Alex Turner, known for his strategic prowess and mentorship, is dedicated to nurturing esports talent and fostering teamwork.</name><nationality>Valeran</nationality><political_affiliation>Non-affiliated</political_affiliation><profession>Esports Coach</profession><type>None</type><weight>185 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>2004-07-05</date_of_birth><description>Jamie Lee, a spirited and adaptable individual, thrives in the ever-evolving world of competitive esports competition.</description><education>High School Student</education><entity_class>person</entity_class><eye_color>hazel</eye_color><gender>non-binary</gender><hair_color>black</hair_color><height>5'6\"</height><history><event>2025-09-15: Jamie Lee participated in the Rural Nexus Gaming Tournament, gaining valuable experience and expressing gratitude for the opportunity to connect with the gaming community.</event></history><id>PERSON-4</id><last_updated>2025-09-15</last_updated><marital_status>Single</marital_status><name>Jamie Lee, a spirited and adaptable individual, thrives in the ever-evolving world of competitive esports competition.</name><nationality>Valeran</nationality><political_affiliation>Non-affiliated</political_affiliation><profession>Student and Esports Player</profession><type>None</type><weight>130 lbs</weight></person>",
+    "ORGANIZATIONS_XML": "<organization><annual_revenue>$50,000</annual_revenue><created_at>0</created_at><description>GammWell is a community-driven non-profit organization aiming to enrich the local gaming landscape and inspire new talent.</description><entity_class>organization</entity_class><founded>2025</founded><headquarters>Valeran</headquarters><history><event>2025-09-15: GammWell successfully organized the Rural Nexus Gaming Tournament, marking a significant step in their mission to promote local esports.</event></history><id>ORGANIZATION-1</id><industry>Community Empowerment and Esports</industry><last_updated>2025-09-15</last_updated><mission_statement>To provide a platform for local gamers to showcase their talents and connect with the broader esports community.</mission_statement><name>GammWell</name><number_of_employees>8</number_of_employees><type>non-profit</type></organization>\n<organization><annual_revenue>$3 million</annual_revenue><created_at>0</created_at><description>BlazeChiefs, an emerging esports team, is recognized for its commitment to excellence and strategic prowess on the competitive gaming stage.</description><entity_class>organization</entity_class><founded>2024</founded><headquarters>Gamville</headquarters><history><event>2025-09-15: BlazeChiefs attended the Rural Nexus Gaming Tournament to scout for new talent and engage with the local gaming community.</event></history><id>ORGANIZATION-2</id><industry>Professional Esports</industry><last_updated>2025-09-15</last_updated><mission_statement>To be at the forefront of the esports world by identifying and nurturing top strategic and skilled players.</mission_statement><name>BlazeChiefs</name><number_of_employees>20</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>$1.2 million</annual_revenue><created_at>0</created_at><description>Pixle Cafe is a cozy local establishment known for its vibrant ambiance and dedication to the gaming community.</description><entity_class>organization</entity_class><founded>2018</founded><headquarters>Townsville</headquarters><history><event>2025-09-15: Pixel Cafe sponsored the Rural Nexus Gaming Tournament, providing refreshments and hosting a mini-tournament to boost community involvement.</event></history><id>ORGANIZATION-3</id><industry>Caf\u00e9 and Gaming Hub</industry><last_updated>2025-09-15</last_updated><mission_statement>To create a welcoming environment for gamers and non-gamers alike with innovative menu offerings and community events.</mission_statement><name>Pixel Cafe</name><number_of_employees>15</number_of_employees><type>company</type></organization>",
+    "LOCATIONS_XML": "",
+    "PRODUCTS_XML": "<product><created_at>0</created_at><description>StarCraft II is a strategic real-time multiplayer game that has captivated esports enthusiasts worldwide with its intricate gameplay and competitive scene.</description><entity_class>product</entity_class><history><event>2025-09-15: StarCraft II was one of the featured games at the Rural Nexus Gaming Tournament, attracting strategy game enthusiasts.</event></history><id>PRODUCT-1</id><last_updated>2025-09-15</last_updated><manufacturer>Blizzard Entertainment Corp</manufacturer><name>StarCraft II is a strategic real-time multiplayer game that has captivated esports enthusiasts worldwide with its intricate gameplay and competitive scene.</name><price>$39.99</price><release_date>2010-07-27</release_date><type>software</type><warranty>14-day money-back guarantee</warranty><weight>N/A</weight></product>\n<product><created_at>0</created_at><description>Counter-Strike: Global Offensive, an iconic first-person shooter, is famed for its intense multiplayer battles and extensive modding community.</description><entity_class>product</entity_class><history><event>2025-09-15: Counter-Strike: Global Offensive was one of the featured games at the Rural Nexus Gaming Tournament, drawing FPS enthusiasts.</event></history><id>PRODUCT-2</id><last_updated>2025-09-15</last_updated><manufacturer>Valve Corp</manufacturer><name>Counter-Strike: Global Offensive, an iconic first-person shooter, is famed for its intense multiplayer battles and extensive modding community.</name><price>$14.99</price><release_date>2012-08-21</release_date><type>software</type><warranty>30-day return policy</warranty><weight>N/A</weight></product>\n<product><created_at>0</created_at><description>League of Legends, a trailblazing multiplayer online battle arena game, consistently draws millions of players into its vividly varied character-driven gameplay.</description><entity_class>product</entity_class><history><event>2025-09-15: League of Legends was one of the featured games at the Rural Nexus Gaming Tournament, attracting MOBA enthusiasts.</event></history><id>PRODUCT-3</id><last_updated>2025-09-15</last_updated><manufacturer>Riot Games</manufacturer><name>League of Legends, a trailblazing multiplayer online battle arena game, consistently draws millions of players into its vividly varied character-driven gameplay.</name><price>Free-to-play</price><release_date>2009-10-27</release_date><type>software</type><warranty>Restricted to account-based terms</warranty><weight>N/A</weight></product>",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "<building><created_at>0</created_at><description>Solace Community Center, a cornerstone of cultural and social gatherings, has been serving the town's residents for nearly three decades.</description><entity_class>building</entity_class><history><event>2025-09-15: Solace Community Center hosted the debut of the Rural Nexus Gaming Tournament, reinforcing its role as a hub for local gatherings.</event></history><id>BUILDING-1</id><last_updated>2025-09-15</last_updated><name>Solace Community Center, a cornerstone of cultural and social gatherings, has been serving the town's residents for nearly three decades.</name><type>public</type></building>",
+    "EVENTS_XML": "<event><budget>$30,000</budget><created_at>0</created_at><date>2025-09-15</date><description>The Rural Nexus Gaming Tournament is an annual event that celebrates the skills and sportsmanship of amateur gamers through a variety of competitive games.</description><duration>3 days</duration><entity_class>event</entity_class><history><event>2025-09-15: The Rural Nexus Gaming Tournament was successfully held at Solace Community Center, organized by GammWell, featuring over 50 participants and attracting local businesses and esports professionals.</event></history><id>EVENT-1</id><last_updated>2025-09-15</last_updated><name>The Rural Nexus Gaming Tournament is an annual event that celebrates the skills and sportsmanship of amateur gamers through a variety of competitive games.</name><number_of_participants>50</number_of_participants><organizer>GammWell</organizer><type>sporting</type></event>",
+    "MISCELLANEOUSS_XML": "",
+    "NUM_STORYITEMS": 10,
+    "HISTORY_XML": "<event><date>2025-09-15</date><outline>On September 15, 2025, the \"{Rural Nexus Gaming Tournament|EVENT-1}\" debuted at the {Solace Community Center|BUILDING-1}, a well-known venue in the town that has hosted various community events over the years. The {Solace Community Center|BUILDING-1}, located in the heart of the town, has been a hub for local gatherings and activities, making it an ideal location for the tournament. The tournament was organized by {GammWell|ORGANIZATION-1}, a newly-formed local group of gaming enthusiasts focused on promoting amateur esports, which was founded by a group of friends passionate about gaming and community engagement. {GammWell|ORGANIZATION-1} was established in early 2025 with the mission to provide a platform for local gamers to showcase their talents and connect with the broader esports community. On the opening day, over 50 amateur gamers registered to compete in various genres, including strategy, FPS, and MOBA, with games like {StarCraft II|PRODUCT-1}, {Counter-Strike: Global Offensive|PRODUCT-2}, and {League of Legends|PRODUCT-3} being featured prominently. The registration process was streamlined through an online portal, allowing participants to easily sign up and select their preferred game genres. Event coordinators included {Elena Voss|PERSON-1}, an amateur esports player turned organizer, who had previously competed in regional tournaments and was known for her strategic gameplay in MOBA games. {Elena Voss|PERSON-1}, who had been an active member of the local gaming community for over a decade, brought her experience and passion to the role of event coordinator. Also coordinating the event was {Marcus Reed|PERSON-2}, a local gaming journalist known for his insightful articles on the rise of esports in rural areas. {Marcus Reed|PERSON-2}, who had been covering the local gaming scene for several years, used his platform to highlight the importance of grassroots tournaments. Professional esports team \"{BlazeChiefs|ORGANIZATION-2}\" attended the event to scout for potential recruits and engage with the local gaming community, bringing along their head coach, {Alex Turner|PERSON-3}, who was known for his keen eye for talent. The {BlazeChiefs|ORGANIZATION-2} team set up a booth where they interacted with participants, offering tips and insights into professional gaming careers. The third day featured a panel discussion hosted by {Marcus Reed|PERSON-2}, focusing on the growth of esports in rural areas, with panelists including local business owners and gaming enthusiasts. The panel discussion attracted a diverse audience, including students, parents, and local entrepreneurs, all interested in the potential of esports to boost community engagement. Local businesses, like {Pixel Cafe|ORGANIZATION-3}, provided refreshments and sponsored prizes for participants, increasing community involvement, with {Pixel Cafe|ORGANIZATION-3} offering a special \"Gamer's Delight\" menu for the event. {Pixel Cafe|ORGANIZATION-3}, a popular spot among gamers, also hosted a mini-tournament of its own, further encouraging participation and community spirit. On the closing day, {Elena Voss|PERSON-1} announced that five standout players would receive invitations to tryout with {BlazeChiefs|ORGANIZATION-2}, highlighting their exceptional skills and sportsmanship during the tournament. The tryouts with {BlazeChiefs|ORGANIZATION-2} were scheduled to take place in the following month, giving the selected players a chance to train and potentially join the professional team. One participant, {Jamie Lee|PERSON-4}, commented, \"This tournament gave me a chance to compete at a higher level and feel part of a larger community,\" expressing gratitude for the opportunity to connect with fellow gamers. {Jamie Lee|PERSON-4}, who had been playing competitively for only a year, found the experience both challenging and rewarding, inspiring them to pursue esports more seriously. After the event, organizers from {GammWell|ORGANIZATION-1} began planning future tournaments to continue fostering local esports talent, aiming to expand the event to include more game genres and participants. {GammWell|ORGANIZATION-1}'s future plans include collaborating with local schools to introduce esports programs and workshops, further nurturing the next generation of gamers.</outline></event>",
+    "STORY_ITEM": [
+      "On September 15, 2025, the \"{Rural Nexus Gaming Tournament|EVENT-1}\" debuted at the {Solace Community Center|BUILDING-1}, a well-known venue in the town that has hosted various community events over the years.",
+      "The {Solace Community Center|BUILDING-1}, located in the heart of the town, has been a hub for local gatherings and activities, making it an ideal location for the tournament.",
+      "The tournament was organized by {GammWell|ORGANIZATION-1}, a newly-formed local group of gaming enthusiasts focused on promoting amateur esports, which was founded by a group of friends passionate about gaming and community engagement.",
+      "{GammWell|ORGANIZATION-1} was established in early 2025 with the mission to provide a platform for local gamers to showcase their talents and connect with the broader esports community.",
+      "On the opening day, over 50 amateur gamers registered to compete in various genres, including strategy, FPS, and MOBA, with games like {StarCraft II|PRODUCT-1}, {Counter-Strike: Global Offensive|PRODUCT-2}, and {League of Legends|PRODUCT-3} being featured prominently.",
+      "The registration process was streamlined through an online portal, allowing participants to easily sign up and select their preferred game genres.",
+      "Event coordinators included {Elena Voss|PERSON-1}, an amateur esports player turned organizer, who had previously competed in regional tournaments and was known for her strategic gameplay in MOBA games.",
+      "{Elena Voss|PERSON-1}, who had been an active member of the local gaming community for over a decade, brought her experience and passion to the role of event coordinator.",
+      "Also coordinating the event was {Marcus Reed|PERSON-2}, a local gaming journalist known for his insightful articles on the rise of esports in rural areas.",
+      "{Marcus Reed|PERSON-2}, who had been covering the local gaming scene for several years, used his platform to highlight the importance of grassroots tournaments.",
+      "Professional esports team \"{BlazeChiefs|ORGANIZATION-2}\" attended the event to scout for potential recruits and engage with the local gaming community, bringing along their head coach, {Alex Turner|PERSON-3}, who was known for his keen eye for talent.",
+      "The {BlazeChiefs|ORGANIZATION-2} team set up a booth where they interacted with participants, offering tips and insights into professional gaming careers.",
+      "The third day featured a panel discussion hosted by {Marcus Reed|PERSON-2}, focusing on the growth of esports in rural areas, with panelists including local business owners and gaming enthusiasts.",
+      "The panel discussion attracted a diverse audience, including students, parents, and local entrepreneurs, all interested in the potential of esports to boost community engagement.",
+      "Local businesses, like {Pixel Cafe|ORGANIZATION-3}, provided refreshments and sponsored prizes for participants, increasing community involvement, with {Pixel Cafe|ORGANIZATION-3} offering a special \"Gamer's Delight\" menu for the event.",
+      "{Pixel Cafe|ORGANIZATION-3}, a popular spot among gamers, also hosted a mini-tournament of its own, further encouraging participation and community spirit.",
+      "On the closing day, {Elena Voss|PERSON-1} announced that five standout players would receive invitations to tryout with {BlazeChiefs|ORGANIZATION-2}, highlighting their exceptional skills and sportsmanship during the tournament.",
+      "The tryouts with {BlazeChiefs|ORGANIZATION-2} were scheduled to take place in the following month, giving the selected players a chance to train and potentially join the professional team.",
+      "One participant, {Jamie Lee|PERSON-4}, commented, \"This tournament gave me a chance to compete at a higher level and feel part of a larger community,\" expressing gratitude for the opportunity to connect with fellow gamers.",
+      "{Jamie Lee|PERSON-4}, who had been playing competitively for only a year, found the experience both challenging and rewarding, inspiring them to pursue esports more seriously.",
+      "After the event, organizers from {GammWell|ORGANIZATION-1} began planning future tournaments to continue fostering local esports talent, aiming to expand the event to include more game genres and participants.",
+      "{GammWell|ORGANIZATION-1}'s future plans include collaborating with local schools to introduce esports programs and workshops, further nurturing the next generation of gamers."
+    ],
+    "DATE": "2025-09-15",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 2,
+    "OUTLINE": "On September 15, 2025, the \"{Rural Nexus Gaming Tournament|EVENT-1}\" debuted at the {Solace Community Center|BUILDING-1}, a well-known venue in the town that has hosted various community events over the years.\nThe {Solace Community Center|BUILDING-1}, located in the heart of the town, has been a hub for local gatherings and activities, making it an ideal location for the tournament.\nThe tournament was organized by {GammWell|ORGANIZATION-1}, a newly-formed local group of gaming enthusiasts focused on promoting amateur esports, which was founded by a group of friends passionate about gaming and community engagement.\n{GammWell|ORGANIZATION-1} was established in early 2025 with the mission to provide a platform for local gamers to showcase their talents and connect with the broader esports community.\nOn the opening day, over 50 amateur gamers registered to compete in various genres, including strategy, FPS, and MOBA, with games like {StarCraft II|PRODUCT-1}, {Counter-Strike: Global Offensive|PRODUCT-2}, and {League of Legends|PRODUCT-3} being featured prominently.\nThe registration process was streamlined through an online portal, allowing participants to easily sign up and select their preferred game genres.\nEvent coordinators included {Elena Voss|PERSON-1}, an amateur esports player turned organizer, who had previously competed in regional tournaments and was known for her strategic gameplay in MOBA games.\n{Elena Voss|PERSON-1}, who had been an active member of the local gaming community for over a decade, brought her experience and passion to the role of event coordinator.\nAlso coordinating the event was {Marcus Reed|PERSON-2}, a local gaming journalist known for his insightful articles on the rise of esports in rural areas.\n{Marcus Reed|PERSON-2}, who had been covering the local gaming scene for several years, used his platform to highlight the importance of grassroots tournaments.\nProfessional esports team \"{BlazeChiefs|ORGANIZATION-2}\" attended the event to scout for potential recruits and engage with the local gaming community, bringing along their head coach, {Alex Turner|PERSON-3}, who was known for his keen eye for talent.\nThe {BlazeChiefs|ORGANIZATION-2} team set up a booth where they interacted with participants, offering tips and insights into professional gaming careers.\nThe third day featured a panel discussion hosted by {Marcus Reed|PERSON-2}, focusing on the growth of esports in rural areas, with panelists including local business owners and gaming enthusiasts.\nThe panel discussion attracted a diverse audience, including students, parents, and local entrepreneurs, all interested in the potential of esports to boost community engagement.\nLocal businesses, like {Pixel Cafe|ORGANIZATION-3}, provided refreshments and sponsored prizes for participants, increasing community involvement, with {Pixel Cafe|ORGANIZATION-3} offering a special \"Gamer's Delight\" menu for the event.\n{Pixel Cafe|ORGANIZATION-3}, a popular spot among gamers, also hosted a mini-tournament of its own, further encouraging participation and community spirit.\nOn the closing day, {Elena Voss|PERSON-1} announced that five standout players would receive invitations to tryout with {BlazeChiefs|ORGANIZATION-2}, highlighting their exceptional skills and sportsmanship during the tournament.\nThe tryouts with {BlazeChiefs|ORGANIZATION-2} were scheduled to take place in the following month, giving the selected players a chance to train and potentially join the professional team.\nOne participant, {Jamie Lee|PERSON-4}, commented, \"This tournament gave me a chance to compete at a higher level and feel part of a larger community,\" expressing gratitude for the opportunity to connect with fellow gamers.\n{Jamie Lee|PERSON-4}, who had been playing competitively for only a year, found the experience both challenging and rewarding, inspiring them to pursue esports more seriously.\nAfter the event, organizers from {GammWell|ORGANIZATION-1} began planning future tournaments to continue fostering local esports talent, aiming to expand the event to include more game genres and participants.\n{GammWell|ORGANIZATION-1}'s future plans include collaborating with local schools to introduce esports programs and workshops, further nurturing the next generation of gamers.",
+    "PRE-CONSISTENCY-NUM-ITEMS": 22,
+    "STORYITEM_XML": "<storyitems>\n<storyitem>On September 15, 2025, the \"Rural Nexus Gaming Tournament\" debuted at the Solace Community Center, a well-known venue in the town that has hosted various community events over the years.</storyitem>\n<storyitem>The Solace Community Center, located in the heart of the town, has been a hub for local gatherings and activities, making it an ideal location for the tournament.</storyitem>\n<storyitem>The tournament was organized by GammWell, a newly-formed local group of gaming enthusiasts focused on promoting amateur esports, which was founded by a group of friends passionate about gaming and community engagement.</storyitem>\n<storyitem>GammWell was established in early 2025 with the mission to provide a platform for local gamers to showcase their talents and connect with the broader esports community.</storyitem>\n<storyitem>On the opening day, over 50 amateur gamers registered to compete in various genres, including strategy, FPS, and MOBA, with games like StarCraft II, Counter-Strike: Global Offensive, and League of Legends being featured prominently.</storyitem>\n<storyitem>The registration process was streamlined through an online portal, allowing participants to easily sign up and select their preferred game genres.</storyitem>\n<storyitem>Event coordinators included Elena Voss, an amateur esports player turned organizer, who had previously competed in regional tournaments and was known for her strategic gameplay in MOBA games.</storyitem>\n<storyitem>Elena Voss, who had been an active member of the local gaming community for over a decade, brought her experience and passion to the role of event coordinator.</storyitem>\n<storyitem>Also coordinating the event was Marcus Reed, a local gaming journalist known for his insightful articles on the rise of esports in rural areas.</storyitem>\n<storyitem>Marcus Reed, who had been covering the local gaming scene for several years, used his platform to highlight the importance of grassroots tournaments.</storyitem>\n<storyitem>Professional esports team \"BlazeChiefs\" attended the event to scout for potential recruits and engage with the local gaming community, bringing along their head coach, Alex Turner, who was known for his keen eye for talent.</storyitem>\n<storyitem>The BlazeChiefs team set up a booth where they interacted with participants, offering tips and insights into professional gaming careers.</storyitem>\n<storyitem>The third day featured a panel discussion hosted by Marcus Reed, focusing on the growth of esports in rural areas, with panelists including local business owners and gaming enthusiasts.</storyitem>\n<storyitem>The panel discussion attracted a diverse audience, including students, parents, and local entrepreneurs, all interested in the potential of esports to boost community engagement.</storyitem>\n<storyitem>Local businesses, like Pixel Cafe, provided refreshments and sponsored prizes for participants, increasing community involvement, with Pixel Cafe offering a special \"Gamer's Delight\" menu for the event.</storyitem>\n<storyitem>Pixel Cafe, a popular spot among gamers, also hosted a mini-tournament of its own, further encouraging participation and community spirit.</storyitem>\n<storyitem>On the closing day, Elena Voss announced that five standout players would receive invitations to tryout with BlazeChiefs, highlighting their exceptional skills and sportsmanship during the tournament.</storyitem>\n<storyitem>The tryouts with BlazeChiefs were scheduled to take place in the following month, giving the selected players a chance to train and potentially join the professional team.</storyitem>\n<storyitem>One participant, Jamie Lee, commented, \"This tournament gave me a chance to compete at a higher level and feel part of a larger community,\" expressing gratitude for the opportunity to connect with fellow gamers.</storyitem>\n<storyitem>Jamie Lee, who had been playing competitively for only a year, found the experience both challenging and rewarding, inspiring them to pursue esports more seriously.</storyitem>\n<storyitem>After the event, organizers from GammWell began planning future tournaments to continue fostering local esports talent, aiming to expand the event to include more game genres and participants.</storyitem>\n<storyitem>GammWell's future plans include collaborating with local schools to introduce esports programs and workshops, further nurturing the next generation of gamers.</storyitem>\n<storyitems>",
+    "NEW_PERSON_NAME": [
+      {
+        "name": "Elena Voss",
+        "old_name": "Elena Voss"
+      },
+      {
+        "name": "Marcus Reed",
+        "old_name": "Marcus Reed"
+      },
+      {
+        "name": "Alex Turner",
+        "old_name": "Alex Turner"
+      },
+      {
+        "name": "Jamie Lee",
+        "old_name": "Jamie Lee"
+      }
+    ],
+    "NEW_ORGANIZATION_NAME": [
+      {
+        "name": "GammWell",
+        "old_name": "GammWell"
+      },
+      {
+        "name": "BlazeChiefs",
+        "old_name": "BlazeChiefs"
+      },
+      {
+        "name": "Pixel Cafe",
+        "old_name": "Pixel Cafe"
+      }
+    ],
+    "NEW_LOCATION_NAME": [],
+    "NEW_PRODUCT_NAME": [
+      {
+        "name": "StarCraft II",
+        "old_name": "StarCraft II"
+      },
+      {
+        "name": "Counter-Strike: Global Offensive",
+        "old_name": "Counter-Strike: Global Offensive"
+      },
+      {
+        "name": "League of Legends",
+        "old_name": "League of Legends"
+      }
+    ],
+    "NEW_ART_NAME": [],
+    "NEW_BUILDING_NAME": [
+      {
+        "name": "Solace Community Center",
+        "old_name": "Solace Community Center"
+      }
+    ],
+    "NEW_EVENT_NAME": [
+      {
+        "name": "Rural Nexus Gaming Tournament",
+        "old_name": "Rural Nexus Gaming Tournament"
+      }
+    ],
+    "NEW_MISCELLANEOUS_NAME": [],
+    "CORRECTED_PERSON_NAME": [
+      {
+        "name": "Elena Voss",
+        "old_name": "Elena Voss",
+        "id": "PERSON-1"
+      },
+      {
+        "name": "Marcus Reed",
+        "old_name": "Marcus Reed",
+        "id": "PERSON-2"
+      },
+      {
+        "name": "Alex Turner",
+        "old_name": "Alex Turner",
+        "id": "PERSON-3"
+      },
+      {
+        "name": "Jamie Lee",
+        "old_name": "Jamie Lee",
+        "id": "PERSON-4"
+      }
+    ],
+    "CORRECTED_ORGANIZATION_NAME": [
+      {
+        "name": "GammWell",
+        "old_name": "GammWell",
+        "id": "ORGANIZATION-1"
+      },
+      {
+        "name": "BlazeChiefs",
+        "old_name": "BlazeChiefs",
+        "id": "ORGANIZATION-2"
+      },
+      {
+        "name": "Pixel Cafe",
+        "old_name": "Pixel Cafe",
+        "id": "ORGANIZATION-3"
+      }
+    ],
+    "CORRECTED_LOCATION_NAME": [],
+    "CORRECTED_PRODUCT_NAME": [
+      {
+        "name": "StarCraft II",
+        "old_name": "StarCraft II",
+        "id": "PRODUCT-1"
+      },
+      {
+        "name": "Counter-Strike: Global Offensive",
+        "old_name": "Counter-Strike: Global Offensive",
+        "id": "PRODUCT-2"
+      },
+      {
+        "name": "League of Legends",
+        "old_name": "League of Legends",
+        "id": "PRODUCT-3"
+      }
+    ],
+    "CORRECTED_ART_NAME": [],
+    "CORRECTED_BUILDING_NAME": [
+      {
+        "name": "Solace Community Center",
+        "old_name": "Solace Community Center",
+        "id": "BUILDING-1"
+      }
+    ],
+    "CORRECTED_EVENT_NAME": [
+      {
+        "name": "Rural Nexus Gaming Tournament",
+        "old_name": "Rural Nexus Gaming Tournament",
+        "id": "EVENT-1"
+      }
+    ],
+    "CORRECTED_MISCELLANEOUS_NAME": [],
+    "CRITIQUE_ERRORS": {
+      "entity-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-person-nationality": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-person-spouse": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization-headquarters": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product-manufacturer": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art-creator": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art-current_location_country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art-current_location_city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art-current_location_place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building-place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building-city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building-architect": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event-place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event-city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event-organizer": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        },
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-person-nationality": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-person-spouse": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-organization-headquarters": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-location-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-product-manufacturer": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-art-creator": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-art-current_location_country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-art-current_location_city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-art-current_location_place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-building-place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-building-city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-building-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-building-architect": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-event-place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-event-city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-event-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-event-organizer": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ]
+    },
+    "ADJUSTED_PERSONS_XML": "<person><id>PERSON-1</id><name>Elena Voss</name><old_name>Elena Voss</old_name></person>\n<person><id>PERSON-2</id><name>Marcus Reed</name><old_name>Marcus Reed</old_name></person>\n<person><id>PERSON-3</id><name>Alex Turner</name><old_name>Alex Turner</old_name></person>\n<person><id>PERSON-4</id><name>Jamie Lee</name><old_name>Jamie Lee</old_name></person>",
+    "ADJUSTED_ORGANIZATIONS_XML": "<organization><id>ORGANIZATION-1</id><name>GammWell</name><old_name>GammWell</old_name></organization>\n<organization><id>ORGANIZATION-2</id><name>BlazeChiefs</name><old_name>BlazeChiefs</old_name></organization>\n<organization><id>ORGANIZATION-3</id><name>Pixel Cafe</name><old_name>Pixel Cafe</old_name></organization>",
+    "ADJUSTED_LOCATIONS_XML": "",
+    "ADJUSTED_PRODUCTS_XML": "<product><id>PRODUCT-1</id><name>StarCraft II</name><old_name>StarCraft II</old_name></product>\n<product><id>PRODUCT-2</id><name>Counter-Strike: Global Offensive</name><old_name>Counter-Strike: Global Offensive</old_name></product>\n<product><id>PRODUCT-3</id><name>League of Legends</name><old_name>League of Legends</old_name></product>",
+    "ADJUSTED_ARTS_XML": "",
+    "ADJUSTED_BUILDINGS_XML": "<building><id>BUILDING-1</id><name>Solace Community Center</name><old_name>Solace Community Center</old_name></building>",
+    "ADJUSTED_EVENTS_XML": "<event><id>EVENT-1</id><name>Rural Nexus Gaming Tournament</name><old_name>Rural Nexus Gaming Tournament</old_name></event>",
+    "ADJUSTED_MISCELLANEOUSS_XML": "",
+    "USED_PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Elena Voss"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Marcus Reed"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Alex Turner"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Jamie Lee"
+      }
+    ],
+    "USED_ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "GammWell"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "BlazeChiefs"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Pixel Cafe"
+      }
+    ],
+    "USED_LOCATION": [],
+    "USED_PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "StarCraft II"
+      },
+      {
+        "id": "PRODUCT-2",
+        "name": "Counter-Strike: Global Offensive"
+      },
+      {
+        "id": "PRODUCT-3",
+        "name": "League of Legends"
+      }
+    ],
+    "USED_ART": [],
+    "USED_BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Solace Community Center"
+      }
+    ],
+    "USED_EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "Rural Nexus Gaming Tournament"
+      }
+    ],
+    "USED_MISCELLANEOUS": [],
+    "USED_PRE-EXISTING-PERSON": [],
+    "USED_NEW-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Elena Voss",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Marcus Reed",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Alex Turner",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Jamie Lee",
+        "category": "person"
+      }
+    ],
+    "ALL_USED_PERSON_XML": "<person><category>person</category><id>PERSON-1</id><name>Elena Voss</name></person>\n<person><category>person</category><id>PERSON-2</id><name>Marcus Reed</name></person>\n<person><category>person</category><id>PERSON-3</id><name>Alex Turner</name></person>\n<person><category>person</category><id>PERSON-4</id><name>Jamie Lee</name></person>",
+    "USED-NAME-AND-ID-FOR-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Elena Voss",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Marcus Reed",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Alex Turner",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Jamie Lee",
+        "category": "person"
+      }
+    ],
+    "USED_PRE-EXISTING-ORGANIZATION": [],
+    "USED_NEW-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "GammWell",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "BlazeChiefs",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Pixel Cafe",
+        "category": "organization"
+      }
+    ],
+    "ALL_USED_ORGANIZATION_XML": "<organization><category>organization</category><id>ORGANIZATION-1</id><name>GammWell</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-2</id><name>BlazeChiefs</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-3</id><name>Pixel Cafe</name></organization>",
+    "USED-NAME-AND-ID-FOR-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "GammWell",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "BlazeChiefs",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Pixel Cafe",
+        "category": "organization"
+      }
+    ],
+    "USED_PRE-EXISTING-LOCATION": [],
+    "USED_NEW-LOCATION": [],
+    "ALL_USED_LOCATION_XML": "",
+    "USED-NAME-AND-ID-FOR-LOCATION": [],
+    "USED_PRE-EXISTING-PRODUCT": [],
+    "USED_NEW-PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "StarCraft II",
+        "category": "product"
+      },
+      {
+        "id": "PRODUCT-2",
+        "name": "Counter-Strike: Global Offensive",
+        "category": "product"
+      },
+      {
+        "id": "PRODUCT-3",
+        "name": "League of Legends",
+        "category": "product"
+      }
+    ],
+    "ALL_USED_PRODUCT_XML": "<product><category>product</category><id>PRODUCT-1</id><name>StarCraft II</name></product>\n<product><category>product</category><id>PRODUCT-2</id><name>Counter-Strike: Global Offensive</name></product>\n<product><category>product</category><id>PRODUCT-3</id><name>League of Legends</name></product>",
+    "USED-NAME-AND-ID-FOR-PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "StarCraft II",
+        "category": "product"
+      },
+      {
+        "id": "PRODUCT-2",
+        "name": "Counter-Strike: Global Offensive",
+        "category": "product"
+      },
+      {
+        "id": "PRODUCT-3",
+        "name": "League of Legends",
+        "category": "product"
+      }
+    ],
+    "USED_PRE-EXISTING-ART": [],
+    "USED_NEW-ART": [],
+    "ALL_USED_ART_XML": "",
+    "USED-NAME-AND-ID-FOR-ART": [],
+    "USED_PRE-EXISTING-BUILDING": [],
+    "USED_NEW-BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Solace Community Center",
+        "category": "building"
+      }
+    ],
+    "ALL_USED_BUILDING_XML": "<building><category>building</category><id>BUILDING-1</id><name>Solace Community Center</name></building>",
+    "USED-NAME-AND-ID-FOR-BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Solace Community Center",
+        "category": "building"
+      }
+    ],
+    "USED_PRE-EXISTING-EVENT": [],
+    "USED_NEW-EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "Rural Nexus Gaming Tournament",
+        "category": "event"
+      }
+    ],
+    "ALL_USED_EVENT_XML": "<event><category>event</category><id>EVENT-1</id><name>Rural Nexus Gaming Tournament</name></event>",
+    "USED-NAME-AND-ID-FOR-EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "Rural Nexus Gaming Tournament",
+        "category": "event"
+      }
+    ],
+    "USED_PRE-EXISTING-MISCELLANEOUS": [],
+    "USED_NEW-MISCELLANEOUS": [],
+    "ALL_USED_MISCELLANEOUS_XML": "",
+    "USED-NAME-AND-ID-FOR-MISCELLANEOUS": [],
+    "USED_NEW-PERSONS_XML": "<person><category>person</category><id>PERSON-1</id><name>Elena Voss</name></person>\n<person><category>person</category><id>PERSON-2</id><name>Marcus Reed</name></person>\n<person><category>person</category><id>PERSON-3</id><name>Alex Turner</name></person>\n<person><category>person</category><id>PERSON-4</id><name>Jamie Lee</name></person>",
+    "USED_NEW-ORGANIZATIONS_XML": "<organization><category>organization</category><id>ORGANIZATION-1</id><name>GammWell</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-2</id><name>BlazeChiefs</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-3</id><name>Pixel Cafe</name></organization>",
+    "USED_NEW-LOCATIONS_XML": "",
+    "USED_NEW-PRODUCTS_XML": "<product><category>product</category><id>PRODUCT-1</id><name>StarCraft II</name></product>\n<product><category>product</category><id>PRODUCT-2</id><name>Counter-Strike: Global Offensive</name></product>\n<product><category>product</category><id>PRODUCT-3</id><name>League of Legends</name></product>",
+    "USED_NEW-ARTS_XML": "",
+    "USED_NEW-BUILDINGS_XML": "<building><category>building</category><id>BUILDING-1</id><name>Solace Community Center</name></building>",
+    "USED_NEW-EVENTS_XML": "<event><category>event</category><id>EVENT-1</id><name>Rural Nexus Gaming Tournament</name></event>",
+    "USED_NEW-MISCELLANEOUSS_XML": "",
+    "NEW_PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Elena Voss",
+        "date_of_birth": "1988-05-17",
+        "gender": "female",
+        "profession": "Event Coordinator",
+        "nationality": "Valeran",
+        "education": "B.A. in Event Management",
+        "description": "Elena Voss, an enthusiastic and dynamic coordinator, is driven by a lifelong passion for gaming and community building.",
+        "height": "5'7\"",
+        "weight": "135 lbs",
+        "eye_color": "blue",
+        "hair_color": "brown",
+        "political_affiliation": "Independent",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Marcus Reed",
+        "date_of_birth": "1990-03-22",
+        "gender": "male",
+        "profession": "Gaming Journalist",
+        "nationality": "Valeran",
+        "education": "M.A. in Journalism",
+        "description": "Marcus Reed, an insightful gaming journalist, has dedicated his career to exploring the cultural impacts of esports.",
+        "height": "6'0\"",
+        "weight": "170 lbs",
+        "eye_color": "green",
+        "hair_color": "dark blonde",
+        "political_affiliation": "Independent",
+        "marital_status": "Married"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Alex Turner",
+        "date_of_birth": "1978-09-10",
+        "gender": "male",
+        "profession": "Esports Coach",
+        "nationality": "Valeran",
+        "education": "B.Sc. in Sports Psychology",
+        "description": "Alex Turner, known for his strategic prowess and mentorship, is dedicated to nurturing esports talent and fostering teamwork.",
+        "height": "6'2\"",
+        "weight": "185 lbs",
+        "eye_color": "brown",
+        "hair_color": "gray",
+        "political_affiliation": "Non-affiliated",
+        "marital_status": "Divorced"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Jamie Lee",
+        "date_of_birth": "2004-07-05",
+        "gender": "non-binary",
+        "profession": "Student and Esports Player",
+        "nationality": "Valeran",
+        "education": "High School Student",
+        "description": "Jamie Lee, a spirited and adaptable individual, thrives in the ever-evolving world of competitive esports competition.",
+        "height": "5'6\"",
+        "weight": "130 lbs",
+        "eye_color": "hazel",
+        "hair_color": "black",
+        "political_affiliation": "Non-affiliated",
+        "marital_status": "Single"
+      }
+    ],
+    "NEW_ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "GammWell",
+        "type": "non-profit",
+        "description": "GammWell is a community-driven non-profit organization aiming to enrich the local gaming landscape and inspire new talent.",
+        "founded": "2025",
+        "headquarters": "Valeran",
+        "industry": "Community Empowerment and Esports",
+        "mission_statement": "To provide a platform for local gamers to showcase their talents and connect with the broader esports community.",
+        "number_of_employees": "8",
+        "annual_revenue": "$50,000"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "BlazeChiefs",
+        "type": "company",
+        "description": "BlazeChiefs, an emerging esports team, is recognized for its commitment to excellence and strategic prowess on the competitive gaming stage.",
+        "founded": "2024",
+        "headquarters": "Gamville",
+        "industry": "Professional Esports",
+        "mission_statement": "To be at the forefront of the esports world by identifying and nurturing top strategic and skilled players.",
+        "number_of_employees": "20",
+        "annual_revenue": "$3 million"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Pixel Cafe",
+        "type": "company",
+        "description": "Pixle Cafe is a cozy local establishment known for its vibrant ambiance and dedication to the gaming community.",
+        "founded": "2018",
+        "headquarters": "Townsville",
+        "industry": "Caf\u00e9 and Gaming Hub",
+        "mission_statement": "To create a welcoming environment for gamers and non-gamers alike with innovative menu offerings and community events.",
+        "number_of_employees": "15",
+        "annual_revenue": "$1.2 million"
+      }
+    ],
+    "NEW_LOCATION": [
+      {
+        "id": "BUILDING-1",
+        "name": "Solace Community Center",
+        "type": "public",
+        "description": "Solace Community Center, a cornerstone of cultural and social gatherings, has been serving the town's residents for nearly three decades.",
+        "population": "250",
+        "area": "1500 square meters",
+        "founded": "1995",
+        "climate": "Moderate with distinct seasons",
+        "country": "Valeran"
+      }
+    ],
+    "NEW_PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "StarCraft II",
+        "type": "software",
+        "description": "StarCraft II is a strategic real-time multiplayer game that has captivated esports enthusiasts worldwide with its intricate gameplay and competitive scene.",
+        "manufacturer": "Blizzard Entertainment Corp",
+        "release_date": "2010-07-27",
+        "price": "$39.99",
+        "weight": "N/A",
+        "warranty": "14-day money-back guarantee"
+      },
+      {
+        "id": "PRODUCT-2",
+        "name": "Counter-Strike: Global Offensive",
+        "type": "software",
+        "description": "Counter-Strike: Global Offensive, an iconic first-person shooter, is famed for its intense multiplayer battles and extensive modding community.",
+        "manufacturer": "Valve Corp",
+        "release_date": "2012-08-21",
+        "price": "$14.99",
+        "weight": "N/A",
+        "warranty": "30-day return policy"
+      },
+      {
+        "id": "PRODUCT-3",
+        "name": "League of Legends",
+        "type": "software",
+        "description": "League of Legends, a trailblazing multiplayer online battle arena game, consistently draws millions of players into its vividly varied character-driven gameplay.",
+        "manufacturer": "Riot Games",
+        "release_date": "2009-10-27",
+        "price": "Free-to-play",
+        "weight": "N/A",
+        "warranty": "Restricted to account-based terms"
+      }
+    ],
+    "NEW_ART": [],
+    "NEW_BUILDING": [],
+    "NEW_EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "Rural Nexus Gaming Tournament",
+        "type": "sporting",
+        "description": "The Rural Nexus Gaming Tournament is an annual event that celebrates the skills and sportsmanship of amateur gamers through a variety of competitive games.",
+        "date": "2025-09-15",
+        "place": "Solace Community Center",
+        "city": "Townsville",
+        "country": "Valeran",
+        "duration": "3 days",
+        "organizer": "GammWell",
+        "number_of_participants": "50",
+        "budget": "$30,000"
+      }
+    ],
+    "NEW_MISCELLANEOUS": [],
+    "FICTIONAL_NEW_PERSONS": [
+      {
+        "id": "PERSON-1",
+        "name": "Elena Voss, an enthusiastic and dynamic coordinator, is driven by a lifelong passion for gaming and community building.",
+        "entity_class": "person",
+        "description": "Elena Voss, an enthusiastic and dynamic coordinator, is driven by a lifelong passion for gaming and community building.",
+        "type": "None",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Elena Voss coordinated the Rural Nexus Gaming Tournament, leveraging her experience as an amateur esports player and community organizer.",
+            "date": "2025-09-15"
+          }
+        ],
+        "date_of_birth": "1988-05-17",
+        "gender": "female",
+        "profession": "Event Coordinator",
+        "nationality": "Valeran",
+        "education": "B.A. in Event Management",
+        "height": "5'7\"",
+        "weight": "135 lbs",
+        "eye_color": "blue",
+        "hair_color": "brown",
+        "political_affiliation": "Independent",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Marcus Reed, an insightful gaming journalist, has dedicated his career to exploring the cultural impacts of esports.",
+        "entity_class": "person",
+        "description": "Marcus Reed, an insightful gaming journalist, has dedicated his career to exploring the cultural impacts of esports.",
+        "type": "None",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Marcus Reed coordinated the Rural Nexus Gaming Tournament and hosted a panel discussion on the growth of esports in rural areas.",
+            "date": "2025-09-15"
+          }
+        ],
+        "date_of_birth": "1990-03-22",
+        "gender": "male",
+        "profession": "Gaming Journalist",
+        "nationality": "Valeran",
+        "education": "M.A. in Journalism",
+        "height": "6'0\"",
+        "weight": "170 lbs",
+        "eye_color": "green",
+        "hair_color": "dark blonde",
+        "political_affiliation": "Independent",
+        "marital_status": "Married"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Alex Turner, known for his strategic prowess and mentorship, is dedicated to nurturing esports talent and fostering teamwork.",
+        "entity_class": "person",
+        "description": "Alex Turner, known for his strategic prowess and mentorship, is dedicated to nurturing esports talent and fostering teamwork.",
+        "type": "None",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Alex Turner, head coach of BlazeChiefs, attended the Rural Nexus Gaming Tournament to scout for talent and engage with the local gaming community.",
+            "date": "2025-09-15"
+          }
+        ],
+        "date_of_birth": "1978-09-10",
+        "gender": "male",
+        "profession": "Esports Coach",
+        "nationality": "Valeran",
+        "education": "B.Sc. in Sports Psychology",
+        "height": "6'2\"",
+        "weight": "185 lbs",
+        "eye_color": "brown",
+        "hair_color": "gray",
+        "political_affiliation": "Non-affiliated",
+        "marital_status": "Divorced"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Jamie Lee, a spirited and adaptable individual, thrives in the ever-evolving world of competitive esports competition.",
+        "entity_class": "person",
+        "description": "Jamie Lee, a spirited and adaptable individual, thrives in the ever-evolving world of competitive esports competition.",
+        "type": "None",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Jamie Lee participated in the Rural Nexus Gaming Tournament, gaining valuable experience and expressing gratitude for the opportunity to connect with the gaming community.",
+            "date": "2025-09-15"
+          }
+        ],
+        "date_of_birth": "2004-07-05",
+        "gender": "non-binary",
+        "profession": "Student and Esports Player",
+        "nationality": "Valeran",
+        "education": "High School Student",
+        "height": "5'6\"",
+        "weight": "130 lbs",
+        "eye_color": "hazel",
+        "hair_color": "black",
+        "political_affiliation": "Non-affiliated",
+        "marital_status": "Single"
+      }
+    ],
+    "FICTIONAL_NEW_ORGANIZATIONS": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "GammWell",
+        "entity_class": "organization",
+        "description": "GammWell is a community-driven non-profit organization aiming to enrich the local gaming landscape and inspire new talent.",
+        "type": "non-profit",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "GammWell successfully organized the Rural Nexus Gaming Tournament, marking a significant step in their mission to promote local esports.",
+            "date": "2025-09-15"
+          }
+        ],
+        "founded": "2025",
+        "headquarters": "Valeran",
+        "industry": "Community Empowerment and Esports",
+        "mission_statement": "To provide a platform for local gamers to showcase their talents and connect with the broader esports community.",
+        "number_of_employees": "8",
+        "annual_revenue": "$50,000"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "BlazeChiefs",
+        "entity_class": "organization",
+        "description": "BlazeChiefs, an emerging esports team, is recognized for its commitment to excellence and strategic prowess on the competitive gaming stage.",
+        "type": "company",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "BlazeChiefs attended the Rural Nexus Gaming Tournament to scout for new talent and engage with the local gaming community.",
+            "date": "2025-09-15"
+          }
+        ],
+        "founded": "2024",
+        "headquarters": "Gamville",
+        "industry": "Professional Esports",
+        "mission_statement": "To be at the forefront of the esports world by identifying and nurturing top strategic and skilled players.",
+        "number_of_employees": "20",
+        "annual_revenue": "$3 million"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Pixel Cafe",
+        "entity_class": "organization",
+        "description": "Pixle Cafe is a cozy local establishment known for its vibrant ambiance and dedication to the gaming community.",
+        "type": "company",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Pixel Cafe sponsored the Rural Nexus Gaming Tournament, providing refreshments and hosting a mini-tournament to boost community involvement.",
+            "date": "2025-09-15"
+          }
+        ],
+        "founded": "2018",
+        "headquarters": "Townsville",
+        "industry": "Caf\u00e9 and Gaming Hub",
+        "mission_statement": "To create a welcoming environment for gamers and non-gamers alike with innovative menu offerings and community events.",
+        "number_of_employees": "15",
+        "annual_revenue": "$1.2 million"
+      }
+    ],
+    "FICTIONAL_NEW_LOCATIONS": [],
+    "FICTIONAL_NEW_PRODUCTS": [
+      {
+        "id": "PRODUCT-1",
+        "name": "StarCraft II is a strategic real-time multiplayer game that has captivated esports enthusiasts worldwide with its intricate gameplay and competitive scene.",
+        "entity_class": "product",
+        "description": "StarCraft II is a strategic real-time multiplayer game that has captivated esports enthusiasts worldwide with its intricate gameplay and competitive scene.",
+        "type": "software",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "StarCraft II was one of the featured games at the Rural Nexus Gaming Tournament, attracting strategy game enthusiasts.",
+            "date": "2025-09-15"
+          }
+        ],
+        "manufacturer": "Blizzard Entertainment Corp",
+        "release_date": "2010-07-27",
+        "price": "$39.99",
+        "weight": "N/A",
+        "warranty": "14-day money-back guarantee"
+      },
+      {
+        "id": "PRODUCT-2",
+        "name": "Counter-Strike: Global Offensive, an iconic first-person shooter, is famed for its intense multiplayer battles and extensive modding community.",
+        "entity_class": "product",
+        "description": "Counter-Strike: Global Offensive, an iconic first-person shooter, is famed for its intense multiplayer battles and extensive modding community.",
+        "type": "software",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Counter-Strike: Global Offensive was one of the featured games at the Rural Nexus Gaming Tournament, drawing FPS enthusiasts.",
+            "date": "2025-09-15"
+          }
+        ],
+        "manufacturer": "Valve Corp",
+        "release_date": "2012-08-21",
+        "price": "$14.99",
+        "weight": "N/A",
+        "warranty": "30-day return policy"
+      },
+      {
+        "id": "PRODUCT-3",
+        "name": "League of Legends, a trailblazing multiplayer online battle arena game, consistently draws millions of players into its vividly varied character-driven gameplay.",
+        "entity_class": "product",
+        "description": "League of Legends, a trailblazing multiplayer online battle arena game, consistently draws millions of players into its vividly varied character-driven gameplay.",
+        "type": "software",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "League of Legends was one of the featured games at the Rural Nexus Gaming Tournament, attracting MOBA enthusiasts.",
+            "date": "2025-09-15"
+          }
+        ],
+        "manufacturer": "Riot Games",
+        "release_date": "2009-10-27",
+        "price": "Free-to-play",
+        "weight": "N/A",
+        "warranty": "Restricted to account-based terms"
+      }
+    ],
+    "FICTIONAL_NEW_ARTS": [],
+    "FICTIONAL_NEW_BUILDINGS": [
+      {
+        "id": "BUILDING-1",
+        "name": "Solace Community Center, a cornerstone of cultural and social gatherings, has been serving the town's residents for nearly three decades.",
+        "entity_class": "building",
+        "description": "Solace Community Center, a cornerstone of cultural and social gatherings, has been serving the town's residents for nearly three decades.",
+        "type": "public",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Solace Community Center hosted the debut of the Rural Nexus Gaming Tournament, reinforcing its role as a hub for local gatherings.",
+            "date": "2025-09-15"
+          }
+        ]
+      }
+    ],
+    "FICTIONAL_NEW_EVENTS": [
+      {
+        "id": "EVENT-1",
+        "name": "The Rural Nexus Gaming Tournament is an annual event that celebrates the skills and sportsmanship of amateur gamers through a variety of competitive games.",
+        "entity_class": "event",
+        "description": "The Rural Nexus Gaming Tournament is an annual event that celebrates the skills and sportsmanship of amateur gamers through a variety of competitive games.",
+        "type": "sporting",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Rural Nexus Gaming Tournament was successfully held at Solace Community Center, organized by GammWell, featuring over 50 participants and attracting local businesses and esports professionals.",
+            "date": "2025-09-15"
+          }
+        ],
+        "date": "2025-09-15",
+        "duration": "3 days",
+        "organizer": "GammWell",
+        "number_of_participants": "50",
+        "budget": "$30,000"
+      }
+    ],
+    "FICTIONAL_NEW_MISCELLANEOUSS": [],
+    "USED-ALL-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Elena Voss, an enthusiastic and dynamic coordinator, is driven by a lifelong passion for gaming and community building.",
+        "entity_class": "person",
+        "description": "Elena Voss, an enthusiastic and dynamic coordinator, is driven by a lifelong passion for gaming and community building.",
+        "type": "None",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Elena Voss coordinated the Rural Nexus Gaming Tournament, leveraging her experience as an amateur esports player and community organizer.",
+            "date": "2025-09-15"
+          }
+        ],
+        "date_of_birth": "1988-05-17",
+        "gender": "female",
+        "profession": "Event Coordinator",
+        "nationality": "Valeran",
+        "education": "B.A. in Event Management",
+        "height": "5'7\"",
+        "weight": "135 lbs",
+        "eye_color": "blue",
+        "hair_color": "brown",
+        "political_affiliation": "Independent",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Marcus Reed, an insightful gaming journalist, has dedicated his career to exploring the cultural impacts of esports.",
+        "entity_class": "person",
+        "description": "Marcus Reed, an insightful gaming journalist, has dedicated his career to exploring the cultural impacts of esports.",
+        "type": "None",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Marcus Reed coordinated the Rural Nexus Gaming Tournament and hosted a panel discussion on the growth of esports in rural areas.",
+            "date": "2025-09-15"
+          }
+        ],
+        "date_of_birth": "1990-03-22",
+        "gender": "male",
+        "profession": "Gaming Journalist",
+        "nationality": "Valeran",
+        "education": "M.A. in Journalism",
+        "height": "6'0\"",
+        "weight": "170 lbs",
+        "eye_color": "green",
+        "hair_color": "dark blonde",
+        "political_affiliation": "Independent",
+        "marital_status": "Married"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Alex Turner, known for his strategic prowess and mentorship, is dedicated to nurturing esports talent and fostering teamwork.",
+        "entity_class": "person",
+        "description": "Alex Turner, known for his strategic prowess and mentorship, is dedicated to nurturing esports talent and fostering teamwork.",
+        "type": "None",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Alex Turner, head coach of BlazeChiefs, attended the Rural Nexus Gaming Tournament to scout for talent and engage with the local gaming community.",
+            "date": "2025-09-15"
+          }
+        ],
+        "date_of_birth": "1978-09-10",
+        "gender": "male",
+        "profession": "Esports Coach",
+        "nationality": "Valeran",
+        "education": "B.Sc. in Sports Psychology",
+        "height": "6'2\"",
+        "weight": "185 lbs",
+        "eye_color": "brown",
+        "hair_color": "gray",
+        "political_affiliation": "Non-affiliated",
+        "marital_status": "Divorced"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Jamie Lee, a spirited and adaptable individual, thrives in the ever-evolving world of competitive esports competition.",
+        "entity_class": "person",
+        "description": "Jamie Lee, a spirited and adaptable individual, thrives in the ever-evolving world of competitive esports competition.",
+        "type": "None",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Jamie Lee participated in the Rural Nexus Gaming Tournament, gaining valuable experience and expressing gratitude for the opportunity to connect with the gaming community.",
+            "date": "2025-09-15"
+          }
+        ],
+        "date_of_birth": "2004-07-05",
+        "gender": "non-binary",
+        "profession": "Student and Esports Player",
+        "nationality": "Valeran",
+        "education": "High School Student",
+        "height": "5'6\"",
+        "weight": "130 lbs",
+        "eye_color": "hazel",
+        "hair_color": "black",
+        "political_affiliation": "Non-affiliated",
+        "marital_status": "Single"
+      }
+    ],
+    "USED_PERSON_XML": "<person><created_at>0</created_at><date_of_birth>1988-05-17</date_of_birth><description>Elena Voss, an enthusiastic and dynamic coordinator, is driven by a lifelong passion for gaming and community building.</description><education>B.A. in Event Management</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>female</gender><hair_color>brown</hair_color><height>5'7\"</height><history></history><id>PERSON-1</id><last_updated>2025-09-15</last_updated><marital_status>Single</marital_status><name>Elena Voss</name><nationality>Valeran</nationality><political_affiliation>Independent</political_affiliation><profession>Event Coordinator</profession><type>None</type><weight>135 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1990-03-22</date_of_birth><description>Marcus Reed, an insightful gaming journalist, has dedicated his career to exploring the cultural impacts of esports.</description><education>M.A. in Journalism</education><entity_class>person</entity_class><eye_color>green</eye_color><gender>male</gender><hair_color>dark blonde</hair_color><height>6'0\"</height><history></history><id>PERSON-2</id><last_updated>2025-09-15</last_updated><marital_status>Married</marital_status><name>Marcus Reed</name><nationality>Valeran</nationality><political_affiliation>Independent</political_affiliation><profession>Gaming Journalist</profession><type>None</type><weight>170 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1978-09-10</date_of_birth><description>Alex Turner, known for his strategic prowess and mentorship, is dedicated to nurturing esports talent and fostering teamwork.</description><education>B.Sc. in Sports Psychology</education><entity_class>person</entity_class><eye_color>brown</eye_color><gender>male</gender><hair_color>gray</hair_color><height>6'2\"</height><history></history><id>PERSON-3</id><last_updated>2025-09-15</last_updated><marital_status>Divorced</marital_status><name>Alex Turner</name><nationality>Valeran</nationality><political_affiliation>Non-affiliated</political_affiliation><profession>Esports Coach</profession><type>None</type><weight>185 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>2004-07-05</date_of_birth><description>Jamie Lee, a spirited and adaptable individual, thrives in the ever-evolving world of competitive esports competition.</description><education>High School Student</education><entity_class>person</entity_class><eye_color>hazel</eye_color><gender>non-binary</gender><hair_color>black</hair_color><height>5'6\"</height><history></history><id>PERSON-4</id><last_updated>2025-09-15</last_updated><marital_status>Single</marital_status><name>Jamie Lee</name><nationality>Valeran</nationality><political_affiliation>Non-affiliated</political_affiliation><profession>Student and Esports Player</profession><type>None</type><weight>130 lbs</weight></person>",
+    "USED-ALL-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "GammWell",
+        "entity_class": "organization",
+        "description": "GammWell is a community-driven non-profit organization aiming to enrich the local gaming landscape and inspire new talent.",
+        "type": "non-profit",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "GammWell successfully organized the Rural Nexus Gaming Tournament, marking a significant step in their mission to promote local esports.",
+            "date": "2025-09-15"
+          }
+        ],
+        "founded": "2025",
+        "headquarters": "Valeran",
+        "industry": "Community Empowerment and Esports",
+        "mission_statement": "To provide a platform for local gamers to showcase their talents and connect with the broader esports community.",
+        "number_of_employees": "8",
+        "annual_revenue": "$50,000"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "BlazeChiefs",
+        "entity_class": "organization",
+        "description": "BlazeChiefs, an emerging esports team, is recognized for its commitment to excellence and strategic prowess on the competitive gaming stage.",
+        "type": "company",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "BlazeChiefs attended the Rural Nexus Gaming Tournament to scout for new talent and engage with the local gaming community.",
+            "date": "2025-09-15"
+          }
+        ],
+        "founded": "2024",
+        "headquarters": "Gamville",
+        "industry": "Professional Esports",
+        "mission_statement": "To be at the forefront of the esports world by identifying and nurturing top strategic and skilled players.",
+        "number_of_employees": "20",
+        "annual_revenue": "$3 million"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Pixel Cafe",
+        "entity_class": "organization",
+        "description": "Pixle Cafe is a cozy local establishment known for its vibrant ambiance and dedication to the gaming community.",
+        "type": "company",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Pixel Cafe sponsored the Rural Nexus Gaming Tournament, providing refreshments and hosting a mini-tournament to boost community involvement.",
+            "date": "2025-09-15"
+          }
+        ],
+        "founded": "2018",
+        "headquarters": "Townsville",
+        "industry": "Caf\u00e9 and Gaming Hub",
+        "mission_statement": "To create a welcoming environment for gamers and non-gamers alike with innovative menu offerings and community events.",
+        "number_of_employees": "15",
+        "annual_revenue": "$1.2 million"
+      }
+    ],
+    "USED_ORGANIZATION_XML": "<organization><annual_revenue>$50,000</annual_revenue><created_at>0</created_at><description>GammWell is a community-driven non-profit organization aiming to enrich the local gaming landscape and inspire new talent.</description><entity_class>organization</entity_class><founded>2025</founded><headquarters>Valeran</headquarters><history></history><id>ORGANIZATION-1</id><industry>Community Empowerment and Esports</industry><last_updated>2025-09-15</last_updated><mission_statement>To provide a platform for local gamers to showcase their talents and connect with the broader esports community.</mission_statement><name>GammWell</name><number_of_employees>8</number_of_employees><type>non-profit</type></organization>\n<organization><annual_revenue>$3 million</annual_revenue><created_at>0</created_at><description>BlazeChiefs, an emerging esports team, is recognized for its commitment to excellence and strategic prowess on the competitive gaming stage.</description><entity_class>organization</entity_class><founded>2024</founded><headquarters>Gamville</headquarters><history></history><id>ORGANIZATION-2</id><industry>Professional Esports</industry><last_updated>2025-09-15</last_updated><mission_statement>To be at the forefront of the esports world by identifying and nurturing top strategic and skilled players.</mission_statement><name>BlazeChiefs</name><number_of_employees>20</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>$1.2 million</annual_revenue><created_at>0</created_at><description>Pixle Cafe is a cozy local establishment known for its vibrant ambiance and dedication to the gaming community.</description><entity_class>organization</entity_class><founded>2018</founded><headquarters>Townsville</headquarters><history></history><id>ORGANIZATION-3</id><industry>Caf\u00e9 and Gaming Hub</industry><last_updated>2025-09-15</last_updated><mission_statement>To create a welcoming environment for gamers and non-gamers alike with innovative menu offerings and community events.</mission_statement><name>Pixel Cafe</name><number_of_employees>15</number_of_employees><type>company</type></organization>",
+    "USED-ALL-LOCATION": [],
+    "USED_LOCATION_XML": "",
+    "USED-ALL-PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "StarCraft II is a strategic real-time multiplayer game that has captivated esports enthusiasts worldwide with its intricate gameplay and competitive scene.",
+        "entity_class": "product",
+        "description": "StarCraft II is a strategic real-time multiplayer game that has captivated esports enthusiasts worldwide with its intricate gameplay and competitive scene.",
+        "type": "software",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "StarCraft II was one of the featured games at the Rural Nexus Gaming Tournament, attracting strategy game enthusiasts.",
+            "date": "2025-09-15"
+          }
+        ],
+        "manufacturer": "Blizzard Entertainment Corp",
+        "release_date": "2010-07-27",
+        "price": "$39.99",
+        "weight": "N/A",
+        "warranty": "14-day money-back guarantee"
+      },
+      {
+        "id": "PRODUCT-2",
+        "name": "Counter-Strike: Global Offensive, an iconic first-person shooter, is famed for its intense multiplayer battles and extensive modding community.",
+        "entity_class": "product",
+        "description": "Counter-Strike: Global Offensive, an iconic first-person shooter, is famed for its intense multiplayer battles and extensive modding community.",
+        "type": "software",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Counter-Strike: Global Offensive was one of the featured games at the Rural Nexus Gaming Tournament, drawing FPS enthusiasts.",
+            "date": "2025-09-15"
+          }
+        ],
+        "manufacturer": "Valve Corp",
+        "release_date": "2012-08-21",
+        "price": "$14.99",
+        "weight": "N/A",
+        "warranty": "30-day return policy"
+      },
+      {
+        "id": "PRODUCT-3",
+        "name": "League of Legends, a trailblazing multiplayer online battle arena game, consistently draws millions of players into its vividly varied character-driven gameplay.",
+        "entity_class": "product",
+        "description": "League of Legends, a trailblazing multiplayer online battle arena game, consistently draws millions of players into its vividly varied character-driven gameplay.",
+        "type": "software",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "League of Legends was one of the featured games at the Rural Nexus Gaming Tournament, attracting MOBA enthusiasts.",
+            "date": "2025-09-15"
+          }
+        ],
+        "manufacturer": "Riot Games",
+        "release_date": "2009-10-27",
+        "price": "Free-to-play",
+        "weight": "N/A",
+        "warranty": "Restricted to account-based terms"
+      }
+    ],
+    "USED_PRODUCT_XML": "<product><created_at>0</created_at><description>StarCraft II is a strategic real-time multiplayer game that has captivated esports enthusiasts worldwide with its intricate gameplay and competitive scene.</description><entity_class>product</entity_class><history></history><id>PRODUCT-1</id><last_updated>2025-09-15</last_updated><manufacturer>Blizzard Entertainment Corp</manufacturer><name>StarCraft II</name><price>$39.99</price><release_date>2010-07-27</release_date><type>software</type><warranty>14-day money-back guarantee</warranty><weight>N/A</weight></product>\n<product><created_at>0</created_at><description>Counter-Strike: Global Offensive, an iconic first-person shooter, is famed for its intense multiplayer battles and extensive modding community.</description><entity_class>product</entity_class><history></history><id>PRODUCT-2</id><last_updated>2025-09-15</last_updated><manufacturer>Valve Corp</manufacturer><name>Counter-Strike: Global Offensive</name><price>$14.99</price><release_date>2012-08-21</release_date><type>software</type><warranty>30-day return policy</warranty><weight>N/A</weight></product>\n<product><created_at>0</created_at><description>League of Legends, a trailblazing multiplayer online battle arena game, consistently draws millions of players into its vividly varied character-driven gameplay.</description><entity_class>product</entity_class><history></history><id>PRODUCT-3</id><last_updated>2025-09-15</last_updated><manufacturer>Riot Games</manufacturer><name>League of Legends</name><price>Free-to-play</price><release_date>2009-10-27</release_date><type>software</type><warranty>Restricted to account-based terms</warranty><weight>N/A</weight></product>",
+    "USED-ALL-ART": [],
+    "USED_ART_XML": "",
+    "USED-ALL-BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Solace Community Center, a cornerstone of cultural and social gatherings, has been serving the town's residents for nearly three decades.",
+        "entity_class": "building",
+        "description": "Solace Community Center, a cornerstone of cultural and social gatherings, has been serving the town's residents for nearly three decades.",
+        "type": "public",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Solace Community Center hosted the debut of the Rural Nexus Gaming Tournament, reinforcing its role as a hub for local gatherings.",
+            "date": "2025-09-15"
+          }
+        ]
+      }
+    ],
+    "USED_BUILDING_XML": "<building><created_at>0</created_at><description>Solace Community Center, a cornerstone of cultural and social gatherings, has been serving the town's residents for nearly three decades.</description><entity_class>building</entity_class><history></history><id>BUILDING-1</id><last_updated>2025-09-15</last_updated><name>Solace Community Center</name><type>public</type></building>",
+    "USED-ALL-EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "The Rural Nexus Gaming Tournament is an annual event that celebrates the skills and sportsmanship of amateur gamers through a variety of competitive games.",
+        "entity_class": "event",
+        "description": "The Rural Nexus Gaming Tournament is an annual event that celebrates the skills and sportsmanship of amateur gamers through a variety of competitive games.",
+        "type": "sporting",
+        "created_at": 0,
+        "last_updated": "2025-09-15",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Rural Nexus Gaming Tournament was successfully held at Solace Community Center, organized by GammWell, featuring over 50 participants and attracting local businesses and esports professionals.",
+            "date": "2025-09-15"
+          }
+        ],
+        "date": "2025-09-15",
+        "duration": "3 days",
+        "organizer": "GammWell",
+        "number_of_participants": "50",
+        "budget": "$30,000"
+      }
+    ],
+    "USED_EVENT_XML": "<event><budget>$30,000</budget><created_at>0</created_at><date>2025-09-15</date><description>The Rural Nexus Gaming Tournament is an annual event that celebrates the skills and sportsmanship of amateur gamers through a variety of competitive games.</description><duration>3 days</duration><entity_class>event</entity_class><history></history><id>EVENT-1</id><last_updated>2025-09-15</last_updated><name>Rural Nexus Gaming Tournament</name><number_of_participants>50</number_of_participants><organizer>GammWell</organizer><type>sporting</type></event>",
+    "USED-ALL-MISCELLANEOUS": [],
+    "USED_MISCELLANEOUS_XML": "",
+    "USED_ENTITIES": [
+      {
+        "id": "PERSON-1",
+        "name": "Elena Voss",
+        "entity_type": "person",
+        "new": true
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Marcus Reed",
+        "entity_type": "person",
+        "new": true
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Alex Turner",
+        "entity_type": "person",
+        "new": true
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Jamie Lee",
+        "entity_type": "person",
+        "new": true
+      },
+      {
+        "id": "ORGANIZATION-1",
+        "name": "GammWell",
+        "entity_type": "organization",
+        "new": true
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "BlazeChiefs",
+        "entity_type": "organization",
+        "new": true
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Pixel Cafe",
+        "entity_type": "organization",
+        "new": true
+      },
+      {
+        "id": "PRODUCT-1",
+        "name": "StarCraft II",
+        "entity_type": "product",
+        "new": true
+      },
+      {
+        "id": "PRODUCT-2",
+        "name": "Counter-Strike: Global Offensive",
+        "entity_type": "product",
+        "new": true
+      },
+      {
+        "id": "PRODUCT-3",
+        "name": "League of Legends",
+        "entity_type": "product",
+        "new": true
+      },
+      {
+        "id": "BUILDING-1",
+        "name": "Solace Community Center",
+        "entity_type": "building",
+        "new": true
+      },
+      {
+        "id": "EVENT-1",
+        "name": "Rural Nexus Gaming Tournament",
+        "entity_type": "event",
+        "new": true
+      }
+    ],
+    "TMP_PERSON_UPDATES": [
+      {
+        "entity_id": "PERSON-1",
+        "update": "Elena Voss coordinated the Rural Nexus Gaming Tournament, leveraging her experience as an amateur esports player and community organizer.",
+        "date_of_birth": "1988-05-17",
+        "description": "Elena Voss, an enthusiastic and dynamic coordinator, is driven by a lifelong passion for gaming and community building.",
+        "education": "B.A. in Event Management",
+        "eye_color": "blue",
+        "gender": "female",
+        "hair_color": "brown",
+        "height": "5'7\"",
+        "last_updated": "2025-09-15",
+        "marital_status": "Single",
+        "name": "Elena Voss",
+        "nationality": "Valeran",
+        "political_affiliation": "Independent",
+        "profession": "Event Coordinator",
+        "type": "None",
+        "weight": "135 lbs"
+      },
+      {
+        "entity_id": "PERSON-2",
+        "update": "Marcus Reed coordinated the Rural Nexus Gaming Tournament and hosted a panel discussion on the growth of esports in rural areas.",
+        "date_of_birth": "1990-03-22",
+        "description": "Marcus Reed, an insightful gaming journalist, has dedicated his career to exploring the cultural impacts of esports.",
+        "education": "M.A. in Journalism",
+        "eye_color": "green",
+        "gender": "male",
+        "hair_color": "dark blonde",
+        "height": "6'0\"",
+        "last_updated": "2025-09-15",
+        "marital_status": "Married",
+        "name": "Marcus Reed",
+        "nationality": "Valeran",
+        "political_affiliation": "Independent",
+        "profession": "Gaming Journalist",
+        "type": "None",
+        "weight": "170 lbs"
+      },
+      {
+        "entity_id": "PERSON-3",
+        "update": "Alex Turner, head coach of BlazeChiefs, attended the Rural Nexus Gaming Tournament to scout for talent and engage with the local gaming community.",
+        "date_of_birth": "1978-09-10",
+        "description": "Alex Turner, known for his strategic prowess and mentorship, is dedicated to nurturing esports talent and fostering teamwork.",
+        "education": "B.Sc. in Sports Psychology",
+        "eye_color": "brown",
+        "gender": "male",
+        "hair_color": "gray",
+        "height": "6'2\"",
+        "last_updated": "2025-09-15",
+        "marital_status": "Divorced",
+        "name": "Alex Turner",
+        "nationality": "Valeran",
+        "political_affiliation": "Non-affiliated",
+        "profession": "Esports Coach",
+        "type": "None",
+        "weight": "185 lbs"
+      },
+      {
+        "entity_id": "PERSON-4",
+        "update": "Jamie Lee participated in the Rural Nexus Gaming Tournament, gaining valuable experience and expressing gratitude for the opportunity to connect with the gaming community.",
+        "date_of_birth": "2004-07-05",
+        "description": "Jamie Lee, a spirited and adaptable individual, thrives in the ever-evolving world of competitive esports competition.",
+        "education": "High School Student",
+        "eye_color": "hazel",
+        "gender": "non-binary",
+        "hair_color": "black",
+        "height": "5'6\"",
+        "last_updated": "2025-09-15",
+        "marital_status": "Single",
+        "name": "Jamie Lee",
+        "nationality": "Valeran",
+        "political_affiliation": "Non-affiliated",
+        "profession": "Student and Esports Player",
+        "type": "None",
+        "weight": "130 lbs"
+      }
+    ],
+    "TMP_ORGANIZATION_UPDATES": [
+      {
+        "entity_id": "ORGANIZATION-1",
+        "update": "GammWell successfully organized the Rural Nexus Gaming Tournament, marking a significant step in their mission to promote local esports.",
+        "last_updated": "2025-09-15",
+        "annual_revenue": "$50,000",
+        "industry": "Community Empowerment and Esports",
+        "mission_statement": "To provide a platform for local gamers to showcase their talents and connect with the broader esports community.",
+        "name": "GammWell",
+        "number_of_employees": "8",
+        "type": "non-profit"
+      },
+      {
+        "entity_id": "ORGANIZATION-2",
+        "update": "BlazeChiefs attended the Rural Nexus Gaming Tournament to scout for new talent and engage with the local gaming community.",
+        "annual_revenue": "$3 million",
+        "founded": "2024",
+        "headquarters": "Gamville",
+        "industry": "Professional Esports",
+        "last_updated": "2025-09-15",
+        "mission_statement": "To be at the forefront of the esports world by identifying and nurturing top strategic and skilled players.",
+        "name": "BlazeChiefs",
+        "number_of_employees": "20",
+        "type": "company"
+      },
+      {
+        "entity_id": "ORGANIZATION-3",
+        "update": "Pixel Cafe sponsored the Rural Nexus Gaming Tournament, providing refreshments and hosting a mini-tournament to boost community involvement.",
+        "annual_revenue": "$1.2 million",
+        "founded": "2018",
+        "headquarters": "Townsville",
+        "industry": "Caf\u00e9 and Gaming Hub",
+        "last_updated": "2025-09-15",
+        "mission_statement": "To create a welcoming environment for gamers and non-gamers alike with innovative menu offerings and community events.",
+        "name": "Pixel Cafe",
+        "number_of_employees": "15",
+        "type": "company"
+      }
+    ],
+    "TMP_LOCATION_UPDATES": [],
+    "TMP_PRODUCT_UPDATES": [
+      {
+        "entity_id": "PRODUCT-1",
+        "update": "StarCraft II was one of the featured games at the Rural Nexus Gaming Tournament, attracting strategy game enthusiasts.",
+        "created_at": "0",
+        "description": "StarCraft II is a strategic real-time multiplayer game that has captivated esports enthusiasts worldwide with its intricate gameplay and competitive scene.",
+        "entity_class": "product",
+        "history": null,
+        "last_updated": "2025-09-15",
+        "manufacturer": "Blizzard Entertainment Corp",
+        "name": "StarCraft II",
+        "price": "$39.99",
+        "release_date": "2010-07-27",
+        "type": "software",
+        "warranty": "14-day money-back guarantee",
+        "weight": "N/A"
+      },
+      {
+        "entity_id": "PRODUCT-2",
+        "update": "Counter-Strike: Global Offensive was one of the featured games at the Rural Nexus Gaming Tournament, drawing FPS enthusiasts.",
+        "created_at": "0",
+        "description": "Counter-Strike: Global Offensive, an iconic first-person shooter, is famed for its intense multiplayer battles and extensive modding community.",
+        "entity_class": "product",
+        "history": null,
+        "last_updated": "2025-09-15",
+        "manufacturer": "Valve Corp",
+        "name": "Counter-Strike: Global Offensive",
+        "price": "$14.99",
+        "release_date": "2012-08-21",
+        "type": "software",
+        "warranty": "30-day return policy",
+        "weight": "N/A"
+      },
+      {
+        "entity_id": "PRODUCT-3",
+        "update": "League of Legends was one of the featured games at the Rural Nexus Gaming Tournament, attracting MOBA enthusiasts.",
+        "created_at": "0",
+        "description": "League of Legends, a trailblazing multiplayer online battle arena game, consistently draws millions of players into its vividly varied character-driven gameplay.",
+        "entity_class": "product",
+        "history": null,
+        "last_updated": "2025-09-15",
+        "manufacturer": "Riot Games",
+        "name": "League of Legends",
+        "price": "Free-to-play",
+        "release_date": "2009-10-27",
+        "type": "software",
+        "warranty": "Restricted to account-based terms",
+        "weight": "N/A"
+      }
+    ],
+    "TMP_ART_UPDATES": [],
+    "TMP_BUILDING_UPDATES": [
+      {
+        "entity_id": "BUILDING-1",
+        "update": "Solace Community Center hosted the debut of the Rural Nexus Gaming Tournament, reinforcing its role as a hub for local gatherings.",
+        "description": "Solace Community Center, a cornerstone of cultural and social gatherings, has been serving the town's residents for nearly three decades.",
+        "last_updated": "2025-09-15",
+        "name": "Solace Community Center",
+        "type": "public"
+      }
+    ],
+    "TMP_EVENT_UPDATES": [
+      {
+        "entity_id": "EVENT-1",
+        "update": "The Rural Nexus Gaming Tournament was successfully held at Solace Community Center, organized by GammWell, featuring over 50 participants and attracting local businesses and esports professionals.",
+        "budget": "$30,000",
+        "date": "2025-09-15",
+        "description": "The Rural Nexus Gaming Tournament is an annual event that celebrates the skills and sportsmanship of amateur gamers through a variety of competitive games.",
+        "duration": "3 days",
+        "last_updated": "2025-09-15",
+        "name": "Rural Nexus Gaming Tournament",
+        "number_of_participants": "50",
+        "organizer": "GammWell",
+        "type": "sporting"
+      }
+    ],
+    "TMP_MISCELLANEOUS_UPDATES": [],
+    "PERSON_UPDATES": [
+      {
+        "entity_id": "PERSON-1",
+        "date_of_birth": "1988-05-17",
+        "description": "Elena Voss, an enthusiastic and dynamic coordinator, is driven by a lifelong passion for gaming and community building.",
+        "education": "B.A. in Event Management",
+        "eye_color": "blue",
+        "gender": "female",
+        "hair_color": "brown",
+        "height": "5'7\"",
+        "last_updated": "2025-09-15",
+        "marital_status": "Single",
+        "name": "Elena Voss",
+        "nationality": "Valeran",
+        "political_affiliation": "Independent",
+        "profession": "Event Coordinator",
+        "type": "None",
+        "weight": "135 lbs"
+      },
+      {
+        "entity_id": "PERSON-2",
+        "date_of_birth": "1990-03-22",
+        "description": "Marcus Reed, an insightful gaming journalist, has dedicated his career to exploring the cultural impacts of esports.",
+        "education": "M.A. in Journalism",
+        "eye_color": "green",
+        "gender": "male",
+        "hair_color": "dark blonde",
+        "height": "6'0\"",
+        "last_updated": "2025-09-15",
+        "marital_status": "Married",
+        "name": "Marcus Reed",
+        "nationality": "Valeran",
+        "political_affiliation": "Independent",
+        "profession": "Gaming Journalist",
+        "type": "None",
+        "weight": "170 lbs"
+      },
+      {
+        "entity_id": "PERSON-3",
+        "date_of_birth": "1978-09-10",
+        "description": "Alex Turner, known for his strategic prowess and mentorship, is dedicated to nurturing esports talent and fostering teamwork.",
+        "education": "B.Sc. in Sports Psychology",
+        "eye_color": "brown",
+        "gender": "male",
+        "hair_color": "gray",
+        "height": "6'2\"",
+        "last_updated": "2025-09-15",
+        "marital_status": "Divorced",
+        "name": "Alex Turner",
+        "nationality": "Valeran",
+        "political_affiliation": "Non-affiliated",
+        "profession": "Esports Coach",
+        "type": "None",
+        "weight": "185 lbs"
+      },
+      {
+        "entity_id": "PERSON-4",
+        "date_of_birth": "2004-07-05",
+        "description": "Jamie Lee, a spirited and adaptable individual, thrives in the ever-evolving world of competitive esports competition.",
+        "education": "High School Student",
+        "eye_color": "hazel",
+        "gender": "non-binary",
+        "hair_color": "black",
+        "height": "5'6\"",
+        "last_updated": "2025-09-15",
+        "marital_status": "Single",
+        "name": "Jamie Lee",
+        "nationality": "Valeran",
+        "political_affiliation": "Non-affiliated",
+        "profession": "Student and Esports Player",
+        "type": "None",
+        "weight": "130 lbs"
+      }
+    ],
+    "ORGANIZATION_UPDATES": [
+      {
+        "entity_id": "ORGANIZATION-1",
+        "last_updated": "2025-09-15",
+        "annual_revenue": "$50,000",
+        "industry": "Community Empowerment and Esports",
+        "mission_statement": "To provide a platform for local gamers to showcase their talents and connect with the broader esports community.",
+        "name": "GammWell",
+        "number_of_employees": "8",
+        "type": "non-profit"
+      },
+      {
+        "entity_id": "ORGANIZATION-2",
+        "annual_revenue": "$3 million",
+        "founded": "2024",
+        "headquarters": "Gamville",
+        "industry": "Professional Esports",
+        "last_updated": "2025-09-15",
+        "mission_statement": "To be at the forefront of the esports world by identifying and nurturing top strategic and skilled players.",
+        "name": "BlazeChiefs",
+        "number_of_employees": "20",
+        "type": "company"
+      },
+      {
+        "entity_id": "ORGANIZATION-3",
+        "annual_revenue": "$1.2 million",
+        "founded": "2018",
+        "headquarters": "Townsville",
+        "industry": "Caf\u00e9 and Gaming Hub",
+        "last_updated": "2025-09-15",
+        "mission_statement": "To create a welcoming environment for gamers and non-gamers alike with innovative menu offerings and community events.",
+        "name": "Pixel Cafe",
+        "number_of_employees": "15",
+        "type": "company"
+      }
+    ],
+    "LOCATION_UPDATES": [],
+    "PRODUCT_UPDATES": [
+      {
+        "entity_id": "PRODUCT-1",
+        "created_at": "0",
+        "description": "StarCraft II is a strategic real-time multiplayer game that has captivated esports enthusiasts worldwide with its intricate gameplay and competitive scene.",
+        "entity_class": "product",
+        "history": null,
+        "last_updated": "2025-09-15",
+        "manufacturer": "Blizzard Entertainment Corp",
+        "name": "StarCraft II",
+        "price": "$39.99",
+        "release_date": "2010-07-27",
+        "type": "software",
+        "warranty": "14-day money-back guarantee",
+        "weight": "N/A"
+      },
+      {
+        "entity_id": "PRODUCT-2",
+        "created_at": "0",
+        "description": "Counter-Strike: Global Offensive, an iconic first-person shooter, is famed for its intense multiplayer battles and extensive modding community.",
+        "entity_class": "product",
+        "history": null,
+        "last_updated": "2025-09-15",
+        "manufacturer": "Valve Corp",
+        "name": "Counter-Strike: Global Offensive",
+        "price": "$14.99",
+        "release_date": "2012-08-21",
+        "type": "software",
+        "warranty": "30-day return policy",
+        "weight": "N/A"
+      },
+      {
+        "entity_id": "PRODUCT-3",
+        "created_at": "0",
+        "description": "League of Legends, a trailblazing multiplayer online battle arena game, consistently draws millions of players into its vividly varied character-driven gameplay.",
+        "entity_class": "product",
+        "history": null,
+        "last_updated": "2025-09-15",
+        "manufacturer": "Riot Games",
+        "name": "League of Legends",
+        "price": "Free-to-play",
+        "release_date": "2009-10-27",
+        "type": "software",
+        "warranty": "Restricted to account-based terms",
+        "weight": "N/A"
+      }
+    ],
+    "ART_UPDATES": [],
+    "BUILDING_UPDATES": [
+      {
+        "entity_id": "BUILDING-1",
+        "description": "Solace Community Center, a cornerstone of cultural and social gatherings, has been serving the town's residents for nearly three decades.",
+        "last_updated": "2025-09-15",
+        "name": "Solace Community Center",
+        "type": "public"
+      }
+    ],
+    "EVENT_UPDATES": [
+      {
+        "entity_id": "EVENT-1",
+        "budget": "$30,000",
+        "date": "2025-09-15",
+        "description": "The Rural Nexus Gaming Tournament is an annual event that celebrates the skills and sportsmanship of amateur gamers through a variety of competitive games.",
+        "duration": "3 days",
+        "last_updated": "2025-09-15",
+        "name": "Rural Nexus Gaming Tournament",
+        "number_of_participants": "50",
+        "organizer": "GammWell",
+        "type": "sporting"
+      }
+    ],
+    "MISCELLANEOUS_UPDATES": [],
+    "NUMBER_SUMMARIES": 4
+  },
+  "critiques": [
+    {
+      "critique": "<results>\n<thought_process>\n[This includes the thought process for all summaries.]\n</thought_process>\n\n<summaries>\n<summary>\n<text>[Your first summary text here]</text>\n<date>[Date for the first summary]</date>\n</summary>\n\n<summary>\n<text>[Your second summary text here]</text>\n<date>[Date for the second summary]</date>\n</summary>\n\n[... continue for all summaries ...]\n</summaries>\n</results>\nEnsure that special characters within the XML nodes (like \"&\") are properly escaped and encoded in UTF-8 to ensure the output can be parsed automatically. For example, instead of \"Q&A\" write \"Q&amp;A\".",
+      "response": "```xml\n<results>\n  <thought_process>\n    To generate plausible future news summaries, we analyze the current narrative surrounding the events that occurred on September 15, 2025. We know from the history that tryouts with {BlazeChiefs|ORGANIZATION-2} are likely happening in October 2025, suggesting a development post-rural tournament. Additionally, there are ongoing efforts by {GammWell|ORGANIZATION-1} to foster local esports through educational programs and events. The summaries cover various aspects including player development, community engagement, personal reflections, and business involvement within this fictional world.\n\n    1. **First Summary**: Focuses on the success of players from the tournament in tryouts, blending triumph with further aspiration.\n    2. **Second Summary**: Explores {GammWell's|ORGANIZATION-1} initiatives in collaborative education efforts to engage the next generation in esports.\n    3. **Third Summary**: Highlights the community role of {Pixel Cafe|ORGANIZATION-3} in enhancing local esports involvement through continued events.\n    4. **Fourth Summary**: Presents a personal narrative from a participant reflecting on their experiences and challenges faced in transitioning to a professional arena.\n\n    The summaries present a mix of positive growth and challenges, maintaining a diverse and plausible extension of the established story.\n  </thought_process>\n\n  <summaries>\n    <summary>\n      <text>\n        Several standout players, including &amp;{Jamie Lee|PERSON-4}, successfully passed the tryouts hosted by &amp;{BlazeChiefs|ORGANIZATION-2}, gaining entry to a week-long training camp with the team.\n      </text>\n      <date>2025-10-20</date>\n    </summary>\n\n    <summary>\n      <text>\n        &amp;{GammWell|ORGANIZATION-1} launched its first esports workshop in collaboration with local schools, initiating a pilot program to educate and train young gamers.\n      </text>\n      <date>2025-11-05</date>\n    </summary>\n\n    <summary>\n      <text>\n        &amp;{Pixel Cafe|ORGANIZATION-3} hosted a mobile gaming day, drawing increased community participation and sponsoring local esports players for the upcoming tournament.\n      </text>\n      <date>2025-11-12</date>\n    </summary>\n\n    <summary>\n      <text>\n        &amp;{Jamie Lee|PERSON-4} shared mixed emotions about the intense competition at the tryouts, citing both growth and pressure as they continue to pursue professional gaming.\n      </text>\n      <date>2025-10-25</date>\n    </summary>\n  </summaries>\n</results>\n```"
+    },
+    {
+      "critique": "<results>\n<thought_process>\n[This includes the thought process for all summaries.]\n</thought_process>\n\n<summaries>\n<summary>\n<text>[Your first summary text here]</text>\n<date>[Date for the first summary]</date>\n</summary>\n\n<summary>\n<text>[Your second summary text here]</text>\n<date>[Date for the second summary]</date>\n</summary>\n\n[... continue for all summaries ...]\n</summaries>\n</results>\nEnsure that special characters within the XML nodes (like \"&\") are properly escaped and encoded in UTF-8 to ensure the output can be parsed automatically. For example, instead of \"Q&A\" write \"Q&amp;A\".",
+      "response": "```xml\n<results>\n  <thought_process>\n    To craft a series of future news summaries aligned with the existing narrative, a detailed analysis of the current story elements and setting is necessary. The rural gaming tournament has established a foundation for future events related to esports, community initiatives, and individual development. Given that tryouts with {BlazeChiefs|ORGANIZATION-2} are anticipated soon after the tournament on September 15, 2025, we know a series of specific developments will follow. Additionally, {GammWell's|ORGANIZATION-1} plans to expand their educational outreach through collaborations with local schools suggest ongoing community engagement events. Each of these several elements will guide the creation of diverse summaries that incorporate various aspects, such as player success, educational growth, community involvement, and personal reflection.\n\n    Summaries will address:\n    1. **Player Development**: Highlighting player progress post-tryouts.\n    2. **Educational Initiatives**: Detailing {GammWell's|ORGANIZATION-1} efforts in educational collaborations.\n    3. **Community Engagement**: Examining {Pixel Cafe|ORGANIZATION-3}'s role in supporting local esports.\n    4. **Personal Journeys**: Reflecting on individual experiences post-event.\n\n    The summaries will utilize proper XML character encoding to ensure compatibility and readability in automated parsing systems.\n  </thought_process>\n\n  <summaries>\n    <summary>\n      <text>\n        Five participants who advanced from the &amp;{BlazeChiefs|ORGANIZATION-2} tryouts will participate in an intensive training boot camp, with {Elena Voss|PERSON-1} overseeing the specialized sessions.\n      </text>\n      <date>2025-10-25</date>\n    </summary>\n\n    <summary>\n      <text>\n        In its continued mission to grow the local esports scene, &amp;{GammWell|ORGANIZATION-1} announced its partnership with Valeran High School to develop a robust esports curriculum.\n      </text>\n      <date>2025-11-10</date>\n    </summary>\n\n    <summary>\n      <text>\n        &amp;{Pixel Cafe|ORGANIZATION-3} hosted an esports-themed dinner night to celebrate local talent from the last tournament, emphasizing their pivotal role in community engagement.\n      </text>\n      <date>2025-11-19</date>\n    </summary>\n\n    <summary>\n      <text>\n        &amp;{Jamie Lee|PERSON-4} shared their experience of transitioning from amateur to professional esports, detailing both the challenges and milestones achieved since the tournament.\n      </text>\n      <date>2025-10-30</date>\n    </summary>\n  </summaries>\n</results>\n```"
+    },
+    {
+      "critique": "<results>\n<thought_process>\n[This includes the thought process for all summaries.]\n</thought_process>\n\n<summaries>\n<summary>\n<text>[Your first summary text here]</text>\n<date>[Date for the first summary]</date>\n</summary>\n\n<summary>\n<text>[Your second summary text here]</text>\n<date>[Date for the second summary]</date>\n</summary>\n\n[... continue for all summaries ...]\n</summaries>\n</results>\nEnsure that special characters within the XML nodes (like \"&\") are properly escaped and encoded in UTF-8 to ensure the output can be parsed automatically. For example, instead of \"Q&A\" write \"Q&amp;A\".",
+      "response": "```xml\n<results>\n  <thought_process>\n    Given the existing narrative of the {Rural Nexus Gaming Tournament} and the upcoming tryouts and initiatives, the task is to generate plausible fictional news summaries extending the current storyline. We are aware that the story features {BlazeChiefs|ORGANIZATION-2}'s tryouts following the tournament, as well as {GammWell|ORGANIZATION-1}'s educational collaborations. {Pixel Cafe|ORGANIZATION-3}'s involvement in community events and personal reflections from participants like {Jamie Lee|PERSON-4} are also notable components.\n\n    Steps include:\n    1. Identifying key upcoming developments or milestones based on the current narrative, such as tryouts, educational launches, or community events.\n    2. Diversifying the summaries to include different entities and perspectives, such as organizations, businesses, and individuals.\n    3. Exploring a balance of positive, neutral, and challenging developments to capture a realistic array of potential outcomes.\n    4. Ensuring proper encoding of special XML characters for compatibility.\n\n    The planned events span October and November 2025, focusing on pivotal changes and enhancements in the esports realm and community impact.\n  </thought_process>\n\n  <summaries>\n    <summary>\n      <text>\n        Following the tryouts, two participants from {BlazeChiefs|ORGANIZATION-2} were selected for elite training, highlighting {Alex Turner|PERSON-3}'s successful identification of exceptional talent.\n      </text>\n      <date>2025-10-27</date>\n    </summary>\n\n    <summary>\n      <text>\n        &amp;{GammWell|ORGANIZATION-1} and Valeran High School launched an esports learning module, hoping to cultivate strategic thinking and teamwork among students.\n      </text>\n      <date>2025-11-15</date>\n    </summary>\n\n    <summary>\n      <text>\n        In a vibrant celebration of local gaming culture, &amp;{Pixel Cafe|ORGANIZATION-3} announced its plans to host an annual esports festival, attracting sponsors and players statewide.\n      </text>\n      <date>2025-12-05</date>\n    </summary>\n\n    <summary>\n      <text>\n        Reflecting on the game-changing experience, &amp;{Jamie Lee|PERSON-4} praised the tournament's influence on their skills and the unparalleled support from the local community.\n      </text>\n      <date>2025-10-28</date>\n    </summary>\n  </summaries>\n</results>\n```"
+    },
+    {
+      "critique": "<results>\n<thought_process>\n[This includes the thought process for all summaries.]\n</thought_process>\n\n<summaries>\n<summary>\n<text>[Your first summary text here]</text>\n<date>[Date for the first summary]</date>\n</summary>\n\n<summary>\n<text>[Your second summary text here]</text>\n<date>[Date for the second summary]</date>\n</summary>\n\n[... continue for all summaries ...]\n</summaries>\n</results>\nEnsure that special characters within the XML nodes (like \"&\") are properly escaped and encoded in UTF-8 to ensure the output can be parsed automatically. For example, instead of \"Q&A\" write \"Q&amp;A\".",
+      "response": "```xml\n<results>\n  <thought_process>\n    The existing narrative focuses on the {Rural Nexus Gaming Tournament}, including the subsequent tryouts with {BlazeChiefs|ORGANIZATION-2}, and educational collaborations by {GammWell|ORGANIZATION-1}. Each future event should logically extend these developments, ensuring realistic and diverse potential outcomes. Here, we aim to craft summaries that explore player advancements, educational initiatives, community engagement, and personal achievements or reflections. The summaries will balance positive and challenging aspects, engaging various named entities to maintain a rich and varied continuation.\n\n    The development dates will primarily surround early to mid-October and November 2025, based on the timeline indicated by the original history. XML characters that could interfere with parsing are properly encoded.\n\n    Summary structure involves:\n    1. Highlighting player performance and opportunities post-tryouts.\n    2. Emphasizing educational and community initiatives.\n    3. Presenting personal reflections and career progress.\n  </thought_process>\n\n  <summaries>\n    <summary>\n      <text>\n        Two participants who excelled in the {BlazeChiefs|ORGANIZATION-2} tryouts were immediately invited to join the team\u2019s next international competition, showcasing {Elena Voss|PERSON-1}'s efficient scouting.\n      </text>\n      <date>2025-10-25</date>\n    </summary>\n\n    <summary>\n      <text>\n        &amp;{GammWell|ORGANIZATION-1} and Valeran Library collaborated on a gaming literacy program, fostering a new wave of local esports awareness among teenagers.\n      </text>\n      <date>2025-11-01</date>\n    </summary>\n\n    <summary>\n      <text>\n        Celebrating esports growth, &amp;{Pixel Cafe|ORGANIZATION-3} introduced a \"Champ's Choice\" menu inspired by popular esports characters, successfully boosting local customer engagement.\n      </text>\n      <date>2025-11-08</date>\n    </summary>\n\n    <summary>\n      <text>\n        Reflecting on their journey through esports, &amp;{Jamie Lee|PERSON-4} expressed gratitude for the structured training from {BlazeChiefs|ORGANIZATION-2} that helped refine their gameplay strategy and team collaboration skills.\n      </text>\n      <date>2025-10-30</date>\n    </summary>\n  </summaries>\n</results>\n```"
+    },
+    {
+      "critique": "<results>\n<thought_process>\n[This includes the thought process for all summaries.]\n</thought_process>\n\n<summaries>\n<summary>\n<text>[Your first summary text here]</text>\n<date>[Date for the first summary]</date>\n</summary>\n\n<summary>\n<text>[Your second summary text here]</text>\n<date>[Date for the second summary]</date>\n</summary>\n\n[... continue for all summaries ...]\n</summaries>\n</results>\nEnsure that special characters within the XML nodes (like \"&\") are properly escaped and encoded in UTF-8 to ensure the output can be parsed automatically. For example, instead of \"Q&A\" write \"Q&amp;A\".",
+      "response": "```xml\n<results>\n  <thought_process>\n    To create plausible future summaries that follow logically from the events already described, we focus on developments involving tryouts, educational initiatives, community events, and individual experiences in esports. The task is to generate four fictional news summaries that align with the given organizations, people, and products from the fictional world, following the narratives set by the tournament in September 2025 and related activities.\n\n    For each summary:\n    - **First Summary**: We focus on the successful outcomes of the {BlazeChiefs|ORGANIZATION-2} tryouts and upcoming competition involvement.\n    - **Second Summary**: We explore {GammWell|ORGANIZATION-1}'s educational collaborations to promote esports literacy.\n    - **Third Summary**: We highlight {Pixel Cafe|ORGANIZATION-3}'s ongoing involvement and innovation in esports-related business initiatives.\n    - **Fourth Summary**: We consider personal reflections from {Jamie Lee|PERSON-4}, showcasing their growth since the tournament.\n\n    Dates are carefully chosen to reflect a timeline shortly after the tournament in early October and November 2025.\n  </thought_process>\n\n  <summaries>\n    <summary>\n      <text>\n        Following their successful tryouts, two aspiring gamers from {BlazeChiefs|ORGANIZATION-2} will join the team for its upcoming international competition, under the mentorship of {Alex Turner|PERSON-3}.\n      </text>\n      <date>2025-10-22</date>\n    </summary>\n\n    <summary>\n      <text>\n        &amp;{GammWell|ORGANIZATION-1} and a local tech startup launched an online esports analytics course, providing students with cutting-edge skills in gaming data analysis.\n      </text>\n      <date>2025-11-12</date>\n    </summary>\n\n    <summary>\n      <text>\n        In a bid to further support the gaming community, &amp;{Pixel Cafe|ORGANIZATION-3} initiated a \"Local Legends Series\" featuring local gamers who have made significant contributions to esports.\n      </text>\n      <date>2025-11-20</date>\n    </summary>\n\n    <summary>\n      <text>\n        Reflecting on their journey, &amp;{Jamie Lee|PERSON-4} acknowledged the critical role that local tournaments like the Rural Nexus played in building their confidence to compete at a national level.\n      </text>\n      <date>2025-10-28</date>\n    </summary>\n  </summaries>\n</results>\n```"
+    }
+  ]
+}

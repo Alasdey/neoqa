@@ -1,0 +1,464 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "microsoft/phi-4-reasoning-plus",
+    "temperature": 0.0,
+    "max-tokens": 4096
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "To solve this task, I will go through the provided outline and check for explicit mentions of each named entity from the list. I will then format the results according to the specified structure.\n\n### Analysis of the Outline:\n\n1. **Locations:**\n   - **Westfield**: Mentioned in the context of the event and the fairgrounds.\n   - **GreenLeaf Caf\u00e9**: Mentioned as a location near the fairgrounds and providing refreshments.\n   - **Vistara Stadium**: Mentioned as providing pavilions for spectators.\n\n2. **Persons:**\n   - **Mia Thompson**: Mentioned multiple times, expressing gratitude and sharing experiences.\n   - **Alex Rivers**: Mentioned as a guest speaker at the opening ceremony.\n\n3. **Organizations:**\n   - **National Youth Athletics Federation**: Mentioned in the context of organizing prize distribution.\n   - **GreenLeaf Caf\u00e9**: Already identified as a location.\n   - **Sentinel Sports Supply**: Mentioned in organizing a warm-up session.\n   - **Westfield High School marching band**: Mentioned performing at the warm-up session.\n   - **HydroBoost Beverages Inc.**: Mentioned as a sponsor and for their booth activities.\n\n4. **Products:**\n   - **HydroBoost**: Mentioned as the energy drink sponsored by HydroBoost Beverages Inc.\n\n5. **Buildings:**\n   - **Vistara Stadium**: Already identified as a location.\n\n6. **Events:**\n   - **Westfield Community Fun Fair**: Mentioned as the event where the relay race is held.\n   - **Relay Race Challenge**: Mentioned as the specific event within the fun fair.\n\n### Identified Entities:\n\n- **Location: Westfield**\n  - `<location><id>LOCATION-1</id><name>Westfield</name></location>`\n\n- **Person: Mia Thompson**\n  - `<person><id>PERSON-1</id><name>Mia Thompson</name></person>`\n\n- **Person: Alex Rivers**\n  - `<person><id>PERSON-2</id><name>Alex Rivers</name></person>`\n\n- **Organization: National Youth Athletics Federation**\n  - `<organization><id>ORGANIZATION-1</id><name>National Youth Athletics Federation</name></organization>`\n\n- **Organization: GreenLeaf Caf\u00e9**\n  - `<organization><id>ORGANIZATION-2</id><name>GreenLeaf Caf\u00e9</name></organization>`\n\n- **Organization: Sentinel Sports Supply**\n  - `<organization><id>ORGANIZATION-3</id><name>Sentinel Sports Supply</name></organization>`\n\n- **Organization: Westfield High School marching band**\n  - `<organization><id>ORGANIZATION-4</id><name>Westfield High School marching band</name></organization>`\n\n- **Organization: HydroBoost Beverages Inc.**\n  - `<organization><id>ORGANIZATION-5</id><name>HydroBoost Beverages Inc.</name></organization>`\n\n- **Product: HydroBoost**\n  - `<product><id>PRODUCT-1</id><name>HydroBoost</name></product>`\n\n- **Building: Vistara Stadium**\n  - `<building><id>BUILDING-1</id><name>Vistara Stadium</name></building>`\n\n- **Event: Westfield Community Fun Fair**\n  - `<event><id>EVENT-1</id><name>Westfield Community Fun Fair</name></event>`\n\n- **Event: Relay Race Challenge**\n  - `<event><id>EVENT-2</id><name>Relay Race Challenge</name></event>`\n\n### Final Output:\n\n```xml\n<results>\n<entities>\n<location><id>LOCATION-1</id><name>Westfield</name></location>\n<person><id>PERSON-1</id><name>Mia Thompson</name></person>\n<person><id>PERSON-2</id><name>Alex Rivers</name></person>\n<organization><id>ORGANIZATION-1</id><name>National Youth Athletics Federation</name></organization>\n<organization><id>ORGANIZATION-2</id><name>GreenLeaf Caf\u00e9</name></organization>\n<organization><id>ORGANIZATION-3</id><name>Sentinel Sports Supply</name></organization>\n<organization><id>ORGANIZATION-4</id><name>Westfield High School marching band</name></organization>\n<organization><id>ORGANIZATION-5</id><name>HydroBoost Beverages Inc.</name></organization>\n<product><id>PRODUCT-1</id><name>HydroBoost</name></product>\n<building><id>BUILDING-1</id><name>Vistara Stadium</name></building>\n<event><id>EVENT-1</id><name>Westfield Community Fun Fair</name></event>\n<event><id>EVENT-2</id><name>Relay Race Challenge</name></event>\n</entities>\n</results>\n```"
+  },
+  "response": "To solve this task, I will go through the provided outline and check for explicit mentions of each named entity from the list. I will then format the results according to the specified structure.\n\n### Analysis of the Outline:\n\n1. **Locations:**\n   - **Westfield**: Mentioned in the context of the event and the fairgrounds.\n   - **GreenLeaf Caf\u00e9**: Mentioned as a location near the fairgrounds and providing refreshments.\n   - **Vistara Stadium**: Mentioned as providing pavilions for spectators.\n\n2. **Persons:**\n   - **Mia Thompson**: Mentioned multiple times, expressing gratitude and sharing experiences.\n   - **Alex Rivers**: Mentioned as a guest speaker at the opening ceremony.\n\n3. **Organizations:**\n   - **National Youth Athletics Federation**: Mentioned in the context of organizing prize distribution.\n   - **GreenLeaf Caf\u00e9**: Already identified as a location.\n   - **Sentinel Sports Supply**: Mentioned in organizing a warm-up session.\n   - **Westfield High School marching band**: Mentioned performing at the warm-up session.\n   - **HydroBoost Beverages Inc.**: Mentioned as a sponsor and for their booth activities.\n\n4. **Products:**\n   - **HydroBoost**: Mentioned as the energy drink sponsored by HydroBoost Beverages Inc.\n\n5. **Buildings:**\n   - **Vistara Stadium**: Already identified as a location.\n\n6. **Events:**\n   - **Westfield Community Fun Fair**: Mentioned as the event where the relay race is held.\n   - **Relay Race Challenge**: Mentioned as the specific event within the fun fair.\n\n### Identified Entities:\n\n- **Location: Westfield**\n  - `<location><id>LOCATION-1</id><name>Westfield</name></location>`\n\n- **Person: Mia Thompson**\n  - `<person><id>PERSON-1</id><name>Mia Thompson</name></person>`\n\n- **Person: Alex Rivers**\n  - `<person><id>PERSON-2</id><name>Alex Rivers</name></person>`\n\n- **Organization: National Youth Athletics Federation**\n  - `<organization><id>ORGANIZATION-1</id><name>National Youth Athletics Federation</name></organization>`\n\n- **Organization: GreenLeaf Caf\u00e9**\n  - `<organization><id>ORGANIZATION-2</id><name>GreenLeaf Caf\u00e9</name></organization>`\n\n- **Organization: Sentinel Sports Supply**\n  - `<organization><id>ORGANIZATION-3</id><name>Sentinel Sports Supply</name></organization>`\n\n- **Organization: Westfield High School marching band**\n  - `<organization><id>ORGANIZATION-4</id><name>Westfield High School marching band</name></organization>`\n\n- **Organization: HydroBoost Beverages Inc.**\n  - `<organization><id>ORGANIZATION-5</id><name>HydroBoost Beverages Inc.</name></organization>`\n\n- **Product: HydroBoost**\n  - `<product><id>PRODUCT-1</id><name>HydroBoost</name></product>`\n\n- **Building: Vistara Stadium**\n  - `<building><id>BUILDING-1</id><name>Vistara Stadium</name></building>`\n\n- **Event: Westfield Community Fun Fair**\n  - `<event><id>EVENT-1</id><name>Westfield Community Fun Fair</name></event>`\n\n- **Event: Relay Race Challenge**\n  - `<event><id>EVENT-2</id><name>Relay Race Challenge</name></event>`\n\n### Final Output:\n\n```xml\n<results>\n<entities>\n<location><id>LOCATION-1</id><name>Westfield</name></location>\n<person><id>PERSON-1</id><name>Mia Thompson</name></person>\n<person><id>PERSON-2</id><name>Alex Rivers</name></person>\n<organization><id>ORGANIZATION-1</id><name>National Youth Athletics Federation</name></organization>\n<organization><id>ORGANIZATION-2</id><name>GreenLeaf Caf\u00e9</name></organization>\n<organization><id>ORGANIZATION-3</id><name>Sentinel Sports Supply</name></organization>\n<organization><id>ORGANIZATION-4</id><name>Westfield High School marching band</name></organization>\n<organization><id>ORGANIZATION-5</id><name>HydroBoost Beverages Inc.</name></organization>\n<product><id>PRODUCT-1</id><name>HydroBoost</name></product>\n<building><id>BUILDING-1</id><name>Vistara Stadium</name></building>\n<event><id>EVENT-1</id><name>Westfield Community Fun Fair</name></event>\n<event><id>EVENT-2</id><name>Relay Race Challenge</name></event>\n</entities>\n</results>\n```",
+  "instructions": "You are an AI assistant tasked with identifying which of the provided entities are explicitly named within the provided outline. Follow these instructions carefully:\n\n1. The date for this fictional event outline is:\n<date>{{DATE}}</date>\n\n2. Here is the outline you need to analyze:\n<outline>\n{{OUTLINE}}\n</outline>\n\n3. Here is the list of known (fictional) named entities:\n<entities>\n{{LOCATIONS_XML}}\n{{PERSONS_XML}}\n{{ORGANIZATIONS_XML}}\n{{PRODUCTS_XML}}\n{{ARTS_XML}}\n{{EVENTS_XML}}\n{{BUILDINGS_XML}}\n{{MISCELLANEOUSS_XML}}\n\n{{ADJUSTED_LOCATIONS_XML}}\n{{ADJUSTED_PERSONS_XML}}\n{{ADJUSTED_ORGANIZATIONS_XML}}\n{{ADJUSTED_PRODUCTS_XML}}\n{{ADJUSTED_ARTS_XML}}\n{{ADJUSTED_BUILDINGS_XML}}\n{{ADJUSTED_EVENTS_XML}}\n{{ADJUSTED_MISCELLANEOUSS_XML}}\n</entities>\n\n4. Your task is to go through all of the named entities in the provided list. For each named entity, check if it is explicitly referred to by name in the outline. If a named entity is explicitly mentioned by name, include it in your results.\n\n5. For each entity you identify, list them using the following format:\n<[entity_type]><id>[id of the entity]</id><name>[full name of the entity]</name></[entity_type]>\n\n6. Present your final output within a single <results> root node, structured as follows:\n\n<results>\n<entities>\n[List all identified entities here as described in step 5]\n</entities>\n</results>\n\n7. Double-check your work: For each entity that you have identified, make sure to find the sentence within the outline that explicitly refers to this identified entity by name. If you cannot find that the entity is mentioned explicitly by name in the outline, do not include it in your results.\n\n8. You can use a <scratchpad> for your thinking process. Do not include any XML tags within your scratchpad.\n\n9. Make sure that you have not missed any named entity from the outline that was also provided to you in the list of named entities.\n\nRemember, only include entities that are explicitly mentioned by name in the outline. Do not infer or assume the presence of entities that are not directly named.",
+  "text_prompt": "You are an AI assistant tasked with identifying which of the provided entities are explicitly named within the provided outline. Follow these instructions carefully:\n\n1. The date for this fictional event outline is:\n<date>2025-07-28</date>\n\n2. Here is the outline you need to analyze:\n<outline>\nOn July 28, 2025, organizers of the Westfield Community Fun Fair announced the introduction of a newly designed relay race event designed to engage local families and sporting enthusiasts at various booths, including one prominently featuring interactive activities.\nThe relay race was set up across a 1-mile course that looped through the fairgrounds, with each section themed to different sports, such as sprinting, jumping, and throwing.\nThe Relay Race Challenge featured teams composed of local families competing in a series of fun and skill-based sections, distributed across different fairgrounds including areas near GreenLeaf Caf\u00e9.\nEach team consisted of four members, with at least one member from each family, ensuring a mix of ages and abilities to promote inclusivity and fun.\nHydroBoost Beverages Inc. extended successful athlete engagement by sponsoring the Finishing Sprints with their signature energy drink infused with natural ingredients, creating a vibrant, eye-catching moment for participants.\nThe HydroBoost booth was decorated with bright banners and interactive displays, including a hydration station where participants could learn about the benefits of staying hydrated.\nTo accommodate spectators, Vistara Stadium opened its pavilions at no additional cost to provide shaded viewing areas for the relay event, supported by refreshments supplied by GreenLeaf Caf\u00e9.\nThe pavilions were equipped with large screens broadcasting live footage of the race, allowing spectators to follow the action from any vantage point.\nSentinel Sports Supply organized a collaborative warm-up session before the relay race, showcased by Westfield High School marching band performing energetic tunes to boost atmosphere and participant enthusiasm.\nThe warm-up session included dynamic stretches and light jogging, led by local fitness trainers, to prepare participants for the race.\nA special guest speaker, renowned national sports personality Alex Rivers, highlighted at the opening ceremony about the importance of balance between physical fitness and community involvement.\nAlex Rivers shared personal anecdotes about his journey in sports, emphasizing the role of community support in achieving athletic success.\nAlex Rivers stressed the crucial role of local organizations in nurturing grassroots sports talent during his speech at the event's opening ceremony.\nHe praised the National Youth Athletics Federation for their efforts in providing young athletes with opportunities to shine on a larger stage.\nAfter the race, Mia Thompson expressed her gratitude to HydroBoost for creating a supportive atmosphere that encouraged her to participate alongside community members, leaving a positive impact not just on the athletic scene, but also on personal connections within Westfield.\nMia Thompson mentioned that the interactive activities at the HydroBoost booth, such as the mini-obstacle course, were particularly enjoyable and helped her connect with other young athletes.\nHydroBoost sponsored a post-race celebration involving community dances and live music near their booth, inviting participants and spectators alike, which significantly increased their brand engagement among Westfield residents.\nThe celebration featured local bands and dance groups, creating a festive atmosphere that encouraged community bonding and enjoyment.\nThe event concluded with prize distribution organized by the National Youth Athletics Federation, awarding certificates and custom-designed HydroBoost merchandise to the top three relay team finishers, solidifying HydroBoost's enhanced local presence.\nThe certificates were engraved with the event's logo and the names of the winning teams, serving as a lasting memento of their achievement.\n</outline>\n\n3. Here is the list of known (fictional) named entities:\n<entities>\n<location><area>25 square miles</area><country>Rainfieldia</country><created_at>0</created_at><description>Westfield is a thriving small town known for its strong community spirit and diverse mix of young professionals and families.</description><elevation>350 feet</elevation><entity_class>location</entity_class><history><event>2025-07-22: Westfield is hosting the Youth Track and Field Championship at Vistara Stadium, attracting increased attention and footfall.</event></history><id>LOCATION-1</id><last_updated>2025-07-22</last_updated><name>Westfield</name><population>12,500</population><type>town</type></location>\n<person><created_at>0</created_at><date_of_birth>2009-03-15</date_of_birth><description>Mia Thompson is a dedicated and disciplined young athlete known for her enthusiasm and commitment to improving her sporting skills.</description><education>High school athlete with aspirations to compete on a national level</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>Female</gender><hair_color>brown</hair_color><height>5 feet 2 inches</height><history><event>2025-07-22: Mia Thompson, a young athlete, expressed appreciation for HydroBoost's commitment to natural ingredients and sustainable packaging.</event></history><id>PERSON-1</id><last_updated>2025-07-22</last_updated><marital_status>Single</marital_status><name>Mia Thompson</name><nationality>Rainfieldian</nationality><political_affiliation>None</political_affiliation><profession>Sprinter</profession><type>None</type><weight>120 pounds</weight></person>\n<organization><annual_revenue>$4 million</annual_revenue><created_at>0</created_at><description>The National Youth Athletics Federation is dedicated to promoting youth sports and providing opportunities for young athletes to excel.</description><entity_class>organization</entity_class><founded>1985</founded><headquarters>Rainfieldia City</headquarters><history><event>2025-07-22: The National Youth Athletics Federation has partnered with HydroBoost as the official sponsor for the Youth Track and Field Championship.</event></history><id>ORGANIZATION-1</id><industry>athletics</industry><last_updated>2025-07-22</last_updated><mission_statement>To nurture young athletic talent and foster a culture of healthy competition and sportsmanship.</mission_statement><name>National Youth Athletics Federation</name><number_of_employees>75</number_of_employees><type>non-profit</type></organization>\n<organization><annual_revenue>$1.2 million</annual_revenue><created_at>0</created_at><description>GreenLeaf Caf\u00e9 is a family-owned eatery in Westfield that focuses on providing healthy, organic meals to the community.</description><entity_class>organization</entity_class><founded>2010</founded><headquarters>Westfield</headquarters><history><event>2025-07-22: GreenLeaf Caf\u00e9 is preparing for increased footfall by introducing a special menu featuring healthy snacks and beverages for the event.</event></history><id>ORGANIZATION-2</id><industry>food services</industry><last_updated>2025-07-22</last_updated><mission_statement>Promoting wellness through nutritious, locally-sourced food.</mission_statement><name>GreenLeaf Caf\u00e9</name><number_of_employees>15</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>$5 million</annual_revenue><created_at>0</created_at><description>Sentinel Sports Supply is known for offering a wide range of sports equipment and apparel at competitive prices.</description><entity_class>organization</entity_class><founded>2002</founded><headquarters>Westfield</headquarters><history><event>2025-07-22: Sentinel Sports Supply is offering discounts on sports gear for attendees of the Youth Track and Field Championship.</event></history><id>ORGANIZATION-3</id><industry>retail</industry><last_updated>2025-07-22</last_updated><mission_statement>Providing athletes with high-quality gear to enhance their performance.</mission_statement><name>Sentinel Sports Supply</name><number_of_employees>50</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>$500,000</annual_revenue><created_at>0</created_at><description>The Westfield High School marching band is celebrated for its energetic performances and strong community following.</description><entity_class>organization</entity_class><founded>1953</founded><headquarters>Westfield High School</headquarters><history><event>2025-07-22: The Westfield High School marching band will perform at the opening ceremony of the Youth Track and Field Championship.</event></history><id>ORGANIZATION-4</id><industry>education</industry><last_updated>2025-07-22</last_updated><mission_statement>To provide a creative outlet and build teamwork through music and performance.</mission_statement><name>Westfield High School marching band</name><number_of_employees>25</number_of_employees><type>educational institution</type></organization>\n<product><created_at>0</created_at><description>HydroBoost is an energy drink known for its natural ingredients and commitment to sustainability.</description><entity_class>product</entity_class><history><event>2025-07-22: HydroBoost has become the official sponsor for the Youth Track and Field Championship, featuring its branding on event paraphernalia and engaging attendees with interactive activities.</event></history><id>PRODUCT-1</id><last_updated>2025-07-22</last_updated><manufacturer>HydroBoost Beverages Inc.</manufacturer><name>HydroBoost</name><price>$2.50 per can</price><release_date>2024-03-01</release_date><type>consumer good</type><warranty>None, as it is a consumable product</warranty><weight>12 oz per can</weight></product>\n\n\n<building><architect>Oliver Greenfield</architect><capacity>15,000 spectators</capacity><created_at>0</created_at><description>Vistara Stadium is renowned for its modern facilities and capacity to host large-scale sporting events.</description><entity_class>building</entity_class><floors>2 (main floor plus a level for seating)</floors><height>80 feet</height><history><event>2025-07-22: Vistara Stadium is hosting the Youth Track and Field Championship, with HydroBoost branding prominently displayed and facilities recently renovated to accommodate spectators.</event></history><id>BUILDING-1</id><last_updated>2025-07-22</last_updated><material>Concrete and steel</material><name>Vistara Stadium</name><type>public</type><year_built>2023</year_built></building>\n\n\n\n<person><id>PERSON-2</id><name>Alex Rivers</name><old_name>Alex Rivers</old_name></person>\n<organization><id>ORGANIZATION-5</id><name>HydroBoost Beverages Inc.</name><old_name>HydroBoost Beverages Inc.</old_name></organization>\n\n\n\n<event><id>EVENT-1</id><name>Westfield Community Fun Fair</name><old_name>Westfield Community Fun Fair</old_name></event>\n<event><id>EVENT-2</id><name>Relay Race Challenge</name><old_name>Relay Race Challenge</old_name></event>\n\n</entities>\n\n4. Your task is to go through all of the named entities in the provided list. For each named entity, check if it is explicitly referred to by name in the outline. If a named entity is explicitly mentioned by name, include it in your results.\n\n5. For each entity you identify, list them using the following format:\n<[entity_type]><id>[id of the entity]</id><name>[full name of the entity]</name></[entity_type]>\n\n6. Present your final output within a single <results> root node, structured as follows:\n\n<results>\n<entities>\n[List all identified entities here as described in step 5]\n</entities>\n</results>\n\n7. Double-check your work: For each entity that you have identified, make sure to find the sentence within the outline that explicitly refers to this identified entity by name. If you cannot find that the entity is mentioned explicitly by name in the outline, do not include it in your results.\n\n8. You can use a <scratchpad> for your thinking process. Do not include any XML tags within your scratchpad.\n\n9. Make sure that you have not missed any named entity from the outline that was also provided to you in the list of named entities.\n\nRemember, only include entities that are explicitly mentioned by name in the outline. Do not infer or assume the presence of entities that are not directly named.",
+  "system-prompt": null,
+  "values": {
+    "GENRE": "Sports",
+    "EVENT_SUMMARY": "Despite initial setup delays, HydroBoost's engaging booth activities resulted in high attendee engagement, boosting brand visibility and potential market share among young consumers.",
+    "EVENT_SUMMARY_FOR_NAME": "Despite initial setu",
+    "INIT_SUMMARY": "An emerging energy drink brand has secured a deal as the official sponsor of a national youth athletics championship, aiming to boost brand visibility among younger demographics.",
+    "KEYWORDS": "",
+    "CREATED_AT": 1,
+    "HISTORIES": [
+      "<event><date>2025-07-22</date><outline>{HydroBoost|PRODUCT-1}, an emerging energy drink brand, announced its partnership with the {National Youth Athletics Federation|ORGANIZATION-1} as the official sponsor for the upcoming Youth Track and Field Championship. The partnership deal will prominently feature {HydroBoost|PRODUCT-1}'s branding on all event paraphernalia, including athletes' uniforms, event banners, and promotional materials. {HydroBoost|PRODUCT-1}'s logo will be displayed in large, eye-catching fonts on the front of athletes' uniforms, ensuring maximum visibility during competitions. Event banners will be strategically placed around {Vistara Stadium|BUILDING-1}, with {HydroBoost|PRODUCT-1}'s branding prominently displayed at the entrance and main competition areas. At the press conference, {HydroBoost|PRODUCT-1}'s CEO, Liana Sharp, stated, \"This partnership allows us to connect with a dynamic and energetic youth audience, aligning perfectly with our brand's vision.\" Liana Sharp emphasized that {HydroBoost|PRODUCT-1} aims to inspire young athletes by promoting a lifestyle of health, energy, and determination. The {National Youth Athletics Federation|ORGANIZATION-1} officials highlighted the significance of the sponsorship, noting that it would enhance the visibility and experience of the event for young athletes. Officials mentioned that the sponsorship would provide additional funding for improved facilities and resources for the athletes. The event will take place from July 25, 2025, to July 27, 2025, at the {Vistara Stadium|BUILDING-1}, located in the fictional town of {Westfield|LOCATION-1}. {Vistara Stadium|BUILDING-1}, known for its state-of-the-art track and field facilities, has been recently renovated to accommodate the influx of spectators expected for the championship. Local businesses around {Vistara Stadium|BUILDING-1}, such as {GreenLeaf Caf\u00e9|ORGANIZATION-2} and {Sentinel Sports Supply|ORGANIZATION-3}, are preparing for increased footfall due to the event. {GreenLeaf Caf\u00e9|ORGANIZATION-2} plans to introduce a special menu featuring healthy snacks and beverages, while {Sentinel Sports Supply|ORGANIZATION-3} is offering discounts on sports gear for event attendees. {HydroBoost|PRODUCT-1} plans to have a booth at the event, offering free samples of their latest products and engaging attendees with challenges that promote physical activity. The booth will feature interactive games like a mini-obstacle course and a hydration quiz, with winners receiving {HydroBoost|PRODUCT-1} merchandise. Young athletes preparing for the championship have voiced excitement about {HydroBoost|PRODUCT-1}\u2019s focus on health and well-being, with several expressing interest in their products. One athlete, 16-year-old sprinter {Mia Thompson|PERSON-1}, mentioned that she appreciates {HydroBoost|PRODUCT-1}'s commitment to natural ingredients and sustainable packaging. The event itinerary includes opening ceremonies, multiple track and field competitions, and closing ceremonies, which will be attended by local sports enthusiasts and national sports personalities. The opening ceremony will feature a parade of athletes, a performance by the {Westfield High School marching band|ORGANIZATION-4}, and a speech by a renowned national athlete. Reactions from competing energy drink brands have been observed, as some have started to strategize on how to address the new competition presented by {HydroBoost|PRODUCT-1}'s sponsorship. Competing brands are reportedly considering launching targeted marketing campaigns and promotional offers to retain their market share among young consumers.</outline></event>"
+    ],
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "NEXT_IDS": {
+      "person": 3,
+      "organization": 6,
+      "location": 2,
+      "product": 2,
+      "art": 1,
+      "building": 2,
+      "event": 3,
+      "miscellaneous": 1
+    },
+    "PROVIDED_DATE": "2025-07-28",
+    "PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Mia Thompson",
+        "entity_class": "person",
+        "description": "Mia Thompson is a dedicated and disciplined young athlete known for her enthusiasm and commitment to improving her sporting skills.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Mia Thompson, a young athlete, expressed appreciation for HydroBoost's commitment to natural ingredients and sustainable packaging.",
+            "date": "2025-07-22"
+          }
+        ],
+        "date_of_birth": "2009-03-15",
+        "gender": "Female",
+        "profession": "Sprinter",
+        "nationality": "Rainfieldian",
+        "education": "High school athlete with aspirations to compete on a national level",
+        "height": "5 feet 2 inches",
+        "weight": "120 pounds",
+        "eye_color": "blue",
+        "hair_color": "brown",
+        "political_affiliation": "None",
+        "marital_status": "Single"
+      }
+    ],
+    "ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "National Youth Athletics Federation",
+        "entity_class": "organization",
+        "description": "The National Youth Athletics Federation is dedicated to promoting youth sports and providing opportunities for young athletes to excel.",
+        "type": "non-profit",
+        "created_at": 0,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The National Youth Athletics Federation has partnered with HydroBoost as the official sponsor for the Youth Track and Field Championship.",
+            "date": "2025-07-22"
+          }
+        ],
+        "founded": "1985",
+        "headquarters": "Rainfieldia City",
+        "industry": "athletics",
+        "mission_statement": "To nurture young athletic talent and foster a culture of healthy competition and sportsmanship.",
+        "number_of_employees": "75",
+        "annual_revenue": "$4 million"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "GreenLeaf Caf\u00e9",
+        "entity_class": "organization",
+        "description": "GreenLeaf Caf\u00e9 is a family-owned eatery in Westfield that focuses on providing healthy, organic meals to the community.",
+        "type": "company",
+        "created_at": 0,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "GreenLeaf Caf\u00e9 is preparing for increased footfall by introducing a special menu featuring healthy snacks and beverages for the event.",
+            "date": "2025-07-22"
+          }
+        ],
+        "founded": "2010",
+        "headquarters": "Westfield",
+        "industry": "food services",
+        "mission_statement": "Promoting wellness through nutritious, locally-sourced food.",
+        "number_of_employees": "15",
+        "annual_revenue": "$1.2 million"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Sentinel Sports Supply",
+        "entity_class": "organization",
+        "description": "Sentinel Sports Supply is known for offering a wide range of sports equipment and apparel at competitive prices.",
+        "type": "company",
+        "created_at": 0,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Sentinel Sports Supply is offering discounts on sports gear for attendees of the Youth Track and Field Championship.",
+            "date": "2025-07-22"
+          }
+        ],
+        "founded": "2002",
+        "headquarters": "Westfield",
+        "industry": "retail",
+        "mission_statement": "Providing athletes with high-quality gear to enhance their performance.",
+        "number_of_employees": "50",
+        "annual_revenue": "$5 million"
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "Westfield High School marching band",
+        "entity_class": "organization",
+        "description": "The Westfield High School marching band is celebrated for its energetic performances and strong community following.",
+        "type": "educational institution",
+        "created_at": 0,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Westfield High School marching band will perform at the opening ceremony of the Youth Track and Field Championship.",
+            "date": "2025-07-22"
+          }
+        ],
+        "founded": "1953",
+        "headquarters": "Westfield High School",
+        "industry": "education",
+        "mission_statement": "To provide a creative outlet and build teamwork through music and performance.",
+        "number_of_employees": "25",
+        "annual_revenue": "$500,000"
+      }
+    ],
+    "LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Westfield",
+        "entity_class": "location",
+        "description": "Westfield is a thriving small town known for its strong community spirit and diverse mix of young professionals and families.",
+        "type": "town",
+        "created_at": 0,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Westfield is hosting the Youth Track and Field Championship at Vistara Stadium, attracting increased attention and footfall.",
+            "date": "2025-07-22"
+          }
+        ],
+        "population": "12,500",
+        "area": "25 square miles",
+        "elevation": "350 feet",
+        "country": "Rainfieldia"
+      }
+    ],
+    "PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "HydroBoost",
+        "entity_class": "product",
+        "description": "HydroBoost is an energy drink known for its natural ingredients and commitment to sustainability.",
+        "type": "consumer good",
+        "created_at": 0,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "HydroBoost has become the official sponsor for the Youth Track and Field Championship, featuring its branding on event paraphernalia and engaging attendees with interactive activities.",
+            "date": "2025-07-22"
+          }
+        ],
+        "manufacturer": "HydroBoost Beverages Inc.",
+        "release_date": "2024-03-01",
+        "price": "$2.50 per can",
+        "weight": "12 oz per can",
+        "warranty": "None, as it is a consumable product"
+      }
+    ],
+    "ART": [],
+    "BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Vistara Stadium",
+        "entity_class": "building",
+        "description": "Vistara Stadium is renowned for its modern facilities and capacity to host large-scale sporting events.",
+        "type": "public",
+        "created_at": 0,
+        "last_updated": "2025-07-22",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Vistara Stadium is hosting the Youth Track and Field Championship, with HydroBoost branding prominently displayed and facilities recently renovated to accommodate spectators.",
+            "date": "2025-07-22"
+          }
+        ],
+        "architect": "Oliver Greenfield",
+        "year_built": "2023",
+        "height": "80 feet",
+        "floors": "2 (main floor plus a level for seating)",
+        "material": "Concrete and steel",
+        "capacity": "15,000 spectators"
+      }
+    ],
+    "EVENT": [],
+    "MISCELLANEOUS": [],
+    "PERSONS_XML": "<person><created_at>0</created_at><date_of_birth>2009-03-15</date_of_birth><description>Mia Thompson is a dedicated and disciplined young athlete known for her enthusiasm and commitment to improving her sporting skills.</description><education>High school athlete with aspirations to compete on a national level</education><entity_class>person</entity_class><eye_color>blue</eye_color><gender>Female</gender><hair_color>brown</hair_color><height>5 feet 2 inches</height><history><event>2025-07-22: Mia Thompson, a young athlete, expressed appreciation for HydroBoost's commitment to natural ingredients and sustainable packaging.</event></history><id>PERSON-1</id><last_updated>2025-07-22</last_updated><marital_status>Single</marital_status><name>Mia Thompson</name><nationality>Rainfieldian</nationality><political_affiliation>None</political_affiliation><profession>Sprinter</profession><type>None</type><weight>120 pounds</weight></person>",
+    "ORGANIZATIONS_XML": "<organization><annual_revenue>$4 million</annual_revenue><created_at>0</created_at><description>The National Youth Athletics Federation is dedicated to promoting youth sports and providing opportunities for young athletes to excel.</description><entity_class>organization</entity_class><founded>1985</founded><headquarters>Rainfieldia City</headquarters><history><event>2025-07-22: The National Youth Athletics Federation has partnered with HydroBoost as the official sponsor for the Youth Track and Field Championship.</event></history><id>ORGANIZATION-1</id><industry>athletics</industry><last_updated>2025-07-22</last_updated><mission_statement>To nurture young athletic talent and foster a culture of healthy competition and sportsmanship.</mission_statement><name>National Youth Athletics Federation</name><number_of_employees>75</number_of_employees><type>non-profit</type></organization>\n<organization><annual_revenue>$1.2 million</annual_revenue><created_at>0</created_at><description>GreenLeaf Caf\u00e9 is a family-owned eatery in Westfield that focuses on providing healthy, organic meals to the community.</description><entity_class>organization</entity_class><founded>2010</founded><headquarters>Westfield</headquarters><history><event>2025-07-22: GreenLeaf Caf\u00e9 is preparing for increased footfall by introducing a special menu featuring healthy snacks and beverages for the event.</event></history><id>ORGANIZATION-2</id><industry>food services</industry><last_updated>2025-07-22</last_updated><mission_statement>Promoting wellness through nutritious, locally-sourced food.</mission_statement><name>GreenLeaf Caf\u00e9</name><number_of_employees>15</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>$5 million</annual_revenue><created_at>0</created_at><description>Sentinel Sports Supply is known for offering a wide range of sports equipment and apparel at competitive prices.</description><entity_class>organization</entity_class><founded>2002</founded><headquarters>Westfield</headquarters><history><event>2025-07-22: Sentinel Sports Supply is offering discounts on sports gear for attendees of the Youth Track and Field Championship.</event></history><id>ORGANIZATION-3</id><industry>retail</industry><last_updated>2025-07-22</last_updated><mission_statement>Providing athletes with high-quality gear to enhance their performance.</mission_statement><name>Sentinel Sports Supply</name><number_of_employees>50</number_of_employees><type>company</type></organization>\n<organization><annual_revenue>$500,000</annual_revenue><created_at>0</created_at><description>The Westfield High School marching band is celebrated for its energetic performances and strong community following.</description><entity_class>organization</entity_class><founded>1953</founded><headquarters>Westfield High School</headquarters><history><event>2025-07-22: The Westfield High School marching band will perform at the opening ceremony of the Youth Track and Field Championship.</event></history><id>ORGANIZATION-4</id><industry>education</industry><last_updated>2025-07-22</last_updated><mission_statement>To provide a creative outlet and build teamwork through music and performance.</mission_statement><name>Westfield High School marching band</name><number_of_employees>25</number_of_employees><type>educational institution</type></organization>",
+    "LOCATIONS_XML": "<location><area>25 square miles</area><country>Rainfieldia</country><created_at>0</created_at><description>Westfield is a thriving small town known for its strong community spirit and diverse mix of young professionals and families.</description><elevation>350 feet</elevation><entity_class>location</entity_class><history><event>2025-07-22: Westfield is hosting the Youth Track and Field Championship at Vistara Stadium, attracting increased attention and footfall.</event></history><id>LOCATION-1</id><last_updated>2025-07-22</last_updated><name>Westfield</name><population>12,500</population><type>town</type></location>",
+    "PRODUCTS_XML": "<product><created_at>0</created_at><description>HydroBoost is an energy drink known for its natural ingredients and commitment to sustainability.</description><entity_class>product</entity_class><history><event>2025-07-22: HydroBoost has become the official sponsor for the Youth Track and Field Championship, featuring its branding on event paraphernalia and engaging attendees with interactive activities.</event></history><id>PRODUCT-1</id><last_updated>2025-07-22</last_updated><manufacturer>HydroBoost Beverages Inc.</manufacturer><name>HydroBoost</name><price>$2.50 per can</price><release_date>2024-03-01</release_date><type>consumer good</type><warranty>None, as it is a consumable product</warranty><weight>12 oz per can</weight></product>",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "<building><architect>Oliver Greenfield</architect><capacity>15,000 spectators</capacity><created_at>0</created_at><description>Vistara Stadium is renowned for its modern facilities and capacity to host large-scale sporting events.</description><entity_class>building</entity_class><floors>2 (main floor plus a level for seating)</floors><height>80 feet</height><history><event>2025-07-22: Vistara Stadium is hosting the Youth Track and Field Championship, with HydroBoost branding prominently displayed and facilities recently renovated to accommodate spectators.</event></history><id>BUILDING-1</id><last_updated>2025-07-22</last_updated><material>Concrete and steel</material><name>Vistara Stadium</name><type>public</type><year_built>2023</year_built></building>",
+    "EVENTS_XML": "",
+    "MISCELLANEOUSS_XML": "",
+    "NUM_STORYITEMS": 10,
+    "HISTORY_XML": "<event><date>2025-07-22</date><outline>{HydroBoost|PRODUCT-1}, an emerging energy drink brand, announced its partnership with the {National Youth Athletics Federation|ORGANIZATION-1} as the official sponsor for the upcoming Youth Track and Field Championship. The partnership deal will prominently feature {HydroBoost|PRODUCT-1}'s branding on all event paraphernalia, including athletes' uniforms, event banners, and promotional materials. {HydroBoost|PRODUCT-1}'s logo will be displayed in large, eye-catching fonts on the front of athletes' uniforms, ensuring maximum visibility during competitions. Event banners will be strategically placed around {Vistara Stadium|BUILDING-1}, with {HydroBoost|PRODUCT-1}'s branding prominently displayed at the entrance and main competition areas. At the press conference, {HydroBoost|PRODUCT-1}'s CEO, Liana Sharp, stated, \"This partnership allows us to connect with a dynamic and energetic youth audience, aligning perfectly with our brand's vision.\" Liana Sharp emphasized that {HydroBoost|PRODUCT-1} aims to inspire young athletes by promoting a lifestyle of health, energy, and determination. The {National Youth Athletics Federation|ORGANIZATION-1} officials highlighted the significance of the sponsorship, noting that it would enhance the visibility and experience of the event for young athletes. Officials mentioned that the sponsorship would provide additional funding for improved facilities and resources for the athletes. The event will take place from July 25, 2025, to July 27, 2025, at the {Vistara Stadium|BUILDING-1}, located in the fictional town of {Westfield|LOCATION-1}. {Vistara Stadium|BUILDING-1}, known for its state-of-the-art track and field facilities, has been recently renovated to accommodate the influx of spectators expected for the championship. Local businesses around {Vistara Stadium|BUILDING-1}, such as {GreenLeaf Caf\u00e9|ORGANIZATION-2} and {Sentinel Sports Supply|ORGANIZATION-3}, are preparing for increased footfall due to the event. {GreenLeaf Caf\u00e9|ORGANIZATION-2} plans to introduce a special menu featuring healthy snacks and beverages, while {Sentinel Sports Supply|ORGANIZATION-3} is offering discounts on sports gear for event attendees. {HydroBoost|PRODUCT-1} plans to have a booth at the event, offering free samples of their latest products and engaging attendees with challenges that promote physical activity. The booth will feature interactive games like a mini-obstacle course and a hydration quiz, with winners receiving {HydroBoost|PRODUCT-1} merchandise. Young athletes preparing for the championship have voiced excitement about {HydroBoost|PRODUCT-1}\u2019s focus on health and well-being, with several expressing interest in their products. One athlete, 16-year-old sprinter {Mia Thompson|PERSON-1}, mentioned that she appreciates {HydroBoost|PRODUCT-1}'s commitment to natural ingredients and sustainable packaging. The event itinerary includes opening ceremonies, multiple track and field competitions, and closing ceremonies, which will be attended by local sports enthusiasts and national sports personalities. The opening ceremony will feature a parade of athletes, a performance by the {Westfield High School marching band|ORGANIZATION-4}, and a speech by a renowned national athlete. Reactions from competing energy drink brands have been observed, as some have started to strategize on how to address the new competition presented by {HydroBoost|PRODUCT-1}'s sponsorship. Competing brands are reportedly considering launching targeted marketing campaigns and promotional offers to retain their market share among young consumers.</outline></event>",
+    "STORY_ITEM": [
+      "On July 28, 2025, organizers of the Westfield Community Fun Fair announced the introduction of a newly designed relay race event designed to engage local families and sporting enthusiasts at various booths, including one prominently featuring interactive activities.",
+      "The relay race was set up across a 1-mile course that looped through the fairgrounds, with each section themed to different sports, such as sprinting, jumping, and throwing.",
+      "The Relay Race Challenge featured teams composed of local families competing in a series of fun and skill-based sections, distributed across different fairgrounds including areas near GreenLeaf Caf\u00e9.",
+      "Each team consisted of four members, with at least one member from each family, ensuring a mix of ages and abilities to promote inclusivity and fun.",
+      "HydroBoost Beverages Inc. extended successful athlete engagement by sponsoring the Finishing Sprints with their signature energy drink infused with natural ingredients, creating a vibrant, eye-catching moment for participants.",
+      "The HydroBoost booth was decorated with bright banners and interactive displays, including a hydration station where participants could learn about the benefits of staying hydrated.",
+      "To accommodate spectators, Vistara Stadium opened its pavilions at no additional cost to provide shaded viewing areas for the relay event, supported by refreshments supplied by GreenLeaf Caf\u00e9.",
+      "The pavilions were equipped with large screens broadcasting live footage of the race, allowing spectators to follow the action from any vantage point.",
+      "Sentinel Sports Supply organized a collaborative warm-up session before the relay race, showcased by Westfield High School marching band performing energetic tunes to boost atmosphere and participant enthusiasm.",
+      "The warm-up session included dynamic stretches and light jogging, led by local fitness trainers, to prepare participants for the race.",
+      "A special guest speaker, renowned national sports personality Alex Rivers, highlighted at the opening ceremony about the importance of balance between physical fitness and community involvement.",
+      "Alex Rivers shared personal anecdotes about his journey in sports, emphasizing the role of community support in achieving athletic success.",
+      "Alex Rivers stressed the crucial role of local organizations in nurturing grassroots sports talent during his speech at the event's opening ceremony.",
+      "He praised the National Youth Athletics Federation for their efforts in providing young athletes with opportunities to shine on a larger stage.",
+      "After the race, Mia Thompson expressed her gratitude to HydroBoost for creating a supportive atmosphere that encouraged her to participate alongside community members, leaving a positive impact not just on the athletic scene, but also on personal connections within Westfield.",
+      "Mia Thompson mentioned that the interactive activities at the HydroBoost booth, such as the mini-obstacle course, were particularly enjoyable and helped her connect with other young athletes.",
+      "HydroBoost sponsored a post-race celebration involving community dances and live music near their booth, inviting participants and spectators alike, which significantly increased their brand engagement among Westfield residents.",
+      "The celebration featured local bands and dance groups, creating a festive atmosphere that encouraged community bonding and enjoyment.",
+      "The event concluded with prize distribution organized by the National Youth Athletics Federation, awarding certificates and custom-designed HydroBoost merchandise to the top three relay team finishers, solidifying HydroBoost's enhanced local presence.",
+      "The certificates were engraved with the event's logo and the names of the winning teams, serving as a lasting memento of their achievement."
+    ],
+    "DATE": "2025-07-28",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 2,
+    "OUTLINE": "On July 28, 2025, organizers of the Westfield Community Fun Fair announced the introduction of a newly designed relay race event designed to engage local families and sporting enthusiasts at various booths, including one prominently featuring interactive activities.\nThe relay race was set up across a 1-mile course that looped through the fairgrounds, with each section themed to different sports, such as sprinting, jumping, and throwing.\nThe Relay Race Challenge featured teams composed of local families competing in a series of fun and skill-based sections, distributed across different fairgrounds including areas near GreenLeaf Caf\u00e9.\nEach team consisted of four members, with at least one member from each family, ensuring a mix of ages and abilities to promote inclusivity and fun.\nHydroBoost Beverages Inc. extended successful athlete engagement by sponsoring the Finishing Sprints with their signature energy drink infused with natural ingredients, creating a vibrant, eye-catching moment for participants.\nThe HydroBoost booth was decorated with bright banners and interactive displays, including a hydration station where participants could learn about the benefits of staying hydrated.\nTo accommodate spectators, Vistara Stadium opened its pavilions at no additional cost to provide shaded viewing areas for the relay event, supported by refreshments supplied by GreenLeaf Caf\u00e9.\nThe pavilions were equipped with large screens broadcasting live footage of the race, allowing spectators to follow the action from any vantage point.\nSentinel Sports Supply organized a collaborative warm-up session before the relay race, showcased by Westfield High School marching band performing energetic tunes to boost atmosphere and participant enthusiasm.\nThe warm-up session included dynamic stretches and light jogging, led by local fitness trainers, to prepare participants for the race.\nA special guest speaker, renowned national sports personality Alex Rivers, highlighted at the opening ceremony about the importance of balance between physical fitness and community involvement.\nAlex Rivers shared personal anecdotes about his journey in sports, emphasizing the role of community support in achieving athletic success.\nAlex Rivers stressed the crucial role of local organizations in nurturing grassroots sports talent during his speech at the event's opening ceremony.\nHe praised the National Youth Athletics Federation for their efforts in providing young athletes with opportunities to shine on a larger stage.\nAfter the race, Mia Thompson expressed her gratitude to HydroBoost for creating a supportive atmosphere that encouraged her to participate alongside community members, leaving a positive impact not just on the athletic scene, but also on personal connections within Westfield.\nMia Thompson mentioned that the interactive activities at the HydroBoost booth, such as the mini-obstacle course, were particularly enjoyable and helped her connect with other young athletes.\nHydroBoost sponsored a post-race celebration involving community dances and live music near their booth, inviting participants and spectators alike, which significantly increased their brand engagement among Westfield residents.\nThe celebration featured local bands and dance groups, creating a festive atmosphere that encouraged community bonding and enjoyment.\nThe event concluded with prize distribution organized by the National Youth Athletics Federation, awarding certificates and custom-designed HydroBoost merchandise to the top three relay team finishers, solidifying HydroBoost's enhanced local presence.\nThe certificates were engraved with the event's logo and the names of the winning teams, serving as a lasting memento of their achievement.",
+    "PRE-CONSISTENCY-NUM-ITEMS": 20,
+    "STORYITEM_XML": "<storyitems>\n<storyitem>On July 28, 2025, organizers of the Westfield Community Fun Fair announced the introduction of a newly designed relay race event designed to engage local families and sporting enthusiasts at various booths, including one prominently featuring interactive activities.</storyitem>\n<storyitem>The relay race was set up across a 1-mile course that looped through the fairgrounds, with each section themed to different sports, such as sprinting, jumping, and throwing.</storyitem>\n<storyitem>The Relay Race Challenge featured teams composed of local families competing in a series of fun and skill-based sections, distributed across different fairgrounds including areas near GreenLeaf Caf\u00e9.</storyitem>\n<storyitem>Each team consisted of four members, with at least one member from each family, ensuring a mix of ages and abilities to promote inclusivity and fun.</storyitem>\n<storyitem>HydroBoost Beverages Inc. extended successful athlete engagement by sponsoring the Finishing Sprints with their signature energy drink infused with natural ingredients, creating a vibrant, eye-catching moment for participants.</storyitem>\n<storyitem>The HydroBoost booth was decorated with bright banners and interactive displays, including a hydration station where participants could learn about the benefits of staying hydrated.</storyitem>\n<storyitem>To accommodate spectators, Vistara Stadium opened its pavilions at no additional cost to provide shaded viewing areas for the relay event, supported by refreshments supplied by GreenLeaf Caf\u00e9.</storyitem>\n<storyitem>The pavilions were equipped with large screens broadcasting live footage of the race, allowing spectators to follow the action from any vantage point.</storyitem>\n<storyitem>Sentinel Sports Supply organized a collaborative warm-up session before the relay race, showcased by Westfield High School marching band performing energetic tunes to boost atmosphere and participant enthusiasm.</storyitem>\n<storyitem>The warm-up session included dynamic stretches and light jogging, led by local fitness trainers, to prepare participants for the race.</storyitem>\n<storyitem>A special guest speaker, renowned national sports personality Alex Rivers, highlighted at the opening ceremony about the importance of balance between physical fitness and community involvement.</storyitem>\n<storyitem>Alex Rivers shared personal anecdotes about his journey in sports, emphasizing the role of community support in achieving athletic success.</storyitem>\n<storyitem>Alex Rivers stressed the crucial role of local organizations in nurturing grassroots sports talent during his speech at the event's opening ceremony.</storyitem>\n<storyitem>He praised the National Youth Athletics Federation for their efforts in providing young athletes with opportunities to shine on a larger stage.</storyitem>\n<storyitem>After the race, Mia Thompson expressed her gratitude to HydroBoost for creating a supportive atmosphere that encouraged her to participate alongside community members, leaving a positive impact not just on the athletic scene, but also on personal connections within Westfield.</storyitem>\n<storyitem>Mia Thompson mentioned that the interactive activities at the HydroBoost booth, such as the mini-obstacle course, were particularly enjoyable and helped her connect with other young athletes.</storyitem>\n<storyitem>HydroBoost sponsored a post-race celebration involving community dances and live music near their booth, inviting participants and spectators alike, which significantly increased their brand engagement among Westfield residents.</storyitem>\n<storyitem>The celebration featured local bands and dance groups, creating a festive atmosphere that encouraged community bonding and enjoyment.</storyitem>\n<storyitem>The event concluded with prize distribution organized by the National Youth Athletics Federation, awarding certificates and custom-designed HydroBoost merchandise to the top three relay team finishers, solidifying HydroBoost's enhanced local presence.</storyitem>\n<storyitem>The certificates were engraved with the event's logo and the names of the winning teams, serving as a lasting memento of their achievement.</storyitem>\n<storyitems>",
+    "NEW_PERSON_NAME": [
+      {
+        "name": "Alex Rivers",
+        "old_name": "Alex Rivers"
+      }
+    ],
+    "NEW_ORGANIZATION_NAME": [
+      {
+        "name": "HydroBoost Beverages Inc.",
+        "old_name": "HydroBoost Beverages Inc."
+      }
+    ],
+    "NEW_LOCATION_NAME": [],
+    "NEW_PRODUCT_NAME": [],
+    "NEW_ART_NAME": [],
+    "NEW_BUILDING_NAME": [],
+    "NEW_EVENT_NAME": [
+      {
+        "name": "Westfield Community Fun Fair",
+        "old_name": "Westfield Community Fun Fair"
+      },
+      {
+        "name": "Relay Race Challenge",
+        "old_name": "Relay Race Challenge"
+      }
+    ],
+    "NEW_MISCELLANEOUS_NAME": [],
+    "CORRECTED_PERSON_NAME": [
+      {
+        "name": "Alex Rivers",
+        "old_name": "Alex Rivers",
+        "id": "PERSON-2"
+      }
+    ],
+    "CORRECTED_ORGANIZATION_NAME": [
+      {
+        "name": "HydroBoost Beverages Inc.",
+        "old_name": "HydroBoost Beverages Inc.",
+        "id": "ORGANIZATION-5"
+      }
+    ],
+    "CORRECTED_LOCATION_NAME": [],
+    "CORRECTED_PRODUCT_NAME": [],
+    "CORRECTED_ART_NAME": [],
+    "CORRECTED_BUILDING_NAME": [],
+    "CORRECTED_EVENT_NAME": [
+      {
+        "name": "Westfield Community Fun Fair",
+        "old_name": "Westfield Community Fun Fair",
+        "id": "EVENT-1"
+      },
+      {
+        "name": "Relay Race Challenge",
+        "old_name": "Relay Race Challenge",
+        "id": "EVENT-2"
+      }
+    ],
+    "CORRECTED_MISCELLANEOUS_NAME": [],
+    "CRITIQUE_ERRORS": {
+      "entity-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ]
+    },
+    "ADJUSTED_PERSONS_XML": "<person><id>PERSON-2</id><name>Alex Rivers</name><old_name>Alex Rivers</old_name></person>",
+    "ADJUSTED_ORGANIZATIONS_XML": "<organization><id>ORGANIZATION-5</id><name>HydroBoost Beverages Inc.</name><old_name>HydroBoost Beverages Inc.</old_name></organization>",
+    "ADJUSTED_LOCATIONS_XML": "",
+    "ADJUSTED_PRODUCTS_XML": "",
+    "ADJUSTED_ARTS_XML": "",
+    "ADJUSTED_BUILDINGS_XML": "",
+    "ADJUSTED_EVENTS_XML": "<event><id>EVENT-1</id><name>Westfield Community Fun Fair</name><old_name>Westfield Community Fun Fair</old_name></event>\n<event><id>EVENT-2</id><name>Relay Race Challenge</name><old_name>Relay Race Challenge</old_name></event>",
+    "ADJUSTED_MISCELLANEOUSS_XML": ""
+  }
+}

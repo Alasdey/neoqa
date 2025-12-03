@@ -1,0 +1,20 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "openai/gpt-5.1",
+    "temperature": 0.0,
+    "max-tokens": 4000
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "1. \\<category>Major Tournament Results and Championship Outcomes</category>  \n\n2. \\<category>Player Transfers, Trades, and Contract Signings</category>"
+  },
+  "response": "1. \\<category>Major Tournament Results and Championship Outcomes</category>  \n\n2. \\<category>Player Transfers, Trades, and Contract Signings</category>",
+  "instructions": "You are an AI assistant tasked with generating a list of newsworthy event categories for a specific news genre. Your goal is to create a diverse and comprehensive list that covers various aspects of the given genre.\n\nThe news genre you will be working with is:\n<genre>\n{{NEWS_GENRE}}\n</genre>\n\nYou are to generate the following number of categories:\n<number>\n{{NUM_CATEGORIES}}\n</number>\n\nPlease follow these instructions carefully:\n\n1. Generate exactly {{NUM_CATEGORIES}} distinct categories of newsworthy events within the {{NEWS_GENRE}} genre.\n\n2. Each category should be specific and topical, focusing on particular types of events, occurrences, or subjects within the genre.\n\n3. Ensure that the categories are diverse and cover different aspects of the {{NEWS_GENRE}} field.\n\n4. Consider various stakeholders, events, developments, and issues that could be relevant to this news genre.\n\n5. Avoid overlapping or redundant categories.\n\n6. Present each category within its own XML tag, using the format <category></category>.\n\n7. Number each category for easy reference.\n\nHere's an example of how your output should be formatted (using \"Technology\" as an example genre):\n\n1. <category>Product Launches</category>\n\n2. <category>Cybersecurity Breaches</category>\n\n3. <category>Artificial Intelligence Advancements</category>\n\nRemember to tailor your categories specifically to the {{NEWS_GENRE}} genre and generate exactly {{NUM_CATEGORIES}} categories. Begin your list now.",
+  "text_prompt": "You are an AI assistant tasked with generating a list of newsworthy event categories for a specific news genre. Your goal is to create a diverse and comprehensive list that covers various aspects of the given genre.\n\nThe news genre you will be working with is:\n<genre>\nSports\n</genre>\n\nYou are to generate the following number of categories:\n<number>\n2\n</number>\n\nPlease follow these instructions carefully:\n\n1. Generate exactly 2 distinct categories of newsworthy events within the Sports genre.\n\n2. Each category should be specific and topical, focusing on particular types of events, occurrences, or subjects within the genre.\n\n3. Ensure that the categories are diverse and cover different aspects of the Sports field.\n\n4. Consider various stakeholders, events, developments, and issues that could be relevant to this news genre.\n\n5. Avoid overlapping or redundant categories.\n\n6. Present each category within its own XML tag, using the format <category></category>.\n\n7. Number each category for easy reference.\n\nHere's an example of how your output should be formatted (using \"Technology\" as an example genre):\n\n1. <category>Product Launches</category>\n\n2. <category>Cybersecurity Breaches</category>\n\n3. <category>Artificial Intelligence Advancements</category>\n\nRemember to tailor your categories specifically to the Sports genre and generate exactly 2 categories. Begin your list now.",
+  "system-prompt": null,
+  "values": {
+    "NUM_CATEGORIES": 2,
+    "NEWS_GENRE": "Sports"
+  }
+}

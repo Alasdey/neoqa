@@ -1,0 +1,499 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "microsoft/phi-4-reasoning-plus",
+    "temperature": 1.0,
+    "max-tokens": 4096
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "Certainly! Below are the detailed descriptions of the fictional entities based on the guidelines provided:\n\n<results>\n\n<location>\n  <id>LOCATION-1</id>\n  <name>Westfield</name>\n  <type>town</type>\n  <description>Westfield is a thriving small town known for its strong community spirit and diverse mix of young professionals and families.</description>\n  <population>12,500</population>\n  <area>25 square miles</area>\n  <founded>1898</founded>\n  <climate>temperate</climate>\n  <elevation>350 feet</elevation>\n  <country>Rainfieldia</country>\n</location>\n\n<person>\n  <id>PERSON-1</id>\n  <name>Mia Thompson</name>\n  <date_of_birth>2009-03-15</date_of_birth>\n  <gender>Female</gender>\n  <profession>Sprinter</profession>\n  <nationality>Rainfieldian</nationality>\n  <education>High school athlete with aspirations to compete on a national level</education>\n  <description>Mia Thompson is a dedicated and disciplined young athlete known for her enthusiasm and commitment to improving her sporting skills.</description>\n  <height>5 feet 2 inches</height>\n  <weight>120 pounds</weight>\n  <eye_color>blue</eye_color>\n  <hair_color>brown</hair_color>\n  <political_affiliation>None</political_affiliation>\n  <marital_status>Single</marital_status>\n</person>\n\n<organization>\n  <id>ORGANIZATION-1</id>\n  <name>National Youth Athletics Federation</name>\n  <type>non-profit</type>\n  <description>The National Youth Athletics Federation is dedicated to promoting youth sports and providing opportunities for young athletes to excel.</description>\n  <founded>1985</founded>\n  <headquarters>Rainfieldia City</headquarters>\n  <industry>athletics</industry>\n  <mission_statement>To nurture young athletic talent and foster a culture of healthy competition and sportsmanship.</mission_statement>\n  <number_of_employees>75</number_of_employees>\n  <annual_revenue>$4 million</annual_revenue>\n</organization>\n\n<organization>\n  <id>ORGANIZATION-2</id>\n  <name>GreenLeaf Caf\u00e9</name>\n  <type>company</type>\n  <description>GreenLeaf Caf\u00e9 is a family-owned eatery in Westfield that focuses on providing healthy, organic meals to the community.</description>\n  <founded>2010</founded>\n  <headquarters>Westfield</headquarters>\n  <industry>food services</industry>\n  <mission_statement>Promoting wellness through nutritious, locally-sourced food.</mission_statement>\n  <number_of_employees>15</number_of_employees>\n  <annual_revenue>$1.2 million</annual_revenue>\n</organization>\n\n<organization>\n  <id>ORGANIZATION-3</id>\n  <name>Sentinel Sports Supply</name>\n  <type>company</type>\n  <description>Sentinel Sports Supply is known for offering a wide range of sports equipment and apparel at competitive prices.</description>\n  <founded>2002</founded>\n  <headquarters>Westfield</headquarters>\n  <industry>retail</industry>\n  <mission_statement>Providing athletes with high-quality gear to enhance their performance.</mission_statement>\n  <number_of_employees>50</number_of_employees>\n  <annual_revenue>$5 million</annual_revenue>\n</organization>\n\n<organization>\n  <id>ORGANIZATION-4</id>\n  <name>Westfield High School marching band</name>\n  <type>educational institution</type>\n  <description>The Westfield High School marching band is celebrated for its energetic performances and strong community following.</description>\n  <founded>1953</founded>\n  <headquarters>Westfield High School</headquarters>\n  <indus"
+  },
+  "response": "Certainly! Below are the detailed descriptions of the fictional entities based on the guidelines provided:\n\n<results>\n\n<location>\n  <id>LOCATION-1</id>\n  <name>Westfield</name>\n  <type>town</type>\n  <description>Westfield is a thriving small town known for its strong community spirit and diverse mix of young professionals and families.</description>\n  <population>12,500</population>\n  <area>25 square miles</area>\n  <founded>1898</founded>\n  <climate>temperate</climate>\n  <elevation>350 feet</elevation>\n  <country>Rainfieldia</country>\n</location>\n\n<person>\n  <id>PERSON-1</id>\n  <name>Mia Thompson</name>\n  <date_of_birth>2009-03-15</date_of_birth>\n  <gender>Female</gender>\n  <profession>Sprinter</profession>\n  <nationality>Rainfieldian</nationality>\n  <education>High school athlete with aspirations to compete on a national level</education>\n  <description>Mia Thompson is a dedicated and disciplined young athlete known for her enthusiasm and commitment to improving her sporting skills.</description>\n  <height>5 feet 2 inches</height>\n  <weight>120 pounds</weight>\n  <eye_color>blue</eye_color>\n  <hair_color>brown</hair_color>\n  <political_affiliation>None</political_affiliation>\n  <marital_status>Single</marital_status>\n</person>\n\n<organization>\n  <id>ORGANIZATION-1</id>\n  <name>National Youth Athletics Federation</name>\n  <type>non-profit</type>\n  <description>The National Youth Athletics Federation is dedicated to promoting youth sports and providing opportunities for young athletes to excel.</description>\n  <founded>1985</founded>\n  <headquarters>Rainfieldia City</headquarters>\n  <industry>athletics</industry>\n  <mission_statement>To nurture young athletic talent and foster a culture of healthy competition and sportsmanship.</mission_statement>\n  <number_of_employees>75</number_of_employees>\n  <annual_revenue>$4 million</annual_revenue>\n</organization>\n\n<organization>\n  <id>ORGANIZATION-2</id>\n  <name>GreenLeaf Caf\u00e9</name>\n  <type>company</type>\n  <description>GreenLeaf Caf\u00e9 is a family-owned eatery in Westfield that focuses on providing healthy, organic meals to the community.</description>\n  <founded>2010</founded>\n  <headquarters>Westfield</headquarters>\n  <industry>food services</industry>\n  <mission_statement>Promoting wellness through nutritious, locally-sourced food.</mission_statement>\n  <number_of_employees>15</number_of_employees>\n  <annual_revenue>$1.2 million</annual_revenue>\n</organization>\n\n<organization>\n  <id>ORGANIZATION-3</id>\n  <name>Sentinel Sports Supply</name>\n  <type>company</type>\n  <description>Sentinel Sports Supply is known for offering a wide range of sports equipment and apparel at competitive prices.</description>\n  <founded>2002</founded>\n  <headquarters>Westfield</headquarters>\n  <industry>retail</industry>\n  <mission_statement>Providing athletes with high-quality gear to enhance their performance.</mission_statement>\n  <number_of_employees>50</number_of_employees>\n  <annual_revenue>$5 million</annual_revenue>\n</organization>\n\n<organization>\n  <id>ORGANIZATION-4</id>\n  <name>Westfield High School marching band</name>\n  <type>educational institution</type>\n  <description>The Westfield High School marching band is celebrated for its energetic performances and strong community following.</description>\n  <founded>1953</founded>\n  <headquarters>Westfield High School</headquarters>\n  <indus",
+  "instructions": "You are an AI assistant tasked with creating fictional entities based on provided information. \nYour goal is to generate detailed, coherent, and realistic descriptions for new locations, persons, organizations, products, art, buildings, events, and miscellaneous entities. \nFollow these instructions carefully:\n\n1. Review the existing entities (if provided):\n\n<existing_entities>\n{{LOCATIONS_XML}}\n{{PERSONS_XML}}\n{{ORGANIZATIONS_XML}}\n{{PRODUCTS_XML}}\n{{ARTS_XML}}\n{{EVENTS_XML}}\n{{BUILDINGS_XML}}\n{{MISCELLANEOUSS_XML}}\n</existing_entities>\n\n2. Review the names of new entities to be created:\n<new_entity_names>\n{{USED_NEW-LOCATIONS_XML}}\n{{USED_NEW-PERSONS_XML}}\n{{USED_NEW-ORGANIZATIONS_XML}}\n{{USED_NEW-PRODUCTS_XML}}\n{{USED_NEW-ARTS_XML}}\n{{USED_NEW-EVENTS_XML}}\n{{USED_NEW-BUILDINGS_XML}}\n{{USED_NEW-MISCELLANEOUSS_XML}}\n</new_entity_names>\n\n3. Carefully read the provided outline:\n\nDate: {{DATE}}\n<outline>\n{{OUTLINE}}\n</outline>\n\nBased on the information provided, create detailed descriptions for each new entity following these guidelines:\n\nGeneral instructions:\n- Ensure all created entities are entirely fictional and not similar to any real or known fictional entities.\n- Maintain realism and coherence with the provided outline and other entities.\n- Create a believable and consistent fictional world that aligns with the context of the outline.\n- For entity descriptions, focus on providing a solid background that remains valid throughout the story, rather than basing it centrally on the outline itself.\n- Develop well-rounded entities with backgrounds and characteristics that can support various potential story developments beyond the specific outline provided.\n- Strictly derive all entities from the outline. Do not invent entities that are not mentioned in the outline.\n- Do not alter the name of the entities.\n- Some properties (e.g., place, city, country, spouse, architect, country, nationality) must be filled with named entities. Make sure to use FICTIONAL named entities ( fictional places, cities, countries, spouse names, architects, countries, nationalities, etc.). Check if you should use one of the existing fictional named entities (from <new_entity_names> and <existing_entities>) or create a fictional name instead. DO NOT say that any of the entities or properties are fictional. It is important that everything seems realistic!\n- Avoid exaggerating the named entities. They can be ordinary and don\u2019t need to be world-class or state-of-the-art.\n- Ensure the details of the named entities are realistic. If global impact isn\u2019t necessary, adjust the details to be more modest and appropriate.\n\nSpecific instructions for each entity type:\n\n1. For each new location:\n   - Use the provided name and ID\n   - Determine an appropriate type (city, village, country, region, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: population, area, founded, climate, elevation, country\n   - Format the output as follows:\n     <location>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[city/village/country/region]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: population, area, founded, climate, elevation, country]\n     </location>\n\n2. For each new person:\n   - Use the provided name and ID\n   - Create fictional details for: date_of_birth, gender, profession, nationality, education\n   - Write a concise single-sentence description that:\n     * Focuses on background, personality, and motivations\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: height, weight, eye_color, hair_color, political_affiliation, marital_status, spouse\n   - Format the output as follows:\n     <person>\n     <id>[Provided ID]</id>\n     <name>[Full name]</name>\n     <date_of_birth>[Date]</date_of_birth>\n     <gender>[Gender]</gender>\n     <profession>[Job title]</profession>\n     <nationality>[Country]</nationality>\n     <education>[Highest level of education]</education>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: height, weight, eye_color, hair_color, political_affiliation, marital_status]\n     </person>\n\n3. For each new organization:\n   - Use the provided name and ID\n   - Determine an appropriate type (company, non-profit, educational institution, government agency, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: founded, headquarters, industry, mission_statement, number_of_employees, annual_revenue\n   - Format the output as follows:\n     <organization>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[company/non-profit/educational institution/government agency]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: founded, headquarters, industry, mission_statement, number_of_employees, annual_revenue]\n     </organization>\n\n4. For each new product:\n   - Use the provided name and ID\n   - Determine an appropriate type (consumer good, software, service, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: manufacturer, release_date, price, weight, warranty\n   - Format the output as follows:\n     <product>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[consumer good/software/service]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: manufacturer, release_date, price, weight, warranty]\n     </product>\n\n5. For each new art piece:\n   - Use the provided name and ID\n   - Determine an appropriate type (painting, sculpture, novel, film, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: creator, year_created, current_location_country, current_location_city, current_location_place\n   - Format the output as follows:\n     <art>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[painting/sculpture/novel/film]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: creator, year_created, current_location_country, current_location_city, current_location_place]\n     </art>\n\n6. For each new building:\n   - Use the provided name and ID\n   - Determine an appropriate type (residential, commercial, public, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: place, city, country, architect, year_built, height, floors, material, capacity\n   - Format the output as follows:\n     <building>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[residential/commercial/public]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: place, city, country, architect, year_built, height, floors, material, capacity]\n     </building>\n\n7. For each new event:\n   - Use the provided name and ID\n   - Determine an appropriate type (historical, cultural, sporting, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: date, place, city, country, duration, organizer, number_of_participants, budget\n   - Format the output as follows:\n     <event>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[historical/cultural/sporting]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: date, place, city, country, duration, organizer, number_of_participants, budget]\n     </event>\n\n8. For each new miscellaneous entity:\n   - Use the provided name and ID\n   - Determine an appropriate type (concept, theory, phenomenon, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Format the output as follows:\n     <miscellaneous>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[concept/theory/phenomenon]</type>\n     <description>[One-sentence concise description]</description>\n     </miscellaneous>\n\nPresent your final output in the following format:\n<results>\n[Insert all created entities here, grouped by type]\n</results>\n\nRemember to create detailed, coherent, and realistic descriptions for each entity while adhering to the guidelines provided. Ensure that all descriptions are single, short, and concise sentences that do not refer to other entities and only discuss background information unrelated to the event described in the outline.",
+  "text_prompt": "You are an AI assistant tasked with creating fictional entities based on provided information. \nYour goal is to generate detailed, coherent, and realistic descriptions for new locations, persons, organizations, products, art, buildings, events, and miscellaneous entities. \nFollow these instructions carefully:\n\n1. Review the existing entities (if provided):\n\n<existing_entities>\n\n\n\n\n\n\n\n\n</existing_entities>\n\n2. Review the names of new entities to be created:\n<new_entity_names>\n<location><category>location</category><id>LOCATION-1</id><name>Westfield</name></location>\n<person><category>person</category><id>PERSON-1</id><name>Mia Thompson</name></person>\n<organization><category>organization</category><id>ORGANIZATION-1</id><name>National Youth Athletics Federation</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-2</id><name>GreenLeaf Caf\u00e9</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-3</id><name>Sentinel Sports Supply</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-4</id><name>Westfield High School marching band</name></organization>\n<product><category>product</category><id>PRODUCT-1</id><name>HydroBoost</name></product>\n\n\n<building><category>building</category><id>BUILDING-1</id><name>Vistara Stadium</name></building>\n\n</new_entity_names>\n\n3. Carefully read the provided outline:\n\nDate: 2025-07-22\n<outline>\n{HydroBoost|PRODUCT-1}, an emerging energy drink brand, announced its partnership with the {National Youth Athletics Federation|ORGANIZATION-1} as the official sponsor for the upcoming Youth Track and Field Championship.\nThe partnership deal will prominently feature {HydroBoost|PRODUCT-1}'s branding on all event paraphernalia, including athletes' uniforms, event banners, and promotional materials.\n{HydroBoost|PRODUCT-1}'s logo will be displayed in large, eye-catching fonts on the front of athletes' uniforms, ensuring maximum visibility during competitions.\nEvent banners will be strategically placed around {Vistara Stadium|BUILDING-1}, with {HydroBoost|PRODUCT-1}'s branding prominently displayed at the entrance and main competition areas.\nAt the press conference, {HydroBoost|PRODUCT-1}'s CEO, Liana Sharp, stated, \"This partnership allows us to connect with a dynamic and energetic youth audience, aligning perfectly with our brand's vision.\"\nLiana Sharp emphasized that {HydroBoost|PRODUCT-1} aims to inspire young athletes by promoting a lifestyle of health, energy, and determination.\nThe {National Youth Athletics Federation|ORGANIZATION-1} officials highlighted the significance of the sponsorship, noting that it would enhance the visibility and experience of the event for young athletes.\nOfficials mentioned that the sponsorship would provide additional funding for improved facilities and resources for the athletes.\nThe event will take place from July 25, 2025, to July 27, 2025, at the {Vistara Stadium|BUILDING-1}, located in the fictional town of {Westfield|LOCATION-1}.\n{Vistara Stadium|BUILDING-1}, known for its state-of-the-art track and field facilities, has been recently renovated to accommodate the influx of spectators expected for the championship.\nLocal businesses around {Vistara Stadium|BUILDING-1}, such as {GreenLeaf Caf\u00e9|ORGANIZATION-2} and {Sentinel Sports Supply|ORGANIZATION-3}, are preparing for increased footfall due to the event.\n{GreenLeaf Caf\u00e9|ORGANIZATION-2} plans to introduce a special menu featuring healthy snacks and beverages, while {Sentinel Sports Supply|ORGANIZATION-3} is offering discounts on sports gear for event attendees.\n{HydroBoost|PRODUCT-1} plans to have a booth at the event, offering free samples of their latest products and engaging attendees with challenges that promote physical activity.\nThe booth will feature interactive games like a mini-obstacle course and a hydration quiz, with winners receiving {HydroBoost|PRODUCT-1} merchandise.\nYoung athletes preparing for the championship have voiced excitement about {HydroBoost|PRODUCT-1}\u2019s focus on health and well-being, with several expressing interest in their products.\nOne athlete, 16-year-old sprinter {Mia Thompson|PERSON-1}, mentioned that she appreciates {HydroBoost|PRODUCT-1}'s commitment to natural ingredients and sustainable packaging.\nThe event itinerary includes opening ceremonies, multiple track and field competitions, and closing ceremonies, which will be attended by local sports enthusiasts and national sports personalities.\nThe opening ceremony will feature a parade of athletes, a performance by the {Westfield High School marching band|ORGANIZATION-4}, and a speech by a renowned national athlete.\nReactions from competing energy drink brands have been observed, as some have started to strategize on how to address the new competition presented by {HydroBoost|PRODUCT-1}'s sponsorship.\nCompeting brands are reportedly considering launching targeted marketing campaigns and promotional offers to retain their market share among young consumers.\n</outline>\n\nBased on the information provided, create detailed descriptions for each new entity following these guidelines:\n\nGeneral instructions:\n- Ensure all created entities are entirely fictional and not similar to any real or known fictional entities.\n- Maintain realism and coherence with the provided outline and other entities.\n- Create a believable and consistent fictional world that aligns with the context of the outline.\n- For entity descriptions, focus on providing a solid background that remains valid throughout the story, rather than basing it centrally on the outline itself.\n- Develop well-rounded entities with backgrounds and characteristics that can support various potential story developments beyond the specific outline provided.\n- Strictly derive all entities from the outline. Do not invent entities that are not mentioned in the outline.\n- Do not alter the name of the entities.\n- Some properties (e.g., place, city, country, spouse, architect, country, nationality) must be filled with named entities. Make sure to use FICTIONAL named entities ( fictional places, cities, countries, spouse names, architects, countries, nationalities, etc.). Check if you should use one of the existing fictional named entities (from <new_entity_names> and <existing_entities>) or create a fictional name instead. DO NOT say that any of the entities or properties are fictional. It is important that everything seems realistic!\n- Avoid exaggerating the named entities. They can be ordinary and don\u2019t need to be world-class or state-of-the-art.\n- Ensure the details of the named entities are realistic. If global impact isn\u2019t necessary, adjust the details to be more modest and appropriate.\n\nSpecific instructions for each entity type:\n\n1. For each new location:\n   - Use the provided name and ID\n   - Determine an appropriate type (city, village, country, region, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: population, area, founded, climate, elevation, country\n   - Format the output as follows:\n     <location>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[city/village/country/region]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: population, area, founded, climate, elevation, country]\n     </location>\n\n2. For each new person:\n   - Use the provided name and ID\n   - Create fictional details for: date_of_birth, gender, profession, nationality, education\n   - Write a concise single-sentence description that:\n     * Focuses on background, personality, and motivations\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: height, weight, eye_color, hair_color, political_affiliation, marital_status, spouse\n   - Format the output as follows:\n     <person>\n     <id>[Provided ID]</id>\n     <name>[Full name]</name>\n     <date_of_birth>[Date]</date_of_birth>\n     <gender>[Gender]</gender>\n     <profession>[Job title]</profession>\n     <nationality>[Country]</nationality>\n     <education>[Highest level of education]</education>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: height, weight, eye_color, hair_color, political_affiliation, marital_status]\n     </person>\n\n3. For each new organization:\n   - Use the provided name and ID\n   - Determine an appropriate type (company, non-profit, educational institution, government agency, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: founded, headquarters, industry, mission_statement, number_of_employees, annual_revenue\n   - Format the output as follows:\n     <organization>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[company/non-profit/educational institution/government agency]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: founded, headquarters, industry, mission_statement, number_of_employees, annual_revenue]\n     </organization>\n\n4. For each new product:\n   - Use the provided name and ID\n   - Determine an appropriate type (consumer good, software, service, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: manufacturer, release_date, price, weight, warranty\n   - Format the output as follows:\n     <product>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[consumer good/software/service]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: manufacturer, release_date, price, weight, warranty]\n     </product>\n\n5. For each new art piece:\n   - Use the provided name and ID\n   - Determine an appropriate type (painting, sculpture, novel, film, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: creator, year_created, current_location_country, current_location_city, current_location_place\n   - Format the output as follows:\n     <art>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[painting/sculpture/novel/film]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: creator, year_created, current_location_country, current_location_city, current_location_place]\n     </art>\n\n6. For each new building:\n   - Use the provided name and ID\n   - Determine an appropriate type (residential, commercial, public, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: place, city, country, architect, year_built, height, floors, material, capacity\n   - Format the output as follows:\n     <building>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[residential/commercial/public]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: place, city, country, architect, year_built, height, floors, material, capacity]\n     </building>\n\n7. For each new event:\n   - Use the provided name and ID\n   - Determine an appropriate type (historical, cultural, sporting, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: date, place, city, country, duration, organizer, number_of_participants, budget\n   - Format the output as follows:\n     <event>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[historical/cultural/sporting]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: date, place, city, country, duration, organizer, number_of_participants, budget]\n     </event>\n\n8. For each new miscellaneous entity:\n   - Use the provided name and ID\n   - Determine an appropriate type (concept, theory, phenomenon, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Format the output as follows:\n     <miscellaneous>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[concept/theory/phenomenon]</type>\n     <description>[One-sentence concise description]</description>\n     </miscellaneous>\n\nPresent your final output in the following format:\n<results>\n[Insert all created entities here, grouped by type]\n</results>\n\nRemember to create detailed, coherent, and realistic descriptions for each entity while adhering to the guidelines provided. Ensure that all descriptions are single, short, and concise sentences that do not refer to other entities and only discuss background information unrelated to the event described in the outline.",
+  "system-prompt": null,
+  "values": {
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "GENRE": "Sports",
+    "HISTORIES": [],
+    "EVENT_SUMMARY": "An emerging energy drink brand has secured a deal as the official sponsor of a national youth athletics championship, aiming to boost brand visibility among younger demographics.",
+    "EVENT_SUMMARY_FOR_NAME": "An emerging energy d",
+    "KEYWORDS": "",
+    "CREATED_AT": 0,
+    "NEXT_IDS": {
+      "person": 2,
+      "organization": 5,
+      "location": 2,
+      "product": 2,
+      "art": 1,
+      "building": 2,
+      "event": 1,
+      "miscellaneous": 1
+    },
+    "PROVIDED_DATE": "",
+    "PERSON": [],
+    "ORGANIZATION": [],
+    "LOCATION": [],
+    "PRODUCT": [],
+    "ART": [],
+    "BUILDING": [],
+    "EVENT": [],
+    "MISCELLANEOUS": [],
+    "PERSONS_XML": "",
+    "ORGANIZATIONS_XML": "",
+    "LOCATIONS_XML": "",
+    "PRODUCTS_XML": "",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "",
+    "EVENTS_XML": "",
+    "MISCELLANEOUSS_XML": "",
+    "NUM_STORYITEMS": 10,
+    "HISTORY_XML": "",
+    "STORY_ITEM": [
+      "{HydroBoost|PRODUCT-1}, an emerging energy drink brand, announced its partnership with the {National Youth Athletics Federation|ORGANIZATION-1} as the official sponsor for the upcoming Youth Track and Field Championship.",
+      "The partnership deal will prominently feature {HydroBoost|PRODUCT-1}'s branding on all event paraphernalia, including athletes' uniforms, event banners, and promotional materials.",
+      "{HydroBoost|PRODUCT-1}'s logo will be displayed in large, eye-catching fonts on the front of athletes' uniforms, ensuring maximum visibility during competitions.",
+      "Event banners will be strategically placed around {Vistara Stadium|BUILDING-1}, with {HydroBoost|PRODUCT-1}'s branding prominently displayed at the entrance and main competition areas.",
+      "At the press conference, {HydroBoost|PRODUCT-1}'s CEO, Liana Sharp, stated, \"This partnership allows us to connect with a dynamic and energetic youth audience, aligning perfectly with our brand's vision.\"",
+      "Liana Sharp emphasized that {HydroBoost|PRODUCT-1} aims to inspire young athletes by promoting a lifestyle of health, energy, and determination.",
+      "The {National Youth Athletics Federation|ORGANIZATION-1} officials highlighted the significance of the sponsorship, noting that it would enhance the visibility and experience of the event for young athletes.",
+      "Officials mentioned that the sponsorship would provide additional funding for improved facilities and resources for the athletes.",
+      "The event will take place from July 25, 2025, to July 27, 2025, at the {Vistara Stadium|BUILDING-1}, located in the fictional town of {Westfield|LOCATION-1}.",
+      "{Vistara Stadium|BUILDING-1}, known for its state-of-the-art track and field facilities, has been recently renovated to accommodate the influx of spectators expected for the championship.",
+      "Local businesses around {Vistara Stadium|BUILDING-1}, such as {GreenLeaf Caf\u00e9|ORGANIZATION-2} and {Sentinel Sports Supply|ORGANIZATION-3}, are preparing for increased footfall due to the event.",
+      "{GreenLeaf Caf\u00e9|ORGANIZATION-2} plans to introduce a special menu featuring healthy snacks and beverages, while {Sentinel Sports Supply|ORGANIZATION-3} is offering discounts on sports gear for event attendees.",
+      "{HydroBoost|PRODUCT-1} plans to have a booth at the event, offering free samples of their latest products and engaging attendees with challenges that promote physical activity.",
+      "The booth will feature interactive games like a mini-obstacle course and a hydration quiz, with winners receiving {HydroBoost|PRODUCT-1} merchandise.",
+      "Young athletes preparing for the championship have voiced excitement about {HydroBoost|PRODUCT-1}\u2019s focus on health and well-being, with several expressing interest in their products.",
+      "One athlete, 16-year-old sprinter {Mia Thompson|PERSON-1}, mentioned that she appreciates {HydroBoost|PRODUCT-1}'s commitment to natural ingredients and sustainable packaging.",
+      "The event itinerary includes opening ceremonies, multiple track and field competitions, and closing ceremonies, which will be attended by local sports enthusiasts and national sports personalities.",
+      "The opening ceremony will feature a parade of athletes, a performance by the {Westfield High School marching band|ORGANIZATION-4}, and a speech by a renowned national athlete.",
+      "Reactions from competing energy drink brands have been observed, as some have started to strategize on how to address the new competition presented by {HydroBoost|PRODUCT-1}'s sponsorship.",
+      "Competing brands are reportedly considering launching targeted marketing campaigns and promotional offers to retain their market share among young consumers."
+    ],
+    "DATE": "2025-07-22",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 2,
+    "OUTLINE": "{HydroBoost|PRODUCT-1}, an emerging energy drink brand, announced its partnership with the {National Youth Athletics Federation|ORGANIZATION-1} as the official sponsor for the upcoming Youth Track and Field Championship.\nThe partnership deal will prominently feature {HydroBoost|PRODUCT-1}'s branding on all event paraphernalia, including athletes' uniforms, event banners, and promotional materials.\n{HydroBoost|PRODUCT-1}'s logo will be displayed in large, eye-catching fonts on the front of athletes' uniforms, ensuring maximum visibility during competitions.\nEvent banners will be strategically placed around {Vistara Stadium|BUILDING-1}, with {HydroBoost|PRODUCT-1}'s branding prominently displayed at the entrance and main competition areas.\nAt the press conference, {HydroBoost|PRODUCT-1}'s CEO, Liana Sharp, stated, \"This partnership allows us to connect with a dynamic and energetic youth audience, aligning perfectly with our brand's vision.\"\nLiana Sharp emphasized that {HydroBoost|PRODUCT-1} aims to inspire young athletes by promoting a lifestyle of health, energy, and determination.\nThe {National Youth Athletics Federation|ORGANIZATION-1} officials highlighted the significance of the sponsorship, noting that it would enhance the visibility and experience of the event for young athletes.\nOfficials mentioned that the sponsorship would provide additional funding for improved facilities and resources for the athletes.\nThe event will take place from July 25, 2025, to July 27, 2025, at the {Vistara Stadium|BUILDING-1}, located in the fictional town of {Westfield|LOCATION-1}.\n{Vistara Stadium|BUILDING-1}, known for its state-of-the-art track and field facilities, has been recently renovated to accommodate the influx of spectators expected for the championship.\nLocal businesses around {Vistara Stadium|BUILDING-1}, such as {GreenLeaf Caf\u00e9|ORGANIZATION-2} and {Sentinel Sports Supply|ORGANIZATION-3}, are preparing for increased footfall due to the event.\n{GreenLeaf Caf\u00e9|ORGANIZATION-2} plans to introduce a special menu featuring healthy snacks and beverages, while {Sentinel Sports Supply|ORGANIZATION-3} is offering discounts on sports gear for event attendees.\n{HydroBoost|PRODUCT-1} plans to have a booth at the event, offering free samples of their latest products and engaging attendees with challenges that promote physical activity.\nThe booth will feature interactive games like a mini-obstacle course and a hydration quiz, with winners receiving {HydroBoost|PRODUCT-1} merchandise.\nYoung athletes preparing for the championship have voiced excitement about {HydroBoost|PRODUCT-1}\u2019s focus on health and well-being, with several expressing interest in their products.\nOne athlete, 16-year-old sprinter {Mia Thompson|PERSON-1}, mentioned that she appreciates {HydroBoost|PRODUCT-1}'s commitment to natural ingredients and sustainable packaging.\nThe event itinerary includes opening ceremonies, multiple track and field competitions, and closing ceremonies, which will be attended by local sports enthusiasts and national sports personalities.\nThe opening ceremony will feature a parade of athletes, a performance by the {Westfield High School marching band|ORGANIZATION-4}, and a speech by a renowned national athlete.\nReactions from competing energy drink brands have been observed, as some have started to strategize on how to address the new competition presented by {HydroBoost|PRODUCT-1}'s sponsorship.\nCompeting brands are reportedly considering launching targeted marketing campaigns and promotional offers to retain their market share among young consumers.",
+    "PRE-CONSISTENCY-NUM-ITEMS": 20,
+    "STORYITEM_XML": "<storyitems>\n<storyitem>HydroBoost, an emerging energy drink brand, announced its partnership with the National Youth Athletics Federation as the official sponsor for the upcoming Youth Track and Field Championship.</storyitem>\n<storyitem>The partnership deal will prominently feature HydroBoost's branding on all event paraphernalia, including athletes' uniforms, event banners, and promotional materials.</storyitem>\n<storyitem>HydroBoost's logo will be displayed in large, eye-catching fonts on the front of athletes' uniforms, ensuring maximum visibility during competitions.</storyitem>\n<storyitem>Event banners will be strategically placed around Vistara Stadium, with HydroBoost's branding prominently displayed at the entrance and main competition areas.</storyitem>\n<storyitem>At the press conference, HydroBoost's CEO, Liana Sharp, stated, \"This partnership allows us to connect with a dynamic and energetic youth audience, aligning perfectly with our brand's vision.\"</storyitem>\n<storyitem>Liana Sharp emphasized that HydroBoost aims to inspire young athletes by promoting a lifestyle of health, energy, and determination.</storyitem>\n<storyitem>The National Youth Athletics Federation officials highlighted the significance of the sponsorship, noting that it would enhance the visibility and experience of the event for young athletes.</storyitem>\n<storyitem>Officials mentioned that the sponsorship would provide additional funding for improved facilities and resources for the athletes.</storyitem>\n<storyitem>The event will take place from July 25, 2025, to July 27, 2025, at the Vistara Stadium, located in the fictional town of Westfield.</storyitem>\n<storyitem>Vistara Stadium, known for its state-of-the-art track and field facilities, has been recently renovated to accommodate the influx of spectators expected for the championship.</storyitem>\n<storyitem>Local businesses around Vistara Stadium, such as GreenLeaf Caf\u00e9 and Sentinel Sports Supply, are preparing for increased footfall due to the event.</storyitem>\n<storyitem>GreenLeaf Caf\u00e9 plans to introduce a special menu featuring healthy snacks and beverages, while Sentinel Sports Supply is offering discounts on sports gear for event attendees.</storyitem>\n<storyitem>HydroBoost plans to have a booth at the event, offering free samples of their latest products and engaging attendees with challenges that promote physical activity.</storyitem>\n<storyitem>The booth will feature interactive games like a mini-obstacle course and a hydration quiz, with winners receiving HydroBoost merchandise.</storyitem>\n<storyitem>Young athletes preparing for the championship have voiced excitement about HydroBoost\u2019s focus on health and well-being, with several expressing interest in their products.</storyitem>\n<storyitem>One athlete, 16-year-old sprinter Mia Thompson, mentioned that she appreciates HydroBoost's commitment to natural ingredients and sustainable packaging.</storyitem>\n<storyitem>The event itinerary includes opening ceremonies, multiple track and field competitions, and closing ceremonies, which will be attended by local sports enthusiasts and national sports personalities.</storyitem>\n<storyitem>The opening ceremony will feature a parade of athletes, a performance by the Westfield High School marching band, and a speech by a renowned national athlete.</storyitem>\n<storyitem>Reactions from competing energy drink brands have been observed, as some have started to strategize on how to address the new competition presented by HydroBoost's sponsorship.</storyitem>\n<storyitem>Competing brands are reportedly considering launching targeted marketing campaigns and promotional offers to retain their market share among young consumers.</storyitem>\n<storyitems>",
+    "NEW_PERSON_NAME": [
+      {
+        "name": "Mia Thompson",
+        "old_name": "Mia Thompson"
+      }
+    ],
+    "NEW_ORGANIZATION_NAME": [
+      {
+        "name": "National Youth Athletics Federation",
+        "old_name": "National Youth Athletics Federation"
+      },
+      {
+        "name": "GreenLeaf Caf\u00e9",
+        "old_name": "GreenLeaf Caf\u00e9"
+      },
+      {
+        "name": "Sentinel Sports Supply",
+        "old_name": "Sentinel Sports Supply"
+      },
+      {
+        "name": "Westfield High School marching band",
+        "old_name": "Westfield High School marching band"
+      }
+    ],
+    "NEW_LOCATION_NAME": [
+      {
+        "name": "Westfield",
+        "old_name": "Westfield"
+      }
+    ],
+    "NEW_PRODUCT_NAME": [
+      {
+        "name": "HydroBoost",
+        "old_name": "HydroBoost"
+      }
+    ],
+    "NEW_ART_NAME": [],
+    "NEW_BUILDING_NAME": [
+      {
+        "name": "Vistara Stadium",
+        "old_name": "Vistara Stadium"
+      }
+    ],
+    "NEW_EVENT_NAME": [],
+    "NEW_MISCELLANEOUS_NAME": [],
+    "CORRECTED_PERSON_NAME": [
+      {
+        "name": "Mia Thompson",
+        "old_name": "Mia Thompson",
+        "id": "PERSON-1"
+      }
+    ],
+    "CORRECTED_ORGANIZATION_NAME": [
+      {
+        "name": "National Youth Athletics Federation",
+        "old_name": "National Youth Athletics Federation",
+        "id": "ORGANIZATION-1"
+      },
+      {
+        "name": "GreenLeaf Caf\u00e9",
+        "old_name": "GreenLeaf Caf\u00e9",
+        "id": "ORGANIZATION-2"
+      },
+      {
+        "name": "Sentinel Sports Supply",
+        "old_name": "Sentinel Sports Supply",
+        "id": "ORGANIZATION-3"
+      },
+      {
+        "name": "Westfield High School marching band",
+        "old_name": "Westfield High School marching band",
+        "id": "ORGANIZATION-4"
+      }
+    ],
+    "CORRECTED_LOCATION_NAME": [
+      {
+        "name": "Westfield",
+        "old_name": "Westfield",
+        "id": "LOCATION-1"
+      }
+    ],
+    "CORRECTED_PRODUCT_NAME": [
+      {
+        "name": "HydroBoost",
+        "old_name": "HydroBoost",
+        "id": "PRODUCT-1"
+      }
+    ],
+    "CORRECTED_ART_NAME": [],
+    "CORRECTED_BUILDING_NAME": [
+      {
+        "name": "Vistara Stadium",
+        "old_name": "Vistara Stadium",
+        "id": "BUILDING-1"
+      }
+    ],
+    "CORRECTED_EVENT_NAME": [],
+    "CORRECTED_MISCELLANEOUS_NAME": [],
+    "CRITIQUE_ERRORS": {
+      "entity-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ]
+    },
+    "ADJUSTED_PERSONS_XML": "<person><id>PERSON-1</id><name>Mia Thompson</name><old_name>Mia Thompson</old_name></person>",
+    "ADJUSTED_ORGANIZATIONS_XML": "<organization><id>ORGANIZATION-1</id><name>National Youth Athletics Federation</name><old_name>National Youth Athletics Federation</old_name></organization>\n<organization><id>ORGANIZATION-2</id><name>GreenLeaf Caf\u00e9</name><old_name>GreenLeaf Caf\u00e9</old_name></organization>\n<organization><id>ORGANIZATION-3</id><name>Sentinel Sports Supply</name><old_name>Sentinel Sports Supply</old_name></organization>\n<organization><id>ORGANIZATION-4</id><name>Westfield High School marching band</name><old_name>Westfield High School marching band</old_name></organization>",
+    "ADJUSTED_LOCATIONS_XML": "<location><id>LOCATION-1</id><name>Westfield</name><old_name>Westfield</old_name></location>",
+    "ADJUSTED_PRODUCTS_XML": "<product><id>PRODUCT-1</id><name>HydroBoost</name><old_name>HydroBoost</old_name></product>",
+    "ADJUSTED_ARTS_XML": "",
+    "ADJUSTED_BUILDINGS_XML": "<building><id>BUILDING-1</id><name>Vistara Stadium</name><old_name>Vistara Stadium</old_name></building>",
+    "ADJUSTED_EVENTS_XML": "",
+    "ADJUSTED_MISCELLANEOUSS_XML": "",
+    "USED_PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Mia Thompson"
+      }
+    ],
+    "USED_ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "National Youth Athletics Federation"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "GreenLeaf Caf\u00e9"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Sentinel Sports Supply"
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "Westfield High School marching band"
+      }
+    ],
+    "USED_LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Westfield"
+      }
+    ],
+    "USED_PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "HydroBoost"
+      }
+    ],
+    "USED_ART": [],
+    "USED_BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Vistara Stadium"
+      }
+    ],
+    "USED_EVENT": [],
+    "USED_MISCELLANEOUS": [],
+    "USED_PRE-EXISTING-PERSON": [],
+    "USED_NEW-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Mia Thompson",
+        "category": "person"
+      }
+    ],
+    "ALL_USED_PERSON_XML": "<person><category>person</category><id>PERSON-1</id><name>Mia Thompson</name></person>",
+    "USED-NAME-AND-ID-FOR-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Mia Thompson",
+        "category": "person"
+      }
+    ],
+    "USED_PRE-EXISTING-ORGANIZATION": [],
+    "USED_NEW-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "National Youth Athletics Federation",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "GreenLeaf Caf\u00e9",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Sentinel Sports Supply",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "Westfield High School marching band",
+        "category": "organization"
+      }
+    ],
+    "ALL_USED_ORGANIZATION_XML": "<organization><category>organization</category><id>ORGANIZATION-1</id><name>National Youth Athletics Federation</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-2</id><name>GreenLeaf Caf\u00e9</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-3</id><name>Sentinel Sports Supply</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-4</id><name>Westfield High School marching band</name></organization>",
+    "USED-NAME-AND-ID-FOR-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "National Youth Athletics Federation",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "GreenLeaf Caf\u00e9",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Sentinel Sports Supply",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "Westfield High School marching band",
+        "category": "organization"
+      }
+    ],
+    "USED_PRE-EXISTING-LOCATION": [],
+    "USED_NEW-LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Westfield",
+        "category": "location"
+      }
+    ],
+    "ALL_USED_LOCATION_XML": "<location><category>location</category><id>LOCATION-1</id><name>Westfield</name></location>",
+    "USED-NAME-AND-ID-FOR-LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Westfield",
+        "category": "location"
+      }
+    ],
+    "USED_PRE-EXISTING-PRODUCT": [],
+    "USED_NEW-PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "HydroBoost",
+        "category": "product"
+      }
+    ],
+    "ALL_USED_PRODUCT_XML": "<product><category>product</category><id>PRODUCT-1</id><name>HydroBoost</name></product>",
+    "USED-NAME-AND-ID-FOR-PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "HydroBoost",
+        "category": "product"
+      }
+    ],
+    "USED_PRE-EXISTING-ART": [],
+    "USED_NEW-ART": [],
+    "ALL_USED_ART_XML": "",
+    "USED-NAME-AND-ID-FOR-ART": [],
+    "USED_PRE-EXISTING-BUILDING": [],
+    "USED_NEW-BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Vistara Stadium",
+        "category": "building"
+      }
+    ],
+    "ALL_USED_BUILDING_XML": "<building><category>building</category><id>BUILDING-1</id><name>Vistara Stadium</name></building>",
+    "USED-NAME-AND-ID-FOR-BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Vistara Stadium",
+        "category": "building"
+      }
+    ],
+    "USED_PRE-EXISTING-EVENT": [],
+    "USED_NEW-EVENT": [],
+    "ALL_USED_EVENT_XML": "",
+    "USED-NAME-AND-ID-FOR-EVENT": [],
+    "USED_PRE-EXISTING-MISCELLANEOUS": [],
+    "USED_NEW-MISCELLANEOUS": [],
+    "ALL_USED_MISCELLANEOUS_XML": "",
+    "USED-NAME-AND-ID-FOR-MISCELLANEOUS": [],
+    "USED_NEW-PERSONS_XML": "<person><category>person</category><id>PERSON-1</id><name>Mia Thompson</name></person>",
+    "USED_NEW-ORGANIZATIONS_XML": "<organization><category>organization</category><id>ORGANIZATION-1</id><name>National Youth Athletics Federation</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-2</id><name>GreenLeaf Caf\u00e9</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-3</id><name>Sentinel Sports Supply</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-4</id><name>Westfield High School marching band</name></organization>",
+    "USED_NEW-LOCATIONS_XML": "<location><category>location</category><id>LOCATION-1</id><name>Westfield</name></location>",
+    "USED_NEW-PRODUCTS_XML": "<product><category>product</category><id>PRODUCT-1</id><name>HydroBoost</name></product>",
+    "USED_NEW-ARTS_XML": "",
+    "USED_NEW-BUILDINGS_XML": "<building><category>building</category><id>BUILDING-1</id><name>Vistara Stadium</name></building>",
+    "USED_NEW-EVENTS_XML": "",
+    "USED_NEW-MISCELLANEOUSS_XML": ""
+  },
+  "critiques": [
+    {
+      "critique": "Please provide all your results within a single <results> root node. Do not include any information other than the content within the <results> node.",
+      "response": "```xml\n<results>\n  <location>\n    <id>LOCATION-1</id>\n    <name>Westfield</name>\n    <type>town</type>\n    <description>Westfield is a thriving small town known for its strong community spirit and diverse mix of young professionals and families.</description>\n    <population>12,500</population>\n    <area>25 square miles</area>\n    <founded>1898</founded>\n    <climate>temperate</climate>\n    <elevation>350 feet</elevation>\n    <country>Rainfieldia</country>\n  </location>\n\n  <person>\n    <id>PERSON-1</id>\n    <name>Mia Thompson</name>\n    <date_of_birth>2009-03-15</date_of_birth>\n    <gender>Female</gender>\n    <profession>Sprinter</profession>\n    <nationality>Rainfieldian</nationality>\n    <education>High school athlete with aspirations to compete on a national level</education>\n    <description>Mia Thompson is a dedicated and disciplined young athlete known for her enthusiasm and commitment to improving her sporting skills.</description>\n    <height>5 feet 2 inches</height>\n    <weight>120 pounds</weight>\n    <eye_color>blue</eye_color>\n    <hair_color>brown</hair_color>\n    <political_affiliation>None</political_affiliation>\n    <marital_status>Single</marital_status>\n  </person>\n\n  <organization>\n    <id>ORGANIZATION-1</id>\n    <name>National Youth Athletics Federation</name>\n    <type>non-profit</type>\n    <description>The National Youth Athletics Federation is dedicated to promoting youth sports and providing opportunities for young athletes to excel.</description>\n    <founded>1985</founded>\n    <headquarters>Rainfieldia City</headquarters>\n    <industry>athletics</industry>\n    <mission_statement>To nurture young athletic talent and foster a culture of healthy competition and sportsmanship.</mission_statement>\n    <number_of_employees>75</number_of_employees>\n    <annual_revenue>$4 million</annual_revenue>\n  </organization>\n\n  <organization>\n    <id>ORGANIZATION-2</id>\n    <name>GreenLeaf Caf\u00e9</name>\n    <type>company</type>\n    <description>GreenLeaf Caf\u00e9 is a family-owned eatery in Westfield that focuses on providing healthy, organic meals to the community.</description>\n    <founded>2010</founded>\n    <headquarters>Westfield</headquarters>\n    <industry>food services</industry>\n    <mission_statement>Promoting wellness through nutritious, locally-sourced food.</mission_statement>\n    <number_of_employees>15</number_of_employees>\n    <annual_revenue>$1.2 million</annual_revenue>\n  </organization>\n\n  <organization>\n    <id>ORGANIZATION-3</id>\n    <name>Sentinel Sports Supply</name>\n    <type>company</type>\n    <description>Sentinel Sports Supply is known for offering a wide range of sports equipment and apparel at competitive prices.</description>\n    <founded>2002</founded>\n    <headquarters>Westfield</headquarters>\n    <industry>retail</industry>\n    <mission_statement>Providing athletes with high-quality gear to enhance their performance.</mission_statement>\n    <number_of_employees>50</number_of_employees>\n    <annual_revenue>$5 million</annual_revenue>\n  </organization>\n\n  <organization>\n    <id>ORGANIZATION-4</id>\n    <name>Westfield High School marching band</name>\n    <type>educational institution</type>\n    <description>The Westfield High School marching band is celebrated for its energetic performances and strong community following.</description>\n    <founded>1953</founded>\n    <headquarters>Westfield High School</headquarters>\n    <industry>education</industry>\n    <mission_statement>To provide a creative outlet and build teamwork through music and performance.</mission_statement>\n    <number_of_employees>25</number_of_employees>\n    <annual_revenue>$500,000</annual_revenue>\n  </organization>\n\n  <product>\n    <id>PRODUCT-1</id>\n    <name>HydroBoost</name>\n    <type>consumer good</type>\n    <description>HydroBoost is an energy drink known for its natural ingredients and commitment to sustainability.</description>\n    <manufacturer>HydroBoost Beverages Inc.</manufacturer>\n    <release_date>2024-03-01</release_date>\n    <price>$2.50 per can</price>\n    <weight>12 oz per can</weight>\n    <warranty>None, as it is a consumable product</warranty>\n  </product>\n\n  <building>\n    <id>BUILDING-1</id>\n    <name>Vistara Stadium</name>\n    <type>public</type>\n    <description>Vistara Stadium is renowned for its modern facilities and capacity to host large-scale sporting events.</description>\n    <place>Westfield</place>\n    <city>Westfield</city>\n    <country>Rainfieldia</country>\n    <architect>Oliver Greenfield</architect>\n    <year_built>2023</year_built>\n    <height>80 feet</height>\n    <floors>2 (main floor plus a level for seating)</floors>\n    <material>Concrete and steel</material>\n    <capacity>15,000 spectators</capacity>\n  </building>\n</results>\n```"
+    }
+  ]
+}

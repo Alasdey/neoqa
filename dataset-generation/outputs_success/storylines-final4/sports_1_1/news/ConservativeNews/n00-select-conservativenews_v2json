@@ -1,0 +1,160 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "openai/gpt-5-mini",
+    "temperature": 0.0,
+    "max-tokens": 8000
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "<scratchpad>\nGoal: create one versatile subset that forms a coherent news story covering announcement plus player fitness and contract terms, giving options for reporting on both sporting and business angles.\n\nKey sentences:\n- N0-S0: core announcement of one-year extension \u2014 essential lead.\n- N0-S2 & N0-S3: contract terms \u2014 N0-S2 states reduced base salary + incentives; N0-S3 details the incentive structure. Together they allow stories about financial/roster strategy and player motivations.\n- N0-S4 & N0-S5: medical clearance and details of assessment \u2014 important to address fitness after injury and justify inclusion on roster.\n- N0-S7: league confirmation of registration \u2014 closes the procedural loop and confirms eligibility for opening fixtures.\n- N0-S9: player quote \u2014 humanizes the story and ties to incentives/fitness.\n\nAvoided: N0-S1 (redundant procedural detail about press release and paperwork), N0-S6 (similar to N0-S7 but less explicit), N0-S8 (redundant with N0-S9).\n\nThis subset allows a reporter to write: lead on extension, explain pay/incentives, note injury history and clearance, confirm eligibility, and include the player's commitment quote. It's balanced for both sports and business desks.\n</scratchpad>\n<results>\n<subset>N0-S0,N0-S2,N0-S3,N0-S4,N0-S5,N0-S7,N0-S9</subset>\n</results>"
+  },
+  "response": "<scratchpad>\nGoal: create one versatile subset that forms a coherent news story covering announcement plus player fitness and contract terms, giving options for reporting on both sporting and business angles.\n\nKey sentences:\n- N0-S0: core announcement of one-year extension \u2014 essential lead.\n- N0-S2 & N0-S3: contract terms \u2014 N0-S2 states reduced base salary + incentives; N0-S3 details the incentive structure. Together they allow stories about financial/roster strategy and player motivations.\n- N0-S4 & N0-S5: medical clearance and details of assessment \u2014 important to address fitness after injury and justify inclusion on roster.\n- N0-S7: league confirmation of registration \u2014 closes the procedural loop and confirms eligibility for opening fixtures.\n- N0-S9: player quote \u2014 humanizes the story and ties to incentives/fitness.\n\nAvoided: N0-S1 (redundant procedural detail about press release and paperwork), N0-S6 (similar to N0-S7 but less explicit), N0-S8 (redundant with N0-S9).\n\nThis subset allows a reporter to write: lead on extension, explain pay/incentives, note injury history and clearance, confirm eligibility, and include the player's commitment quote. It's balanced for both sports and business desks.\n</scratchpad>\n<results>\n<subset>N0-S0,N0-S2,N0-S3,N0-S4,N0-S5,N0-S7,N0-S9</subset>\n</results>",
+  "instructions": "You are an AI assistant tasked with selecting subsets of sentences from a fictional current event to be integrated into a fictional news story. Your goal is to create versatile options for varied news stories from the same event. Follow these instructions carefully:\n\n1. Review the optional history of past events:\n<history>\n{{HISTORY}}\n</history>\n\n2. Examine the current event:\n<current_event>\n{{CURRENT_EVENT}}\n</current_event>\n\n3. Analyze the current event:\n   - Read and understand the content thoroughly.\n   - Identify the most important or newsworthy sentences.\n   - Consider how different combinations of sentences could create coherent and interesting news stories.\n   - Think about which content aligns well with what you want to communicate in your newspaper, and which content should be omitted.\n\n4. Create {{NUM_SUBSETS}} distinct subsets of sentences, following these guidelines:\n   - Select groups of sentence IDs that, when combined, would create compelling news stories.\n   - Ensure each subset tells a slightly different aspect or perspective of the event.\n   - Include enough context and detail in each subset to understand the main points.\n   - Avoid redundant information within each subset.\n   - Consider your newspaper's profile when selecting the content to focus on.\n\n5. Output your results in the following format:\n<results>\n<subset>[Comma-separated list of sentence IDs]</subset>\n</results>\n\nRepeat the <subset> element {{NUM_SUBSETS}} times, each containing a unique selection of sentence IDs.\n\n6. Remember to create distinct subsets that capture different aspects of the story. Your goal is to provide versatile options for creating varied news stories from the same event.\n\nBefore providing your final answer, use a <scratchpad> to think through your selection process and ensure you're creating diverse and meaningful subsets.",
+  "text_prompt": "You are an AI assistant tasked with selecting subsets of sentences from a fictional current event to be integrated into a fictional news story. Your goal is to create versatile options for varied news stories from the same event. Follow these instructions carefully:\n\n1. Review the optional history of past events:\n<history>\n\n</history>\n\n2. Examine the current event:\n<current_event>\n<event>\n<date>2025-08-29</date>\n<content>\n<item><id>N0-S0</id><text>Rivermark Lynx announced the signing of a one-year contract extension with veteran point guard Maya Cortes as their final roster move before the domestic transfer deadline.</text></item>\n<item><id>N0-S1</id><text>The club published the extension in an official press release on the Rivermark Lynx website and social channels and completed the paperwork at the team's training facility with the head coach and general manager present.</text></item>\n<item><id>N0-S2</id><text>Rivermark Lynx registered contract terms that reduce Maya Cortes's base salary and include game-play incentives tied to minutes and appearances for the one-year extension.</text></item>\n<item><id>N0-S3</id><text>The recorded incentive structure includes per-appearance fees, stepped bonuses for reaching specific minutes thresholds in individual games and incremental payments tied to appearing in a target proportion of regular-season fixtures.</text></item>\n<item><id>N0-S4</id><text>Maya Cortes completed a club medical assessment and monitored return-to-play program overseen by Rivermark Lynx after an injury layoff last season.</text></item>\n<item><id>N0-S5</id><text>The medical assessment consisted of strength and conditioning benchmarks, on-court movement and shooting tests and cardiovascular screening administered over a short monitoring period, with the club medical staff clearing Maya Cortes to progress into full-team contact training.</text></item>\n<item><id>N0-S6</id><text>Rivermark Lynx filed the finalized roster that includes Maya Cortes with league administrators ahead of the domestic transfer deadline to secure the squad for the opening fixtures.</text></item>\n<item><id>N0-S7</id><text>The club submitted the roster to league administrators that afternoon and received confirmation of registration from the league, ensuring Maya Cortes is officially eligible for selection when the team begins competition.</text></item>\n<item><id>N0-S8</id><text>Maya Cortes issued a short statement through Rivermark Lynx expressing commitment to earn playing time and to meet the incentives specified in the new contract.</text></item>\n<item><id>N0-S9</id><text>In the club-released statement Maya Cortes said, \"I'm focused on earning my minutes, getting fully fit and doing whatever it takes to help Rivermark Lynx compete this season.\"</text></item>\n</content>\n</event>\n</current_event>\n\n3. Analyze the current event:\n   - Read and understand the content thoroughly.\n   - Identify the most important or newsworthy sentences.\n   - Consider how different combinations of sentences could create coherent and interesting news stories.\n   - Think about which content aligns well with what you want to communicate in your newspaper, and which content should be omitted.\n\n4. Create 1 distinct subsets of sentences, following these guidelines:\n   - Select groups of sentence IDs that, when combined, would create compelling news stories.\n   - Ensure each subset tells a slightly different aspect or perspective of the event.\n   - Include enough context and detail in each subset to understand the main points.\n   - Avoid redundant information within each subset.\n   - Consider your newspaper's profile when selecting the content to focus on.\n\n5. Output your results in the following format:\n<results>\n<subset>[Comma-separated list of sentence IDs]</subset>\n</results>\n\nRepeat the <subset> element 1 times, each containing a unique selection of sentence IDs.\n\n6. Remember to create distinct subsets that capture different aspects of the story. Your goal is to provide versatile options for creating varied news stories from the same event.\n\nBefore providing your final answer, use a <scratchpad> to think through your selection process and ensure you're creating diverse and meaningful subsets.",
+  "system-prompt": "You are an AI journalist from the newspaper \"ConservativeNews\".\nYou are simulating the profile of a newspaper called \"ConservativeNews,\" with a conservative editorial stance. Your task is to generate specific information about the newspaper's profile, broken down into the following categories:\n\nCore Values:\n1. **Traditional Family Values**: Emphasizes the importance of family structures, promoting policies that align with the preservation of traditional family roles.\n2. **Limited Government**: Advocates for a smaller government with reduced taxes and fewer regulations, favoring individual freedom and local control.\n3. **Patriotism and National Pride**: Supports strong national defense and respects the heritage, history, and symbols of the nation.\n4. **Free Market Economy**: Promotes capitalist principles, emphasizing deregulation, entrepreneurship, and minimal government interference in business.\n5. **Respect for Law and Order**: Stands for a strict interpretation of the law, emphasizing the importance of personal responsibility and strong criminal justice systems.\n6. **Religious Freedom**: Upholds the belief that religious expression should be protected, often promoting Christianity as an integral part of cultural identity.\n\nReporting Style:\n1. **Fact-based Analysis**: Prioritizes logical, evidence-driven reporting that appeals to rationality and often relies on data, research, and expert opinions.\n2. **Concise and Direct**: Articles tend to be clear, direct, and to the point, often eschewing unnecessary detail for efficiency in communication.\n3. **Opinionated Commentary**: Features strong editorial perspectives, often weaving political opinion into news coverage, particularly on contentious issues.\n4. **Investigative Reporting**: Tends to focus on exposing government overreach, corruption, and liberal biases, with a focus on transparency and accountability.\n5. **Emotive Storytelling**: Occasionally uses emotional appeal to underline stories, especially related to cultural or national pride, portraying a clear \"us vs. them\" narrative.\n\nPerspective on Common Issues:\n1. **Economics**: Advocates for tax cuts, deregulation, and economic policies that favor businesses, with a focus on reducing government spending and promoting job creation.\n2. **Foreign Policy**: Strongly favors national sovereignty, supports a robust military, and tends to oppose international agreements or organizations that may undermine the country\u2019s interests.\n3. **Social Issues**: Often critical of progressive movements, especially when it comes to issues like LGBTQ+ rights, abortion, and social justice activism, preferring policies that protect traditional institutions.\n4. **Immigration**: Advocates for strict border control and immigration laws, emphasizing the need for national security and the protection of American workers.\n5. **Environmental Policy**: Generally skeptical of climate change policies that impose significant regulations on industries, favoring market-based solutions to environmental concerns.\n\nPreferred Topics:\n1. **Political Conservatism**: Covers topics like conservative victories, prominent conservative figures, and conservative solutions to political issues.\n2. **National Security and Military**: Focuses on defense policy, military readiness, and law enforcement, with an emphasis on strengthening national security.\n3. **Economic Policy and Market Trends**: Regularly covers free market economics, tax policy, and analysis of financial markets, businesses, and job creation.\n4. **Cultural and Religious Traditions**: Often features discussions on maintaining cultural and religious traditions, with particular attention to Christian values.\n5. **Second Amendment Rights**: Covers gun rights, self-defense, and legal battles surrounding the Second Amendment.\n\nThings They Like:\n1. **National Pride and Patriotism**: Strong support for events like Independence Day, military recognition, and other symbols of American identity.\n2. **Entrepreneurship and Small Business**: Celebrates success stories in business, advocating for policies that benefit entrepreneurs and small businesses.\n3. **Traditional Institutions**: Upholds the value of marriage, family, and community as the cornerstone of a strong society.\n4. **Pro-Growth Policies**: Enthusiastically supports tax cuts, deregulation, and policies that stimulate economic growth and job creation.\n5. **Strong Borders and National Security**: Portrays the need for secure borders, immigration reform, and a well-funded military in a positive light.\n\nThings They Dislike:\n1. **Liberal Social Movements**: Criticizes progressive movements on issues like social justice, gender equality, and racial justice, viewing them as threats to traditional values.\n2. **Big Government and High Taxes**: Strongly opposes government overreach, excessive taxes, and regulation, particularly when it comes to economic matters.\n3. **Globalism**: Opposes international agreements or organizations that diminish national sovereignty or place restrictions on the country\u2019s ability to act independently.\n4. **Political Correctness**: Critical of what it sees as an overemphasis on political correctness in media, culture, and public discourse, arguing it stifles free speech.\n5. **Anti-Religious Sentiments**: Disapproves of secularism or any movements that seek to diminish the role of religion in public life.",
+  "values": {
+    "NUM_SUBSETS": 1,
+    "EVENT": {
+      "created_at": 0,
+      "summary": "A second-division women\u2019s basketball team has filled its final roster spot before the domestic transfer deadline by signing its veteran point guard to a one-year extension with a reduced salary and incentives tied to games played following last season\u2019s injury layoff.",
+      "outline": [
+        {
+          "sentence": "{Rivermark Lynx|ORGANIZATION-1} announced the signing of a one-year contract extension with veteran point guard {Maya Cortes|PERSON-1} as their final roster move before the domestic transfer deadline.",
+          "id": "N0-S0",
+          "pos": 0
+        },
+        {
+          "sentence": "The club published the extension in an official press release on the {Rivermark Lynx|ORGANIZATION-1} website and social channels and completed the paperwork at the team's training facility with the head coach and general manager present.",
+          "id": "N0-S1",
+          "pos": 1
+        },
+        {
+          "sentence": "{Rivermark Lynx|ORGANIZATION-1} registered contract terms that reduce {Maya Cortes|PERSON-1}'s base salary and include game-play incentives tied to minutes and appearances for the one-year extension.",
+          "id": "N0-S2",
+          "pos": 2
+        },
+        {
+          "sentence": "The recorded incentive structure includes per-appearance fees, stepped bonuses for reaching specific minutes thresholds in individual games and incremental payments tied to appearing in a target proportion of regular-season fixtures.",
+          "id": "N0-S3",
+          "pos": 3
+        },
+        {
+          "sentence": "{Maya Cortes|PERSON-1} completed a club medical assessment and monitored return-to-play program overseen by {Rivermark Lynx|ORGANIZATION-1} after an injury layoff last season.",
+          "id": "N0-S4",
+          "pos": 4
+        },
+        {
+          "sentence": "The medical assessment consisted of strength and conditioning benchmarks, on-court movement and shooting tests and cardiovascular screening administered over a short monitoring period, with the club medical staff clearing {Maya Cortes|PERSON-1} to progress into full-team contact training.",
+          "id": "N0-S5",
+          "pos": 5
+        },
+        {
+          "sentence": "{Rivermark Lynx|ORGANIZATION-1} filed the finalized roster that includes {Maya Cortes|PERSON-1} with league administrators ahead of the domestic transfer deadline to secure the squad for the opening fixtures.",
+          "id": "N0-S6",
+          "pos": 6
+        },
+        {
+          "sentence": "The club submitted the roster to league administrators that afternoon and received confirmation of registration from the league, ensuring {Maya Cortes|PERSON-1} is officially eligible for selection when the team begins competition.",
+          "id": "N0-S7",
+          "pos": 7
+        },
+        {
+          "sentence": "{Maya Cortes|PERSON-1} issued a short statement through {Rivermark Lynx|ORGANIZATION-1} expressing commitment to earn playing time and to meet the incentives specified in the new contract.",
+          "id": "N0-S8",
+          "pos": 8
+        },
+        {
+          "sentence": "In the club-released statement {Maya Cortes|PERSON-1} said, \"I'm focused on earning my minutes, getting fully fit and doing whatever it takes to help {Rivermark Lynx|ORGANIZATION-1} compete this season.\"",
+          "id": "N0-S9",
+          "pos": 9
+        }
+      ],
+      "used_entities": [
+        {
+          "id": "PERSON-1",
+          "name": "Maya Cortes",
+          "entity_type": "person",
+          "new": true
+        },
+        {
+          "id": "ORGANIZATION-1",
+          "name": "Rivermark Lynx",
+          "entity_type": "organization",
+          "new": true
+        }
+      ],
+      "parent": null,
+      "continuation": {
+        "summary": "Maya Cortes completed a supervised full-contact training session without setbacks and was listed by Rivermark Lynx as available for selection for the season opener.",
+        "last_date": "2025-08-29",
+        "continuation_date": "2025-08-29"
+      },
+      "date": "2025-08-29"
+    },
+    "HISTORY": "",
+    "CURRENT_EVENT": "<event>\n<date>2025-08-29</date>\n<content>\n<item><id>N0-S0</id><text>Rivermark Lynx announced the signing of a one-year contract extension with veteran point guard Maya Cortes as their final roster move before the domestic transfer deadline.</text></item>\n<item><id>N0-S1</id><text>The club published the extension in an official press release on the Rivermark Lynx website and social channels and completed the paperwork at the team's training facility with the head coach and general manager present.</text></item>\n<item><id>N0-S2</id><text>Rivermark Lynx registered contract terms that reduce Maya Cortes's base salary and include game-play incentives tied to minutes and appearances for the one-year extension.</text></item>\n<item><id>N0-S3</id><text>The recorded incentive structure includes per-appearance fees, stepped bonuses for reaching specific minutes thresholds in individual games and incremental payments tied to appearing in a target proportion of regular-season fixtures.</text></item>\n<item><id>N0-S4</id><text>Maya Cortes completed a club medical assessment and monitored return-to-play program overseen by Rivermark Lynx after an injury layoff last season.</text></item>\n<item><id>N0-S5</id><text>The medical assessment consisted of strength and conditioning benchmarks, on-court movement and shooting tests and cardiovascular screening administered over a short monitoring period, with the club medical staff clearing Maya Cortes to progress into full-team contact training.</text></item>\n<item><id>N0-S6</id><text>Rivermark Lynx filed the finalized roster that includes Maya Cortes with league administrators ahead of the domestic transfer deadline to secure the squad for the opening fixtures.</text></item>\n<item><id>N0-S7</id><text>The club submitted the roster to league administrators that afternoon and received confirmation of registration from the league, ensuring Maya Cortes is officially eligible for selection when the team begins competition.</text></item>\n<item><id>N0-S8</id><text>Maya Cortes issued a short statement through Rivermark Lynx expressing commitment to earn playing time and to meet the incentives specified in the new contract.</text></item>\n<item><id>N0-S9</id><text>In the club-released statement Maya Cortes said, \"I'm focused on earning my minutes, getting fully fit and doing whatever it takes to help Rivermark Lynx compete this season.\"</text></item>\n</content>\n</event>",
+    "CREATED_AT": 0,
+    "NEWSPAPER_PROFILE": "ConservativeNews",
+    "ENTITY_SNAPSHOT": {
+      "person": [
+        {
+          "id": "PERSON-1",
+          "name": "Maya Cortes",
+          "entity_class": "person",
+          "description": "A driven and disciplined veteran athlete known for leadership meticulous preparation and a strong commitment to mentoring younger players while pursuing personal performance goals.",
+          "type": null,
+          "created_at": 0,
+          "last_updated": "2025-08-29",
+          "history": [
+            {
+              "created_at": 0,
+              "event_update": "Maya Cortes signed a one-year contract extension with the Rivermark Lynx, completed a club medical assessment and monitored return-to-play program, was cleared to progress into full-team contact training, and issued a statement committing to earn playing time and meet the incentives in her new contract.",
+              "date": "2025-08-29"
+            }
+          ],
+          "date_of_birth": "1991-03-14",
+          "gender": "Female",
+          "profession": "Professional basketball player and point guard",
+          "nationality": "Valoria",
+          "education": "Bachelor of Science in Kinesiology from Northshore University",
+          "height": "1.70 m",
+          "weight": "68 kg",
+          "eye_color": "Brown",
+          "hair_color": "Dark brown",
+          "marital_status": "Single"
+        }
+      ],
+      "organization": [
+        {
+          "id": "ORGANIZATION-1",
+          "name": "Rivermark Lynx",
+          "entity_class": "organization",
+          "description": "A mid-sized professional basketball club focused on sustainable operations and regional talent development within its domestic league.",
+          "type": "company",
+          "created_at": 0,
+          "last_updated": "2025-08-29",
+          "history": [
+            {
+              "created_at": 0,
+              "event_update": "Rivermark Lynx announced and published the one-year contract extension for Maya Cortes, completed the contract paperwork at the team's training facility with the head coach and general manager present, and filed the finalized roster with league administrators ahead of the domestic transfer deadline, receiving confirmation of registration.",
+              "date": "2025-08-29"
+            }
+          ],
+          "founded": "2007-06-15",
+          "headquarters": "Harborfen",
+          "industry": "professional sports",
+          "mission_statement": "To cultivate competitive teams and community engagement through youth programs coaching development and accessible match-day experiences.",
+          "number_of_employees": "72",
+          "annual_revenue": "2.1 million Valorian credits"
+        }
+      ],
+      "location": [],
+      "product": [],
+      "art": [],
+      "building": [],
+      "event": [],
+      "miscellaneous": []
+    }
+  }
+}

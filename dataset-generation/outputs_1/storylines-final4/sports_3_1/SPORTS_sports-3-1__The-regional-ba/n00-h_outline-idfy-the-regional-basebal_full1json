@@ -1,0 +1,458 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "microsoft/phi-4-reasoning-plus",
+    "temperature": 0.0,
+    "max-tokens": 4096
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "```xml\n<outline>\n    <storyitem>On 2025-05-14, esteemed analytics expert {Dr. Lydia Verne|PERSON-1} was announced as the new team manager for the {Riverbank Rattles|ORGANIZATION-1}, part of the northern regional baseball league.</storyitem>\n    <storyitem>{Dr. Lydia Verne|PERSON-1}, recognized for her extensive work in sports analytics and data interpretation, has previously consulted for major league teams and published influential papers on predictive modeling in sports.</storyitem>\n    <storyitem>{Dr. Lydia Verne|PERSON-1} expressed her enthusiasm: \"I am excited to blend analytics with firsthand coaching to shape the team\u2019s strategy.\"</storyitem>\n    <storyitem>{Dr. Verne|PERSON-1} plans to implement a data-driven approach that includes real-time performance tracking and advanced statistical analysis to optimize player performance.</storyitem>\n    <storyitem>The {Riverbank Rattles|ORGANIZATION-1} previously finished fourth in the league standings, with a record of 68 wins and 72 losses, indicating a potential forthcoming transformation under {Verne|PERSON-1}\u2019s management.</storyitem>\n    <storyitem>The team struggled with a high number of injuries last season, which {Dr. Verne|PERSON-1} aims to address through improved training regimens and data-driven injury prevention strategies.</storyitem>\n    <storyitem>The team owners, {John Hamilton|PERSON-2} and {Sarah Mitchell|PERSON-3}, openly supported the decision, noting, \"We believe her unique approach will invigorate our team dynamics and enhance player performance.\"</storyitem>\n    <storyitem>{Hamilton|PERSON-2} and {Mitchell|PERSON-3} have invested in upgrading the team's training facilities to support {Dr. Verne|PERSON-1}'s data-driven methodologies.</storyitem>\n    <storyitem>The decision to hire {Dr. Lydia Verne|PERSON-1} reflects a growing trend in the regional baseball league to incorporate data-driven decision-making practices.</storyitem>\n    <storyitem>Several teams in the league have already started integrating analytics into their coaching strategies, with mixed results.</storyitem>\n    <storyitem>Coaching staff and analytics coordinators are scheduled to attend a series of workshops led by {Dr. Verne|PERSON-1} to learn new analytics methodologies.</storyitem>\n    <storyitem>The workshops will cover topics such as player performance metrics, game theory applications, and the use of machine learning in sports analytics.</storyitem>\n    <storyitem>Current staff members, including Head Coach {Evan Suarez|PERSON-4}, expressed optimism, stating, \"{Dr. Verne|PERSON-1}\u2019s approach is as inspiring as it is innovative.\"</storyitem>\n    <storyitem>{Suarez|PERSON-4} has been a proponent of integrating technology into sports and has previously collaborated with data scientists to enhance team strategies.</storyitem>\n    <storyitem>Three former players of the {Riverbank Rattles|ORGANIZATION-1} have formed a consultancy initiative, the {Silver Slugger Analytics Firm|ORGANIZATION-2}, offering additional data insights to the team.</storyitem>\n    <storyitem>The {Silver Slugger Analytics Firm|ORGANIZATION-2} specializes in biomechanical analysis and has developed proprietary software to assess player movements and predict injury risks.</storyitem>\n    <storyitem>Local sports commentators and analysts have noted the potential for {Riverbank Rattles|ORGANIZATION-1} to impact upcoming regional tournaments positively.</storyitem>\n    <storyitem>Commentators predict that the team could improve their standings by at least two positions in the next season with {Dr. Verne|PERSON-1}'s strategies.</storyitem>\n    <storyitem>{Dr. Verne|PERSON-1} plans to host an open forum with fans at {Sunstone Sports Arena|BUILDING-1} on 2025-06-01, to discuss her vision for the team's future.</storyitem>\n    <storyitem>The forum will include a Q&A session where fans can ask {Dr. Verne|PERSON-1} about her plans and the expected changes in the team's approach.</storyitem>\n</outline>\n```"
+  },
+  "response": "```xml\n<outline>\n    <storyitem>On 2025-05-14, esteemed analytics expert {Dr. Lydia Verne|PERSON-1} was announced as the new team manager for the {Riverbank Rattles|ORGANIZATION-1}, part of the northern regional baseball league.</storyitem>\n    <storyitem>{Dr. Lydia Verne|PERSON-1}, recognized for her extensive work in sports analytics and data interpretation, has previously consulted for major league teams and published influential papers on predictive modeling in sports.</storyitem>\n    <storyitem>{Dr. Lydia Verne|PERSON-1} expressed her enthusiasm: \"I am excited to blend analytics with firsthand coaching to shape the team\u2019s strategy.\"</storyitem>\n    <storyitem>{Dr. Verne|PERSON-1} plans to implement a data-driven approach that includes real-time performance tracking and advanced statistical analysis to optimize player performance.</storyitem>\n    <storyitem>The {Riverbank Rattles|ORGANIZATION-1} previously finished fourth in the league standings, with a record of 68 wins and 72 losses, indicating a potential forthcoming transformation under {Verne|PERSON-1}\u2019s management.</storyitem>\n    <storyitem>The team struggled with a high number of injuries last season, which {Dr. Verne|PERSON-1} aims to address through improved training regimens and data-driven injury prevention strategies.</storyitem>\n    <storyitem>The team owners, {John Hamilton|PERSON-2} and {Sarah Mitchell|PERSON-3}, openly supported the decision, noting, \"We believe her unique approach will invigorate our team dynamics and enhance player performance.\"</storyitem>\n    <storyitem>{Hamilton|PERSON-2} and {Mitchell|PERSON-3} have invested in upgrading the team's training facilities to support {Dr. Verne|PERSON-1}'s data-driven methodologies.</storyitem>\n    <storyitem>The decision to hire {Dr. Lydia Verne|PERSON-1} reflects a growing trend in the regional baseball league to incorporate data-driven decision-making practices.</storyitem>\n    <storyitem>Several teams in the league have already started integrating analytics into their coaching strategies, with mixed results.</storyitem>\n    <storyitem>Coaching staff and analytics coordinators are scheduled to attend a series of workshops led by {Dr. Verne|PERSON-1} to learn new analytics methodologies.</storyitem>\n    <storyitem>The workshops will cover topics such as player performance metrics, game theory applications, and the use of machine learning in sports analytics.</storyitem>\n    <storyitem>Current staff members, including Head Coach {Evan Suarez|PERSON-4}, expressed optimism, stating, \"{Dr. Verne|PERSON-1}\u2019s approach is as inspiring as it is innovative.\"</storyitem>\n    <storyitem>{Suarez|PERSON-4} has been a proponent of integrating technology into sports and has previously collaborated with data scientists to enhance team strategies.</storyitem>\n    <storyitem>Three former players of the {Riverbank Rattles|ORGANIZATION-1} have formed a consultancy initiative, the {Silver Slugger Analytics Firm|ORGANIZATION-2}, offering additional data insights to the team.</storyitem>\n    <storyitem>The {Silver Slugger Analytics Firm|ORGANIZATION-2} specializes in biomechanical analysis and has developed proprietary software to assess player movements and predict injury risks.</storyitem>\n    <storyitem>Local sports commentators and analysts have noted the potential for {Riverbank Rattles|ORGANIZATION-1} to impact upcoming regional tournaments positively.</storyitem>\n    <storyitem>Commentators predict that the team could improve their standings by at least two positions in the next season with {Dr. Verne|PERSON-1}'s strategies.</storyitem>\n    <storyitem>{Dr. Verne|PERSON-1} plans to host an open forum with fans at {Sunstone Sports Arena|BUILDING-1} on 2025-06-01, to discuss her vision for the team's future.</storyitem>\n    <storyitem>The forum will include a Q&A session where fans can ask {Dr. Verne|PERSON-1} about her plans and the expected changes in the team's approach.</storyitem>\n</outline>\n```",
+  "instructions": "You are an AI assistant tasked with identifying and marking fictional entities within an outline of a fictional event. Your goal is to replace each occurrence of these entities with a specific format that includes the entity's ID. Follow these instructions carefully:\n\nYou will be working with the following inputs:\n\nDate: {{DATE}}\n\n<outline>\n{{OUTLINE}}\n</outline>\n\n<entities>\n{{ALL_USED_LOCATION_XML}}\n{{ALL_USED_PERSON_XML}}\n{{ALL_USED_ORGANIZATION_XML}}\n{{ALL_USED_PRODUCT_XML}}\n{{ALL_USED_ART_XML}}\n{{ALL_USED_BUILDING_XML}}\n{{ALL_USED_EVENT_XML}}\n{{ALL_USED_MISCELLANEOUS_XML}}\n</entities>\n\nProcess the outline by following these steps:\n\n1. Carefully review the list of entities provided in the <entities> section. Each entity will have an associated ID and a name.\n\n2. Search the outline for all occurrences of each entity in the list.\n\n3. For each occurrence found, replace it with the format: {full name|ID}\n   Where \"full name\" is the full name as provided via the \"name\" property of the entity.\n   \n4. Maintain the original structure and formatting of the outline, only changing the entities as described.\n\n5. After processing all entities, review the entire outline to ensure all occurrences have been properly marked and no entities were missed.\n\n6. Output the processed outline, maintaining its original structure but with all entity occurrences replaced as instructed.\n\nImportant points to remember:\n- Be thorough in your search for entities, including variations or partial mentions.\n- Always use the ID and name as provided in the entity list, even:\n    - If an entity is referred to by full name\n    - If an entity is referred to by an abbreviation\n    - If an entity is referred to using parts of the full name\n\nFormat your output as follows:\n- Enclose the entire processed outline within <outline> tags.\n- Place each sentence of the outline within separate <storyitem> tags.\n\nProvide your final output without any additional commentary or explanations. Focus solely on processing the outline as instructed.",
+  "text_prompt": "You are an AI assistant tasked with identifying and marking fictional entities within an outline of a fictional event. Your goal is to replace each occurrence of these entities with a specific format that includes the entity's ID. Follow these instructions carefully:\n\nYou will be working with the following inputs:\n\nDate: 2025-05-14\n\n<outline>\nOn 2025-05-14, esteemed analytics expert Dr. Lydia Verne was announced as the new team manager for the Riverbank Rattles, part of the northern regional baseball league.\nDr. Lydia Verne, recognized for her extensive work in sports analytics and data interpretation, has previously consulted for major league teams and published influential papers on predictive modeling in sports.\nDr. Lydia Verne expressed her enthusiasm: \"I am excited to blend analytics with firsthand coaching to shape the team\u2019s strategy.\"\nDr. Verne plans to implement a data-driven approach that includes real-time performance tracking and advanced statistical analysis to optimize player performance.\nThe Riverbank Rattles previously finished fourth in the league standings, with a record of 68 wins and 72 losses, indicating a potential forthcoming transformation under Verne\u2019s management.\nThe team struggled with a high number of injuries last season, which Dr. Verne aims to address through improved training regimens and data-driven injury prevention strategies.\nThe team owners, John Hamilton and Sarah Mitchell, openly supported the decision, noting, \"We believe her unique approach will invigorate our team dynamics and enhance player performance.\"\nHamilton and Mitchell have invested in upgrading the team's training facilities to support Dr. Verne's data-driven methodologies.\nThe decision to hire Dr. Lydia Verne reflects a growing trend in the regional baseball league to incorporate data-driven decision-making practices.\nSeveral teams in the league have already started integrating analytics into their coaching strategies, with mixed results.\nCoaching staff and analytics coordinators are scheduled to attend a series of workshops led by Dr. Verne to learn new analytics methodologies.\nThe workshops will cover topics such as player performance metrics, game theory applications, and the use of machine learning in sports analytics.\nCurrent staff members, including Head Coach Evan Suarez, expressed optimism, stating, \"Dr. Verne\u2019s approach is as inspiring as it is innovative.\"\nSuarez has been a proponent of integrating technology into sports and has previously collaborated with data scientists to enhance team strategies.\nThree former players of the Riverbank Rattles have formed a consultancy initiative, the Silver Slugger Analytics Firm, offering additional data insights to the team.\nThe Silver Slugger Analytics Firm specializes in biomechanical analysis and has developed proprietary software to assess player movements and predict injury risks.\nLocal sports commentators and analysts have noted the potential for Riverbank Rattles to impact upcoming regional tournaments positively.\nCommentators predict that the team could improve their standings by at least two positions in the next season with Dr. Verne's strategies.\nDr. Verne plans to host an open forum with fans at Sunstone Sports Arena on 2025-06-01, to discuss her vision for the team's future.\nThe forum will include a Q&A session where fans can ask Dr. Verne about her plans and the expected changes in the team's approach.\n</outline>\n\n<entities>\n\n<person><category>person</category><id>PERSON-1</id><name>Dr. Lydia Verne</name></person>\n<person><category>person</category><id>PERSON-2</id><name>John Hamilton</name></person>\n<person><category>person</category><id>PERSON-3</id><name>Sarah Mitchell</name></person>\n<person><category>person</category><id>PERSON-4</id><name>Evan Suarez</name></person>\n<organization><category>organization</category><id>ORGANIZATION-1</id><name>Riverbank Rattles</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-2</id><name>Silver Slugger Analytics Firm</name></organization>\n\n\n<building><category>building</category><id>BUILDING-1</id><name>Sunstone Sports Arena</name></building>\n\n\n</entities>\n\nProcess the outline by following these steps:\n\n1. Carefully review the list of entities provided in the <entities> section. Each entity will have an associated ID and a name.\n\n2. Search the outline for all occurrences of each entity in the list.\n\n3. For each occurrence found, replace it with the format: {full name|ID}\n   Where \"full name\" is the full name as provided via the \"name\" property of the entity.\n   \n4. Maintain the original structure and formatting of the outline, only changing the entities as described.\n\n5. After processing all entities, review the entire outline to ensure all occurrences have been properly marked and no entities were missed.\n\n6. Output the processed outline, maintaining its original structure but with all entity occurrences replaced as instructed.\n\nImportant points to remember:\n- Be thorough in your search for entities, including variations or partial mentions.\n- Always use the ID and name as provided in the entity list, even:\n    - If an entity is referred to by full name\n    - If an entity is referred to by an abbreviation\n    - If an entity is referred to using parts of the full name\n\nFormat your output as follows:\n- Enclose the entire processed outline within <outline> tags.\n- Place each sentence of the outline within separate <storyitem> tags.\n\nProvide your final output without any additional commentary or explanations. Focus solely on processing the outline as instructed.",
+  "system-prompt": null,
+  "values": {
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "GENRE": "Sports",
+    "HISTORIES": [],
+    "EVENT_SUMMARY": "The regional baseball league has announced the hiring of a renowned analytics expert as a team manager, reflecting a growing trend towards data-driven decision-making in the sport.",
+    "EVENT_SUMMARY_FOR_NAME": "The regional basebal",
+    "KEYWORDS": "",
+    "CREATED_AT": 0,
+    "NEXT_IDS": {
+      "person": 5,
+      "organization": 3,
+      "location": 1,
+      "product": 1,
+      "art": 1,
+      "building": 2,
+      "event": 1,
+      "miscellaneous": 1
+    },
+    "PROVIDED_DATE": "",
+    "PERSON": [],
+    "ORGANIZATION": [],
+    "LOCATION": [],
+    "PRODUCT": [],
+    "ART": [],
+    "BUILDING": [],
+    "EVENT": [],
+    "MISCELLANEOUS": [],
+    "PERSONS_XML": "",
+    "ORGANIZATIONS_XML": "",
+    "LOCATIONS_XML": "",
+    "PRODUCTS_XML": "",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "",
+    "EVENTS_XML": "",
+    "MISCELLANEOUSS_XML": "",
+    "NUM_STORYITEMS": 10,
+    "HISTORY_XML": "",
+    "STORY_ITEM": [
+      "On 2025-05-14, esteemed analytics expert Dr. Lydia Verne was announced as the new team manager for the Riverbank Rattles, part of the northern regional baseball league.",
+      "Dr. Lydia Verne, recognized for her extensive work in sports analytics and data interpretation, has previously consulted for major league teams and published influential papers on predictive modeling in sports.",
+      "Dr. Lydia Verne expressed her enthusiasm: \"I am excited to blend analytics with firsthand coaching to shape the team\u2019s strategy.\"",
+      "Dr. Verne plans to implement a data-driven approach that includes real-time performance tracking and advanced statistical analysis to optimize player performance.",
+      "The Riverbank Rattles previously finished fourth in the league standings, with a record of 68 wins and 72 losses, indicating a potential forthcoming transformation under Verne\u2019s management.",
+      "The team struggled with a high number of injuries last season, which Dr. Verne aims to address through improved training regimens and data-driven injury prevention strategies.",
+      "The team owners, John Hamilton and Sarah Mitchell, openly supported the decision, noting, \"We believe her unique approach will invigorate our team dynamics and enhance player performance.\"",
+      "Hamilton and Mitchell have invested in upgrading the team's training facilities to support Dr. Verne's data-driven methodologies.",
+      "The decision to hire Dr. Lydia Verne reflects a growing trend in the regional baseball league to incorporate data-driven decision-making practices.",
+      "Several teams in the league have already started integrating analytics into their coaching strategies, with mixed results.",
+      "Coaching staff and analytics coordinators are scheduled to attend a series of workshops led by Dr. Verne to learn new analytics methodologies.",
+      "The workshops will cover topics such as player performance metrics, game theory applications, and the use of machine learning in sports analytics.",
+      "Current staff members, including Head Coach Evan Suarez, expressed optimism, stating, \"Dr. Verne\u2019s approach is as inspiring as it is innovative.\"",
+      "Suarez has been a proponent of integrating technology into sports and has previously collaborated with data scientists to enhance team strategies.",
+      "Three former players of the Riverbank Rattles have formed a consultancy initiative, the Silver Slugger Analytics Firm, offering additional data insights to the team.",
+      "The Silver Slugger Analytics Firm specializes in biomechanical analysis and has developed proprietary software to assess player movements and predict injury risks.",
+      "Local sports commentators and analysts have noted the potential for Riverbank Rattles to impact upcoming regional tournaments positively.",
+      "Commentators predict that the team could improve their standings by at least two positions in the next season with Dr. Verne's strategies.",
+      "Dr. Verne plans to host an open forum with fans at Sunstone Sports Arena on 2025-06-01, to discuss her vision for the team's future.",
+      "The forum will include a Q&A session where fans can ask Dr. Verne about her plans and the expected changes in the team's approach."
+    ],
+    "DATE": "2025-05-14",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 2,
+    "OUTLINE": "On 2025-05-14, esteemed analytics expert Dr. Lydia Verne was announced as the new team manager for the Riverbank Rattles, part of the northern regional baseball league.\nDr. Lydia Verne, recognized for her extensive work in sports analytics and data interpretation, has previously consulted for major league teams and published influential papers on predictive modeling in sports.\nDr. Lydia Verne expressed her enthusiasm: \"I am excited to blend analytics with firsthand coaching to shape the team\u2019s strategy.\"\nDr. Verne plans to implement a data-driven approach that includes real-time performance tracking and advanced statistical analysis to optimize player performance.\nThe Riverbank Rattles previously finished fourth in the league standings, with a record of 68 wins and 72 losses, indicating a potential forthcoming transformation under Verne\u2019s management.\nThe team struggled with a high number of injuries last season, which Dr. Verne aims to address through improved training regimens and data-driven injury prevention strategies.\nThe team owners, John Hamilton and Sarah Mitchell, openly supported the decision, noting, \"We believe her unique approach will invigorate our team dynamics and enhance player performance.\"\nHamilton and Mitchell have invested in upgrading the team's training facilities to support Dr. Verne's data-driven methodologies.\nThe decision to hire Dr. Lydia Verne reflects a growing trend in the regional baseball league to incorporate data-driven decision-making practices.\nSeveral teams in the league have already started integrating analytics into their coaching strategies, with mixed results.\nCoaching staff and analytics coordinators are scheduled to attend a series of workshops led by Dr. Verne to learn new analytics methodologies.\nThe workshops will cover topics such as player performance metrics, game theory applications, and the use of machine learning in sports analytics.\nCurrent staff members, including Head Coach Evan Suarez, expressed optimism, stating, \"Dr. Verne\u2019s approach is as inspiring as it is innovative.\"\nSuarez has been a proponent of integrating technology into sports and has previously collaborated with data scientists to enhance team strategies.\nThree former players of the Riverbank Rattles have formed a consultancy initiative, the Silver Slugger Analytics Firm, offering additional data insights to the team.\nThe Silver Slugger Analytics Firm specializes in biomechanical analysis and has developed proprietary software to assess player movements and predict injury risks.\nLocal sports commentators and analysts have noted the potential for Riverbank Rattles to impact upcoming regional tournaments positively.\nCommentators predict that the team could improve their standings by at least two positions in the next season with Dr. Verne's strategies.\nDr. Verne plans to host an open forum with fans at Sunstone Sports Arena on 2025-06-01, to discuss her vision for the team's future.\nThe forum will include a Q&A session where fans can ask Dr. Verne about her plans and the expected changes in the team's approach.",
+    "PRE-CONSISTENCY-NUM-ITEMS": 20,
+    "STORYITEM_XML": "<storyitems>\n<storyitem>On 2025-05-14, esteemed analytics expert Dr. Lydia Verne was announced as the new team manager for the Riverbank Rattles, part of the northern regional baseball league.</storyitem>\n<storyitem>Dr. Lydia Verne, recognized for her extensive work in sports analytics and data interpretation, has previously consulted for major league teams and published influential papers on predictive modeling in sports.</storyitem>\n<storyitem>Dr. Lydia Verne expressed her enthusiasm: \"I am excited to blend analytics with firsthand coaching to shape the team\u2019s strategy.\"</storyitem>\n<storyitem>Dr. Verne plans to implement a data-driven approach that includes real-time performance tracking and advanced statistical analysis to optimize player performance.</storyitem>\n<storyitem>The Riverbank Rattles previously finished fourth in the league standings, with a record of 68 wins and 72 losses, indicating a potential forthcoming transformation under Verne\u2019s management.</storyitem>\n<storyitem>The team struggled with a high number of injuries last season, which Dr. Verne aims to address through improved training regimens and data-driven injury prevention strategies.</storyitem>\n<storyitem>The team owners, John Hamilton and Sarah Mitchell, openly supported the decision, noting, \"We believe her unique approach will invigorate our team dynamics and enhance player performance.\"</storyitem>\n<storyitem>Hamilton and Mitchell have invested in upgrading the team's training facilities to support Dr. Verne's data-driven methodologies.</storyitem>\n<storyitem>The decision to hire Dr. Lydia Verne reflects a growing trend in the regional baseball league to incorporate data-driven decision-making practices.</storyitem>\n<storyitem>Several teams in the league have already started integrating analytics into their coaching strategies, with mixed results.</storyitem>\n<storyitem>Coaching staff and analytics coordinators are scheduled to attend a series of workshops led by Dr. Verne to learn new analytics methodologies.</storyitem>\n<storyitem>The workshops will cover topics such as player performance metrics, game theory applications, and the use of machine learning in sports analytics.</storyitem>\n<storyitem>Current staff members, including Head Coach Evan Suarez, expressed optimism, stating, \"Dr. Verne\u2019s approach is as inspiring as it is innovative.\"</storyitem>\n<storyitem>Suarez has been a proponent of integrating technology into sports and has previously collaborated with data scientists to enhance team strategies.</storyitem>\n<storyitem>Three former players of the Riverbank Rattles have formed a consultancy initiative, the Silver Slugger Analytics Firm, offering additional data insights to the team.</storyitem>\n<storyitem>The Silver Slugger Analytics Firm specializes in biomechanical analysis and has developed proprietary software to assess player movements and predict injury risks.</storyitem>\n<storyitem>Local sports commentators and analysts have noted the potential for Riverbank Rattles to impact upcoming regional tournaments positively.</storyitem>\n<storyitem>Commentators predict that the team could improve their standings by at least two positions in the next season with Dr. Verne's strategies.</storyitem>\n<storyitem>Dr. Verne plans to host an open forum with fans at Sunstone Sports Arena on 2025-06-01, to discuss her vision for the team's future.</storyitem>\n<storyitem>The forum will include a Q&A session where fans can ask Dr. Verne about her plans and the expected changes in the team's approach.</storyitem>\n<storyitems>",
+    "NEW_PERSON_NAME": [
+      {
+        "name": "Dr. Lydia Verne",
+        "old_name": "Dr. Lydia Verne"
+      },
+      {
+        "name": "John Hamilton",
+        "old_name": "John Hamilton"
+      },
+      {
+        "name": "Sarah Mitchell",
+        "old_name": "Sarah Mitchell"
+      },
+      {
+        "name": "Evan Suarez",
+        "old_name": "Evan Suarez"
+      }
+    ],
+    "NEW_ORGANIZATION_NAME": [
+      {
+        "name": "Riverbank Rattles",
+        "old_name": "Riverbank Rattles"
+      },
+      {
+        "name": "Silver Slugger Analytics Firm",
+        "old_name": "Silver Slugger Analytics Firm"
+      }
+    ],
+    "NEW_LOCATION_NAME": [],
+    "NEW_PRODUCT_NAME": [],
+    "NEW_ART_NAME": [],
+    "NEW_BUILDING_NAME": [
+      {
+        "name": "Sunstone Sports Arena",
+        "old_name": "Sunstone Sports Arena"
+      }
+    ],
+    "NEW_EVENT_NAME": [],
+    "NEW_MISCELLANEOUS_NAME": [],
+    "CORRECTED_PERSON_NAME": [
+      {
+        "name": "Dr. Lydia Verne",
+        "old_name": "Dr. Lydia Verne",
+        "id": "PERSON-1"
+      },
+      {
+        "name": "John Hamilton",
+        "old_name": "John Hamilton",
+        "id": "PERSON-2"
+      },
+      {
+        "name": "Sarah Mitchell",
+        "old_name": "Sarah Mitchell",
+        "id": "PERSON-3"
+      },
+      {
+        "name": "Evan Suarez",
+        "old_name": "Evan Suarez",
+        "id": "PERSON-4"
+      }
+    ],
+    "CORRECTED_ORGANIZATION_NAME": [
+      {
+        "name": "Riverbank Rattles",
+        "old_name": "Riverbank Rattles",
+        "id": "ORGANIZATION-1"
+      },
+      {
+        "name": "Silver Slugger Analytics Firm",
+        "old_name": "Silver Slugger Analytics Firm",
+        "id": "ORGANIZATION-2"
+      }
+    ],
+    "CORRECTED_LOCATION_NAME": [],
+    "CORRECTED_PRODUCT_NAME": [],
+    "CORRECTED_ART_NAME": [],
+    "CORRECTED_BUILDING_NAME": [
+      {
+        "name": "Sunstone Sports Arena",
+        "old_name": "Sunstone Sports Arena",
+        "id": "BUILDING-1"
+      }
+    ],
+    "CORRECTED_EVENT_NAME": [],
+    "CORRECTED_MISCELLANEOUS_NAME": [],
+    "CRITIQUE_ERRORS": {
+      "entity-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ]
+    },
+    "ADJUSTED_PERSONS_XML": "<person><id>PERSON-1</id><name>Dr. Lydia Verne</name><old_name>Dr. Lydia Verne</old_name></person>\n<person><id>PERSON-2</id><name>John Hamilton</name><old_name>John Hamilton</old_name></person>\n<person><id>PERSON-3</id><name>Sarah Mitchell</name><old_name>Sarah Mitchell</old_name></person>\n<person><id>PERSON-4</id><name>Evan Suarez</name><old_name>Evan Suarez</old_name></person>",
+    "ADJUSTED_ORGANIZATIONS_XML": "<organization><id>ORGANIZATION-1</id><name>Riverbank Rattles</name><old_name>Riverbank Rattles</old_name></organization>\n<organization><id>ORGANIZATION-2</id><name>Silver Slugger Analytics Firm</name><old_name>Silver Slugger Analytics Firm</old_name></organization>",
+    "ADJUSTED_LOCATIONS_XML": "",
+    "ADJUSTED_PRODUCTS_XML": "",
+    "ADJUSTED_ARTS_XML": "",
+    "ADJUSTED_BUILDINGS_XML": "<building><id>BUILDING-1</id><name>Sunstone Sports Arena</name><old_name>Sunstone Sports Arena</old_name></building>",
+    "ADJUSTED_EVENTS_XML": "",
+    "ADJUSTED_MISCELLANEOUSS_XML": "",
+    "USED_PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Dr. Lydia Verne"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "John Hamilton"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Sarah Mitchell"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Evan Suarez"
+      }
+    ],
+    "USED_ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Riverbank Rattles"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Silver Slugger Analytics Firm"
+      }
+    ],
+    "USED_LOCATION": [],
+    "USED_PRODUCT": [],
+    "USED_ART": [],
+    "USED_BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Sunstone Sports Arena"
+      }
+    ],
+    "USED_EVENT": [],
+    "USED_MISCELLANEOUS": [],
+    "USED_PRE-EXISTING-PERSON": [],
+    "USED_NEW-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Dr. Lydia Verne",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "John Hamilton",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Sarah Mitchell",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Evan Suarez",
+        "category": "person"
+      }
+    ],
+    "ALL_USED_PERSON_XML": "<person><category>person</category><id>PERSON-1</id><name>Dr. Lydia Verne</name></person>\n<person><category>person</category><id>PERSON-2</id><name>John Hamilton</name></person>\n<person><category>person</category><id>PERSON-3</id><name>Sarah Mitchell</name></person>\n<person><category>person</category><id>PERSON-4</id><name>Evan Suarez</name></person>",
+    "USED-NAME-AND-ID-FOR-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Dr. Lydia Verne",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "John Hamilton",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Sarah Mitchell",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Evan Suarez",
+        "category": "person"
+      }
+    ],
+    "USED_PRE-EXISTING-ORGANIZATION": [],
+    "USED_NEW-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Riverbank Rattles",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Silver Slugger Analytics Firm",
+        "category": "organization"
+      }
+    ],
+    "ALL_USED_ORGANIZATION_XML": "<organization><category>organization</category><id>ORGANIZATION-1</id><name>Riverbank Rattles</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-2</id><name>Silver Slugger Analytics Firm</name></organization>",
+    "USED-NAME-AND-ID-FOR-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Riverbank Rattles",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Silver Slugger Analytics Firm",
+        "category": "organization"
+      }
+    ],
+    "USED_PRE-EXISTING-LOCATION": [],
+    "USED_NEW-LOCATION": [],
+    "ALL_USED_LOCATION_XML": "",
+    "USED-NAME-AND-ID-FOR-LOCATION": [],
+    "USED_PRE-EXISTING-PRODUCT": [],
+    "USED_NEW-PRODUCT": [],
+    "ALL_USED_PRODUCT_XML": "",
+    "USED-NAME-AND-ID-FOR-PRODUCT": [],
+    "USED_PRE-EXISTING-ART": [],
+    "USED_NEW-ART": [],
+    "ALL_USED_ART_XML": "",
+    "USED-NAME-AND-ID-FOR-ART": [],
+    "USED_PRE-EXISTING-BUILDING": [],
+    "USED_NEW-BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Sunstone Sports Arena",
+        "category": "building"
+      }
+    ],
+    "ALL_USED_BUILDING_XML": "<building><category>building</category><id>BUILDING-1</id><name>Sunstone Sports Arena</name></building>",
+    "USED-NAME-AND-ID-FOR-BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Sunstone Sports Arena",
+        "category": "building"
+      }
+    ],
+    "USED_PRE-EXISTING-EVENT": [],
+    "USED_NEW-EVENT": [],
+    "ALL_USED_EVENT_XML": "",
+    "USED-NAME-AND-ID-FOR-EVENT": [],
+    "USED_PRE-EXISTING-MISCELLANEOUS": [],
+    "USED_NEW-MISCELLANEOUS": [],
+    "ALL_USED_MISCELLANEOUS_XML": "",
+    "USED-NAME-AND-ID-FOR-MISCELLANEOUS": []
+  },
+  "critiques": [
+    {
+      "critique": "The output format is incorrect. Please output the results in the following format:\n<outline>\n<storyitem>First story item</storyitem>\n<storyitem>Second story item</storyitem>\n...\n<storyitem>Last story item</storyitem>\n</outline>\nEnsure that special characters within the XML nodes (like \"&\") are properly escaped and encoded in UTF-8 to ensure the output can be parsed automatically. For example, instead of \"Q&A\" write \"Q&amp;A\".",
+      "response": "```xml\n<outline>\n    <storyitem>On 2025-05-14, esteemed analytics expert {Dr. Lydia Verne|PERSON-1} was announced as the new team manager for the {Riverbank Rattles|ORGANIZATION-1}, part of the northern regional baseball league.</storyitem>\n    <storyitem>{Dr. Lydia Verne|PERSON-1}, recognized for her extensive work in sports analytics and data interpretation, has previously consulted for major league teams and published influential papers on predictive modeling in sports.</storyitem>\n    <storyitem>{Dr. Lydia Verne|PERSON-1} expressed her enthusiasm: \"I am excited to blend analytics with firsthand coaching to shape the team\u2019s strategy.\"</storyitem>\n    <storyitem>{Dr. Verne|PERSON-1} plans to implement a data-driven approach that includes real-time performance tracking and advanced statistical analysis to optimize player performance.</storyitem>\n    <storyitem>The {Riverbank Rattles|ORGANIZATION-1} previously finished fourth in the league standings, with a record of 68 wins and 72 losses, indicating a potential forthcoming transformation under {Verne|PERSON-1}\u2019s management.</storyitem>\n    <storyitem>The team struggled with a high number of injuries last season, which {Dr. Verne|PERSON-1} aims to address through improved training regimens and data-driven injury prevention strategies.</storyitem>\n    <storyitem>The team owners, {John Hamilton|PERSON-2} and {Sarah Mitchell|PERSON-3}, openly supported the decision, noting, \"We believe her unique approach will invigorate our team dynamics and enhance player performance.\"</storyitem>\n    <storyitem>{Hamilton|PERSON-2} and {Mitchell|PERSON-3} have invested in upgrading the team's training facilities to support {Dr. Verne|PERSON-1}'s data-driven methodologies.</storyitem>\n    <storyitem>The decision to hire {Dr. Lydia Verne|PERSON-1} reflects a growing trend in the regional baseball league to incorporate data-driven decision-making practices.</storyitem>\n    <storyitem>Several teams in the league have already started integrating analytics into their coaching strategies, with mixed results.</storyitem>\n    <storyitem>Coaching staff and analytics coordinators are scheduled to attend a series of workshops led by {Dr. Verne|PERSON-1} to learn new analytics methodologies.</storyitem>\n    <storyitem>The workshops will cover topics such as player performance metrics, game theory applications, and the use of machine learning in sports analytics.</storyitem>\n    <storyitem>Current staff members, including Head Coach {Evan Suarez|PERSON-4}, expressed optimism, stating, \"{Dr. Verne|PERSON-1}\u2019s approach is as inspiring as it is innovative.\"</storyitem>\n    <storyitem>{Suarez|PERSON-4} has been a proponent of integrating technology into sports and has previously collaborated with data scientists to enhance team strategies.</storyitem>\n    <storyitem>Three former players of the {Riverbank Rattles|ORGANIZATION-1} have formed a consultancy initiative, the {Silver Slugger Analytics Firm|ORGANIZATION-2}, offering additional data insights to the team.</storyitem>\n    <storyitem>The {Silver Slugger Analytics Firm|ORGANIZATION-2} specializes in biomechanical analysis and has developed proprietary software to assess player movements and predict injury risks.</storyitem>\n    <storyitem>Local sports commentators and analysts have noted the potential for {Riverbank Rattles|ORGANIZATION-1} to impact upcoming regional tournaments positively.</storyitem>\n    <storyitem>Commentators predict that the team could improve their standings by at least two positions in the next season with {Dr. Verne|PERSON-1}'s strategies.</storyitem>\n    <storyitem>{Dr. Verne|PERSON-1} plans to host an open forum with fans at {Sunstone Sports Arena|BUILDING-1} on 2025-06-01, to discuss her vision for the team's future.</storyitem>\n    <storyitem>The forum will include a Q&amp;A session where fans can ask {Dr. Verne|PERSON-1} about her plans and the expected changes in the team's approach.</storyitem>\n</outline>\n```"
+    }
+  ]
+}

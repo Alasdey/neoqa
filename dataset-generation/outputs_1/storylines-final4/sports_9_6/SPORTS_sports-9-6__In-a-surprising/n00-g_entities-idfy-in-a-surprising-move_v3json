@@ -1,0 +1,401 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "openai/gpt-oss-120b",
+    "temperature": 0.0,
+    "max-tokens": 10000
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "<results>\n  <entities>\n    <person><id>PERSON-1</id><name>Marcellus Vane</name></person>\n    <person><id>PERSON-2</id><name>Lena Roques</name></person>\n    <person><id>PERSON-3</id><name>Jacek Novak</name></person>\n    <person><id>PERSON-4</id><name>Dr. Mira Patel</name></person>\n    <person><id>PERSON-5</id><name>Luis Ortega</name></person>\n    <person><id>PERSON-6</id><name>Sofia Martel</name></person>\n    <person><id>PERSON-7</id><name>Marco Silva</name></person>\n    <organization><id>ORGANIZATION-1</id><name>Crestford Velocity Pro Cycling</name></organization>\n    <organization><id>ORGANIZATION-2</id><name>Apex Rivet Squad</name></organization>\n    <organization><id>ORGANIZATION-3</id><name>Helix AeroTech</name></organization>\n    <organization><id>ORGANIZATION-4</id><name>Riven Vale Cycling Center</name></organization>\n    <organization><id>ORGANIZATION-5</id><name>Alveron Cycling Federation</name></organization>\n    <product><id>PRODUCT-1</id><name>AeroBlade</name></product>\n    <event><id>EVENT-1</id><name>Alpine Classic</name></event>\n    <event><id>EVENT-2</id><name>Northvale Tour</name></event>\n    <location><id>LOCATION-1</id><name>Brookfield</name></location>\n    <miscellaneous><id>MISCELLANEOUS-1</id><name>Renewed Talent</name></miscellaneous>\n  </entities>\n</results>"
+  },
+  "response": "<results>\n  <entities>\n    <person><id>PERSON-1</id><name>Marcellus Vane</name></person>\n    <person><id>PERSON-2</id><name>Lena Roques</name></person>\n    <person><id>PERSON-3</id><name>Jacek Novak</name></person>\n    <person><id>PERSON-4</id><name>Dr. Mira Patel</name></person>\n    <person><id>PERSON-5</id><name>Luis Ortega</name></person>\n    <person><id>PERSON-6</id><name>Sofia Martel</name></person>\n    <person><id>PERSON-7</id><name>Marco Silva</name></person>\n    <organization><id>ORGANIZATION-1</id><name>Crestford Velocity Pro Cycling</name></organization>\n    <organization><id>ORGANIZATION-2</id><name>Apex Rivet Squad</name></organization>\n    <organization><id>ORGANIZATION-3</id><name>Helix AeroTech</name></organization>\n    <organization><id>ORGANIZATION-4</id><name>Riven Vale Cycling Center</name></organization>\n    <organization><id>ORGANIZATION-5</id><name>Alveron Cycling Federation</name></organization>\n    <product><id>PRODUCT-1</id><name>AeroBlade</name></product>\n    <event><id>EVENT-1</id><name>Alpine Classic</name></event>\n    <event><id>EVENT-2</id><name>Northvale Tour</name></event>\n    <location><id>LOCATION-1</id><name>Brookfield</name></location>\n    <miscellaneous><id>MISCELLANEOUS-1</id><name>Renewed Talent</name></miscellaneous>\n  </entities>\n</results>",
+  "instructions": "You are an AI assistant tasked with identifying which of the provided entities are explicitly named within the provided outline. Follow these instructions carefully:\n\n1. The date for this fictional event outline is:\n<date>{{DATE}}</date>\n\n2. Here is the outline you need to analyze:\n<outline>\n{{OUTLINE}}\n</outline>\n\n3. Here is the list of known (fictional) named entities:\n<entities>\n{{LOCATIONS_XML}}\n{{PERSONS_XML}}\n{{ORGANIZATIONS_XML}}\n{{PRODUCTS_XML}}\n{{ARTS_XML}}\n{{EVENTS_XML}}\n{{BUILDINGS_XML}}\n{{MISCELLANEOUSS_XML}}\n\n{{ADJUSTED_LOCATIONS_XML}}\n{{ADJUSTED_PERSONS_XML}}\n{{ADJUSTED_ORGANIZATIONS_XML}}\n{{ADJUSTED_PRODUCTS_XML}}\n{{ADJUSTED_ARTS_XML}}\n{{ADJUSTED_BUILDINGS_XML}}\n{{ADJUSTED_EVENTS_XML}}\n{{ADJUSTED_MISCELLANEOUSS_XML}}\n</entities>\n\n4. Your task is to go through all of the named entities in the provided list. For each named entity, check if it is explicitly referred to by name in the outline. If a named entity is explicitly mentioned by name, include it in your results.\n\n5. For each entity you identify, list them using the following format:\n<[entity_type]><id>[id of the entity]</id><name>[full name of the entity]</name></[entity_type]>\n\n6. Present your final output within a single <results> root node, structured as follows:\n\n<results>\n<entities>\n[List all identified entities here as described in step 5]\n</entities>\n</results>\n\n7. Double-check your work: For each entity that you have identified, make sure to find the sentence within the outline that explicitly refers to this identified entity by name. If you cannot find that the entity is mentioned explicitly by name in the outline, do not include it in your results.\n\n8. You can use a <scratchpad> for your thinking process. Do not include any XML tags within your scratchpad.\n\n9. Make sure that you have not missed any named entity from the outline that was also provided to you in the list of named entities.\n\nRemember, only include entities that are explicitly mentioned by name in the outline. Do not infer or assume the presence of entities that are not directly named.",
+  "text_prompt": "You are an AI assistant tasked with identifying which of the provided entities are explicitly named within the provided outline. Follow these instructions carefully:\n\n1. The date for this fictional event outline is:\n<date>2025-04-02</date>\n\n2. Here is the outline you need to analyze:\n<outline>\nMarcellus Vane announced on 2025-04-01 that he will join Crestford Velocity Pro Cycling under manager Lena Roques.\nThe announcement was made during a live webcast from Crestford\u2019s headquarters in Brookfield, and a press release highlighted Vane\u2019s three Grand Tour podiums.\nMarcellus Vane retired from professional cycling in 2022 after competing for Apex Rivet Squad.\nVane\u2019s 2022 retirement followed a season\u2011ending crash at the Alpine Classic, after which he completed a year\u2011long rehabilitation.\nMarcellus Vane cited improved team dynamics at Crestford Velocity Pro Cycling as a primary reason for his return.\nHe specifically praised the team\u2019s collaborative race\u2011strategy meetings and the integration of data\u2011driven performance analytics.\nLena Roques said that Marcellus Vane\u2019s addition strengthens Crestford Velocity Pro Cycling\u2019s depth for the upcoming Northvale Tour.\nLena Roques added that Vane\u2019s experience will mentor younger riders, particularly sprinter Jacek Novak, during the tour\u2019s mountainous stages.\nMarcellus Vane signed a two\u2011year contract with Crestford Velocity Pro Cycling that designates him as road captain.\nThe contract includes a performance bonus tied to achieving a top\u201110 finish in any WorldTour event during the 2025 season.\nCrestford Velocity Pro Cycling announced a sponsorship agreement with Helix AeroTech that will provide upgraded bicycles and gear for the 2025 season.\nHelix AeroTech will supply the team with its new \u201cAeroBlade\u201d carbon\u2011fiber frames and custom\u2011fitted aero helmets featuring integrated telemetry.\nMarcellus Vane began a pre\u2011season training camp at Riven Vale Cycling Center on 2025-03-20.\nThe Riven Vale Cycling Center\u2019s altitude of 1,200 meters was chosen to enhance Vane\u2019s VO\u2082 max, and the camp featured daily sessions with sports scientist Dr. Mira Patel.\nAlveron Cycling Federation issued a statement supporting Marcellus Vane\u2019s return to competition with Crestford Velocity Pro Cycling.\nThe federation\u2019s statement emphasized that Vane\u2019s return aligns with its \u201cRenewed Talent\u201d initiative aimed at encouraging veteran athletes to re\u2011enter competition.\nCrestford Velocity Pro Cycling entered the Northvale Tour with Marcellus Vane listed as the team leader for Stage\u202f1.\nThe team\u2019s roster for Stage\u202f1 also includes time\u2011trial specialist Luis Ortega and domestique Sofia Martel, all wearing the new teal\u2011white kit.\nMarcellus Vane finished fourth in Stage\u202f1 of the Northvale Tour, showing immediate competitiveness.\nVane finished 12 seconds behind the stage winner, with a strong sprint finish that placed him ahead of former teammate Marco Silva.\n</outline>\n\n3. Here is the list of known (fictional) named entities:\n<entities>\n\n\n\n\n\n\n\n\n\n<location><id>LOCATION-1</id><name>Brookfield</name><old_name>Brookfield</old_name></location>\n<person><id>PERSON-1</id><name>Marcellus Vane</name><old_name>Marcellus Vane</old_name></person>\n<person><id>PERSON-2</id><name>Lena Roques</name><old_name>Lena Roques</old_name></person>\n<person><id>PERSON-3</id><name>Jacek Novak</name><old_name>Jacek Novak</old_name></person>\n<person><id>PERSON-4</id><name>Dr. Mira Patel</name><old_name>Dr. Mira Patel</old_name></person>\n<person><id>PERSON-5</id><name>Luis Ortega</name><old_name>Luis Ortega</old_name></person>\n<person><id>PERSON-6</id><name>Sofia Martel</name><old_name>Sofia Martel</old_name></person>\n<person><id>PERSON-7</id><name>Marco Silva</name><old_name>Marco Silva</old_name></person>\n<organization><id>ORGANIZATION-1</id><name>Crestford Velocity Pro Cycling</name><old_name>Crestford Velocity Pro Cycling</old_name></organization>\n<organization><id>ORGANIZATION-2</id><name>Apex Rivet Squad</name><old_name>Apex Rivet Squad</old_name></organization>\n<organization><id>ORGANIZATION-3</id><name>Helix AeroTech</name><old_name>Helix AeroTech</old_name></organization>\n<organization><id>ORGANIZATION-4</id><name>Riven Vale Cycling Center</name><old_name>Riven Vale Cycling Center</old_name></organization>\n<organization><id>ORGANIZATION-5</id><name>Alveron Cycling Federation</name><old_name>Alveron Cycling Federation</old_name></organization>\n<product><id>PRODUCT-1</id><name>AeroBlade</name><old_name>AeroBlade</old_name></product>\n\n\n<event><id>EVENT-1</id><name>Alpine Classic</name><old_name>Alpine Classic</old_name></event>\n<event><id>EVENT-2</id><name>Northvale Tour</name><old_name>Northvale Tour</old_name></event>\n<miscellaneous><id>MISCELLANEOUS-1</id><name>Renewed Talent</name><old_name>Renewed Talent</old_name></miscellaneous>\n</entities>\n\n4. Your task is to go through all of the named entities in the provided list. For each named entity, check if it is explicitly referred to by name in the outline. If a named entity is explicitly mentioned by name, include it in your results.\n\n5. For each entity you identify, list them using the following format:\n<[entity_type]><id>[id of the entity]</id><name>[full name of the entity]</name></[entity_type]>\n\n6. Present your final output within a single <results> root node, structured as follows:\n\n<results>\n<entities>\n[List all identified entities here as described in step 5]\n</entities>\n</results>\n\n7. Double-check your work: For each entity that you have identified, make sure to find the sentence within the outline that explicitly refers to this identified entity by name. If you cannot find that the entity is mentioned explicitly by name in the outline, do not include it in your results.\n\n8. You can use a <scratchpad> for your thinking process. Do not include any XML tags within your scratchpad.\n\n9. Make sure that you have not missed any named entity from the outline that was also provided to you in the list of named entities.\n\nRemember, only include entities that are explicitly mentioned by name in the outline. Do not infer or assume the presence of entities that are not directly named.",
+  "system-prompt": null,
+  "values": {
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "GENRE": "Sports",
+    "HISTORIES": [],
+    "EVENT_SUMMARY": "In a surprising move, a once-retired cyclist has joined a new professional team, citing improved team dynamics and competitive spirit as key motivators for his return.",
+    "EVENT_SUMMARY_FOR_NAME": "In a surprising move",
+    "KEYWORDS": "",
+    "CREATED_AT": 0,
+    "NEXT_IDS": {
+      "person": 8,
+      "organization": 6,
+      "location": 2,
+      "product": 2,
+      "art": 1,
+      "building": 1,
+      "event": 3,
+      "miscellaneous": 2
+    },
+    "PROVIDED_DATE": "",
+    "PERSON": [],
+    "ORGANIZATION": [],
+    "LOCATION": [],
+    "PRODUCT": [],
+    "ART": [],
+    "BUILDING": [],
+    "EVENT": [],
+    "MISCELLANEOUS": [],
+    "PERSONS_XML": "",
+    "ORGANIZATIONS_XML": "",
+    "LOCATIONS_XML": "",
+    "PRODUCTS_XML": "",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "",
+    "EVENTS_XML": "",
+    "MISCELLANEOUSS_XML": "",
+    "NUM_STORYITEMS": 10,
+    "HISTORY_XML": "",
+    "STORY_ITEM": [
+      "Marcellus Vane announced on 2025-04-01 that he will join Crestford Velocity Pro Cycling under manager Lena Roques.",
+      "The announcement was made during a live webcast from Crestford\u2019s headquarters in Brookfield, and a press release highlighted Vane\u2019s three Grand Tour podiums.",
+      "Marcellus Vane retired from professional cycling in 2022 after competing for Apex Rivet Squad.",
+      "Vane\u2019s 2022 retirement followed a season\u2011ending crash at the Alpine Classic, after which he completed a year\u2011long rehabilitation.",
+      "Marcellus Vane cited improved team dynamics at Crestford Velocity Pro Cycling as a primary reason for his return.",
+      "He specifically praised the team\u2019s collaborative race\u2011strategy meetings and the integration of data\u2011driven performance analytics.",
+      "Lena Roques said that Marcellus Vane\u2019s addition strengthens Crestford Velocity Pro Cycling\u2019s depth for the upcoming Northvale Tour.",
+      "Lena Roques added that Vane\u2019s experience will mentor younger riders, particularly sprinter Jacek Novak, during the tour\u2019s mountainous stages.",
+      "Marcellus Vane signed a two\u2011year contract with Crestford Velocity Pro Cycling that designates him as road captain.",
+      "The contract includes a performance bonus tied to achieving a top\u201110 finish in any WorldTour event during the 2025 season.",
+      "Crestford Velocity Pro Cycling announced a sponsorship agreement with Helix AeroTech that will provide upgraded bicycles and gear for the 2025 season.",
+      "Helix AeroTech will supply the team with its new \u201cAeroBlade\u201d carbon\u2011fiber frames and custom\u2011fitted aero helmets featuring integrated telemetry.",
+      "Marcellus Vane began a pre\u2011season training camp at Riven Vale Cycling Center on 2025-03-20.",
+      "The Riven Vale Cycling Center\u2019s altitude of 1,200 meters was chosen to enhance Vane\u2019s VO\u2082 max, and the camp featured daily sessions with sports scientist Dr. Mira Patel.",
+      "Alveron Cycling Federation issued a statement supporting Marcellus Vane\u2019s return to competition with Crestford Velocity Pro Cycling.",
+      "The federation\u2019s statement emphasized that Vane\u2019s return aligns with its \u201cRenewed Talent\u201d initiative aimed at encouraging veteran athletes to re\u2011enter competition.",
+      "Crestford Velocity Pro Cycling entered the Northvale Tour with Marcellus Vane listed as the team leader for Stage\u202f1.",
+      "The team\u2019s roster for Stage\u202f1 also includes time\u2011trial specialist Luis Ortega and domestique Sofia Martel, all wearing the new teal\u2011white kit.",
+      "Marcellus Vane finished fourth in Stage\u202f1 of the Northvale Tour, showing immediate competitiveness.",
+      "Vane finished 12 seconds behind the stage winner, with a strong sprint finish that placed him ahead of former teammate Marco Silva."
+    ],
+    "DATE": "2025-04-02",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 2,
+    "OUTLINE": "Marcellus Vane announced on 2025-04-01 that he will join Crestford Velocity Pro Cycling under manager Lena Roques.\nThe announcement was made during a live webcast from Crestford\u2019s headquarters in Brookfield, and a press release highlighted Vane\u2019s three Grand Tour podiums.\nMarcellus Vane retired from professional cycling in 2022 after competing for Apex Rivet Squad.\nVane\u2019s 2022 retirement followed a season\u2011ending crash at the Alpine Classic, after which he completed a year\u2011long rehabilitation.\nMarcellus Vane cited improved team dynamics at Crestford Velocity Pro Cycling as a primary reason for his return.\nHe specifically praised the team\u2019s collaborative race\u2011strategy meetings and the integration of data\u2011driven performance analytics.\nLena Roques said that Marcellus Vane\u2019s addition strengthens Crestford Velocity Pro Cycling\u2019s depth for the upcoming Northvale Tour.\nLena Roques added that Vane\u2019s experience will mentor younger riders, particularly sprinter Jacek Novak, during the tour\u2019s mountainous stages.\nMarcellus Vane signed a two\u2011year contract with Crestford Velocity Pro Cycling that designates him as road captain.\nThe contract includes a performance bonus tied to achieving a top\u201110 finish in any WorldTour event during the 2025 season.\nCrestford Velocity Pro Cycling announced a sponsorship agreement with Helix AeroTech that will provide upgraded bicycles and gear for the 2025 season.\nHelix AeroTech will supply the team with its new \u201cAeroBlade\u201d carbon\u2011fiber frames and custom\u2011fitted aero helmets featuring integrated telemetry.\nMarcellus Vane began a pre\u2011season training camp at Riven Vale Cycling Center on 2025-03-20.\nThe Riven Vale Cycling Center\u2019s altitude of 1,200 meters was chosen to enhance Vane\u2019s VO\u2082 max, and the camp featured daily sessions with sports scientist Dr. Mira Patel.\nAlveron Cycling Federation issued a statement supporting Marcellus Vane\u2019s return to competition with Crestford Velocity Pro Cycling.\nThe federation\u2019s statement emphasized that Vane\u2019s return aligns with its \u201cRenewed Talent\u201d initiative aimed at encouraging veteran athletes to re\u2011enter competition.\nCrestford Velocity Pro Cycling entered the Northvale Tour with Marcellus Vane listed as the team leader for Stage\u202f1.\nThe team\u2019s roster for Stage\u202f1 also includes time\u2011trial specialist Luis Ortega and domestique Sofia Martel, all wearing the new teal\u2011white kit.\nMarcellus Vane finished fourth in Stage\u202f1 of the Northvale Tour, showing immediate competitiveness.\nVane finished 12 seconds behind the stage winner, with a strong sprint finish that placed him ahead of former teammate Marco Silva.",
+    "PRE-CONSISTENCY-NUM-ITEMS": 20,
+    "STORYITEM_XML": "<storyitems>\n<storyitem>Marcellus Vane announced on 2025-04-01 that he will join Crestford Velocity Pro Cycling under manager Lena Roques.</storyitem>\n<storyitem>The announcement was made during a live webcast from Crestford\u2019s headquarters in Brookfield, and a press release highlighted Vane\u2019s three Grand Tour podiums.</storyitem>\n<storyitem>Marcellus Vane retired from professional cycling in 2022 after competing for Apex Rivet Squad.</storyitem>\n<storyitem>Vane\u2019s 2022 retirement followed a season\u2011ending crash at the Alpine Classic, after which he completed a year\u2011long rehabilitation.</storyitem>\n<storyitem>Marcellus Vane cited improved team dynamics at Crestford Velocity Pro Cycling as a primary reason for his return.</storyitem>\n<storyitem>He specifically praised the team\u2019s collaborative race\u2011strategy meetings and the integration of data\u2011driven performance analytics.</storyitem>\n<storyitem>Lena Roques said that Marcellus Vane\u2019s addition strengthens Crestford Velocity Pro Cycling\u2019s depth for the upcoming Northvale Tour.</storyitem>\n<storyitem>Lena Roques added that Vane\u2019s experience will mentor younger riders, particularly sprinter Jacek Novak, during the tour\u2019s mountainous stages.</storyitem>\n<storyitem>Marcellus Vane signed a two\u2011year contract with Crestford Velocity Pro Cycling that designates him as road captain.</storyitem>\n<storyitem>The contract includes a performance bonus tied to achieving a top\u201110 finish in any WorldTour event during the 2025 season.</storyitem>\n<storyitem>Crestford Velocity Pro Cycling announced a sponsorship agreement with Helix AeroTech that will provide upgraded bicycles and gear for the 2025 season.</storyitem>\n<storyitem>Helix AeroTech will supply the team with its new \u201cAeroBlade\u201d carbon\u2011fiber frames and custom\u2011fitted aero helmets featuring integrated telemetry.</storyitem>\n<storyitem>Marcellus Vane began a pre\u2011season training camp at Riven Vale Cycling Center on 2025-03-20.</storyitem>\n<storyitem>The Riven Vale Cycling Center\u2019s altitude of 1,200 meters was chosen to enhance Vane\u2019s VO\u2082 max, and the camp featured daily sessions with sports scientist Dr. Mira Patel.</storyitem>\n<storyitem>Alveron Cycling Federation issued a statement supporting Marcellus Vane\u2019s return to competition with Crestford Velocity Pro Cycling.</storyitem>\n<storyitem>The federation\u2019s statement emphasized that Vane\u2019s return aligns with its \u201cRenewed Talent\u201d initiative aimed at encouraging veteran athletes to re\u2011enter competition.</storyitem>\n<storyitem>Crestford Velocity Pro Cycling entered the Northvale Tour with Marcellus Vane listed as the team leader for Stage\u202f1.</storyitem>\n<storyitem>The team\u2019s roster for Stage\u202f1 also includes time\u2011trial specialist Luis Ortega and domestique Sofia Martel, all wearing the new teal\u2011white kit.</storyitem>\n<storyitem>Marcellus Vane finished fourth in Stage\u202f1 of the Northvale Tour, showing immediate competitiveness.</storyitem>\n<storyitem>Vane finished 12 seconds behind the stage winner, with a strong sprint finish that placed him ahead of former teammate Marco Silva.</storyitem>\n<storyitems>",
+    "NEW_PERSON_NAME": [
+      {
+        "name": "Marcellus Vane",
+        "old_name": "Marcellus Vane"
+      },
+      {
+        "name": "Lena Roques",
+        "old_name": "Lena Roques"
+      },
+      {
+        "name": "Jacek Novak",
+        "old_name": "Jacek Novak"
+      },
+      {
+        "name": "Dr. Mira Patel",
+        "old_name": "Dr. Mira Patel"
+      },
+      {
+        "name": "Luis Ortega",
+        "old_name": "Luis Ortega"
+      },
+      {
+        "name": "Sofia Martel",
+        "old_name": "Sofia Martel"
+      },
+      {
+        "name": "Marco Silva",
+        "old_name": "Marco Silva"
+      }
+    ],
+    "NEW_ORGANIZATION_NAME": [
+      {
+        "name": "Crestford Velocity Pro Cycling",
+        "old_name": "Crestford Velocity Pro Cycling"
+      },
+      {
+        "name": "Apex Rivet Squad",
+        "old_name": "Apex Rivet Squad"
+      },
+      {
+        "name": "Helix AeroTech",
+        "old_name": "Helix AeroTech"
+      },
+      {
+        "name": "Riven Vale Cycling Center",
+        "old_name": "Riven Vale Cycling Center"
+      },
+      {
+        "name": "Alveron Cycling Federation",
+        "old_name": "Alveron Cycling Federation"
+      }
+    ],
+    "NEW_LOCATION_NAME": [
+      {
+        "name": "Brookfield",
+        "old_name": "Brookfield"
+      }
+    ],
+    "NEW_PRODUCT_NAME": [
+      {
+        "name": "AeroBlade",
+        "old_name": "AeroBlade"
+      }
+    ],
+    "NEW_ART_NAME": [],
+    "NEW_BUILDING_NAME": [],
+    "NEW_EVENT_NAME": [
+      {
+        "name": "Alpine Classic",
+        "old_name": "Alpine Classic"
+      },
+      {
+        "name": "Northvale Tour",
+        "old_name": "Northvale Tour"
+      }
+    ],
+    "NEW_MISCELLANEOUS_NAME": [
+      {
+        "name": "Renewed Talent",
+        "old_name": "Renewed Talent"
+      }
+    ],
+    "CORRECTED_PERSON_NAME": [
+      {
+        "name": "Marcellus Vane",
+        "old_name": "Marcellus Vane",
+        "id": "PERSON-1"
+      },
+      {
+        "name": "Lena Roques",
+        "old_name": "Lena Roques",
+        "id": "PERSON-2"
+      },
+      {
+        "name": "Jacek Novak",
+        "old_name": "Jacek Novak",
+        "id": "PERSON-3"
+      },
+      {
+        "name": "Dr. Mira Patel",
+        "old_name": "Dr. Mira Patel",
+        "id": "PERSON-4"
+      },
+      {
+        "name": "Luis Ortega",
+        "old_name": "Luis Ortega",
+        "id": "PERSON-5"
+      },
+      {
+        "name": "Sofia Martel",
+        "old_name": "Sofia Martel",
+        "id": "PERSON-6"
+      },
+      {
+        "name": "Marco Silva",
+        "old_name": "Marco Silva",
+        "id": "PERSON-7"
+      }
+    ],
+    "CORRECTED_ORGANIZATION_NAME": [
+      {
+        "name": "Crestford Velocity Pro Cycling",
+        "old_name": "Crestford Velocity Pro Cycling",
+        "id": "ORGANIZATION-1"
+      },
+      {
+        "name": "Apex Rivet Squad",
+        "old_name": "Apex Rivet Squad",
+        "id": "ORGANIZATION-2"
+      },
+      {
+        "name": "Helix AeroTech",
+        "old_name": "Helix AeroTech",
+        "id": "ORGANIZATION-3"
+      },
+      {
+        "name": "Riven Vale Cycling Center",
+        "old_name": "Riven Vale Cycling Center",
+        "id": "ORGANIZATION-4"
+      },
+      {
+        "name": "Alveron Cycling Federation",
+        "old_name": "Alveron Cycling Federation",
+        "id": "ORGANIZATION-5"
+      }
+    ],
+    "CORRECTED_LOCATION_NAME": [
+      {
+        "name": "Brookfield",
+        "old_name": "Brookfield",
+        "id": "LOCATION-1"
+      }
+    ],
+    "CORRECTED_PRODUCT_NAME": [
+      {
+        "name": "AeroBlade",
+        "old_name": "AeroBlade",
+        "id": "PRODUCT-1"
+      }
+    ],
+    "CORRECTED_ART_NAME": [],
+    "CORRECTED_BUILDING_NAME": [],
+    "CORRECTED_EVENT_NAME": [
+      {
+        "name": "Alpine Classic",
+        "old_name": "Alpine Classic",
+        "id": "EVENT-1"
+      },
+      {
+        "name": "Northvale Tour",
+        "old_name": "Northvale Tour",
+        "id": "EVENT-2"
+      }
+    ],
+    "CORRECTED_MISCELLANEOUS_NAME": [
+      {
+        "name": "Renewed Talent",
+        "old_name": "Renewed Talent",
+        "id": "MISCELLANEOUS-1"
+      }
+    ],
+    "CRITIQUE_ERRORS": {
+      "entity-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ]
+    },
+    "ADJUSTED_PERSONS_XML": "<person><id>PERSON-1</id><name>Marcellus Vane</name><old_name>Marcellus Vane</old_name></person>\n<person><id>PERSON-2</id><name>Lena Roques</name><old_name>Lena Roques</old_name></person>\n<person><id>PERSON-3</id><name>Jacek Novak</name><old_name>Jacek Novak</old_name></person>\n<person><id>PERSON-4</id><name>Dr. Mira Patel</name><old_name>Dr. Mira Patel</old_name></person>\n<person><id>PERSON-5</id><name>Luis Ortega</name><old_name>Luis Ortega</old_name></person>\n<person><id>PERSON-6</id><name>Sofia Martel</name><old_name>Sofia Martel</old_name></person>\n<person><id>PERSON-7</id><name>Marco Silva</name><old_name>Marco Silva</old_name></person>",
+    "ADJUSTED_ORGANIZATIONS_XML": "<organization><id>ORGANIZATION-1</id><name>Crestford Velocity Pro Cycling</name><old_name>Crestford Velocity Pro Cycling</old_name></organization>\n<organization><id>ORGANIZATION-2</id><name>Apex Rivet Squad</name><old_name>Apex Rivet Squad</old_name></organization>\n<organization><id>ORGANIZATION-3</id><name>Helix AeroTech</name><old_name>Helix AeroTech</old_name></organization>\n<organization><id>ORGANIZATION-4</id><name>Riven Vale Cycling Center</name><old_name>Riven Vale Cycling Center</old_name></organization>\n<organization><id>ORGANIZATION-5</id><name>Alveron Cycling Federation</name><old_name>Alveron Cycling Federation</old_name></organization>",
+    "ADJUSTED_LOCATIONS_XML": "<location><id>LOCATION-1</id><name>Brookfield</name><old_name>Brookfield</old_name></location>",
+    "ADJUSTED_PRODUCTS_XML": "<product><id>PRODUCT-1</id><name>AeroBlade</name><old_name>AeroBlade</old_name></product>",
+    "ADJUSTED_ARTS_XML": "",
+    "ADJUSTED_BUILDINGS_XML": "",
+    "ADJUSTED_EVENTS_XML": "<event><id>EVENT-1</id><name>Alpine Classic</name><old_name>Alpine Classic</old_name></event>\n<event><id>EVENT-2</id><name>Northvale Tour</name><old_name>Northvale Tour</old_name></event>",
+    "ADJUSTED_MISCELLANEOUSS_XML": "<miscellaneous><id>MISCELLANEOUS-1</id><name>Renewed Talent</name><old_name>Renewed Talent</old_name></miscellaneous>"
+  }
+}

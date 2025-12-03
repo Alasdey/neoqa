@@ -1,0 +1,152 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "openai/gpt-oss-120b",
+    "temperature": 0.0,
+    "max-tokens": 5000
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "<result>\n<scratchpad>\nPotential pairs identified:\n1. Sentences N0\u2011S2 (deadline of 2025\u201103\u201120) and N0\u2011S7 (jersey release on April\u202f5). These give two explicit dates, allowing calculation of the span from March\u202f20 to April\u202f5 \u2192 16 days.\n2. Sentences N0\u2011S3 (confirmation of compliance with the transfer deadline on March\u202f20) and N0\u2011S9 (season opener on October\u202f2). These provide dates March\u202f20 and October\u202f2, enabling calculation of the span \u2192 196 days.\n\nBoth pairs satisfy the requirement of deriving a meaningful absolute duration from two specific points in time.\n</scratchpad>\n\n<time-span>\n<ids>N0-S2, N0-S7</ids>\n<explanation>Sentence N0\u2011S2 states the domestic transfer deadline is 2025\u201103\u201120. Sentence N0\u2011S7 states the limited\u2011edition jersey will be released on April\u202f5. The interval from March\u202f20 to April\u202f5 is 16 days.</explanation>\n</time-span>\n\n<time-span>\n<ids>N0-S3, N0-S9</ids>\n<explanation>Sentence N0\u2011S3 confirms compliance with the transfer deadline on March\u202f20. Sentence N0\u2011S9 says the season opener is on October\u202f2. Counting the days from March\u202f20 to October\u202f2 yields 196 days.</explanation>\n</time-span>\n</result>"
+  },
+  "response": "<result>\n<scratchpad>\nPotential pairs identified:\n1. Sentences N0\u2011S2 (deadline of 2025\u201103\u201120) and N0\u2011S7 (jersey release on April\u202f5). These give two explicit dates, allowing calculation of the span from March\u202f20 to April\u202f5 \u2192 16 days.\n2. Sentences N0\u2011S3 (confirmation of compliance with the transfer deadline on March\u202f20) and N0\u2011S9 (season opener on October\u202f2). These provide dates March\u202f20 and October\u202f2, enabling calculation of the span \u2192 196 days.\n\nBoth pairs satisfy the requirement of deriving a meaningful absolute duration from two specific points in time.\n</scratchpad>\n\n<time-span>\n<ids>N0-S2, N0-S7</ids>\n<explanation>Sentence N0\u2011S2 states the domestic transfer deadline is 2025\u201103\u201120. Sentence N0\u2011S7 states the limited\u2011edition jersey will be released on April\u202f5. The interval from March\u202f20 to April\u202f5 is 16 days.</explanation>\n</time-span>\n\n<time-span>\n<ids>N0-S3, N0-S9</ids>\n<explanation>Sentence N0\u2011S3 confirms compliance with the transfer deadline on March\u202f20. Sentence N0\u2011S9 says the season opener is on October\u202f2. Counting the days from March\u202f20 to October\u202f2 yields 196 days.</explanation>\n</time-span>\n</result>",
+  "instructions": "You are an AI assistant tasked with analyzing fictional event descriptions and identifying sentences that can be used to derive time spans. Your goal is to find up to {{NUM_SPANS}} tuples, each comprising {{NUM_SENTENCES}} sentences, that can be used to compute meaningful time spans.\n\nHere are the outlines of the events you will be analyzing:\n\n<events>\n{{OUTLINES}}\n</events>\n\nTo identify specific points in time from different sentences, consider the following:\n1. Sentences mentioning relative time differences (e.g., \"six weeks ago\", \"in five days\", \"after two hours\"). Try to determine the specific date or time they refer to based on the context.\n2. Sentences mentioning a specific date or time (e.g., \"10:00 am\", \"March 22nd\").\n3. Sentences containing specific details unique to the current event.\n\nYour task is to select tuples of NUM_SENTENCES sentences from which you can derive two specific points in time and compute a meaningful time span (duration). Follow these guidelines:\n- The duration should be computed between comparable units.\n- It must be possible to compute a specific time span between the two points in time.\n- Prioritize sentences containing relative time differences for which you can compute a specific point in time.\n- If possible, include sentences that mention a specific point in time explicitly.\n- If neither of the above is possible, you may select sentences that rely only on the date of the events. However, it is preferred to collect sentences that introduce novel time information.\n\nIf multiple events are provided, the sentences must come from different events. If only one event is provided, the sentences can come from the same event.\nRemember: It should be possible to compute a duration based on different specific points in time from the different selected sentence. DO NOT collect sentences based on which you can compare the ratio of different explicitly mentioned durations! Only select sentences based on which you can compute a meaningful absolute duration.\n\nUse a <scratchpad> to plan your approach before outputting your final results. In your scratchpad, you can list potential sentence pairs, evaluate their suitability, and determine which ones to include in your final output.\n\nFor each tuple you identify, output the result in the following format:\n\n<time-span>\n<ids>[IDs of the selected sentences (comma separated)]</ids>\n<explanation>[Explanation of how the time span can be computed from these sentences]</explanation>\n</time-span>\n\nWrap all your results, including the scratchpad and time spans, in a <result> root node.\n\nExample:\n<result>\n<scratchpad>\nPotential pairs:\n1. Sentences 2 and 5: Mention specific dates, can calculate exact duration.\n2. Sentences 1 and 7: Relative time reference and specific time, need to infer exact start point.\n3. Sentences 3 and 8: Both mention specific times on the same day, can calculate duration.\n\nDecision: Include pairs 1 and 3 in the output.\n</scratchpad>\n\n<time-span>\n<ids>2, 5</ids>\n<explanation>Sentence 2 mentions the event starting on July 1st, while sentence 5 states it ended on July 15th. We can calculate a time span of 14 days between these two dates.</explanation>\n</time-span>\n\n<time-span>\n<ids>3, 8</ids>\n<explanation>Sentence 3 mentions a meeting at 9:00 AM, while sentence 8 refers to a conclusion at 4:30 PM on the same day. We can calculate a time span of 7 hours and 30 minutes between these two points.</explanation>\n</time-span>\n</result>\n\nRemember to analyze the given event outlines carefully, identify suitable sentence pairs, and provide clear explanations for each time span you derive. If you cannot find the required number of valid time spans, include as many as you can identify from the given information.",
+  "text_prompt": "You are an AI assistant tasked with analyzing fictional event descriptions and identifying sentences that can be used to derive time spans. Your goal is to find up to 2 tuples, each comprising 2 sentences, that can be used to compute meaningful time spans.\n\nHere are the outlines of the events you will be analyzing:\n\n<events>\n<event>\n<date>2025-03-15</date>\n<content>\n<item><id>N0-S0</id><text>Rivergate Rivets Women's Basketball Club signs Elara Finch to a one\u2011year contract extension with a reduced base salary and performance incentives based on games played after Elara Finch's previous season's injury layoff.</text></item>\n<item><id>N0-S1</id><text>The extension sets Elara Finch's base salary at $45,000 for the 2025\u201126 season, with an additional $2,500 per game played beyond the first ten appearances.</text></item>\n<item><id>N0-S2</id><text>Midland Women's Basketball League officially records the registration of Elara Finch's extension with Rivergate Rivets Women's Basketball Club before the domestic transfer deadline of 2025-03-20.</text></item>\n<item><id>N0-S3</id><text>The league filed the contract under registration number MWBL\u20112025\u2011RIV\u2011EF, confirming compliance with the transfer deadline on March 20.</text></item>\n<item><id>N0-S4</id><text>Coach Dana Loris of Rivergate Rivets Women's Basketball Club states that the terms of Elara Finch's extension provide roster stability while rewarding Elara Finch's availability post\u2011injury.</text></item>\n<item><id>N0-S5</id><text>Coach Dana Loris added in a press conference at the Rivergate Sports Complex that the incentive clause will activate only after Elara Finch logs a minimum of 500 minutes on the court.</text></item>\n<item><id>N0-S6</id><text>Sundara Sportswear, the primary kit sponsor of Rivergate Rivets Women's Basketball Club, releases a statement supporting the club's decision and notes that Elara Finch's marketability will be highlighted in upcoming promotional campaigns.</text></item>\n<item><id>N0-S7</id><text>Sundara Sportswear announced that Elara Finch will appear in the upcoming \u201cRise Together\u201d winter apparel campaign, featuring a limited\u2011edition jersey released on April 5.</text></item>\n<item><id>N0-S8</id><text>Rivergate Rivets Women's Basketball Club announces that the reduced salary allocation from Elara Finch's extension frees cap space to sign a backup shooting guard before the season opener.</text></item>\n<item><id>N0-S9</id><text>The freed cap space, estimated at $12,000, will be allocated to sign veteran guard Maya Torres from the neighboring Lakeside Lynx before the season opener on October 2.</text></item>\n</content>\n</event>\n</events>\n\nTo identify specific points in time from different sentences, consider the following:\n1. Sentences mentioning relative time differences (e.g., \"six weeks ago\", \"in five days\", \"after two hours\"). Try to determine the specific date or time they refer to based on the context.\n2. Sentences mentioning a specific date or time (e.g., \"10:00 am\", \"March 22nd\").\n3. Sentences containing specific details unique to the current event.\n\nYour task is to select tuples of NUM_SENTENCES sentences from which you can derive two specific points in time and compute a meaningful time span (duration). Follow these guidelines:\n- The duration should be computed between comparable units.\n- It must be possible to compute a specific time span between the two points in time.\n- Prioritize sentences containing relative time differences for which you can compute a specific point in time.\n- If possible, include sentences that mention a specific point in time explicitly.\n- If neither of the above is possible, you may select sentences that rely only on the date of the events. However, it is preferred to collect sentences that introduce novel time information.\n\nIf multiple events are provided, the sentences must come from different events. If only one event is provided, the sentences can come from the same event.\nRemember: It should be possible to compute a duration based on different specific points in time from the different selected sentence. DO NOT collect sentences based on which you can compare the ratio of different explicitly mentioned durations! Only select sentences based on which you can compute a meaningful absolute duration.\n\nUse a <scratchpad> to plan your approach before outputting your final results. In your scratchpad, you can list potential sentence pairs, evaluate their suitability, and determine which ones to include in your final output.\n\nFor each tuple you identify, output the result in the following format:\n\n<time-span>\n<ids>[IDs of the selected sentences (comma separated)]</ids>\n<explanation>[Explanation of how the time span can be computed from these sentences]</explanation>\n</time-span>\n\nWrap all your results, including the scratchpad and time spans, in a <result> root node.\n\nExample:\n<result>\n<scratchpad>\nPotential pairs:\n1. Sentences 2 and 5: Mention specific dates, can calculate exact duration.\n2. Sentences 1 and 7: Relative time reference and specific time, need to infer exact start point.\n3. Sentences 3 and 8: Both mention specific times on the same day, can calculate duration.\n\nDecision: Include pairs 1 and 3 in the output.\n</scratchpad>\n\n<time-span>\n<ids>2, 5</ids>\n<explanation>Sentence 2 mentions the event starting on July 1st, while sentence 5 states it ended on July 15th. We can calculate a time span of 14 days between these two dates.</explanation>\n</time-span>\n\n<time-span>\n<ids>3, 8</ids>\n<explanation>Sentence 3 mentions a meeting at 9:00 AM, while sentence 8 refers to a conclusion at 4:30 PM on the same day. We can calculate a time span of 7 hours and 30 minutes between these two points.</explanation>\n</time-span>\n</result>\n\nRemember to analyze the given event outlines carefully, identify suitable sentence pairs, and provide clear explanations for each time span you derive. If you cannot find the required number of valid time spans, include as many as you can identify from the given information.",
+  "system-prompt": null,
+  "values": {
+    "OUTLINES": "<event>\n<date>2025-03-15</date>\n<content>\n<item><id>N0-S0</id><text>Rivergate Rivets Women's Basketball Club signs Elara Finch to a one\u2011year contract extension with a reduced base salary and performance incentives based on games played after Elara Finch's previous season's injury layoff.</text></item>\n<item><id>N0-S1</id><text>The extension sets Elara Finch's base salary at $45,000 for the 2025\u201126 season, with an additional $2,500 per game played beyond the first ten appearances.</text></item>\n<item><id>N0-S2</id><text>Midland Women's Basketball League officially records the registration of Elara Finch's extension with Rivergate Rivets Women's Basketball Club before the domestic transfer deadline of 2025-03-20.</text></item>\n<item><id>N0-S3</id><text>The league filed the contract under registration number MWBL\u20112025\u2011RIV\u2011EF, confirming compliance with the transfer deadline on March 20.</text></item>\n<item><id>N0-S4</id><text>Coach Dana Loris of Rivergate Rivets Women's Basketball Club states that the terms of Elara Finch's extension provide roster stability while rewarding Elara Finch's availability post\u2011injury.</text></item>\n<item><id>N0-S5</id><text>Coach Dana Loris added in a press conference at the Rivergate Sports Complex that the incentive clause will activate only after Elara Finch logs a minimum of 500 minutes on the court.</text></item>\n<item><id>N0-S6</id><text>Sundara Sportswear, the primary kit sponsor of Rivergate Rivets Women's Basketball Club, releases a statement supporting the club's decision and notes that Elara Finch's marketability will be highlighted in upcoming promotional campaigns.</text></item>\n<item><id>N0-S7</id><text>Sundara Sportswear announced that Elara Finch will appear in the upcoming \u201cRise Together\u201d winter apparel campaign, featuring a limited\u2011edition jersey released on April 5.</text></item>\n<item><id>N0-S8</id><text>Rivergate Rivets Women's Basketball Club announces that the reduced salary allocation from Elara Finch's extension frees cap space to sign a backup shooting guard before the season opener.</text></item>\n<item><id>N0-S9</id><text>The freed cap space, estimated at $12,000, will be allocated to sign veteran guard Maya Torres from the neighboring Lakeside Lynx before the season opener on October 2.</text></item>\n</content>\n</event>",
+    "STORYLINE_OUTLINE_TO_DATE": "<event>\n<date>2025-03-15</date>\n<content>\n<item><id>N0-S0</id><text>Rivergate Rivets Women's Basketball Club signs Elara Finch to a one\u2011year contract extension with a reduced base salary and performance incentives based on games played after Elara Finch's previous season's injury layoff.</text></item>\n<item><id>N0-S1</id><text>The extension sets Elara Finch's base salary at $45,000 for the 2025\u201126 season, with an additional $2,500 per game played beyond the first ten appearances.</text></item>\n<item><id>N0-S2</id><text>Midland Women's Basketball League officially records the registration of Elara Finch's extension with Rivergate Rivets Women's Basketball Club before the domestic transfer deadline of 2025-03-20.</text></item>\n<item><id>N0-S3</id><text>The league filed the contract under registration number MWBL\u20112025\u2011RIV\u2011EF, confirming compliance with the transfer deadline on March 20.</text></item>\n<item><id>N0-S4</id><text>Coach Dana Loris of Rivergate Rivets Women's Basketball Club states that the terms of Elara Finch's extension provide roster stability while rewarding Elara Finch's availability post\u2011injury.</text></item>\n<item><id>N0-S5</id><text>Coach Dana Loris added in a press conference at the Rivergate Sports Complex that the incentive clause will activate only after Elara Finch logs a minimum of 500 minutes on the court.</text></item>\n<item><id>N0-S6</id><text>Sundara Sportswear, the primary kit sponsor of Rivergate Rivets Women's Basketball Club, releases a statement supporting the club's decision and notes that Elara Finch's marketability will be highlighted in upcoming promotional campaigns.</text></item>\n<item><id>N0-S7</id><text>Sundara Sportswear announced that Elara Finch will appear in the upcoming \u201cRise Together\u201d winter apparel campaign, featuring a limited\u2011edition jersey released on April 5.</text></item>\n<item><id>N0-S8</id><text>Rivergate Rivets Women's Basketball Club announces that the reduced salary allocation from Elara Finch's extension frees cap space to sign a backup shooting guard before the season opener.</text></item>\n<item><id>N0-S9</id><text>The freed cap space, estimated at $12,000, will be allocated to sign veteran guard Maya Torres from the neighboring Lakeside Lynx before the season opener on October 2.</text></item>\n</content>\n</event>",
+    "SELECTED_EVENTS": [
+      {
+        "created_at": 0,
+        "summary": "A second-division women\u2019s basketball team has filled its final roster spot before the domestic transfer deadline by signing its veteran point guard to a one-year extension with a reduced salary and incentives tied to games played following last season\u2019s injury layoff.",
+        "outline": [
+          {
+            "sentence": "{Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} signs {Elara Finch|PERSON-1} to a one\u2011year contract extension with a reduced base salary and performance incentives based on games played after {Elara Finch|PERSON-1}'s previous season's injury layoff.",
+            "id": "N0-S0",
+            "pos": 0
+          },
+          {
+            "sentence": "The extension sets {Elara Finch|PERSON-1}'s base salary at $45,000 for the 2025\u201126 season, with an additional $2,500 per game played beyond the first ten appearances.",
+            "id": "N0-S1",
+            "pos": 1
+          },
+          {
+            "sentence": "{Midland Women's Basketball League|ORGANIZATION-2} officially records the registration of {Elara Finch|PERSON-1}'s extension with {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} before the domestic transfer deadline of 2025-03-20.",
+            "id": "N0-S2",
+            "pos": 2
+          },
+          {
+            "sentence": "The league filed the contract under registration number {MWBL\u20112025\u2011RIV\u2011EF|MISCELLANEOUS-1}, confirming compliance with the transfer deadline on March 20.",
+            "id": "N0-S3",
+            "pos": 3
+          },
+          {
+            "sentence": "Coach {Dana Loris|PERSON-2} of {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} states that the terms of {Elara Finch|PERSON-1}'s extension provide roster stability while rewarding {Elara Finch|PERSON-1}'s availability post\u2011injury.",
+            "id": "N0-S4",
+            "pos": 4
+          },
+          {
+            "sentence": "Coach {Dana Loris|PERSON-2} added in a press conference at the {Rivergate Sports Complex|BUILDING-1} that the incentive clause will activate only after {Elara Finch|PERSON-1} logs a minimum of 500 minutes on the court.",
+            "id": "N0-S5",
+            "pos": 5
+          },
+          {
+            "sentence": "{Sundara Sportswear|ORGANIZATION-3}, the primary kit sponsor of {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1}, releases a statement supporting the club's decision and notes that {Elara Finch|PERSON-1}'s marketability will be highlighted in upcoming promotional campaigns.",
+            "id": "N0-S6",
+            "pos": 6
+          },
+          {
+            "sentence": "{Sundara Sportswear|ORGANIZATION-3} announced that {Elara Finch|PERSON-1} will appear in the upcoming \u201c{Rise Together|MISCELLANEOUS-2}\u201d winter apparel campaign, featuring a limited\u2011edition jersey released on April 5.",
+            "id": "N0-S7",
+            "pos": 7
+          },
+          {
+            "sentence": "{Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} announces that the reduced salary allocation from {Elara Finch|PERSON-1}'s extension frees cap space to sign a backup shooting guard before the season opener.",
+            "id": "N0-S8",
+            "pos": 8
+          },
+          {
+            "sentence": "The freed cap space, estimated at $12,000, will be allocated to sign veteran guard {Maya Torres|PERSON-3} from the neighboring {Lakeside Lynx|ORGANIZATION-4} before the season opener on October 2.",
+            "id": "N0-S9",
+            "pos": 9
+          }
+        ],
+        "used_entities": [
+          {
+            "id": "PERSON-1",
+            "name": "Elara Finch",
+            "entity_type": "person",
+            "new": true
+          },
+          {
+            "id": "PERSON-2",
+            "name": "Dana Loris",
+            "entity_type": "person",
+            "new": true
+          },
+          {
+            "id": "PERSON-3",
+            "name": "Maya Torres",
+            "entity_type": "person",
+            "new": true
+          },
+          {
+            "id": "ORGANIZATION-1",
+            "name": "Rivergate Rivets Women's Basketball Club",
+            "entity_type": "organization",
+            "new": true
+          },
+          {
+            "id": "ORGANIZATION-2",
+            "name": "Midland Women's Basketball League",
+            "entity_type": "organization",
+            "new": true
+          },
+          {
+            "id": "ORGANIZATION-3",
+            "name": "Sundara Sportswear",
+            "entity_type": "organization",
+            "new": true
+          },
+          {
+            "id": "ORGANIZATION-4",
+            "name": "Lakeside Lynx",
+            "entity_type": "organization",
+            "new": true
+          },
+          {
+            "id": "BUILDING-1",
+            "name": "Rivergate Sports Complex",
+            "entity_type": "building",
+            "new": true
+          },
+          {
+            "id": "MISCELLANEOUS-1",
+            "name": "MWBL\u20112025\u2011RIV\u2011EF",
+            "entity_type": "miscellaneous",
+            "new": true
+          },
+          {
+            "id": "MISCELLANEOUS-2",
+            "name": "Rise Together",
+            "entity_type": "miscellaneous",
+            "new": true
+          }
+        ],
+        "parent": null,
+        "continuation": {
+          "summary": "The limited\u2011edition \u201cRise Together\u201d jersey showcasing Elara Finch hit store shelves on April\u202f5, selling out its first 3,000 units within 48 hours.",
+          "last_date": "2025-03-15",
+          "continuation_date": "2025-04-05"
+        },
+        "date": "2025-03-15"
+      }
+    ],
+    "CREATED_AT": 0,
+    "NUM_DISTRACTORS": 1,
+    "SUBSET_IDX": 4,
+    "NUM_SPANS": 2,
+    "NUM_SENTENCES": 2
+  }
+}

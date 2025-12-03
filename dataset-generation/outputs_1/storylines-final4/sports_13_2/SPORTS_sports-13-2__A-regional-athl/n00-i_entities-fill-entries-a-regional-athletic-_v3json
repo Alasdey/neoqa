@@ -1,0 +1,544 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "openai/gpt-4o-2024-08-06",
+    "temperature": 1.0,
+    "max-tokens": 4096
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "<results>\n\n<location>\n<id>LOCATION-1</id>\n<name>Bayhaven</name>\n<type>city</type>\n<description>Bayhaven is a bustling coastal city known for its vibrant community and beautiful seaside landscapes.</description>\n<population>120,000</population>\n<area>60 square kilometers</area>\n<founded>1854</founded>\n<climate>temperate marine</climate>\n<elevation>30 meters</elevation>\n<country>Greenlandia</country>\n</location>\n\n<person>\n<id>PERSON-1</id>\n<name>Jaxon Cartwright</name>\n<date_of_birth>1997-07-15</date_of_birth>\n<gender>male</gender>\n<profession>professional athlete</profession>\n<nationality>Greenlandian</nationality>\n<education>Bachelor's in Sports Science</education>\n<description>Jaxon Cartwright is a determined athlete passionate about sustainability and environmental causes.</description>\n<height>185 cm</height>\n<weight>75 kg</weight>\n<eye_color>blue</eye_color>\n<hair_color>brown</hair_color>\n<political_affiliation>independent</political_affiliation>\n<marital_status>single</marital_status>\n</person>\n\n<organization>\n<id>ORGANIZATION-1</id>\n<name>Bayhaven City Council</name>\n<type>government agency</type>\n<description>Bayhaven City Council is the governing body that manages the city's development and community services.</description>\n<founded>1895</founded>\n<headquarters>Bayhaven Government Center</headquarters>\n<industry>public administration</industry>\n<mission_statement>To enhance the quality of life for Bayhaven residents through effective governance and community engagement.</mission_statement>\n<number_of_employees>150</number_of_employees>\n<annual_revenue>$20 million</annual_revenue>\n</organization>\n\n<organization>\n<id>ORGANIZATION-2</id>\n<name>EcoAthlete Initiative</name>\n<type>non-profit</type>\n<description>EcoAthlete Initiative is dedicated to promoting sustainable practices within sports communities across Greenlandia.</description>\n<founded>2015</founded>\n<headquarters>Bayhaven Ecological Center</headquarters>\n<industry>environmentalism</industry>\n<mission_statement>To inspire athletes and communities to embrace sustainability in sports and daily activities.</mission_statement>\n<number_of_employees>30</number_of_employees>\n<annual_revenue>$1 million</annual_revenue>\n</organization>\n\n<organization>\n<id>ORGANIZATION-3</id>\n<name>Bayhaven Times</name>\n<type>media organization</type>\n<description>Bayhaven Times is a respected regional newspaper offering comprehensive news coverage and insights into local affairs.</description>\n<founded>1920</founded>\n<headquarters>Bayhaven Publishing House</headquarters>\n<industry>media and communications</industry>\n<mission_statement>To provide accurate and engaging news that impacts and informs the Bayhaven community.</mission_statement>\n<number_of_employees>45</number_of_employees>\n<annual_revenue>$5 million</annual_revenue>\n</organization>\n\n<event>\n<id>EVENT-1</id>\n<name>GreenSports Challenge</name>\n<type>sporting</type>\n<description>The GreenSports Challenge is an eco-conscious sporting event that highlights sustainable athletic practices and competitions.</description>\n<date>2023-05-17</date>\n<place>Bayhaven Coastal Stadium</place>\n<city>Bayhaven</city>\n<country>Greenlandia</country>\n<duration>1 day</duration>\n<organizer>EcoAthlete Initiative</organizer>\n<number_of_participants>200</number_of_participants>\n<budget>$50,000</budget>\n</event>\n\n<building>\n<id>BUILDING-1</id>\n<name>Bayhaven Coastal Stadium</name>\n<type>public</type>\n<description>Bayhaven Coastal Stadium is an eco-friendly sports facility offering spectacular views and accommodating various athletic events.</description>\n<place>Waterfront Avenue</place>\n<city>Bayhaven</city>\n<country>Greenlandia</country>\n<architect>Elena Fischer</architect>\n<year_built>2018</year_built>\n<height>45 meters</height>\n<floors>4</floors>\n<material>recycled steel and glass</material>\n<capacity>15,000</capacity>\n</building>\n\n<miscellaneous>\n<id>MISCELLANEOUS-1</id>\n<name>Bayhaven's Green Vision 2030</name>\n<type>concept</type>\n<description>Bayhaven's Green Vision 2030 outlines the city's commitment to becoming a leader in sustainable urban living and environmental stewardship.</description>\n</miscellaneous>\n\n<miscellaneous>\n<id>MISCELLANEOUS-2</id>\n<name>#GreenSportsBayhaven</name>\n<type>phenomenon</type>\n<description>#GreenSportsBayhaven is a trending hashtag capturing the excitement and support for Bayhaven's eco-friendly sporting initiative.</description>\n</miscellaneous>\n\n<miscellaneous>\n<id>MISCELLANEOUS-3</id>\n<name>#ZeroWasteChallenge</name>\n<type>concept</type>\n<description>#ZeroWasteChallenge encourages individuals and organizations to commit to reducing waste and embracing sustainable practices.</description>\n</miscellaneous>\n\n</results>"
+  },
+  "response": "<results>\n\n<location>\n<id>LOCATION-1</id>\n<name>Bayhaven</name>\n<type>city</type>\n<description>Bayhaven is a bustling coastal city known for its vibrant community and beautiful seaside landscapes.</description>\n<population>120,000</population>\n<area>60 square kilometers</area>\n<founded>1854</founded>\n<climate>temperate marine</climate>\n<elevation>30 meters</elevation>\n<country>Greenlandia</country>\n</location>\n\n<person>\n<id>PERSON-1</id>\n<name>Jaxon Cartwright</name>\n<date_of_birth>1997-07-15</date_of_birth>\n<gender>male</gender>\n<profession>professional athlete</profession>\n<nationality>Greenlandian</nationality>\n<education>Bachelor's in Sports Science</education>\n<description>Jaxon Cartwright is a determined athlete passionate about sustainability and environmental causes.</description>\n<height>185 cm</height>\n<weight>75 kg</weight>\n<eye_color>blue</eye_color>\n<hair_color>brown</hair_color>\n<political_affiliation>independent</political_affiliation>\n<marital_status>single</marital_status>\n</person>\n\n<organization>\n<id>ORGANIZATION-1</id>\n<name>Bayhaven City Council</name>\n<type>government agency</type>\n<description>Bayhaven City Council is the governing body that manages the city's development and community services.</description>\n<founded>1895</founded>\n<headquarters>Bayhaven Government Center</headquarters>\n<industry>public administration</industry>\n<mission_statement>To enhance the quality of life for Bayhaven residents through effective governance and community engagement.</mission_statement>\n<number_of_employees>150</number_of_employees>\n<annual_revenue>$20 million</annual_revenue>\n</organization>\n\n<organization>\n<id>ORGANIZATION-2</id>\n<name>EcoAthlete Initiative</name>\n<type>non-profit</type>\n<description>EcoAthlete Initiative is dedicated to promoting sustainable practices within sports communities across Greenlandia.</description>\n<founded>2015</founded>\n<headquarters>Bayhaven Ecological Center</headquarters>\n<industry>environmentalism</industry>\n<mission_statement>To inspire athletes and communities to embrace sustainability in sports and daily activities.</mission_statement>\n<number_of_employees>30</number_of_employees>\n<annual_revenue>$1 million</annual_revenue>\n</organization>\n\n<organization>\n<id>ORGANIZATION-3</id>\n<name>Bayhaven Times</name>\n<type>media organization</type>\n<description>Bayhaven Times is a respected regional newspaper offering comprehensive news coverage and insights into local affairs.</description>\n<founded>1920</founded>\n<headquarters>Bayhaven Publishing House</headquarters>\n<industry>media and communications</industry>\n<mission_statement>To provide accurate and engaging news that impacts and informs the Bayhaven community.</mission_statement>\n<number_of_employees>45</number_of_employees>\n<annual_revenue>$5 million</annual_revenue>\n</organization>\n\n<event>\n<id>EVENT-1</id>\n<name>GreenSports Challenge</name>\n<type>sporting</type>\n<description>The GreenSports Challenge is an eco-conscious sporting event that highlights sustainable athletic practices and competitions.</description>\n<date>2023-05-17</date>\n<place>Bayhaven Coastal Stadium</place>\n<city>Bayhaven</city>\n<country>Greenlandia</country>\n<duration>1 day</duration>\n<organizer>EcoAthlete Initiative</organizer>\n<number_of_participants>200</number_of_participants>\n<budget>$50,000</budget>\n</event>\n\n<building>\n<id>BUILDING-1</id>\n<name>Bayhaven Coastal Stadium</name>\n<type>public</type>\n<description>Bayhaven Coastal Stadium is an eco-friendly sports facility offering spectacular views and accommodating various athletic events.</description>\n<place>Waterfront Avenue</place>\n<city>Bayhaven</city>\n<country>Greenlandia</country>\n<architect>Elena Fischer</architect>\n<year_built>2018</year_built>\n<height>45 meters</height>\n<floors>4</floors>\n<material>recycled steel and glass</material>\n<capacity>15,000</capacity>\n</building>\n\n<miscellaneous>\n<id>MISCELLANEOUS-1</id>\n<name>Bayhaven's Green Vision 2030</name>\n<type>concept</type>\n<description>Bayhaven's Green Vision 2030 outlines the city's commitment to becoming a leader in sustainable urban living and environmental stewardship.</description>\n</miscellaneous>\n\n<miscellaneous>\n<id>MISCELLANEOUS-2</id>\n<name>#GreenSportsBayhaven</name>\n<type>phenomenon</type>\n<description>#GreenSportsBayhaven is a trending hashtag capturing the excitement and support for Bayhaven's eco-friendly sporting initiative.</description>\n</miscellaneous>\n\n<miscellaneous>\n<id>MISCELLANEOUS-3</id>\n<name>#ZeroWasteChallenge</name>\n<type>concept</type>\n<description>#ZeroWasteChallenge encourages individuals and organizations to commit to reducing waste and embracing sustainable practices.</description>\n</miscellaneous>\n\n</results>",
+  "instructions": "You are an AI assistant tasked with creating fictional entities based on provided information. \nYour goal is to generate detailed, coherent, and realistic descriptions for new locations, persons, organizations, products, art, buildings, events, and miscellaneous entities. \nFollow these instructions carefully:\n\n1. Review the existing entities (if provided):\n\n<existing_entities>\n{{LOCATIONS_XML}}\n{{PERSONS_XML}}\n{{ORGANIZATIONS_XML}}\n{{PRODUCTS_XML}}\n{{ARTS_XML}}\n{{EVENTS_XML}}\n{{BUILDINGS_XML}}\n{{MISCELLANEOUSS_XML}}\n</existing_entities>\n\n2. Review the names of new entities to be created:\n<new_entity_names>\n{{USED_NEW-LOCATIONS_XML}}\n{{USED_NEW-PERSONS_XML}}\n{{USED_NEW-ORGANIZATIONS_XML}}\n{{USED_NEW-PRODUCTS_XML}}\n{{USED_NEW-ARTS_XML}}\n{{USED_NEW-EVENTS_XML}}\n{{USED_NEW-BUILDINGS_XML}}\n{{USED_NEW-MISCELLANEOUSS_XML}}\n</new_entity_names>\n\n3. Carefully read the provided outline:\n\nDate: {{DATE}}\n<outline>\n{{OUTLINE}}\n</outline>\n\nBased on the information provided, create detailed descriptions for each new entity following these guidelines:\n\nGeneral instructions:\n- Ensure all created entities are entirely fictional and not similar to any real or known fictional entities.\n- Maintain realism and coherence with the provided outline and other entities.\n- Create a believable and consistent fictional world that aligns with the context of the outline.\n- For entity descriptions, focus on providing a solid background that remains valid throughout the story, rather than basing it centrally on the outline itself.\n- Develop well-rounded entities with backgrounds and characteristics that can support various potential story developments beyond the specific outline provided.\n- Strictly derive all entities from the outline. Do not invent entities that are not mentioned in the outline.\n- Do not alter the name of the entities.\n- Some properties (e.g., place, city, country, spouse, architect, country, nationality) must be filled with named entities. Make sure to use FICTIONAL named entities ( fictional places, cities, countries, spouse names, architects, countries, nationalities, etc.). Check if you should use one of the existing fictional named entities (from <new_entity_names> and <existing_entities>) or create a fictional name instead. DO NOT say that any of the entities or properties are fictional. It is important that everything seems realistic!\n- Avoid exaggerating the named entities. They can be ordinary and don\u2019t need to be world-class or state-of-the-art.\n- Ensure the details of the named entities are realistic. If global impact isn\u2019t necessary, adjust the details to be more modest and appropriate.\n\nSpecific instructions for each entity type:\n\n1. For each new location:\n   - Use the provided name and ID\n   - Determine an appropriate type (city, village, country, region, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: population, area, founded, climate, elevation, country\n   - Format the output as follows:\n     <location>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[city/village/country/region]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: population, area, founded, climate, elevation, country]\n     </location>\n\n2. For each new person:\n   - Use the provided name and ID\n   - Create fictional details for: date_of_birth, gender, profession, nationality, education\n   - Write a concise single-sentence description that:\n     * Focuses on background, personality, and motivations\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: height, weight, eye_color, hair_color, political_affiliation, marital_status, spouse\n   - Format the output as follows:\n     <person>\n     <id>[Provided ID]</id>\n     <name>[Full name]</name>\n     <date_of_birth>[Date]</date_of_birth>\n     <gender>[Gender]</gender>\n     <profession>[Job title]</profession>\n     <nationality>[Country]</nationality>\n     <education>[Highest level of education]</education>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: height, weight, eye_color, hair_color, political_affiliation, marital_status]\n     </person>\n\n3. For each new organization:\n   - Use the provided name and ID\n   - Determine an appropriate type (company, non-profit, educational institution, government agency, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: founded, headquarters, industry, mission_statement, number_of_employees, annual_revenue\n   - Format the output as follows:\n     <organization>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[company/non-profit/educational institution/government agency]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: founded, headquarters, industry, mission_statement, number_of_employees, annual_revenue]\n     </organization>\n\n4. For each new product:\n   - Use the provided name and ID\n   - Determine an appropriate type (consumer good, software, service, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: manufacturer, release_date, price, weight, warranty\n   - Format the output as follows:\n     <product>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[consumer good/software/service]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: manufacturer, release_date, price, weight, warranty]\n     </product>\n\n5. For each new art piece:\n   - Use the provided name and ID\n   - Determine an appropriate type (painting, sculpture, novel, film, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: creator, year_created, current_location_country, current_location_city, current_location_place\n   - Format the output as follows:\n     <art>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[painting/sculpture/novel/film]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: creator, year_created, current_location_country, current_location_city, current_location_place]\n     </art>\n\n6. For each new building:\n   - Use the provided name and ID\n   - Determine an appropriate type (residential, commercial, public, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: place, city, country, architect, year_built, height, floors, material, capacity\n   - Format the output as follows:\n     <building>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[residential/commercial/public]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: place, city, country, architect, year_built, height, floors, material, capacity]\n     </building>\n\n7. For each new event:\n   - Use the provided name and ID\n   - Determine an appropriate type (historical, cultural, sporting, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: date, place, city, country, duration, organizer, number_of_participants, budget\n   - Format the output as follows:\n     <event>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[historical/cultural/sporting]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: date, place, city, country, duration, organizer, number_of_participants, budget]\n     </event>\n\n8. For each new miscellaneous entity:\n   - Use the provided name and ID\n   - Determine an appropriate type (concept, theory, phenomenon, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Format the output as follows:\n     <miscellaneous>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[concept/theory/phenomenon]</type>\n     <description>[One-sentence concise description]</description>\n     </miscellaneous>\n\nPresent your final output in the following format:\n<results>\n[Insert all created entities here, grouped by type]\n</results>\n\nRemember to create detailed, coherent, and realistic descriptions for each entity while adhering to the guidelines provided. Ensure that all descriptions are single, short, and concise sentences that do not refer to other entities and only discuss background information unrelated to the event described in the outline.",
+  "text_prompt": "You are an AI assistant tasked with creating fictional entities based on provided information. \nYour goal is to generate detailed, coherent, and realistic descriptions for new locations, persons, organizations, products, art, buildings, events, and miscellaneous entities. \nFollow these instructions carefully:\n\n1. Review the existing entities (if provided):\n\n<existing_entities>\n\n\n\n\n\n\n\n\n</existing_entities>\n\n2. Review the names of new entities to be created:\n<new_entity_names>\n<location><category>location</category><id>LOCATION-1</id><name>Bayhaven</name></location>\n<person><category>person</category><id>PERSON-1</id><name>Jaxon Cartwright</name></person>\n<organization><category>organization</category><id>ORGANIZATION-1</id><name>Bayhaven City Council</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-2</id><name>EcoAthlete Initiative</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-3</id><name>Bayhaven Times</name></organization>\n\n\n<event><category>event</category><id>EVENT-1</id><name>GreenSports Challenge</name></event>\n<building><category>building</category><id>BUILDING-1</id><name>Bayhaven Coastal Stadium</name></building>\n<miscellaneous><category>miscellaneous</category><id>MISCELLANEOUS-1</id><name>Bayhaven's Green Vision 2030</name></miscellaneous>\n<miscellaneous><category>miscellaneous</category><id>MISCELLANEOUS-2</id><name>#GreenSportsBayhaven</name></miscellaneous>\n<miscellaneous><category>miscellaneous</category><id>MISCELLANEOUS-3</id><name>#ZeroWasteChallenge</name></miscellaneous>\n</new_entity_names>\n\n3. Carefully read the provided outline:\n\nDate: 2023-05-17\n<outline>\nThe coastal city of {Bayhaven|LOCATION-1} hosts the first annual {GreenSports Challenge|EVENT-1}, focusing on sustainable athletic practices.\nThe event takes place at the {Bayhaven Coastal Stadium|BUILDING-1}, known for its scenic views and eco-friendly facilities.\nLocal athletes from the five regions around {Bayhaven|LOCATION-1} compete in track and field events, attracting a moderate crowd.\nParticipants include high school and college athletes, as well as amateur runners from local clubs.\n{Bayhaven City Council|ORGANIZATION-1} partners with {EcoAthlete Initiative|ORGANIZATION-2}, a local environmental organization, to implement a zero-waste policy at the event.\nThe {EcoAthlete Initiative|ORGANIZATION-2} has been recognized for its efforts in promoting sustainability in sports through various community programs.\nOrganizers distribute reusable water bottles to athletes and attendees to minimize plastic waste during the {GreenSports Challenge|EVENT-1}.\nThe water bottles are made from recycled materials and feature the event's logo, encouraging attendees to keep them as souvenirs.\nAthletes participating in the {GreenSports Challenge|EVENT-1} are encouraged to use sustainable transportation options like bicycles and electric shuttles to reach the venue.\nLocal bike rental shops offer discounts to participants, promoting eco-friendly travel to the event.\nThe {GreenSports Challenge|EVENT-1} features educational booths, where {EcoAthlete Initiative|ORGANIZATION-2} volunteers provide information on sustainable sports practices.\nInteractive displays at the booths demonstrate the environmental impact of traditional sports events and the benefits of sustainable alternatives.\nThe {Bayhaven|LOCATION-1} residents positively respond to the event, as indicated by a local survey conducted by the {Bayhaven Times|ORGANIZATION-3}.\nThe survey highlights that 85% of attendees support the continuation of the zero-waste policy in future events.\nAthlete {Jaxon Cartwright|PERSON-1} wins the 1500-meter race and praises the zero-waste initiative in his post-race interview.\n{Jaxon Cartwright|PERSON-1} mentions that the event's focus on sustainability inspired him to adopt more eco-friendly practices in his training routine.\nLocal social media platforms buzz with chatter about the successful implementation of zero-waste policies at the {GreenSports Challenge|EVENT-1}.\nHashtags like {#GreenSportsBayhaven|MISCELLANEOUS-2} and {#ZeroWasteChallenge|MISCELLANEOUS-3} trend locally, with users sharing photos and positive feedback.\nThe event concludes with a small awards ceremony, emphasizing the importance of sustainability in sports, as reflected in {Bayhaven's Green Vision 2030|MISCELLANEOUS-1} plan.\nSpeakers at the ceremony include local environmental leaders and city officials, who commend the community's efforts in supporting sustainable initiatives.\n</outline>\n\nBased on the information provided, create detailed descriptions for each new entity following these guidelines:\n\nGeneral instructions:\n- Ensure all created entities are entirely fictional and not similar to any real or known fictional entities.\n- Maintain realism and coherence with the provided outline and other entities.\n- Create a believable and consistent fictional world that aligns with the context of the outline.\n- For entity descriptions, focus on providing a solid background that remains valid throughout the story, rather than basing it centrally on the outline itself.\n- Develop well-rounded entities with backgrounds and characteristics that can support various potential story developments beyond the specific outline provided.\n- Strictly derive all entities from the outline. Do not invent entities that are not mentioned in the outline.\n- Do not alter the name of the entities.\n- Some properties (e.g., place, city, country, spouse, architect, country, nationality) must be filled with named entities. Make sure to use FICTIONAL named entities ( fictional places, cities, countries, spouse names, architects, countries, nationalities, etc.). Check if you should use one of the existing fictional named entities (from <new_entity_names> and <existing_entities>) or create a fictional name instead. DO NOT say that any of the entities or properties are fictional. It is important that everything seems realistic!\n- Avoid exaggerating the named entities. They can be ordinary and don\u2019t need to be world-class or state-of-the-art.\n- Ensure the details of the named entities are realistic. If global impact isn\u2019t necessary, adjust the details to be more modest and appropriate.\n\nSpecific instructions for each entity type:\n\n1. For each new location:\n   - Use the provided name and ID\n   - Determine an appropriate type (city, village, country, region, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: population, area, founded, climate, elevation, country\n   - Format the output as follows:\n     <location>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[city/village/country/region]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: population, area, founded, climate, elevation, country]\n     </location>\n\n2. For each new person:\n   - Use the provided name and ID\n   - Create fictional details for: date_of_birth, gender, profession, nationality, education\n   - Write a concise single-sentence description that:\n     * Focuses on background, personality, and motivations\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: height, weight, eye_color, hair_color, political_affiliation, marital_status, spouse\n   - Format the output as follows:\n     <person>\n     <id>[Provided ID]</id>\n     <name>[Full name]</name>\n     <date_of_birth>[Date]</date_of_birth>\n     <gender>[Gender]</gender>\n     <profession>[Job title]</profession>\n     <nationality>[Country]</nationality>\n     <education>[Highest level of education]</education>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: height, weight, eye_color, hair_color, political_affiliation, marital_status]\n     </person>\n\n3. For each new organization:\n   - Use the provided name and ID\n   - Determine an appropriate type (company, non-profit, educational institution, government agency, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: founded, headquarters, industry, mission_statement, number_of_employees, annual_revenue\n   - Format the output as follows:\n     <organization>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[company/non-profit/educational institution/government agency]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: founded, headquarters, industry, mission_statement, number_of_employees, annual_revenue]\n     </organization>\n\n4. For each new product:\n   - Use the provided name and ID\n   - Determine an appropriate type (consumer good, software, service, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: manufacturer, release_date, price, weight, warranty\n   - Format the output as follows:\n     <product>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[consumer good/software/service]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: manufacturer, release_date, price, weight, warranty]\n     </product>\n\n5. For each new art piece:\n   - Use the provided name and ID\n   - Determine an appropriate type (painting, sculpture, novel, film, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: creator, year_created, current_location_country, current_location_city, current_location_place\n   - Format the output as follows:\n     <art>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[painting/sculpture/novel/film]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: creator, year_created, current_location_country, current_location_city, current_location_place]\n     </art>\n\n6. For each new building:\n   - Use the provided name and ID\n   - Determine an appropriate type (residential, commercial, public, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: place, city, country, architect, year_built, height, floors, material, capacity\n   - Format the output as follows:\n     <building>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[residential/commercial/public]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: place, city, country, architect, year_built, height, floors, material, capacity]\n     </building>\n\n7. For each new event:\n   - Use the provided name and ID\n   - Determine an appropriate type (historical, cultural, sporting, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: date, place, city, country, duration, organizer, number_of_participants, budget\n   - Format the output as follows:\n     <event>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[historical/cultural/sporting]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: date, place, city, country, duration, organizer, number_of_participants, budget]\n     </event>\n\n8. For each new miscellaneous entity:\n   - Use the provided name and ID\n   - Determine an appropriate type (concept, theory, phenomenon, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Format the output as follows:\n     <miscellaneous>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[concept/theory/phenomenon]</type>\n     <description>[One-sentence concise description]</description>\n     </miscellaneous>\n\nPresent your final output in the following format:\n<results>\n[Insert all created entities here, grouped by type]\n</results>\n\nRemember to create detailed, coherent, and realistic descriptions for each entity while adhering to the guidelines provided. Ensure that all descriptions are single, short, and concise sentences that do not refer to other entities and only discuss background information unrelated to the event described in the outline.",
+  "system-prompt": null,
+  "values": {
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "GENRE": "Sports",
+    "HISTORIES": [],
+    "EVENT_SUMMARY": "A regional athletic competition has successfully implemented a zero-waste policy, drastically reducing the amount of garbage typically produced by such events.",
+    "EVENT_SUMMARY_FOR_NAME": "A regional athletic ",
+    "KEYWORDS": "",
+    "CREATED_AT": 0,
+    "NEXT_IDS": {
+      "person": 2,
+      "organization": 4,
+      "location": 2,
+      "product": 1,
+      "art": 1,
+      "building": 2,
+      "event": 2,
+      "miscellaneous": 4
+    },
+    "PROVIDED_DATE": "",
+    "PERSON": [],
+    "ORGANIZATION": [],
+    "LOCATION": [],
+    "PRODUCT": [],
+    "ART": [],
+    "BUILDING": [],
+    "EVENT": [],
+    "MISCELLANEOUS": [],
+    "PERSONS_XML": "",
+    "ORGANIZATIONS_XML": "",
+    "LOCATIONS_XML": "",
+    "PRODUCTS_XML": "",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "",
+    "EVENTS_XML": "",
+    "MISCELLANEOUSS_XML": "",
+    "NUM_STORYITEMS": 10,
+    "HISTORY_XML": "",
+    "STORY_ITEM": [
+      "The coastal city of {Bayhaven|LOCATION-1} hosts the first annual {GreenSports Challenge|EVENT-1}, focusing on sustainable athletic practices.",
+      "The event takes place at the {Bayhaven Coastal Stadium|BUILDING-1}, known for its scenic views and eco-friendly facilities.",
+      "Local athletes from the five regions around {Bayhaven|LOCATION-1} compete in track and field events, attracting a moderate crowd.",
+      "Participants include high school and college athletes, as well as amateur runners from local clubs.",
+      "{Bayhaven City Council|ORGANIZATION-1} partners with {EcoAthlete Initiative|ORGANIZATION-2}, a local environmental organization, to implement a zero-waste policy at the event.",
+      "The {EcoAthlete Initiative|ORGANIZATION-2} has been recognized for its efforts in promoting sustainability in sports through various community programs.",
+      "Organizers distribute reusable water bottles to athletes and attendees to minimize plastic waste during the {GreenSports Challenge|EVENT-1}.",
+      "The water bottles are made from recycled materials and feature the event's logo, encouraging attendees to keep them as souvenirs.",
+      "Athletes participating in the {GreenSports Challenge|EVENT-1} are encouraged to use sustainable transportation options like bicycles and electric shuttles to reach the venue.",
+      "Local bike rental shops offer discounts to participants, promoting eco-friendly travel to the event.",
+      "The {GreenSports Challenge|EVENT-1} features educational booths, where {EcoAthlete Initiative|ORGANIZATION-2} volunteers provide information on sustainable sports practices.",
+      "Interactive displays at the booths demonstrate the environmental impact of traditional sports events and the benefits of sustainable alternatives.",
+      "The {Bayhaven|LOCATION-1} residents positively respond to the event, as indicated by a local survey conducted by the {Bayhaven Times|ORGANIZATION-3}.",
+      "The survey highlights that 85% of attendees support the continuation of the zero-waste policy in future events.",
+      "Athlete {Jaxon Cartwright|PERSON-1} wins the 1500-meter race and praises the zero-waste initiative in his post-race interview.",
+      "{Jaxon Cartwright|PERSON-1} mentions that the event's focus on sustainability inspired him to adopt more eco-friendly practices in his training routine.",
+      "Local social media platforms buzz with chatter about the successful implementation of zero-waste policies at the {GreenSports Challenge|EVENT-1}.",
+      "Hashtags like {#GreenSportsBayhaven|MISCELLANEOUS-2} and {#ZeroWasteChallenge|MISCELLANEOUS-3} trend locally, with users sharing photos and positive feedback.",
+      "The event concludes with a small awards ceremony, emphasizing the importance of sustainability in sports, as reflected in {Bayhaven's Green Vision 2030|MISCELLANEOUS-1} plan.",
+      "Speakers at the ceremony include local environmental leaders and city officials, who commend the community's efforts in supporting sustainable initiatives."
+    ],
+    "DATE": "2023-05-17",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 2,
+    "OUTLINE": "The coastal city of {Bayhaven|LOCATION-1} hosts the first annual {GreenSports Challenge|EVENT-1}, focusing on sustainable athletic practices.\nThe event takes place at the {Bayhaven Coastal Stadium|BUILDING-1}, known for its scenic views and eco-friendly facilities.\nLocal athletes from the five regions around {Bayhaven|LOCATION-1} compete in track and field events, attracting a moderate crowd.\nParticipants include high school and college athletes, as well as amateur runners from local clubs.\n{Bayhaven City Council|ORGANIZATION-1} partners with {EcoAthlete Initiative|ORGANIZATION-2}, a local environmental organization, to implement a zero-waste policy at the event.\nThe {EcoAthlete Initiative|ORGANIZATION-2} has been recognized for its efforts in promoting sustainability in sports through various community programs.\nOrganizers distribute reusable water bottles to athletes and attendees to minimize plastic waste during the {GreenSports Challenge|EVENT-1}.\nThe water bottles are made from recycled materials and feature the event's logo, encouraging attendees to keep them as souvenirs.\nAthletes participating in the {GreenSports Challenge|EVENT-1} are encouraged to use sustainable transportation options like bicycles and electric shuttles to reach the venue.\nLocal bike rental shops offer discounts to participants, promoting eco-friendly travel to the event.\nThe {GreenSports Challenge|EVENT-1} features educational booths, where {EcoAthlete Initiative|ORGANIZATION-2} volunteers provide information on sustainable sports practices.\nInteractive displays at the booths demonstrate the environmental impact of traditional sports events and the benefits of sustainable alternatives.\nThe {Bayhaven|LOCATION-1} residents positively respond to the event, as indicated by a local survey conducted by the {Bayhaven Times|ORGANIZATION-3}.\nThe survey highlights that 85% of attendees support the continuation of the zero-waste policy in future events.\nAthlete {Jaxon Cartwright|PERSON-1} wins the 1500-meter race and praises the zero-waste initiative in his post-race interview.\n{Jaxon Cartwright|PERSON-1} mentions that the event's focus on sustainability inspired him to adopt more eco-friendly practices in his training routine.\nLocal social media platforms buzz with chatter about the successful implementation of zero-waste policies at the {GreenSports Challenge|EVENT-1}.\nHashtags like {#GreenSportsBayhaven|MISCELLANEOUS-2} and {#ZeroWasteChallenge|MISCELLANEOUS-3} trend locally, with users sharing photos and positive feedback.\nThe event concludes with a small awards ceremony, emphasizing the importance of sustainability in sports, as reflected in {Bayhaven's Green Vision 2030|MISCELLANEOUS-1} plan.\nSpeakers at the ceremony include local environmental leaders and city officials, who commend the community's efforts in supporting sustainable initiatives.",
+    "PRE-CONSISTENCY-NUM-ITEMS": 20,
+    "STORYITEM_XML": "<storyitems>\n<storyitem>The coastal city of Bayhaven hosts the first annual GreenSports Challenge, focusing on sustainable athletic practices.</storyitem>\n<storyitem>The event takes place at the Bayhaven Coastal Stadium, known for its scenic views and eco-friendly facilities.</storyitem>\n<storyitem>Local athletes from the five regions around Bayhaven compete in track and field events, attracting a moderate crowd.</storyitem>\n<storyitem>Participants include high school and college athletes, as well as amateur runners from local clubs.</storyitem>\n<storyitem>Bayhaven City Council partners with EcoAthlete Initiative, a local environmental organization, to implement a zero-waste policy at the event.</storyitem>\n<storyitem>The EcoAthlete Initiative has been recognized for its efforts in promoting sustainability in sports through various community programs.</storyitem>\n<storyitem>Organizers distribute reusable water bottles to athletes and attendees to minimize plastic waste during the GreenSports Challenge.</storyitem>\n<storyitem>The water bottles are made from recycled materials and feature the event's logo, encouraging attendees to keep them as souvenirs.</storyitem>\n<storyitem>Athletes participating in the GreenSports Challenge are encouraged to use sustainable transportation options like bicycles and electric shuttles to reach the venue.</storyitem>\n<storyitem>Local bike rental shops offer discounts to participants, promoting eco-friendly travel to the event.</storyitem>\n<storyitem>The GreenSports Challenge features educational booths, where EcoAthlete Initiative volunteers provide information on sustainable sports practices.</storyitem>\n<storyitem>Interactive displays at the booths demonstrate the environmental impact of traditional sports events and the benefits of sustainable alternatives.</storyitem>\n<storyitem>The Bayhaven residents positively respond to the event, as indicated by a local survey conducted by the Bayhaven Times.</storyitem>\n<storyitem>The survey highlights that 85% of attendees support the continuation of the zero-waste policy in future events.</storyitem>\n<storyitem>Athlete Jaxon Cartwright wins the 1500-meter race and praises the zero-waste initiative in his post-race interview.</storyitem>\n<storyitem>Jaxon Cartwright mentions that the event's focus on sustainability inspired him to adopt more eco-friendly practices in his training routine.</storyitem>\n<storyitem>Local social media platforms buzz with chatter about the successful implementation of zero-waste policies at the GreenSports Challenge.</storyitem>\n<storyitem>Hashtags like #GreenSportsBayhaven and #ZeroWasteChallenge trend locally, with users sharing photos and positive feedback.</storyitem>\n<storyitem>The event concludes with a small awards ceremony, emphasizing the importance of sustainability in sports, as reflected in Bayhaven's Green Vision 2030 plan.</storyitem>\n<storyitem>Speakers at the ceremony include local environmental leaders and city officials, who commend the community's efforts in supporting sustainable initiatives.</storyitem>\n<storyitems>",
+    "NEW_PERSON_NAME": [
+      {
+        "name": "Jaxon Cartwright",
+        "old_name": "Jaxon Cartwright"
+      }
+    ],
+    "NEW_ORGANIZATION_NAME": [
+      {
+        "name": "Bayhaven City Council",
+        "old_name": "Bayhaven City Council"
+      },
+      {
+        "name": "EcoAthlete Initiative",
+        "old_name": "EcoAthlete Initiative"
+      },
+      {
+        "name": "Bayhaven Times",
+        "old_name": "Bayhaven Times"
+      }
+    ],
+    "NEW_LOCATION_NAME": [
+      {
+        "name": "Bayhaven",
+        "old_name": "Bayhaven"
+      }
+    ],
+    "NEW_PRODUCT_NAME": [],
+    "NEW_ART_NAME": [],
+    "NEW_BUILDING_NAME": [
+      {
+        "name": "Bayhaven Coastal Stadium",
+        "old_name": "Bayhaven Coastal Stadium"
+      }
+    ],
+    "NEW_EVENT_NAME": [
+      {
+        "name": "GreenSports Challenge",
+        "old_name": "GreenSports Challenge"
+      }
+    ],
+    "NEW_MISCELLANEOUS_NAME": [
+      {
+        "name": "Bayhaven's Green Vision 2030",
+        "old_name": "Bayhaven's Green Vision 2030"
+      },
+      {
+        "name": "#GreenSportsBayhaven",
+        "old_name": "#GreenSportsBayhaven"
+      },
+      {
+        "name": "#ZeroWasteChallenge",
+        "old_name": "#ZeroWasteChallenge"
+      }
+    ],
+    "CORRECTED_PERSON_NAME": [
+      {
+        "name": "Jaxon Cartwright",
+        "old_name": "Jaxon Cartwright",
+        "id": "PERSON-1"
+      }
+    ],
+    "CORRECTED_ORGANIZATION_NAME": [
+      {
+        "name": "Bayhaven City Council",
+        "old_name": "Bayhaven City Council",
+        "id": "ORGANIZATION-1"
+      },
+      {
+        "name": "EcoAthlete Initiative",
+        "old_name": "EcoAthlete Initiative",
+        "id": "ORGANIZATION-2"
+      },
+      {
+        "name": "Bayhaven Times",
+        "old_name": "Bayhaven Times",
+        "id": "ORGANIZATION-3"
+      }
+    ],
+    "CORRECTED_LOCATION_NAME": [
+      {
+        "name": "Bayhaven",
+        "old_name": "Bayhaven",
+        "id": "LOCATION-1"
+      }
+    ],
+    "CORRECTED_PRODUCT_NAME": [],
+    "CORRECTED_ART_NAME": [],
+    "CORRECTED_BUILDING_NAME": [
+      {
+        "name": "Bayhaven Coastal Stadium",
+        "old_name": "Bayhaven Coastal Stadium",
+        "id": "BUILDING-1"
+      }
+    ],
+    "CORRECTED_EVENT_NAME": [
+      {
+        "name": "GreenSports Challenge",
+        "old_name": "GreenSports Challenge",
+        "id": "EVENT-1"
+      }
+    ],
+    "CORRECTED_MISCELLANEOUS_NAME": [
+      {
+        "name": "Bayhaven's Green Vision 2030",
+        "old_name": "Bayhaven's Green Vision 2030",
+        "id": "MISCELLANEOUS-1"
+      },
+      {
+        "name": "#GreenSportsBayhaven",
+        "old_name": "#GreenSportsBayhaven",
+        "id": "MISCELLANEOUS-2"
+      },
+      {
+        "name": "#ZeroWasteChallenge",
+        "old_name": "#ZeroWasteChallenge",
+        "id": "MISCELLANEOUS-3"
+      }
+    ],
+    "CRITIQUE_ERRORS": {
+      "entity-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ]
+    },
+    "ADJUSTED_PERSONS_XML": "<person><id>PERSON-1</id><name>Jaxon Cartwright</name><old_name>Jaxon Cartwright</old_name></person>",
+    "ADJUSTED_ORGANIZATIONS_XML": "<organization><id>ORGANIZATION-1</id><name>Bayhaven City Council</name><old_name>Bayhaven City Council</old_name></organization>\n<organization><id>ORGANIZATION-2</id><name>EcoAthlete Initiative</name><old_name>EcoAthlete Initiative</old_name></organization>\n<organization><id>ORGANIZATION-3</id><name>Bayhaven Times</name><old_name>Bayhaven Times</old_name></organization>",
+    "ADJUSTED_LOCATIONS_XML": "<location><id>LOCATION-1</id><name>Bayhaven</name><old_name>Bayhaven</old_name></location>",
+    "ADJUSTED_PRODUCTS_XML": "",
+    "ADJUSTED_ARTS_XML": "",
+    "ADJUSTED_BUILDINGS_XML": "<building><id>BUILDING-1</id><name>Bayhaven Coastal Stadium</name><old_name>Bayhaven Coastal Stadium</old_name></building>",
+    "ADJUSTED_EVENTS_XML": "<event><id>EVENT-1</id><name>GreenSports Challenge</name><old_name>GreenSports Challenge</old_name></event>",
+    "ADJUSTED_MISCELLANEOUSS_XML": "<miscellaneous><id>MISCELLANEOUS-1</id><name>Bayhaven's Green Vision 2030</name><old_name>Bayhaven's Green Vision 2030</old_name></miscellaneous>\n<miscellaneous><id>MISCELLANEOUS-2</id><name>#GreenSportsBayhaven</name><old_name>#GreenSportsBayhaven</old_name></miscellaneous>\n<miscellaneous><id>MISCELLANEOUS-3</id><name>#ZeroWasteChallenge</name><old_name>#ZeroWasteChallenge</old_name></miscellaneous>",
+    "USED_PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Jaxon Cartwright"
+      }
+    ],
+    "USED_ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Bayhaven City Council"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "EcoAthlete Initiative"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Bayhaven Times"
+      }
+    ],
+    "USED_LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Bayhaven"
+      }
+    ],
+    "USED_PRODUCT": [],
+    "USED_ART": [],
+    "USED_BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Bayhaven Coastal Stadium"
+      }
+    ],
+    "USED_EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "GreenSports Challenge"
+      }
+    ],
+    "USED_MISCELLANEOUS": [
+      {
+        "id": "MISCELLANEOUS-1",
+        "name": "Bayhaven's Green Vision 2030"
+      },
+      {
+        "id": "MISCELLANEOUS-2",
+        "name": "#GreenSportsBayhaven"
+      },
+      {
+        "id": "MISCELLANEOUS-3",
+        "name": "#ZeroWasteChallenge"
+      }
+    ],
+    "USED_PRE-EXISTING-PERSON": [],
+    "USED_NEW-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Jaxon Cartwright",
+        "category": "person"
+      }
+    ],
+    "ALL_USED_PERSON_XML": "<person><category>person</category><id>PERSON-1</id><name>Jaxon Cartwright</name></person>",
+    "USED-NAME-AND-ID-FOR-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Jaxon Cartwright",
+        "category": "person"
+      }
+    ],
+    "USED_PRE-EXISTING-ORGANIZATION": [],
+    "USED_NEW-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Bayhaven City Council",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "EcoAthlete Initiative",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Bayhaven Times",
+        "category": "organization"
+      }
+    ],
+    "ALL_USED_ORGANIZATION_XML": "<organization><category>organization</category><id>ORGANIZATION-1</id><name>Bayhaven City Council</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-2</id><name>EcoAthlete Initiative</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-3</id><name>Bayhaven Times</name></organization>",
+    "USED-NAME-AND-ID-FOR-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Bayhaven City Council",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "EcoAthlete Initiative",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Bayhaven Times",
+        "category": "organization"
+      }
+    ],
+    "USED_PRE-EXISTING-LOCATION": [],
+    "USED_NEW-LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Bayhaven",
+        "category": "location"
+      }
+    ],
+    "ALL_USED_LOCATION_XML": "<location><category>location</category><id>LOCATION-1</id><name>Bayhaven</name></location>",
+    "USED-NAME-AND-ID-FOR-LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Bayhaven",
+        "category": "location"
+      }
+    ],
+    "USED_PRE-EXISTING-PRODUCT": [],
+    "USED_NEW-PRODUCT": [],
+    "ALL_USED_PRODUCT_XML": "",
+    "USED-NAME-AND-ID-FOR-PRODUCT": [],
+    "USED_PRE-EXISTING-ART": [],
+    "USED_NEW-ART": [],
+    "ALL_USED_ART_XML": "",
+    "USED-NAME-AND-ID-FOR-ART": [],
+    "USED_PRE-EXISTING-BUILDING": [],
+    "USED_NEW-BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Bayhaven Coastal Stadium",
+        "category": "building"
+      }
+    ],
+    "ALL_USED_BUILDING_XML": "<building><category>building</category><id>BUILDING-1</id><name>Bayhaven Coastal Stadium</name></building>",
+    "USED-NAME-AND-ID-FOR-BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "Bayhaven Coastal Stadium",
+        "category": "building"
+      }
+    ],
+    "USED_PRE-EXISTING-EVENT": [],
+    "USED_NEW-EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "GreenSports Challenge",
+        "category": "event"
+      }
+    ],
+    "ALL_USED_EVENT_XML": "<event><category>event</category><id>EVENT-1</id><name>GreenSports Challenge</name></event>",
+    "USED-NAME-AND-ID-FOR-EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "GreenSports Challenge",
+        "category": "event"
+      }
+    ],
+    "USED_PRE-EXISTING-MISCELLANEOUS": [],
+    "USED_NEW-MISCELLANEOUS": [
+      {
+        "id": "MISCELLANEOUS-1",
+        "name": "Bayhaven's Green Vision 2030",
+        "category": "miscellaneous"
+      },
+      {
+        "id": "MISCELLANEOUS-2",
+        "name": "#GreenSportsBayhaven",
+        "category": "miscellaneous"
+      },
+      {
+        "id": "MISCELLANEOUS-3",
+        "name": "#ZeroWasteChallenge",
+        "category": "miscellaneous"
+      }
+    ],
+    "ALL_USED_MISCELLANEOUS_XML": "<miscellaneous><category>miscellaneous</category><id>MISCELLANEOUS-1</id><name>Bayhaven's Green Vision 2030</name></miscellaneous>\n<miscellaneous><category>miscellaneous</category><id>MISCELLANEOUS-2</id><name>#GreenSportsBayhaven</name></miscellaneous>\n<miscellaneous><category>miscellaneous</category><id>MISCELLANEOUS-3</id><name>#ZeroWasteChallenge</name></miscellaneous>",
+    "USED-NAME-AND-ID-FOR-MISCELLANEOUS": [
+      {
+        "id": "MISCELLANEOUS-1",
+        "name": "Bayhaven's Green Vision 2030",
+        "category": "miscellaneous"
+      },
+      {
+        "id": "MISCELLANEOUS-2",
+        "name": "#GreenSportsBayhaven",
+        "category": "miscellaneous"
+      },
+      {
+        "id": "MISCELLANEOUS-3",
+        "name": "#ZeroWasteChallenge",
+        "category": "miscellaneous"
+      }
+    ],
+    "USED_NEW-PERSONS_XML": "<person><category>person</category><id>PERSON-1</id><name>Jaxon Cartwright</name></person>",
+    "USED_NEW-ORGANIZATIONS_XML": "<organization><category>organization</category><id>ORGANIZATION-1</id><name>Bayhaven City Council</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-2</id><name>EcoAthlete Initiative</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-3</id><name>Bayhaven Times</name></organization>",
+    "USED_NEW-LOCATIONS_XML": "<location><category>location</category><id>LOCATION-1</id><name>Bayhaven</name></location>",
+    "USED_NEW-PRODUCTS_XML": "",
+    "USED_NEW-ARTS_XML": "",
+    "USED_NEW-BUILDINGS_XML": "<building><category>building</category><id>BUILDING-1</id><name>Bayhaven Coastal Stadium</name></building>",
+    "USED_NEW-EVENTS_XML": "<event><category>event</category><id>EVENT-1</id><name>GreenSports Challenge</name></event>",
+    "USED_NEW-MISCELLANEOUSS_XML": "<miscellaneous><category>miscellaneous</category><id>MISCELLANEOUS-1</id><name>Bayhaven's Green Vision 2030</name></miscellaneous>\n<miscellaneous><category>miscellaneous</category><id>MISCELLANEOUS-2</id><name>#GreenSportsBayhaven</name></miscellaneous>\n<miscellaneous><category>miscellaneous</category><id>MISCELLANEOUS-3</id><name>#ZeroWasteChallenge</name></miscellaneous>"
+  }
+}

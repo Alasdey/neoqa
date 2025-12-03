@@ -1,0 +1,1172 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "openai/gpt-5-mini",
+    "temperature": 0.0,
+    "max-tokens": 10000
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "<results>\n<person>\n<entity_id>PERSON-1</entity_id>\n<update>Cormac Halloway signed a four-season contract extension with Harwick Vale Rugby Club (effective from the 2025-26 season through 2028-29), with his annual salary raised to \u00a395,000 and a \u00a320,000-per-season leadership bonus payable quarterly; the contract was registered with the Elmstone Regional Rugby Championship on 15 July 2025.</update>\n</person>\n<person>\n<entity_id>PERSON-2</entity_id>\n<update>Marina Kestrel, director of Harwick Vale Rugby Club, announced the retention of Cormac Halloway at a media briefing and highlighted his leadership, mentoring of younger players, and role in the club's player-development pathway.</update>\n</person>\n<person>\n<entity_id>PERSON-3</entity_id>\n<update>Eden Trask, head coach of Harwick Vale Rugby Club, supported the extension, citing Cormac Halloway's work rate, experience and last-season contributions leading the squad in tackles and minutes played.</update>\n</person>\n<person>\n<entity_id>PERSON-4</entity_id>\n<update>Jules Renby was promoted from the academy to Harwick Vale's senior squad, signing a one-year development contract, joining first-team training immediately and becoming eligible for selection in the matchday 23.</update>\n<profession>Rugby player (development contract; promoted to senior squad)</profession>\n</person>\n<organization>\n<entity_id>ORGANIZATION-1</entity_id>\n<update>Harwick Vale Rugby Club announced Cormac Halloway's four-season extension, hosted a media briefing at its training ground, confirmed the salary and leadership-bonus terms, arranged a one-year front-of-shirt sponsorship with Northbridge Brewing (reported at ~\u00a365,000) to help balance the 2025 operating budget, and promoted academy player Jules Renby to the senior squad; the club submitted amended squad and financial disclosures for registration on 15 July 2025.</update>\n</organization>\n<organization>\n<entity_id>ORGANIZATION-2</entity_id>\n<update>Northbridge Brewing agreed a one-year front-of-shirt sponsorship with Harwick Vale Rugby Club reported to be worth approximately \u00a365,000 and including co-promotional activities on two home matchdays.</update>\n</organization>\n<event>\n<entity_id>EVENT-1</entity_id>\n<update>The Elmstone Regional Rugby Championship registered Cormac Halloway's contract extension on 15 July 2025 and confirmed the contract met the competition's salary-cap and registration requirements.</update>\n</event>\n</results>"
+  },
+  "response": "<results>\n<person>\n<entity_id>PERSON-1</entity_id>\n<update>Cormac Halloway signed a four-season contract extension with Harwick Vale Rugby Club (effective from the 2025-26 season through 2028-29), with his annual salary raised to \u00a395,000 and a \u00a320,000-per-season leadership bonus payable quarterly; the contract was registered with the Elmstone Regional Rugby Championship on 15 July 2025.</update>\n</person>\n<person>\n<entity_id>PERSON-2</entity_id>\n<update>Marina Kestrel, director of Harwick Vale Rugby Club, announced the retention of Cormac Halloway at a media briefing and highlighted his leadership, mentoring of younger players, and role in the club's player-development pathway.</update>\n</person>\n<person>\n<entity_id>PERSON-3</entity_id>\n<update>Eden Trask, head coach of Harwick Vale Rugby Club, supported the extension, citing Cormac Halloway's work rate, experience and last-season contributions leading the squad in tackles and minutes played.</update>\n</person>\n<person>\n<entity_id>PERSON-4</entity_id>\n<update>Jules Renby was promoted from the academy to Harwick Vale's senior squad, signing a one-year development contract, joining first-team training immediately and becoming eligible for selection in the matchday 23.</update>\n<profession>Rugby player (development contract; promoted to senior squad)</profession>\n</person>\n<organization>\n<entity_id>ORGANIZATION-1</entity_id>\n<update>Harwick Vale Rugby Club announced Cormac Halloway's four-season extension, hosted a media briefing at its training ground, confirmed the salary and leadership-bonus terms, arranged a one-year front-of-shirt sponsorship with Northbridge Brewing (reported at ~\u00a365,000) to help balance the 2025 operating budget, and promoted academy player Jules Renby to the senior squad; the club submitted amended squad and financial disclosures for registration on 15 July 2025.</update>\n</organization>\n<organization>\n<entity_id>ORGANIZATION-2</entity_id>\n<update>Northbridge Brewing agreed a one-year front-of-shirt sponsorship with Harwick Vale Rugby Club reported to be worth approximately \u00a365,000 and including co-promotional activities on two home matchdays.</update>\n</organization>\n<event>\n<entity_id>EVENT-1</entity_id>\n<update>The Elmstone Regional Rugby Championship registered Cormac Halloway's contract extension on 15 July 2025 and confirmed the contract met the competition's salary-cap and registration requirements.</update>\n</event>\n</results>",
+  "instructions": "You are an AI assistant tasked with updating a list of fictional entities based on an outline of events. Follow these instructions carefully to complete the task:\n\n1. First, read the outline of the fictional event:\n<outline>\n{{OUTLINE}}\n</outline>\n\n2. Next, review the list of fictional entities:\n<entities>\n{{USED_LOCATION_XML}}\n{{USED_PERSON_XML}}\n{{USED_ORGANIZATION_XML}}\n{{USED_PRODUCT_XML}}\n{{USED_ART_XML}}\n{{USED_EVENT_XML}}\n{{USED_BUILDING_XML}}\n{{USED_MISCELLANEOUS_XML}}\n</entities>\n\n3. For each entity in the list, follow these steps:\n   a. Identify the entity's role in the outline. Create an update sentence describing how the entity was affected by or involved in the events described in the outline.\n   b. Review all properties of the entity EXCEPT for \"id\", \"created_at\", \"history\", and \"entity_class\".\n   c. For each property:\n      - If the property does not need to be updated based on the outline, leave it as-is.\n      - If the events or the time difference since the last update (last_updated) indicate that the value has changed, update it accordingly.\n      - Ensure the new value is consistent with the outline, other entities, and plausible given the time difference.\n   d. Do not alter the \"description\" field unless the current description is no longer valid after the events in the outline.\n\n4. Output your results for each entity in the following format:\n<results>\n<[entity_type]>\n<entity_id>[Insert entity id here]</entity_id>\n<update>[Insert your update sentence here]</update>\n[List any properties that were changed, with their new values, using the format:]\n<[property_name]>[new value]</[property_name]>\n</[entity_type]>\n[Repeat for each entity]\n</results>\n\n5. Important reminders:\n   - Stick to the information provided in the outline and entities list. Do not invent new details or events.\n   - Ensure all updates and changes are consistent with the outline and with each other.\n   - Be concise in your updates, focusing only on relevant changes.\n   - If no properties need to be changed for an entity, do not include any property tags.\n   - Process each entity in the order they are presented in the list.\n   - Use the appropriate entity type tag (e.g., <location>, <person>, etc.) instead of <entity_update>.\n   - Begin your response with the first entity update immediately, without any preamble.\n\nAll actual results should be listed in <location>, <organization>, <person>, <product>, <art>, <building>, <event>, or <miscellaneous> nodes within the <results> node.\nDo not include any content outside of the <results> tags in your response.\n\nStart processing the entities now, following the instructions and format provided above.",
+  "text_prompt": "You are an AI assistant tasked with updating a list of fictional entities based on an outline of events. Follow these instructions carefully to complete the task:\n\n1. First, read the outline of the fictional event:\n<outline>\n{Harwick Vale Rugby Club|ORGANIZATION-1} announced a contract extension for captain {Cormac Halloway|PERSON-1}.\n{Harwick Vale Rugby Club|ORGANIZATION-1} made the announcement via a 12:00 BST press release on the {Harwick Vale Rugby Club|ORGANIZATION-1} website and hosted a short media briefing at the {Harwick Vale Rugby Club|ORGANIZATION-1}'s training ground.\n{Cormac Halloway|PERSON-1} signed a four-season extension running through the end of the 2028-29 {Elmstone Regional Rugby Championship|EVENT-1} season.\nThe extension takes effect from the start of the 2025-26 campaign and guarantees {Cormac Halloway|PERSON-1}'s services for the 2025-26, 2026-27, 2027-28 and 2028-29 seasons.\n{Harwick Vale Rugby Club|ORGANIZATION-1} reported that the contract raises {Cormac Halloway|PERSON-1}'s annual salary to \u00a395,000.\nThe {Harwick Vale Rugby Club|ORGANIZATION-1} said this represents an increase from {Cormac Halloway|PERSON-1}'s previous reported annual salary of \u00a372,000, an uplift of approximately \u00a323,000 per year.\n{Harwick Vale Rugby Club|ORGANIZATION-1} confirmed that the contract for {Cormac Halloway|PERSON-1} includes a leadership bonus of \u00a320,000 per season.\n{Harwick Vale Rugby Club|ORGANIZATION-1} stated that the leadership bonus of \u00a320,000 per season is payable in quarterly instalments provided {Cormac Halloway|PERSON-1} remains club captain and is included in at least two-thirds of {Elmstone Regional Rugby Championship|EVENT-1} matchday squads each season.\n{Marina Kestrel|PERSON-2}, director of {Harwick Vale Rugby Club|ORGANIZATION-1}, said \"Retaining {Cormac Halloway|PERSON-1} secures core leadership for our {Elmstone Regional Rugby Championship|EVENT-1} campaigns.\"\n{Marina Kestrel|PERSON-2} made the remark at the media briefing and highlighted {Cormac Halloway|PERSON-1}'s role mentoring younger players and his influence on the {Harwick Vale Rugby Club|ORGANIZATION-1}'s player-development pathway.\n{Eden Trask|PERSON-3}, head coach of {Harwick Vale Rugby Club|ORGANIZATION-1}, said \"Cormac Halloway's work rate and experience were decisive factors in this extension.\"\n{Eden Trask|PERSON-3} also cited {Cormac Halloway|PERSON-1}'s last season contributions \u2014 noting that {Cormac Halloway|PERSON-1} led the {Harwick Vale Rugby Club|ORGANIZATION-1} squad in tackles and minutes played \u2014 as part of the reasoning behind the decision.\n{Cormac Halloway|PERSON-1} said \"I am committed to {Harwick Vale Rugby Club|ORGANIZATION-1} and looking forward to leading the group through the next four seasons.\"\n{Cormac Halloway|PERSON-1} added that he plans to remain based locally to continue community coaching sessions and to help integrate promoted academy players into the senior group.\n{Harwick Vale Rugby Club|ORGANIZATION-1} announced a one-year front-of-shirt sponsorship with {Northbridge Brewing|ORGANIZATION-2} to help balance the 2025 operating budget after the {Cormac Halloway|PERSON-1} extension.\n{Harwick Vale Rugby Club|ORGANIZATION-1} confirmed the one-year front-of-shirt sponsorship with {Northbridge Brewing|ORGANIZATION-2} is reported to be worth approximately \u00a365,000 and will include co-promotional activities on two home matchdays.\n{Elmstone Regional Rugby Championship|EVENT-1} registered the {Cormac Halloway|PERSON-1} contract extension and confirmed the contract met the competition's salary-cap and registration requirements.\nThe {Elmstone Regional Rugby Championship|EVENT-1}'s compliance office confirmed registration on 15 July 2025 after {Harwick Vale Rugby Club|ORGANIZATION-1} submitted the amended squad list and the financial disclosures required under the competition rules.\n{Harwick Vale Rugby Club|ORGANIZATION-1} promoted academy back-row {Jules Renby|PERSON-4} to the senior squad as a roster consequence of the {Cormac Halloway|PERSON-1} contract adjustments.\n{Harwick Vale Rugby Club|ORGANIZATION-1} announced that 19-year-old academy back-row {Jules Renby|PERSON-4} has signed a one-year development contract, will train with the first team immediately and will be eligible for selection in the matchday 23.\n</outline>\n\n2. Next, review the list of fictional entities:\n<entities>\n\n<person><created_at>0</created_at><date_of_birth>1994-03-12</date_of_birth><description>Driven and community-minded leader known for a high work ethic, strong discipline, and a focus on mentoring younger athletes while pursuing a long-term playing career.</description><education>Bachelor of Sports Science, St. Lysander University</education><entity_class>person</entity_class><eye_color>Green</eye_color><gender>Male</gender><hair_color>Dark brown</hair_color><height>1.88 m</height><history></history><id>PERSON-1</id><last_updated>2025-07-15</last_updated><marital_status>Single</marital_status><name>Cormac Halloway</name><nationality>Ardenia</nationality><profession>Professional rugby player</profession><type>None</type><weight>102 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>1979-11-28</date_of_birth><description>Strategic and pragmatic administrator with a focus on sustainable club development, youth pathways, and pragmatic financial planning.</description><education>MBA, Northcliff Business School</education><entity_class>person</entity_class><eye_color>Hazel</eye_color><gender>Female</gender><hair_color>Salt-and-pepper</hair_color><height>1.70 m</height><history></history><id>PERSON-2</id><last_updated>2025-07-15</last_updated><marital_status>Married</marital_status><name>Marina Kestrel</name><nationality>Calderia</nationality><political_affiliation>Centrist Progressive League</political_affiliation><profession>Sports director</profession><type>None</type><weight>63 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>1978-06-05</date_of_birth><description>Tactical-minded coach who emphasizes disciplined defense, structured training, and the long-term development of players through data-informed methods.</description><education>Advanced Coaching Diploma, Vale Institute of Coaching</education><entity_class>person</entity_class><eye_color>Blue</eye_color><gender>Male</gender><hair_color>Light brown</hair_color><height>1.82 m</height><history></history><id>PERSON-3</id><last_updated>2025-07-15</last_updated><marital_status>Divorced</marital_status><name>Eden Trask</name><nationality>Marinellia</nationality><profession>Head coach</profession><type>None</type><weight>85 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>2006-08-02</date_of_birth><description>Athletic and tenacious back-row prospect noted for physical tackling, high work-rate, and strong determination to establish a professional career.</description><education>Diploma in Sports Performance, Valeview Sports Academy (in progress)</education><entity_class>person</entity_class><eye_color>Brown</eye_color><gender>Male</gender><hair_color>Black</hair_color><height>1.90 m</height><history></history><id>PERSON-4</id><last_updated>2025-07-15</last_updated><marital_status>Single</marital_status><name>Jules Renby</name><nationality>Ardenia</nationality><profession>Rugby player (academy prospect)</profession><type>None</type><weight>98 kg</weight></person>\n<organization><annual_revenue>\u00a31,200,000</annual_revenue><created_at>0</created_at><description>Community-rooted rugby club with a long history of developing regional talent and maintaining strong local engagement.</description><entity_class>organization</entity_class><founded>1924</founded><headquarters>Harwick-on-Teal</headquarters><history></history><id>ORGANIZATION-1</id><industry>Sports (rugby union)</industry><last_updated>2025-07-15</last_updated><mission_statement>To develop local athletic talent, promote community participation in sport, and sustain a competitive club culture.</mission_statement><name>Harwick Vale Rugby Club</name><number_of_employees>42</number_of_employees><type>non-profit sports club</type></organization>\n<organization><annual_revenue>\u00a31,100,000</annual_revenue><created_at>0</created_at><description>Regional craft brewery producing traditional ales and partnering with local businesses for community events and hospitality.</description><entity_class>organization</entity_class><founded>2011</founded><headquarters>Northbridge</headquarters><history></history><id>ORGANIZATION-2</id><industry>Beverage (craft brewing)</industry><last_updated>2025-07-15</last_updated><mission_statement>To craft approachable, locally inspired beers while supporting regional hospitality and events.</mission_statement><name>Northbridge Brewing</name><number_of_employees>25</number_of_employees><type>company</type></organization>\n\n\n<event><budget>\u00a3450,000</budget><created_at>0</created_at><date>Annual (season runs September\u2013May)</date><description>Seasonal regional rugby competition that brings together semi-professional clubs across the Elmstone area in a structured league format.</description><duration>9 months</duration><entity_class>event</entity_class><history></history><id>EVENT-1</id><last_updated>2025-07-15</last_updated><name>Elmstone Regional Rugby Championship</name><number_of_participants>12 clubs</number_of_participants><organizer>Elmstone Regional Rugby Council</organizer><type>sporting</type></event>\n\n\n</entities>\n\n3. For each entity in the list, follow these steps:\n   a. Identify the entity's role in the outline. Create an update sentence describing how the entity was affected by or involved in the events described in the outline.\n   b. Review all properties of the entity EXCEPT for \"id\", \"created_at\", \"history\", and \"entity_class\".\n   c. For each property:\n      - If the property does not need to be updated based on the outline, leave it as-is.\n      - If the events or the time difference since the last update (last_updated) indicate that the value has changed, update it accordingly.\n      - Ensure the new value is consistent with the outline, other entities, and plausible given the time difference.\n   d. Do not alter the \"description\" field unless the current description is no longer valid after the events in the outline.\n\n4. Output your results for each entity in the following format:\n<results>\n<[entity_type]>\n<entity_id>[Insert entity id here]</entity_id>\n<update>[Insert your update sentence here]</update>\n[List any properties that were changed, with their new values, using the format:]\n<[property_name]>[new value]</[property_name]>\n</[entity_type]>\n[Repeat for each entity]\n</results>\n\n5. Important reminders:\n   - Stick to the information provided in the outline and entities list. Do not invent new details or events.\n   - Ensure all updates and changes are consistent with the outline and with each other.\n   - Be concise in your updates, focusing only on relevant changes.\n   - If no properties need to be changed for an entity, do not include any property tags.\n   - Process each entity in the order they are presented in the list.\n   - Use the appropriate entity type tag (e.g., <location>, <person>, etc.) instead of <entity_update>.\n   - Begin your response with the first entity update immediately, without any preamble.\n\nAll actual results should be listed in <location>, <organization>, <person>, <product>, <art>, <building>, <event>, or <miscellaneous> nodes within the <results> node.\nDo not include any content outside of the <results> tags in your response.\n\nStart processing the entities now, following the instructions and format provided above.",
+  "system-prompt": null,
+  "values": {
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "GENRE": "Sports",
+    "HISTORIES": [],
+    "EVENT_SUMMARY": "A rugby union side competing in a regional championship has secured a contract extension with its captain, locking in the back-row player for four additional seasons with a reported salary increase and leadership bonus.",
+    "EVENT_SUMMARY_FOR_NAME": "A rugby union side c",
+    "KEYWORDS": "",
+    "CREATED_AT": 0,
+    "NEXT_IDS": {
+      "person": 5,
+      "organization": 3,
+      "location": 1,
+      "product": 1,
+      "art": 1,
+      "building": 1,
+      "event": 2,
+      "miscellaneous": 1
+    },
+    "PROVIDED_DATE": "",
+    "PERSON": [],
+    "ORGANIZATION": [],
+    "LOCATION": [],
+    "PRODUCT": [],
+    "ART": [],
+    "BUILDING": [],
+    "EVENT": [],
+    "MISCELLANEOUS": [],
+    "PERSONS_XML": "",
+    "ORGANIZATIONS_XML": "",
+    "LOCATIONS_XML": "",
+    "PRODUCTS_XML": "",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "",
+    "EVENTS_XML": "",
+    "MISCELLANEOUSS_XML": "",
+    "NUM_STORYITEMS": 10,
+    "HISTORY_XML": "",
+    "STORY_ITEM": [
+      "{Harwick Vale Rugby Club|ORGANIZATION-1} announced a contract extension for captain {Cormac Halloway|PERSON-1}.",
+      "{Harwick Vale Rugby Club|ORGANIZATION-1} made the announcement via a 12:00 BST press release on the {Harwick Vale Rugby Club|ORGANIZATION-1} website and hosted a short media briefing at the {Harwick Vale Rugby Club|ORGANIZATION-1}'s training ground.",
+      "{Cormac Halloway|PERSON-1} signed a four-season extension running through the end of the 2028-29 {Elmstone Regional Rugby Championship|EVENT-1} season.",
+      "The extension takes effect from the start of the 2025-26 campaign and guarantees {Cormac Halloway|PERSON-1}'s services for the 2025-26, 2026-27, 2027-28 and 2028-29 seasons.",
+      "{Harwick Vale Rugby Club|ORGANIZATION-1} reported that the contract raises {Cormac Halloway|PERSON-1}'s annual salary to \u00a395,000.",
+      "The {Harwick Vale Rugby Club|ORGANIZATION-1} said this represents an increase from {Cormac Halloway|PERSON-1}'s previous reported annual salary of \u00a372,000, an uplift of approximately \u00a323,000 per year.",
+      "{Harwick Vale Rugby Club|ORGANIZATION-1} confirmed that the contract for {Cormac Halloway|PERSON-1} includes a leadership bonus of \u00a320,000 per season.",
+      "{Harwick Vale Rugby Club|ORGANIZATION-1} stated that the leadership bonus of \u00a320,000 per season is payable in quarterly instalments provided {Cormac Halloway|PERSON-1} remains club captain and is included in at least two-thirds of {Elmstone Regional Rugby Championship|EVENT-1} matchday squads each season.",
+      "{Marina Kestrel|PERSON-2}, director of {Harwick Vale Rugby Club|ORGANIZATION-1}, said \"Retaining {Cormac Halloway|PERSON-1} secures core leadership for our {Elmstone Regional Rugby Championship|EVENT-1} campaigns.\"",
+      "{Marina Kestrel|PERSON-2} made the remark at the media briefing and highlighted {Cormac Halloway|PERSON-1}'s role mentoring younger players and his influence on the {Harwick Vale Rugby Club|ORGANIZATION-1}'s player-development pathway.",
+      "{Eden Trask|PERSON-3}, head coach of {Harwick Vale Rugby Club|ORGANIZATION-1}, said \"Cormac Halloway's work rate and experience were decisive factors in this extension.\"",
+      "{Eden Trask|PERSON-3} also cited {Cormac Halloway|PERSON-1}'s last season contributions \u2014 noting that {Cormac Halloway|PERSON-1} led the {Harwick Vale Rugby Club|ORGANIZATION-1} squad in tackles and minutes played \u2014 as part of the reasoning behind the decision.",
+      "{Cormac Halloway|PERSON-1} said \"I am committed to {Harwick Vale Rugby Club|ORGANIZATION-1} and looking forward to leading the group through the next four seasons.\"",
+      "{Cormac Halloway|PERSON-1} added that he plans to remain based locally to continue community coaching sessions and to help integrate promoted academy players into the senior group.",
+      "{Harwick Vale Rugby Club|ORGANIZATION-1} announced a one-year front-of-shirt sponsorship with {Northbridge Brewing|ORGANIZATION-2} to help balance the 2025 operating budget after the {Cormac Halloway|PERSON-1} extension.",
+      "{Harwick Vale Rugby Club|ORGANIZATION-1} confirmed the one-year front-of-shirt sponsorship with {Northbridge Brewing|ORGANIZATION-2} is reported to be worth approximately \u00a365,000 and will include co-promotional activities on two home matchdays.",
+      "{Elmstone Regional Rugby Championship|EVENT-1} registered the {Cormac Halloway|PERSON-1} contract extension and confirmed the contract met the competition's salary-cap and registration requirements.",
+      "The {Elmstone Regional Rugby Championship|EVENT-1}'s compliance office confirmed registration on 15 July 2025 after {Harwick Vale Rugby Club|ORGANIZATION-1} submitted the amended squad list and the financial disclosures required under the competition rules.",
+      "{Harwick Vale Rugby Club|ORGANIZATION-1} promoted academy back-row {Jules Renby|PERSON-4} to the senior squad as a roster consequence of the {Cormac Halloway|PERSON-1} contract adjustments.",
+      "{Harwick Vale Rugby Club|ORGANIZATION-1} announced that 19-year-old academy back-row {Jules Renby|PERSON-4} has signed a one-year development contract, will train with the first team immediately and will be eligible for selection in the matchday 23."
+    ],
+    "DATE": "2025-07-15",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 2,
+    "OUTLINE": "{Harwick Vale Rugby Club|ORGANIZATION-1} announced a contract extension for captain {Cormac Halloway|PERSON-1}.\n{Harwick Vale Rugby Club|ORGANIZATION-1} made the announcement via a 12:00 BST press release on the {Harwick Vale Rugby Club|ORGANIZATION-1} website and hosted a short media briefing at the {Harwick Vale Rugby Club|ORGANIZATION-1}'s training ground.\n{Cormac Halloway|PERSON-1} signed a four-season extension running through the end of the 2028-29 {Elmstone Regional Rugby Championship|EVENT-1} season.\nThe extension takes effect from the start of the 2025-26 campaign and guarantees {Cormac Halloway|PERSON-1}'s services for the 2025-26, 2026-27, 2027-28 and 2028-29 seasons.\n{Harwick Vale Rugby Club|ORGANIZATION-1} reported that the contract raises {Cormac Halloway|PERSON-1}'s annual salary to \u00a395,000.\nThe {Harwick Vale Rugby Club|ORGANIZATION-1} said this represents an increase from {Cormac Halloway|PERSON-1}'s previous reported annual salary of \u00a372,000, an uplift of approximately \u00a323,000 per year.\n{Harwick Vale Rugby Club|ORGANIZATION-1} confirmed that the contract for {Cormac Halloway|PERSON-1} includes a leadership bonus of \u00a320,000 per season.\n{Harwick Vale Rugby Club|ORGANIZATION-1} stated that the leadership bonus of \u00a320,000 per season is payable in quarterly instalments provided {Cormac Halloway|PERSON-1} remains club captain and is included in at least two-thirds of {Elmstone Regional Rugby Championship|EVENT-1} matchday squads each season.\n{Marina Kestrel|PERSON-2}, director of {Harwick Vale Rugby Club|ORGANIZATION-1}, said \"Retaining {Cormac Halloway|PERSON-1} secures core leadership for our {Elmstone Regional Rugby Championship|EVENT-1} campaigns.\"\n{Marina Kestrel|PERSON-2} made the remark at the media briefing and highlighted {Cormac Halloway|PERSON-1}'s role mentoring younger players and his influence on the {Harwick Vale Rugby Club|ORGANIZATION-1}'s player-development pathway.\n{Eden Trask|PERSON-3}, head coach of {Harwick Vale Rugby Club|ORGANIZATION-1}, said \"Cormac Halloway's work rate and experience were decisive factors in this extension.\"\n{Eden Trask|PERSON-3} also cited {Cormac Halloway|PERSON-1}'s last season contributions \u2014 noting that {Cormac Halloway|PERSON-1} led the {Harwick Vale Rugby Club|ORGANIZATION-1} squad in tackles and minutes played \u2014 as part of the reasoning behind the decision.\n{Cormac Halloway|PERSON-1} said \"I am committed to {Harwick Vale Rugby Club|ORGANIZATION-1} and looking forward to leading the group through the next four seasons.\"\n{Cormac Halloway|PERSON-1} added that he plans to remain based locally to continue community coaching sessions and to help integrate promoted academy players into the senior group.\n{Harwick Vale Rugby Club|ORGANIZATION-1} announced a one-year front-of-shirt sponsorship with {Northbridge Brewing|ORGANIZATION-2} to help balance the 2025 operating budget after the {Cormac Halloway|PERSON-1} extension.\n{Harwick Vale Rugby Club|ORGANIZATION-1} confirmed the one-year front-of-shirt sponsorship with {Northbridge Brewing|ORGANIZATION-2} is reported to be worth approximately \u00a365,000 and will include co-promotional activities on two home matchdays.\n{Elmstone Regional Rugby Championship|EVENT-1} registered the {Cormac Halloway|PERSON-1} contract extension and confirmed the contract met the competition's salary-cap and registration requirements.\nThe {Elmstone Regional Rugby Championship|EVENT-1}'s compliance office confirmed registration on 15 July 2025 after {Harwick Vale Rugby Club|ORGANIZATION-1} submitted the amended squad list and the financial disclosures required under the competition rules.\n{Harwick Vale Rugby Club|ORGANIZATION-1} promoted academy back-row {Jules Renby|PERSON-4} to the senior squad as a roster consequence of the {Cormac Halloway|PERSON-1} contract adjustments.\n{Harwick Vale Rugby Club|ORGANIZATION-1} announced that 19-year-old academy back-row {Jules Renby|PERSON-4} has signed a one-year development contract, will train with the first team immediately and will be eligible for selection in the matchday 23.",
+    "PRE-CONSISTENCY-NUM-ITEMS": 20,
+    "STORYITEM_XML": "<storyitems>\n<storyitem>Harwick Vale Rugby Club announced a contract extension for captain Cormac Halloway.</storyitem>\n<storyitem>Harwick Vale Rugby Club made the announcement via a 12:00 BST press release on the club website and hosted a short media briefing at the club's training ground.</storyitem>\n<storyitem>Cormac Halloway signed a four-season extension running through the end of the 2028-29 Elmstone Regional Rugby Championship season.</storyitem>\n<storyitem>The extension takes effect from the start of the 2025-26 campaign and guarantees Cormac Halloway's services for the 2025-26, 2026-27, 2027-28 and 2028-29 seasons.</storyitem>\n<storyitem>Harwick Vale Rugby Club reported that the contract raises Cormac Halloway's annual salary to \u00a395,000.</storyitem>\n<storyitem>The club said this represents an increase from Cormac Halloway's previous reported annual salary of \u00a372,000, an uplift of approximately \u00a323,000 per year.</storyitem>\n<storyitem>Harwick Vale Rugby Club confirmed that the contract for Cormac Halloway includes a leadership bonus of \u00a320,000 per season.</storyitem>\n<storyitem>Harwick Vale Rugby Club stated that the leadership bonus of \u00a320,000 per season is payable in quarterly instalments provided Cormac Halloway remains club captain and is included in at least two-thirds of Elmstone Regional Rugby Championship matchday squads each season.</storyitem>\n<storyitem>Marina Kestrel, director of Harwick Vale Rugby Club, said \"Retaining Cormac Halloway secures core leadership for our Elmstone Regional Rugby Championship campaigns.\"</storyitem>\n<storyitem>Marina Kestrel made the remark at the media briefing and highlighted Cormac Halloway's role mentoring younger players and his influence on the club's player-development pathway.</storyitem>\n<storyitem>Eden Trask, head coach of Harwick Vale Rugby Club, said \"Cormac Halloway's work rate and experience were decisive factors in this extension.\"</storyitem>\n<storyitem>Eden Trask also cited Cormac Halloway's last season contributions \u2014 noting that Cormac led the Harwick Vale squad in tackles and minutes played \u2014 as part of the reasoning behind the decision.</storyitem>\n<storyitem>Cormac Halloway said \"I am committed to Harwick Vale Rugby Club and looking forward to leading the group through the next four seasons.\"</storyitem>\n<storyitem>Cormac Halloway added that he plans to remain based locally to continue community coaching sessions and to help integrate promoted academy players into the senior group.</storyitem>\n<storyitem>Harwick Vale Rugby Club announced a one-year front-of-shirt sponsorship with Northbridge Brewing to help balance the 2025 operating budget after the Cormac Halloway extension.</storyitem>\n<storyitem>Harwick Vale Rugby Club confirmed the one-year front-of-shirt sponsorship with Northbridge Brewing is reported to be worth approximately \u00a365,000 and will include co-promotional activities on two home matchdays.</storyitem>\n<storyitem>Elmstone Regional Rugby Championship registered the Cormac Halloway contract extension and confirmed the contract met the competition's salary-cap and registration requirements.</storyitem>\n<storyitem>The Elmstone Regional Rugby Championship's compliance office confirmed registration on 15 July 2025 after Harwick Vale submitted the amended squad list and the financial disclosures required under the competition rules.</storyitem>\n<storyitem>Harwick Vale Rugby Club promoted academy back-row Jules Renby to the senior squad as a roster consequence of the Cormac Halloway contract adjustments.</storyitem>\n<storyitem>Harwick Vale Rugby Club announced that 19-year-old academy back-row Jules Renby has signed a one-year development contract, will train with the first team immediately and will be eligible for selection in the matchday 23.</storyitem>\n<storyitems>",
+    "NEW_PERSON_NAME": [
+      {
+        "name": "Cormac Halloway",
+        "old_name": "Cormac Halloway"
+      },
+      {
+        "name": "Marina Kestrel",
+        "old_name": "Marina Kestrel"
+      },
+      {
+        "name": "Eden Trask",
+        "old_name": "Eden Trask"
+      },
+      {
+        "name": "Jules Renby",
+        "old_name": "Jules Renby"
+      }
+    ],
+    "NEW_ORGANIZATION_NAME": [
+      {
+        "name": "Harwick Vale Rugby Club",
+        "old_name": "Harwick Vale Rugby Club"
+      },
+      {
+        "name": "Northbridge Brewing",
+        "old_name": "Northbridge Brewing"
+      }
+    ],
+    "NEW_LOCATION_NAME": [],
+    "NEW_PRODUCT_NAME": [],
+    "NEW_ART_NAME": [],
+    "NEW_BUILDING_NAME": [],
+    "NEW_EVENT_NAME": [
+      {
+        "name": "Elmstone Regional Rugby Championship",
+        "old_name": "Elmstone Regional Rugby Championship"
+      }
+    ],
+    "NEW_MISCELLANEOUS_NAME": [],
+    "CORRECTED_PERSON_NAME": [
+      {
+        "name": "Cormac Halloway",
+        "old_name": "Cormac Halloway",
+        "id": "PERSON-1"
+      },
+      {
+        "name": "Marina Kestrel",
+        "old_name": "Marina Kestrel",
+        "id": "PERSON-2"
+      },
+      {
+        "name": "Eden Trask",
+        "old_name": "Eden Trask",
+        "id": "PERSON-3"
+      },
+      {
+        "name": "Jules Renby",
+        "old_name": "Jules Renby",
+        "id": "PERSON-4"
+      }
+    ],
+    "CORRECTED_ORGANIZATION_NAME": [
+      {
+        "name": "Harwick Vale Rugby Club",
+        "old_name": "Harwick Vale Rugby Club",
+        "id": "ORGANIZATION-1"
+      },
+      {
+        "name": "Northbridge Brewing",
+        "old_name": "Northbridge Brewing",
+        "id": "ORGANIZATION-2"
+      }
+    ],
+    "CORRECTED_LOCATION_NAME": [],
+    "CORRECTED_PRODUCT_NAME": [],
+    "CORRECTED_ART_NAME": [],
+    "CORRECTED_BUILDING_NAME": [],
+    "CORRECTED_EVENT_NAME": [
+      {
+        "name": "Elmstone Regional Rugby Championship",
+        "old_name": "Elmstone Regional Rugby Championship",
+        "id": "EVENT-1"
+      }
+    ],
+    "CORRECTED_MISCELLANEOUS_NAME": [],
+    "CRITIQUE_ERRORS": {
+      "entity-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-person-nationality": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-person-spouse": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization-headquarters": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product-manufacturer": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art-creator": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art-current_location_country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art-current_location_city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art-current_location_place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building-place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building-city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building-architect": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event-place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event-city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event-organizer": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-person-nationality": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-person-spouse": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-organization-headquarters": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-location-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-product-manufacturer": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-art-creator": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-art-current_location_country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-art-current_location_city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-art-current_location_place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-building-place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-building-city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-building-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-building-architect": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-event-place": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-event-city": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-event-country": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "heuristics-event-organizer": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ]
+    },
+    "ADJUSTED_PERSONS_XML": "<person><id>PERSON-1</id><name>Cormac Halloway</name><old_name>Cormac Halloway</old_name></person>\n<person><id>PERSON-2</id><name>Marina Kestrel</name><old_name>Marina Kestrel</old_name></person>\n<person><id>PERSON-3</id><name>Eden Trask</name><old_name>Eden Trask</old_name></person>\n<person><id>PERSON-4</id><name>Jules Renby</name><old_name>Jules Renby</old_name></person>",
+    "ADJUSTED_ORGANIZATIONS_XML": "<organization><id>ORGANIZATION-1</id><name>Harwick Vale Rugby Club</name><old_name>Harwick Vale Rugby Club</old_name></organization>\n<organization><id>ORGANIZATION-2</id><name>Northbridge Brewing</name><old_name>Northbridge Brewing</old_name></organization>",
+    "ADJUSTED_LOCATIONS_XML": "",
+    "ADJUSTED_PRODUCTS_XML": "",
+    "ADJUSTED_ARTS_XML": "",
+    "ADJUSTED_BUILDINGS_XML": "",
+    "ADJUSTED_EVENTS_XML": "<event><id>EVENT-1</id><name>Elmstone Regional Rugby Championship</name><old_name>Elmstone Regional Rugby Championship</old_name></event>",
+    "ADJUSTED_MISCELLANEOUSS_XML": "",
+    "USED_PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Cormac Halloway"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Marina Kestrel"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Eden Trask"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Jules Renby"
+      }
+    ],
+    "USED_ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Harwick Vale Rugby Club"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Northbridge Brewing"
+      }
+    ],
+    "USED_LOCATION": [],
+    "USED_PRODUCT": [],
+    "USED_ART": [],
+    "USED_BUILDING": [],
+    "USED_EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "Elmstone Regional Rugby Championship"
+      }
+    ],
+    "USED_MISCELLANEOUS": [],
+    "USED_PRE-EXISTING-PERSON": [],
+    "USED_NEW-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Cormac Halloway",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Marina Kestrel",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Eden Trask",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Jules Renby",
+        "category": "person"
+      }
+    ],
+    "ALL_USED_PERSON_XML": "<person><category>person</category><id>PERSON-1</id><name>Cormac Halloway</name></person>\n<person><category>person</category><id>PERSON-2</id><name>Marina Kestrel</name></person>\n<person><category>person</category><id>PERSON-3</id><name>Eden Trask</name></person>\n<person><category>person</category><id>PERSON-4</id><name>Jules Renby</name></person>",
+    "USED-NAME-AND-ID-FOR-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Cormac Halloway",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Marina Kestrel",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Eden Trask",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Jules Renby",
+        "category": "person"
+      }
+    ],
+    "USED_PRE-EXISTING-ORGANIZATION": [],
+    "USED_NEW-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Harwick Vale Rugby Club",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Northbridge Brewing",
+        "category": "organization"
+      }
+    ],
+    "ALL_USED_ORGANIZATION_XML": "<organization><category>organization</category><id>ORGANIZATION-1</id><name>Harwick Vale Rugby Club</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-2</id><name>Northbridge Brewing</name></organization>",
+    "USED-NAME-AND-ID-FOR-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Harwick Vale Rugby Club",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Northbridge Brewing",
+        "category": "organization"
+      }
+    ],
+    "USED_PRE-EXISTING-LOCATION": [],
+    "USED_NEW-LOCATION": [],
+    "ALL_USED_LOCATION_XML": "",
+    "USED-NAME-AND-ID-FOR-LOCATION": [],
+    "USED_PRE-EXISTING-PRODUCT": [],
+    "USED_NEW-PRODUCT": [],
+    "ALL_USED_PRODUCT_XML": "",
+    "USED-NAME-AND-ID-FOR-PRODUCT": [],
+    "USED_PRE-EXISTING-ART": [],
+    "USED_NEW-ART": [],
+    "ALL_USED_ART_XML": "",
+    "USED-NAME-AND-ID-FOR-ART": [],
+    "USED_PRE-EXISTING-BUILDING": [],
+    "USED_NEW-BUILDING": [],
+    "ALL_USED_BUILDING_XML": "",
+    "USED-NAME-AND-ID-FOR-BUILDING": [],
+    "USED_PRE-EXISTING-EVENT": [],
+    "USED_NEW-EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "Elmstone Regional Rugby Championship",
+        "category": "event"
+      }
+    ],
+    "ALL_USED_EVENT_XML": "<event><category>event</category><id>EVENT-1</id><name>Elmstone Regional Rugby Championship</name></event>",
+    "USED-NAME-AND-ID-FOR-EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "Elmstone Regional Rugby Championship",
+        "category": "event"
+      }
+    ],
+    "USED_PRE-EXISTING-MISCELLANEOUS": [],
+    "USED_NEW-MISCELLANEOUS": [],
+    "ALL_USED_MISCELLANEOUS_XML": "",
+    "USED-NAME-AND-ID-FOR-MISCELLANEOUS": [],
+    "USED_NEW-PERSONS_XML": "<person><category>person</category><id>PERSON-1</id><name>Cormac Halloway</name></person>\n<person><category>person</category><id>PERSON-2</id><name>Marina Kestrel</name></person>\n<person><category>person</category><id>PERSON-3</id><name>Eden Trask</name></person>\n<person><category>person</category><id>PERSON-4</id><name>Jules Renby</name></person>",
+    "USED_NEW-ORGANIZATIONS_XML": "<organization><category>organization</category><id>ORGANIZATION-1</id><name>Harwick Vale Rugby Club</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-2</id><name>Northbridge Brewing</name></organization>",
+    "USED_NEW-LOCATIONS_XML": "",
+    "USED_NEW-PRODUCTS_XML": "",
+    "USED_NEW-ARTS_XML": "",
+    "USED_NEW-BUILDINGS_XML": "",
+    "USED_NEW-EVENTS_XML": "<event><category>event</category><id>EVENT-1</id><name>Elmstone Regional Rugby Championship</name></event>",
+    "USED_NEW-MISCELLANEOUSS_XML": "",
+    "NEW_PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Cormac Halloway",
+        "date_of_birth": "1994-03-12",
+        "gender": "Male",
+        "profession": "Professional rugby player",
+        "nationality": "Ardenia",
+        "education": "Bachelor of Sports Science, St. Lysander University",
+        "description": "Driven and community-minded leader known for a high work ethic, strong discipline, and a focus on mentoring younger athletes while pursuing a long-term playing career.",
+        "height": "1.88 m",
+        "weight": "102 kg",
+        "eye_color": "Green",
+        "hair_color": "Dark brown",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Marina Kestrel",
+        "date_of_birth": "1979-11-28",
+        "gender": "Female",
+        "profession": "Sports director",
+        "nationality": "Calderia",
+        "education": "MBA, Northcliff Business School",
+        "description": "Strategic and pragmatic administrator with a focus on sustainable club development, youth pathways, and pragmatic financial planning.",
+        "height": "1.70 m",
+        "weight": "63 kg",
+        "eye_color": "Hazel",
+        "hair_color": "Salt-and-pepper",
+        "political_affiliation": "Centrist Progressive League",
+        "marital_status": "Married"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Eden Trask",
+        "date_of_birth": "1978-06-05",
+        "gender": "Male",
+        "profession": "Head coach",
+        "nationality": "Marinellia",
+        "education": "Advanced Coaching Diploma, Vale Institute of Coaching",
+        "description": "Tactical-minded coach who emphasizes disciplined defense, structured training, and the long-term development of players through data-informed methods.",
+        "height": "1.82 m",
+        "weight": "85 kg",
+        "eye_color": "Blue",
+        "hair_color": "Light brown",
+        "marital_status": "Divorced"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Jules Renby",
+        "date_of_birth": "2006-08-02",
+        "gender": "Male",
+        "profession": "Rugby player (academy prospect)",
+        "nationality": "Ardenia",
+        "education": "Diploma in Sports Performance, Valeview Sports Academy (in progress)",
+        "description": "Athletic and tenacious back-row prospect noted for physical tackling, high work-rate, and strong determination to establish a professional career.",
+        "height": "1.90 m",
+        "weight": "98 kg",
+        "eye_color": "Brown",
+        "hair_color": "Black",
+        "marital_status": "Single"
+      }
+    ],
+    "NEW_ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Harwick Vale Rugby Club",
+        "type": "non-profit sports club",
+        "description": "Community-rooted rugby club with a long history of developing regional talent and maintaining strong local engagement.",
+        "founded": "1924",
+        "headquarters": "Harwick-on-Teal",
+        "industry": "Sports (rugby union)",
+        "mission_statement": "To develop local athletic talent, promote community participation in sport, and sustain a competitive club culture.",
+        "number_of_employees": "42",
+        "annual_revenue": "\u00a31,200,000"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Northbridge Brewing",
+        "type": "company",
+        "description": "Regional craft brewery producing traditional ales and partnering with local businesses for community events and hospitality.",
+        "founded": "2011",
+        "headquarters": "Northbridge",
+        "industry": "Beverage (craft brewing)",
+        "mission_statement": "To craft approachable, locally inspired beers while supporting regional hospitality and events.",
+        "number_of_employees": "25",
+        "annual_revenue": "\u00a31,100,000"
+      }
+    ],
+    "NEW_LOCATION": [],
+    "NEW_PRODUCT": [],
+    "NEW_ART": [],
+    "NEW_BUILDING": [],
+    "NEW_EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "Elmstone Regional Rugby Championship",
+        "type": "sporting",
+        "description": "Seasonal regional rugby competition that brings together semi-professional clubs across the Elmstone area in a structured league format.",
+        "date": "Annual (season runs September\u2013May)",
+        "place": "Elmstone region",
+        "city": "Elmstone City",
+        "country": "Calderia",
+        "duration": "9 months",
+        "organizer": "Elmstone Regional Rugby Council",
+        "number_of_participants": "12 clubs",
+        "budget": "\u00a3450,000"
+      }
+    ],
+    "NEW_MISCELLANEOUS": [],
+    "FICTIONAL_NEW_PERSONS": [
+      {
+        "id": "PERSON-1",
+        "name": "Cormac Halloway",
+        "entity_class": "person",
+        "description": "Driven and community-minded leader known for a high work ethic, strong discipline, and a focus on mentoring younger athletes while pursuing a long-term playing career.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [],
+        "date_of_birth": "1994-03-12",
+        "gender": "Male",
+        "profession": "Professional rugby player",
+        "nationality": "Ardenia",
+        "education": "Bachelor of Sports Science, St. Lysander University",
+        "height": "1.88 m",
+        "weight": "102 kg",
+        "eye_color": "Green",
+        "hair_color": "Dark brown",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Marina Kestrel",
+        "entity_class": "person",
+        "description": "Strategic and pragmatic administrator with a focus on sustainable club development, youth pathways, and pragmatic financial planning.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [],
+        "date_of_birth": "1979-11-28",
+        "gender": "Female",
+        "profession": "Sports director",
+        "nationality": "Calderia",
+        "education": "MBA, Northcliff Business School",
+        "height": "1.70 m",
+        "weight": "63 kg",
+        "eye_color": "Hazel",
+        "hair_color": "Salt-and-pepper",
+        "political_affiliation": "Centrist Progressive League",
+        "marital_status": "Married"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Eden Trask",
+        "entity_class": "person",
+        "description": "Tactical-minded coach who emphasizes disciplined defense, structured training, and the long-term development of players through data-informed methods.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [],
+        "date_of_birth": "1978-06-05",
+        "gender": "Male",
+        "profession": "Head coach",
+        "nationality": "Marinellia",
+        "education": "Advanced Coaching Diploma, Vale Institute of Coaching",
+        "height": "1.82 m",
+        "weight": "85 kg",
+        "eye_color": "Blue",
+        "hair_color": "Light brown",
+        "marital_status": "Divorced"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Jules Renby",
+        "entity_class": "person",
+        "description": "Athletic and tenacious back-row prospect noted for physical tackling, high work-rate, and strong determination to establish a professional career.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [],
+        "date_of_birth": "2006-08-02",
+        "gender": "Male",
+        "profession": "Rugby player (academy prospect)",
+        "nationality": "Ardenia",
+        "education": "Diploma in Sports Performance, Valeview Sports Academy (in progress)",
+        "height": "1.90 m",
+        "weight": "98 kg",
+        "eye_color": "Brown",
+        "hair_color": "Black",
+        "marital_status": "Single"
+      }
+    ],
+    "FICTIONAL_NEW_ORGANIZATIONS": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Harwick Vale Rugby Club",
+        "entity_class": "organization",
+        "description": "Community-rooted rugby club with a long history of developing regional talent and maintaining strong local engagement.",
+        "type": "non-profit sports club",
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [],
+        "founded": "1924",
+        "headquarters": "Harwick-on-Teal",
+        "industry": "Sports (rugby union)",
+        "mission_statement": "To develop local athletic talent, promote community participation in sport, and sustain a competitive club culture.",
+        "number_of_employees": "42",
+        "annual_revenue": "\u00a31,200,000"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Northbridge Brewing",
+        "entity_class": "organization",
+        "description": "Regional craft brewery producing traditional ales and partnering with local businesses for community events and hospitality.",
+        "type": "company",
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [],
+        "founded": "2011",
+        "headquarters": "Northbridge",
+        "industry": "Beverage (craft brewing)",
+        "mission_statement": "To craft approachable, locally inspired beers while supporting regional hospitality and events.",
+        "number_of_employees": "25",
+        "annual_revenue": "\u00a31,100,000"
+      }
+    ],
+    "FICTIONAL_NEW_LOCATIONS": [],
+    "FICTIONAL_NEW_PRODUCTS": [],
+    "FICTIONAL_NEW_ARTS": [],
+    "FICTIONAL_NEW_BUILDINGS": [],
+    "FICTIONAL_NEW_EVENTS": [
+      {
+        "id": "EVENT-1",
+        "name": "Elmstone Regional Rugby Championship",
+        "entity_class": "event",
+        "description": "Seasonal regional rugby competition that brings together semi-professional clubs across the Elmstone area in a structured league format.",
+        "type": "sporting",
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [],
+        "date": "Annual (season runs September\u2013May)",
+        "duration": "9 months",
+        "organizer": "Elmstone Regional Rugby Council",
+        "number_of_participants": "12 clubs",
+        "budget": "\u00a3450,000"
+      }
+    ],
+    "FICTIONAL_NEW_MISCELLANEOUSS": [],
+    "USED-ALL-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Cormac Halloway",
+        "entity_class": "person",
+        "description": "Driven and community-minded leader known for a high work ethic, strong discipline, and a focus on mentoring younger athletes while pursuing a long-term playing career.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [],
+        "date_of_birth": "1994-03-12",
+        "gender": "Male",
+        "profession": "Professional rugby player",
+        "nationality": "Ardenia",
+        "education": "Bachelor of Sports Science, St. Lysander University",
+        "height": "1.88 m",
+        "weight": "102 kg",
+        "eye_color": "Green",
+        "hair_color": "Dark brown",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Marina Kestrel",
+        "entity_class": "person",
+        "description": "Strategic and pragmatic administrator with a focus on sustainable club development, youth pathways, and pragmatic financial planning.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [],
+        "date_of_birth": "1979-11-28",
+        "gender": "Female",
+        "profession": "Sports director",
+        "nationality": "Calderia",
+        "education": "MBA, Northcliff Business School",
+        "height": "1.70 m",
+        "weight": "63 kg",
+        "eye_color": "Hazel",
+        "hair_color": "Salt-and-pepper",
+        "political_affiliation": "Centrist Progressive League",
+        "marital_status": "Married"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Eden Trask",
+        "entity_class": "person",
+        "description": "Tactical-minded coach who emphasizes disciplined defense, structured training, and the long-term development of players through data-informed methods.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [],
+        "date_of_birth": "1978-06-05",
+        "gender": "Male",
+        "profession": "Head coach",
+        "nationality": "Marinellia",
+        "education": "Advanced Coaching Diploma, Vale Institute of Coaching",
+        "height": "1.82 m",
+        "weight": "85 kg",
+        "eye_color": "Blue",
+        "hair_color": "Light brown",
+        "marital_status": "Divorced"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Jules Renby",
+        "entity_class": "person",
+        "description": "Athletic and tenacious back-row prospect noted for physical tackling, high work-rate, and strong determination to establish a professional career.",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [],
+        "date_of_birth": "2006-08-02",
+        "gender": "Male",
+        "profession": "Rugby player (academy prospect)",
+        "nationality": "Ardenia",
+        "education": "Diploma in Sports Performance, Valeview Sports Academy (in progress)",
+        "height": "1.90 m",
+        "weight": "98 kg",
+        "eye_color": "Brown",
+        "hair_color": "Black",
+        "marital_status": "Single"
+      }
+    ],
+    "USED_PERSON_XML": "<person><created_at>0</created_at><date_of_birth>1994-03-12</date_of_birth><description>Driven and community-minded leader known for a high work ethic, strong discipline, and a focus on mentoring younger athletes while pursuing a long-term playing career.</description><education>Bachelor of Sports Science, St. Lysander University</education><entity_class>person</entity_class><eye_color>Green</eye_color><gender>Male</gender><hair_color>Dark brown</hair_color><height>1.88 m</height><history></history><id>PERSON-1</id><last_updated>2025-07-15</last_updated><marital_status>Single</marital_status><name>Cormac Halloway</name><nationality>Ardenia</nationality><profession>Professional rugby player</profession><type>None</type><weight>102 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>1979-11-28</date_of_birth><description>Strategic and pragmatic administrator with a focus on sustainable club development, youth pathways, and pragmatic financial planning.</description><education>MBA, Northcliff Business School</education><entity_class>person</entity_class><eye_color>Hazel</eye_color><gender>Female</gender><hair_color>Salt-and-pepper</hair_color><height>1.70 m</height><history></history><id>PERSON-2</id><last_updated>2025-07-15</last_updated><marital_status>Married</marital_status><name>Marina Kestrel</name><nationality>Calderia</nationality><political_affiliation>Centrist Progressive League</political_affiliation><profession>Sports director</profession><type>None</type><weight>63 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>1978-06-05</date_of_birth><description>Tactical-minded coach who emphasizes disciplined defense, structured training, and the long-term development of players through data-informed methods.</description><education>Advanced Coaching Diploma, Vale Institute of Coaching</education><entity_class>person</entity_class><eye_color>Blue</eye_color><gender>Male</gender><hair_color>Light brown</hair_color><height>1.82 m</height><history></history><id>PERSON-3</id><last_updated>2025-07-15</last_updated><marital_status>Divorced</marital_status><name>Eden Trask</name><nationality>Marinellia</nationality><profession>Head coach</profession><type>None</type><weight>85 kg</weight></person>\n<person><created_at>0</created_at><date_of_birth>2006-08-02</date_of_birth><description>Athletic and tenacious back-row prospect noted for physical tackling, high work-rate, and strong determination to establish a professional career.</description><education>Diploma in Sports Performance, Valeview Sports Academy (in progress)</education><entity_class>person</entity_class><eye_color>Brown</eye_color><gender>Male</gender><hair_color>Black</hair_color><height>1.90 m</height><history></history><id>PERSON-4</id><last_updated>2025-07-15</last_updated><marital_status>Single</marital_status><name>Jules Renby</name><nationality>Ardenia</nationality><profession>Rugby player (academy prospect)</profession><type>None</type><weight>98 kg</weight></person>",
+    "USED-ALL-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Harwick Vale Rugby Club",
+        "entity_class": "organization",
+        "description": "Community-rooted rugby club with a long history of developing regional talent and maintaining strong local engagement.",
+        "type": "non-profit sports club",
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [],
+        "founded": "1924",
+        "headquarters": "Harwick-on-Teal",
+        "industry": "Sports (rugby union)",
+        "mission_statement": "To develop local athletic talent, promote community participation in sport, and sustain a competitive club culture.",
+        "number_of_employees": "42",
+        "annual_revenue": "\u00a31,200,000"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Northbridge Brewing",
+        "entity_class": "organization",
+        "description": "Regional craft brewery producing traditional ales and partnering with local businesses for community events and hospitality.",
+        "type": "company",
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [],
+        "founded": "2011",
+        "headquarters": "Northbridge",
+        "industry": "Beverage (craft brewing)",
+        "mission_statement": "To craft approachable, locally inspired beers while supporting regional hospitality and events.",
+        "number_of_employees": "25",
+        "annual_revenue": "\u00a31,100,000"
+      }
+    ],
+    "USED_ORGANIZATION_XML": "<organization><annual_revenue>\u00a31,200,000</annual_revenue><created_at>0</created_at><description>Community-rooted rugby club with a long history of developing regional talent and maintaining strong local engagement.</description><entity_class>organization</entity_class><founded>1924</founded><headquarters>Harwick-on-Teal</headquarters><history></history><id>ORGANIZATION-1</id><industry>Sports (rugby union)</industry><last_updated>2025-07-15</last_updated><mission_statement>To develop local athletic talent, promote community participation in sport, and sustain a competitive club culture.</mission_statement><name>Harwick Vale Rugby Club</name><number_of_employees>42</number_of_employees><type>non-profit sports club</type></organization>\n<organization><annual_revenue>\u00a31,100,000</annual_revenue><created_at>0</created_at><description>Regional craft brewery producing traditional ales and partnering with local businesses for community events and hospitality.</description><entity_class>organization</entity_class><founded>2011</founded><headquarters>Northbridge</headquarters><history></history><id>ORGANIZATION-2</id><industry>Beverage (craft brewing)</industry><last_updated>2025-07-15</last_updated><mission_statement>To craft approachable, locally inspired beers while supporting regional hospitality and events.</mission_statement><name>Northbridge Brewing</name><number_of_employees>25</number_of_employees><type>company</type></organization>",
+    "USED-ALL-LOCATION": [],
+    "USED_LOCATION_XML": "",
+    "USED-ALL-PRODUCT": [],
+    "USED_PRODUCT_XML": "",
+    "USED-ALL-ART": [],
+    "USED_ART_XML": "",
+    "USED-ALL-BUILDING": [],
+    "USED_BUILDING_XML": "",
+    "USED-ALL-EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "Elmstone Regional Rugby Championship",
+        "entity_class": "event",
+        "description": "Seasonal regional rugby competition that brings together semi-professional clubs across the Elmstone area in a structured league format.",
+        "type": "sporting",
+        "created_at": 0,
+        "last_updated": "2025-07-15",
+        "history": [],
+        "date": "Annual (season runs September\u2013May)",
+        "duration": "9 months",
+        "organizer": "Elmstone Regional Rugby Council",
+        "number_of_participants": "12 clubs",
+        "budget": "\u00a3450,000"
+      }
+    ],
+    "USED_EVENT_XML": "<event><budget>\u00a3450,000</budget><created_at>0</created_at><date>Annual (season runs September\u2013May)</date><description>Seasonal regional rugby competition that brings together semi-professional clubs across the Elmstone area in a structured league format.</description><duration>9 months</duration><entity_class>event</entity_class><history></history><id>EVENT-1</id><last_updated>2025-07-15</last_updated><name>Elmstone Regional Rugby Championship</name><number_of_participants>12 clubs</number_of_participants><organizer>Elmstone Regional Rugby Council</organizer><type>sporting</type></event>",
+    "USED-ALL-MISCELLANEOUS": [],
+    "USED_MISCELLANEOUS_XML": "",
+    "USED_ENTITIES": [
+      {
+        "id": "PERSON-1",
+        "name": "Cormac Halloway",
+        "entity_type": "person",
+        "new": true
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Marina Kestrel",
+        "entity_type": "person",
+        "new": true
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Eden Trask",
+        "entity_type": "person",
+        "new": true
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Jules Renby",
+        "entity_type": "person",
+        "new": true
+      },
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Harwick Vale Rugby Club",
+        "entity_type": "organization",
+        "new": true
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Northbridge Brewing",
+        "entity_type": "organization",
+        "new": true
+      },
+      {
+        "id": "EVENT-1",
+        "name": "Elmstone Regional Rugby Championship",
+        "entity_type": "event",
+        "new": true
+      }
+    ]
+  }
+}

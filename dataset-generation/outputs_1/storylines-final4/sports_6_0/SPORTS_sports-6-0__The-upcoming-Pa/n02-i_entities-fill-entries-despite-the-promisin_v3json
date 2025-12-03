@@ -1,0 +1,1194 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "microsoft/phi-4-reasoning-plus",
+    "temperature": 1.0,
+    "max-tokens": 4096
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "```xml\n<results>\n\n<person>\n  <id>PERSON-5</id>\n  <name>Lia Simmons</name>\n  <date_of_birth>1988-05-14</date_of_birth>\n  <gender>Female</gender>\n  <profession>Local Government Council Member</profession>\n  <nationality>Lacopian</nationality>\n  <education>Master's in Public Administration from Cresthill University</education>\n  <description>Lia Simmons is a dedicated council member with a passion for community development and sustainable policy implementation.</description>\n  <height>5'6\"</height>\n  <weight>140 lbs</weight>\n  <eye_color>Brown</eye_color>\n  <hair_color>Black</hair_color>\n  <marital_status>Married to Jordan Simmons</marital_status>\n  <spouse>Jordan Simmons</spouse>\n</person>\n\n</results>\n```\n\nThis entry provides a fictional character named Lia Simmons, with detailed realistic background information derived from the given outline and consistent with the fictional universe's context. All named entities are believable and rooted in the fictional region of Lacopia, ensuring a coherent narrative within the story."
+  },
+  "response": "```xml\n<results>\n\n<person>\n  <id>PERSON-5</id>\n  <name>Lia Simmons</name>\n  <date_of_birth>1988-05-14</date_of_birth>\n  <gender>Female</gender>\n  <profession>Local Government Council Member</profession>\n  <nationality>Lacopian</nationality>\n  <education>Master's in Public Administration from Cresthill University</education>\n  <description>Lia Simmons is a dedicated council member with a passion for community development and sustainable policy implementation.</description>\n  <height>5'6\"</height>\n  <weight>140 lbs</weight>\n  <eye_color>Brown</eye_color>\n  <hair_color>Black</hair_color>\n  <marital_status>Married to Jordan Simmons</marital_status>\n  <spouse>Jordan Simmons</spouse>\n</person>\n\n</results>\n```\n\nThis entry provides a fictional character named Lia Simmons, with detailed realistic background information derived from the given outline and consistent with the fictional universe's context. All named entities are believable and rooted in the fictional region of Lacopia, ensuring a coherent narrative within the story.",
+  "instructions": "You are an AI assistant tasked with creating fictional entities based on provided information. \nYour goal is to generate detailed, coherent, and realistic descriptions for new locations, persons, organizations, products, art, buildings, events, and miscellaneous entities. \nFollow these instructions carefully:\n\n1. Review the existing entities (if provided):\n\n<existing_entities>\n{{LOCATIONS_XML}}\n{{PERSONS_XML}}\n{{ORGANIZATIONS_XML}}\n{{PRODUCTS_XML}}\n{{ARTS_XML}}\n{{EVENTS_XML}}\n{{BUILDINGS_XML}}\n{{MISCELLANEOUSS_XML}}\n</existing_entities>\n\n2. Review the names of new entities to be created:\n<new_entity_names>\n{{USED_NEW-LOCATIONS_XML}}\n{{USED_NEW-PERSONS_XML}}\n{{USED_NEW-ORGANIZATIONS_XML}}\n{{USED_NEW-PRODUCTS_XML}}\n{{USED_NEW-ARTS_XML}}\n{{USED_NEW-EVENTS_XML}}\n{{USED_NEW-BUILDINGS_XML}}\n{{USED_NEW-MISCELLANEOUSS_XML}}\n</new_entity_names>\n\n3. Carefully read the provided outline:\n\nDate: {{DATE}}\n<outline>\n{{OUTLINE}}\n</outline>\n\nBased on the information provided, create detailed descriptions for each new entity following these guidelines:\n\nGeneral instructions:\n- Ensure all created entities are entirely fictional and not similar to any real or known fictional entities.\n- Maintain realism and coherence with the provided outline and other entities.\n- Create a believable and consistent fictional world that aligns with the context of the outline.\n- For entity descriptions, focus on providing a solid background that remains valid throughout the story, rather than basing it centrally on the outline itself.\n- Develop well-rounded entities with backgrounds and characteristics that can support various potential story developments beyond the specific outline provided.\n- Strictly derive all entities from the outline. Do not invent entities that are not mentioned in the outline.\n- Do not alter the name of the entities.\n- Some properties (e.g., place, city, country, spouse, architect, country, nationality) must be filled with named entities. Make sure to use FICTIONAL named entities ( fictional places, cities, countries, spouse names, architects, countries, nationalities, etc.). Check if you should use one of the existing fictional named entities (from <new_entity_names> and <existing_entities>) or create a fictional name instead. DO NOT say that any of the entities or properties are fictional. It is important that everything seems realistic!\n- Avoid exaggerating the named entities. They can be ordinary and don\u2019t need to be world-class or state-of-the-art.\n- Ensure the details of the named entities are realistic. If global impact isn\u2019t necessary, adjust the details to be more modest and appropriate.\n\nSpecific instructions for each entity type:\n\n1. For each new location:\n   - Use the provided name and ID\n   - Determine an appropriate type (city, village, country, region, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: population, area, founded, climate, elevation, country\n   - Format the output as follows:\n     <location>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[city/village/country/region]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: population, area, founded, climate, elevation, country]\n     </location>\n\n2. For each new person:\n   - Use the provided name and ID\n   - Create fictional details for: date_of_birth, gender, profession, nationality, education\n   - Write a concise single-sentence description that:\n     * Focuses on background, personality, and motivations\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: height, weight, eye_color, hair_color, political_affiliation, marital_status, spouse\n   - Format the output as follows:\n     <person>\n     <id>[Provided ID]</id>\n     <name>[Full name]</name>\n     <date_of_birth>[Date]</date_of_birth>\n     <gender>[Gender]</gender>\n     <profession>[Job title]</profession>\n     <nationality>[Country]</nationality>\n     <education>[Highest level of education]</education>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: height, weight, eye_color, hair_color, political_affiliation, marital_status]\n     </person>\n\n3. For each new organization:\n   - Use the provided name and ID\n   - Determine an appropriate type (company, non-profit, educational institution, government agency, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: founded, headquarters, industry, mission_statement, number_of_employees, annual_revenue\n   - Format the output as follows:\n     <organization>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[company/non-profit/educational institution/government agency]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: founded, headquarters, industry, mission_statement, number_of_employees, annual_revenue]\n     </organization>\n\n4. For each new product:\n   - Use the provided name and ID\n   - Determine an appropriate type (consumer good, software, service, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: manufacturer, release_date, price, weight, warranty\n   - Format the output as follows:\n     <product>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[consumer good/software/service]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: manufacturer, release_date, price, weight, warranty]\n     </product>\n\n5. For each new art piece:\n   - Use the provided name and ID\n   - Determine an appropriate type (painting, sculpture, novel, film, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: creator, year_created, current_location_country, current_location_city, current_location_place\n   - Format the output as follows:\n     <art>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[painting/sculpture/novel/film]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: creator, year_created, current_location_country, current_location_city, current_location_place]\n     </art>\n\n6. For each new building:\n   - Use the provided name and ID\n   - Determine an appropriate type (residential, commercial, public, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: place, city, country, architect, year_built, height, floors, material, capacity\n   - Format the output as follows:\n     <building>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[residential/commercial/public]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: place, city, country, architect, year_built, height, floors, material, capacity]\n     </building>\n\n7. For each new event:\n   - Use the provided name and ID\n   - Determine an appropriate type (historical, cultural, sporting, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: date, place, city, country, duration, organizer, number_of_participants, budget\n   - Format the output as follows:\n     <event>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[historical/cultural/sporting]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: date, place, city, country, duration, organizer, number_of_participants, budget]\n     </event>\n\n8. For each new miscellaneous entity:\n   - Use the provided name and ID\n   - Determine an appropriate type (concept, theory, phenomenon, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Format the output as follows:\n     <miscellaneous>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[concept/theory/phenomenon]</type>\n     <description>[One-sentence concise description]</description>\n     </miscellaneous>\n\nPresent your final output in the following format:\n<results>\n[Insert all created entities here, grouped by type]\n</results>\n\nRemember to create detailed, coherent, and realistic descriptions for each entity while adhering to the guidelines provided. Ensure that all descriptions are single, short, and concise sentences that do not refer to other entities and only discuss background information unrelated to the event described in the outline.",
+  "text_prompt": "You are an AI assistant tasked with creating fictional entities based on provided information. \nYour goal is to generate detailed, coherent, and realistic descriptions for new locations, persons, organizations, products, art, buildings, events, and miscellaneous entities. \nFollow these instructions carefully:\n\n1. Review the existing entities (if provided):\n\n<existing_entities>\n<location><area>Approximately 10 square kilometers</area><country>Located in the fictional region of Cresthaven</country><created_at>0</created_at><description>Lake Serene is a picturesque destination renowned for its crystal-clear waters, attracting nature enthusiasts and tourists year-round.</description><elevation>700 meters above sea level</elevation><entity_class>location</entity_class><history><event>2030-09-16: Lake Serene served as the venue for the inaugural HydroSlide Sprint event at the Paralympic Games in 2030.</event></history><id>LOCATION-1</id><last_updated>2030-09-16</last_updated><name>Lake Serene</name><population>Estimates suggest over 5000 daily visitors during peak seasons</population><type>lake</type></location>\n<location><area>Covers about 50 square kilometers</area><country>Located in the fictional region of Gaian Fields</country><created_at>0</created_at><description>Tranquil Springs is a bustling town known for its artisanal craftsmanship and commitment to cultural preservation.</description><elevation>450 meters above sea level</elevation><entity_class>location</entity_class><history><event>2030-09-16: Tranquil Springs hosted the opening of the Paralympic Games in 2030, featuring the new sport HydroSlide Sprint.</event></history><id>LOCATION-2</id><last_updated>2030-09-16</last_updated><name>Tranquil Springs</name><population>Roughly 12000 residents</population><type>town</type></location>\n<location><area>Covering 1.5 square kilometers</area><country>Located within the fictional region of Cresthaven</country><created_at>1</created_at><description>Cresthaven Primary School, established in 2005, serves as a foundational educational institution in the Cresthaven district.</description><entity_class>location</entity_class><history><event>2031-04-15: Cresthaven Primary School began the first pilot program for integrating HydroSlide Sprint into the curriculum.</event></history><id>LOCATION-3</id><last_updated>2031-04-15</last_updated><name>Cresthaven Primary School</name><population>Approximately 800 students and 50 staff members</population><type>school</type></location>\n<location><area>Spans approximately 2 square kilometers</area><country>Located within the fictional region of Cresthaven</country><created_at>1</created_at><description>Established in 2010, Cresthaven Community Center serves as a hub for local events and activities fostering community engagement.</description><entity_class>location</entity_class><history><event>2031-04-15: An informational session was held at Cresthaven Community Center to demonstrate HydroSlide devices.</event></history><id>LOCATION-4</id><last_updated>2031-04-15</last_updated><name>Cresthaven Community Center</name><population>Staffed by 15 full-time employees and assisted by 25 volunteers</population><type>community center</type></location>\n<person><created_at>0</created_at><date_of_birth>1985-11-23</date_of_birth><description>Darlene Marstone is a driven and innovative engineer, passionate about leveraging technology to improve quality of life for physically challenged athletes</description><education>PhD in Biomedical Engineering from TechVoy University</education><entity_class>person</entity_class><eye_color>Hazel</eye_color><gender>Female</gender><hair_color>Brunette</hair_color><height>5'7\"</height><history><event>2030-09-16: Darlene Marstone played a key role in the development of HydroSlide devices, which were integral to the new sport at the Paralympic Games.</event><event>2031-04-15: Darlene Marstone emphasized the importance of integrating HydroSlide Sprint into school curricula for inclusivity.</event></history><id>PERSON-1</id><last_updated>2030-09-16</last_updated><marital_status>Single</marital_status><name>Darlene Marstone</name><nationality>Lacopian</nationality><political_affiliation>Non-affiliated</political_affiliation><profession>Biomedical Engineer</profession><type>None</type><weight>145 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1975-06-15</date_of_birth><description>Eliza Thorne is a highly respected coach, renowned for her innovative training techniques and dedication to mentoring athletes with disabilities</description><education>Bachelor's Degree in Sports Science from Aerodynamics College</education><entity_class>person</entity_class><eye_color>Blue</eye_color><gender>Female</gender><hair_color>Blonde</hair_color><height>5'8\"</height><history><event>2030-09-16: Eliza Thorne led Team Lumina, which showcased innovative techniques in the HydroSlide Sprint event at the Paralympic Games.</event><event>2031-04-15: Eliza Thorne conducted a workshop for physical education teachers on coaching HydroSlide Sprint techniques.</event></history><id>PERSON-2</id><last_updated>2030-09-16</last_updated><marital_status>Married to Alex Thorne</marital_status><name>Eliza Thorne</name><nationality>Lacopian</nationality><political_affiliation>Non-affiliated</political_affiliation><profession>Coach</profession><spouse>Alex Thorne</spouse><type>None</type><weight>135 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1990-03-12</date_of_birth><description>Kaden Harris is an influential activist and coordinator, committed to promoting inclusivity in all sports and public spaces, particularly advancing adaptive sports technology</description><education>Master's in Public Policy from Global Leaders Institute</education><entity_class>person</entity_class><eye_color>Green</eye_color><gender>Male</gender><hair_color>Black</hair_color><height>6'1\"</height><history><event>2030-09-16: Kaden Harris was recognized with the Paralympic Sports Innovation Award for his advocacy in adaptive sports technology during the Paralympic Games.</event><event>2031-04-15: Kaden Harris spoke at the informational session about the transformative potential of adaptive sports in schools.</event></history><id>PERSON-3</id><last_updated>2030-09-16</last_updated><marital_status>Single</marital_status><name>Kaden Harris</name><nationality>Lacopian</nationality><political_affiliation>Progressive Alliance</political_affiliation><profession>Advocacy Coordinator</profession><type>None</type><weight>180 lbs</weight></person>\n<person><created_at>1</created_at><date_of_birth>N/A</date_of_birth><description>The Cresthaven School Board, constituted in 2005, oversees educational policies and curricula for public schools in Cresthaven.</description><education>Varied educational backgrounds among members</education><entity_class>person</entity_class><eye_color>N/A</eye_color><gender>Group</gender><hair_color>N/A</hair_color><height>N/A</height><history><event>2031-04-15: The Cresthaven School Board approved the integration of HydroSlide Sprint into physical education programs.</event></history><id>PERSON-4</id><last_updated>2031-04-15</last_updated><marital_status>N/A</marital_status><name>Cresthaven School Board</name><nationality>Composed of members from the Cresthaven region</nationality><political_affiliation>Non-affiliated</political_affiliation><profession>Educational governance</profession><spouse>N/A</spouse><type>None</type><weight>N/A</weight></person>\n<organization><annual_revenue>Estimated 15000000 from grants and partnerships</annual_revenue><created_at>0</created_at><description>The committee's mission is to spur advancement in adaptive sports through collaborative innovations, making athletics accessible to individuals with disabilities</description><entity_class>organization</entity_class><founded>2025</founded><headquarters>Spires Centre located in Laconia</headquarters><history><event>2030-09-16: The Adaptive Sports Innovations Committee was instrumental in developing the HydroSlide devices used in the new sport at the Paralympic Games.</event><event>2031-04-15: The Adaptive Sports Innovations Committee played a key role in integrating HydroSlide Sprint into school curricula.</event></history><id>ORGANIZATION-1</id><industry>Adaptive Sports</industry><last_updated>2030-09-16</last_updated><mission_statement>To enhance the lives of individuals with disabilities through pioneering sports technologies and inclusive opportunities</mission_statement><name>Adaptive Sports Innovations Committee</name><number_of_employees>Approximately 150 dedicated professionals and volunteers</number_of_employees><type>non profit</type></organization>\n<organization><annual_revenue>Funds primarily through sponsorships and event winnings approximately 10000000</annual_revenue><created_at>0</created_at><description>Team Lunaris has established itself as a top contender in adaptive water sports, renowned for its strategic acumen and commitment to excellence</description><entity_class>organization</entity_class><founded>Formed in 2017 by a collective of passionate athletes</founded><headquarters>Headquartered in Tranquil Springs</headquarters><history><event>2030-09-16: Team Lunaris participated in the HydroSlide Sprint event at the Paralympic Games, aiming to leverage their experience in adaptive water sports.</event></history><id>ORGANIZATION-2</id><industry>Adaptive Sports</industry><last_updated>2030-09-16</last_updated><mission_statement>To achieve unparalleled success and advocate for the advancement of inclusive sports practices</mission_statement><name>Team Lunaris</name><number_of_employees>Approximately 40 including athletes coaches and support staff</number_of_employees><type>sports team</type></organization>\n<organization><annual_revenue>Finances sourced from international grants and sponsorships about 12000000</annual_revenue><created_at>0</created_at><description>Team Lumina has the distinction of excellence by combining the experience of seasoned international swimmers into a formidable athlete cohort</description><entity_class>organization</entity_class><founded>2029</founded><headquarters>Riverspace Hub in Laconia City</headquarters><history><event>2030-09-16: Team Lumina, led by Eliza Thorne, competed in the HydroSlide Sprint event at the Paralympic Games, showcasing innovative techniques.</event><event>2031-04-15: Team Lumina provided on-site support and facilitated interactive lessons during the pilot program at Cresthaven Primary School.</event></history><id>ORGANIZATION-3</id><industry>Competitive Adaptive Sports</industry><last_updated>2030-09-16</last_updated><mission_statement>To excel in adaptive water sports through cutting edge techniques and collaborative innovation</mission_statement><name>Team Lumina</name><number_of_employees>Approximately 35 including swimmers therapists and coaching staff</number_of_employees><type>sports team</type></organization>\n<organization><annual_revenue>200000000 from various technology and sports ventures</annual_revenue><created_at>0</created_at><description>TechVision Innovations leads in developing cutting edge technology solutions particularly in sports analytics and live event enhancements</description><entity_class>organization</entity_class><founded>2010</founded><headquarters>Situated in the Tech Park of Laconia City</headquarters><history><event>2030-09-16: TechVision Innovations developed the holographic scoreboard used at the Paralympic Games to enhance spectator experience.</event><event>2031-04-15: TechVision Innovations developed the HydroSlide devices used in the informational session at Cresthaven Community Center.</event></history><id>ORGANIZATION-4</id><industry>Technology and Sports Analytics</industry><last_updated>2030-09-16</last_updated><mission_statement>To provide innovative technological solutions to enhance the experience of spectators and a competitive edge for athletes</mission_statement><name>TechVision Innovations</name><number_of_employees>1200 specialists and developers</number_of_employees><type>technology company</type></organization>\n<organization><annual_revenue>50000000 from affiliations with sports entities and governmental grants</annual_revenue><created_at>0</created_at><description>The federation is dedicated to fostering inclusivity and diversity within global sports supporting initiatives that break down barriers to participation</description><entity_class>organization</entity_class><founded>2020</founded><headquarters>Main office in Globalopolis Laconia</headquarters><history><event>2030-09-16: The International Sports Development Federation emphasized inclusivity in sports innovation during the Paralympic Games.</event></history><id>ORGANIZATION-5</id><industry>Sporting Development</industry><last_updated>2030-09-16</last_updated><mission_statement>To champion diversity and develop holistic sports opportunities for all regardless of background</mission_statement><name>International Sports Development Federation</name><number_of_employees>Approximately 250 with a global outreach team</number_of_employees><type>non profit</type></organization>\n<product><created_at>0</created_at><description>HydroSlide devices are advanced adaptive sports equipment designed to enhance mobility and stability for athletes with physical challenges</description><entity_class>product</entity_class><history><event>2030-09-16: HydroSlide devices were used in the HydroSlide Sprint event at the Paralympic Games, showcasing their stability and control features.</event><event>2031-04-15: HydroSlide devices were demonstrated at an informational session and are part of the new curriculum module.</event></history><id>PRODUCT-1</id><last_updated>2030-09-16</last_updated><manufacturer>Developed through a partnership between Adaptive Sports Innovations Committee and TechVision Innovations</manufacturer><name>HydroSlide devices</name><price>Initially priced at 3000 each</price><release_date>Released in 2030 to coincide with the introduction of HydroSlide Sprint in the Paralympic Games</release_date><type>consumer good</type><warranty>Comes with a 5 year warranty covering defects and necessary repairs</warranty><weight>15kg per device designed for portability and ease of use</weight></product>\n<product><created_at>0</created_at><description>HydroSlide Sprint is a newly conceptualized adaptive sport focusing on speed and agility specifically crafted for athletes with restricted upper body mobility</description><entity_class>product</entity_class><history><event>2030-09-16: HydroSlide Sprint was introduced as a new sport at the Paralympic Games, designed for athletes with limited upper body mobility.</event><event>2031-04-15: HydroSlide Sprint was approved for integration into physical education programs across public schools in Cresthaven.</event></history><id>PRODUCT-2</id><last_updated>2030-09-16</last_updated><manufacturer>Co-developed by the Adaptive Sports Innovations Committee and TechVision Innovations as part of a broader initiative</manufacturer><name>HydroSlide Sprint</name><price>No entry fee needed for registration in official events but costs for training and participation vary</price><release_date>Formally introduced during the Paralympic Games in 2030</release_date><type>sport</type><warranty>Not applicable but includes equipment guidelines and athlete safety protocols</warranty><weight>N/A as it refers to a sport rather than a tangible product</weight></product>\n<product><created_at>0</created_at><description>The Holographic scoreboard offers immersive real time graphics enhancing the viewing experience with dimensional analytics for sports enthusiasts</description><entity_class>product</entity_class><history><event>2030-09-16: The holographic scoreboard was used at the Paralympic Games to display live metrics and athlete performance analytics.</event></history><id>PRODUCT-3</id><last_updated>2030-09-16</last_updated><manufacturer>Developed and produced by TechVision Innovations</manufacturer><name>Holographic scoreboard</name><price>Mapped at approximately 50000 for large scale deployment in competitive arenas</price><release_date>Launched commercially in 2029 prior to official deployment in adaptive sports events</release_date><type>technology</type><warranty>Offered with a 3 year service agreement covering software updates and hardware maintenance</warranty><weight>150kg including support structure and projection devices</weight></product>\n\n<event><budget>The events are funded with an approximate total budget of 350000000 by combining public grants and sponsorship deals</budget><created_at>0</created_at><date>Occurs every four years with the latest games held in September 2030</date><description>The Paralympic Games are a hallmark international sports competition for athletes with a range of disabilities emphasizing exemplary sporting excellence and spirit</description><duration>Spanning over two weeks</duration><entity_class>event</entity_class><history><event>2030-09-16: The Paralympic Games in 2030 featured the introduction of HydroSlide Sprint, a new sport for athletes with limited upper body mobility.</event></history><id>EVENT-1</id><last_updated>2030-09-16</last_updated><name>Paralympic Games</name><number_of_participants>Over 4500 athletes worldwide participating across multiple sports</number_of_participants><organizer>Coordinated by the International Paralympic Committee in conjunction with the International Sports Development Federation</organizer><type>sporting</type></event>\n<event><budget>Estimates suggest an annual budget of 20000000</budget><created_at>0</created_at><date>Initially held annually since 2027 shifting schedules to accommodate global sporting calendars</date><description>The Adaptive Water Sports Championship showcases a variety of water based adaptive sports celebrating innovation skill and the pioneering spirit of athletes</description><duration>Lasts approximately a week featuring a balanced mix of preliminary and final rounds</duration><entity_class>event</entity_class><history><event>2030-09-16: Team Lunaris, the reigning champions of the Adaptive Water Sports Championship, participated in the HydroSlide Sprint event at the Paralympic Games.</event></history><id>EVENT-2</id><last_updated>2030-09-16</last_updated><name>Adaptive Water Sports Championship</name><number_of_participants>Engages around 600+ athletes from over 30 countries in varied categories</number_of_participants><organizer>Managed by the International Adaptive Sports Federation and supported by local Lacopian authorities</organizer><type>sporting</type></event>\n<event><budget>$50,000 for equipment and materials</budget><created_at>1</created_at><date>Held bi-annually since 2029</date><description>The informational session at Cresthaven Community Center aims to educate the public on the benefits of inclusive adaptive sports programs.</description><duration>3 hours</duration><entity_class>event</entity_class><history><event>2031-04-15: An informational session was conducted at Cresthaven Community Center to demonstrate HydroSlide devices.</event></history><id>EVENT-3</id><last_updated>2031-04-15</last_updated><name>Informational session</name><number_of_participants>Approximately 200 local residents</number_of_participants><organizer>Organized by Adaptive Sports Innovations Committee</organizer><type>cultural</type></event>\n<event><budget>$100,000 funded by educational grants and local sponsors</budget><created_at>1</created_at><date>Began on January 5, 2031</date><description>The pilot program, launched in early 2031, assesses the integration of adaptive sports into the primary school curriculum.</description><duration>3 months</duration><entity_class>event</entity_class><history><event>2031-04-15: The pilot program for HydroSlide Sprint began at Cresthaven Primary School.</event></history><id>EVENT-4</id><last_updated>2031-04-15</last_updated><name>Pilot program</name><number_of_participants>Approximately 200 participating students</number_of_participants><organizer>Coordinated by the Cresthaven School Board with support from local organizations</organizer><type>educational</type></event>\n\n\n</existing_entities>\n\n2. Review the names of new entities to be created:\n<new_entity_names>\n\n<person><category>person</category><id>PERSON-5</id><name>Lia Simmons</name></person>\n\n\n\n\n\n\n</new_entity_names>\n\n3. Carefully read the provided outline:\n\nDate: 2031-11-20\n<outline>\nOn the morning of November 20, 2031, {Cresthaven School Board|PERSON-4} reconvened to address concerns over equipment shortages that were disrupting the implementation of the {HydroSlide Sprint|PRODUCT-2} curriculum.\nThe shortage was primarily due to delays in shipping and customs clearance, which had caused a backlog of {HydroSlide devices|PRODUCT-1} at the port of Laconia.\n{Darlene Marstone|PERSON-1}, head of the {Adaptive Sports Innovations Committee|ORGANIZATION-1}, attended the meeting alongside representatives from {TechVision Innovations|ORGANIZATION-4}, the manufacturer of {HydroSlide devices|PRODUCT-1}.\nMarstone emphasized the importance of timely delivery to ensure the curriculum's success and proposed a partnership with local logistics companies to expedite the process.\n{Darlene Marstone|PERSON-1} proposed a review of logistics and resource distribution to expedite the delivery of the remaining {HydroSlide devices|PRODUCT-1} to the affected schools.\nShe suggested implementing a tracking system to monitor the progress of each shipment and ensure transparency with the schools.\nThe {Adaptive Sports Innovations Committee|ORGANIZATION-1} highlighted that delays were primarily due to unforeseen production bottlenecks at the manufacturing facility.\nThese bottlenecks were caused by a shortage of specialized components needed for the gyroscopic stabilizers in the {HydroSlide devices|PRODUCT-1}.\n{TechVision Innovations|ORGANIZATION-4} assured stakeholders that they had increased production capacity and aimed to resolve the shortage within the next two months.\nThe company planned to hire additional staff and extend working hours to meet the increased demand for {HydroSlide devices|PRODUCT-1}.\n{Eliza Thorne|PERSON-2} volunteered to help train additional coaches and volunteers to optimize the use of the limited {HydroSlide devices|PRODUCT-1} currently available.\nThorne proposed a series of weekend workshops at {Cresthaven Community Center|LOCATION-4} to quickly upskill coaches and volunteers.\n{Kaden Harris|PERSON-3} emphasized the importance of community engagement and proposed public outreach events to garner local support and additional resources.\nHarris suggested organizing a community fair at {Lake Serene|LOCATION-1} to showcase the benefits of adaptive sports and encourage local businesses to sponsor the program.\nThe {Cresthaven Community Center|LOCATION-4} was selected as the location for the next information session to demonstrate alternative training exercises until more equipment is available.\nThe session will include demonstrations of dry-land training techniques that can be practiced without the {HydroSlide devices|PRODUCT-1}.\nCouncil member {Lia Simmons|PERSON-5}, representing local government, pledged support in terms of temporary funding to ensure smooth implementation of interim solutions.\nSimmons announced a grant of $50,000 to cover the costs of alternative training equipment and materials for the interim period.\nStudent feedback collected by {Cresthaven Primary School|LOCATION-3} indicated high enthusiasm for the {HydroSlide Sprint|PRODUCT-2} program despite logistical challenges, showing strong support for continued investment.\nStudents expressed excitement about the potential for new friendships and personal growth through participation in the program.\n</outline>\n\nBased on the information provided, create detailed descriptions for each new entity following these guidelines:\n\nGeneral instructions:\n- Ensure all created entities are entirely fictional and not similar to any real or known fictional entities.\n- Maintain realism and coherence with the provided outline and other entities.\n- Create a believable and consistent fictional world that aligns with the context of the outline.\n- For entity descriptions, focus on providing a solid background that remains valid throughout the story, rather than basing it centrally on the outline itself.\n- Develop well-rounded entities with backgrounds and characteristics that can support various potential story developments beyond the specific outline provided.\n- Strictly derive all entities from the outline. Do not invent entities that are not mentioned in the outline.\n- Do not alter the name of the entities.\n- Some properties (e.g., place, city, country, spouse, architect, country, nationality) must be filled with named entities. Make sure to use FICTIONAL named entities ( fictional places, cities, countries, spouse names, architects, countries, nationalities, etc.). Check if you should use one of the existing fictional named entities (from <new_entity_names> and <existing_entities>) or create a fictional name instead. DO NOT say that any of the entities or properties are fictional. It is important that everything seems realistic!\n- Avoid exaggerating the named entities. They can be ordinary and don\u2019t need to be world-class or state-of-the-art.\n- Ensure the details of the named entities are realistic. If global impact isn\u2019t necessary, adjust the details to be more modest and appropriate.\n\nSpecific instructions for each entity type:\n\n1. For each new location:\n   - Use the provided name and ID\n   - Determine an appropriate type (city, village, country, region, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: population, area, founded, climate, elevation, country\n   - Format the output as follows:\n     <location>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[city/village/country/region]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: population, area, founded, climate, elevation, country]\n     </location>\n\n2. For each new person:\n   - Use the provided name and ID\n   - Create fictional details for: date_of_birth, gender, profession, nationality, education\n   - Write a concise single-sentence description that:\n     * Focuses on background, personality, and motivations\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: height, weight, eye_color, hair_color, political_affiliation, marital_status, spouse\n   - Format the output as follows:\n     <person>\n     <id>[Provided ID]</id>\n     <name>[Full name]</name>\n     <date_of_birth>[Date]</date_of_birth>\n     <gender>[Gender]</gender>\n     <profession>[Job title]</profession>\n     <nationality>[Country]</nationality>\n     <education>[Highest level of education]</education>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: height, weight, eye_color, hair_color, political_affiliation, marital_status]\n     </person>\n\n3. For each new organization:\n   - Use the provided name and ID\n   - Determine an appropriate type (company, non-profit, educational institution, government agency, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: founded, headquarters, industry, mission_statement, number_of_employees, annual_revenue\n   - Format the output as follows:\n     <organization>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[company/non-profit/educational institution/government agency]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: founded, headquarters, industry, mission_statement, number_of_employees, annual_revenue]\n     </organization>\n\n4. For each new product:\n   - Use the provided name and ID\n   - Determine an appropriate type (consumer good, software, service, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: manufacturer, release_date, price, weight, warranty\n   - Format the output as follows:\n     <product>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[consumer good/software/service]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: manufacturer, release_date, price, weight, warranty]\n     </product>\n\n5. For each new art piece:\n   - Use the provided name and ID\n   - Determine an appropriate type (painting, sculpture, novel, film, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: creator, year_created, current_location_country, current_location_city, current_location_place\n   - Format the output as follows:\n     <art>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[painting/sculpture/novel/film]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: creator, year_created, current_location_country, current_location_city, current_location_place]\n     </art>\n\n6. For each new building:\n   - Use the provided name and ID\n   - Determine an appropriate type (residential, commercial, public, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: place, city, country, architect, year_built, height, floors, material, capacity\n   - Format the output as follows:\n     <building>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[residential/commercial/public]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: place, city, country, architect, year_built, height, floors, material, capacity]\n     </building>\n\n7. For each new event:\n   - Use the provided name and ID\n   - Determine an appropriate type (historical, cultural, sporting, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: date, place, city, country, duration, organizer, number_of_participants, budget\n   - Format the output as follows:\n     <event>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[historical/cultural/sporting]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: date, place, city, country, duration, organizer, number_of_participants, budget]\n     </event>\n\n8. For each new miscellaneous entity:\n   - Use the provided name and ID\n   - Determine an appropriate type (concept, theory, phenomenon, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Format the output as follows:\n     <miscellaneous>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[concept/theory/phenomenon]</type>\n     <description>[One-sentence concise description]</description>\n     </miscellaneous>\n\nPresent your final output in the following format:\n<results>\n[Insert all created entities here, grouped by type]\n</results>\n\nRemember to create detailed, coherent, and realistic descriptions for each entity while adhering to the guidelines provided. Ensure that all descriptions are single, short, and concise sentences that do not refer to other entities and only discuss background information unrelated to the event described in the outline.",
+  "system-prompt": null,
+  "values": {
+    "GENRE": "Sports",
+    "EVENT_SUMMARY": "Despite the promising start of the HydroSlide Sprint curriculum, a few schools report logistical challenges in obtaining the necessary equipment, prompting a review of resource allocation as planned by the Adaptive Sports Innovations Committee.",
+    "EVENT_SUMMARY_FOR_NAME": "Despite the promisin",
+    "INIT_SUMMARY": "The upcoming Paralympic Games will feature an innovative new sport designed specifically for athletes with limited upper body mobility, showcasing the latest advances in adaptive technology.",
+    "KEYWORDS": "",
+    "CREATED_AT": 2,
+    "HISTORIES": [
+      "<event><date>2030-09-16</date><outline>On 16 September 2030, the {Paralympic Games|EVENT-1} opened with the inaugural presentation of a new sport named \"{HydroSlide Sprint|PRODUCT-2},\" designed specifically for athletes with limited upper body mobility, at {Lake Serene|LOCATION-1} in {Tranquil Springs|LOCATION-2}. {Lake Serene|LOCATION-1}, renowned for its crystal-clear waters and gentle currents, has been a popular training ground for adaptive water sports athletes for over a decade. {Darlene Marstone|PERSON-1}, head of the {Adaptive Sports Innovations Committee|ORGANIZATION-1}, highlighted the collaborative efforts between biomechanical engineers and athletes to develop bespoke adaptive technology integrated into the {HydroSlide devices|PRODUCT-1}. The {Adaptive Sports Innovations Committee|ORGANIZATION-1}, established in 2025, has been pivotal in advancing adaptive sports technologies and fostering partnerships with leading engineering firms. In the preliminary rounds, solo athletes competed in 50-meter sprints, showcasing their precise balance and coordination while maneuvering the {HydroSlide devices|PRODUCT-1} equipment. The {HydroSlide devices|PRODUCT-1}, equipped with gyroscopic stabilizers, allow athletes to maintain balance and control, even in challenging water conditions. Prevailing conditions at {Lake Serene|LOCATION-1}, well-known for its calm waters, provided an ideal environment for stability and control, which were critical for the athletes during the competitions. The lake's consistent water temperature and minimal wave activity have made it a preferred location for adaptive sports events since its designation as a training site in 2028. {Team Lunaris|ORGANIZATION-2}, the reigning champions in adaptive water sports, aimed to leverage their experience to excel in this new category by working with new recruits, many introduced to the sport only months prior. {Team Lunaris|ORGANIZATION-2}, having won the {Adaptive Water Sports Championship|EVENT-2} three times consecutively, brought a wealth of experience and strategic insights to the {HydroSlide Sprint|PRODUCT-2}. Led by coach {Eliza Thorne|PERSON-2}, {Team Lumina|ORGANIZATION-3}, a recently assembled team formed from international elite long-standing wheelchair swimmers, showcased innovative techniques that combined agility with enhanced hydrodynamic designs. Coach {Eliza Thorne|PERSON-2}, a former Paralympic swimmer with over 15 years of coaching experience, has been instrumental in developing {Team Lumina|ORGANIZATION-3}'s unique training regimen. The {holographic scoreboard|PRODUCT-3} displaying live metrics and athlete performance analytics was appreciated by spectators for enhancing their understanding and enjoyment of the nuanced sport. The scoreboard, developed by {TechVision Innovations|ORGANIZATION-4}, provided real-time data on speed, trajectory, and balance, offering spectators a deeper insight into the athletes' performances. During the closing ceremony, {Kaden Harris|PERSON-3}, a finalist in the sprint event, received applause for his advocacy work in promoting accessibility in sports technology and was awarded the {Paralympic Sports Innovation Award|EVENT-1}. {Kaden Harris|PERSON-3}, who has been a vocal advocate for adaptive sports since his debut in the {Paralympic Games|EVENT-1} in 2028, has worked with several organizations to improve accessibility in sports facilities. Organizer Vlad Petrovic, from the {International Sports Development Federation|ORGANIZATION-5}, emphasized the importance of inclusivity in sports innovation, stressing the role of organizations in providing platforms for diverse athletic expressions. The {International Sports Development Federation|ORGANIZATION-5}, founded in 2020, has been at the forefront of promoting inclusivity and diversity in global sports events. Following the successful event, plans for a comprehensive development program for {HydroSlide Sprint|PRODUCT-2} were discussed, aiming to introduce the sport in schools and community centers worldwide. The development program, set to launch in early 2031, will include training modules, equipment kits, and workshops designed to make {HydroSlide Sprint|PRODUCT-2} accessible to a broader audience.</outline></event>",
+      "<event><date>2031-04-15</date><outline>The {Cresthaven School Board|PERSON-4} at its meeting on April 15, 2031, approved the integration of {HydroSlide Sprint|PRODUCT-2} into physical education programs across all public schools in the region. This decision marks a significant milestone in Cresthaven's commitment to inclusive education, reflecting a broader trend towards integrating adaptive sports into mainstream curricula. {Darlene Marstone|PERSON-1}, head of the {Adaptive Sports Innovations Committee|ORGANIZATION-1}, emphasized the importance of adapting sports curricula to promote inclusivity and encourage broader participation in adaptive sports. Marstone highlighted that the integration of {HydroSlide Sprint|PRODUCT-2} aligns with the committee's mission to enhance the lives of individuals with disabilities through pioneering sports technologies. The proposed curriculum includes a comprehensive module on the fundamentals of {HydroSlide Sprint|PRODUCT-2}, featuring guidelines on the use of {HydroSlide devices|PRODUCT-1}. The module will cover safety protocols, basic techniques, and the benefits of using {HydroSlide devices|PRODUCT-1}, which are designed to enhance mobility and stability for athletes with physical challenges. An {informational session|EVENT-3} was conducted at {Cresthaven Community Center|LOCATION-4}, where students and teachers demonstrated the capabilities and safety features of the {HydroSlide devices|PRODUCT-1} developed by {TechVision Innovations|ORGANIZATION-4}. During the session, participants explored the gyroscopic stabilizers of the {HydroSlide devices|PRODUCT-1}, which allow athletes to maintain balance and control in water. {Kaden Harris|PERSON-3}, an influential advocate for adaptive sports, spoke at the session, highlighting the transformative potential of adaptive sports in schools and his hopes for increasing student engagement. Harris shared his vision of creating a more inclusive sports culture, where students of all abilities can participate and excel in adaptive sports. {Eliza Thorne|PERSON-2} delivered a workshop for physical education teachers, instructing them on effectively coaching {HydroSlide Sprint|PRODUCT-2} techniques with diverse groups of students. Thorne's workshop included hands-on training sessions, where teachers practiced coaching techniques and learned how to adapt lessons for students with varying abilities. The first {pilot program|EVENT-4} of the curriculum began at {Cresthaven Primary School|LOCATION-3}, where equipment and trainers from {Team Lumina|ORGANIZATION-3} provided on-site support and facilitated interactive lessons. At {Cresthaven Primary School|LOCATION-3}, students engaged in interactive lessons that focused on teamwork, coordination, and the joy of participating in a new sport. Local government representatives praised the initiative, asserting that the official endorsement by educational authorities signaled a significant step towards normalizing adaptive sports within mainstream education. Representatives emphasized that this initiative could serve as a model for other regions looking to integrate adaptive sports into their educational systems. Community feedback from early adopters of the program was overwhelmingly positive, with students expressing excitement about participating in a new sport and appreciating its inclusive nature. Students reported feeling more confident and motivated to participate in physical activities, highlighting the positive impact of the program on their overall well-being. Future community outreach events are planned by the {Adaptive Sports Innovations Committee|ORGANIZATION-1} to further encourage family and peer involvement in {HydroSlide Sprint|PRODUCT-2} activities. These events aim to foster a supportive community environment, where families can learn about adaptive sports and engage in activities together.</outline></event>"
+    ],
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "NEXT_IDS": {
+      "person": 6,
+      "organization": 6,
+      "location": 5,
+      "product": 4,
+      "art": 1,
+      "building": 1,
+      "event": 5,
+      "miscellaneous": 1
+    },
+    "PROVIDED_DATE": "2031-11-20",
+    "PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Darlene Marstone",
+        "entity_class": "person",
+        "description": "Darlene Marstone is a driven and innovative engineer, passionate about leveraging technology to improve quality of life for physically challenged athletes",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2030-09-16",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Darlene Marstone played a key role in the development of HydroSlide devices, which were integral to the new sport at the Paralympic Games.",
+            "date": "2030-09-16"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Darlene Marstone emphasized the importance of integrating HydroSlide Sprint into school curricula for inclusivity.",
+            "date": "2031-04-15"
+          }
+        ],
+        "date_of_birth": "1985-11-23",
+        "gender": "Female",
+        "profession": "Biomedical Engineer",
+        "nationality": "Lacopian",
+        "education": "PhD in Biomedical Engineering from TechVoy University",
+        "height": "5'7\"",
+        "weight": "145 lbs",
+        "eye_color": "Hazel",
+        "hair_color": "Brunette",
+        "political_affiliation": "Non-affiliated",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Eliza Thorne",
+        "entity_class": "person",
+        "description": "Eliza Thorne is a highly respected coach, renowned for her innovative training techniques and dedication to mentoring athletes with disabilities",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2030-09-16",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Eliza Thorne led Team Lumina, which showcased innovative techniques in the HydroSlide Sprint event at the Paralympic Games.",
+            "date": "2030-09-16"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Eliza Thorne conducted a workshop for physical education teachers on coaching HydroSlide Sprint techniques.",
+            "date": "2031-04-15"
+          }
+        ],
+        "date_of_birth": "1975-06-15",
+        "gender": "Female",
+        "profession": "Coach",
+        "nationality": "Lacopian",
+        "education": "Bachelor's Degree in Sports Science from Aerodynamics College",
+        "height": "5'8\"",
+        "weight": "135 lbs",
+        "eye_color": "Blue",
+        "hair_color": "Blonde",
+        "political_affiliation": "Non-affiliated",
+        "marital_status": "Married to Alex Thorne",
+        "spouse": "Alex Thorne"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Kaden Harris",
+        "entity_class": "person",
+        "description": "Kaden Harris is an influential activist and coordinator, committed to promoting inclusivity in all sports and public spaces, particularly advancing adaptive sports technology",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2030-09-16",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Kaden Harris was recognized with the Paralympic Sports Innovation Award for his advocacy in adaptive sports technology during the Paralympic Games.",
+            "date": "2030-09-16"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Kaden Harris spoke at the informational session about the transformative potential of adaptive sports in schools.",
+            "date": "2031-04-15"
+          }
+        ],
+        "date_of_birth": "1990-03-12",
+        "gender": "Male",
+        "profession": "Advocacy Coordinator",
+        "nationality": "Lacopian",
+        "education": "Master's in Public Policy from Global Leaders Institute",
+        "height": "6'1\"",
+        "weight": "180 lbs",
+        "eye_color": "Green",
+        "hair_color": "Black",
+        "political_affiliation": "Progressive Alliance",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Cresthaven School Board",
+        "entity_class": "person",
+        "description": "The Cresthaven School Board, constituted in 2005, oversees educational policies and curricula for public schools in Cresthaven.",
+        "type": null,
+        "created_at": 1,
+        "last_updated": "2031-04-15",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "The Cresthaven School Board approved the integration of HydroSlide Sprint into physical education programs.",
+            "date": "2031-04-15"
+          }
+        ],
+        "date_of_birth": "N/A",
+        "gender": "Group",
+        "profession": "Educational governance",
+        "nationality": "Composed of members from the Cresthaven region",
+        "education": "Varied educational backgrounds among members",
+        "height": "N/A",
+        "weight": "N/A",
+        "eye_color": "N/A",
+        "hair_color": "N/A",
+        "political_affiliation": "Non-affiliated",
+        "marital_status": "N/A",
+        "spouse": "N/A"
+      }
+    ],
+    "ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Adaptive Sports Innovations Committee",
+        "entity_class": "organization",
+        "description": "The committee's mission is to spur advancement in adaptive sports through collaborative innovations, making athletics accessible to individuals with disabilities",
+        "type": "non profit",
+        "created_at": 0,
+        "last_updated": "2030-09-16",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Adaptive Sports Innovations Committee was instrumental in developing the HydroSlide devices used in the new sport at the Paralympic Games.",
+            "date": "2030-09-16"
+          },
+          {
+            "created_at": 1,
+            "event_update": "The Adaptive Sports Innovations Committee played a key role in integrating HydroSlide Sprint into school curricula.",
+            "date": "2031-04-15"
+          }
+        ],
+        "founded": "2025",
+        "headquarters": "Spires Centre located in Laconia",
+        "industry": "Adaptive Sports",
+        "mission_statement": "To enhance the lives of individuals with disabilities through pioneering sports technologies and inclusive opportunities",
+        "number_of_employees": "Approximately 150 dedicated professionals and volunteers",
+        "annual_revenue": "Estimated 15000000 from grants and partnerships"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Team Lunaris",
+        "entity_class": "organization",
+        "description": "Team Lunaris has established itself as a top contender in adaptive water sports, renowned for its strategic acumen and commitment to excellence",
+        "type": "sports team",
+        "created_at": 0,
+        "last_updated": "2030-09-16",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Team Lunaris participated in the HydroSlide Sprint event at the Paralympic Games, aiming to leverage their experience in adaptive water sports.",
+            "date": "2030-09-16"
+          }
+        ],
+        "founded": "Formed in 2017 by a collective of passionate athletes",
+        "headquarters": "Headquartered in Tranquil Springs",
+        "industry": "Adaptive Sports",
+        "mission_statement": "To achieve unparalleled success and advocate for the advancement of inclusive sports practices",
+        "number_of_employees": "Approximately 40 including athletes coaches and support staff",
+        "annual_revenue": "Funds primarily through sponsorships and event winnings approximately 10000000"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Team Lumina",
+        "entity_class": "organization",
+        "description": "Team Lumina has the distinction of excellence by combining the experience of seasoned international swimmers into a formidable athlete cohort",
+        "type": "sports team",
+        "created_at": 0,
+        "last_updated": "2030-09-16",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Team Lumina, led by Eliza Thorne, competed in the HydroSlide Sprint event at the Paralympic Games, showcasing innovative techniques.",
+            "date": "2030-09-16"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Team Lumina provided on-site support and facilitated interactive lessons during the pilot program at Cresthaven Primary School.",
+            "date": "2031-04-15"
+          }
+        ],
+        "founded": "2029",
+        "headquarters": "Riverspace Hub in Laconia City",
+        "industry": "Competitive Adaptive Sports",
+        "mission_statement": "To excel in adaptive water sports through cutting edge techniques and collaborative innovation",
+        "number_of_employees": "Approximately 35 including swimmers therapists and coaching staff",
+        "annual_revenue": "Finances sourced from international grants and sponsorships about 12000000"
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "TechVision Innovations",
+        "entity_class": "organization",
+        "description": "TechVision Innovations leads in developing cutting edge technology solutions particularly in sports analytics and live event enhancements",
+        "type": "technology company",
+        "created_at": 0,
+        "last_updated": "2030-09-16",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "TechVision Innovations developed the holographic scoreboard used at the Paralympic Games to enhance spectator experience.",
+            "date": "2030-09-16"
+          },
+          {
+            "created_at": 1,
+            "event_update": "TechVision Innovations developed the HydroSlide devices used in the informational session at Cresthaven Community Center.",
+            "date": "2031-04-15"
+          }
+        ],
+        "founded": "2010",
+        "headquarters": "Situated in the Tech Park of Laconia City",
+        "industry": "Technology and Sports Analytics",
+        "mission_statement": "To provide innovative technological solutions to enhance the experience of spectators and a competitive edge for athletes",
+        "number_of_employees": "1200 specialists and developers",
+        "annual_revenue": "200000000 from various technology and sports ventures"
+      },
+      {
+        "id": "ORGANIZATION-5",
+        "name": "International Sports Development Federation",
+        "entity_class": "organization",
+        "description": "The federation is dedicated to fostering inclusivity and diversity within global sports supporting initiatives that break down barriers to participation",
+        "type": "non profit",
+        "created_at": 0,
+        "last_updated": "2030-09-16",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The International Sports Development Federation emphasized inclusivity in sports innovation during the Paralympic Games.",
+            "date": "2030-09-16"
+          }
+        ],
+        "founded": "2020",
+        "headquarters": "Main office in Globalopolis Laconia",
+        "industry": "Sporting Development",
+        "mission_statement": "To champion diversity and develop holistic sports opportunities for all regardless of background",
+        "number_of_employees": "Approximately 250 with a global outreach team",
+        "annual_revenue": "50000000 from affiliations with sports entities and governmental grants"
+      }
+    ],
+    "LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Lake Serene",
+        "entity_class": "location",
+        "description": "Lake Serene is a picturesque destination renowned for its crystal-clear waters, attracting nature enthusiasts and tourists year-round.",
+        "type": "lake",
+        "created_at": 0,
+        "last_updated": "2030-09-16",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Lake Serene served as the venue for the inaugural HydroSlide Sprint event at the Paralympic Games in 2030.",
+            "date": "2030-09-16"
+          }
+        ],
+        "population": "Estimates suggest over 5000 daily visitors during peak seasons",
+        "area": "Approximately 10 square kilometers",
+        "elevation": "700 meters above sea level",
+        "country": "Located in the fictional region of Cresthaven"
+      },
+      {
+        "id": "LOCATION-2",
+        "name": "Tranquil Springs",
+        "entity_class": "location",
+        "description": "Tranquil Springs is a bustling town known for its artisanal craftsmanship and commitment to cultural preservation.",
+        "type": "town",
+        "created_at": 0,
+        "last_updated": "2030-09-16",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Tranquil Springs hosted the opening of the Paralympic Games in 2030, featuring the new sport HydroSlide Sprint.",
+            "date": "2030-09-16"
+          }
+        ],
+        "population": "Roughly 12000 residents",
+        "area": "Covers about 50 square kilometers",
+        "elevation": "450 meters above sea level",
+        "country": "Located in the fictional region of Gaian Fields"
+      },
+      {
+        "id": "LOCATION-3",
+        "name": "Cresthaven Primary School",
+        "entity_class": "location",
+        "description": "Cresthaven Primary School, established in 2005, serves as a foundational educational institution in the Cresthaven district.",
+        "type": "school",
+        "created_at": 1,
+        "last_updated": "2031-04-15",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "Cresthaven Primary School began the first pilot program for integrating HydroSlide Sprint into the curriculum.",
+            "date": "2031-04-15"
+          }
+        ],
+        "population": "Approximately 800 students and 50 staff members",
+        "area": "Covering 1.5 square kilometers",
+        "country": "Located within the fictional region of Cresthaven"
+      },
+      {
+        "id": "LOCATION-4",
+        "name": "Cresthaven Community Center",
+        "entity_class": "location",
+        "description": "Established in 2010, Cresthaven Community Center serves as a hub for local events and activities fostering community engagement.",
+        "type": "community center",
+        "created_at": 1,
+        "last_updated": "2031-04-15",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "An informational session was held at Cresthaven Community Center to demonstrate HydroSlide devices.",
+            "date": "2031-04-15"
+          }
+        ],
+        "population": "Staffed by 15 full-time employees and assisted by 25 volunteers",
+        "area": "Spans approximately 2 square kilometers",
+        "country": "Located within the fictional region of Cresthaven"
+      }
+    ],
+    "PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "HydroSlide devices",
+        "entity_class": "product",
+        "description": "HydroSlide devices are advanced adaptive sports equipment designed to enhance mobility and stability for athletes with physical challenges",
+        "type": "consumer good",
+        "created_at": 0,
+        "last_updated": "2030-09-16",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "HydroSlide devices were used in the HydroSlide Sprint event at the Paralympic Games, showcasing their stability and control features.",
+            "date": "2030-09-16"
+          },
+          {
+            "created_at": 1,
+            "event_update": "HydroSlide devices were demonstrated at an informational session and are part of the new curriculum module.",
+            "date": "2031-04-15"
+          }
+        ],
+        "manufacturer": "Developed through a partnership between Adaptive Sports Innovations Committee and TechVision Innovations",
+        "release_date": "Released in 2030 to coincide with the introduction of HydroSlide Sprint in the Paralympic Games",
+        "price": "Initially priced at 3000 each",
+        "weight": "15kg per device designed for portability and ease of use",
+        "warranty": "Comes with a 5 year warranty covering defects and necessary repairs"
+      },
+      {
+        "id": "PRODUCT-2",
+        "name": "HydroSlide Sprint",
+        "entity_class": "product",
+        "description": "HydroSlide Sprint is a newly conceptualized adaptive sport focusing on speed and agility specifically crafted for athletes with restricted upper body mobility",
+        "type": "sport",
+        "created_at": 0,
+        "last_updated": "2030-09-16",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "HydroSlide Sprint was introduced as a new sport at the Paralympic Games, designed for athletes with limited upper body mobility.",
+            "date": "2030-09-16"
+          },
+          {
+            "created_at": 1,
+            "event_update": "HydroSlide Sprint was approved for integration into physical education programs across public schools in Cresthaven.",
+            "date": "2031-04-15"
+          }
+        ],
+        "manufacturer": "Co-developed by the Adaptive Sports Innovations Committee and TechVision Innovations as part of a broader initiative",
+        "release_date": "Formally introduced during the Paralympic Games in 2030",
+        "price": "No entry fee needed for registration in official events but costs for training and participation vary",
+        "weight": "N/A as it refers to a sport rather than a tangible product",
+        "warranty": "Not applicable but includes equipment guidelines and athlete safety protocols"
+      },
+      {
+        "id": "PRODUCT-3",
+        "name": "Holographic scoreboard",
+        "entity_class": "product",
+        "description": "The Holographic scoreboard offers immersive real time graphics enhancing the viewing experience with dimensional analytics for sports enthusiasts",
+        "type": "technology",
+        "created_at": 0,
+        "last_updated": "2030-09-16",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The holographic scoreboard was used at the Paralympic Games to display live metrics and athlete performance analytics.",
+            "date": "2030-09-16"
+          }
+        ],
+        "manufacturer": "Developed and produced by TechVision Innovations",
+        "release_date": "Launched commercially in 2029 prior to official deployment in adaptive sports events",
+        "price": "Mapped at approximately 50000 for large scale deployment in competitive arenas",
+        "weight": "150kg including support structure and projection devices",
+        "warranty": "Offered with a 3 year service agreement covering software updates and hardware maintenance"
+      }
+    ],
+    "ART": [],
+    "BUILDING": [],
+    "EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "Paralympic Games",
+        "entity_class": "event",
+        "description": "The Paralympic Games are a hallmark international sports competition for athletes with a range of disabilities emphasizing exemplary sporting excellence and spirit",
+        "type": "sporting",
+        "created_at": 0,
+        "last_updated": "2030-09-16",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Paralympic Games in 2030 featured the introduction of HydroSlide Sprint, a new sport for athletes with limited upper body mobility.",
+            "date": "2030-09-16"
+          }
+        ],
+        "date": "Occurs every four years with the latest games held in September 2030",
+        "duration": "Spanning over two weeks",
+        "organizer": "Coordinated by the International Paralympic Committee in conjunction with the International Sports Development Federation",
+        "number_of_participants": "Over 4500 athletes worldwide participating across multiple sports",
+        "budget": "The events are funded with an approximate total budget of 350000000 by combining public grants and sponsorship deals"
+      },
+      {
+        "id": "EVENT-2",
+        "name": "Adaptive Water Sports Championship",
+        "entity_class": "event",
+        "description": "The Adaptive Water Sports Championship showcases a variety of water based adaptive sports celebrating innovation skill and the pioneering spirit of athletes",
+        "type": "sporting",
+        "created_at": 0,
+        "last_updated": "2030-09-16",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Team Lunaris, the reigning champions of the Adaptive Water Sports Championship, participated in the HydroSlide Sprint event at the Paralympic Games.",
+            "date": "2030-09-16"
+          }
+        ],
+        "date": "Initially held annually since 2027 shifting schedules to accommodate global sporting calendars",
+        "duration": "Lasts approximately a week featuring a balanced mix of preliminary and final rounds",
+        "organizer": "Managed by the International Adaptive Sports Federation and supported by local Lacopian authorities",
+        "number_of_participants": "Engages around 600+ athletes from over 30 countries in varied categories",
+        "budget": "Estimates suggest an annual budget of 20000000"
+      },
+      {
+        "id": "EVENT-3",
+        "name": "Informational session",
+        "entity_class": "event",
+        "description": "The informational session at Cresthaven Community Center aims to educate the public on the benefits of inclusive adaptive sports programs.",
+        "type": "cultural",
+        "created_at": 1,
+        "last_updated": "2031-04-15",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "An informational session was conducted at Cresthaven Community Center to demonstrate HydroSlide devices.",
+            "date": "2031-04-15"
+          }
+        ],
+        "date": "Held bi-annually since 2029",
+        "duration": "3 hours",
+        "organizer": "Organized by Adaptive Sports Innovations Committee",
+        "number_of_participants": "Approximately 200 local residents",
+        "budget": "$50,000 for equipment and materials"
+      },
+      {
+        "id": "EVENT-4",
+        "name": "Pilot program",
+        "entity_class": "event",
+        "description": "The pilot program, launched in early 2031, assesses the integration of adaptive sports into the primary school curriculum.",
+        "type": "educational",
+        "created_at": 1,
+        "last_updated": "2031-04-15",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "The pilot program for HydroSlide Sprint began at Cresthaven Primary School.",
+            "date": "2031-04-15"
+          }
+        ],
+        "date": "Began on January 5, 2031",
+        "duration": "3 months",
+        "organizer": "Coordinated by the Cresthaven School Board with support from local organizations",
+        "number_of_participants": "Approximately 200 participating students",
+        "budget": "$100,000 funded by educational grants and local sponsors"
+      }
+    ],
+    "MISCELLANEOUS": [],
+    "PERSONS_XML": "<person><created_at>0</created_at><date_of_birth>1985-11-23</date_of_birth><description>Darlene Marstone is a driven and innovative engineer, passionate about leveraging technology to improve quality of life for physically challenged athletes</description><education>PhD in Biomedical Engineering from TechVoy University</education><entity_class>person</entity_class><eye_color>Hazel</eye_color><gender>Female</gender><hair_color>Brunette</hair_color><height>5'7\"</height><history><event>2030-09-16: Darlene Marstone played a key role in the development of HydroSlide devices, which were integral to the new sport at the Paralympic Games.</event><event>2031-04-15: Darlene Marstone emphasized the importance of integrating HydroSlide Sprint into school curricula for inclusivity.</event></history><id>PERSON-1</id><last_updated>2030-09-16</last_updated><marital_status>Single</marital_status><name>Darlene Marstone</name><nationality>Lacopian</nationality><political_affiliation>Non-affiliated</political_affiliation><profession>Biomedical Engineer</profession><type>None</type><weight>145 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1975-06-15</date_of_birth><description>Eliza Thorne is a highly respected coach, renowned for her innovative training techniques and dedication to mentoring athletes with disabilities</description><education>Bachelor's Degree in Sports Science from Aerodynamics College</education><entity_class>person</entity_class><eye_color>Blue</eye_color><gender>Female</gender><hair_color>Blonde</hair_color><height>5'8\"</height><history><event>2030-09-16: Eliza Thorne led Team Lumina, which showcased innovative techniques in the HydroSlide Sprint event at the Paralympic Games.</event><event>2031-04-15: Eliza Thorne conducted a workshop for physical education teachers on coaching HydroSlide Sprint techniques.</event></history><id>PERSON-2</id><last_updated>2030-09-16</last_updated><marital_status>Married to Alex Thorne</marital_status><name>Eliza Thorne</name><nationality>Lacopian</nationality><political_affiliation>Non-affiliated</political_affiliation><profession>Coach</profession><spouse>Alex Thorne</spouse><type>None</type><weight>135 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1990-03-12</date_of_birth><description>Kaden Harris is an influential activist and coordinator, committed to promoting inclusivity in all sports and public spaces, particularly advancing adaptive sports technology</description><education>Master's in Public Policy from Global Leaders Institute</education><entity_class>person</entity_class><eye_color>Green</eye_color><gender>Male</gender><hair_color>Black</hair_color><height>6'1\"</height><history><event>2030-09-16: Kaden Harris was recognized with the Paralympic Sports Innovation Award for his advocacy in adaptive sports technology during the Paralympic Games.</event><event>2031-04-15: Kaden Harris spoke at the informational session about the transformative potential of adaptive sports in schools.</event></history><id>PERSON-3</id><last_updated>2030-09-16</last_updated><marital_status>Single</marital_status><name>Kaden Harris</name><nationality>Lacopian</nationality><political_affiliation>Progressive Alliance</political_affiliation><profession>Advocacy Coordinator</profession><type>None</type><weight>180 lbs</weight></person>\n<person><created_at>1</created_at><date_of_birth>N/A</date_of_birth><description>The Cresthaven School Board, constituted in 2005, oversees educational policies and curricula for public schools in Cresthaven.</description><education>Varied educational backgrounds among members</education><entity_class>person</entity_class><eye_color>N/A</eye_color><gender>Group</gender><hair_color>N/A</hair_color><height>N/A</height><history><event>2031-04-15: The Cresthaven School Board approved the integration of HydroSlide Sprint into physical education programs.</event></history><id>PERSON-4</id><last_updated>2031-04-15</last_updated><marital_status>N/A</marital_status><name>Cresthaven School Board</name><nationality>Composed of members from the Cresthaven region</nationality><political_affiliation>Non-affiliated</political_affiliation><profession>Educational governance</profession><spouse>N/A</spouse><type>None</type><weight>N/A</weight></person>",
+    "ORGANIZATIONS_XML": "<organization><annual_revenue>Estimated 15000000 from grants and partnerships</annual_revenue><created_at>0</created_at><description>The committee's mission is to spur advancement in adaptive sports through collaborative innovations, making athletics accessible to individuals with disabilities</description><entity_class>organization</entity_class><founded>2025</founded><headquarters>Spires Centre located in Laconia</headquarters><history><event>2030-09-16: The Adaptive Sports Innovations Committee was instrumental in developing the HydroSlide devices used in the new sport at the Paralympic Games.</event><event>2031-04-15: The Adaptive Sports Innovations Committee played a key role in integrating HydroSlide Sprint into school curricula.</event></history><id>ORGANIZATION-1</id><industry>Adaptive Sports</industry><last_updated>2030-09-16</last_updated><mission_statement>To enhance the lives of individuals with disabilities through pioneering sports technologies and inclusive opportunities</mission_statement><name>Adaptive Sports Innovations Committee</name><number_of_employees>Approximately 150 dedicated professionals and volunteers</number_of_employees><type>non profit</type></organization>\n<organization><annual_revenue>Funds primarily through sponsorships and event winnings approximately 10000000</annual_revenue><created_at>0</created_at><description>Team Lunaris has established itself as a top contender in adaptive water sports, renowned for its strategic acumen and commitment to excellence</description><entity_class>organization</entity_class><founded>Formed in 2017 by a collective of passionate athletes</founded><headquarters>Headquartered in Tranquil Springs</headquarters><history><event>2030-09-16: Team Lunaris participated in the HydroSlide Sprint event at the Paralympic Games, aiming to leverage their experience in adaptive water sports.</event></history><id>ORGANIZATION-2</id><industry>Adaptive Sports</industry><last_updated>2030-09-16</last_updated><mission_statement>To achieve unparalleled success and advocate for the advancement of inclusive sports practices</mission_statement><name>Team Lunaris</name><number_of_employees>Approximately 40 including athletes coaches and support staff</number_of_employees><type>sports team</type></organization>\n<organization><annual_revenue>Finances sourced from international grants and sponsorships about 12000000</annual_revenue><created_at>0</created_at><description>Team Lumina has the distinction of excellence by combining the experience of seasoned international swimmers into a formidable athlete cohort</description><entity_class>organization</entity_class><founded>2029</founded><headquarters>Riverspace Hub in Laconia City</headquarters><history><event>2030-09-16: Team Lumina, led by Eliza Thorne, competed in the HydroSlide Sprint event at the Paralympic Games, showcasing innovative techniques.</event><event>2031-04-15: Team Lumina provided on-site support and facilitated interactive lessons during the pilot program at Cresthaven Primary School.</event></history><id>ORGANIZATION-3</id><industry>Competitive Adaptive Sports</industry><last_updated>2030-09-16</last_updated><mission_statement>To excel in adaptive water sports through cutting edge techniques and collaborative innovation</mission_statement><name>Team Lumina</name><number_of_employees>Approximately 35 including swimmers therapists and coaching staff</number_of_employees><type>sports team</type></organization>\n<organization><annual_revenue>200000000 from various technology and sports ventures</annual_revenue><created_at>0</created_at><description>TechVision Innovations leads in developing cutting edge technology solutions particularly in sports analytics and live event enhancements</description><entity_class>organization</entity_class><founded>2010</founded><headquarters>Situated in the Tech Park of Laconia City</headquarters><history><event>2030-09-16: TechVision Innovations developed the holographic scoreboard used at the Paralympic Games to enhance spectator experience.</event><event>2031-04-15: TechVision Innovations developed the HydroSlide devices used in the informational session at Cresthaven Community Center.</event></history><id>ORGANIZATION-4</id><industry>Technology and Sports Analytics</industry><last_updated>2030-09-16</last_updated><mission_statement>To provide innovative technological solutions to enhance the experience of spectators and a competitive edge for athletes</mission_statement><name>TechVision Innovations</name><number_of_employees>1200 specialists and developers</number_of_employees><type>technology company</type></organization>\n<organization><annual_revenue>50000000 from affiliations with sports entities and governmental grants</annual_revenue><created_at>0</created_at><description>The federation is dedicated to fostering inclusivity and diversity within global sports supporting initiatives that break down barriers to participation</description><entity_class>organization</entity_class><founded>2020</founded><headquarters>Main office in Globalopolis Laconia</headquarters><history><event>2030-09-16: The International Sports Development Federation emphasized inclusivity in sports innovation during the Paralympic Games.</event></history><id>ORGANIZATION-5</id><industry>Sporting Development</industry><last_updated>2030-09-16</last_updated><mission_statement>To champion diversity and develop holistic sports opportunities for all regardless of background</mission_statement><name>International Sports Development Federation</name><number_of_employees>Approximately 250 with a global outreach team</number_of_employees><type>non profit</type></organization>",
+    "LOCATIONS_XML": "<location><area>Approximately 10 square kilometers</area><country>Located in the fictional region of Cresthaven</country><created_at>0</created_at><description>Lake Serene is a picturesque destination renowned for its crystal-clear waters, attracting nature enthusiasts and tourists year-round.</description><elevation>700 meters above sea level</elevation><entity_class>location</entity_class><history><event>2030-09-16: Lake Serene served as the venue for the inaugural HydroSlide Sprint event at the Paralympic Games in 2030.</event></history><id>LOCATION-1</id><last_updated>2030-09-16</last_updated><name>Lake Serene</name><population>Estimates suggest over 5000 daily visitors during peak seasons</population><type>lake</type></location>\n<location><area>Covers about 50 square kilometers</area><country>Located in the fictional region of Gaian Fields</country><created_at>0</created_at><description>Tranquil Springs is a bustling town known for its artisanal craftsmanship and commitment to cultural preservation.</description><elevation>450 meters above sea level</elevation><entity_class>location</entity_class><history><event>2030-09-16: Tranquil Springs hosted the opening of the Paralympic Games in 2030, featuring the new sport HydroSlide Sprint.</event></history><id>LOCATION-2</id><last_updated>2030-09-16</last_updated><name>Tranquil Springs</name><population>Roughly 12000 residents</population><type>town</type></location>\n<location><area>Covering 1.5 square kilometers</area><country>Located within the fictional region of Cresthaven</country><created_at>1</created_at><description>Cresthaven Primary School, established in 2005, serves as a foundational educational institution in the Cresthaven district.</description><entity_class>location</entity_class><history><event>2031-04-15: Cresthaven Primary School began the first pilot program for integrating HydroSlide Sprint into the curriculum.</event></history><id>LOCATION-3</id><last_updated>2031-04-15</last_updated><name>Cresthaven Primary School</name><population>Approximately 800 students and 50 staff members</population><type>school</type></location>\n<location><area>Spans approximately 2 square kilometers</area><country>Located within the fictional region of Cresthaven</country><created_at>1</created_at><description>Established in 2010, Cresthaven Community Center serves as a hub for local events and activities fostering community engagement.</description><entity_class>location</entity_class><history><event>2031-04-15: An informational session was held at Cresthaven Community Center to demonstrate HydroSlide devices.</event></history><id>LOCATION-4</id><last_updated>2031-04-15</last_updated><name>Cresthaven Community Center</name><population>Staffed by 15 full-time employees and assisted by 25 volunteers</population><type>community center</type></location>",
+    "PRODUCTS_XML": "<product><created_at>0</created_at><description>HydroSlide devices are advanced adaptive sports equipment designed to enhance mobility and stability for athletes with physical challenges</description><entity_class>product</entity_class><history><event>2030-09-16: HydroSlide devices were used in the HydroSlide Sprint event at the Paralympic Games, showcasing their stability and control features.</event><event>2031-04-15: HydroSlide devices were demonstrated at an informational session and are part of the new curriculum module.</event></history><id>PRODUCT-1</id><last_updated>2030-09-16</last_updated><manufacturer>Developed through a partnership between Adaptive Sports Innovations Committee and TechVision Innovations</manufacturer><name>HydroSlide devices</name><price>Initially priced at 3000 each</price><release_date>Released in 2030 to coincide with the introduction of HydroSlide Sprint in the Paralympic Games</release_date><type>consumer good</type><warranty>Comes with a 5 year warranty covering defects and necessary repairs</warranty><weight>15kg per device designed for portability and ease of use</weight></product>\n<product><created_at>0</created_at><description>HydroSlide Sprint is a newly conceptualized adaptive sport focusing on speed and agility specifically crafted for athletes with restricted upper body mobility</description><entity_class>product</entity_class><history><event>2030-09-16: HydroSlide Sprint was introduced as a new sport at the Paralympic Games, designed for athletes with limited upper body mobility.</event><event>2031-04-15: HydroSlide Sprint was approved for integration into physical education programs across public schools in Cresthaven.</event></history><id>PRODUCT-2</id><last_updated>2030-09-16</last_updated><manufacturer>Co-developed by the Adaptive Sports Innovations Committee and TechVision Innovations as part of a broader initiative</manufacturer><name>HydroSlide Sprint</name><price>No entry fee needed for registration in official events but costs for training and participation vary</price><release_date>Formally introduced during the Paralympic Games in 2030</release_date><type>sport</type><warranty>Not applicable but includes equipment guidelines and athlete safety protocols</warranty><weight>N/A as it refers to a sport rather than a tangible product</weight></product>\n<product><created_at>0</created_at><description>The Holographic scoreboard offers immersive real time graphics enhancing the viewing experience with dimensional analytics for sports enthusiasts</description><entity_class>product</entity_class><history><event>2030-09-16: The holographic scoreboard was used at the Paralympic Games to display live metrics and athlete performance analytics.</event></history><id>PRODUCT-3</id><last_updated>2030-09-16</last_updated><manufacturer>Developed and produced by TechVision Innovations</manufacturer><name>Holographic scoreboard</name><price>Mapped at approximately 50000 for large scale deployment in competitive arenas</price><release_date>Launched commercially in 2029 prior to official deployment in adaptive sports events</release_date><type>technology</type><warranty>Offered with a 3 year service agreement covering software updates and hardware maintenance</warranty><weight>150kg including support structure and projection devices</weight></product>",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "",
+    "EVENTS_XML": "<event><budget>The events are funded with an approximate total budget of 350000000 by combining public grants and sponsorship deals</budget><created_at>0</created_at><date>Occurs every four years with the latest games held in September 2030</date><description>The Paralympic Games are a hallmark international sports competition for athletes with a range of disabilities emphasizing exemplary sporting excellence and spirit</description><duration>Spanning over two weeks</duration><entity_class>event</entity_class><history><event>2030-09-16: The Paralympic Games in 2030 featured the introduction of HydroSlide Sprint, a new sport for athletes with limited upper body mobility.</event></history><id>EVENT-1</id><last_updated>2030-09-16</last_updated><name>Paralympic Games</name><number_of_participants>Over 4500 athletes worldwide participating across multiple sports</number_of_participants><organizer>Coordinated by the International Paralympic Committee in conjunction with the International Sports Development Federation</organizer><type>sporting</type></event>\n<event><budget>Estimates suggest an annual budget of 20000000</budget><created_at>0</created_at><date>Initially held annually since 2027 shifting schedules to accommodate global sporting calendars</date><description>The Adaptive Water Sports Championship showcases a variety of water based adaptive sports celebrating innovation skill and the pioneering spirit of athletes</description><duration>Lasts approximately a week featuring a balanced mix of preliminary and final rounds</duration><entity_class>event</entity_class><history><event>2030-09-16: Team Lunaris, the reigning champions of the Adaptive Water Sports Championship, participated in the HydroSlide Sprint event at the Paralympic Games.</event></history><id>EVENT-2</id><last_updated>2030-09-16</last_updated><name>Adaptive Water Sports Championship</name><number_of_participants>Engages around 600+ athletes from over 30 countries in varied categories</number_of_participants><organizer>Managed by the International Adaptive Sports Federation and supported by local Lacopian authorities</organizer><type>sporting</type></event>\n<event><budget>$50,000 for equipment and materials</budget><created_at>1</created_at><date>Held bi-annually since 2029</date><description>The informational session at Cresthaven Community Center aims to educate the public on the benefits of inclusive adaptive sports programs.</description><duration>3 hours</duration><entity_class>event</entity_class><history><event>2031-04-15: An informational session was conducted at Cresthaven Community Center to demonstrate HydroSlide devices.</event></history><id>EVENT-3</id><last_updated>2031-04-15</last_updated><name>Informational session</name><number_of_participants>Approximately 200 local residents</number_of_participants><organizer>Organized by Adaptive Sports Innovations Committee</organizer><type>cultural</type></event>\n<event><budget>$100,000 funded by educational grants and local sponsors</budget><created_at>1</created_at><date>Began on January 5, 2031</date><description>The pilot program, launched in early 2031, assesses the integration of adaptive sports into the primary school curriculum.</description><duration>3 months</duration><entity_class>event</entity_class><history><event>2031-04-15: The pilot program for HydroSlide Sprint began at Cresthaven Primary School.</event></history><id>EVENT-4</id><last_updated>2031-04-15</last_updated><name>Pilot program</name><number_of_participants>Approximately 200 participating students</number_of_participants><organizer>Coordinated by the Cresthaven School Board with support from local organizations</organizer><type>educational</type></event>",
+    "MISCELLANEOUSS_XML": "",
+    "NUM_STORYITEMS": 10,
+    "HISTORY_XML": "<event><date>2030-09-16</date><outline>On 16 September 2030, the {Paralympic Games|EVENT-1} opened with the inaugural presentation of a new sport named \"{HydroSlide Sprint|PRODUCT-2},\" designed specifically for athletes with limited upper body mobility, at {Lake Serene|LOCATION-1} in {Tranquil Springs|LOCATION-2}. {Lake Serene|LOCATION-1}, renowned for its crystal-clear waters and gentle currents, has been a popular training ground for adaptive water sports athletes for over a decade. {Darlene Marstone|PERSON-1}, head of the {Adaptive Sports Innovations Committee|ORGANIZATION-1}, highlighted the collaborative efforts between biomechanical engineers and athletes to develop bespoke adaptive technology integrated into the {HydroSlide devices|PRODUCT-1}. The {Adaptive Sports Innovations Committee|ORGANIZATION-1}, established in 2025, has been pivotal in advancing adaptive sports technologies and fostering partnerships with leading engineering firms. In the preliminary rounds, solo athletes competed in 50-meter sprints, showcasing their precise balance and coordination while maneuvering the {HydroSlide devices|PRODUCT-1} equipment. The {HydroSlide devices|PRODUCT-1}, equipped with gyroscopic stabilizers, allow athletes to maintain balance and control, even in challenging water conditions. Prevailing conditions at {Lake Serene|LOCATION-1}, well-known for its calm waters, provided an ideal environment for stability and control, which were critical for the athletes during the competitions. The lake's consistent water temperature and minimal wave activity have made it a preferred location for adaptive sports events since its designation as a training site in 2028. {Team Lunaris|ORGANIZATION-2}, the reigning champions in adaptive water sports, aimed to leverage their experience to excel in this new category by working with new recruits, many introduced to the sport only months prior. {Team Lunaris|ORGANIZATION-2}, having won the {Adaptive Water Sports Championship|EVENT-2} three times consecutively, brought a wealth of experience and strategic insights to the {HydroSlide Sprint|PRODUCT-2}. Led by coach {Eliza Thorne|PERSON-2}, {Team Lumina|ORGANIZATION-3}, a recently assembled team formed from international elite long-standing wheelchair swimmers, showcased innovative techniques that combined agility with enhanced hydrodynamic designs. Coach {Eliza Thorne|PERSON-2}, a former Paralympic swimmer with over 15 years of coaching experience, has been instrumental in developing {Team Lumina|ORGANIZATION-3}'s unique training regimen. The {holographic scoreboard|PRODUCT-3} displaying live metrics and athlete performance analytics was appreciated by spectators for enhancing their understanding and enjoyment of the nuanced sport. The scoreboard, developed by {TechVision Innovations|ORGANIZATION-4}, provided real-time data on speed, trajectory, and balance, offering spectators a deeper insight into the athletes' performances. During the closing ceremony, {Kaden Harris|PERSON-3}, a finalist in the sprint event, received applause for his advocacy work in promoting accessibility in sports technology and was awarded the {Paralympic Sports Innovation Award|EVENT-1}. {Kaden Harris|PERSON-3}, who has been a vocal advocate for adaptive sports since his debut in the {Paralympic Games|EVENT-1} in 2028, has worked with several organizations to improve accessibility in sports facilities. Organizer Vlad Petrovic, from the {International Sports Development Federation|ORGANIZATION-5}, emphasized the importance of inclusivity in sports innovation, stressing the role of organizations in providing platforms for diverse athletic expressions. The {International Sports Development Federation|ORGANIZATION-5}, founded in 2020, has been at the forefront of promoting inclusivity and diversity in global sports events. Following the successful event, plans for a comprehensive development program for {HydroSlide Sprint|PRODUCT-2} were discussed, aiming to introduce the sport in schools and community centers worldwide. The development program, set to launch in early 2031, will include training modules, equipment kits, and workshops designed to make {HydroSlide Sprint|PRODUCT-2} accessible to a broader audience.</outline></event>\n<event><date>2031-04-15</date><outline>The {Cresthaven School Board|PERSON-4} at its meeting on April 15, 2031, approved the integration of {HydroSlide Sprint|PRODUCT-2} into physical education programs across all public schools in the region. This decision marks a significant milestone in Cresthaven's commitment to inclusive education, reflecting a broader trend towards integrating adaptive sports into mainstream curricula. {Darlene Marstone|PERSON-1}, head of the {Adaptive Sports Innovations Committee|ORGANIZATION-1}, emphasized the importance of adapting sports curricula to promote inclusivity and encourage broader participation in adaptive sports. Marstone highlighted that the integration of {HydroSlide Sprint|PRODUCT-2} aligns with the committee's mission to enhance the lives of individuals with disabilities through pioneering sports technologies. The proposed curriculum includes a comprehensive module on the fundamentals of {HydroSlide Sprint|PRODUCT-2}, featuring guidelines on the use of {HydroSlide devices|PRODUCT-1}. The module will cover safety protocols, basic techniques, and the benefits of using {HydroSlide devices|PRODUCT-1}, which are designed to enhance mobility and stability for athletes with physical challenges. An {informational session|EVENT-3} was conducted at {Cresthaven Community Center|LOCATION-4}, where students and teachers demonstrated the capabilities and safety features of the {HydroSlide devices|PRODUCT-1} developed by {TechVision Innovations|ORGANIZATION-4}. During the session, participants explored the gyroscopic stabilizers of the {HydroSlide devices|PRODUCT-1}, which allow athletes to maintain balance and control in water. {Kaden Harris|PERSON-3}, an influential advocate for adaptive sports, spoke at the session, highlighting the transformative potential of adaptive sports in schools and his hopes for increasing student engagement. Harris shared his vision of creating a more inclusive sports culture, where students of all abilities can participate and excel in adaptive sports. {Eliza Thorne|PERSON-2} delivered a workshop for physical education teachers, instructing them on effectively coaching {HydroSlide Sprint|PRODUCT-2} techniques with diverse groups of students. Thorne's workshop included hands-on training sessions, where teachers practiced coaching techniques and learned how to adapt lessons for students with varying abilities. The first {pilot program|EVENT-4} of the curriculum began at {Cresthaven Primary School|LOCATION-3}, where equipment and trainers from {Team Lumina|ORGANIZATION-3} provided on-site support and facilitated interactive lessons. At {Cresthaven Primary School|LOCATION-3}, students engaged in interactive lessons that focused on teamwork, coordination, and the joy of participating in a new sport. Local government representatives praised the initiative, asserting that the official endorsement by educational authorities signaled a significant step towards normalizing adaptive sports within mainstream education. Representatives emphasized that this initiative could serve as a model for other regions looking to integrate adaptive sports into their educational systems. Community feedback from early adopters of the program was overwhelmingly positive, with students expressing excitement about participating in a new sport and appreciating its inclusive nature. Students reported feeling more confident and motivated to participate in physical activities, highlighting the positive impact of the program on their overall well-being. Future community outreach events are planned by the {Adaptive Sports Innovations Committee|ORGANIZATION-1} to further encourage family and peer involvement in {HydroSlide Sprint|PRODUCT-2} activities. These events aim to foster a supportive community environment, where families can learn about adaptive sports and engage in activities together.</outline></event>",
+    "STORY_ITEM": [
+      "On the morning of November 20, 2031, {Cresthaven School Board|PERSON-4} reconvened to address concerns over equipment shortages that were disrupting the implementation of the {HydroSlide Sprint|PRODUCT-2} curriculum.",
+      "The shortage was primarily due to delays in shipping and customs clearance, which had caused a backlog of {HydroSlide devices|PRODUCT-1} at the port of Laconia.",
+      "{Darlene Marstone|PERSON-1}, head of the {Adaptive Sports Innovations Committee|ORGANIZATION-1}, attended the meeting alongside representatives from {TechVision Innovations|ORGANIZATION-4}, the manufacturer of {HydroSlide devices|PRODUCT-1}.",
+      "Marstone emphasized the importance of timely delivery to ensure the curriculum's success and proposed a partnership with local logistics companies to expedite the process.",
+      "{Darlene Marstone|PERSON-1} proposed a review of logistics and resource distribution to expedite the delivery of the remaining {HydroSlide devices|PRODUCT-1} to the affected schools.",
+      "She suggested implementing a tracking system to monitor the progress of each shipment and ensure transparency with the schools.",
+      "The {Adaptive Sports Innovations Committee|ORGANIZATION-1} highlighted that delays were primarily due to unforeseen production bottlenecks at the manufacturing facility.",
+      "These bottlenecks were caused by a shortage of specialized components needed for the gyroscopic stabilizers in the {HydroSlide devices|PRODUCT-1}.",
+      "{TechVision Innovations|ORGANIZATION-4} assured stakeholders that they had increased production capacity and aimed to resolve the shortage within the next two months.",
+      "The company planned to hire additional staff and extend working hours to meet the increased demand for {HydroSlide devices|PRODUCT-1}.",
+      "{Eliza Thorne|PERSON-2} volunteered to help train additional coaches and volunteers to optimize the use of the limited {HydroSlide devices|PRODUCT-1} currently available.",
+      "Thorne proposed a series of weekend workshops at {Cresthaven Community Center|LOCATION-4} to quickly upskill coaches and volunteers.",
+      "{Kaden Harris|PERSON-3} emphasized the importance of community engagement and proposed public outreach events to garner local support and additional resources.",
+      "Harris suggested organizing a community fair at {Lake Serene|LOCATION-1} to showcase the benefits of adaptive sports and encourage local businesses to sponsor the program.",
+      "The {Cresthaven Community Center|LOCATION-4} was selected as the location for the next information session to demonstrate alternative training exercises until more equipment is available.",
+      "The session will include demonstrations of dry-land training techniques that can be practiced without the {HydroSlide devices|PRODUCT-1}.",
+      "Council member {Lia Simmons|PERSON-5}, representing local government, pledged support in terms of temporary funding to ensure smooth implementation of interim solutions.",
+      "Simmons announced a grant of $50,000 to cover the costs of alternative training equipment and materials for the interim period.",
+      "Student feedback collected by {Cresthaven Primary School|LOCATION-3} indicated high enthusiasm for the {HydroSlide Sprint|PRODUCT-2} program despite logistical challenges, showing strong support for continued investment.",
+      "Students expressed excitement about the potential for new friendships and personal growth through participation in the program."
+    ],
+    "DATE": "2031-11-20",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 2,
+    "OUTLINE": "On the morning of November 20, 2031, {Cresthaven School Board|PERSON-4} reconvened to address concerns over equipment shortages that were disrupting the implementation of the {HydroSlide Sprint|PRODUCT-2} curriculum.\nThe shortage was primarily due to delays in shipping and customs clearance, which had caused a backlog of {HydroSlide devices|PRODUCT-1} at the port of Laconia.\n{Darlene Marstone|PERSON-1}, head of the {Adaptive Sports Innovations Committee|ORGANIZATION-1}, attended the meeting alongside representatives from {TechVision Innovations|ORGANIZATION-4}, the manufacturer of {HydroSlide devices|PRODUCT-1}.\nMarstone emphasized the importance of timely delivery to ensure the curriculum's success and proposed a partnership with local logistics companies to expedite the process.\n{Darlene Marstone|PERSON-1} proposed a review of logistics and resource distribution to expedite the delivery of the remaining {HydroSlide devices|PRODUCT-1} to the affected schools.\nShe suggested implementing a tracking system to monitor the progress of each shipment and ensure transparency with the schools.\nThe {Adaptive Sports Innovations Committee|ORGANIZATION-1} highlighted that delays were primarily due to unforeseen production bottlenecks at the manufacturing facility.\nThese bottlenecks were caused by a shortage of specialized components needed for the gyroscopic stabilizers in the {HydroSlide devices|PRODUCT-1}.\n{TechVision Innovations|ORGANIZATION-4} assured stakeholders that they had increased production capacity and aimed to resolve the shortage within the next two months.\nThe company planned to hire additional staff and extend working hours to meet the increased demand for {HydroSlide devices|PRODUCT-1}.\n{Eliza Thorne|PERSON-2} volunteered to help train additional coaches and volunteers to optimize the use of the limited {HydroSlide devices|PRODUCT-1} currently available.\nThorne proposed a series of weekend workshops at {Cresthaven Community Center|LOCATION-4} to quickly upskill coaches and volunteers.\n{Kaden Harris|PERSON-3} emphasized the importance of community engagement and proposed public outreach events to garner local support and additional resources.\nHarris suggested organizing a community fair at {Lake Serene|LOCATION-1} to showcase the benefits of adaptive sports and encourage local businesses to sponsor the program.\nThe {Cresthaven Community Center|LOCATION-4} was selected as the location for the next information session to demonstrate alternative training exercises until more equipment is available.\nThe session will include demonstrations of dry-land training techniques that can be practiced without the {HydroSlide devices|PRODUCT-1}.\nCouncil member {Lia Simmons|PERSON-5}, representing local government, pledged support in terms of temporary funding to ensure smooth implementation of interim solutions.\nSimmons announced a grant of $50,000 to cover the costs of alternative training equipment and materials for the interim period.\nStudent feedback collected by {Cresthaven Primary School|LOCATION-3} indicated high enthusiasm for the {HydroSlide Sprint|PRODUCT-2} program despite logistical challenges, showing strong support for continued investment.\nStudents expressed excitement about the potential for new friendships and personal growth through participation in the program.",
+    "PRE-CONSISTENCY-NUM-ITEMS": 20,
+    "STORYITEM_XML": "<storyitems>\n<storyitem>On the morning of November 20, 2031, {Cresthaven School Board|PERSON-4} reconvened to address concerns over equipment shortages that were disrupting the implementation of the HydroSlide Sprint curriculum.</storyitem>\n<storyitem>The shortage was primarily due to delays in shipping and customs clearance, which had caused a backlog of {HydroSlide devices|PRODUCT-1} at the port of Laconia.</storyitem>\n<storyitem>{Darlene Marstone|PERSON-1}, head of the {Adaptive Sports Innovations Committee|ORGANIZATION-1}, attended the meeting alongside representatives from {TechVision Innovations|ORGANIZATION-4}, the manufacturer of {HydroSlide devices|PRODUCT-1}.</storyitem>\n<storyitem>Marstone emphasized the importance of timely delivery to ensure the curriculum's success and proposed a partnership with local logistics companies to expedite the process.</storyitem>\n<storyitem>{Darlene Marstone|PERSON-1} proposed a review of logistics and resource distribution to expedite the delivery of the remaining {HydroSlide devices|PRODUCT-1} to the affected schools.</storyitem>\n<storyitem>She suggested implementing a tracking system to monitor the progress of each shipment and ensure transparency with the schools.</storyitem>\n<storyitem>The {Adaptive Sports Innovations Committee|ORGANIZATION-1} highlighted that delays were primarily due to unforeseen production bottlenecks at the manufacturing facility.</storyitem>\n<storyitem>These bottlenecks were caused by a shortage of specialized components needed for the gyroscopic stabilizers in the {HydroSlide devices|PRODUCT-1}.</storyitem>\n<storyitem>{TechVision Innovations|ORGANIZATION-4} assured stakeholders that they had increased production capacity and aimed to resolve the shortage within the next two months.</storyitem>\n<storyitem>The company planned to hire additional staff and extend working hours to meet the increased demand for {HydroSlide devices|PRODUCT-1}.</storyitem>\n<storyitem>{Eliza Thorne|PERSON-2} volunteered to help train additional coaches and volunteers to optimize the use of the limited {HydroSlide devices|PRODUCT-1} currently available.</storyitem>\n<storyitem>Thorne proposed a series of weekend workshops at {Cresthaven Community Center|LOCATION-4} to quickly upskill coaches and volunteers.</storyitem>\n<storyitem>{Kaden Harris|PERSON-3} emphasized the importance of community engagement and proposed public outreach events to garner local support and additional resources.</storyitem>\n<storyitem>Harris suggested organizing a community fair at {Lake Serene|LOCATION-1} to showcase the benefits of adaptive sports and encourage local businesses to sponsor the program.</storyitem>\n<storyitem>The {Cresthaven Community Center|LOCATION-4} was selected as the location for the next information session to demonstrate alternative training exercises until more equipment is available.</storyitem>\n<storyitem>The session will include demonstrations of dry-land training techniques that can be practiced without the {HydroSlide devices|PRODUCT-1}.</storyitem>\n<storyitem>Council member {Lia Simmons}, representing local government, pledged support in terms of temporary funding to ensure smooth implementation of interim solutions.</storyitem>\n<storyitem>Simmons announced a grant of $50,000 to cover the costs of alternative training equipment and materials for the interim period.</storyitem>\n<storyitem>Student feedback collected by {Cresthaven Primary School|LOCATION-3} indicated high enthusiasm for the HydroSlide Sprint program despite logistical challenges, showing strong support for continued investment.</storyitem>\n<storyitem>Students expressed excitement about the potential for new friendships and personal growth through participation in the program.</storyitem>\n<storyitems>",
+    "NEW_PERSON_NAME": [
+      {
+        "name": "Lia Simmons",
+        "old_name": "Lia Simmons"
+      }
+    ],
+    "NEW_ORGANIZATION_NAME": [],
+    "NEW_LOCATION_NAME": [],
+    "NEW_PRODUCT_NAME": [],
+    "NEW_ART_NAME": [],
+    "NEW_BUILDING_NAME": [],
+    "NEW_EVENT_NAME": [],
+    "NEW_MISCELLANEOUS_NAME": [],
+    "CORRECTED_PERSON_NAME": [
+      {
+        "name": "Lia Simmons",
+        "old_name": "Lia Simmons",
+        "id": "PERSON-5"
+      }
+    ],
+    "CORRECTED_ORGANIZATION_NAME": [],
+    "CORRECTED_LOCATION_NAME": [],
+    "CORRECTED_PRODUCT_NAME": [],
+    "CORRECTED_ART_NAME": [],
+    "CORRECTED_BUILDING_NAME": [],
+    "CORRECTED_EVENT_NAME": [],
+    "CORRECTED_MISCELLANEOUS_NAME": [],
+    "CRITIQUE_ERRORS": {
+      "entity-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ]
+    },
+    "ADJUSTED_PERSONS_XML": "<person><id>PERSON-5</id><name>Lia Simmons</name><old_name>Lia Simmons</old_name></person>",
+    "ADJUSTED_ORGANIZATIONS_XML": "",
+    "ADJUSTED_LOCATIONS_XML": "",
+    "ADJUSTED_PRODUCTS_XML": "",
+    "ADJUSTED_ARTS_XML": "",
+    "ADJUSTED_BUILDINGS_XML": "",
+    "ADJUSTED_EVENTS_XML": "",
+    "ADJUSTED_MISCELLANEOUSS_XML": "",
+    "USED_PERSON": [
+      {
+        "id": "PERSON-4",
+        "name": "Cresthaven School Board"
+      },
+      {
+        "id": "PERSON-1",
+        "name": "Darlene Marstone"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Eliza Thorne"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Kaden Harris"
+      },
+      {
+        "id": "PERSON-5",
+        "name": "Lia Simmons"
+      }
+    ],
+    "USED_ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Adaptive Sports Innovations Committee"
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "TechVision Innovations"
+      }
+    ],
+    "USED_LOCATION": [
+      {
+        "id": "LOCATION-4",
+        "name": "Cresthaven Community Center"
+      },
+      {
+        "id": "LOCATION-1",
+        "name": "Lake Serene"
+      },
+      {
+        "id": "LOCATION-3",
+        "name": "Cresthaven Primary School"
+      }
+    ],
+    "USED_PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "HydroSlide devices"
+      },
+      {
+        "id": "PRODUCT-2",
+        "name": "HydroSlide Sprint"
+      }
+    ],
+    "USED_ART": [],
+    "USED_BUILDING": [],
+    "USED_EVENT": [],
+    "USED_MISCELLANEOUS": [],
+    "RESPONSE": "Thank you for pointing out the oversight. Let's correct the response by including the missing entity, \"HydroSlide Sprint,\" which corresponds to `PRODUCT-2`.\n\n### Corrected Output:\n\n```xml\n<results>\n<entities>\n<person><id>PERSON-4</id><name>Cresthaven School Board</name></person>\n<person><id>PERSON-1</id><name>Darlene Marstone</name></person>\n<organization><id>ORGANIZATION-1</id><name>Adaptive Sports Innovations Committee</name></organization>\n<organization><id>ORGANIZATION-4</id><name>TechVision Innovations</name></organization>\n<person><id>PERSON-2</id><name>Eliza Thorne</name></person>\n<location><id>LOCATION-4</id><name>Cresthaven Community Center</name></location>\n<person><id>PERSON-3</id><name>Kaden Harris</name></person>\n<location><id>LOCATION-1</id><name>Lake Serene</name></location>\n<person><id>PERSON-5</id><name>Lia Simmons</name></person>\n<product><id>PRODUCT-1</id><name>HydroSlide devices</name></product>\n<product><id>PRODUCT-2</id><name>HydroSlide Sprint</name></product>\n<location><id>LOCATION-3</id><name>Cresthaven Primary School</name></location>\n</entities>\n</results>\n```\n\nThis updated response now includes all entities explicitly mentioned by name in the outline, including \"HydroSlide Sprint\" as `PRODUCT-2`.",
+    "USED_PRE-EXISTING-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Darlene Marstone",
+        "entity_class": "person",
+        "description": "Darlene Marstone is a driven and innovative engineer, passionate about leveraging technology to improve quality of life for physically challenged athletes",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2030-09-16",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Darlene Marstone played a key role in the development of HydroSlide devices, which were integral to the new sport at the Paralympic Games.",
+            "date": "2030-09-16"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Darlene Marstone emphasized the importance of integrating HydroSlide Sprint into school curricula for inclusivity.",
+            "date": "2031-04-15"
+          }
+        ],
+        "date_of_birth": "1985-11-23",
+        "gender": "Female",
+        "profession": "Biomedical Engineer",
+        "nationality": "Lacopian",
+        "education": "PhD in Biomedical Engineering from TechVoy University",
+        "height": "5'7\"",
+        "weight": "145 lbs",
+        "eye_color": "Hazel",
+        "hair_color": "Brunette",
+        "political_affiliation": "Non-affiliated",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Eliza Thorne",
+        "entity_class": "person",
+        "description": "Eliza Thorne is a highly respected coach, renowned for her innovative training techniques and dedication to mentoring athletes with disabilities",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2030-09-16",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Eliza Thorne led Team Lumina, which showcased innovative techniques in the HydroSlide Sprint event at the Paralympic Games.",
+            "date": "2030-09-16"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Eliza Thorne conducted a workshop for physical education teachers on coaching HydroSlide Sprint techniques.",
+            "date": "2031-04-15"
+          }
+        ],
+        "date_of_birth": "1975-06-15",
+        "gender": "Female",
+        "profession": "Coach",
+        "nationality": "Lacopian",
+        "education": "Bachelor's Degree in Sports Science from Aerodynamics College",
+        "height": "5'8\"",
+        "weight": "135 lbs",
+        "eye_color": "Blue",
+        "hair_color": "Blonde",
+        "political_affiliation": "Non-affiliated",
+        "marital_status": "Married to Alex Thorne",
+        "spouse": "Alex Thorne"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Kaden Harris",
+        "entity_class": "person",
+        "description": "Kaden Harris is an influential activist and coordinator, committed to promoting inclusivity in all sports and public spaces, particularly advancing adaptive sports technology",
+        "type": null,
+        "created_at": 0,
+        "last_updated": "2030-09-16",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Kaden Harris was recognized with the Paralympic Sports Innovation Award for his advocacy in adaptive sports technology during the Paralympic Games.",
+            "date": "2030-09-16"
+          },
+          {
+            "created_at": 1,
+            "event_update": "Kaden Harris spoke at the informational session about the transformative potential of adaptive sports in schools.",
+            "date": "2031-04-15"
+          }
+        ],
+        "date_of_birth": "1990-03-12",
+        "gender": "Male",
+        "profession": "Advocacy Coordinator",
+        "nationality": "Lacopian",
+        "education": "Master's in Public Policy from Global Leaders Institute",
+        "height": "6'1\"",
+        "weight": "180 lbs",
+        "eye_color": "Green",
+        "hair_color": "Black",
+        "political_affiliation": "Progressive Alliance",
+        "marital_status": "Single"
+      },
+      {
+        "id": "PERSON-4",
+        "name": "Cresthaven School Board",
+        "entity_class": "person",
+        "description": "The Cresthaven School Board, constituted in 2005, oversees educational policies and curricula for public schools in Cresthaven.",
+        "type": null,
+        "created_at": 1,
+        "last_updated": "2031-04-15",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "The Cresthaven School Board approved the integration of HydroSlide Sprint into physical education programs.",
+            "date": "2031-04-15"
+          }
+        ],
+        "date_of_birth": "N/A",
+        "gender": "Group",
+        "profession": "Educational governance",
+        "nationality": "Composed of members from the Cresthaven region",
+        "education": "Varied educational backgrounds among members",
+        "height": "N/A",
+        "weight": "N/A",
+        "eye_color": "N/A",
+        "hair_color": "N/A",
+        "political_affiliation": "Non-affiliated",
+        "marital_status": "N/A",
+        "spouse": "N/A"
+      }
+    ],
+    "USED_NEW-PERSON": [
+      {
+        "id": "PERSON-5",
+        "name": "Lia Simmons",
+        "category": "person"
+      }
+    ],
+    "ALL_USED_PERSON_XML": "<person><created_at>0</created_at><date_of_birth>1985-11-23</date_of_birth><description>Darlene Marstone is a driven and innovative engineer, passionate about leveraging technology to improve quality of life for physically challenged athletes</description><education>PhD in Biomedical Engineering from TechVoy University</education><entity_class>person</entity_class><eye_color>Hazel</eye_color><gender>Female</gender><hair_color>Brunette</hair_color><height>5'7\"</height><history><event>2030-09-16: Darlene Marstone played a key role in the development of HydroSlide devices, which were integral to the new sport at the Paralympic Games.</event><event>2031-04-15: Darlene Marstone emphasized the importance of integrating HydroSlide Sprint into school curricula for inclusivity.</event></history><id>PERSON-1</id><last_updated>2030-09-16</last_updated><marital_status>Single</marital_status><name>Darlene Marstone</name><nationality>Lacopian</nationality><political_affiliation>Non-affiliated</political_affiliation><profession>Biomedical Engineer</profession><type>None</type><weight>145 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1975-06-15</date_of_birth><description>Eliza Thorne is a highly respected coach, renowned for her innovative training techniques and dedication to mentoring athletes with disabilities</description><education>Bachelor's Degree in Sports Science from Aerodynamics College</education><entity_class>person</entity_class><eye_color>Blue</eye_color><gender>Female</gender><hair_color>Blonde</hair_color><height>5'8\"</height><history><event>2030-09-16: Eliza Thorne led Team Lumina, which showcased innovative techniques in the HydroSlide Sprint event at the Paralympic Games.</event><event>2031-04-15: Eliza Thorne conducted a workshop for physical education teachers on coaching HydroSlide Sprint techniques.</event></history><id>PERSON-2</id><last_updated>2030-09-16</last_updated><marital_status>Married to Alex Thorne</marital_status><name>Eliza Thorne</name><nationality>Lacopian</nationality><political_affiliation>Non-affiliated</political_affiliation><profession>Coach</profession><spouse>Alex Thorne</spouse><type>None</type><weight>135 lbs</weight></person>\n<person><created_at>0</created_at><date_of_birth>1990-03-12</date_of_birth><description>Kaden Harris is an influential activist and coordinator, committed to promoting inclusivity in all sports and public spaces, particularly advancing adaptive sports technology</description><education>Master's in Public Policy from Global Leaders Institute</education><entity_class>person</entity_class><eye_color>Green</eye_color><gender>Male</gender><hair_color>Black</hair_color><height>6'1\"</height><history><event>2030-09-16: Kaden Harris was recognized with the Paralympic Sports Innovation Award for his advocacy in adaptive sports technology during the Paralympic Games.</event><event>2031-04-15: Kaden Harris spoke at the informational session about the transformative potential of adaptive sports in schools.</event></history><id>PERSON-3</id><last_updated>2030-09-16</last_updated><marital_status>Single</marital_status><name>Kaden Harris</name><nationality>Lacopian</nationality><political_affiliation>Progressive Alliance</political_affiliation><profession>Advocacy Coordinator</profession><type>None</type><weight>180 lbs</weight></person>\n<person><created_at>1</created_at><date_of_birth>N/A</date_of_birth><description>The Cresthaven School Board, constituted in 2005, oversees educational policies and curricula for public schools in Cresthaven.</description><education>Varied educational backgrounds among members</education><entity_class>person</entity_class><eye_color>N/A</eye_color><gender>Group</gender><hair_color>N/A</hair_color><height>N/A</height><history><event>2031-04-15: The Cresthaven School Board approved the integration of HydroSlide Sprint into physical education programs.</event></history><id>PERSON-4</id><last_updated>2031-04-15</last_updated><marital_status>N/A</marital_status><name>Cresthaven School Board</name><nationality>Composed of members from the Cresthaven region</nationality><political_affiliation>Non-affiliated</political_affiliation><profession>Educational governance</profession><spouse>N/A</spouse><type>None</type><weight>N/A</weight></person>\n<person><category>person</category><id>PERSON-5</id><name>Lia Simmons</name></person>",
+    "USED-NAME-AND-ID-FOR-PERSON": [
+      {
+        "id": "PERSON-5",
+        "name": "Lia Simmons",
+        "category": "person"
+      },
+      {
+        "name": "Darlene Marstone",
+        "id": "PERSON-1"
+      },
+      {
+        "name": "Eliza Thorne",
+        "id": "PERSON-2"
+      },
+      {
+        "name": "Kaden Harris",
+        "id": "PERSON-3"
+      },
+      {
+        "name": "Cresthaven School Board",
+        "id": "PERSON-4"
+      }
+    ],
+    "USED_PRE-EXISTING-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Adaptive Sports Innovations Committee",
+        "entity_class": "organization",
+        "description": "The committee's mission is to spur advancement in adaptive sports through collaborative innovations, making athletics accessible to individuals with disabilities",
+        "type": "non profit",
+        "created_at": 0,
+        "last_updated": "2030-09-16",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "The Adaptive Sports Innovations Committee was instrumental in developing the HydroSlide devices used in the new sport at the Paralympic Games.",
+            "date": "2030-09-16"
+          },
+          {
+            "created_at": 1,
+            "event_update": "The Adaptive Sports Innovations Committee played a key role in integrating HydroSlide Sprint into school curricula.",
+            "date": "2031-04-15"
+          }
+        ],
+        "founded": "2025",
+        "headquarters": "Spires Centre located in Laconia",
+        "industry": "Adaptive Sports",
+        "mission_statement": "To enhance the lives of individuals with disabilities through pioneering sports technologies and inclusive opportunities",
+        "number_of_employees": "Approximately 150 dedicated professionals and volunteers",
+        "annual_revenue": "Estimated 15000000 from grants and partnerships"
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "TechVision Innovations",
+        "entity_class": "organization",
+        "description": "TechVision Innovations leads in developing cutting edge technology solutions particularly in sports analytics and live event enhancements",
+        "type": "technology company",
+        "created_at": 0,
+        "last_updated": "2030-09-16",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "TechVision Innovations developed the holographic scoreboard used at the Paralympic Games to enhance spectator experience.",
+            "date": "2030-09-16"
+          },
+          {
+            "created_at": 1,
+            "event_update": "TechVision Innovations developed the HydroSlide devices used in the informational session at Cresthaven Community Center.",
+            "date": "2031-04-15"
+          }
+        ],
+        "founded": "2010",
+        "headquarters": "Situated in the Tech Park of Laconia City",
+        "industry": "Technology and Sports Analytics",
+        "mission_statement": "To provide innovative technological solutions to enhance the experience of spectators and a competitive edge for athletes",
+        "number_of_employees": "1200 specialists and developers",
+        "annual_revenue": "200000000 from various technology and sports ventures"
+      }
+    ],
+    "USED_NEW-ORGANIZATION": [],
+    "ALL_USED_ORGANIZATION_XML": "<organization><annual_revenue>Estimated 15000000 from grants and partnerships</annual_revenue><created_at>0</created_at><description>The committee's mission is to spur advancement in adaptive sports through collaborative innovations, making athletics accessible to individuals with disabilities</description><entity_class>organization</entity_class><founded>2025</founded><headquarters>Spires Centre located in Laconia</headquarters><history><event>2030-09-16: The Adaptive Sports Innovations Committee was instrumental in developing the HydroSlide devices used in the new sport at the Paralympic Games.</event><event>2031-04-15: The Adaptive Sports Innovations Committee played a key role in integrating HydroSlide Sprint into school curricula.</event></history><id>ORGANIZATION-1</id><industry>Adaptive Sports</industry><last_updated>2030-09-16</last_updated><mission_statement>To enhance the lives of individuals with disabilities through pioneering sports technologies and inclusive opportunities</mission_statement><name>Adaptive Sports Innovations Committee</name><number_of_employees>Approximately 150 dedicated professionals and volunteers</number_of_employees><type>non profit</type></organization>\n<organization><annual_revenue>200000000 from various technology and sports ventures</annual_revenue><created_at>0</created_at><description>TechVision Innovations leads in developing cutting edge technology solutions particularly in sports analytics and live event enhancements</description><entity_class>organization</entity_class><founded>2010</founded><headquarters>Situated in the Tech Park of Laconia City</headquarters><history><event>2030-09-16: TechVision Innovations developed the holographic scoreboard used at the Paralympic Games to enhance spectator experience.</event><event>2031-04-15: TechVision Innovations developed the HydroSlide devices used in the informational session at Cresthaven Community Center.</event></history><id>ORGANIZATION-4</id><industry>Technology and Sports Analytics</industry><last_updated>2030-09-16</last_updated><mission_statement>To provide innovative technological solutions to enhance the experience of spectators and a competitive edge for athletes</mission_statement><name>TechVision Innovations</name><number_of_employees>1200 specialists and developers</number_of_employees><type>technology company</type></organization>",
+    "USED-NAME-AND-ID-FOR-ORGANIZATION": [
+      {
+        "name": "Adaptive Sports Innovations Committee",
+        "id": "ORGANIZATION-1"
+      },
+      {
+        "name": "TechVision Innovations",
+        "id": "ORGANIZATION-4"
+      }
+    ],
+    "USED_PRE-EXISTING-LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Lake Serene",
+        "entity_class": "location",
+        "description": "Lake Serene is a picturesque destination renowned for its crystal-clear waters, attracting nature enthusiasts and tourists year-round.",
+        "type": "lake",
+        "created_at": 0,
+        "last_updated": "2030-09-16",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "Lake Serene served as the venue for the inaugural HydroSlide Sprint event at the Paralympic Games in 2030.",
+            "date": "2030-09-16"
+          }
+        ],
+        "population": "Estimates suggest over 5000 daily visitors during peak seasons",
+        "area": "Approximately 10 square kilometers",
+        "elevation": "700 meters above sea level",
+        "country": "Located in the fictional region of Cresthaven"
+      },
+      {
+        "id": "LOCATION-3",
+        "name": "Cresthaven Primary School",
+        "entity_class": "location",
+        "description": "Cresthaven Primary School, established in 2005, serves as a foundational educational institution in the Cresthaven district.",
+        "type": "school",
+        "created_at": 1,
+        "last_updated": "2031-04-15",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "Cresthaven Primary School began the first pilot program for integrating HydroSlide Sprint into the curriculum.",
+            "date": "2031-04-15"
+          }
+        ],
+        "population": "Approximately 800 students and 50 staff members",
+        "area": "Covering 1.5 square kilometers",
+        "country": "Located within the fictional region of Cresthaven"
+      },
+      {
+        "id": "LOCATION-4",
+        "name": "Cresthaven Community Center",
+        "entity_class": "location",
+        "description": "Established in 2010, Cresthaven Community Center serves as a hub for local events and activities fostering community engagement.",
+        "type": "community center",
+        "created_at": 1,
+        "last_updated": "2031-04-15",
+        "history": [
+          {
+            "created_at": 1,
+            "event_update": "An informational session was held at Cresthaven Community Center to demonstrate HydroSlide devices.",
+            "date": "2031-04-15"
+          }
+        ],
+        "population": "Staffed by 15 full-time employees and assisted by 25 volunteers",
+        "area": "Spans approximately 2 square kilometers",
+        "country": "Located within the fictional region of Cresthaven"
+      }
+    ],
+    "USED_NEW-LOCATION": [],
+    "ALL_USED_LOCATION_XML": "<location><area>Approximately 10 square kilometers</area><country>Located in the fictional region of Cresthaven</country><created_at>0</created_at><description>Lake Serene is a picturesque destination renowned for its crystal-clear waters, attracting nature enthusiasts and tourists year-round.</description><elevation>700 meters above sea level</elevation><entity_class>location</entity_class><history><event>2030-09-16: Lake Serene served as the venue for the inaugural HydroSlide Sprint event at the Paralympic Games in 2030.</event></history><id>LOCATION-1</id><last_updated>2030-09-16</last_updated><name>Lake Serene</name><population>Estimates suggest over 5000 daily visitors during peak seasons</population><type>lake</type></location>\n<location><area>Covering 1.5 square kilometers</area><country>Located within the fictional region of Cresthaven</country><created_at>1</created_at><description>Cresthaven Primary School, established in 2005, serves as a foundational educational institution in the Cresthaven district.</description><entity_class>location</entity_class><history><event>2031-04-15: Cresthaven Primary School began the first pilot program for integrating HydroSlide Sprint into the curriculum.</event></history><id>LOCATION-3</id><last_updated>2031-04-15</last_updated><name>Cresthaven Primary School</name><population>Approximately 800 students and 50 staff members</population><type>school</type></location>\n<location><area>Spans approximately 2 square kilometers</area><country>Located within the fictional region of Cresthaven</country><created_at>1</created_at><description>Established in 2010, Cresthaven Community Center serves as a hub for local events and activities fostering community engagement.</description><entity_class>location</entity_class><history><event>2031-04-15: An informational session was held at Cresthaven Community Center to demonstrate HydroSlide devices.</event></history><id>LOCATION-4</id><last_updated>2031-04-15</last_updated><name>Cresthaven Community Center</name><population>Staffed by 15 full-time employees and assisted by 25 volunteers</population><type>community center</type></location>",
+    "USED-NAME-AND-ID-FOR-LOCATION": [
+      {
+        "name": "Lake Serene",
+        "id": "LOCATION-1"
+      },
+      {
+        "name": "Cresthaven Primary School",
+        "id": "LOCATION-3"
+      },
+      {
+        "name": "Cresthaven Community Center",
+        "id": "LOCATION-4"
+      }
+    ],
+    "USED_PRE-EXISTING-PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "HydroSlide devices",
+        "entity_class": "product",
+        "description": "HydroSlide devices are advanced adaptive sports equipment designed to enhance mobility and stability for athletes with physical challenges",
+        "type": "consumer good",
+        "created_at": 0,
+        "last_updated": "2030-09-16",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "HydroSlide devices were used in the HydroSlide Sprint event at the Paralympic Games, showcasing their stability and control features.",
+            "date": "2030-09-16"
+          },
+          {
+            "created_at": 1,
+            "event_update": "HydroSlide devices were demonstrated at an informational session and are part of the new curriculum module.",
+            "date": "2031-04-15"
+          }
+        ],
+        "manufacturer": "Developed through a partnership between Adaptive Sports Innovations Committee and TechVision Innovations",
+        "release_date": "Released in 2030 to coincide with the introduction of HydroSlide Sprint in the Paralympic Games",
+        "price": "Initially priced at 3000 each",
+        "weight": "15kg per device designed for portability and ease of use",
+        "warranty": "Comes with a 5 year warranty covering defects and necessary repairs"
+      },
+      {
+        "id": "PRODUCT-2",
+        "name": "HydroSlide Sprint",
+        "entity_class": "product",
+        "description": "HydroSlide Sprint is a newly conceptualized adaptive sport focusing on speed and agility specifically crafted for athletes with restricted upper body mobility",
+        "type": "sport",
+        "created_at": 0,
+        "last_updated": "2030-09-16",
+        "history": [
+          {
+            "created_at": 0,
+            "event_update": "HydroSlide Sprint was introduced as a new sport at the Paralympic Games, designed for athletes with limited upper body mobility.",
+            "date": "2030-09-16"
+          },
+          {
+            "created_at": 1,
+            "event_update": "HydroSlide Sprint was approved for integration into physical education programs across public schools in Cresthaven.",
+            "date": "2031-04-15"
+          }
+        ],
+        "manufacturer": "Co-developed by the Adaptive Sports Innovations Committee and TechVision Innovations as part of a broader initiative",
+        "release_date": "Formally introduced during the Paralympic Games in 2030",
+        "price": "No entry fee needed for registration in official events but costs for training and participation vary",
+        "weight": "N/A as it refers to a sport rather than a tangible product",
+        "warranty": "Not applicable but includes equipment guidelines and athlete safety protocols"
+      }
+    ],
+    "USED_NEW-PRODUCT": [],
+    "ALL_USED_PRODUCT_XML": "<product><created_at>0</created_at><description>HydroSlide devices are advanced adaptive sports equipment designed to enhance mobility and stability for athletes with physical challenges</description><entity_class>product</entity_class><history><event>2030-09-16: HydroSlide devices were used in the HydroSlide Sprint event at the Paralympic Games, showcasing their stability and control features.</event><event>2031-04-15: HydroSlide devices were demonstrated at an informational session and are part of the new curriculum module.</event></history><id>PRODUCT-1</id><last_updated>2030-09-16</last_updated><manufacturer>Developed through a partnership between Adaptive Sports Innovations Committee and TechVision Innovations</manufacturer><name>HydroSlide devices</name><price>Initially priced at 3000 each</price><release_date>Released in 2030 to coincide with the introduction of HydroSlide Sprint in the Paralympic Games</release_date><type>consumer good</type><warranty>Comes with a 5 year warranty covering defects and necessary repairs</warranty><weight>15kg per device designed for portability and ease of use</weight></product>\n<product><created_at>0</created_at><description>HydroSlide Sprint is a newly conceptualized adaptive sport focusing on speed and agility specifically crafted for athletes with restricted upper body mobility</description><entity_class>product</entity_class><history><event>2030-09-16: HydroSlide Sprint was introduced as a new sport at the Paralympic Games, designed for athletes with limited upper body mobility.</event><event>2031-04-15: HydroSlide Sprint was approved for integration into physical education programs across public schools in Cresthaven.</event></history><id>PRODUCT-2</id><last_updated>2030-09-16</last_updated><manufacturer>Co-developed by the Adaptive Sports Innovations Committee and TechVision Innovations as part of a broader initiative</manufacturer><name>HydroSlide Sprint</name><price>No entry fee needed for registration in official events but costs for training and participation vary</price><release_date>Formally introduced during the Paralympic Games in 2030</release_date><type>sport</type><warranty>Not applicable but includes equipment guidelines and athlete safety protocols</warranty><weight>N/A as it refers to a sport rather than a tangible product</weight></product>",
+    "USED-NAME-AND-ID-FOR-PRODUCT": [
+      {
+        "name": "HydroSlide devices",
+        "id": "PRODUCT-1"
+      },
+      {
+        "name": "HydroSlide Sprint",
+        "id": "PRODUCT-2"
+      }
+    ],
+    "USED_PRE-EXISTING-ART": [],
+    "USED_NEW-ART": [],
+    "ALL_USED_ART_XML": "",
+    "USED-NAME-AND-ID-FOR-ART": [],
+    "USED_PRE-EXISTING-BUILDING": [],
+    "USED_NEW-BUILDING": [],
+    "ALL_USED_BUILDING_XML": "",
+    "USED-NAME-AND-ID-FOR-BUILDING": [],
+    "USED_PRE-EXISTING-EVENT": [],
+    "USED_NEW-EVENT": [],
+    "ALL_USED_EVENT_XML": "",
+    "USED-NAME-AND-ID-FOR-EVENT": [],
+    "USED_PRE-EXISTING-MISCELLANEOUS": [],
+    "USED_NEW-MISCELLANEOUS": [],
+    "ALL_USED_MISCELLANEOUS_XML": "",
+    "USED-NAME-AND-ID-FOR-MISCELLANEOUS": [],
+    "USED_NEW-PERSONS_XML": "<person><category>person</category><id>PERSON-5</id><name>Lia Simmons</name></person>",
+    "USED_NEW-ORGANIZATIONS_XML": "",
+    "USED_NEW-LOCATIONS_XML": "",
+    "USED_NEW-PRODUCTS_XML": "",
+    "USED_NEW-ARTS_XML": "",
+    "USED_NEW-BUILDINGS_XML": "",
+    "USED_NEW-EVENTS_XML": "",
+    "USED_NEW-MISCELLANEOUSS_XML": ""
+  }
+}

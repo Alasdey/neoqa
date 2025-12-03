@@ -1,0 +1,223 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "openai/gpt-oss-120b",
+    "temperature": 0.0,
+    "max-tokens": 5000
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "<scratchpad>\nThe original response correctly identifies the absolute dates from the selected sentences, makes a reasonable assumption that \u201cNovember\u202f3\u201d refers to 2025, and derives a 2\u2011day span. The question does not contain any explicit dates, requires both selected sentences, and cannot be answered using any other sentence in the outline. No additional sentences are needed. Therefore, no changes are required.\n</scratchpad>\n\n<results>\n<qa>\n<question>How many days elapse between the fan meet\u2011and\u2011greet with Maya Torres at the Rivergate Community Center and the day Maya Torres is confirmed to be listed in the starting lineup for the season opener?</question>\n<answer>2 days</answer>\n<additional_sentence_ids></additional_sentence_ids>\n<additional_sentence_explanation></additional_sentence_explanation>\n</qa>\n</results>"
+  },
+  "response": "<scratchpad>\nThe original response correctly identifies the absolute dates from the selected sentences, makes a reasonable assumption that \u201cNovember\u202f3\u201d refers to 2025, and derives a 2\u2011day span. The question does not contain any explicit dates, requires both selected sentences, and cannot be answered using any other sentence in the outline. No additional sentences are needed. Therefore, no changes are required.\n</scratchpad>\n\n<results>\n<qa>\n<question>How many days elapse between the fan meet\u2011and\u2011greet with Maya Torres at the Rivergate Community Center and the day Maya Torres is confirmed to be listed in the starting lineup for the season opener?</question>\n<answer>2 days</answer>\n<additional_sentence_ids></additional_sentence_ids>\n<additional_sentence_explanation></additional_sentence_explanation>\n</qa>\n</results>",
+  "instructions": "Check the response from above following these steps:\n1. Carefully examine the response and compare it to the task instructions.\n2. Check if the response meets all criteria outlined in the task instructions.\n3. If you find any problems or discrepancies, describe them in detail using the <scratchpad> tags.\n4. If corrections are needed, make them and explain your changes within the <scratchpad> tags.\n5. Provide the complete and corrected response, even if you didn't change anything.\n\nUse the following output format for your response:\n\n<scratchpad>\n[Outline your reasoning here, including any problems found and explanations for corrections made]\n</scratchpad>\n\n<results>\n<qa>\n<question>[Your refined question about the time span]</question>\n<answer>[The precise and concise answer to the question]</answer>\n<additional_sentence_ids>[List of additional sentence IDs required to answer the question (including those selected in the previous response), if applicable]</additional_sentence_ids>\n<additional_sentence_explanation>[Explain the unique information of each additional sentence that is required to answer the question and justify why it is needed, if applicable]</additional_sentence_explanation>\n</qa>\n</results>\n\nRemember to provide a complete and accurate response, addressing all aspects of the task instructions. If no changes are needed, simply reproduce the original response in the correct format.\n\nImportant:\n- Make minimal changes.\n- Do not remove assumptions just because they are not explicitly stated.",
+  "text_prompt": "Check the response from above following these steps:\n1. Carefully examine the response and compare it to the task instructions.\n2. Check if the response meets all criteria outlined in the task instructions.\n3. If you find any problems or discrepancies, describe them in detail using the <scratchpad> tags.\n4. If corrections are needed, make them and explain your changes within the <scratchpad> tags.\n5. Provide the complete and corrected response, even if you didn't change anything.\n\nUse the following output format for your response:\n\n<scratchpad>\n[Outline your reasoning here, including any problems found and explanations for corrections made]\n</scratchpad>\n\n<results>\n<qa>\n<question>[Your refined question about the time span]</question>\n<answer>[The precise and concise answer to the question]</answer>\n<additional_sentence_ids>[List of additional sentence IDs required to answer the question (including those selected in the previous response), if applicable]</additional_sentence_ids>\n<additional_sentence_explanation>[Explain the unique information of each additional sentence that is required to answer the question and justify why it is needed, if applicable]</additional_sentence_explanation>\n</qa>\n</results>\n\nRemember to provide a complete and accurate response, addressing all aspects of the task instructions. If no changes are needed, simply reproduce the original response in the correct format.\n\nImportant:\n- Make minimal changes.\n- Do not remove assumptions just because they are not explicitly stated.",
+  "system-prompt": null,
+  "values": {
+    "OUTLINES": "<event>\n<date>2025-10-25</date>\n<content>\n<item><id>N3-S0</id><text>Dr. Lina Ortiz announced at Rivergate Sports Complex that Maya Torres had completed her ankle rehabilitation program on 2025-10-25.</text></item>\n<item><id>N3-S1</id><text>The three\u2011week rehabilitation protocol, which combined aquatic therapy, proprioceptive drills, and weekly ultrasound assessments, was documented in a detailed medical report presented by Dr. Lina Ortiz during the announcement.</text></item>\n<item><id>N3-S2</id><text>Rivergate Rivets Women's Basketball Club released an official roster update confirming Maya Torres will be listed in the starting lineup for the season opener on 2025-11-05.</text></item>\n<item><id>N3-S3</id><text>The roster update, posted on the club\u2019s website and shared via Twitter and Instagram, lists Maya Torres under jersey number 12 and confirms a 12\u2011player active roster for the opening game.</text></item>\n<item><id>N3-S4</id><text>Coach Dana Loris stated in a press conference at Rivergate Sports Complex that Maya Torres is medically cleared and expected to play full minutes in the opening game.</text></item>\n<item><id>N3-S5</id><text>Coach Dana Loris added, \u201cMaya Torres\u2019s conditioning metrics are back to pre\u2011injury levels, and we anticipate she will log at least 30 minutes in the game while the team executes our high\u2011tempo offense,\u201d citing the latest GPS and heart\u2011rate data.</text></item>\n<item><id>N3-S6</id><text>Communications Director Sofia Marquez issued a media release noting that the starting\u2011lineup inclusion of Maya Torres fulfills Rivergate Rivets Women's Basketball Club\u2019s commitment to player health and will be highlighted in pre\u2011game promotions.</text></item>\n<item><id>N3-S7</id><text>Sofia Marquez\u2019s release also announced a fan meet\u2011and\u2011greet with Maya Torres at the Rivergate Community Center on November\u202f3, where a limited\u2011edition {[Rise Together][MISCELLANEOUS-2]} {[Rise Together jersey][PRODUCT-1]} featuring her signature will be available for purchase.</text></item>\n<item><id>N3-S8</id><text>The season opener scheduled for 2025-11-05 will be held at Rivergate Sports Complex, featuring Rivergate Rivets Women's Basketball Club versus Midland Mavericks, with Maya Torres slated to start.</text></item>\n<item><id>N3-S9</id><text>Ticket sales have already reached 2,800 of the arena\u2019s 3,200 capacity, and the game will be broadcast live on Valoria Sports Network with a pre\u2011game analysis segment focusing on Maya Torres\u2019s return.</text></item>\n</content>\n</event>",
+    "STORYLINE_OUTLINE_TO_DATE": "<event>\n<date>2025-03-15</date>\n<content>\n<item><id>N0-S0</id><text>Rivergate Rivets Women's Basketball Club signs Elara Finch to a one\u2011year contract extension with a reduced base salary and performance incentives based on games played after Elara Finch's previous season's injury layoff.</text></item>\n<item><id>N0-S1</id><text>The extension sets Elara Finch's base salary at $45,000 for the 2025\u201126 season, with an additional $2,500 per game played beyond the first ten appearances.</text></item>\n<item><id>N0-S2</id><text>Midland Women's Basketball League officially records the registration of Elara Finch's extension with Rivergate Rivets Women's Basketball Club before the domestic transfer deadline of 2025-03-20.</text></item>\n<item><id>N0-S3</id><text>The league filed the contract under registration number MWBL\u20112025\u2011RIV\u2011EF, confirming compliance with the transfer deadline on March 20.</text></item>\n<item><id>N0-S4</id><text>Coach Dana Loris of Rivergate Rivets Women's Basketball Club states that the terms of Elara Finch's extension provide roster stability while rewarding Elara Finch's availability post\u2011injury.</text></item>\n<item><id>N0-S5</id><text>Coach Dana Loris added in a press conference at the Rivergate Sports Complex that the incentive clause will activate only after Elara Finch logs a minimum of 500 minutes on the court.</text></item>\n<item><id>N0-S6</id><text>Sundara Sportswear, the primary kit sponsor of Rivergate Rivets Women's Basketball Club, releases a statement supporting the club's decision and notes that Elara Finch's marketability will be highlighted in upcoming promotional campaigns.</text></item>\n<item><id>N0-S7</id><text>Sundara Sportswear announced that Elara Finch will appear in the upcoming \u201cRise Together\u201d winter apparel campaign, featuring a limited\u2011edition jersey released on April 5.</text></item>\n<item><id>N0-S8</id><text>Rivergate Rivets Women's Basketball Club announces that the reduced salary allocation from Elara Finch's extension frees cap space to sign a backup shooting guard before the season opener.</text></item>\n<item><id>N0-S9</id><text>The freed cap space, estimated at $12,000, will be allocated to sign veteran guard Maya Torres from the neighboring Lakeside Lynx before the season opener on October 2.</text></item>\n</content>\n</event>\n<event>\n<date>2025-04-05</date>\n<content>\n<item><id>N1-S0</id><text>Sundara Sportswear released the limited\u2011edition Rise Together Rise Together jersey featuring Elara Finch on 2025-04-05 at the Sundara Sportswear flagship store in Sunvale.</text></item>\n<item><id>N1-S1</id><text>The jersey, crafted from 85% recycled polyester with a moisture\u2011wicking interior, was priced at $119 and the launch ceremony was attended by coach Dana Loris, Rivergate Rivets Women's Basketball Club mayoral representative, and local media.</text></item>\n<item><id>N1-S2</id><text>The limited\u2011edition Rise Together Rise Together jersey sold out its initial allocation of 3,000 units within 48 hours at Sundara Sportswear retail locations and the Rivergate Rivets Women's Basketball Club online store.</text></item>\n<item><id>N1-S3</id><text>Sales data show 1,820 units were purchased at the Sunvale flagship, 620 through the online store, and 560 at regional Sundara Sportswear outlets, with 2,500 units sold in the first 24 hours.</text></item>\n<item><id>N1-S4</id><text>Rivergate Rivets Women's Basketball Club announced that all net proceeds from the limited\u2011edition Rise Together Rise Together jersey sales will be allocated to fund a free community basketball clinic in Rivergate scheduled for June 2025.</text></item>\n<item><id>N1-S5</id><text>The club estimates net proceeds of approximately $180,000, which will fund a two\u2011day clinic at the Rivergate Community Center for up to 150 local youth, featuring coaching staff from the Rivergate Rivets Women's Basketball Club and guest trainers.</text></item>\n<item><id>N1-S6</id><text>Elara Finch issued a public statement praising the limited\u2011edition Rise Together Rise Together jersey and confirming her participation in the upcoming community basketball clinic organized by Rivergate Rivets Women's Basketball Club.</text></item>\n<item><id>N1-S7</id><text>In her statement, Elara Finch said, \u201cWearing this jersey reminds me of the fans who lift us every game, and I can\u2019t wait to share skills and stories at the June 12 clinic,\u201d confirming she will lead a shooting\u2011drills workshop.</text></item>\n<item><id>N1-S8</id><text>Sundara Sportswear confirmed a supplemental production run of 2,000 limited\u2011edition Rise Together Rise Together jersey jerseys to meet continued demand, with delivery planned for early May 2025.</text></item>\n<item><id>N1-S9</id><text>The additional 2,000 jerseys will be manufactured at Sundara Sportswear\u2019s Greenfield eco\u2011factory and are scheduled to ship on May\u202f3, 2025, to be stocked at the same retail locations and the online store.</text></item>\n</content>\n</event>\n<event>\n<date>2025-10-04</date>\n<content>\n<item><id>N2-S0</id><text>On 2025-10-04, during the Rivergate Rivets Women's Basketball Club\u2019s second league game at Rivergate Sports Complex, Maya Torres suffered a bruised left ankle after landing awkwardly following a defensive rebound.</text></item>\n<item><id>N2-S1</id><text>The injury occurred in the second quarter with 3:12 remaining on the clock, as Rivergate Rivets Women's Basketball Club trailed the Midland Mavericks 34\u201128.</text></item>\n<item><id>N2-S2</id><text>Medical staff at Rivergate Sports Complex evaluated Maya Torres\u2019s ankle and diagnosed a grade\u2011I contusion, prescribing rest and limited court time for a minimum of two weeks.</text></item>\n<item><id>N2-S3</id><text>Team physician Dr. Lina Ortiz performed a bedside ultrasound that confirmed no ligament tear and applied an ice compress and compression wrap before sending Maya Torres to the on\u2011site physiotherapy suite.</text></item>\n<item><id>N2-S4</id><text>Coach Dana Loris of Rivergate Rivets Women's Basketball Club announced that Maya Torres will have playing minutes limited to twelve per quarter for the remainder of the season\u2019s opening month.</text></item>\n<item><id>N2-S5</id><text>The twelve\u2011minute cap per quarter translates to a maximum of 48 minutes per game, and the coaching staff will track Maya Torres\u2019s workload using the club\u2019s wearable GPS and heart\u2011rate monitors.</text></item>\n<item><id>N2-S6</id><text>Coach Dana Loris decided not to activate rookie reserve Leila Kade, a recent graduate of Rivergate Academy of Sports, keeping Leila Kade on the bench despite the reduced minutes for Maya Torres.</text></item>\n<item><id>N2-S7</id><text>Leila Kade, a 5\u2011foot\u20119 point guard who averaged 4.2 points and 2.1 assists in her final academy season, remains on the active roster and will continue to practice with the first\u2011team unit while awaiting a potential debut.</text></item>\n<item><id>N2-S8</id><text>Rivergate Rivets Women's Basketball Club issued an official statement confirming the injury protocol for Maya Torres, emphasizing player health and the team\u2019s commitment to compete at full strength once Maya Torres recovers.</text></item>\n<item><id>N2-S9</id><text>Communications Director Sofia Marquez said, \u201cMaya\u2019s health is our top priority, and we will allocate a portion of the net proceeds from the {[Rise Together jersey][PRODUCT-1]} {[Rise Together jersey campaign][MISCELLANEOUS-3]} to support her rehabilitation program.\u201d</text></item>\n</content>\n</event>\n<event>\n<date>2025-10-25</date>\n<content>\n<item><id>N3-S0</id><text>Dr. Lina Ortiz announced at Rivergate Sports Complex that Maya Torres had completed her ankle rehabilitation program on 2025-10-25.</text></item>\n<item><id>N3-S1</id><text>The three\u2011week rehabilitation protocol, which combined aquatic therapy, proprioceptive drills, and weekly ultrasound assessments, was documented in a detailed medical report presented by Dr. Lina Ortiz during the announcement.</text></item>\n<item><id>N3-S2</id><text>Rivergate Rivets Women's Basketball Club released an official roster update confirming Maya Torres will be listed in the starting lineup for the season opener on 2025-11-05.</text></item>\n<item><id>N3-S3</id><text>The roster update, posted on the club\u2019s website and shared via Twitter and Instagram, lists Maya Torres under jersey number 12 and confirms a 12\u2011player active roster for the opening game.</text></item>\n<item><id>N3-S4</id><text>Coach Dana Loris stated in a press conference at Rivergate Sports Complex that Maya Torres is medically cleared and expected to play full minutes in the opening game.</text></item>\n<item><id>N3-S5</id><text>Coach Dana Loris added, \u201cMaya Torres\u2019s conditioning metrics are back to pre\u2011injury levels, and we anticipate she will log at least 30 minutes in the game while the team executes our high\u2011tempo offense,\u201d citing the latest GPS and heart\u2011rate data.</text></item>\n<item><id>N3-S6</id><text>Communications Director Sofia Marquez issued a media release noting that the starting\u2011lineup inclusion of Maya Torres fulfills Rivergate Rivets Women's Basketball Club\u2019s commitment to player health and will be highlighted in pre\u2011game promotions.</text></item>\n<item><id>N3-S7</id><text>Sofia Marquez\u2019s release also announced a fan meet\u2011and\u2011greet with Maya Torres at the Rivergate Community Center on November\u202f3, where a limited\u2011edition {[Rise Together][MISCELLANEOUS-2]} {[Rise Together jersey][PRODUCT-1]} featuring her signature will be available for purchase.</text></item>\n<item><id>N3-S8</id><text>The season opener scheduled for 2025-11-05 will be held at Rivergate Sports Complex, featuring Rivergate Rivets Women's Basketball Club versus Midland Mavericks, with Maya Torres slated to start.</text></item>\n<item><id>N3-S9</id><text>Ticket sales have already reached 2,800 of the arena\u2019s 3,200 capacity, and the game will be broadcast live on Valoria Sports Network with a pre\u2011game analysis segment focusing on Maya Torres\u2019s return.</text></item>\n</content>\n</event>",
+    "SELECTED_EVENTS": [
+      {
+        "created_at": 3,
+        "summary": "Dr. Lina Ortiz confirms that Maya Torres has completed her ankle rehabilitation and will start the season opener on 2025\u201111\u201105 as a member of the starting lineup.",
+        "outline": [
+          {
+            "sentence": "Dr. {Lina Ortiz|PERSON-4} announced at {Rivergate Sports Complex|BUILDING-1} that {Maya Torres|PERSON-3} had completed her ankle rehabilitation program on 2025-10-25.",
+            "id": "N3-S0",
+            "pos": 0
+          },
+          {
+            "sentence": "The three\u2011week rehabilitation protocol, which combined aquatic therapy, proprioceptive drills, and weekly ultrasound assessments, was documented in a detailed medical report presented by Dr. {Lina Ortiz|PERSON-4} during the announcement.",
+            "id": "N3-S1",
+            "pos": 1
+          },
+          {
+            "sentence": "{Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} released an official roster update confirming {Maya Torres|PERSON-3} will be listed in the starting lineup for the season opener on 2025-11-05.",
+            "id": "N3-S2",
+            "pos": 2
+          },
+          {
+            "sentence": "The roster update, posted on the club\u2019s website and shared via {Twitter|ORGANIZATION-8} and {Instagram|ORGANIZATION-9}, lists {Maya Torres|PERSON-3} under jersey number 12 and confirms a 12\u2011player active roster for the opening game.",
+            "id": "N3-S3",
+            "pos": 3
+          },
+          {
+            "sentence": "Coach {Dana Loris|PERSON-2} stated in a press conference at {Rivergate Sports Complex|BUILDING-1} that {Maya Torres|PERSON-3} is medically cleared and expected to play full minutes in the opening game.",
+            "id": "N3-S4",
+            "pos": 4
+          },
+          {
+            "sentence": "Coach {Dana Loris|PERSON-2} added, \u201c{Maya Torres|PERSON-3}\u2019s conditioning metrics are back to pre\u2011injury levels, and we anticipate she will log at least 30 minutes in the game while the team executes our high\u2011tempo offense,\u201d citing the latest GPS and heart\u2011rate data.",
+            "id": "N3-S5",
+            "pos": 5
+          },
+          {
+            "sentence": "Communications Director {Sofia Marquez|PERSON-6} issued a media release noting that the starting\u2011lineup inclusion of {Maya Torres|PERSON-3} fulfills {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1}\u2019s commitment to player health and will be highlighted in pre\u2011game promotions.",
+            "id": "N3-S6",
+            "pos": 6
+          },
+          {
+            "sentence": "{Sofia Marquez|PERSON-6}\u2019s release also announced a fan meet\u2011and\u2011greet with {Maya Torres|PERSON-3} at the {Rivergate Community Center|BUILDING-2} on November\u202f3, where a limited\u2011edition {[Rise Together][MISCELLANEOUS-2]} {[Rise Together jersey][PRODUCT-1]} featuring her signature will be available for purchase.",
+            "id": "N3-S7",
+            "pos": 7
+          },
+          {
+            "sentence": "The season opener scheduled for 2025-11-05 will be held at {Rivergate Sports Complex|BUILDING-1}, featuring {Rivergate Rivets Women's Basketball Club|ORGANIZATION-1} versus {Midland Mavericks|ORGANIZATION-5}, with {Maya Torres|PERSON-3} slated to start.",
+            "id": "N3-S8",
+            "pos": 8
+          },
+          {
+            "sentence": "Ticket sales have already reached 2,800 of the arena\u2019s 3,200 capacity, and the game will be broadcast live on {Valoria Sports Network|ORGANIZATION-7} with a pre\u2011game analysis segment focusing on {Maya Torres|PERSON-3}\u2019s return.",
+            "id": "N3-S9",
+            "pos": 9
+          }
+        ],
+        "used_entities": [
+          {
+            "id": "PERSON-2",
+            "name": "Dana Loris",
+            "entity_type": "person",
+            "new": false
+          },
+          {
+            "id": "PERSON-3",
+            "name": "Maya Torres",
+            "entity_type": "person",
+            "new": false
+          },
+          {
+            "id": "PERSON-4",
+            "name": "Lina Ortiz",
+            "entity_type": "person",
+            "new": false
+          },
+          {
+            "id": "PERSON-6",
+            "name": "Sofia Marquez",
+            "entity_type": "person",
+            "new": false
+          },
+          {
+            "id": "ORGANIZATION-1",
+            "name": "Rivergate Rivets Women's Basketball Club",
+            "entity_type": "organization",
+            "new": false
+          },
+          {
+            "id": "ORGANIZATION-5",
+            "name": "Midland Mavericks",
+            "entity_type": "organization",
+            "new": false
+          },
+          {
+            "id": "ORGANIZATION-7",
+            "name": "Valoria Sports Network",
+            "entity_type": "organization",
+            "new": true
+          },
+          {
+            "id": "ORGANIZATION-8",
+            "name": "Twitter",
+            "entity_type": "organization",
+            "new": true
+          },
+          {
+            "id": "ORGANIZATION-9",
+            "name": "Instagram",
+            "entity_type": "organization",
+            "new": true
+          },
+          {
+            "id": "BUILDING-1",
+            "name": "Rivergate Sports Complex",
+            "entity_type": "building",
+            "new": false
+          },
+          {
+            "id": "BUILDING-2",
+            "name": "Rivergate Community Center",
+            "entity_type": "building",
+            "new": false
+          }
+        ],
+        "parent": 2,
+        "continuation": {
+          "summary": "On 2025\u201111\u201105 the Rivergate Rivets edged the Midland Mavericks 81\u201174, with Maya Torres tallying 22 points and three assists in her season\u2011opening return.",
+          "last_date": "2025-10-25",
+          "continuation_date": "2025-11-05"
+        },
+        "date": "2025-10-25"
+      }
+    ],
+    "CREATED_AT": 3,
+    "NUM_DISTRACTORS": 1,
+    "SUBSET_IDX": 13,
+    "SELECTED_SENTENCES": "<item><id>N3-S7</id><text>Sofia Marquez\u2019s release also announced a fan meet\u2011and\u2011greet with Maya Torres at the Rivergate Community Center on November\u202f3, where a limited\u2011edition {[Rise Together][MISCELLANEOUS-2]} {[Rise Together jersey][PRODUCT-1]} featuring her signature will be available for purchase.</text></item>\n<item><id>N3-S2</id><text>Rivergate Rivets Women's Basketball Club released an official roster update confirming Maya Torres will be listed in the starting lineup for the season opener on 2025-11-05.</text></item>",
+    "SELECTION_EXPLANATION": "Sentence N3\u2011S7 announces a fan meet\u2011and\u2011greet with Maya Torres on November\u202f3\u202f2025. Sentence N3\u2011S2 (and reiterated in N3\u2011S8) sets the season opener for November\u202f5\u202f2025. The time span from 3\u202fNovember\u202f2025 to 5\u202fNovember\u202f2025 is 2 days.",
+    "SELECTION_IDX": 1,
+    "EVIDENCE_CURRENT_SELECTIONS": [
+      "N3-S7",
+      "N3-S2"
+    ],
+    "QA_CURRENT_PAIR": {
+      "question": "How many days elapsed between the day Maya Torres completed her ankle rehabilitation program and the day the Rivergate Rivets Women's Basketball Club released the official roster update confirming her starting\u2011lineup status for the season opener?",
+      "question_id": "321a941a6dc03b8fba727e9e5a6418ae7fb3413686f63ebfdf5f471478357c9b",
+      "evidence_ids": [
+        "N3-S0",
+        "N3-S2"
+      ],
+      "answer": "0 days",
+      "num_hops": 2,
+      "created_at": 3,
+      "category": "multi-event-time-span",
+      "validation": {
+        "is_valid": true,
+        "validations": []
+      },
+      "distractors": [
+        {
+          "answer": "11 days",
+          "explanation": "This answer assumes the roster update was released on the date of the season opener (2025\u201111\u201105) rather than on the same day as the rehabilitation completion (2025\u201110\u201125). The outline indicates the roster update was announced on the same day Maya finished her rehab, so the elapsed time is 0 days, not 11.",
+          "distractor-sentences": [
+            "N3-S0",
+            "N3-S2"
+          ]
+        }
+      ],
+      "distractor_answers": [
+        "0 days",
+        "11 days"
+      ],
+      "gold_answer_idx": 0,
+      "false_premise_category": null,
+      "false_premise_sentence_id": null,
+      "misc": {
+        "scratchpad": "<scratchpad>\n[Sentence N3-S0]:\n- Provides the exact calendar date when Maya Torres completed her ankle rehabilitation program: **2025\u201110\u201125**.\n- Event date for this entry is also 2025\u201110\u201125, confirming the date is absolute.\n\n[Sentence N3\u2011S2]:\n- States the calendar date of the season opener for which Maya Torres will be in the starting lineup: **2025\u201111\u201105**.\n- The roster update was released on the event date 2025\u201110\u201125, but the date of the game is explicitly given as 2025\u201111\u201105.\n\nAssumptions:\n- No additional relative time expressions are needed; both sentences contain absolute dates.\n- The dates are interpreted as calendar dates in the Gregorian calendar.\n\nAbsolute dates derived:\n- Rehabilitation completion: 2025\u201110\u201125\n- Season\u2011opener start: 2025\u201111\u201105\n\nComputation:\n- From 2025\u201110\u201125 to 2025\u201111\u201105 is 11 days (Oct\u202f26\u201131 = 6 days, Nov\u202f1\u20115 = 5 days; 6\u202f+\u202f5\u202f=\u202f11).\n\nQuestion Idea:\n- Ask for the duration (in days) between the day Maya Torres finished her rehab and the day she is scheduled to start in the season opener. This requires both the rehab\u2011completion date (N3\u2011S0) and the season\u2011opener date (N3\u2011S2); no other sentence provides either date.\n\nAnswer derivation:\n- Using the two absolute dates above, the interval is 11 days.\n</scratchpad>",
+        "scratchpad2": "<scratchpad>\n**Issues identified:**\n- The original question asked for the duration between rehab completion (2025\u201110\u201125) and the season\u2011opener start (2025\u201111\u201105).  \n- The season\u2011opener date and the fact that Maya Torres will start are also mentioned in sentence **N3\u2011S8**. Therefore, sentence **N3\u2011S2** is *not* strictly required to answer the question, violating the instruction that *all* selected sentences must be necessary and that *no other* sentence can replace any of them.\n\n**Correction made:**\n- Revised the question to require the *date of the roster update* (the event date of the N3\u2011S2 entry), which is unique to that sentence.  \n- The new question asks for the number of days between Maya Torres completing her rehabilitation (N3\u2011S0) and the club *releasing* the official roster update (N3\u2011S2). Both dates are explicitly the same (the event date 2025\u201110\u201125), so the answer is **0 days**.\n- This formulation ensures that both selected sentences are essential and that no other sentence in the outline can replace either of them.\n\n**Derivation of dates:**\n- **N3\u2011S0**: \u201c...completed her ankle rehabilitation program on 2025\u201110\u201125.\u201d \u2192 rehab completion date = 2025\u201110\u201125.\n- **N3\u2011S2**: The roster update is part of the event dated 2025\u201110\u201125, so the release date = 2025\u201110\u201125.\n- Duration = 0 days (same calendar day).\n\n**Resulting QA pair meets all task criteria.**\n</scratchpad>",
+        "previous_version": {
+          "question": "How many days elapsed between the day Maya Torres completed her ankle rehabilitation program and the day she is slated to be in the starting lineup for the season opener?",
+          "answer": "11 days",
+          "additional_sentence_ids": null,
+          "additional_sentence_explanation": null
+        },
+        "use_decoded": "corrected"
+      },
+      "event_information": {
+        "event_type": {
+          "category": "Player Transfers, Trades, and Contract Signings",
+          "event_type_id": "sports:1"
+        },
+        "event_type_id": "sports:1",
+        "story_seed_id": "sports:1:1"
+      }
+    },
+    "CURRENT_QA_PAIR1": {
+      "question": "How many days elapse between the fan meet\u2011and\u2011greet with Maya Torres at the Rivergate Community Center and the day Maya Torres is confirmed to be listed in the starting lineup for the season opener?",
+      "answer": "2 days",
+      "additional_sentence_ids": null,
+      "additional_sentence_explanation": null
+    },
+    "SCRATCHPAD": "<scratchpad>\n[Sentence N3-S7]:\n- Provides the date of a fan meet\u2011and\u2011greet: \u201con November\u202f3\u201d.\n- Event date for this block is 2025\u201110\u201125, which is earlier than the November\u202f3 mentioned, so the November\u202f3 refers to 2025\u201111\u201103.\nAssumptions:\n- The month \u201cNovember\u201d without a year is understood to be the same year as the surrounding event (2025).\nAbsolute date derived: 2025\u201111\u201103.\n\n[Sentence N3\u2011S2]:\n- States that a roster update confirms Maya Torres will be in the starting lineup for the season opener \u201con 2025\u201111\u201105\u201d.\n- The explicit year is given, so the date is 2025\u201111\u201105.\nAssumptions:\n- None needed; the date is explicit.\nAbsolute date derived: 2025\u201111\u201105.\n\nAdditional sentences:\n- No additional sentences are required. N3\u2011S2 uniquely provides the fact that Maya Torres is listed in the starting lineup for the season opener, which cannot be inferred from any other sentence. N3\u2011S7 uniquely provides the November\u202f3 fan meet\u2011and\u2011greet date.\n\nQuestion Idea:\n- Ask for the time span between the fan meet\u2011and\u2011greet (date from N3\u2011S7) and the day Maya Torres is confirmed to be in the starting lineup for the season opener (date from N3\u2011S2). Both sentences are essential: one supplies the earlier date, the other supplies the later date and the specific condition (being listed in the starting lineup). No other sentence in the outline gives both pieces of information together.\n\n[Answer derivation]:\n- Start date: 2025\u201111\u201103 (fan meet\u2011and\u2011greet).\n- End date: 2025\u201111\u201105 (Maya Torres listed in starting lineup for season opener).\n- Duration = 2 days.\n</scratchpad>",
+    "IS_VALID": true
+  }
+}

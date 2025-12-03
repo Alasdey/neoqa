@@ -1,0 +1,680 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "openai/gpt-5-mini",
+    "temperature": 0.0,
+    "max-tokens": 5000
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "<result>\n<scratchpad>\nI reviewed the event sentences that include the bridge entity \"ibuprofen\" (allowed IDs: N4-S4, N4-S5). Both sentences reference the same medication but provide complementary, specific details:\n- N4-S4 states that the monitoring entry \"recorded a pre-activity pain score of 3/10 and documented one 400 mg ibuprofen taken the previous evening.\" This links dosage with the presence of a pain score.\n- N4-S5 adds timing and context: it notes Maya Cortes \"self-reported taking the single 400 mg ibuprofen dose at approximately 21:30 the previous evening\" and that the 3/10 pain score was recorded at 08:50 immediately prior to the morning session.\n\nConnections for multi-hop reasoning:\n- Bridge entity: ibuprofen. One sentence supplies dosage and association with pain, the other supplies the precise reported time of ingestion and the exact time the pain score was recorded.\n- A multi-hop question can require combining dosage and ingestion time with the pain-score/timing relationship (e.g., asking what dose was taken and when relative to the recorded pre-activity pain).\n\nUniqueness check:\n- The timing and dose details are not present elsewhere in the event text or in the known named-entities (the product entry lists ibuprofen generically but not dose or patient-reported time). Thus both sentences are needed to answer detailed questions about dose and timing.\n\nConclusion: The pair [N4-S4, N4-S5] yields a concise, interesting multi-hop question involving the bridge entity (ibuprofen) that requires integrating dose, reported ingestion time, and the time the pain score was recorded.\n</scratchpad>\n\n<selection>\n<ids>[N4-S4, N4-S5]</ids>\n<explanation>These two sentences both mention ibuprofen and provide complementary, specific details \u2014 N4-S4 records a 400 mg ibuprofen dose linked to a pre-activity 3/10 pain score, while N4-S5 specifies the self-reported ingestion time (~21:30) and the exact time the 3/10 pain score was recorded (08:50). Together they enable multi-hop questions that require combining dose, ingestion timing, and pain-assessment timing; the needed details are not available elsewhere or in the named-entity product entry.</explanation>\n</selection>\n</result>"
+  },
+  "response": "<result>\n<scratchpad>\nI reviewed the event sentences that include the bridge entity \"ibuprofen\" (allowed IDs: N4-S4, N4-S5). Both sentences reference the same medication but provide complementary, specific details:\n- N4-S4 states that the monitoring entry \"recorded a pre-activity pain score of 3/10 and documented one 400 mg ibuprofen taken the previous evening.\" This links dosage with the presence of a pain score.\n- N4-S5 adds timing and context: it notes Maya Cortes \"self-reported taking the single 400 mg ibuprofen dose at approximately 21:30 the previous evening\" and that the 3/10 pain score was recorded at 08:50 immediately prior to the morning session.\n\nConnections for multi-hop reasoning:\n- Bridge entity: ibuprofen. One sentence supplies dosage and association with pain, the other supplies the precise reported time of ingestion and the exact time the pain score was recorded.\n- A multi-hop question can require combining dosage and ingestion time with the pain-score/timing relationship (e.g., asking what dose was taken and when relative to the recorded pre-activity pain).\n\nUniqueness check:\n- The timing and dose details are not present elsewhere in the event text or in the known named-entities (the product entry lists ibuprofen generically but not dose or patient-reported time). Thus both sentences are needed to answer detailed questions about dose and timing.\n\nConclusion: The pair [N4-S4, N4-S5] yields a concise, interesting multi-hop question involving the bridge entity (ibuprofen) that requires integrating dose, reported ingestion time, and the time the pain score was recorded.\n</scratchpad>\n\n<selection>\n<ids>[N4-S4, N4-S5]</ids>\n<explanation>These two sentences both mention ibuprofen and provide complementary, specific details \u2014 N4-S4 records a 400 mg ibuprofen dose linked to a pre-activity 3/10 pain score, while N4-S5 specifies the self-reported ingestion time (~21:30) and the exact time the 3/10 pain score was recorded (08:50). Together they enable multi-hop questions that require combining dose, ingestion timing, and pain-assessment timing; the needed details are not available elsewhere or in the named-entity product entry.</explanation>\n</selection>\n</result>",
+  "instructions": "You are an AI assistant tasked with analyzing fictional event descriptions and identifying sentences that can be used to generate multi-hop questions with a bridge entity. Your goal is to find up to {{MAX_NUMBER_SELECTIONS}} tuples, each comprising 2 sentences, that can be used to create challenging and interesting multi-hop questions with a bridge entity.\n\nHere are the key inputs for this task:\n\n1. Fictional events to analyze:\n<events>\n{{OUTLINES}}\n</events>\n\n2. The bridge entity name for this task:\n<bridge_entity>\n{{BRIDGE_ENTITY_NAME}}\n</bridge_entity>\n\n3. Known named entities:\n<known-named-entities>\n{{KNOWN_PREV_NAMED_ENTITIES}}\n</known-named-entities>\n\n4. List of sentence IDs that include the bridge entity:\n<possible_sentence_ids>\n{{POSSIBLE_SENTENCE_IDS}}\n</possible_sentence_ids>\n\nWhen selecting sentences, follow these guidelines:\n1. If two events are provided, ensure that each tuple covers both events (i.e., one sentence ID stems from the first event, and the other sentence ID stems from the second event).\n2. If only one event is provided, the selected sentence IDs can stem from the same event.\n3. Look for diverse combinations of sentences across the selected events.\n4. Only consider sentence IDs from the provided list of possible sentence IDs.\n5. Ensure that ALL selected sentence IDs include the bridge named entity.\n6. Make sure that the specific information needed to identify the bridge entity cannot be known from any other sentence, nor from the knowledge base entries from the known named entities.\n7. Verify that the information from the known named entities is not sufficient to replace the detailed information found in the selected sentences.\n\nBefore providing your final answer, use a <scratchpad> section to analyze the events and think through potential sentence combinations. This will help you identify the most suitable pairs for multi-hop questions. In your scratchpad, consider the following:\n1. Identify sentences that contain specific information about the bridge entity.\n2. Look for connections between sentences that could form the basis of a multi-hop question.\n3. Evaluate whether the selected sentences provide unique information not available in other sentences or known named entities.\n4. Consider how the sentences could be used to create a challenging and interesting question.\n\nFor each suitable combination of sentences you find, output your selection using this format:\n\n<selection>\n<ids>[IDs of the selected sentences (comma separated)]</ids>\n<explanation>[Explanation of why these sentences are suitable for generating a multi-hop question with the given bridge entity]</explanation>\n</selection>\n\nTry to find as many interesting combinations of sentences as possible, but do not exceed {{MAX_NUMBER_SELECTIONS}} selections.\n\nIf you cannot find any meaningful combination of sentences based on which good multi-hop questions with this bridge entity can be generated, return an empty list.\n\nWrap all your results, including the scratchpad and selections, in a <result> root node. Your final output should look like this:\n\n<result>\n<scratchpad>\n[Your analysis and thought process]\n</scratchpad>\n\n[Your selections, if any]\n\n</result>\n\nRemember, the goal is to identify sentence pairs that can be used to create challenging and interesting multi-hop questions with the given bridge entity. Focus on finding unique and specific information that requires reasoning over both sentences to answer a potential question.",
+  "text_prompt": "You are an AI assistant tasked with analyzing fictional event descriptions and identifying sentences that can be used to generate multi-hop questions with a bridge entity. Your goal is to find up to 1 tuples, each comprising 2 sentences, that can be used to create challenging and interesting multi-hop questions with a bridge entity.\n\nHere are the key inputs for this task:\n\n1. Fictional events to analyze:\n<events>\n<event>\n<date>2025-09-05</date>\n<content>\n<item><id>N4-S0</id><text>Rivermark Lynx physiotherapist Sofia Harlow uploaded daily monitoring entries for Maya Cortes to the Rivermark Lynx club medical portal on 2025-09-05.</text></item>\n<item><id>N4-S1</id><text>The uploaded entry was submitted at 09:12 local time through the Rivermark Lynx secure medical portal using the club's standardized daily-monitoring template and was time-stamped and made visible to the head of medical services and the physiotherapy team.</text></item>\n<item><id>N4-S2</id><text>The uploaded monitoring entry for Maya Cortes recorded an overnight increase in right-knee mid-patellar girth of +0.8 cm in the Rivermark Lynx medical log.</text></item>\n<item><id>N4-S3</id><text>The mid-patellar girth measurement was performed with a calibrated flexible tape at the anatomical mid-point of the patella with Maya Cortes supine and the knee in full extension, and the result was entered to the nearest 0.1 cm per the club's measurement protocol.</text></item>\n<item><id>N4-S4</id><text>The uploaded monitoring entry for Maya Cortes recorded a pre-activity pain score of 3/10 and documented one 400 mg ibuprofen taken the previous evening.</text></item>\n<item><id>N4-S5</id><text>The entry noted that Maya Cortes self-reported taking the single 400 mg ibuprofen dose at approximately 21:30 the previous evening and that the pre-activity 3/10 pain score was recorded at 08:50 immediately prior to the scheduled morning session.</text></item>\n<item><id>N4-S6</id><text>Following the monitoring entries, Rivermark Lynx withdrew Maya Cortes from all on-court team activities and arranged an expedited same-day focused musculoskeletal ultrasound at Harborfen Diagnostic Centre.</text></item>\n<item><id>N4-S7</id><text>Rivermark Lynx submitted a formal non-availability notification on the club management system at 09:35, secured an expedited ultrasound appointment at Harborfen Diagnostic Centre for 14:30 the same day, and arranged for physiotherapist Sofia Harlow to accompany Maya Cortes to the imaging using the club medical vehicle.</text></item>\n<item><id>N4-S8</id><text>Rivermark Lynx notified Dr. Elias Verran and scheduled an urgent clinical review with Dr. Elias Verran to follow the focused ultrasound while Rivermark Lynx informed the head coach and league administrators of Maya Cortes' temporary non-availability for selection.</text></item>\n<item><id>N4-S9</id><text>Dr. Elias Verran was alerted via encrypted email and an urgent phone call at 09:40 with the plan to perform a clinical review within two hours of the completed ultrasound, and the club also updated the league portal with a temporary 'medical' status and phoned the head coach to brief him on Maya Cortes' non-availability.</text></item>\n</content>\n</event>\n</events>\n\n2. The bridge entity name for this task:\n<bridge_entity>\nibuprofen\n</bridge_entity>\n\n3. Known named entities:\n<known-named-entities>\n<person>\n<created_at>0</created_at><date_of_birth>1991-03-14</date_of_birth><description>A driven and disciplined veteran athlete known for leadership meticulous preparation and a strong commitment to mentoring younger players while pursuing personal performance goals.</description><education>Bachelor of Science in Kinesiology from Northshore University</education><entity_class>person</entity_class><eye_color>Brown</eye_color><gender>Female</gender><hair_color>Dark brown</hair_color><height>1.70 m</height><id>PERSON-1</id><last_updated>2025-08-29</last_updated><marital_status>Single</marital_status><name>Maya Cortes</name><nationality>Valoria</nationality><profession>Professional basketball player and point guard</profession><type>None</type><weight>68 kg</weight>\n<created_at>2</created_at><date_of_birth>1979-11-02</date_of_birth><description>A meticulous clinician who prioritizes practical diagnostics, patient education, and conservative, function-focused treatment plans for active adults.</description><education>Doctor of Medicine (MD); Fellowship in Sports Medicine, Harborfen Medical College</education><entity_class>person</entity_class><eye_color>Gray</eye_color><gender>Male</gender><hair_color>Salt-and-pepper</hair_color><height>1.82 m</height><id>PERSON-2</id><last_updated>2025-08-29</last_updated><marital_status>Married</marital_status><name>Dr. Elias Verran</name><nationality>Valorian</nationality><profession>Consultant Sports Medicine Physician</profession><type>None</type><weight>82 kg</weight>\n</person>\n<organization>\n<annual_revenue>2.1 million Valorian credits</annual_revenue><created_at>0</created_at><description>A mid-sized professional basketball club focused on sustainable operations and regional talent development within its domestic league.</description><entity_class>organization</entity_class><founded>2007-06-15</founded><headquarters>Harborfen</headquarters><id>ORGANIZATION-1</id><industry>professional sports</industry><last_updated>2025-08-29</last_updated><mission_statement>To cultivate competitive teams and community engagement through youth programs coaching development and accessible match-day experiences.</mission_statement><name>Rivermark Lynx</name><number_of_employees>72</number_of_employees><type>company</type>\n<annual_revenue>1.3 million Valorian credits</annual_revenue><created_at>2</created_at><description>An outpatient imaging clinic providing focused diagnostic services and rapid-access scans for community healthcare providers.</description><entity_class>organization</entity_class><founded>2014-04-02</founded><headquarters>Harborfen</headquarters><id>ORGANIZATION-2</id><industry>medical diagnostics</industry><last_updated>2025-08-29</last_updated><mission_statement>To deliver accurate, timely imaging services that support effective clinical decision-making in the region.</mission_statement><name>Harborfen Diagnostic Centre</name><number_of_employees>34</number_of_employees><type>company</type>\n</organization>\n<location>\n\n</location>\n<product>\n<created_at>2</created_at><description>An oral non-prescription anti-inflammatory formulated for short-term relief of mild to moderate musculoskeletal pain.</description><entity_class>product</entity_class><id>PRODUCT-1</id><last_updated>2025-08-29</last_updated><manufacturer>Marindale Pharmaceuticals</manufacturer><name>ibuprofen</name><price>6 Valorian credits per 20-tablet pack</price><release_date>2016-06-01</release_date><type>consumer good</type><warranty>Manufacturer quality guarantee: 12 months from release</warranty><weight>0.04 kg per pack</weight>\n</product>\n<art>\n\n</art>\n<building>\n\n</building>\n<event>\n\n</event>\n<miscellaneous>\n\n</miscellaneous>\n</known-named-entities>\n\n4. List of sentence IDs that include the bridge entity:\n<possible_sentence_ids>\nN4-S4, N4-S5\n</possible_sentence_ids>\n\nWhen selecting sentences, follow these guidelines:\n1. If two events are provided, ensure that each tuple covers both events (i.e., one sentence ID stems from the first event, and the other sentence ID stems from the second event).\n2. If only one event is provided, the selected sentence IDs can stem from the same event.\n3. Look for diverse combinations of sentences across the selected events.\n4. Only consider sentence IDs from the provided list of possible sentence IDs.\n5. Ensure that ALL selected sentence IDs include the bridge named entity.\n6. Make sure that the specific information needed to identify the bridge entity cannot be known from any other sentence, nor from the knowledge base entries from the known named entities.\n7. Verify that the information from the known named entities is not sufficient to replace the detailed information found in the selected sentences.\n\nBefore providing your final answer, use a <scratchpad> section to analyze the events and think through potential sentence combinations. This will help you identify the most suitable pairs for multi-hop questions. In your scratchpad, consider the following:\n1. Identify sentences that contain specific information about the bridge entity.\n2. Look for connections between sentences that could form the basis of a multi-hop question.\n3. Evaluate whether the selected sentences provide unique information not available in other sentences or known named entities.\n4. Consider how the sentences could be used to create a challenging and interesting question.\n\nFor each suitable combination of sentences you find, output your selection using this format:\n\n<selection>\n<ids>[IDs of the selected sentences (comma separated)]</ids>\n<explanation>[Explanation of why these sentences are suitable for generating a multi-hop question with the given bridge entity]</explanation>\n</selection>\n\nTry to find as many interesting combinations of sentences as possible, but do not exceed 1 selections.\n\nIf you cannot find any meaningful combination of sentences based on which good multi-hop questions with this bridge entity can be generated, return an empty list.\n\nWrap all your results, including the scratchpad and selections, in a <result> root node. Your final output should look like this:\n\n<result>\n<scratchpad>\n[Your analysis and thought process]\n</scratchpad>\n\n[Your selections, if any]\n\n</result>\n\nRemember, the goal is to identify sentence pairs that can be used to create challenging and interesting multi-hop questions with the given bridge entity. Focus on finding unique and specific information that requires reasoning over both sentences to answer a potential question.",
+  "system-prompt": null,
+  "values": {
+    "OUTLINES": "<event>\n<date>2025-09-05</date>\n<content>\n<item><id>N4-S0</id><text>Rivermark Lynx physiotherapist Sofia Harlow uploaded daily monitoring entries for Maya Cortes to the Rivermark Lynx club medical portal on 2025-09-05.</text></item>\n<item><id>N4-S1</id><text>The uploaded entry was submitted at 09:12 local time through the Rivermark Lynx secure medical portal using the club's standardized daily-monitoring template and was time-stamped and made visible to the head of medical services and the physiotherapy team.</text></item>\n<item><id>N4-S2</id><text>The uploaded monitoring entry for Maya Cortes recorded an overnight increase in right-knee mid-patellar girth of +0.8 cm in the Rivermark Lynx medical log.</text></item>\n<item><id>N4-S3</id><text>The mid-patellar girth measurement was performed with a calibrated flexible tape at the anatomical mid-point of the patella with Maya Cortes supine and the knee in full extension, and the result was entered to the nearest 0.1 cm per the club's measurement protocol.</text></item>\n<item><id>N4-S4</id><text>The uploaded monitoring entry for Maya Cortes recorded a pre-activity pain score of 3/10 and documented one 400 mg ibuprofen taken the previous evening.</text></item>\n<item><id>N4-S5</id><text>The entry noted that Maya Cortes self-reported taking the single 400 mg ibuprofen dose at approximately 21:30 the previous evening and that the pre-activity 3/10 pain score was recorded at 08:50 immediately prior to the scheduled morning session.</text></item>\n<item><id>N4-S6</id><text>Following the monitoring entries, Rivermark Lynx withdrew Maya Cortes from all on-court team activities and arranged an expedited same-day focused musculoskeletal ultrasound at Harborfen Diagnostic Centre.</text></item>\n<item><id>N4-S7</id><text>Rivermark Lynx submitted a formal non-availability notification on the club management system at 09:35, secured an expedited ultrasound appointment at Harborfen Diagnostic Centre for 14:30 the same day, and arranged for physiotherapist Sofia Harlow to accompany Maya Cortes to the imaging using the club medical vehicle.</text></item>\n<item><id>N4-S8</id><text>Rivermark Lynx notified Dr. Elias Verran and scheduled an urgent clinical review with Dr. Elias Verran to follow the focused ultrasound while Rivermark Lynx informed the head coach and league administrators of Maya Cortes' temporary non-availability for selection.</text></item>\n<item><id>N4-S9</id><text>Dr. Elias Verran was alerted via encrypted email and an urgent phone call at 09:40 with the plan to perform a clinical review within two hours of the completed ultrasound, and the club also updated the league portal with a temporary 'medical' status and phoned the head coach to brief him on Maya Cortes' non-availability.</text></item>\n</content>\n</event>",
+    "STORYLINE_OUTLINE_TO_DATE": "<event>\n<date>2025-08-29</date>\n<content>\n<item><id>N0-S0</id><text>Rivermark Lynx announced the signing of a one-year contract extension with veteran point guard Maya Cortes as their final roster move before the domestic transfer deadline.</text></item>\n<item><id>N0-S1</id><text>The club published the extension in an official press release on the Rivermark Lynx website and social channels and completed the paperwork at the team's training facility with the head coach and general manager present.</text></item>\n<item><id>N0-S2</id><text>Rivermark Lynx registered contract terms that reduce Maya Cortes's base salary and include game-play incentives tied to minutes and appearances for the one-year extension.</text></item>\n<item><id>N0-S3</id><text>The recorded incentive structure includes per-appearance fees, stepped bonuses for reaching specific minutes thresholds in individual games and incremental payments tied to appearing in a target proportion of regular-season fixtures.</text></item>\n<item><id>N0-S4</id><text>Maya Cortes completed a club medical assessment and monitored return-to-play program overseen by Rivermark Lynx after an injury layoff last season.</text></item>\n<item><id>N0-S5</id><text>The medical assessment consisted of strength and conditioning benchmarks, on-court movement and shooting tests and cardiovascular screening administered over a short monitoring period, with the club medical staff clearing Maya Cortes to progress into full-team contact training.</text></item>\n<item><id>N0-S6</id><text>Rivermark Lynx filed the finalized roster that includes Maya Cortes with league administrators ahead of the domestic transfer deadline to secure the squad for the opening fixtures.</text></item>\n<item><id>N0-S7</id><text>The club submitted the roster to league administrators that afternoon and received confirmation of registration from the league, ensuring Maya Cortes is officially eligible for selection when the team begins competition.</text></item>\n<item><id>N0-S8</id><text>Maya Cortes issued a short statement through Rivermark Lynx expressing commitment to earn playing time and to meet the incentives specified in the new contract.</text></item>\n<item><id>N0-S9</id><text>In the club-released statement Maya Cortes said, \"I'm focused on earning my minutes, getting fully fit and doing whatever it takes to help Rivermark Lynx compete this season.\"</text></item>\n</content>\n</event>\n<event>\n<date>2025-08-29</date>\n<content>\n<item><id>N1-S0</id><text>Maya Cortes completed a supervised full-contact training session without setbacks on 2025-08-29 observed by Rivermark Lynx medical and coaching staff.</text></item>\n<item><id>N1-S1</id><text>The full-contact training session lasted approximately 75 minutes at the Rivermark Lynx training facility in Harborfen and included controlled live scrimmage periods designed to replicate match contact situations.</text></item>\n<item><id>N1-S2</id><text>Rivermark Lynx medical staff reported no acute pain or functional limitations for Maya Cortes in post-session assessments.</text></item>\n<item><id>N1-S3</id><text>Post-session assessments by the Rivermark Lynx medical team recorded zero on a standard 0\u201310 pain scale, normal bilateral range-of-motion in the knee and ankle, and satisfactory single-leg hop performance during functional testing.</text></item>\n<item><id>N1-S4</id><text>Rivermark Lynx head coach placed Maya Cortes on the available-for-selection list for the season opener after consulting with Rivermark Lynx medical staff.</text></item>\n<item><id>N1-S5</id><text>Rivermark Lynx head coach noted that inclusion on the available-for-selection list is contingent on following a minutes-management plan that will initially limit Maya Cortes to a planned rotation of under 20 minutes while monitoring match response.</text></item>\n<item><id>N1-S6</id><text>Rivermark Lynx submitted a match-day availability notice to league administrators naming Maya Cortes as eligible for selection for the season opener.</text></item>\n<item><id>N1-S7</id><text>Rivermark Lynx submitted the match-day availability notice through the league's official portal and received an automated confirmation receipt from league administrators confirming the submission.</text></item>\n<item><id>N1-S8</id><text>Maya Cortes told assembled media, \"I'm ready to contribute under the minutes plan the Rivermark Lynx sets,\" after the training session.</text></item>\n<item><id>N1-S9</id><text>Maya Cortes spoke to reporters outside the main court, smiling and accompanied by the Rivermark Lynx physiotherapist, and added that Maya Cortes plans to focus on defensive intensity and on-court leadership while adhering to Rivermark Lynx's minutes plan.</text></item>\n</content>\n</event>\n<event>\n<date>2025-08-29</date>\n<content>\n<item><id>N2-S0</id><text>Rivermark Lynx medical staff recorded mild swelling in the right knee of Maya Cortes during a pre-match physical assessment on 2025-08-29.</text></item>\n<item><id>N2-S1</id><text>The Rivermark Lynx physiotherapist recorded a mid-patellar girth difference of approximately 1.4 cm when comparing the right knee to the left and noted a small suprapatellar fluid wave on bedside palpation at about 17:10 local time.</text></item>\n<item><id>N2-S2</id><text>Rivermark Lynx medical staff withdrew Maya Cortes from the finalized match-day roster following the pre-match assessment on 2025-08-29.</text></item>\n<item><id>N2-S3</id><text>The Rivermark Lynx head of medical services informed the head coach and submitted the formal withdrawal through the league match-day change portal at 17:25, with arena match officials informed shortly thereafter.</text></item>\n<item><id>N2-S4</id><text>Rivermark Lynx medical staff scheduled same-day diagnostic ultrasound imaging for Maya Cortes at Harborfen Diagnostic Centre on 2025-08-29.</text></item>\n<item><id>N2-S5</id><text>The Harborfen Diagnostic Centre appointment was booked for 18:00 and the imaging request specified a focused musculoskeletal ultrasound of the patellofemoral region including longitudinal and transverse views and Doppler assessment to evaluate for effusion or tendon pathology.</text></item>\n<item><id>N2-S6</id><text>Rivermark Lynx medical staff administered a single oral anti-inflammatory dose and applied an ice-compression protocol to Maya Cortes while awaiting ultrasound results on 2025-08-29.</text></item>\n<item><id>N2-S7</id><text>The Rivermark Lynx physiotherapist administered 400 mg of ibuprofen orally and applied a pneumatic cold-compression cuff set to approximately 6\u00b0C in 20-minute cycles while recording pre- and post-treatment pain scores on a 0\u201310 scale.</text></item>\n<item><id>N2-S8</id><text>Rivermark Lynx scheduled an overnight re-evaluation for Maya Cortes with Dr. Elias Verran at Harborfen Diagnostic Centre to determine her short-term availability for selection.</text></item>\n<item><id>N2-S9</id><text>The re-evaluation with Dr. Elias Verran was scheduled for 08:00 the following morning and was planned to include a repeat clinical examination, review of the ultrasound images, standardized knee range-of-motion measurements, and a documented minutes-management recommendation to be communicated to the Rivermark Lynx coaching staff after the assessment.</text></item>\n</content>\n</event>\n<event>\n<date>2025-08-30</date>\n<content>\n<item><id>N3-S0</id><text>At 08:00 on 2025-08-30 Dr. Elias Verran reviewed the focused musculoskeletal ultrasound images supplied by Harborfen Diagnostic Centre.</text></item>\n<item><id>N3-S1</id><text>Dr. Elias Verran recorded a small anechoic suprapatellar effusion on the images measuring approximately 7\u20139 mm in depth, noted intact patellar and quadriceps tendon continuity, and observed no focal Doppler hyperemia suggestive of active tendinopathy.</text></item>\n<item><id>N3-S2</id><text>At 08:15 on 2025-08-30 Dr. Elias Verran performed a repeat clinical examination and documented standardized knee range-of-motion and symptom scores for Maya Cortes.</text></item>\n<item><id>N3-S3</id><text>Dr. Elias Verran documented active knee extension of 0\u00b0 and flexion to 135\u00b0 bilaterally, a resting visual analogue pain score of 1/10 rising to 2/10 with single-leg squat provocation, and stable anterior drawer and Lachman tests with no joint-line tenderness.</text></item>\n<item><id>N3-S4</id><text>At 08:35 on 2025-08-30 Dr. Elias Verran cleared Maya Cortes for match selection with an initial conservative minutes cap of 10\u201312 minutes.</text></item>\n<item><id>N3-S5</id><text>The minutes cap was defined as total in-game time per match for the immediate fixtures, to be delivered in no more than two separate stints and with coaching instructed to minimise prolonged high-intensity defensive minutes during each appearance.</text></item>\n<item><id>N3-S6</id><text>On 2025-08-30 Dr. Elias Verran instructed the Rivermark Lynx medical team to perform daily symptom checks for Maya Cortes before and after training and match activity.</text></item>\n<item><id>N3-S7</id><text>Dr. Elias Verran asked the Rivermark Lynx physiotherapist to record a pre- and post-activity 0\u201310 pain score, a brief patellar girth measure, a 30-second single-leg balance assessment, and any analgesic use, and to upload these entries to the club medical portal within two hours of each check.</text></item>\n<item><id>N3-S8</id><text>On 2025-08-30 Dr. Elias Verran scheduled a one-week functional review at Harborfen Diagnostic Centre to reassess load tolerance for Maya Cortes and notified Rivermark Lynx coaching staff of the plan.</text></item>\n<item><id>N3-S9</id><text>The one-week functional review was booked for 09:00 on 2025-09-06 at Harborfen Diagnostic Centre and will include repeat targeted ultrasound, standardized isokinetic quadriceps/hamstring strength testing and a monitored five-minute on-court conditioning set to determine criteria for incremental minutes increases.</text></item>\n</content>\n</event>\n<event>\n<date>2025-09-05</date>\n<content>\n<item><id>N4-S0</id><text>Rivermark Lynx physiotherapist Sofia Harlow uploaded daily monitoring entries for Maya Cortes to the Rivermark Lynx club medical portal on 2025-09-05.</text></item>\n<item><id>N4-S1</id><text>The uploaded entry was submitted at 09:12 local time through the Rivermark Lynx secure medical portal using the club's standardized daily-monitoring template and was time-stamped and made visible to the head of medical services and the physiotherapy team.</text></item>\n<item><id>N4-S2</id><text>The uploaded monitoring entry for Maya Cortes recorded an overnight increase in right-knee mid-patellar girth of +0.8 cm in the Rivermark Lynx medical log.</text></item>\n<item><id>N4-S3</id><text>The mid-patellar girth measurement was performed with a calibrated flexible tape at the anatomical mid-point of the patella with Maya Cortes supine and the knee in full extension, and the result was entered to the nearest 0.1 cm per the club's measurement protocol.</text></item>\n<item><id>N4-S4</id><text>The uploaded monitoring entry for Maya Cortes recorded a pre-activity pain score of 3/10 and documented one 400 mg ibuprofen taken the previous evening.</text></item>\n<item><id>N4-S5</id><text>The entry noted that Maya Cortes self-reported taking the single 400 mg ibuprofen dose at approximately 21:30 the previous evening and that the pre-activity 3/10 pain score was recorded at 08:50 immediately prior to the scheduled morning session.</text></item>\n<item><id>N4-S6</id><text>Following the monitoring entries, Rivermark Lynx withdrew Maya Cortes from all on-court team activities and arranged an expedited same-day focused musculoskeletal ultrasound at Harborfen Diagnostic Centre.</text></item>\n<item><id>N4-S7</id><text>Rivermark Lynx submitted a formal non-availability notification on the club management system at 09:35, secured an expedited ultrasound appointment at Harborfen Diagnostic Centre for 14:30 the same day, and arranged for physiotherapist Sofia Harlow to accompany Maya Cortes to the imaging using the club medical vehicle.</text></item>\n<item><id>N4-S8</id><text>Rivermark Lynx notified Dr. Elias Verran and scheduled an urgent clinical review with Dr. Elias Verran to follow the focused ultrasound while Rivermark Lynx informed the head coach and league administrators of Maya Cortes' temporary non-availability for selection.</text></item>\n<item><id>N4-S9</id><text>Dr. Elias Verran was alerted via encrypted email and an urgent phone call at 09:40 with the plan to perform a clinical review within two hours of the completed ultrasound, and the club also updated the league portal with a temporary 'medical' status and phoned the head coach to brief him on Maya Cortes' non-availability.</text></item>\n</content>\n</event>",
+    "SELECTED_EVENTS": [
+      {
+        "created_at": 4,
+        "summary": "On 2025-09-05 the Rivermark Lynx physiotherapist uploaded daily monitoring entries showing a small overnight increase in right-knee mid-patellar girth (+0.8 cm), a pre-activity pain score of 3/10 and one 400 mg ibuprofen taken the previous evening, prompting the club to withdraw Maya Cortes from all on-court team activities and arrange an expedited same-day focused ultrasound with an urgent clinical review by Dr. Elias Verran.",
+        "outline": [
+          {
+            "sentence": "{Rivermark Lynx|ORGANIZATION-1} physiotherapist {Sofia Harlow|PERSON-3} uploaded daily monitoring entries for {Maya Cortes|PERSON-1} to the {Rivermark Lynx|ORGANIZATION-1} club medical portal on 2025-09-05.",
+            "id": "N4-S0",
+            "pos": 0
+          },
+          {
+            "sentence": "The uploaded entry was submitted at 09:12 local time through the {Rivermark Lynx secure medical portal|PRODUCT-2} using the club's standardized daily-monitoring template and was time-stamped and made visible to the head of medical services and the physiotherapy team.",
+            "id": "N4-S1",
+            "pos": 1
+          },
+          {
+            "sentence": "The uploaded monitoring entry for {Maya Cortes|PERSON-1} recorded an overnight increase in right-knee mid-patellar girth of +0.8 cm in the {Rivermark Lynx|ORGANIZATION-1} medical log.",
+            "id": "N4-S2",
+            "pos": 2
+          },
+          {
+            "sentence": "The mid-patellar girth measurement was performed with a calibrated flexible tape at the anatomical mid-point of the patella with {Maya Cortes|PERSON-1} supine and the knee in full extension, and the result was entered to the nearest 0.1 cm per the club's measurement protocol.",
+            "id": "N4-S3",
+            "pos": 3
+          },
+          {
+            "sentence": "The uploaded monitoring entry for {Maya Cortes|PERSON-1} recorded a pre-activity pain score of 3/10 and documented one 400 mg {ibuprofen|PRODUCT-1} taken the previous evening.",
+            "id": "N4-S4",
+            "pos": 4
+          },
+          {
+            "sentence": "The entry noted that {Maya Cortes|PERSON-1} self-reported taking the single 400 mg {ibuprofen|PRODUCT-1} dose at approximately 21:30 the previous evening and that the pre-activity 3/10 pain score was recorded at 08:50 immediately prior to the scheduled morning session.",
+            "id": "N4-S5",
+            "pos": 5
+          },
+          {
+            "sentence": "Following the monitoring entries, {Rivermark Lynx|ORGANIZATION-1} withdrew {Maya Cortes|PERSON-1} from all on-court team activities and arranged an expedited same-day focused musculoskeletal ultrasound at {Harborfen Diagnostic Centre|ORGANIZATION-2}.",
+            "id": "N4-S6",
+            "pos": 6
+          },
+          {
+            "sentence": "{Rivermark Lynx|ORGANIZATION-1} submitted a formal non-availability notification on the club management system at 09:35, secured an expedited ultrasound appointment at {Harborfen Diagnostic Centre|ORGANIZATION-2} for 14:30 the same day, and arranged for physiotherapist {Sofia Harlow|PERSON-3} to accompany {Maya Cortes|PERSON-1} to the imaging using the club medical vehicle.",
+            "id": "N4-S7",
+            "pos": 7
+          },
+          {
+            "sentence": "{Rivermark Lynx|ORGANIZATION-1} notified {Dr. Elias Verran|PERSON-2} and scheduled an urgent clinical review with {Dr. Elias Verran|PERSON-2} to follow the focused ultrasound while {Rivermark Lynx|ORGANIZATION-1} informed the head coach and league administrators of {Maya Cortes|PERSON-1}' temporary non-availability for selection.",
+            "id": "N4-S8",
+            "pos": 8
+          },
+          {
+            "sentence": "{Dr. Elias Verran|PERSON-2} was alerted via encrypted email and an urgent phone call at 09:40 with the plan to perform a clinical review within two hours of the completed ultrasound, and the club also updated the league portal with a temporary 'medical' status and phoned the head coach to brief him on {Maya Cortes|PERSON-1}' non-availability.",
+            "id": "N4-S9",
+            "pos": 9
+          }
+        ],
+        "used_entities": [
+          {
+            "id": "PERSON-1",
+            "name": "Maya Cortes",
+            "entity_type": "person",
+            "new": false
+          },
+          {
+            "id": "PERSON-2",
+            "name": "Dr. Elias Verran",
+            "entity_type": "person",
+            "new": false
+          },
+          {
+            "id": "PERSON-3",
+            "name": "Sofia Harlow",
+            "entity_type": "person",
+            "new": true
+          },
+          {
+            "id": "ORGANIZATION-1",
+            "name": "Rivermark Lynx",
+            "entity_type": "organization",
+            "new": false
+          },
+          {
+            "id": "ORGANIZATION-2",
+            "name": "Harborfen Diagnostic Centre",
+            "entity_type": "organization",
+            "new": false
+          },
+          {
+            "id": "PRODUCT-1",
+            "name": "ibuprofen",
+            "entity_type": "product",
+            "new": false
+          },
+          {
+            "id": "PRODUCT-2",
+            "name": "Rivermark Lynx secure medical portal",
+            "entity_type": "product",
+            "new": true
+          }
+        ],
+        "parent": 3,
+        "continuation": {
+          "summary": "Following the expedited 14:30 ultrasound on 2025-09-05, Dr. Elias Verran advised Rivermark Lynx to keep Maya Cortes unavailable and to obtain urgent MRI imaging with a conservative 7\u201310 day period of relative rest plus anti-inflammatory measures before any graded return-to-play decisions.",
+          "last_date": "2025-09-05",
+          "continuation_date": "2025-09-05"
+        },
+        "date": "2025-09-05",
+        "entity_id_to_outline_ids": {
+          "PERSON-1": [
+            "N4-S0",
+            "N4-S2",
+            "N4-S3",
+            "N4-S4",
+            "N4-S5",
+            "N4-S6",
+            "N4-S7",
+            "N4-S8",
+            "N4-S9"
+          ],
+          "PERSON-2": [
+            "N4-S8",
+            "N4-S9"
+          ],
+          "PERSON-3": [
+            "N4-S0",
+            "N4-S7"
+          ],
+          "ORGANIZATION-1": [
+            "N4-S0",
+            "N4-S2",
+            "N4-S6",
+            "N4-S7",
+            "N4-S8"
+          ],
+          "ORGANIZATION-2": [
+            "N4-S6",
+            "N4-S7"
+          ],
+          "PRODUCT-1": [
+            "N4-S4",
+            "N4-S5"
+          ],
+          "PRODUCT-2": [
+            "N4-S1"
+          ]
+        }
+      }
+    ],
+    "BRIDGE_ENTITY_NAME": "ibuprofen",
+    "BRIDGE_ENTITY_ID": "PRODUCT-1",
+    "KNOWN_PREV_NAMED_ENTITIES": "<person>\n<created_at>0</created_at><date_of_birth>1991-03-14</date_of_birth><description>A driven and disciplined veteran athlete known for leadership meticulous preparation and a strong commitment to mentoring younger players while pursuing personal performance goals.</description><education>Bachelor of Science in Kinesiology from Northshore University</education><entity_class>person</entity_class><eye_color>Brown</eye_color><gender>Female</gender><hair_color>Dark brown</hair_color><height>1.70 m</height><id>PERSON-1</id><last_updated>2025-08-29</last_updated><marital_status>Single</marital_status><name>Maya Cortes</name><nationality>Valoria</nationality><profession>Professional basketball player and point guard</profession><type>None</type><weight>68 kg</weight>\n<created_at>2</created_at><date_of_birth>1979-11-02</date_of_birth><description>A meticulous clinician who prioritizes practical diagnostics, patient education, and conservative, function-focused treatment plans for active adults.</description><education>Doctor of Medicine (MD); Fellowship in Sports Medicine, Harborfen Medical College</education><entity_class>person</entity_class><eye_color>Gray</eye_color><gender>Male</gender><hair_color>Salt-and-pepper</hair_color><height>1.82 m</height><id>PERSON-2</id><last_updated>2025-08-29</last_updated><marital_status>Married</marital_status><name>Dr. Elias Verran</name><nationality>Valorian</nationality><profession>Consultant Sports Medicine Physician</profession><type>None</type><weight>82 kg</weight>\n</person>\n<organization>\n<annual_revenue>2.1 million Valorian credits</annual_revenue><created_at>0</created_at><description>A mid-sized professional basketball club focused on sustainable operations and regional talent development within its domestic league.</description><entity_class>organization</entity_class><founded>2007-06-15</founded><headquarters>Harborfen</headquarters><id>ORGANIZATION-1</id><industry>professional sports</industry><last_updated>2025-08-29</last_updated><mission_statement>To cultivate competitive teams and community engagement through youth programs coaching development and accessible match-day experiences.</mission_statement><name>Rivermark Lynx</name><number_of_employees>72</number_of_employees><type>company</type>\n<annual_revenue>1.3 million Valorian credits</annual_revenue><created_at>2</created_at><description>An outpatient imaging clinic providing focused diagnostic services and rapid-access scans for community healthcare providers.</description><entity_class>organization</entity_class><founded>2014-04-02</founded><headquarters>Harborfen</headquarters><id>ORGANIZATION-2</id><industry>medical diagnostics</industry><last_updated>2025-08-29</last_updated><mission_statement>To deliver accurate, timely imaging services that support effective clinical decision-making in the region.</mission_statement><name>Harborfen Diagnostic Centre</name><number_of_employees>34</number_of_employees><type>company</type>\n</organization>\n<location>\n\n</location>\n<product>\n<created_at>2</created_at><description>An oral non-prescription anti-inflammatory formulated for short-term relief of mild to moderate musculoskeletal pain.</description><entity_class>product</entity_class><id>PRODUCT-1</id><last_updated>2025-08-29</last_updated><manufacturer>Marindale Pharmaceuticals</manufacturer><name>ibuprofen</name><price>6 Valorian credits per 20-tablet pack</price><release_date>2016-06-01</release_date><type>consumer good</type><warranty>Manufacturer quality guarantee: 12 months from release</warranty><weight>0.04 kg per pack</weight>\n</product>\n<art>\n\n</art>\n<building>\n\n</building>\n<event>\n\n</event>\n<miscellaneous>\n\n</miscellaneous>",
+    "OUTLINE_DICT": {
+      "N0-S0": {
+        "sentence": "{Rivermark Lynx|ORGANIZATION-1} announced the signing of a one-year contract extension with veteran point guard {Maya Cortes|PERSON-1} as their final roster move before the domestic transfer deadline.",
+        "decoded_sentence": "Rivermark Lynx announced the signing of a one-year contract extension with veteran point guard Maya Cortes as their final roster move before the domestic transfer deadline.",
+        "decoded_sentence_full": "Rivermark Lynx announced the signing of a one-year contract extension with veteran point guard Maya Cortes as their final roster move before the domestic transfer deadline.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N0-S1": {
+        "sentence": "The club published the extension in an official press release on the {Rivermark Lynx|ORGANIZATION-1} website and social channels and completed the paperwork at the team's training facility with the head coach and general manager present.",
+        "decoded_sentence": "The club published the extension in an official press release on the Rivermark Lynx website and social channels and completed the paperwork at the team's training facility with the head coach and general manager present.",
+        "decoded_sentence_full": "The club published the extension in an official press release on the Rivermark Lynx website and social channels and completed the paperwork at the team's training facility with the head coach and general manager present.",
+        "entity_ids": [
+          "ORGANIZATION-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N0-S2": {
+        "sentence": "{Rivermark Lynx|ORGANIZATION-1} registered contract terms that reduce {Maya Cortes|PERSON-1}'s base salary and include game-play incentives tied to minutes and appearances for the one-year extension.",
+        "decoded_sentence": "Rivermark Lynx registered contract terms that reduce Maya Cortes's base salary and include game-play incentives tied to minutes and appearances for the one-year extension.",
+        "decoded_sentence_full": "Rivermark Lynx registered contract terms that reduce Maya Cortes's base salary and include game-play incentives tied to minutes and appearances for the one-year extension.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N0-S3": {
+        "sentence": "The recorded incentive structure includes per-appearance fees, stepped bonuses for reaching specific minutes thresholds in individual games and incremental payments tied to appearing in a target proportion of regular-season fixtures.",
+        "decoded_sentence": "The recorded incentive structure includes per-appearance fees, stepped bonuses for reaching specific minutes thresholds in individual games and incremental payments tied to appearing in a target proportion of regular-season fixtures.",
+        "decoded_sentence_full": "The recorded incentive structure includes per-appearance fees, stepped bonuses for reaching specific minutes thresholds in individual games and incremental payments tied to appearing in a target proportion of regular-season fixtures.",
+        "entity_ids": [],
+        "has_entity_name_conflict": false
+      },
+      "N0-S4": {
+        "sentence": "{Maya Cortes|PERSON-1} completed a club medical assessment and monitored return-to-play program overseen by {Rivermark Lynx|ORGANIZATION-1} after an injury layoff last season.",
+        "decoded_sentence": "Maya Cortes completed a club medical assessment and monitored return-to-play program overseen by Rivermark Lynx after an injury layoff last season.",
+        "decoded_sentence_full": "Maya Cortes completed a club medical assessment and monitored return-to-play program overseen by Rivermark Lynx after an injury layoff last season.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N0-S5": {
+        "sentence": "The medical assessment consisted of strength and conditioning benchmarks, on-court movement and shooting tests and cardiovascular screening administered over a short monitoring period, with the club medical staff clearing {Maya Cortes|PERSON-1} to progress into full-team contact training.",
+        "decoded_sentence": "The medical assessment consisted of strength and conditioning benchmarks, on-court movement and shooting tests and cardiovascular screening administered over a short monitoring period, with the club medical staff clearing Maya Cortes to progress into full-team contact training.",
+        "decoded_sentence_full": "The medical assessment consisted of strength and conditioning benchmarks, on-court movement and shooting tests and cardiovascular screening administered over a short monitoring period, with the club medical staff clearing Maya Cortes to progress into full-team contact training.",
+        "entity_ids": [
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N0-S6": {
+        "sentence": "{Rivermark Lynx|ORGANIZATION-1} filed the finalized roster that includes {Maya Cortes|PERSON-1} with league administrators ahead of the domestic transfer deadline to secure the squad for the opening fixtures.",
+        "decoded_sentence": "Rivermark Lynx filed the finalized roster that includes Maya Cortes with league administrators ahead of the domestic transfer deadline to secure the squad for the opening fixtures.",
+        "decoded_sentence_full": "Rivermark Lynx filed the finalized roster that includes Maya Cortes with league administrators ahead of the domestic transfer deadline to secure the squad for the opening fixtures.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N0-S7": {
+        "sentence": "The club submitted the roster to league administrators that afternoon and received confirmation of registration from the league, ensuring {Maya Cortes|PERSON-1} is officially eligible for selection when the team begins competition.",
+        "decoded_sentence": "The club submitted the roster to league administrators that afternoon and received confirmation of registration from the league, ensuring Maya Cortes is officially eligible for selection when the team begins competition.",
+        "decoded_sentence_full": "The club submitted the roster to league administrators that afternoon and received confirmation of registration from the league, ensuring Maya Cortes is officially eligible for selection when the team begins competition.",
+        "entity_ids": [
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N0-S8": {
+        "sentence": "{Maya Cortes|PERSON-1} issued a short statement through {Rivermark Lynx|ORGANIZATION-1} expressing commitment to earn playing time and to meet the incentives specified in the new contract.",
+        "decoded_sentence": "Maya Cortes issued a short statement through Rivermark Lynx expressing commitment to earn playing time and to meet the incentives specified in the new contract.",
+        "decoded_sentence_full": "Maya Cortes issued a short statement through Rivermark Lynx expressing commitment to earn playing time and to meet the incentives specified in the new contract.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N0-S9": {
+        "sentence": "In the club-released statement {Maya Cortes|PERSON-1} said, \"I'm focused on earning my minutes, getting fully fit and doing whatever it takes to help {Rivermark Lynx|ORGANIZATION-1} compete this season.\"",
+        "decoded_sentence": "In the club-released statement Maya Cortes said, \"I'm focused on earning my minutes, getting fully fit and doing whatever it takes to help Rivermark Lynx compete this season.\"",
+        "decoded_sentence_full": "In the club-released statement Maya Cortes said, \"I'm focused on earning my minutes, getting fully fit and doing whatever it takes to help Rivermark Lynx compete this season.\"",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N1-S0": {
+        "sentence": "{Maya Cortes|PERSON-1} completed a supervised full-contact training session without setbacks on 2025-08-29 observed by {Rivermark Lynx|ORGANIZATION-1} medical and coaching staff.",
+        "decoded_sentence": "Maya Cortes completed a supervised full-contact training session without setbacks on 2025-08-29 observed by Rivermark Lynx medical and coaching staff.",
+        "decoded_sentence_full": "Maya Cortes completed a supervised full-contact training session without setbacks on 2025-08-29 observed by Rivermark Lynx medical and coaching staff.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N1-S1": {
+        "sentence": "The full-contact training session lasted approximately 75 minutes at the {Rivermark Lynx|ORGANIZATION-1} training facility in Harborfen and included controlled live scrimmage periods designed to replicate match contact situations.",
+        "decoded_sentence": "The full-contact training session lasted approximately 75 minutes at the Rivermark Lynx training facility in Harborfen and included controlled live scrimmage periods designed to replicate match contact situations.",
+        "decoded_sentence_full": "The full-contact training session lasted approximately 75 minutes at the Rivermark Lynx training facility in Harborfen and included controlled live scrimmage periods designed to replicate match contact situations.",
+        "entity_ids": [
+          "ORGANIZATION-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N1-S2": {
+        "sentence": "{Rivermark Lynx|ORGANIZATION-1} medical staff reported no acute pain or functional limitations for {Maya Cortes|PERSON-1} in post-session assessments.",
+        "decoded_sentence": "Rivermark Lynx medical staff reported no acute pain or functional limitations for Maya Cortes in post-session assessments.",
+        "decoded_sentence_full": "Rivermark Lynx medical staff reported no acute pain or functional limitations for Maya Cortes in post-session assessments.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N1-S3": {
+        "sentence": "Post-session assessments by the {Rivermark Lynx|ORGANIZATION-1} medical team recorded zero on a standard 0\u201310 pain scale, normal bilateral range-of-motion in the knee and ankle, and satisfactory single-leg hop performance during functional testing.",
+        "decoded_sentence": "Post-session assessments by the Rivermark Lynx medical team recorded zero on a standard 0\u201310 pain scale, normal bilateral range-of-motion in the knee and ankle, and satisfactory single-leg hop performance during functional testing.",
+        "decoded_sentence_full": "Post-session assessments by the Rivermark Lynx medical team recorded zero on a standard 0\u201310 pain scale, normal bilateral range-of-motion in the knee and ankle, and satisfactory single-leg hop performance during functional testing.",
+        "entity_ids": [
+          "ORGANIZATION-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N1-S4": {
+        "sentence": "{Rivermark Lynx|ORGANIZATION-1} head coach placed {Maya Cortes|PERSON-1} on the available-for-selection list for the season opener after consulting with {Rivermark Lynx|ORGANIZATION-1} medical staff.",
+        "decoded_sentence": "Rivermark Lynx head coach placed Maya Cortes on the available-for-selection list for the season opener after consulting with Rivermark Lynx medical staff.",
+        "decoded_sentence_full": "Rivermark Lynx head coach placed Maya Cortes on the available-for-selection list for the season opener after consulting with Rivermark Lynx medical staff.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "ORGANIZATION-1",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N1-S5": {
+        "sentence": "{Rivermark Lynx|ORGANIZATION-1} head coach noted that inclusion on the available-for-selection list is contingent on following a minutes-management plan that will initially limit {Maya Cortes|PERSON-1} to a planned rotation of under 20 minutes while monitoring match response.",
+        "decoded_sentence": "Rivermark Lynx head coach noted that inclusion on the available-for-selection list is contingent on following a minutes-management plan that will initially limit Maya Cortes to a planned rotation of under 20 minutes while monitoring match response.",
+        "decoded_sentence_full": "Rivermark Lynx head coach noted that inclusion on the available-for-selection list is contingent on following a minutes-management plan that will initially limit Maya Cortes to a planned rotation of under 20 minutes while monitoring match response.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N1-S6": {
+        "sentence": "{Rivermark Lynx|ORGANIZATION-1} submitted a match-day availability notice to league administrators naming {Maya Cortes|PERSON-1} as eligible for selection for the season opener.",
+        "decoded_sentence": "Rivermark Lynx submitted a match-day availability notice to league administrators naming Maya Cortes as eligible for selection for the season opener.",
+        "decoded_sentence_full": "Rivermark Lynx submitted a match-day availability notice to league administrators naming Maya Cortes as eligible for selection for the season opener.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N1-S7": {
+        "sentence": "{Rivermark Lynx|ORGANIZATION-1} submitted the match-day availability notice through the league's official portal and received an automated confirmation receipt from league administrators confirming the submission.",
+        "decoded_sentence": "Rivermark Lynx submitted the match-day availability notice through the league's official portal and received an automated confirmation receipt from league administrators confirming the submission.",
+        "decoded_sentence_full": "Rivermark Lynx submitted the match-day availability notice through the league's official portal and received an automated confirmation receipt from league administrators confirming the submission.",
+        "entity_ids": [
+          "ORGANIZATION-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N1-S8": {
+        "sentence": "{Maya Cortes|PERSON-1} told assembled media, \"I'm ready to contribute under the minutes plan the {Rivermark Lynx|ORGANIZATION-1} sets,\" after the training session.",
+        "decoded_sentence": "Maya Cortes told assembled media, \"I'm ready to contribute under the minutes plan the Rivermark Lynx sets,\" after the training session.",
+        "decoded_sentence_full": "Maya Cortes told assembled media, \"I'm ready to contribute under the minutes plan the Rivermark Lynx sets,\" after the training session.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N1-S9": {
+        "sentence": "{Maya Cortes|PERSON-1} spoke to reporters outside the main court, smiling and accompanied by the {Rivermark Lynx|ORGANIZATION-1} physiotherapist, and added that {Maya Cortes|PERSON-1} plans to focus on defensive intensity and on-court leadership while adhering to {Rivermark Lynx|ORGANIZATION-1}'s minutes plan.",
+        "decoded_sentence": "Maya Cortes spoke to reporters outside the main court, smiling and accompanied by the Rivermark Lynx physiotherapist, and added that Maya Cortes plans to focus on defensive intensity and on-court leadership while adhering to Rivermark Lynx's minutes plan.",
+        "decoded_sentence_full": "Maya Cortes spoke to reporters outside the main court, smiling and accompanied by the Rivermark Lynx physiotherapist, and added that Maya Cortes plans to focus on defensive intensity and on-court leadership while adhering to Rivermark Lynx's minutes plan.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "ORGANIZATION-1",
+          "PERSON-1",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N2-S0": {
+        "sentence": "{Rivermark Lynx|ORGANIZATION-1} medical staff recorded mild swelling in the right knee of {Maya Cortes|PERSON-1} during a pre-match physical assessment on 2025-08-29.",
+        "decoded_sentence": "Rivermark Lynx medical staff recorded mild swelling in the right knee of Maya Cortes during a pre-match physical assessment on 2025-08-29.",
+        "decoded_sentence_full": "Rivermark Lynx medical staff recorded mild swelling in the right knee of Maya Cortes during a pre-match physical assessment on 2025-08-29.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N2-S1": {
+        "sentence": "The {Rivermark Lynx|ORGANIZATION-1} physiotherapist recorded a mid-patellar girth difference of approximately 1.4 cm when comparing the right knee to the left and noted a small suprapatellar fluid wave on bedside palpation at about 17:10 local time.",
+        "decoded_sentence": "The Rivermark Lynx physiotherapist recorded a mid-patellar girth difference of approximately 1.4 cm when comparing the right knee to the left and noted a small suprapatellar fluid wave on bedside palpation at about 17:10 local time.",
+        "decoded_sentence_full": "The Rivermark Lynx physiotherapist recorded a mid-patellar girth difference of approximately 1.4 cm when comparing the right knee to the left and noted a small suprapatellar fluid wave on bedside palpation at about 17:10 local time.",
+        "entity_ids": [
+          "ORGANIZATION-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N2-S2": {
+        "sentence": "{Rivermark Lynx|ORGANIZATION-1} medical staff withdrew {Maya Cortes|PERSON-1} from the finalized match-day roster following the pre-match assessment on 2025-08-29.",
+        "decoded_sentence": "Rivermark Lynx medical staff withdrew Maya Cortes from the finalized match-day roster following the pre-match assessment on 2025-08-29.",
+        "decoded_sentence_full": "Rivermark Lynx medical staff withdrew Maya Cortes from the finalized match-day roster following the pre-match assessment on 2025-08-29.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N2-S3": {
+        "sentence": "The {Rivermark Lynx|ORGANIZATION-1} head of medical services informed the head coach and submitted the formal withdrawal through the league match-day change portal at 17:25, with arena match officials informed shortly thereafter.",
+        "decoded_sentence": "The Rivermark Lynx head of medical services informed the head coach and submitted the formal withdrawal through the league match-day change portal at 17:25, with arena match officials informed shortly thereafter.",
+        "decoded_sentence_full": "The Rivermark Lynx head of medical services informed the head coach and submitted the formal withdrawal through the league match-day change portal at 17:25, with arena match officials informed shortly thereafter.",
+        "entity_ids": [
+          "ORGANIZATION-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N2-S4": {
+        "sentence": "{Rivermark Lynx|ORGANIZATION-1} medical staff scheduled same-day diagnostic ultrasound imaging for {Maya Cortes|PERSON-1} at {Harborfen Diagnostic Centre|ORGANIZATION-2} on 2025-08-29.",
+        "decoded_sentence": "Rivermark Lynx medical staff scheduled same-day diagnostic ultrasound imaging for Maya Cortes at Harborfen Diagnostic Centre on 2025-08-29.",
+        "decoded_sentence_full": "Rivermark Lynx medical staff scheduled same-day diagnostic ultrasound imaging for Maya Cortes at Harborfen Diagnostic Centre on 2025-08-29.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "ORGANIZATION-2",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N2-S5": {
+        "sentence": "The {Harborfen Diagnostic Centre|ORGANIZATION-2} appointment was booked for 18:00 and the imaging request specified a focused musculoskeletal ultrasound of the patellofemoral region including longitudinal and transverse views and Doppler assessment to evaluate for effusion or tendon pathology.",
+        "decoded_sentence": "The Harborfen Diagnostic Centre appointment was booked for 18:00 and the imaging request specified a focused musculoskeletal ultrasound of the patellofemoral region including longitudinal and transverse views and Doppler assessment to evaluate for effusion or tendon pathology.",
+        "decoded_sentence_full": "The Harborfen Diagnostic Centre appointment was booked for 18:00 and the imaging request specified a focused musculoskeletal ultrasound of the patellofemoral region including longitudinal and transverse views and Doppler assessment to evaluate for effusion or tendon pathology.",
+        "entity_ids": [
+          "ORGANIZATION-2"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N2-S6": {
+        "sentence": "{Rivermark Lynx|ORGANIZATION-1} medical staff administered a single oral anti-inflammatory dose and applied an ice-compression protocol to {Maya Cortes|PERSON-1} while awaiting ultrasound results on 2025-08-29.",
+        "decoded_sentence": "Rivermark Lynx medical staff administered a single oral anti-inflammatory dose and applied an ice-compression protocol to Maya Cortes while awaiting ultrasound results on 2025-08-29.",
+        "decoded_sentence_full": "Rivermark Lynx medical staff administered a single oral anti-inflammatory dose and applied an ice-compression protocol to Maya Cortes while awaiting ultrasound results on 2025-08-29.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N2-S7": {
+        "sentence": "The {Rivermark Lynx|ORGANIZATION-1} physiotherapist administered 400 mg of {ibuprofen|PRODUCT-1} orally and applied a pneumatic cold-compression cuff set to approximately 6\u00b0C in 20-minute cycles while recording pre- and post-treatment pain scores on a 0\u201310 scale.",
+        "decoded_sentence": "The Rivermark Lynx physiotherapist administered 400 mg of ibuprofen orally and applied a pneumatic cold-compression cuff set to approximately 6\u00b0C in 20-minute cycles while recording pre- and post-treatment pain scores on a 0\u201310 scale.",
+        "decoded_sentence_full": "The Rivermark Lynx physiotherapist administered 400 mg of ibuprofen orally and applied a pneumatic cold-compression cuff set to approximately 6\u00b0C in 20-minute cycles while recording pre- and post-treatment pain scores on a 0\u201310 scale.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "PRODUCT-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N2-S8": {
+        "sentence": "{Rivermark Lynx|ORGANIZATION-1} scheduled an overnight re-evaluation for {Maya Cortes|PERSON-1} with {Dr. Elias Verran|PERSON-2} at {Harborfen Diagnostic Centre|ORGANIZATION-2} to determine her short-term availability for selection.",
+        "decoded_sentence": "Rivermark Lynx scheduled an overnight re-evaluation for Maya Cortes with Dr. Elias Verran at Harborfen Diagnostic Centre to determine her short-term availability for selection.",
+        "decoded_sentence_full": "Rivermark Lynx scheduled an overnight re-evaluation for Maya Cortes with Dr. Elias Verran at Harborfen Diagnostic Centre to determine her short-term availability for selection.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "ORGANIZATION-2",
+          "PERSON-1",
+          "PERSON-2"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N2-S9": {
+        "sentence": "The re-evaluation with {Dr. Elias Verran|PERSON-2} was scheduled for 08:00 the following morning and was planned to include a repeat clinical examination, review of the ultrasound images, standardized knee range-of-motion measurements, and a documented minutes-management recommendation to be communicated to the {Rivermark Lynx|ORGANIZATION-1} coaching staff after the assessment.",
+        "decoded_sentence": "The re-evaluation with Dr. Elias Verran was scheduled for 08:00 the following morning and was planned to include a repeat clinical examination, review of the ultrasound images, standardized knee range-of-motion measurements, and a documented minutes-management recommendation to be communicated to the Rivermark Lynx coaching staff after the assessment.",
+        "decoded_sentence_full": "The re-evaluation with Dr. Elias Verran was scheduled for 08:00 the following morning and was planned to include a repeat clinical examination, review of the ultrasound images, standardized knee range-of-motion measurements, and a documented minutes-management recommendation to be communicated to the Rivermark Lynx coaching staff after the assessment.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "PERSON-2"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N3-S0": {
+        "sentence": "At 08:00 on 2025-08-30 {Dr. Elias Verran|PERSON-2} reviewed the focused musculoskeletal ultrasound images supplied by {Harborfen Diagnostic Centre|ORGANIZATION-2}.",
+        "decoded_sentence": "At 08:00 on 2025-08-30 Dr. Elias Verran reviewed the focused musculoskeletal ultrasound images supplied by Harborfen Diagnostic Centre.",
+        "decoded_sentence_full": "At 08:00 on 2025-08-30 Dr. Elias Verran reviewed the focused musculoskeletal ultrasound images supplied by Harborfen Diagnostic Centre.",
+        "entity_ids": [
+          "ORGANIZATION-2",
+          "PERSON-2"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N3-S1": {
+        "sentence": "{Dr. Elias Verran|PERSON-2} recorded a small anechoic suprapatellar effusion on the images measuring approximately 7\u20139 mm in depth, noted intact patellar and quadriceps tendon continuity, and observed no focal Doppler hyperemia suggestive of active tendinopathy.",
+        "decoded_sentence": "Dr. Elias Verran recorded a small anechoic suprapatellar effusion on the images measuring approximately 7\u20139 mm in depth, noted intact patellar and quadriceps tendon continuity, and observed no focal Doppler hyperemia suggestive of active tendinopathy.",
+        "decoded_sentence_full": "Dr. Elias Verran recorded a small anechoic suprapatellar effusion on the images measuring approximately 7\u20139 mm in depth, noted intact patellar and quadriceps tendon continuity, and observed no focal Doppler hyperemia suggestive of active tendinopathy.",
+        "entity_ids": [
+          "PERSON-2"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N3-S2": {
+        "sentence": "At 08:15 on 2025-08-30 {Dr. Elias Verran|PERSON-2} performed a repeat clinical examination and documented standardized knee range-of-motion and symptom scores for {Maya Cortes|PERSON-1}.",
+        "decoded_sentence": "At 08:15 on 2025-08-30 Dr. Elias Verran performed a repeat clinical examination and documented standardized knee range-of-motion and symptom scores for Maya Cortes.",
+        "decoded_sentence_full": "At 08:15 on 2025-08-30 Dr. Elias Verran performed a repeat clinical examination and documented standardized knee range-of-motion and symptom scores for Maya Cortes.",
+        "entity_ids": [
+          "PERSON-1",
+          "PERSON-2"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N3-S3": {
+        "sentence": "{Dr. Elias Verran|PERSON-2} documented active knee extension of 0\u00b0 and flexion to 135\u00b0 bilaterally, a resting visual analogue pain score of 1/10 rising to 2/10 with single-leg squat provocation, and stable anterior drawer and Lachman tests with no joint-line tenderness.",
+        "decoded_sentence": "Dr. Elias Verran documented active knee extension of 0\u00b0 and flexion to 135\u00b0 bilaterally, a resting visual analogue pain score of 1/10 rising to 2/10 with single-leg squat provocation, and stable anterior drawer and Lachman tests with no joint-line tenderness.",
+        "decoded_sentence_full": "Dr. Elias Verran documented active knee extension of 0\u00b0 and flexion to 135\u00b0 bilaterally, a resting visual analogue pain score of 1/10 rising to 2/10 with single-leg squat provocation, and stable anterior drawer and Lachman tests with no joint-line tenderness.",
+        "entity_ids": [
+          "PERSON-2"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N3-S4": {
+        "sentence": "At 08:35 on 2025-08-30 {Dr. Elias Verran|PERSON-2} cleared {Maya Cortes|PERSON-1} for match selection with an initial conservative minutes cap of 10\u201312 minutes.",
+        "decoded_sentence": "At 08:35 on 2025-08-30 Dr. Elias Verran cleared Maya Cortes for match selection with an initial conservative minutes cap of 10\u201312 minutes.",
+        "decoded_sentence_full": "At 08:35 on 2025-08-30 Dr. Elias Verran cleared Maya Cortes for match selection with an initial conservative minutes cap of 10\u201312 minutes.",
+        "entity_ids": [
+          "PERSON-1",
+          "PERSON-2"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N3-S5": {
+        "sentence": "The minutes cap was defined as total in-game time per match for the immediate fixtures, to be delivered in no more than two separate stints and with coaching instructed to minimise prolonged high-intensity defensive minutes during each appearance.",
+        "decoded_sentence": "The minutes cap was defined as total in-game time per match for the immediate fixtures, to be delivered in no more than two separate stints and with coaching instructed to minimise prolonged high-intensity defensive minutes during each appearance.",
+        "decoded_sentence_full": "The minutes cap was defined as total in-game time per match for the immediate fixtures, to be delivered in no more than two separate stints and with coaching instructed to minimise prolonged high-intensity defensive minutes during each appearance.",
+        "entity_ids": [],
+        "has_entity_name_conflict": false
+      },
+      "N3-S6": {
+        "sentence": "On 2025-08-30 {Dr. Elias Verran|PERSON-2} instructed the {Rivermark Lynx|ORGANIZATION-1} medical team to perform daily symptom checks for {Maya Cortes|PERSON-1} before and after training and match activity.",
+        "decoded_sentence": "On 2025-08-30 Dr. Elias Verran instructed the Rivermark Lynx medical team to perform daily symptom checks for Maya Cortes before and after training and match activity.",
+        "decoded_sentence_full": "On 2025-08-30 Dr. Elias Verran instructed the Rivermark Lynx medical team to perform daily symptom checks for Maya Cortes before and after training and match activity.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "PERSON-1",
+          "PERSON-2"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N3-S7": {
+        "sentence": "{Dr. Elias Verran|PERSON-2} asked the {Rivermark Lynx|ORGANIZATION-1} physiotherapist to record a pre- and post-activity 0\u201310 pain score, a brief patellar girth measure, a 30-second single-leg balance assessment, and any analgesic use, and to upload these entries to the club medical portal within two hours of each check.",
+        "decoded_sentence": "Dr. Elias Verran asked the Rivermark Lynx physiotherapist to record a pre- and post-activity 0\u201310 pain score, a brief patellar girth measure, a 30-second single-leg balance assessment, and any analgesic use, and to upload these entries to the club medical portal within two hours of each check.",
+        "decoded_sentence_full": "Dr. Elias Verran asked the Rivermark Lynx physiotherapist to record a pre- and post-activity 0\u201310 pain score, a brief patellar girth measure, a 30-second single-leg balance assessment, and any analgesic use, and to upload these entries to the club medical portal within two hours of each check.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "PERSON-2"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N3-S8": {
+        "sentence": "On 2025-08-30 {Dr. Elias Verran|PERSON-2} scheduled a one-week functional review at {Harborfen Diagnostic Centre|ORGANIZATION-2} to reassess load tolerance for {Maya Cortes|PERSON-1} and notified {Rivermark Lynx|ORGANIZATION-1} coaching staff of the plan.",
+        "decoded_sentence": "On 2025-08-30 Dr. Elias Verran scheduled a one-week functional review at Harborfen Diagnostic Centre to reassess load tolerance for Maya Cortes and notified Rivermark Lynx coaching staff of the plan.",
+        "decoded_sentence_full": "On 2025-08-30 Dr. Elias Verran scheduled a one-week functional review at Harborfen Diagnostic Centre to reassess load tolerance for Maya Cortes and notified Rivermark Lynx coaching staff of the plan.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "ORGANIZATION-2",
+          "PERSON-1",
+          "PERSON-2"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N3-S9": {
+        "sentence": "The one-week functional review was booked for 09:00 on 2025-09-06 at {Harborfen Diagnostic Centre|ORGANIZATION-2} and will include repeat targeted ultrasound, standardized isokinetic quadriceps/hamstring strength testing and a monitored five-minute on-court conditioning set to determine criteria for incremental minutes increases.",
+        "decoded_sentence": "The one-week functional review was booked for 09:00 on 2025-09-06 at Harborfen Diagnostic Centre and will include repeat targeted ultrasound, standardized isokinetic quadriceps/hamstring strength testing and a monitored five-minute on-court conditioning set to determine criteria for incremental minutes increases.",
+        "decoded_sentence_full": "The one-week functional review was booked for 09:00 on 2025-09-06 at Harborfen Diagnostic Centre and will include repeat targeted ultrasound, standardized isokinetic quadriceps/hamstring strength testing and a monitored five-minute on-court conditioning set to determine criteria for incremental minutes increases.",
+        "entity_ids": [
+          "ORGANIZATION-2"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N4-S0": {
+        "sentence": "{Rivermark Lynx|ORGANIZATION-1} physiotherapist {Sofia Harlow|PERSON-3} uploaded daily monitoring entries for {Maya Cortes|PERSON-1} to the {Rivermark Lynx|ORGANIZATION-1} club medical portal on 2025-09-05.",
+        "decoded_sentence": "Rivermark Lynx physiotherapist Sofia Harlow uploaded daily monitoring entries for Maya Cortes to the Rivermark Lynx club medical portal on 2025-09-05.",
+        "decoded_sentence_full": "Rivermark Lynx physiotherapist Sofia Harlow uploaded daily monitoring entries for Maya Cortes to the Rivermark Lynx club medical portal on 2025-09-05.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "ORGANIZATION-1",
+          "PERSON-1",
+          "PERSON-3"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N4-S1": {
+        "sentence": "The uploaded entry was submitted at 09:12 local time through the {Rivermark Lynx secure medical portal|PRODUCT-2} using the club's standardized daily-monitoring template and was time-stamped and made visible to the head of medical services and the physiotherapy team.",
+        "decoded_sentence": "The uploaded entry was submitted at 09:12 local time through the Rivermark Lynx secure medical portal using the club's standardized daily-monitoring template and was time-stamped and made visible to the head of medical services and the physiotherapy team.",
+        "decoded_sentence_full": "The uploaded entry was submitted at 09:12 local time through the Rivermark Lynx secure medical portal using the club's standardized daily-monitoring template and was time-stamped and made visible to the head of medical services and the physiotherapy team.",
+        "entity_ids": [
+          "PRODUCT-2"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N4-S2": {
+        "sentence": "The uploaded monitoring entry for {Maya Cortes|PERSON-1} recorded an overnight increase in right-knee mid-patellar girth of +0.8 cm in the {Rivermark Lynx|ORGANIZATION-1} medical log.",
+        "decoded_sentence": "The uploaded monitoring entry for Maya Cortes recorded an overnight increase in right-knee mid-patellar girth of +0.8 cm in the Rivermark Lynx medical log.",
+        "decoded_sentence_full": "The uploaded monitoring entry for Maya Cortes recorded an overnight increase in right-knee mid-patellar girth of +0.8 cm in the Rivermark Lynx medical log.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N4-S3": {
+        "sentence": "The mid-patellar girth measurement was performed with a calibrated flexible tape at the anatomical mid-point of the patella with {Maya Cortes|PERSON-1} supine and the knee in full extension, and the result was entered to the nearest 0.1 cm per the club's measurement protocol.",
+        "decoded_sentence": "The mid-patellar girth measurement was performed with a calibrated flexible tape at the anatomical mid-point of the patella with Maya Cortes supine and the knee in full extension, and the result was entered to the nearest 0.1 cm per the club's measurement protocol.",
+        "decoded_sentence_full": "The mid-patellar girth measurement was performed with a calibrated flexible tape at the anatomical mid-point of the patella with Maya Cortes supine and the knee in full extension, and the result was entered to the nearest 0.1 cm per the club's measurement protocol.",
+        "entity_ids": [
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N4-S4": {
+        "sentence": "The uploaded monitoring entry for {Maya Cortes|PERSON-1} recorded a pre-activity pain score of 3/10 and documented one 400 mg {ibuprofen|PRODUCT-1} taken the previous evening.",
+        "decoded_sentence": "The uploaded monitoring entry for Maya Cortes recorded a pre-activity pain score of 3/10 and documented one 400 mg ibuprofen taken the previous evening.",
+        "decoded_sentence_full": "The uploaded monitoring entry for Maya Cortes recorded a pre-activity pain score of 3/10 and documented one 400 mg ibuprofen taken the previous evening.",
+        "entity_ids": [
+          "PERSON-1",
+          "PRODUCT-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N4-S5": {
+        "sentence": "The entry noted that {Maya Cortes|PERSON-1} self-reported taking the single 400 mg {ibuprofen|PRODUCT-1} dose at approximately 21:30 the previous evening and that the pre-activity 3/10 pain score was recorded at 08:50 immediately prior to the scheduled morning session.",
+        "decoded_sentence": "The entry noted that Maya Cortes self-reported taking the single 400 mg ibuprofen dose at approximately 21:30 the previous evening and that the pre-activity 3/10 pain score was recorded at 08:50 immediately prior to the scheduled morning session.",
+        "decoded_sentence_full": "The entry noted that Maya Cortes self-reported taking the single 400 mg ibuprofen dose at approximately 21:30 the previous evening and that the pre-activity 3/10 pain score was recorded at 08:50 immediately prior to the scheduled morning session.",
+        "entity_ids": [
+          "PERSON-1",
+          "PRODUCT-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N4-S6": {
+        "sentence": "Following the monitoring entries, {Rivermark Lynx|ORGANIZATION-1} withdrew {Maya Cortes|PERSON-1} from all on-court team activities and arranged an expedited same-day focused musculoskeletal ultrasound at {Harborfen Diagnostic Centre|ORGANIZATION-2}.",
+        "decoded_sentence": "Following the monitoring entries, Rivermark Lynx withdrew Maya Cortes from all on-court team activities and arranged an expedited same-day focused musculoskeletal ultrasound at Harborfen Diagnostic Centre.",
+        "decoded_sentence_full": "Following the monitoring entries, Rivermark Lynx withdrew Maya Cortes from all on-court team activities and arranged an expedited same-day focused musculoskeletal ultrasound at Harborfen Diagnostic Centre.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "ORGANIZATION-2",
+          "PERSON-1"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N4-S7": {
+        "sentence": "{Rivermark Lynx|ORGANIZATION-1} submitted a formal non-availability notification on the club management system at 09:35, secured an expedited ultrasound appointment at {Harborfen Diagnostic Centre|ORGANIZATION-2} for 14:30 the same day, and arranged for physiotherapist {Sofia Harlow|PERSON-3} to accompany {Maya Cortes|PERSON-1} to the imaging using the club medical vehicle.",
+        "decoded_sentence": "Rivermark Lynx submitted a formal non-availability notification on the club management system at 09:35, secured an expedited ultrasound appointment at Harborfen Diagnostic Centre for 14:30 the same day, and arranged for physiotherapist Sofia Harlow to accompany Maya Cortes to the imaging using the club medical vehicle.",
+        "decoded_sentence_full": "Rivermark Lynx submitted a formal non-availability notification on the club management system at 09:35, secured an expedited ultrasound appointment at Harborfen Diagnostic Centre for 14:30 the same day, and arranged for physiotherapist Sofia Harlow to accompany Maya Cortes to the imaging using the club medical vehicle.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "ORGANIZATION-2",
+          "PERSON-1",
+          "PERSON-3"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N4-S8": {
+        "sentence": "{Rivermark Lynx|ORGANIZATION-1} notified {Dr. Elias Verran|PERSON-2} and scheduled an urgent clinical review with {Dr. Elias Verran|PERSON-2} to follow the focused ultrasound while {Rivermark Lynx|ORGANIZATION-1} informed the head coach and league administrators of {Maya Cortes|PERSON-1}' temporary non-availability for selection.",
+        "decoded_sentence": "Rivermark Lynx notified Dr. Elias Verran and scheduled an urgent clinical review with Dr. Elias Verran to follow the focused ultrasound while Rivermark Lynx informed the head coach and league administrators of Maya Cortes' temporary non-availability for selection.",
+        "decoded_sentence_full": "Rivermark Lynx notified Dr. Elias Verran and scheduled an urgent clinical review with Dr. Elias Verran to follow the focused ultrasound while Rivermark Lynx informed the head coach and league administrators of Maya Cortes' temporary non-availability for selection.",
+        "entity_ids": [
+          "ORGANIZATION-1",
+          "ORGANIZATION-1",
+          "PERSON-1",
+          "PERSON-2",
+          "PERSON-2"
+        ],
+        "has_entity_name_conflict": false
+      },
+      "N4-S9": {
+        "sentence": "{Dr. Elias Verran|PERSON-2} was alerted via encrypted email and an urgent phone call at 09:40 with the plan to perform a clinical review within two hours of the completed ultrasound, and the club also updated the league portal with a temporary 'medical' status and phoned the head coach to brief him on {Maya Cortes|PERSON-1}' non-availability.",
+        "decoded_sentence": "Dr. Elias Verran was alerted via encrypted email and an urgent phone call at 09:40 with the plan to perform a clinical review within two hours of the completed ultrasound, and the club also updated the league portal with a temporary 'medical' status and phoned the head coach to brief him on Maya Cortes' non-availability.",
+        "decoded_sentence_full": "Dr. Elias Verran was alerted via encrypted email and an urgent phone call at 09:40 with the plan to perform a clinical review within two hours of the completed ultrasound, and the club also updated the league portal with a temporary 'medical' status and phoned the head coach to brief him on Maya Cortes' non-availability.",
+        "entity_ids": [
+          "PERSON-1",
+          "PERSON-2"
+        ],
+        "has_entity_name_conflict": false
+      }
+    },
+    "CREATED_AT": 4,
+    "NUM_QUESTIONS": 1,
+    "NUM_DISTRACTORS": 5,
+    "SUBSET_IDX": 21,
+    "MAX_NUMBER_SELECTIONS": 1,
+    "POSSIBLE_SENTENCE_IDS": "N4-S4, N4-S5",
+    "POSSIBLE_SENTENCE_IDS_LIST": [
+      "N4-S4",
+      "N4-S5"
+    ]
+  }
+}

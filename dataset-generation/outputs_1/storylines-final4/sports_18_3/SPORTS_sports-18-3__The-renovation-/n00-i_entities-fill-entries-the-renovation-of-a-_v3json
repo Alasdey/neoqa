@@ -1,0 +1,591 @@
+{
+  "llm": {
+    "type": "gpt",
+    "model": "microsoft/phi-4-reasoning-plus",
+    "temperature": 1.0,
+    "max-tokens": 4096
+  },
+  "llm-output": {
+    "model_dump": null,
+    "response": "```xml\n<results>\n\n<location>\n    <id>LOCATION-1</id>\n    <name>Lakelore City</name>\n    <type>city</type>\n    <description>Lakelore City is a historic urban center known for its rich cultural heritage and vibrant community spirit.</description>\n    <population>150,000</population>\n    <area>45 square miles</area>\n    <founded>1894</founded>\n    <climate>Temperate</climate>\n    <elevation>200 meters</elevation>\n</location>\n\n<person>\n    <id>PERSON-1</id>\n    <name>Felicity Harmond</name>\n    <date_of_birth>1975-11-15</date_of_birth>\n    <gender>Female</gender>\n    <profession>Architect</profession>\n    <nationality>American</nationality>\n    <education>Masters in Architecture, MIT</education>\n    <description>Felicity Harmond is a visionary architect renowned for her commitment to blending historic preservation with innovative modern designs.</description>\n    <height>5'7\"</height>\n    <weight>140 lbs</weight>\n    <eye_color>Hazel</eye_color>\n    <hair_color>Brown</hair_color>\n    <political_affiliation>Independent</political_affiliation>\n    <marital_status>Married</marital_status>\n</person>\n\n<person>\n    <id>PERSON-2</id>\n    <name>Mayor Elizabeth Tran</name>\n    <date_of_birth>1970-03-22</date_of_birth>\n    <gender>Female</gender>\n    <profession>Politician</profession>\n    <nationality>American</nationality>\n    <education>Bachelors in Public Administration, University of Virginia</education>\n    <description>Mayor Elizabeth Tran is a progressive leader dedicated to fostering community growth and sustainability in Lakelore City.</description>\n    <height>5'6\"</height>\n    <weight>130 lbs</weight>\n    <eye_color>Green</eye_color>\n    <hair_color>Blonde</hair_color>\n    <political_affiliation>Democrat</political_affiliation>\n    <marital_status>Married</marital_status>\n    <spouse>David Tran</spouse>\n</person> \n\n<person>\n    <id>PERSON-3</id>\n    <name>Amber Norton</name>\n    <date_of_birth>1988-07-11</date_of_birth>\n    <gender>Female</gender>\n    <profession>Journalist</profession>\n    <nationality>American</nationality>\n    <education>Masters in Journalism, Columbia University</education>\n    <description>Amber Norton is a dedicated journalist focused on uncovering stories that highlight inclusivity and community progress.</description>\n    <height>5'5\"</height>\n    <weight>125 lbs</weight>\n    <eye_color>Blue</eye_color>\n    <hair_color>Red</hair_color>\n    <political_affiliation>Independent</political_affiliation>\n    <marital_status>Single</marital_status>\n</person>\n\n<organization>\n    <id>ORGANIZATION-1</id>\n    <name>Horizon Holdings</name>\n    <type>company</type>\n    <description>Horizon Holdings is a dynamic investment firm that focuses on sustainable development projects both within and outside the city.</description>\n    <founded>1999</founded>\n    <headquarters>Lakelore City</headquarters>\n    <industry>Investments</industry>\n    <mission_statement>To drive growth through innovative and responsible investments.</mission_statement>\n    <number_of_employees>450</number_of_employees>\n    <annual_revenue>$50 million</annual_revenue>\n</organization>\n\n<organization>\n    <id>ORGANIZATION-2</id>\n    <name>Lakelore Lions</name>\n    <type>sports team</type>\n    <description>The Lakelore Lions are a celebrated football team known for their skilled players and cherished by the local community.</description>\n    <founded>2005</founded>\n    <headquarters>Lakelore City</headquarters>\n    <industry>Sports</industry>\n    <mission_statement>To promote teamwork and sportsmanship through competitive excellence.</mission_statement>\n    <number_of_employees>35</number_of_employees>\n    <annual_revenue>$2 million</annual_revenue>\n</organization>\n\n<organization>\n    <id>ORGANIZATION-3</id>\n    <name>Valley Eagles</name>\n    <type>sports team</type>\n    <description>Valley Eagles are formidable rivals to the Lakelore Lions, focusing on enhancing the region's football culture.</description>\n    <founded>2007</founded>\n    <headquarters>Valleyside</headquarters>\n    <industry>Sports</industry>\n    <mission_statement>To foster athletic talent and community engagement.</mission_statement>\n    <number_of_employees>40</number_of_employees>\n    <annual_revenue>$2.5 million</annual_revenue>\n</organization>\n\n<organization>\n    <id>ORGANIZATION-4</id>\n    <name>Lakelore City High School</name>\n    <type>educational institution</type>\n    <description>Lakelore City High School is a notable educational institution celebrated for its academic excellence and extracurricular programs.</description>\n    <founded>1954</founded>\n    <headquarters>Lakelore City</headquarters>\n    <mission_statement>To cultivate knowledge and prepare students for future challenges.</mission_statement>\n    <number_of_employees>150</number_of_employees>\n    <annual_revenue>$10 million</annual_revenue>\n</organization>\n\n<organization>\n    <id>ORGANIZATION-5</id>\n    <name>Lakelore Gazette</name>\n    <type>media outlet</type>\n    <description>The Lakelore Gazette is a reputable local newspaper committed to delivering news with integrity and depth.</description>\n    <founded>1932</founded>\n    <headquarters>Lakelore City</headquarters>\n    <industry>Media</industry>\n    <mission_statement>To inform and engage the community through quality journalism.</mission_statement>\n    <number_of_employees>50</number_of_employees>\n    <annual_revenue>$1 million</annual_revenue>\n</organization>\n\n<product>\n    <id>PRODUCT-1</id>\n    <name>Lakelore Lamb</name>\n    <type>consumer good</type>\n    <description>Lakelore Lamb is a premium product cherished for its distinct flavor, promoting local culinary traditions.</description>\n    <manufacturer>Lakelore Farms</manufacturer>\n    <release_date>2024-06-15</release_date>\n    <price>$25 per kg</price>\n    <weight>1.5 kg per pack</weight>\n    <warranty>None</warranty>\n</product>\n\n<building>\n    <id>BUILDING-1</id>\n    <name>The Grand Sports Arena</name>\n    <type>public</type>\n    <description>The Grand Sports Arena is a historical landmark featuring a blend of Art Deco design and modern renovations.</description>\n    <place>Downtown</place>\n    <city>Lakelore City</city>\n    <country>United States</country>\n    <architect>Felicity Harmond</architect>\n    <year_built>1935</year_built>\n    <height>80 meters</height>\n    <floors>3</floors>\n    <material>Brick and Terrazzo</material>\n    <capacity>12,000 spectators</capacity>\n</building>\n\n<event>\n    <id>EVENT-1</id>\n    <name>Football match</name>\n    <type>sporting</type>\n    <description>The football match is an annual event that showcases rivalry and sportsmanship between local teams.</description>\n    <date>2025-09-15</date>\n    <place>The Grand Sports Arena</place>\n    <city>Lakelore City</city>\n    <country>United States</country>\n    <duration>2 hours</duration>\n    <organizer>Lakelore Sports Committee</organizer>\n    <number_of_participants>22 players per team</number_of_participants>\n    <budget>$15,000</budget>\n</event>\n\n</results>\n```"
+  },
+  "response": "```xml\n<results>\n\n<location>\n    <id>LOCATION-1</id>\n    <name>Lakelore City</name>\n    <type>city</type>\n    <description>Lakelore City is a historic urban center known for its rich cultural heritage and vibrant community spirit.</description>\n    <population>150,000</population>\n    <area>45 square miles</area>\n    <founded>1894</founded>\n    <climate>Temperate</climate>\n    <elevation>200 meters</elevation>\n</location>\n\n<person>\n    <id>PERSON-1</id>\n    <name>Felicity Harmond</name>\n    <date_of_birth>1975-11-15</date_of_birth>\n    <gender>Female</gender>\n    <profession>Architect</profession>\n    <nationality>American</nationality>\n    <education>Masters in Architecture, MIT</education>\n    <description>Felicity Harmond is a visionary architect renowned for her commitment to blending historic preservation with innovative modern designs.</description>\n    <height>5'7\"</height>\n    <weight>140 lbs</weight>\n    <eye_color>Hazel</eye_color>\n    <hair_color>Brown</hair_color>\n    <political_affiliation>Independent</political_affiliation>\n    <marital_status>Married</marital_status>\n</person>\n\n<person>\n    <id>PERSON-2</id>\n    <name>Mayor Elizabeth Tran</name>\n    <date_of_birth>1970-03-22</date_of_birth>\n    <gender>Female</gender>\n    <profession>Politician</profession>\n    <nationality>American</nationality>\n    <education>Bachelors in Public Administration, University of Virginia</education>\n    <description>Mayor Elizabeth Tran is a progressive leader dedicated to fostering community growth and sustainability in Lakelore City.</description>\n    <height>5'6\"</height>\n    <weight>130 lbs</weight>\n    <eye_color>Green</eye_color>\n    <hair_color>Blonde</hair_color>\n    <political_affiliation>Democrat</political_affiliation>\n    <marital_status>Married</marital_status>\n    <spouse>David Tran</spouse>\n</person> \n\n<person>\n    <id>PERSON-3</id>\n    <name>Amber Norton</name>\n    <date_of_birth>1988-07-11</date_of_birth>\n    <gender>Female</gender>\n    <profession>Journalist</profession>\n    <nationality>American</nationality>\n    <education>Masters in Journalism, Columbia University</education>\n    <description>Amber Norton is a dedicated journalist focused on uncovering stories that highlight inclusivity and community progress.</description>\n    <height>5'5\"</height>\n    <weight>125 lbs</weight>\n    <eye_color>Blue</eye_color>\n    <hair_color>Red</hair_color>\n    <political_affiliation>Independent</political_affiliation>\n    <marital_status>Single</marital_status>\n</person>\n\n<organization>\n    <id>ORGANIZATION-1</id>\n    <name>Horizon Holdings</name>\n    <type>company</type>\n    <description>Horizon Holdings is a dynamic investment firm that focuses on sustainable development projects both within and outside the city.</description>\n    <founded>1999</founded>\n    <headquarters>Lakelore City</headquarters>\n    <industry>Investments</industry>\n    <mission_statement>To drive growth through innovative and responsible investments.</mission_statement>\n    <number_of_employees>450</number_of_employees>\n    <annual_revenue>$50 million</annual_revenue>\n</organization>\n\n<organization>\n    <id>ORGANIZATION-2</id>\n    <name>Lakelore Lions</name>\n    <type>sports team</type>\n    <description>The Lakelore Lions are a celebrated football team known for their skilled players and cherished by the local community.</description>\n    <founded>2005</founded>\n    <headquarters>Lakelore City</headquarters>\n    <industry>Sports</industry>\n    <mission_statement>To promote teamwork and sportsmanship through competitive excellence.</mission_statement>\n    <number_of_employees>35</number_of_employees>\n    <annual_revenue>$2 million</annual_revenue>\n</organization>\n\n<organization>\n    <id>ORGANIZATION-3</id>\n    <name>Valley Eagles</name>\n    <type>sports team</type>\n    <description>Valley Eagles are formidable rivals to the Lakelore Lions, focusing on enhancing the region's football culture.</description>\n    <founded>2007</founded>\n    <headquarters>Valleyside</headquarters>\n    <industry>Sports</industry>\n    <mission_statement>To foster athletic talent and community engagement.</mission_statement>\n    <number_of_employees>40</number_of_employees>\n    <annual_revenue>$2.5 million</annual_revenue>\n</organization>\n\n<organization>\n    <id>ORGANIZATION-4</id>\n    <name>Lakelore City High School</name>\n    <type>educational institution</type>\n    <description>Lakelore City High School is a notable educational institution celebrated for its academic excellence and extracurricular programs.</description>\n    <founded>1954</founded>\n    <headquarters>Lakelore City</headquarters>\n    <mission_statement>To cultivate knowledge and prepare students for future challenges.</mission_statement>\n    <number_of_employees>150</number_of_employees>\n    <annual_revenue>$10 million</annual_revenue>\n</organization>\n\n<organization>\n    <id>ORGANIZATION-5</id>\n    <name>Lakelore Gazette</name>\n    <type>media outlet</type>\n    <description>The Lakelore Gazette is a reputable local newspaper committed to delivering news with integrity and depth.</description>\n    <founded>1932</founded>\n    <headquarters>Lakelore City</headquarters>\n    <industry>Media</industry>\n    <mission_statement>To inform and engage the community through quality journalism.</mission_statement>\n    <number_of_employees>50</number_of_employees>\n    <annual_revenue>$1 million</annual_revenue>\n</organization>\n\n<product>\n    <id>PRODUCT-1</id>\n    <name>Lakelore Lamb</name>\n    <type>consumer good</type>\n    <description>Lakelore Lamb is a premium product cherished for its distinct flavor, promoting local culinary traditions.</description>\n    <manufacturer>Lakelore Farms</manufacturer>\n    <release_date>2024-06-15</release_date>\n    <price>$25 per kg</price>\n    <weight>1.5 kg per pack</weight>\n    <warranty>None</warranty>\n</product>\n\n<building>\n    <id>BUILDING-1</id>\n    <name>The Grand Sports Arena</name>\n    <type>public</type>\n    <description>The Grand Sports Arena is a historical landmark featuring a blend of Art Deco design and modern renovations.</description>\n    <place>Downtown</place>\n    <city>Lakelore City</city>\n    <country>United States</country>\n    <architect>Felicity Harmond</architect>\n    <year_built>1935</year_built>\n    <height>80 meters</height>\n    <floors>3</floors>\n    <material>Brick and Terrazzo</material>\n    <capacity>12,000 spectators</capacity>\n</building>\n\n<event>\n    <id>EVENT-1</id>\n    <name>Football match</name>\n    <type>sporting</type>\n    <description>The football match is an annual event that showcases rivalry and sportsmanship between local teams.</description>\n    <date>2025-09-15</date>\n    <place>The Grand Sports Arena</place>\n    <city>Lakelore City</city>\n    <country>United States</country>\n    <duration>2 hours</duration>\n    <organizer>Lakelore Sports Committee</organizer>\n    <number_of_participants>22 players per team</number_of_participants>\n    <budget>$15,000</budget>\n</event>\n\n</results>\n```",
+  "instructions": "You are an AI assistant tasked with creating fictional entities based on provided information. \nYour goal is to generate detailed, coherent, and realistic descriptions for new locations, persons, organizations, products, art, buildings, events, and miscellaneous entities. \nFollow these instructions carefully:\n\n1. Review the existing entities (if provided):\n\n<existing_entities>\n{{LOCATIONS_XML}}\n{{PERSONS_XML}}\n{{ORGANIZATIONS_XML}}\n{{PRODUCTS_XML}}\n{{ARTS_XML}}\n{{EVENTS_XML}}\n{{BUILDINGS_XML}}\n{{MISCELLANEOUSS_XML}}\n</existing_entities>\n\n2. Review the names of new entities to be created:\n<new_entity_names>\n{{USED_NEW-LOCATIONS_XML}}\n{{USED_NEW-PERSONS_XML}}\n{{USED_NEW-ORGANIZATIONS_XML}}\n{{USED_NEW-PRODUCTS_XML}}\n{{USED_NEW-ARTS_XML}}\n{{USED_NEW-EVENTS_XML}}\n{{USED_NEW-BUILDINGS_XML}}\n{{USED_NEW-MISCELLANEOUSS_XML}}\n</new_entity_names>\n\n3. Carefully read the provided outline:\n\nDate: {{DATE}}\n<outline>\n{{OUTLINE}}\n</outline>\n\nBased on the information provided, create detailed descriptions for each new entity following these guidelines:\n\nGeneral instructions:\n- Ensure all created entities are entirely fictional and not similar to any real or known fictional entities.\n- Maintain realism and coherence with the provided outline and other entities.\n- Create a believable and consistent fictional world that aligns with the context of the outline.\n- For entity descriptions, focus on providing a solid background that remains valid throughout the story, rather than basing it centrally on the outline itself.\n- Develop well-rounded entities with backgrounds and characteristics that can support various potential story developments beyond the specific outline provided.\n- Strictly derive all entities from the outline. Do not invent entities that are not mentioned in the outline.\n- Do not alter the name of the entities.\n- Some properties (e.g., place, city, country, spouse, architect, country, nationality) must be filled with named entities. Make sure to use FICTIONAL named entities ( fictional places, cities, countries, spouse names, architects, countries, nationalities, etc.). Check if you should use one of the existing fictional named entities (from <new_entity_names> and <existing_entities>) or create a fictional name instead. DO NOT say that any of the entities or properties are fictional. It is important that everything seems realistic!\n- Avoid exaggerating the named entities. They can be ordinary and don\u2019t need to be world-class or state-of-the-art.\n- Ensure the details of the named entities are realistic. If global impact isn\u2019t necessary, adjust the details to be more modest and appropriate.\n\nSpecific instructions for each entity type:\n\n1. For each new location:\n   - Use the provided name and ID\n   - Determine an appropriate type (city, village, country, region, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: population, area, founded, climate, elevation, country\n   - Format the output as follows:\n     <location>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[city/village/country/region]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: population, area, founded, climate, elevation, country]\n     </location>\n\n2. For each new person:\n   - Use the provided name and ID\n   - Create fictional details for: date_of_birth, gender, profession, nationality, education\n   - Write a concise single-sentence description that:\n     * Focuses on background, personality, and motivations\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: height, weight, eye_color, hair_color, political_affiliation, marital_status, spouse\n   - Format the output as follows:\n     <person>\n     <id>[Provided ID]</id>\n     <name>[Full name]</name>\n     <date_of_birth>[Date]</date_of_birth>\n     <gender>[Gender]</gender>\n     <profession>[Job title]</profession>\n     <nationality>[Country]</nationality>\n     <education>[Highest level of education]</education>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: height, weight, eye_color, hair_color, political_affiliation, marital_status]\n     </person>\n\n3. For each new organization:\n   - Use the provided name and ID\n   - Determine an appropriate type (company, non-profit, educational institution, government agency, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: founded, headquarters, industry, mission_statement, number_of_employees, annual_revenue\n   - Format the output as follows:\n     <organization>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[company/non-profit/educational institution/government agency]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: founded, headquarters, industry, mission_statement, number_of_employees, annual_revenue]\n     </organization>\n\n4. For each new product:\n   - Use the provided name and ID\n   - Determine an appropriate type (consumer good, software, service, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: manufacturer, release_date, price, weight, warranty\n   - Format the output as follows:\n     <product>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[consumer good/software/service]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: manufacturer, release_date, price, weight, warranty]\n     </product>\n\n5. For each new art piece:\n   - Use the provided name and ID\n   - Determine an appropriate type (painting, sculpture, novel, film, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: creator, year_created, current_location_country, current_location_city, current_location_place\n   - Format the output as follows:\n     <art>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[painting/sculpture/novel/film]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: creator, year_created, current_location_country, current_location_city, current_location_place]\n     </art>\n\n6. For each new building:\n   - Use the provided name and ID\n   - Determine an appropriate type (residential, commercial, public, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: place, city, country, architect, year_built, height, floors, material, capacity\n   - Format the output as follows:\n     <building>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[residential/commercial/public]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: place, city, country, architect, year_built, height, floors, material, capacity]\n     </building>\n\n7. For each new event:\n   - Use the provided name and ID\n   - Determine an appropriate type (historical, cultural, sporting, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: date, place, city, country, duration, organizer, number_of_participants, budget\n   - Format the output as follows:\n     <event>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[historical/cultural/sporting]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: date, place, city, country, duration, organizer, number_of_participants, budget]\n     </event>\n\n8. For each new miscellaneous entity:\n   - Use the provided name and ID\n   - Determine an appropriate type (concept, theory, phenomenon, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Format the output as follows:\n     <miscellaneous>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[concept/theory/phenomenon]</type>\n     <description>[One-sentence concise description]</description>\n     </miscellaneous>\n\nPresent your final output in the following format:\n<results>\n[Insert all created entities here, grouped by type]\n</results>\n\nRemember to create detailed, coherent, and realistic descriptions for each entity while adhering to the guidelines provided. Ensure that all descriptions are single, short, and concise sentences that do not refer to other entities and only discuss background information unrelated to the event described in the outline.",
+  "text_prompt": "You are an AI assistant tasked with creating fictional entities based on provided information. \nYour goal is to generate detailed, coherent, and realistic descriptions for new locations, persons, organizations, products, art, buildings, events, and miscellaneous entities. \nFollow these instructions carefully:\n\n1. Review the existing entities (if provided):\n\n<existing_entities>\n\n\n\n\n\n\n\n\n</existing_entities>\n\n2. Review the names of new entities to be created:\n<new_entity_names>\n<location><category>location</category><id>LOCATION-1</id><name>Lakelore City</name></location>\n<person><category>person</category><id>PERSON-1</id><name>Felicity Harmond</name></person>\n<person><category>person</category><id>PERSON-2</id><name>Mayor Elizabeth Tran</name></person>\n<person><category>person</category><id>PERSON-3</id><name>Amber Norton</name></person>\n<organization><category>organization</category><id>ORGANIZATION-1</id><name>Horizon Holdings</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-2</id><name>Lakelore Lions</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-3</id><name>Valley Eagles</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-4</id><name>Lakelore City High School</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-5</id><name>Lakelore Gazette</name></organization>\n<product><category>product</category><id>PRODUCT-1</id><name>Lakelore Lamb</name></product>\n\n<event><category>event</category><id>EVENT-1</id><name>Football match</name></event>\n<building><category>building</category><id>BUILDING-1</id><name>The Grand Sports Arena</name></building>\n\n</new_entity_names>\n\n3. Carefully read the provided outline:\n\nDate: 2025-09-15\n<outline>\nThe {Grand Sports Arena|BUILDING-1}, a historic sports facility in downtown {Lakelore City|LOCATION-1}, reopened after an extensive renovation project that restored its architectural integrity while enhancing spectator comfort with new amenities.\nThe renovation preserved the arena's Art Deco design, including its iconic marquee and terrazzo flooring, while integrating modern elements like retractable roofs and energy-efficient HVAC systems.\nThe renovation project of the {Grand Sports Arena|BUILDING-1} was led by noted architect {Felicity Harmond|PERSON-1}, known for blending historical preservation with modern designs.\n{Felicity Harmond|PERSON-1} collaborated with local historians to ensure that the renovation respected the arena's cultural significance while meeting contemporary standards.\nThe {Grand Sports Arena|BUILDING-1} now boasts state-of-the-art seating that provides a 360-degree view of the playing field, accommodating approximately 12,000 spectators.\nThe new seating arrangement includes ergonomic seats with built-in cup holders and USB charging ports, enhancing the overall spectator experience.\nLocal government officials, including {Mayor Elizabeth Tran|PERSON-2}, praised the renovation, remarking that it positions {Lakelore City|LOCATION-1} as a regional hub for sporting events and cultural gatherings.\n{Mayor Elizabeth Tran|PERSON-2} emphasized that the arena's reopening would attract major sports leagues and cultural festivals, boosting tourism and local business revenue.\nThe newly installed LED lighting system and high-definition video displays enhance the spectator experience, particularly during evening events or concerts held at the arena.\nThe LED lighting system is designed to reduce energy consumption by 30% and includes customizable color schemes for different events.\n{Lakelore City|LOCATION-1}\u2019s Sports Committee organized a series of celebratory events to mark the reopening of the {Grand Sports Arena|BUILDING-1}, starting with a friendly {football match|EVENT-1} between local teams, the {Lakelore Lions|ORGANIZATION-2} and the {Valley Eagles|ORGANIZATION-3}.\nThe {football match|EVENT-1} featured a halftime show by the {Lakelore City High School|ORGANIZATION-4} marching band, celebrating local talent and community spirit.\nRenovation project financing was a joint effort between public funds from the city and private investments from local businesses such as {Horizon Holdings|ORGANIZATION-1}, demonstrating a strong community involvement.\nThe project received a $5 million grant from the state government, which was matched by $3 million in private investments, highlighting the collaborative effort.\nChef Jacob L\u00e9on conducted a high-profile catering event during the opening ceremonies, offering gourmet dishes and locally-sourced refreshments to attendees.\nChef Jacob L\u00e9on's menu included a signature dish, \"{Lakelore Lamb|PRODUCT-1},\" which featured locally-raised lamb and seasonal vegetables, showcasing regional cuisine.\nSales for the inaugural events at the {Grand Sports Arena|BUILDING-1} exceeded expectations, indicating strong public interest and support for the venue\u2019s future use.\nBox office sales for the opening weekend reached $200,000, surpassing initial projections by 25%, reflecting the community's enthusiasm.\n{Journalist Amber Norton|PERSON-3} from the {Lakelore Gazette|ORGANIZATION-5} reported positively on the renovations, highlighting the improved accessibility features, including ramps and elevators for individuals with disabilities.\n{Amber Norton|PERSON-3} noted that the arena now includes tactile paving for visually impaired guests and hearing loops for those with hearing impairments, ensuring inclusivity.\n</outline>\n\nBased on the information provided, create detailed descriptions for each new entity following these guidelines:\n\nGeneral instructions:\n- Ensure all created entities are entirely fictional and not similar to any real or known fictional entities.\n- Maintain realism and coherence with the provided outline and other entities.\n- Create a believable and consistent fictional world that aligns with the context of the outline.\n- For entity descriptions, focus on providing a solid background that remains valid throughout the story, rather than basing it centrally on the outline itself.\n- Develop well-rounded entities with backgrounds and characteristics that can support various potential story developments beyond the specific outline provided.\n- Strictly derive all entities from the outline. Do not invent entities that are not mentioned in the outline.\n- Do not alter the name of the entities.\n- Some properties (e.g., place, city, country, spouse, architect, country, nationality) must be filled with named entities. Make sure to use FICTIONAL named entities ( fictional places, cities, countries, spouse names, architects, countries, nationalities, etc.). Check if you should use one of the existing fictional named entities (from <new_entity_names> and <existing_entities>) or create a fictional name instead. DO NOT say that any of the entities or properties are fictional. It is important that everything seems realistic!\n- Avoid exaggerating the named entities. They can be ordinary and don\u2019t need to be world-class or state-of-the-art.\n- Ensure the details of the named entities are realistic. If global impact isn\u2019t necessary, adjust the details to be more modest and appropriate.\n\nSpecific instructions for each entity type:\n\n1. For each new location:\n   - Use the provided name and ID\n   - Determine an appropriate type (city, village, country, region, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: population, area, founded, climate, elevation, country\n   - Format the output as follows:\n     <location>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[city/village/country/region]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: population, area, founded, climate, elevation, country]\n     </location>\n\n2. For each new person:\n   - Use the provided name and ID\n   - Create fictional details for: date_of_birth, gender, profession, nationality, education\n   - Write a concise single-sentence description that:\n     * Focuses on background, personality, and motivations\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: height, weight, eye_color, hair_color, political_affiliation, marital_status, spouse\n   - Format the output as follows:\n     <person>\n     <id>[Provided ID]</id>\n     <name>[Full name]</name>\n     <date_of_birth>[Date]</date_of_birth>\n     <gender>[Gender]</gender>\n     <profession>[Job title]</profession>\n     <nationality>[Country]</nationality>\n     <education>[Highest level of education]</education>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: height, weight, eye_color, hair_color, political_affiliation, marital_status]\n     </person>\n\n3. For each new organization:\n   - Use the provided name and ID\n   - Determine an appropriate type (company, non-profit, educational institution, government agency, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: founded, headquarters, industry, mission_statement, number_of_employees, annual_revenue\n   - Format the output as follows:\n     <organization>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[company/non-profit/educational institution/government agency]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: founded, headquarters, industry, mission_statement, number_of_employees, annual_revenue]\n     </organization>\n\n4. For each new product:\n   - Use the provided name and ID\n   - Determine an appropriate type (consumer good, software, service, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: manufacturer, release_date, price, weight, warranty\n   - Format the output as follows:\n     <product>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[consumer good/software/service]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: manufacturer, release_date, price, weight, warranty]\n     </product>\n\n5. For each new art piece:\n   - Use the provided name and ID\n   - Determine an appropriate type (painting, sculpture, novel, film, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: creator, year_created, current_location_country, current_location_city, current_location_place\n   - Format the output as follows:\n     <art>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[painting/sculpture/novel/film]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: creator, year_created, current_location_country, current_location_city, current_location_place]\n     </art>\n\n6. For each new building:\n   - Use the provided name and ID\n   - Determine an appropriate type (residential, commercial, public, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: place, city, country, architect, year_built, height, floors, material, capacity\n   - Format the output as follows:\n     <building>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[residential/commercial/public]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: place, city, country, architect, year_built, height, floors, material, capacity]\n     </building>\n\n7. For each new event:\n   - Use the provided name and ID\n   - Determine an appropriate type (historical, cultural, sporting, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Include at least five additional properties from: date, place, city, country, duration, organizer, number_of_participants, budget\n   - Format the output as follows:\n     <event>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[historical/cultural/sporting]</type>\n     <description>[One-sentence concise description]</description>\n     [Include at least 5 of: date, place, city, country, duration, organizer, number_of_participants, budget]\n     </event>\n\n8. For each new miscellaneous entity:\n   - Use the provided name and ID\n   - Determine an appropriate type (concept, theory, phenomenon, etc.)\n   - Write a concise single-sentence description that:\n     * Does not refer to any other entities\n     * Provides only background information, not related to the event in the outline\n     * Is general and serves as background for this event\n   - Format the output as follows:\n     <miscellaneous>\n     <id>[Provided ID]</id>\n     <name>[Fictional name]</name>\n     <type>[concept/theory/phenomenon]</type>\n     <description>[One-sentence concise description]</description>\n     </miscellaneous>\n\nPresent your final output in the following format:\n<results>\n[Insert all created entities here, grouped by type]\n</results>\n\nRemember to create detailed, coherent, and realistic descriptions for each entity while adhering to the guidelines provided. Ensure that all descriptions are single, short, and concise sentences that do not refer to other entities and only discuss background information unrelated to the event described in the outline.",
+  "system-prompt": null,
+  "values": {
+    "KEY_OUTLINE_REFINE_STEP": 0,
+    "GENRE": "Sports",
+    "HISTORIES": [],
+    "EVENT_SUMMARY": "The renovation of a historic sports arena in the downtown district has been completed, preserving its architectural integrity while adding modern amenities for spectators.",
+    "EVENT_SUMMARY_FOR_NAME": "The renovation of a ",
+    "KEYWORDS": "",
+    "CREATED_AT": 0,
+    "NEXT_IDS": {
+      "person": 4,
+      "organization": 6,
+      "location": 2,
+      "product": 2,
+      "art": 1,
+      "building": 2,
+      "event": 2,
+      "miscellaneous": 1
+    },
+    "PROVIDED_DATE": "",
+    "PERSON": [],
+    "ORGANIZATION": [],
+    "LOCATION": [],
+    "PRODUCT": [],
+    "ART": [],
+    "BUILDING": [],
+    "EVENT": [],
+    "MISCELLANEOUS": [],
+    "PERSONS_XML": "",
+    "ORGANIZATIONS_XML": "",
+    "LOCATIONS_XML": "",
+    "PRODUCTS_XML": "",
+    "ARTS_XML": "",
+    "BUILDINGS_XML": "",
+    "EVENTS_XML": "",
+    "MISCELLANEOUSS_XML": "",
+    "NUM_STORYITEMS": 10,
+    "HISTORY_XML": "",
+    "STORY_ITEM": [
+      "The {Grand Sports Arena|BUILDING-1}, a historic sports facility in downtown {Lakelore City|LOCATION-1}, reopened after an extensive renovation project that restored its architectural integrity while enhancing spectator comfort with new amenities.",
+      "The renovation preserved the arena's Art Deco design, including its iconic marquee and terrazzo flooring, while integrating modern elements like retractable roofs and energy-efficient HVAC systems.",
+      "The renovation project of the {Grand Sports Arena|BUILDING-1} was led by noted architect {Felicity Harmond|PERSON-1}, known for blending historical preservation with modern designs.",
+      "{Felicity Harmond|PERSON-1} collaborated with local historians to ensure that the renovation respected the arena's cultural significance while meeting contemporary standards.",
+      "The {Grand Sports Arena|BUILDING-1} now boasts state-of-the-art seating that provides a 360-degree view of the playing field, accommodating approximately 12,000 spectators.",
+      "The new seating arrangement includes ergonomic seats with built-in cup holders and USB charging ports, enhancing the overall spectator experience.",
+      "Local government officials, including {Mayor Elizabeth Tran|PERSON-2}, praised the renovation, remarking that it positions {Lakelore City|LOCATION-1} as a regional hub for sporting events and cultural gatherings.",
+      "{Mayor Elizabeth Tran|PERSON-2} emphasized that the arena's reopening would attract major sports leagues and cultural festivals, boosting tourism and local business revenue.",
+      "The newly installed LED lighting system and high-definition video displays enhance the spectator experience, particularly during evening events or concerts held at the arena.",
+      "The LED lighting system is designed to reduce energy consumption by 30% and includes customizable color schemes for different events.",
+      "{Lakelore City|LOCATION-1}\u2019s Sports Committee organized a series of celebratory events to mark the reopening of the {Grand Sports Arena|BUILDING-1}, starting with a friendly {football match|EVENT-1} between local teams, the {Lakelore Lions|ORGANIZATION-2} and the {Valley Eagles|ORGANIZATION-3}.",
+      "The {football match|EVENT-1} featured a halftime show by the {Lakelore City High School|ORGANIZATION-4} marching band, celebrating local talent and community spirit.",
+      "Renovation project financing was a joint effort between public funds from the city and private investments from local businesses such as {Horizon Holdings|ORGANIZATION-1}, demonstrating a strong community involvement.",
+      "The project received a $5 million grant from the state government, which was matched by $3 million in private investments, highlighting the collaborative effort.",
+      "Chef Jacob L\u00e9on conducted a high-profile catering event during the opening ceremonies, offering gourmet dishes and locally-sourced refreshments to attendees.",
+      "Chef Jacob L\u00e9on's menu included a signature dish, \"{Lakelore Lamb|PRODUCT-1},\" which featured locally-raised lamb and seasonal vegetables, showcasing regional cuisine.",
+      "Sales for the inaugural events at the {Grand Sports Arena|BUILDING-1} exceeded expectations, indicating strong public interest and support for the venue\u2019s future use.",
+      "Box office sales for the opening weekend reached $200,000, surpassing initial projections by 25%, reflecting the community's enthusiasm.",
+      "{Journalist Amber Norton|PERSON-3} from the {Lakelore Gazette|ORGANIZATION-5} reported positively on the renovations, highlighting the improved accessibility features, including ramps and elevators for individuals with disabilities.",
+      "{Amber Norton|PERSON-3} noted that the arena now includes tactile paving for visually impaired guests and hearing loops for those with hearing impairments, ensuring inclusivity."
+    ],
+    "DATE": "2025-09-15",
+    "IS_VALID": true,
+    "NUM_SPECIFIC_SENTS": 2,
+    "OUTLINE": "The {Grand Sports Arena|BUILDING-1}, a historic sports facility in downtown {Lakelore City|LOCATION-1}, reopened after an extensive renovation project that restored its architectural integrity while enhancing spectator comfort with new amenities.\nThe renovation preserved the arena's Art Deco design, including its iconic marquee and terrazzo flooring, while integrating modern elements like retractable roofs and energy-efficient HVAC systems.\nThe renovation project of the {Grand Sports Arena|BUILDING-1} was led by noted architect {Felicity Harmond|PERSON-1}, known for blending historical preservation with modern designs.\n{Felicity Harmond|PERSON-1} collaborated with local historians to ensure that the renovation respected the arena's cultural significance while meeting contemporary standards.\nThe {Grand Sports Arena|BUILDING-1} now boasts state-of-the-art seating that provides a 360-degree view of the playing field, accommodating approximately 12,000 spectators.\nThe new seating arrangement includes ergonomic seats with built-in cup holders and USB charging ports, enhancing the overall spectator experience.\nLocal government officials, including {Mayor Elizabeth Tran|PERSON-2}, praised the renovation, remarking that it positions {Lakelore City|LOCATION-1} as a regional hub for sporting events and cultural gatherings.\n{Mayor Elizabeth Tran|PERSON-2} emphasized that the arena's reopening would attract major sports leagues and cultural festivals, boosting tourism and local business revenue.\nThe newly installed LED lighting system and high-definition video displays enhance the spectator experience, particularly during evening events or concerts held at the arena.\nThe LED lighting system is designed to reduce energy consumption by 30% and includes customizable color schemes for different events.\n{Lakelore City|LOCATION-1}\u2019s Sports Committee organized a series of celebratory events to mark the reopening of the {Grand Sports Arena|BUILDING-1}, starting with a friendly {football match|EVENT-1} between local teams, the {Lakelore Lions|ORGANIZATION-2} and the {Valley Eagles|ORGANIZATION-3}.\nThe {football match|EVENT-1} featured a halftime show by the {Lakelore City High School|ORGANIZATION-4} marching band, celebrating local talent and community spirit.\nRenovation project financing was a joint effort between public funds from the city and private investments from local businesses such as {Horizon Holdings|ORGANIZATION-1}, demonstrating a strong community involvement.\nThe project received a $5 million grant from the state government, which was matched by $3 million in private investments, highlighting the collaborative effort.\nChef Jacob L\u00e9on conducted a high-profile catering event during the opening ceremonies, offering gourmet dishes and locally-sourced refreshments to attendees.\nChef Jacob L\u00e9on's menu included a signature dish, \"{Lakelore Lamb|PRODUCT-1},\" which featured locally-raised lamb and seasonal vegetables, showcasing regional cuisine.\nSales for the inaugural events at the {Grand Sports Arena|BUILDING-1} exceeded expectations, indicating strong public interest and support for the venue\u2019s future use.\nBox office sales for the opening weekend reached $200,000, surpassing initial projections by 25%, reflecting the community's enthusiasm.\n{Journalist Amber Norton|PERSON-3} from the {Lakelore Gazette|ORGANIZATION-5} reported positively on the renovations, highlighting the improved accessibility features, including ramps and elevators for individuals with disabilities.\n{Amber Norton|PERSON-3} noted that the arena now includes tactile paving for visually impaired guests and hearing loops for those with hearing impairments, ensuring inclusivity.",
+    "PRE-CONSISTENCY-NUM-ITEMS": 20,
+    "STORYITEM_XML": "<storyitems>\n<storyitem>The Grand Sports Arena, a historic sports facility in downtown Lakelore City, reopened after an extensive renovation project that restored its architectural integrity while enhancing spectator comfort with new amenities.</storyitem>\n<storyitem>The renovation preserved the arena's Art Deco design, including its iconic marquee and terrazzo flooring, while integrating modern elements like retractable roofs and energy-efficient HVAC systems.</storyitem>\n<storyitem>The renovation project of the Grand Sports Arena was led by noted architect Felicity Harmond, known for blending historical preservation with modern designs.</storyitem>\n<storyitem>Felicity Harmond collaborated with local historians to ensure that the renovation respected the arena's cultural significance while meeting contemporary standards.</storyitem>\n<storyitem>The Grand Sports Arena now boasts state-of-the-art seating that provides a 360-degree view of the playing field, accommodating approximately 12,000 spectators.</storyitem>\n<storyitem>The new seating arrangement includes ergonomic seats with built-in cup holders and USB charging ports, enhancing the overall spectator experience.</storyitem>\n<storyitem>Local government officials, including Mayor Elizabeth Tran, praised the renovation, remarking that it positions Lakelore City as a regional hub for sporting events and cultural gatherings.</storyitem>\n<storyitem>Mayor Elizabeth Tran emphasized that the arena's reopening would attract major sports leagues and cultural festivals, boosting tourism and local business revenue.</storyitem>\n<storyitem>The newly installed LED lighting system and high-definition video displays enhance the spectator experience, particularly during evening events or concerts held at the arena.</storyitem>\n<storyitem>The LED lighting system is designed to reduce energy consumption by 30% and includes customizable color schemes for different events.</storyitem>\n<storyitem>Lakelore City\u2019s Sports Committee organized a series of celebratory events to mark the reopening of the Grand Sports Arena, starting with a friendly football match between local teams, the Lakelore Lions and the Valley Eagles.</storyitem>\n<storyitem>The football match featured a halftime show by the Lakelore City High School marching band, celebrating local talent and community spirit.</storyitem>\n<storyitem>Renovation project financing was a joint effort between public funds from the city and private investments from local businesses such as Horizon Holdings, demonstrating a strong community involvement.</storyitem>\n<storyitem>The project received a $5 million grant from the state government, which was matched by $3 million in private investments, highlighting the collaborative effort.</storyitem>\n<storyitem>Chef Jacob L\u00e9on conducted a high-profile catering event during the opening ceremonies, offering gourmet dishes and locally-sourced refreshments to attendees.</storyitem>\n<storyitem>Chef Jacob L\u00e9on's menu included a signature dish, \"Lakelore Lamb,\" which featured locally-raised lamb and seasonal vegetables, showcasing regional cuisine.</storyitem>\n<storyitem>Sales for the inaugural events at the Grand Sports Arena exceeded expectations, indicating strong public interest and support for the venue\u2019s future use.</storyitem>\n<storyitem>Box office sales for the opening weekend reached $200,000, surpassing initial projections by 25%, reflecting the community's enthusiasm.</storyitem>\n<storyitem>Journalist Amber Norton from the Lakelore Gazette reported positively on the renovations, highlighting the improved accessibility features, including ramps and elevators for individuals with disabilities.</storyitem>\n<storyitem>Amber Norton noted that the arena now includes tactile paving for visually impaired guests and hearing loops for those with hearing impairments, ensuring inclusivity.</storyitem>\n<storyitems>",
+    "NEW_PERSON_NAME": [
+      {
+        "name": "Felicity Harmond",
+        "old_name": "Felicity Harmond"
+      },
+      {
+        "name": "Mayor Elizabeth Tran",
+        "old_name": "Mayor Elizabeth Tran"
+      },
+      {
+        "name": "Amber Norton",
+        "old_name": "Amber Norton"
+      }
+    ],
+    "NEW_ORGANIZATION_NAME": [
+      {
+        "name": "Horizon Holdings",
+        "old_name": "Horizon Holdings"
+      },
+      {
+        "name": "Lakelore Lions",
+        "old_name": "Lakelore Lions"
+      },
+      {
+        "name": "Valley Eagles",
+        "old_name": "Valley Eagles"
+      },
+      {
+        "name": "Lakelore City High School",
+        "old_name": "Lakelore City High School"
+      },
+      {
+        "name": "Lakelore Gazette",
+        "old_name": "Lakelore Gazette"
+      }
+    ],
+    "NEW_LOCATION_NAME": [
+      {
+        "name": "Lakelore City",
+        "old_name": "Lakelore City"
+      }
+    ],
+    "NEW_PRODUCT_NAME": [
+      {
+        "name": "Lakelore Lamb",
+        "old_name": "Lakelore Lamb"
+      }
+    ],
+    "NEW_ART_NAME": [],
+    "NEW_BUILDING_NAME": [
+      {
+        "name": "The Grand Sports Arena",
+        "old_name": "The Grand Sports Arena"
+      }
+    ],
+    "NEW_EVENT_NAME": [
+      {
+        "name": "Football match",
+        "old_name": "Football match"
+      }
+    ],
+    "NEW_MISCELLANEOUS_NAME": [],
+    "RESPONSE": "```xml\n<results>\n  <scratchpad>\n    OUTLINE ANALYSIS:\n    - The Grand Sports Arena is mentioned as a building.\n    - Lakelore City is mentioned as a location.\n    - Felicity Harmond is mentioned as a person.\n    - Mayor Elizabeth Tran is mentioned as a person.\n    - Horizon Holdings is mentioned as an organization.\n    - Lakelore Lions and Valley Eagles are mentioned as organizations (sports teams).\n    - Lakelore City High School is mentioned as an organization.\n    - Amber Norton is mentioned as a person.\n    - Lakelore Gazette is mentioned as an organization.\n    - \"Lakelore Lamb\" is mentioned as a product (dish).\n    - The renovation project is mentioned but not named as an event.\n    - The friendly football match is mentioned as an event.\n    - The opening ceremonies are mentioned but not named as an event.\n    - The LED lighting system is mentioned but not named as a product.\n    - The high-definition video displays are mentioned but not named as a product.\n    - The tactile paving and hearing loops are mentioned but not named as products.\n\n    EXISTING ENTITIES:\n    - The <entities> XML structure is empty, so all identified entities are considered new.\n\n    NEW NAMED ENTITIES:\n    - Building: The Grand Sports Arena\n    - Location: Lakelore City\n    - Person: Felicity Harmond\n    - Person: Mayor Elizabeth Tran\n    - Organization: Horizon Holdings\n    - Organization: Lakelore Lions\n    - Organization: Valley Eagles\n    - Organization: Lakelore City High School\n    - Person: Amber Norton\n    - Organization: Lakelore Gazette\n    - Product: Lakelore Lamb\n    - Event: Football match (between Lakelore Lions and Valley Eagles)\n\n    VERIFICATION:\n    - Each entity is explicitly mentioned by name in the OUTLINE.\n    - The event name \"Friendly football match between Lakelore Lions and Valley Eagles\" was shortened to \"Football match\" to meet the 5-word limit.\n    - No redundancies or duplicates found.\n    - All entities are distinct and correctly categorized.\n  </scratchpad>\n\n  <output>\n    <building>The Grand Sports Arena</building>\n    <location>Lakelore City</location>\n    <person>Felicity Harmond</person>\n    <person>Mayor Elizabeth Tran</person>\n    <organization>Horizon Holdings</organization>\n    <organization>Lakelore Lions</organization>\n    <organization>Valley Eagles</organization>\n    <organization>Lakelore City High School</organization>\n    <person>Amber Norton</person>\n    <organization>Lakelore Gazette</organization>\n    <product>Lakelore Lamb</product>\n    <event>Football match</event>\n  </output>\n</results>\n```",
+    "CORRECTED_PERSON_NAME": [
+      {
+        "name": "Felicity Harmond",
+        "old_name": "Felicity Harmond",
+        "id": "PERSON-1"
+      },
+      {
+        "name": "Mayor Elizabeth Tran",
+        "old_name": "Mayor Elizabeth Tran",
+        "id": "PERSON-2"
+      },
+      {
+        "name": "Amber Norton",
+        "old_name": "Amber Norton",
+        "id": "PERSON-3"
+      }
+    ],
+    "CORRECTED_ORGANIZATION_NAME": [
+      {
+        "name": "Horizon Holdings",
+        "old_name": "Horizon Holdings",
+        "id": "ORGANIZATION-1"
+      },
+      {
+        "name": "Lakelore Lions",
+        "old_name": "Lakelore Lions",
+        "id": "ORGANIZATION-2"
+      },
+      {
+        "name": "Valley Eagles",
+        "old_name": "Valley Eagles",
+        "id": "ORGANIZATION-3"
+      },
+      {
+        "name": "Lakelore City High School",
+        "old_name": "Lakelore City High School",
+        "id": "ORGANIZATION-4"
+      },
+      {
+        "name": "Lakelore Gazette",
+        "old_name": "Lakelore Gazette",
+        "id": "ORGANIZATION-5"
+      }
+    ],
+    "CORRECTED_LOCATION_NAME": [
+      {
+        "name": "Lakelore City",
+        "old_name": "Lakelore City",
+        "id": "LOCATION-1"
+      }
+    ],
+    "CORRECTED_PRODUCT_NAME": [
+      {
+        "name": "Lakelore Lamb",
+        "old_name": "Lakelore Lamb",
+        "id": "PRODUCT-1"
+      }
+    ],
+    "CORRECTED_ART_NAME": [],
+    "CORRECTED_BUILDING_NAME": [
+      {
+        "name": "The Grand Sports Arena",
+        "old_name": "The Grand Sports Arena",
+        "id": "BUILDING-1"
+      }
+    ],
+    "CORRECTED_EVENT_NAME": [
+      {
+        "name": "Football match",
+        "old_name": "Football match",
+        "id": "EVENT-1"
+      }
+    ],
+    "CORRECTED_MISCELLANEOUS_NAME": [],
+    "CRITIQUE_ERRORS": {
+      "entity-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "entity-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-person": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-organization": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-location": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-product": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-art": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-building": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-event": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ],
+      "format-miscellaneous": [
+        {
+          "errors": [],
+          "success": [
+            "not-specified"
+          ]
+        }
+      ]
+    },
+    "ADJUSTED_PERSONS_XML": "<person><id>PERSON-1</id><name>Felicity Harmond</name><old_name>Felicity Harmond</old_name></person>\n<person><id>PERSON-2</id><name>Mayor Elizabeth Tran</name><old_name>Mayor Elizabeth Tran</old_name></person>\n<person><id>PERSON-3</id><name>Amber Norton</name><old_name>Amber Norton</old_name></person>",
+    "ADJUSTED_ORGANIZATIONS_XML": "<organization><id>ORGANIZATION-1</id><name>Horizon Holdings</name><old_name>Horizon Holdings</old_name></organization>\n<organization><id>ORGANIZATION-2</id><name>Lakelore Lions</name><old_name>Lakelore Lions</old_name></organization>\n<organization><id>ORGANIZATION-3</id><name>Valley Eagles</name><old_name>Valley Eagles</old_name></organization>\n<organization><id>ORGANIZATION-4</id><name>Lakelore City High School</name><old_name>Lakelore City High School</old_name></organization>\n<organization><id>ORGANIZATION-5</id><name>Lakelore Gazette</name><old_name>Lakelore Gazette</old_name></organization>",
+    "ADJUSTED_LOCATIONS_XML": "<location><id>LOCATION-1</id><name>Lakelore City</name><old_name>Lakelore City</old_name></location>",
+    "ADJUSTED_PRODUCTS_XML": "<product><id>PRODUCT-1</id><name>Lakelore Lamb</name><old_name>Lakelore Lamb</old_name></product>",
+    "ADJUSTED_ARTS_XML": "",
+    "ADJUSTED_BUILDINGS_XML": "<building><id>BUILDING-1</id><name>The Grand Sports Arena</name><old_name>The Grand Sports Arena</old_name></building>",
+    "ADJUSTED_EVENTS_XML": "<event><id>EVENT-1</id><name>Football match</name><old_name>Football match</old_name></event>",
+    "ADJUSTED_MISCELLANEOUSS_XML": "",
+    "USED_PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Felicity Harmond"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Mayor Elizabeth Tran"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Amber Norton"
+      }
+    ],
+    "USED_ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Horizon Holdings"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Lakelore Lions"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Valley Eagles"
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "Lakelore City High School"
+      },
+      {
+        "id": "ORGANIZATION-5",
+        "name": "Lakelore Gazette"
+      }
+    ],
+    "USED_LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Lakelore City"
+      }
+    ],
+    "USED_PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "Lakelore Lamb"
+      }
+    ],
+    "USED_ART": [],
+    "USED_BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "The Grand Sports Arena"
+      }
+    ],
+    "USED_EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "Football match"
+      }
+    ],
+    "USED_MISCELLANEOUS": [],
+    "USED_PRE-EXISTING-PERSON": [],
+    "USED_NEW-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Felicity Harmond",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Mayor Elizabeth Tran",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Amber Norton",
+        "category": "person"
+      }
+    ],
+    "ALL_USED_PERSON_XML": "<person><category>person</category><id>PERSON-1</id><name>Felicity Harmond</name></person>\n<person><category>person</category><id>PERSON-2</id><name>Mayor Elizabeth Tran</name></person>\n<person><category>person</category><id>PERSON-3</id><name>Amber Norton</name></person>",
+    "USED-NAME-AND-ID-FOR-PERSON": [
+      {
+        "id": "PERSON-1",
+        "name": "Felicity Harmond",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-2",
+        "name": "Mayor Elizabeth Tran",
+        "category": "person"
+      },
+      {
+        "id": "PERSON-3",
+        "name": "Amber Norton",
+        "category": "person"
+      }
+    ],
+    "USED_PRE-EXISTING-ORGANIZATION": [],
+    "USED_NEW-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Horizon Holdings",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Lakelore Lions",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Valley Eagles",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "Lakelore City High School",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-5",
+        "name": "Lakelore Gazette",
+        "category": "organization"
+      }
+    ],
+    "ALL_USED_ORGANIZATION_XML": "<organization><category>organization</category><id>ORGANIZATION-1</id><name>Horizon Holdings</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-2</id><name>Lakelore Lions</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-3</id><name>Valley Eagles</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-4</id><name>Lakelore City High School</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-5</id><name>Lakelore Gazette</name></organization>",
+    "USED-NAME-AND-ID-FOR-ORGANIZATION": [
+      {
+        "id": "ORGANIZATION-1",
+        "name": "Horizon Holdings",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-2",
+        "name": "Lakelore Lions",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-3",
+        "name": "Valley Eagles",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-4",
+        "name": "Lakelore City High School",
+        "category": "organization"
+      },
+      {
+        "id": "ORGANIZATION-5",
+        "name": "Lakelore Gazette",
+        "category": "organization"
+      }
+    ],
+    "USED_PRE-EXISTING-LOCATION": [],
+    "USED_NEW-LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Lakelore City",
+        "category": "location"
+      }
+    ],
+    "ALL_USED_LOCATION_XML": "<location><category>location</category><id>LOCATION-1</id><name>Lakelore City</name></location>",
+    "USED-NAME-AND-ID-FOR-LOCATION": [
+      {
+        "id": "LOCATION-1",
+        "name": "Lakelore City",
+        "category": "location"
+      }
+    ],
+    "USED_PRE-EXISTING-PRODUCT": [],
+    "USED_NEW-PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "Lakelore Lamb",
+        "category": "product"
+      }
+    ],
+    "ALL_USED_PRODUCT_XML": "<product><category>product</category><id>PRODUCT-1</id><name>Lakelore Lamb</name></product>",
+    "USED-NAME-AND-ID-FOR-PRODUCT": [
+      {
+        "id": "PRODUCT-1",
+        "name": "Lakelore Lamb",
+        "category": "product"
+      }
+    ],
+    "USED_PRE-EXISTING-ART": [],
+    "USED_NEW-ART": [],
+    "ALL_USED_ART_XML": "",
+    "USED-NAME-AND-ID-FOR-ART": [],
+    "USED_PRE-EXISTING-BUILDING": [],
+    "USED_NEW-BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "The Grand Sports Arena",
+        "category": "building"
+      }
+    ],
+    "ALL_USED_BUILDING_XML": "<building><category>building</category><id>BUILDING-1</id><name>The Grand Sports Arena</name></building>",
+    "USED-NAME-AND-ID-FOR-BUILDING": [
+      {
+        "id": "BUILDING-1",
+        "name": "The Grand Sports Arena",
+        "category": "building"
+      }
+    ],
+    "USED_PRE-EXISTING-EVENT": [],
+    "USED_NEW-EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "Football match",
+        "category": "event"
+      }
+    ],
+    "ALL_USED_EVENT_XML": "<event><category>event</category><id>EVENT-1</id><name>Football match</name></event>",
+    "USED-NAME-AND-ID-FOR-EVENT": [
+      {
+        "id": "EVENT-1",
+        "name": "Football match",
+        "category": "event"
+      }
+    ],
+    "USED_PRE-EXISTING-MISCELLANEOUS": [],
+    "USED_NEW-MISCELLANEOUS": [],
+    "ALL_USED_MISCELLANEOUS_XML": "",
+    "USED-NAME-AND-ID-FOR-MISCELLANEOUS": [],
+    "USED_NEW-PERSONS_XML": "<person><category>person</category><id>PERSON-1</id><name>Felicity Harmond</name></person>\n<person><category>person</category><id>PERSON-2</id><name>Mayor Elizabeth Tran</name></person>\n<person><category>person</category><id>PERSON-3</id><name>Amber Norton</name></person>",
+    "USED_NEW-ORGANIZATIONS_XML": "<organization><category>organization</category><id>ORGANIZATION-1</id><name>Horizon Holdings</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-2</id><name>Lakelore Lions</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-3</id><name>Valley Eagles</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-4</id><name>Lakelore City High School</name></organization>\n<organization><category>organization</category><id>ORGANIZATION-5</id><name>Lakelore Gazette</name></organization>",
+    "USED_NEW-LOCATIONS_XML": "<location><category>location</category><id>LOCATION-1</id><name>Lakelore City</name></location>",
+    "USED_NEW-PRODUCTS_XML": "<product><category>product</category><id>PRODUCT-1</id><name>Lakelore Lamb</name></product>",
+    "USED_NEW-ARTS_XML": "",
+    "USED_NEW-BUILDINGS_XML": "<building><category>building</category><id>BUILDING-1</id><name>The Grand Sports Arena</name></building>",
+    "USED_NEW-EVENTS_XML": "<event><category>event</category><id>EVENT-1</id><name>Football match</name></event>",
+    "USED_NEW-MISCELLANEOUSS_XML": ""
+  }
+}
