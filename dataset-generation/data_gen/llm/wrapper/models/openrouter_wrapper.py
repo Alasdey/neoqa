@@ -11,6 +11,15 @@ from data_gen.llm.cache.llm_hash_cache import LLMHashCache, LLMCachePool
 from data_gen.llm.wrapper.base_llm_wrapper import BaseLLMWrapper
 from data_gen.util.misc import hash_messages
 
+def logg(prompt: str, response: str):
+    with open("temp5.txt", "a") as f:
+        timestamp_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        f.write(timestamp_str + "\n\n")
+        f.write(prompt)
+        f.write("\n\n---------------------------------------------------------------------------\n\n")
+        f.write(response)
+        f.write("\n\n===========================================================================\n\n")
+        f.close()
 
 class OPENROUTERWrapper(BaseLLMWrapper):
 
@@ -43,6 +52,13 @@ class OPENROUTERWrapper(BaseLLMWrapper):
             self.cache.add_result(messages_hash, json.dumps(messages), response, self.model)
 
         response: str = self.cache.get_result(messages_hash, self.model)
+        logg(str(messages[-1]), response)
+        # with open("temp3.txt", "a") as f:
+        #     timestamp_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        #     f.write(timestamp_str + "\n\n")
+        #     f.write(response)
+        #     f.write("\n\nUwU===========================================================================\n\n")
+        #     f.close()
         return {
             'model_dump': None,
             'response': response
@@ -107,12 +123,13 @@ class OPENROUTERWrapper(BaseLLMWrapper):
                     temperature=temperature,
                     max_tokens=max_gen_len
                 )
-                with open("temp2.txt", "a") as f:
-                    timestamp_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                    f.write(timestamp_str + "\n\n")
-                    f.write(response.choices[0].message.content)
-                    f.write("\n\n===========================================================================\n\n")
-                    f.close()
+                logg(str(messages[-1]), response.choices[0].message.content)
+                # with open("temp3.txt", "a") as f:
+                #     timestamp_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                #     f.write(timestamp_str + "\n\n")
+                #     f.write(response.choices[0].message.content)
+                #     f.write("\n\n===========================================================================\n\n")
+                #     f.close()
                 return response.choices[0].message.content
             except openai.RateLimitError as err:
                 print('Ratelimit Error')

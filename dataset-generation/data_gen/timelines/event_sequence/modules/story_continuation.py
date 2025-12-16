@@ -492,7 +492,6 @@ Try to be diverse in the summaries you generate. Consider different plausible su
    - Each summary must have two child properties:
      <text>[The generated summary]</text>
      <date>[The date for the next event]</date>
-     <cause>[The date for the next event]</date>
    - Before each summary, explain your thought process in <thought_process> tags. Make sure to identify all known followup events based on the provided history first, and verify that your continuations are consistent with these known followup events regarding the date.
    - Output everything within a <results> root node.
 

@@ -36,7 +36,8 @@ class Event:
             used_entities: List[Dict],
             date: str,
             continuation: Continuation = None,
-            parent: Optional['Event'] = None
+            parent: Optional['Event'] = None,
+            causal_edges: Optional = None,
     ):
         self.created_at: int = created_at
         self.summary: str = summary
@@ -46,6 +47,7 @@ class Event:
         self.continuation: Continuation = continuation.copy()
         self.child: Optional['Event'] = None
         self.date: str = date
+        self.causal_edges = causal_edges or []  # Added
 
     def __json__(self):
         return {
@@ -57,6 +59,7 @@ class Event:
             'continuation': self.continuation,
             'child': self.child,
             'date': self.date,
+            'causal_edges': self.causal_edges,
         }
 
     def get_id_outline(self) -> List[Dict]:

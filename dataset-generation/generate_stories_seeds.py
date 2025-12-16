@@ -163,11 +163,26 @@ def main():
     os.environ["AWS_PROFILE"] = "llmexp"
 
     genres = [
-        'Sports', 
-        # 'Celebrities',
-        # 'Politics', "International Affairs", 'Environment', 'Local News', 'Art', 'Food', 'Epidemics',
-        # 'Business', 'Crimes', "Health", 'Lifestyle', 'Travel', 'Technology', 'Economics', 'Science', 'Education',
-        # 'Social Issues', 'Legal'
+        # 'Sports', 
+        'Celebrities',
+        # 'Politics', 
+        # "International Affairs", 
+        # 'Environment', 
+        # 'Local News', 
+        # 'Art', 
+        # 'Food', # Weirdly doesn't work, maybe another hardcoded arbitrary shenanigan
+        # 'Epidemics',
+        # 'Business', # Did not work, bugged at event gen, no file written
+        # 'Crimes', 
+        # "Health", 
+        # 'Lifestyle', 
+        # 'Travel', 
+        # 'Technology', 
+        # 'Economics', 
+        # 'Science', 
+        # 'Education', # Bugged, no indicator of it being broken
+        # 'Social Issues', 
+        # 'Legal'
     ]
 
     # model_name = 'gpt4-turbo'
