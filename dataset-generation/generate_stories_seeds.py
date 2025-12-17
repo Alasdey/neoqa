@@ -168,8 +168,8 @@ def main():
         # 'Politics', 
         # "International Affairs", 
         # 'Environment', 
-        'Local News', 
-        # 'Art', 
+        # 'Local News', 
+        'Art', 
         # 'Food', # Weirdly doesn't work, maybe another hardcoded arbitrary shenanigan
         # 'Epidemics',
         # 'Business', # Did not work, bugged at event gen, no file written

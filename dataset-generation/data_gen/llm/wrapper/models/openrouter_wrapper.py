@@ -2,7 +2,6 @@ import json
 import time
 import os
 from typing import Dict, List, Tuple
-from datetime import datetime
 
 import openai
 from openai import OpenAI
@@ -10,16 +9,7 @@ from openai import OpenAI
 from data_gen.llm.cache.llm_hash_cache import LLMHashCache, LLMCachePool
 from data_gen.llm.wrapper.base_llm_wrapper import BaseLLMWrapper
 from data_gen.util.misc import hash_messages
-
-def logg(prompt: str, response: str):
-    with open("temp5.txt", "a") as f:
-        timestamp_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        f.write(timestamp_str + "\n\n")
-        f.write(prompt)
-        f.write("\n\n---------------------------------------------------------------------------\n\n")
-        f.write(response)
-        f.write("\n\n===========================================================================\n\n")
-        f.close()
+from logit import logg_llm as logg
 
 class OPENROUTERWrapper(BaseLLMWrapper):
 

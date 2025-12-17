@@ -145,7 +145,7 @@ Date: {{DATE}}
 {{OUTLINE}}
 </outline>
 
-Existing causal relations (1-based indices refer to the <storyitem> order in the outline):
+Existing causal relations (each edge uses exact sentences as cause_text/effect_text):
 <causal>
 {{CAUSAL}}
 </causal>
@@ -177,10 +177,10 @@ Existing causal relations (1-based indices refer to the <storyitem> order in the
    - Do not create outlines with global or national impact unless the genre specifically requires it. Instead, focus on smaller or local developments.
    - Do not focus on technological discoveries or topics like AI tools, virtual reality, augmented reality, 3D-modelling, quantum computing, etc. You may include such topics only if they are HIGHLY relevant to the genre {{GENRE}} AND the provided history of events.
    - Focus on realistic, meaningful outlines with specific details and events that align with typical, realistic scenarios of the genre {{GENRE}}.
-   - Respect the existing causal relations; if you re-index due to inserted sentences, adjust the indices accordingly.
-   - Add new causal edges for newly added storyitems when there is a clear, specific causal or enabling relation. Keep edges few and coherent.
-   - All causal edges must reference 1-based positions in the FINAL enriched outline; <cause_idx> must be earlier than <effect_idx>; no self-links; no backward-in-time links.
-
+   - Respect the existing causal relations; Make sure the newly added storyline are coherent with the causal relations already established.
+   - Restate the old relations as they are, modifying them only minimally if to preserve coherence. All existing relations should be stated.
+   - Add new causal edges for newly added storyitems (or between new and old relations) when there is a clear, specific causal or enabling relation. Keep edges few and coherent.
+   - All causal edges must reference the exact sentences (verbatim) as cause_text/effect_text; <cause_text> must be earlier in narrative order than <effect_text>; no self-links; no backward-in-time links.
 
 8. Present your enriched outline and updated causal relations in the following format:
    - Make sure that the sentences with the additional specific details are listed as separate <storyitem> and placed at the correct position within the outline.
@@ -200,6 +200,8 @@ Use this structure:
 <storyitem>[Insert second storyitem here]</storyitem>
 <storyitem>[Continue with additional storyitems as needed]</storyitem>
 </storyitems>
+<causal>
+<edge>
 <cause_text>[Paste the exact cause sentence here]</cause_text>
 <effect_text>[Paste the exact effect sentence here]</effect_text>
 <relation>causes|enables|prevents</relation>

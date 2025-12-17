@@ -46,6 +46,7 @@ def renew_outline(values: Dict) -> Dict:
     values['outline'] = '\n'.join(
         values['story_item']
     )
+    print(values['causal_edges'])
     values['causal'] = '\n'.join(
         [f"\"{edge['cause_text']}\", {edge['relation']}, \"{edge['effect_text']}\"" for edge in values['causal_edges']]
     )
