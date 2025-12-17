@@ -164,11 +164,11 @@ def main():
 
     genres = [
         # 'Sports', 
-        'Celebrities',
+        # 'Celebrities',
         # 'Politics', 
         # "International Affairs", 
         # 'Environment', 
-        # 'Local News', 
+        'Local News', 
         # 'Art', 
         # 'Food', # Weirdly doesn't work, maybe another hardcoded arbitrary shenanigan
         # 'Epidemics',

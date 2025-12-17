@@ -67,15 +67,25 @@ def is_substring_in_list(substring: str, items: List[str]) -> bool:
     return False
 
 
-def create_history_xml(date: str, story_items: List[str], remove_ids: bool = False) -> str:
+def create_history_xml(date: str, story_items: List[str], causal_edges: List[Dict] = None, remove_ids: bool = False) -> str:
     outline: str = ' '.join(story_items)
     if remove_ids:
         outline = remove_ids_from(outline)
-    return f'<event><date>{date}</date><outline>{outline}</outline></event>'
+    causal_edges = causal_edges or []
+    causal_xml = '\n'.join([
+        '<edge>'
+        f'<cause_id>{e.get("cause_id", e["cause_text"])}</cause_id>'
+        f'<effect_id>{e.get("effect_id", e["effect_text"])}</effect_id>'
+        f'<relation>{e["relation"]}</relation>'
+        f'<explanation>{e["explanation"]}</explanation>'
+        '</edge>'
+        for e in causal_edges
+    ])
+    return f'<event><date>{date}</date><outline>{outline}</outline><causal>\n{causal_xml}\n</causal></event>'
 
 
 def create_history_xml_from_event(event) -> str:
-    return create_history_xml(event.date, event.outline)
+    return create_history_xml(event.date, event.outline, event.causal_edges)
 
 
 def find_entity(name: str, entities: List[Entity]):

@@ -80,7 +80,8 @@ class EventSequence2:
             outline,
             used_entities,
             out['date'],
-            out['continuation']
+            out['continuation'],
+            causal_edges=out.get('causal_edges_id', out.get('causal_edges', []))  # pick ID-mapped if present
         )
         self.head_node = event
         self.created_at_idx += 1
@@ -123,7 +124,8 @@ class EventSequence2:
             used_entities,
             out['date'],
             continuation,
-            parent=most_recent_node
+            parent=most_recent_node,
+            causal_edges=out.get('causal_edges_id', out.get('causal_edges', []))  # pick ID-mapped if present
         )
 
         most_recent_node.child = event
