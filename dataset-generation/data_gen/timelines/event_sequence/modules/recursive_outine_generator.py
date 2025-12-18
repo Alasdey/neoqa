@@ -50,7 +50,7 @@ class OutlineGenerationModule(ParsableBaseModule):
             name,
             instruction_name,
             get_instructions(instruction_name),
-            max_critiques=5
+            max_critiques=10
         )
         self.num_story_items: int = num_story_items
 

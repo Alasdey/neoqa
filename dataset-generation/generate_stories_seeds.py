@@ -169,13 +169,13 @@ def main():
         # "International Affairs", 
         # 'Environment', 
         # 'Local News', 
-        'Art', 
+        # 'Art', 
         # 'Food', # Weirdly doesn't work, maybe another hardcoded arbitrary shenanigan
         # 'Epidemics',
         # 'Business', # Did not work, bugged at event gen, no file written
         # 'Crimes', 
         # "Health", 
-        # 'Lifestyle', 
+        'Lifestyle', 
         # 'Travel', 
         # 'Technology', 
         # 'Economics', 

@@ -10,7 +10,7 @@ dataset-generation/exported*
 dataset-generation/cache/*
 dataset-generation/temp*
 dataset-generation/loggs*
-dataset-generation/loggs.txt
+dataset-generation/loggs.txt d
 
 dataset-generation/callingGraph*
 dataset-generation/*.profile

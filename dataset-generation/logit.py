@@ -8,7 +8,7 @@ def log(res):
     return
 
 def logg_llm(prompt: str, response: str):
-    with open("temp6.txt", "a") as f:
+    with open("temp7.txt", "a") as f:
         timestamp_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         f.write(timestamp_str + "\n\n")
         f.write(prompt)
