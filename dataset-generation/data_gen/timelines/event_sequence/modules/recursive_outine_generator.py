@@ -161,7 +161,9 @@ Follow these guidelines to generate the event outline:
     - Only add an edge when there is a clear, specific causal or enabling relation; do not add edges merely because of temporal order.
     - Keep relations concise; use simple labels like causes|enables|prevents and, optionally, an <explanation>.
     - Limit the number of edges to a small, coherent set (e.g., 1–4) that best captures the causal backbone.
-    - Every cause_text must refer to a sentence that appears earlier in the outline than the effect_text; no self-links; no backward-in-time links.
+    - Every cause_text must refer to a sentence that appears earlier in the outline than the effect_text, or in the outlines in the history; no self-links; no backward-in-time links.
+    - No causal edge must be overlooked especially between with a cause_text from a sentence in a previous event. 
+    - The effect_text must always be in the current event's outline. 
 
 Your output should be formatted as follows:
 <scratchpad>[Your thoughts go here]</scratchpad>
